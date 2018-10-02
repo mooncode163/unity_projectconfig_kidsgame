@@ -1,0 +1,40 @@
+{
+    "APP_NAME_CN_ANDROID": "儿童涂色世界",
+    "APP_NAME_EN_ANDROID": "KidsColoringWorld",
+    "APP_NAME_CN_IOS": "儿童涂色世界",
+    "APP_NAME_EN_IOS": "KidsColoringWorld",
+    "PACKAGE_ANDROID": "com.moonma.paintzonghe",
+    "PACKAGE_IOS": "com.moonma.paintzonghe",
+    "APPVERSION_ANDROID": "1.1.0",
+    "APPVERSION_CODE_ANDROID": "110",
+    "APPVERSION_IOS": "1.2.0",
+    "need_upload_screenshot": false,
+    "APPSTORE_VERSION_UPDATE": {
+        "cn": "修复闪退",
+        "en": "Fix a Bug"
+    },
+    "APPSTORE_TITLE": {
+        "cn": "儿童涂色世界-绘画启蒙之涂鸦天地",
+        "en": "Kids Coloring World"
+    },
+    "APPSTORE_SUBTITLE": {
+        "cn": "美好的涂色世界",
+        "en": "Beautiful color world"
+    },
+    "APPSTORE_PROMOTION": {
+        "cn": "欢迎孩子们来美妙绝伦的涂色世界",
+        "en": "Welcome to the wonderful world of children painting"
+    },
+    "APPSTORE_KEYWORD": {
+        "cn": "学画画教程,创意美术生宝宝写字先生,儿童绘画,涂颜色,手机画图游戏2-3,简笔画大全,一画个图,小画家,滑板教学,填色软件,国画入门基础,幼儿园在线,概念画板涂鸦板,免费,治学网app,迷你",
+        "en": "学前,拼音,拼读,超,星,学习,通,天才,宝贝,形,吉,家,线,仿,手绘,头像,智,墨池,书法,大师,上色,涂色,本,油画,照片,书,脑,点子,惠,花,伴,龙,变,卡通,人物,水彩画,沙画,王,益智"
+    },
+    "XIAOMI_KEYWORD": {
+        "cn": "学画画教程 创意美术生宝宝写字先生 儿童绘画 涂颜色 手机画图游戏2-3 简笔画大全 一画个图 小画家 滑板教学 填色软件 国画入门基础 幼儿园在线 概念画板涂鸦板 免费 治学网app 迷你",
+        "en": "学前 拼音 拼读 超 星 学习 通 天才 宝贝 形 吉 家 线 仿 手绘 头像 智 墨池 书法 大师 上色 涂色 本 油画 照片 书 脑 点子 惠 花 伴 龙 变 卡通 人物 水彩画 沙画 王 益智"
+    },
+    "software_url": "http://www.mooncore.cn",
+    "privacy_url": "http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
+    "support_url": "http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html",
+    "sku_app": "paintzonghe"
+}

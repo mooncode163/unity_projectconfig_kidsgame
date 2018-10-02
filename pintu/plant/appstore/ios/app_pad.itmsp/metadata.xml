@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://apple.com/itunes/importer" version="software5.9">
+   <!--  <provider>YuanFang Chen</provider> -->
+    <team_id>Y9ZUK2WTEE</team_id>
+    <software>
+        <vendor_id>sku_pintuplant_pad</vendor_id>
+        <software_metadata>
+            <versions>
+                <version string="1.0.0">
+                    <locales>
+                        <locale name="en-US">
+                            <title>Baby Plant Puzzle HD</title>
+                            <subtitle>A Plant Puzzle Game</subtitle>
+                            <description>This is a children's early teaching plant puzzle game designed for the Pad!
+
+Children learn to know all the plants in the form of jigsaw puzzle. Each plant has high-definition pictures and catchy pronunciation. The children must be very interested. Come and start a wonderful plant puzzle together with us.
+Covered plants are:
+Vegetables: cabbage rape spinach amaranth cabbage chives tarragon mustard broccoli spinach lettuce coriander fennel garlic bolt cauliflower lettuce lettuce broccoli cabbage shallot turnip potato lotus sweet potato yam taro kohlrabies onion ginger and garlic garlic chives arrowhead onion chives melon pumpkin squash gourd cucumber eggplant tomato pepper corn beans peas lentils beans melon mushroom mushroom fungus Sauteed Green Beans letinous edodes Tremella mushroom mushroom
+Flower: Peony plum peach Begonia Magnolia Bauhinia Forsythia Rhododendron pomegranate flower Wisteria lilac grey orchid smiling Jasmine Gardenia osmanthus Hibiscus wintersweet Camellia hyacinth tulip violet chrysanthemum lotus Narcissus red spider lily globeamaranth
+Fruits: pineapple strawberry Begonia fruit melon red pear plum plum papaya red dates pitaya mango lemon apple grape orange persimmon Hawthorn cucumber Crystal Grape peach apricot banana watermelon muskmelon muskmelon fig plum cherry
+Trees: coral tree ginkgo Holly privet Larch lemon tree tree crape myrtle tree juniper camphor fir cycad mulberry peach willow poplar linden trees osmanthus tree banyan maple
+    </description>
+                            <promotional_text>Help your baby to know all kinds of plants</promotional_text>
+                            <keywords>
+                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                            </keywords>
+                            <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots> 
+<software_screenshot display_target="iOS-iPad-Pro" position="1"> <file_name>en_ipadpro_1.jpg</file_name> <size>500132</size> <checksum type="md5">394bb2a245d5660da7e8916d803a4bec</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="2"> <file_name>en_ipadpro_2.jpg</file_name> <size>367534</size> <checksum type="md5">defd9ba57d5b468a2687b649ba60d05b</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="3"> <file_name>en_ipadpro_3.jpg</file_name> <size>407847</size> <checksum type="md5">09b53d4b280e0a70d0409fbbe2a2ca63</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="4"> <file_name>en_ipadpro_4.jpg</file_name> <size>331141</size> <checksum type="md5">dfc09655e466c14f90f257079d6da577</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="5"> <file_name>en_ipadpro_5.jpg</file_name> <size>434910</size> <checksum type="md5">54dac08c5f0fb68c439e1849c93c9569</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="1"> <file_name>en_iphone_1.jpg</file_name> <size>263616</size> <checksum type="md5">dc695d677a5c33392bc88ba4eb9d719f</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="2"> <file_name>en_iphone_2.jpg</file_name> <size>202025</size> <checksum type="md5">df1df69d873fc9554560746ee226c223</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="3"> <file_name>en_iphone_3.jpg</file_name> <size>270221</size> <checksum type="md5">9a6e80229e916ae344d26ef1f6aaf2d6</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="4"> <file_name>en_iphone_4.jpg</file_name> <size>198413</size> <checksum type="md5">e61fa8dbc05219e1e6b082a73f699564</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="5"> <file_name>en_iphone_5.jpg</file_name> <size>237344</size> <checksum type="md5">b4f634381469ce2907ee087209f942e0</checksum> </software_screenshot></software_screenshots>
+
+                        </locale>
+
+                         <locale name="zh-Hans">
+                            <title>宝宝拼图植物园HD</title>
+                            <subtitle>拼图认植物</subtitle>
+                            <description>这是一款为平板设计的儿童早教植物拼图游戏！
+
+通过拼图的形式让儿童学习认识所有植物。每一种植物有高清的图片和朗朗上口的读音。小朋友一定会很感兴趣。 快来和我们一起开始奇妙的植物拼图之旅吧。
+涵盖的植物有：
+蔬菜类：白菜 菠菜 油菜 卷心菜 苋菜 韭菜 蒿菜 香菜 芥菜 芥兰 茴香 蒜苗 莴笋 空心菜 生菜 白花菜 西兰花 油麦菜 甘蓝 小葱 萝卜 马铃薯 莲藕 红薯 山药 芋头 苤蓝 慈姑 洋葱 生姜 大蒜 蒜苔 韭菜花 大葱 韭黄 冬瓜 南瓜 西葫芦 丝瓜 黄瓜 茄子 西红柿 苦瓜 辣椒 玉米 毛豆 豌豆 蚕豆 扁豆 四季豆 平菇 香菇  金针菇 木耳 银耳 杏鲍菇 口蘑
+花卉类： 梅花 桃花  牡丹 海棠 玉兰 紫荆 连翘  丁香 紫藤 杜鹃花 石榴花 含笑花 白兰花 茉莉花 栀子花 桂花 木芙蓉 腊梅 山茶花 风信子 郁金香 紫罗兰 菊花 荷花 石蒜 水仙 千日红
+水果类： 菠萝 草莓 海棠果 哈密瓜 红提 红枣 火龙果 梨 李子 芒果 梅子 木瓜 柠檬 苹果 葡萄 脐橙 黄瓜 山楂 柿子 水晶葡萄 桃子 甜瓜  无花果 乌梅 香瓜 香蕉 西瓜 杏 樱桃 
+树木类：珊瑚树 银杏 冬青 女贞 落叶松 柠檬树 合欢树 苏铁 紫薇树 桧柏 杉树 樟树 椴树 桑树 桃树 杨树 柳树 桂花树 梧桐树 榕树 枫树
+    </description>
+                            <promotional_text>帮助宝宝认识各种各样的植物</promotional_text>
+                            <keywords>
+                               <keyword>拼多多机器人梦工厂碰碰狐宝宝美食街点点多纳多多宝宝巴士瓦贝儿歌悟空识字学数学未来骑士团宝贝英语说趣味食物火车总动员开心蔬菜童话故事小邮局恐龙农场宝宝认家庭成员马儿的神奇大冒险好爸爸学习机课堂学习拖拖乐</keyword> 
+                            </keywords>
+                            <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots> 
+<software_screenshot display_target="iOS-iPad-Pro" position="1"> <file_name>cn_ipadpro_1.jpg</file_name> <size>475678</size> <checksum type="md5">1c1fe1102de6c4a5f4a72259ef662604</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="2"> <file_name>cn_ipadpro_2.jpg</file_name> <size>333854</size> <checksum type="md5">6ae0fad6329a777d88d9a33413b4f242</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="3"> <file_name>cn_ipadpro_3.jpg</file_name> <size>422810</size> <checksum type="md5">348e57852ae8b63ddc4b495ec2428ad9</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="4"> <file_name>cn_ipadpro_4.jpg</file_name> <size>319609</size> <checksum type="md5">cc648334a56e926a945d90562401e00b</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="5"> <file_name>cn_ipadpro_5.jpg</file_name> <size>441002</size> <checksum type="md5">52ef0ccf2e6d8e0422a15ce13acb191d</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="1"> <file_name>cn_iphone_1.jpg</file_name> <size>218334</size> <checksum type="md5">7a4102a2f6399840e027ab7649b23203</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="2"> <file_name>cn_iphone_2.jpg</file_name> <size>298791</size> <checksum type="md5">1eea4623224aa0fa0511f8df27685691</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="3"> <file_name>cn_iphone_3.jpg</file_name> <size>263465</size> <checksum type="md5">95949f486462fd26cf56101660c7c30b</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="4"> <file_name>cn_iphone_4.jpg</file_name> <size>196095</size> <checksum type="md5">d48406ae9684f97973f520c52ffe0488</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="5"> <file_name>cn_iphone_5.jpg</file_name> <size>223463</size> <checksum type="md5">24d174de16d5d2d7017e4107a506f96a</checksum> </software_screenshot></software_screenshots>
+
+                            
+                        </locale>
+
+                         <locale name="en-CA">
+                            <title>Baby Plant Puzzle HD</title>
+                            <subtitle>A Plant Puzzle Game</subtitle>
+                            <description>This is a children's early teaching plant puzzle game designed for the Pad!
+
+Children learn to know all the plants in the form of jigsaw puzzle. Each plant has high-definition pictures and catchy pronunciation. The children must be very interested. Come and start a wonderful plant puzzle together with us.
+Covered plants are:
+Vegetables: cabbage rape spinach amaranth cabbage chives tarragon mustard broccoli spinach lettuce coriander fennel garlic bolt cauliflower lettuce lettuce broccoli cabbage shallot turnip potato lotus sweet potato yam taro kohlrabies onion ginger and garlic garlic chives arrowhead onion chives melon pumpkin squash gourd cucumber eggplant tomato pepper corn beans peas lentils beans melon mushroom mushroom fungus Sauteed Green Beans letinous edodes Tremella mushroom mushroom
+Flower: Peony plum peach Begonia Magnolia Bauhinia Forsythia Rhododendron pomegranate flower Wisteria lilac grey orchid smiling Jasmine Gardenia osmanthus Hibiscus wintersweet Camellia hyacinth tulip violet chrysanthemum lotus Narcissus red spider lily globeamaranth
+Fruits: pineapple strawberry Begonia fruit melon red pear plum plum papaya red dates pitaya mango lemon apple grape orange persimmon Hawthorn cucumber Crystal Grape peach apricot banana watermelon muskmelon muskmelon fig plum cherry
+Trees: coral tree ginkgo Holly privet Larch lemon tree tree crape myrtle tree juniper camphor fir cycad mulberry peach willow poplar linden trees osmanthus tree banyan maple
+    </description>
+                            <promotional_text>Help your baby to know all kinds of plants</promotional_text>
+                            <keywords>
+                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                            </keywords>
+                           <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots></software_screenshots>
+
+                            
+                        </locale>
+
+                         <locale name="en-AU">
+                            <title>Baby Plant Puzzle HD</title>
+                            <subtitle>A Plant Puzzle Game</subtitle>
+                            <description>This is a children's early teaching plant puzzle game designed for the Pad!
+
+Children learn to know all the plants in the form of jigsaw puzzle. Each plant has high-definition pictures and catchy pronunciation. The children must be very interested. Come and start a wonderful plant puzzle together with us.
+Covered plants are:
+Vegetables: cabbage rape spinach amaranth cabbage chives tarragon mustard broccoli spinach lettuce coriander fennel garlic bolt cauliflower lettuce lettuce broccoli cabbage shallot turnip potato lotus sweet potato yam taro kohlrabies onion ginger and garlic garlic chives arrowhead onion chives melon pumpkin squash gourd cucumber eggplant tomato pepper corn beans peas lentils beans melon mushroom mushroom fungus Sauteed Green Beans letinous edodes Tremella mushroom mushroom
+Flower: Peony plum peach Begonia Magnolia Bauhinia Forsythia Rhododendron pomegranate flower Wisteria lilac grey orchid smiling Jasmine Gardenia osmanthus Hibiscus wintersweet Camellia hyacinth tulip violet chrysanthemum lotus Narcissus red spider lily globeamaranth
+Fruits: pineapple strawberry Begonia fruit melon red pear plum plum papaya red dates pitaya mango lemon apple grape orange persimmon Hawthorn cucumber Crystal Grape peach apricot banana watermelon muskmelon muskmelon fig plum cherry
+Trees: coral tree ginkgo Holly privet Larch lemon tree tree crape myrtle tree juniper camphor fir cycad mulberry peach willow poplar linden trees osmanthus tree banyan maple
+    </description>
+                            <promotional_text>Help your baby to know all kinds of plants</promotional_text>
+                            <keywords>
+                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                            </keywords>
+                            <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots></software_screenshots>
+
+                            
+                        </locale>
+
+                         <locale name="en-GB">
+                            <title>Baby Plant Puzzle HD</title>
+                            <subtitle>A Plant Puzzle Game</subtitle>
+                            <description>This is a children's early teaching plant puzzle game designed for the Pad!
+
+Children learn to know all the plants in the form of jigsaw puzzle. Each plant has high-definition pictures and catchy pronunciation. The children must be very interested. Come and start a wonderful plant puzzle together with us.
+Covered plants are:
+Vegetables: cabbage rape spinach amaranth cabbage chives tarragon mustard broccoli spinach lettuce coriander fennel garlic bolt cauliflower lettuce lettuce broccoli cabbage shallot turnip potato lotus sweet potato yam taro kohlrabies onion ginger and garlic garlic chives arrowhead onion chives melon pumpkin squash gourd cucumber eggplant tomato pepper corn beans peas lentils beans melon mushroom mushroom fungus Sauteed Green Beans letinous edodes Tremella mushroom mushroom
+Flower: Peony plum peach Begonia Magnolia Bauhinia Forsythia Rhododendron pomegranate flower Wisteria lilac grey orchid smiling Jasmine Gardenia osmanthus Hibiscus wintersweet Camellia hyacinth tulip violet chrysanthemum lotus Narcissus red spider lily globeamaranth
+Fruits: pineapple strawberry Begonia fruit melon red pear plum plum papaya red dates pitaya mango lemon apple grape orange persimmon Hawthorn cucumber Crystal Grape peach apricot banana watermelon muskmelon muskmelon fig plum cherry
+Trees: coral tree ginkgo Holly privet Larch lemon tree tree crape myrtle tree juniper camphor fir cycad mulberry peach willow poplar linden trees osmanthus tree banyan maple
+    </description>
+                            <promotional_text>Help your baby to know all kinds of plants</promotional_text>
+                            <keywords>
+                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                            </keywords>
+                            <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots></software_screenshots>
+
+                            
+                        </locale>
+                        
+                    </locales>
+                </version>
+            </versions>
+            <products>
+                <product>
+                    <territory>WW</territory>
+                    <sales_start_date>2010-05-25</sales_start_date>
+                    <cleared_for_sale>true</cleared_for_sale>
+                    <wholesale_price_tier>0</wholesale_price_tier>
+                    <allow_volume_discount>false</allow_volume_discount>
+                </product>
+                <product>
+                    <territory>RU</territory>
+                    <cleared_for_sale>true</cleared_for_sale>
+                </product>
+            </products>
+          
+          
+
+           <in_app_purchases>
+                <in_app_purchase>
+                    <product_id>com.moonma.pintuplant.pad.noad</product_id>
+                    <reference_name>noad</reference_name>
+                    <type>non-consumable</type>
+                    <products>
+                        <product>
+                            <cleared_for_sale>true</cleared_for_sale>
+                            <wholesale_price_tier>2</wholesale_price_tier>
+                        </product>
+                    </products>
+                    <locales>
+                        <locale name="en-US">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+
+                        <locale name="zh-Hans">
+                            <title>去除广告</title>
+                            <description>该产品可以去除应用内的所有广告</description>
+                        </locale>
+                        <locale name="en-CA">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+                        <locale name="en-AU">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+                        <locale name="en-GB">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+
+                        
+                    </locales>
+                    <review_screenshot>
+                        <file_name>in_app_purchases_screenshot.png</file_name>
+                        <size>96482</size>
+                        <checksum type="md5">dc4f197705c3983c730d236f54de2950</checksum>
+                    </review_screenshot>
+                    <!-- <review_notes></review_notes> -->
+                </in_app_purchase>
+               <!--  <in_app_purchase remove="true">
+                    <product_id>obsolete_com.cyberinteractive.tf.missiles.15</product_id>
+                </in_app_purchase> -->
+            </in_app_purchases>
+
+
+        </software_metadata>
+    </software>
+</package>

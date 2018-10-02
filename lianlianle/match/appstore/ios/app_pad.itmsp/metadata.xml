@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://apple.com/itunes/importer" version="software5.9">
+   <!--  <provider>YuanFang Chen</provider> -->
+    <team_id>Y9ZUK2WTEE</team_id>
+    <software>
+        <vendor_id>lianlianlematch.pad</vendor_id>
+        <software_metadata>
+            <versions>
+                <version string="1.0.0">
+                    <locales>
+                        <locale name="en-US">
+                            <title>Baby Love Match HD</title>
+                            <subtitle>Match pictures early teaching</subtitle>
+                            <description>* * all the kids in the world are playing the baby world series of baby love match games. * * * * * *
+* * the choice of thousands of parents around the world to open the door of wisdom for children! * * * * * *
+This is an early teaching game for children under the age of 10 in the Pad. As long as it is simple to drag the relevant pictures, it can be passed smoothly. Through the game, it can easily improve the baby's perception of color, shape, and inspire the imagination and creativity of the baby. The best parents accompany their children to play the game, giving guidance and education in the course of the game. Rich checkpoints, living rooms, kitchens, shops, schools, zoos and so on, let your children learn in different scenes. Boys and girls come to experience!
+    </description>
+                            <promotional_text>Let baby learn things by pairing pictures</promotional_text>
+                            <keywords>
+                               <keyword>宠物,洗澡,玩,的,音乐,星火,理财,加,减,乘除,3d,画画,教学,剪,头发,麦田,识字,乐高,忍者,画板,涂鸦,跳跃,保利,教育,教师,版,美,美发,助手,合,图,写,做,东西,熊猫,出行,汉子画面</keyword> 
+                            </keywords>
+                            <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots> 
+<software_screenshot display_target="iOS-iPad-Pro" position="1"> <file_name>en_ipadpro_1.jpg</file_name> <size>181621</size> <checksum type="md5">8ec9a47bfc86a62924bcd0e039f262a3</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="2"> <file_name>en_ipadpro_2.jpg</file_name> <size>198120</size> <checksum type="md5">6d79f51c8f009ebe43e92e4b3c92ea7b</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="3"> <file_name>en_ipadpro_3.jpg</file_name> <size>238050</size> <checksum type="md5">f269f34a6c25a8a69d73a5683d209a29</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="4"> <file_name>en_ipadpro_4.jpg</file_name> <size>297008</size> <checksum type="md5">a3c01241d70154a7e6274f0c1867bb9e</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="5"> <file_name>en_ipadpro_5.jpg</file_name> <size>160101</size> <checksum type="md5">3f2480ef54028ab56badff557347243f</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="1"> <file_name>en_iphone_1.jpg</file_name> <size>109498</size> <checksum type="md5">072397c24b30fd228393dd4ba698a96d</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="2"> <file_name>en_iphone_2.jpg</file_name> <size>111699</size> <checksum type="md5">4e0197067a3409f19e52cdc9684035ae</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="3"> <file_name>en_iphone_3.jpg</file_name> <size>133326</size> <checksum type="md5">1032a75ea29f4df6d15cd9d4dad026ae</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="4"> <file_name>en_iphone_4.jpg</file_name> <size>161233</size> <checksum type="md5">e51424f41422c5240567b0e49dfa6f92</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="5"> <file_name>en_iphone_5.jpg</file_name> <size>91059</size> <checksum type="md5">04f383e31798b34204c5e86096c100cf</checksum> </software_screenshot></software_screenshots>
+
+                        </locale>
+
+                         <locale name="zh-Hans">
+                            <title>宝宝爱配对HD</title>
+                            <subtitle>配对识图早教</subtitle>
+                            <description>***全球上万小朋友都在玩的《宝宝乐园》系列之宝宝爱配对游戏，全新登场！*** 
+***全球上万家长的选择，开启孩子们智慧大门！*** 
+这是一款平板上面向10岁以下儿童的早教游戏，只要简单的将相关的图片拖动配对，便可顺利过关，通过游戏可以轻松提高宝宝们对颜色，形状的认知，启发宝宝们的想象力和创造力。最好爸妈陪同孩子一起玩该游戏，在游戏过程中给与指导与教育。丰富的关卡，客厅、厨房、商店、学校、动物园等，让您的孩子在不同场景中进行不停的学习！小伙伴们赶快来体验！
+    </description>
+                            <promotional_text>通过配对图片让宝贝学习事物</promotional_text>
+                            <keywords>
+                               <keyword>小学一年级语文上册,文字转拼音打字,儿童学汉字,口语100分,练习写字,快乐小读,人教版,爱作业,识字游戏,直映认字软件,学习,噗通,汉子王国,认识字,宝宝认数字,拼读,宝贝数学,语文课本,法,成人</keyword> 
+                            </keywords>
+                            <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots> 
+<software_screenshot display_target="iOS-iPad-Pro" position="1"> <file_name>cn_ipadpro_1.jpg</file_name> <size>180531</size> <checksum type="md5">e88994f6d464680c51d11ceac9265b64</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="2"> <file_name>cn_ipadpro_2.jpg</file_name> <size>188931</size> <checksum type="md5">66942147064980819be1fc44fae572b0</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="3"> <file_name>cn_ipadpro_3.jpg</file_name> <size>218703</size> <checksum type="md5">65b35b959691a7f74a3b405cf87da2af</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="4"> <file_name>cn_ipadpro_4.jpg</file_name> <size>277528</size> <checksum type="md5">809511063b1c38dba2db12c72ef9a1e7</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="5"> <file_name>cn_ipadpro_5.jpg</file_name> <size>163872</size> <checksum type="md5">5012117c965f09aefa46cb785829d2ff</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="1"> <file_name>cn_iphone_1.jpg</file_name> <size>107782</size> <checksum type="md5">a3cc5e2b2b9531e027c791651c5a0507</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="2"> <file_name>cn_iphone_2.jpg</file_name> <size>105454</size> <checksum type="md5">b345ce409f9ae090b25bc7e19101b57c</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="3"> <file_name>cn_iphone_3.jpg</file_name> <size>119079</size> <checksum type="md5">faf74ecf4b0c22a725070c1afbce7e30</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="4"> <file_name>cn_iphone_4.jpg</file_name> <size>147542</size> <checksum type="md5">1b80eb245c44ee91f794f956380f8590</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="5"> <file_name>cn_iphone_5.jpg</file_name> <size>94909</size> <checksum type="md5">04d6ce8b2a6a11886bbe5618764f6f52</checksum> </software_screenshot></software_screenshots>
+
+                            
+                        </locale>
+
+                         <locale name="en-CA">
+                            <title>Baby Love Match HD</title>
+                            <subtitle>Match pictures early teaching</subtitle>
+                            <description>* * all the kids in the world are playing the baby world series of baby love match games. * * * * * *
+* * the choice of thousands of parents around the world to open the door of wisdom for children! * * * * * *
+This is an early teaching game for children under the age of 10 in the Pad. As long as it is simple to drag the relevant pictures, it can be passed smoothly. Through the game, it can easily improve the baby's perception of color, shape, and inspire the imagination and creativity of the baby. The best parents accompany their children to play the game, giving guidance and education in the course of the game. Rich checkpoints, living rooms, kitchens, shops, schools, zoos and so on, let your children learn in different scenes. Boys and girls come to experience!
+    </description>
+                            <promotional_text>Let baby learn things by pairing pictures</promotional_text>
+                            <keywords>
+                               <keyword>宠物,洗澡,玩,的,音乐,星火,理财,加,减,乘除,3d,画画,教学,剪,头发,麦田,识字,乐高,忍者,画板,涂鸦,跳跃,保利,教育,教师,版,美,美发,助手,合,图,写,做,东西,熊猫,出行,汉子画面</keyword> 
+                            </keywords>
+                           <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots></software_screenshots>
+
+                            
+                        </locale>
+
+                         <locale name="en-AU">
+                            <title>Baby Love Match HD</title>
+                            <subtitle>Match pictures early teaching</subtitle>
+                            <description>* * all the kids in the world are playing the baby world series of baby love match games. * * * * * *
+* * the choice of thousands of parents around the world to open the door of wisdom for children! * * * * * *
+This is an early teaching game for children under the age of 10 in the Pad. As long as it is simple to drag the relevant pictures, it can be passed smoothly. Through the game, it can easily improve the baby's perception of color, shape, and inspire the imagination and creativity of the baby. The best parents accompany their children to play the game, giving guidance and education in the course of the game. Rich checkpoints, living rooms, kitchens, shops, schools, zoos and so on, let your children learn in different scenes. Boys and girls come to experience!
+    </description>
+                            <promotional_text>Let baby learn things by pairing pictures</promotional_text>
+                            <keywords>
+                               <keyword>宠物,洗澡,玩,的,音乐,星火,理财,加,减,乘除,3d,画画,教学,剪,头发,麦田,识字,乐高,忍者,画板,涂鸦,跳跃,保利,教育,教师,版,美,美发,助手,合,图,写,做,东西,熊猫,出行,汉子画面</keyword> 
+                            </keywords>
+                            <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots></software_screenshots>
+
+                            
+                        </locale>
+
+                         <locale name="en-GB">
+                            <title>Baby Love Match HD</title>
+                            <subtitle>Match pictures early teaching</subtitle>
+                            <description>* * all the kids in the world are playing the baby world series of baby love match games. * * * * * *
+* * the choice of thousands of parents around the world to open the door of wisdom for children! * * * * * *
+This is an early teaching game for children under the age of 10 in the Pad. As long as it is simple to drag the relevant pictures, it can be passed smoothly. Through the game, it can easily improve the baby's perception of color, shape, and inspire the imagination and creativity of the baby. The best parents accompany their children to play the game, giving guidance and education in the course of the game. Rich checkpoints, living rooms, kitchens, shops, schools, zoos and so on, let your children learn in different scenes. Boys and girls come to experience!
+    </description>
+                            <promotional_text>Let baby learn things by pairing pictures</promotional_text>
+                            <keywords>
+                               <keyword>宠物,洗澡,玩,的,音乐,星火,理财,加,减,乘除,3d,画画,教学,剪,头发,麦田,识字,乐高,忍者,画板,涂鸦,跳跃,保利,教育,教师,版,美,美发,助手,合,图,写,做,东西,熊猫,出行,汉子画面</keyword> 
+                            </keywords>
+                            <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots></software_screenshots>
+
+                            
+                        </locale>
+                        
+                    </locales>
+                </version>
+            </versions>
+            <products>
+                <product>
+                    <territory>WW</territory>
+                    <sales_start_date>2010-05-25</sales_start_date>
+                    <cleared_for_sale>true</cleared_for_sale>
+                    <wholesale_price_tier>0</wholesale_price_tier>
+                    <allow_volume_discount>false</allow_volume_discount>
+                </product>
+                <product>
+                    <territory>RU</territory>
+                    <cleared_for_sale>true</cleared_for_sale>
+                </product>
+            </products>
+          
+          
+
+           <in_app_purchases>
+                <in_app_purchase>
+                    <product_id>com.moonma.lianlianlematch.ipad.noad</product_id>
+                    <reference_name>noad</reference_name>
+                    <type>non-consumable</type>
+                    <products>
+                        <product>
+                            <cleared_for_sale>true</cleared_for_sale>
+                            <wholesale_price_tier>2</wholesale_price_tier>
+                        </product>
+                    </products>
+                    <locales>
+                        <locale name="en-US">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+
+                        <locale name="zh-Hans">
+                            <title>去除广告</title>
+                            <description>该产品可以去除应用内的所有广告</description>
+                        </locale>
+                        <locale name="en-CA">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+                        <locale name="en-AU">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+                        <locale name="en-GB">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+
+                        
+                    </locales>
+                    <review_screenshot>
+                        <file_name>in_app_purchases_screenshot.png</file_name>
+                        <size>96482</size>
+                        <checksum type="md5">dc4f197705c3983c730d236f54de2950</checksum>
+                    </review_screenshot>
+                    <!-- <review_notes></review_notes> -->
+                </in_app_purchase>
+               <!--  <in_app_purchase remove="true">
+                    <product_id>obsolete_com.cyberinteractive.tf.missiles.15</product_id>
+                </in_app_purchase> -->
+            </in_app_purchases>
+
+
+        </software_metadata>
+    </software>
+</package>

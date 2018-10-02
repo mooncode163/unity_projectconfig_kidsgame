@@ -1,0 +1,40 @@
+{
+    "APP_NAME_CN_ANDROID": "宝宝水果拼图HD",
+    "APP_NAME_EN_ANDROID": "BabyFruitPuzzleHD",
+    "APP_NAME_CN_IOS": "宝宝水果拼图HD",
+    "APP_NAME_EN_IOS": "BabyFruitPuzzleHD",
+    "PACKAGE_ANDROID": "com.moonma.pintufruit.pad",
+    "PACKAGE_IOS": "com.moonma.pintufruit.pad",
+    "APPVERSION_ANDROID": "1.0.0",
+    "APPVERSION_CODE_ANDROID": "100",
+    "APPVERSION_IOS": "1.0.0",
+    "need_upload_screenshot": false,
+    "APPSTORE_VERSION_UPDATE": {
+        "cn": "修复闪退",
+        "en": "Fix a Bug"
+    },
+    "APPSTORE_TITLE": {
+        "cn": "宝宝水果拼图HD",
+        "en": "Baby Fruit Puzzle HD"
+    },
+    "APPSTORE_SUBTITLE": {
+        "cn": "水果拼图乐园",
+        "en": "Fruit jigsaw Park"
+    },
+    "APPSTORE_PROMOTION": {
+        "cn": "让孩子认识各种水果",
+        "en": "Let the child know all kinds of fruit"
+    },
+    "APPSTORE_KEYWORD": {
+        "cn": "3岁宝宝游戏2,儿童识字启蒙,幼儿英语单词,上厕所,认知大全,动画片,2-3,拼图,专注学习免费6,直映认字,时空幻境,2kids学拼音拼读,爱刷牙,水果忍者,一,有机蔬菜种植,小孩玩的,益智,炒菜",
+        "en": "大家来找茬大冒险,莹石云视频,快乐小伴龙,安兔兔游戏助手,万能遥控器精灵美女报时,学习的,一起来,千丁管家,节奏大师免费,hdp直播,我们,夺宝,萤石运动,腾讯,集中注意力100,超级大本营,小胖"
+    },
+    "XIAOMI_KEYWORD": {
+        "cn": "3岁宝宝游戏2 儿童识字启蒙 幼儿英语单词 上厕所 认知大全 动画片 2-3 拼图 专注学习免费6 直映认字 时空幻境 2kids学拼音拼读 爱刷牙 水果忍者 一 有机蔬菜种植 小孩玩的 益智 炒菜",
+        "en": "大家来找茬大冒险 莹石云视频 快乐小伴龙 安兔兔游戏助手 万能遥控器精灵美女报时 学习的 一起来 千丁管家 节奏大师免费 hdp直播 我们 夺宝 萤石运动 腾讯 集中注意力100 超级大本营 小胖"
+    },
+    "software_url": "http://www.mooncore.cn",
+    "privacy_url": "http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
+    "support_url": "http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html",
+    "sku_app": "sku_pintufruit_pad"
+}

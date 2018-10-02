@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+
+
+
+</head>
+
+<body>
+    <!-- <img src="_" align="right"> -->
+    <!-- <a id="app_link" href=" " style="visibility:hidden">AppUrl</a> -->
+    <script>
+        //http://m.2cto.com/kf/201602/489685.html?spm=0.0.0.0.zSkJAH
+
+
+        function isWeiXin() {
+            var ua = navigator.userAgent.toLowerCase();
+            if (ua.indexOf("micromessenger") > -1) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        function isIos() {
+            var osUserAgent = navigator.userAgent.toLowerCase();
+            if (osUserAgent.indexOf("iphone") > -1 || osUserAgent.indexOf("ipad") > -1 || osUserAgent.indexOf("ipod") > -1) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        function isAndroid() {
+            var osUserAgent = navigator.userAgent.toLowerCase();
+            if (osUserAgent.indexOf("android") > -1 || osUserAgent.indexOf("adr") > -1) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        function isWin() {
+            var osUserAgent = navigator.userAgent.toLowerCase();
+            if (osUserAgent.indexOf("win") > -1) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        function gotoAppUrl(url) {
+            location.href = url;
+        }
+        function getAppUrl() {
+            var app_url_ios = "https://itunes.apple.com/cn/app/id1258503861?l=zh&ls=1&mt=8";
+            var app_url_android = "http://app.xiaomi.com/details?id=com.moonma.xiehanzi";
+            var app_url_pc = app_url_android;
+            var url = app_url_pc;
+            if (isIos()) {
+                url = app_url_ios;
+            }
+            if (isAndroid()) {
+                url = app_url_android;
+            }
+            if (isWin()) {
+                url = app_url_pc;
+            }
+            return url;
+        }
+
+        function detectOS() {
+            //
+            // location.href = 'http://www.baidu.com';
+            //return "windows";
+
+
+
+            // if (isWeiXin()) {
+            //     var imgs = document.getElementsByTagName('img');
+            //     for (var i = 0, j = imgs.length; i < j; i++) {
+
+            //         imgs[i].src = "weixin.png";
+
+            //     }
+
+
+            //     //or $("#id").attr("src","a.png")
+            // } else {
+            //     var imgs = document.getElementsByTagName('img');
+            //     for (var i = 0, j = imgs.length; i < j; i++) {
+            //         //隐藏图片
+            //         (imgs[i].onerror = function () {
+            //             imgs[i].style.display = 'none';
+            //         })(); //注意这里的写法。形如(function(){...})()，这是js里的一种特殊写法，很有效。
+
+            //         imgs[i].src = " ";
+            //     }
+            //     //or $("#id").attr("src","b.png")
+            // } 
+
+            
+
+            return osUserAgent;
+        }
+
+       gotoAppUrl(getAppUrl());
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

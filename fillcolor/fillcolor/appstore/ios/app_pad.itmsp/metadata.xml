@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://apple.com/itunes/importer" version="software5.9">
+   <!--  <provider>YuanFang Chen</provider> -->
+    <team_id>Y9ZUK2WTEE</team_id>
+    <software>
+        <vendor_id>sku_fillcolor_pad</vendor_id>
+        <software_metadata>
+            <versions>
+                <version string="1.0.0">
+                    <locales>
+                        <locale name="en-US">
+                            <title>Crazy Color Book HD</title>
+                            <subtitle>colorly coloring book</subtitle>
+                            <description>This is a painting application on the Pad to relieve pressure.
+In the crazy world of coloring, choose different colors, a few minutes you can draw a commendable work, fully relax, enjoy the joy of painting. When you enjoy the fun of painting quietly, time flies and worries will disappear.
+Hundreds of colors and lines, covering the beautiful flowers, exquisite beyond compare, true to life animal, rich texture, beautiful and lovely cat mandala. Give full play to your imagination and fill out the perfect world in your heart.
+- the operation is very simple! Light can be filled
+In the paint in two fingers to zoom in and out.
+- support Undo, removal, redrawing and save functions, allowing you to quickly create works.
+    </description>
+                            <promotional_text>Choose the favorite colors and fill out the wonderful paintings</promotional_text>
+                            <keywords>
+                               <keyword>秘密花园,球球大作战,开心消消乐,霸王餐大众点评网,小微部落冲突360手机内存清理大师,我爱先锋吉吉影音免费下载驾考宝典2016驾照,易到用车,色彩游戏的阿里智能云购,微商水印相机,大鱼吃小球,火影忍者外</keyword> 
+                            </keywords>
+                            <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url></privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_6330a6410101bnih.html</support_url>
+
+                            <software_screenshots> 
+<software_screenshot display_target="iOS-iPad-Pro" position="1"> <file_name>en_ipadpro_1.jpg</file_name> <size>322981</size> <checksum type="md5">98d067d34cb7c060e4656b2ba451b39d</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="2"> <file_name>en_ipadpro_2.jpg</file_name> <size>211505</size> <checksum type="md5">0ec20ca941486434d4c6ba87d35cba54</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="3"> <file_name>en_ipadpro_3.jpg</file_name> <size>227888</size> <checksum type="md5">bf9cedaea34145e2705ec27e23f9fdfa</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="4"> <file_name>en_ipadpro_4.jpg</file_name> <size>410953</size> <checksum type="md5">66cd62dc05860848c37aae4a3038e3c2</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="1"> <file_name>en_iphone_1.jpg</file_name> <size>264246</size> <checksum type="md5">26a428bc744b68c763c707e1a0da881f</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="2"> <file_name>en_iphone_2.jpg</file_name> <size>112135</size> <checksum type="md5">a30640df9e7d3175145db858a72674d1</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="3"> <file_name>en_iphone_3.jpg</file_name> <size>131424</size> <checksum type="md5">6c5ecc25052e9c83ddf9af7565e1f06f</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="4"> <file_name>en_iphone_4.jpg</file_name> <size>227915</size> <checksum type="md5">44cebbd32010a90ed9c4084a20265678</checksum> </software_screenshot></software_screenshots>
+
+                        </locale>
+
+                         <locale name="zh-Hans">
+                            <title>疯狂填色绘本HD</title>
+                            <subtitle>colorly着色书绘画</subtitle>
+                            <description>这是平板上的一款缓解压力的绘画应用。
+在疯狂填色的世界，挑选不同的颜色，几分钟你就能绘画出令人称赞的作品，充分地放松，尽情享受涂色的喜悦。在您静静地享受画画的乐趣时，时光飞逝，烦恼也会烟消云散。
+上百种颜色和线稿图，精美绝伦，涵盖美丽的花卉，栩栩如生的动物，丰富的纹理，美妙的曼陀罗以及可爱的猫咪。赶快来发挥您的想象力，填绘出心中完美的世界吧!
+ - 操作十分简单！轻按就能填色
+ - 在涂画中双指可放大缩小图稿。
+ - 支持撤销,清除,重画和保存等功能，让您快速创作作品。 
+    </description>
+                            <promotional_text>选择喜爱的颜色,填绘美妙绝伦的画作</promotional_text>
+                            <keywords>
+                               <keyword>秘密花园,球球大作战,开心消消乐,霸王餐大众点评网,小微部落冲突360手机内存清理大师,我爱先锋吉吉影音免费下载驾考宝典2016驾照,易到用车,色彩游戏的阿里智能云购,微商水印相机,大鱼吃小球,火影忍者外</keyword> 
+                            </keywords>
+                            <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url></privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_6330a6410101bnih.html</support_url>
+
+                            <software_screenshots> 
+<software_screenshot display_target="iOS-iPad-Pro" position="1"> <file_name>cn_ipadpro_1.jpg</file_name> <size>564089</size> <checksum type="md5">a6d10762048fd75dc58acc11b5500dda</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="2"> <file_name>cn_ipadpro_2.jpg</file_name> <size>211505</size> <checksum type="md5">0ec20ca941486434d4c6ba87d35cba54</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="3"> <file_name>cn_ipadpro_3.jpg</file_name> <size>218218</size> <checksum type="md5">4e4b96c7d73c7b0a8d4d504b17f00fd6</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="4"> <file_name>cn_ipadpro_4.jpg</file_name> <size>409525</size> <checksum type="md5">098c8aee316624e6acf5e5a534fd4678</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="1"> <file_name>cn_iphone_1.jpg</file_name> <size>288242</size> <checksum type="md5">1831302a03df3981bd4414e135f37fce</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="2"> <file_name>cn_iphone_2.jpg</file_name> <size>112135</size> <checksum type="md5">a30640df9e7d3175145db858a72674d1</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="3"> <file_name>cn_iphone_3.jpg</file_name> <size>128263</size> <checksum type="md5">a0909a2a68a63469962da67d321ec0ab</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="4"> <file_name>cn_iphone_4.jpg</file_name> <size>227280</size> <checksum type="md5">4d6236e4d4bf125195cff75ec7413a09</checksum> </software_screenshot></software_screenshots>
+
+                            
+                        </locale>
+
+                         <locale name="en-CA">
+                            <title>Crazy Color Book HD</title>
+                            <subtitle>colorly coloring book</subtitle>
+                            <description>This is a painting application on the Pad to relieve pressure.
+In the crazy world of coloring, choose different colors, a few minutes you can draw a commendable work, fully relax, enjoy the joy of painting. When you enjoy the fun of painting quietly, time flies and worries will disappear.
+Hundreds of colors and lines, covering the beautiful flowers, exquisite beyond compare, true to life animal, rich texture, beautiful and lovely cat mandala. Give full play to your imagination and fill out the perfect world in your heart.
+- the operation is very simple! Light can be filled
+In the paint in two fingers to zoom in and out.
+- support Undo, removal, redrawing and save functions, allowing you to quickly create works.
+    </description>
+                            <promotional_text>Choose the favorite colors and fill out the wonderful paintings</promotional_text>
+                            <keywords>
+                               <keyword>秘密花园,球球大作战,开心消消乐,霸王餐大众点评网,小微部落冲突360手机内存清理大师,我爱先锋吉吉影音免费下载驾考宝典2016驾照,易到用车,色彩游戏的阿里智能云购,微商水印相机,大鱼吃小球,火影忍者外</keyword> 
+                            </keywords>
+                           <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url></privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_6330a6410101bnih.html</support_url>
+
+                            <software_screenshots></software_screenshots>
+
+                            
+                        </locale>
+
+                         <locale name="en-AU">
+                            <title>Crazy Color Book HD</title>
+                            <subtitle>colorly coloring book</subtitle>
+                            <description>This is a painting application on the Pad to relieve pressure.
+In the crazy world of coloring, choose different colors, a few minutes you can draw a commendable work, fully relax, enjoy the joy of painting. When you enjoy the fun of painting quietly, time flies and worries will disappear.
+Hundreds of colors and lines, covering the beautiful flowers, exquisite beyond compare, true to life animal, rich texture, beautiful and lovely cat mandala. Give full play to your imagination and fill out the perfect world in your heart.
+- the operation is very simple! Light can be filled
+In the paint in two fingers to zoom in and out.
+- support Undo, removal, redrawing and save functions, allowing you to quickly create works.
+    </description>
+                            <promotional_text>Choose the favorite colors and fill out the wonderful paintings</promotional_text>
+                            <keywords>
+                               <keyword>秘密花园,球球大作战,开心消消乐,霸王餐大众点评网,小微部落冲突360手机内存清理大师,我爱先锋吉吉影音免费下载驾考宝典2016驾照,易到用车,色彩游戏的阿里智能云购,微商水印相机,大鱼吃小球,火影忍者外</keyword> 
+                            </keywords>
+                            <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url></privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_6330a6410101bnih.html</support_url>
+
+                            <software_screenshots></software_screenshots>
+
+                            
+                        </locale>
+
+                         <locale name="en-GB">
+                            <title>Crazy Color Book HD</title>
+                            <subtitle>colorly coloring book</subtitle>
+                            <description>This is a painting application on the Pad to relieve pressure.
+In the crazy world of coloring, choose different colors, a few minutes you can draw a commendable work, fully relax, enjoy the joy of painting. When you enjoy the fun of painting quietly, time flies and worries will disappear.
+Hundreds of colors and lines, covering the beautiful flowers, exquisite beyond compare, true to life animal, rich texture, beautiful and lovely cat mandala. Give full play to your imagination and fill out the perfect world in your heart.
+- the operation is very simple! Light can be filled
+In the paint in two fingers to zoom in and out.
+- support Undo, removal, redrawing and save functions, allowing you to quickly create works.
+    </description>
+                            <promotional_text>Choose the favorite colors and fill out the wonderful paintings</promotional_text>
+                            <keywords>
+                               <keyword>秘密花园,球球大作战,开心消消乐,霸王餐大众点评网,小微部落冲突360手机内存清理大师,我爱先锋吉吉影音免费下载驾考宝典2016驾照,易到用车,色彩游戏的阿里智能云购,微商水印相机,大鱼吃小球,火影忍者外</keyword> 
+                            </keywords>
+                            <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url></privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_6330a6410101bnih.html</support_url>
+
+                            <software_screenshots></software_screenshots>
+
+                            
+                        </locale>
+                        
+                    </locales>
+                </version>
+            </versions>
+            <products>
+                <product>
+                    <territory>WW</territory>
+                    <sales_start_date>2010-05-25</sales_start_date>
+                    <cleared_for_sale>true</cleared_for_sale>
+                    <wholesale_price_tier>0</wholesale_price_tier>
+                    <allow_volume_discount>false</allow_volume_discount>
+                </product>
+                <product>
+                    <territory>RU</territory>
+                    <cleared_for_sale>true</cleared_for_sale>
+                </product>
+            </products>
+          
+          
+
+           <in_app_purchases>
+                <in_app_purchase>
+                    <product_id>com.moonma.fillcolor.pad.noad</product_id>
+                    <reference_name>noad</reference_name>
+                    <type>non-consumable</type>
+                    <products>
+                        <product>
+                            <cleared_for_sale>true</cleared_for_sale>
+                            <wholesale_price_tier>2</wholesale_price_tier>
+                        </product>
+                    </products>
+                    <locales>
+                        <locale name="en-US">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+
+                        <locale name="zh-Hans">
+                            <title>去除广告</title>
+                            <description>该产品可以去除应用内的所有广告</description>
+                        </locale>
+                        <locale name="en-CA">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+                        <locale name="en-AU">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+                        <locale name="en-GB">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+
+                        
+                    </locales>
+                    <review_screenshot>
+                        <file_name>in_app_purchases_screenshot.png</file_name>
+                        <size>96482</size>
+                        <checksum type="md5">dc4f197705c3983c730d236f54de2950</checksum>
+                    </review_screenshot>
+                    <!-- <review_notes></review_notes> -->
+                </in_app_purchase>
+               <!--  <in_app_purchase remove="true">
+                    <product_id>obsolete_com.cyberinteractive.tf.missiles.15</product_id>
+                </in_app_purchase> -->
+            </in_app_purchases>
+
+
+        </software_metadata>
+    </software>
+</package>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://apple.com/itunes/importer" version="software5.9">
+   <!--  <provider>YuanFang Chen</provider> -->
+    <team_id>Y9ZUK2WTEE</team_id>
+    <software>
+        <vendor_id>sku_animalpintu</vendor_id>
+        <software_metadata>
+            <versions>
+                <version string="1.3.1">
+                    <locales>
+                        <locale name="en-US">
+                            <title>Kids Animal Puzzle</title>
+                            <subtitle>Kids puzzle piece</subtitle>
+                            <description>An interesting animal puzzle game of early education!
+There are all kinds of interesting and interesting animals in the zoo, so that babies can learn and learn quickly.
+It contains more than 100 species of animals, including birds, mammals, marine animals, insects, etc.
+Coordinate with standard pronunciation in Chinese and English, recognize animals, stimulate children's interest in learning, inspire children's imagination, memory, creativity, and develop intelligence.
+Baby, come and play with the animal fun puzzle together!
+    </description>
+                            <promotional_text>Help the baby to know all kinds of animals</promotional_text>
+                            <keywords>
+                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                            </keywords>
+                            <version_whats_new>Fix a Bug</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                        </locale>
+
+                         <locale name="zh-Hans">
+                            <title>儿童动物拼图</title>
+                            <subtitle>儿童拼图动物篇</subtitle>
+                            <description>
+        一款趣味动物拼图早教认知游戏！
+在动物乐园里有各种好玩又有趣的动物，可以让宝宝进行快速学习认知！
+包含100多种动物,涵盖鸟类动物，哺乳动物，海洋动物，昆虫等；
+配合标准中英文发音，认识动物，激发孩子学习兴趣，启发孩子的想象力、记忆力、创造力，开发智力；
+宝贝们，快来一起玩动物趣味拼图吧!
+    </description>
+                            <promotional_text>帮助宝宝认识各种各样的动物</promotional_text>
+                            <keywords>
+                               <keyword>阳阳爱写字魔力小孩过年宝宝学写字中华恐龙园汉字与书法海绵宝宝做汉堡朵拉历险记学做饭宝宝爱洗澡三字经读写版宝宝书孕育跟我学写汉字蓝猫学拼音小嘀削削serato自由诵读经典儿歌巴巴熊巴巴宝贝熊孩子钢笔书法</keyword> 
+                            </keywords>
+                            <version_whats_new>修复闪退</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                            
+                        </locale>
+
+                         <locale name="en-CA">
+                            <title>Kids Animal Puzzle</title>
+                            <subtitle>Kids puzzle piece</subtitle>
+                            <description>An interesting animal puzzle game of early education!
+There are all kinds of interesting and interesting animals in the zoo, so that babies can learn and learn quickly.
+It contains more than 100 species of animals, including birds, mammals, marine animals, insects, etc.
+Coordinate with standard pronunciation in Chinese and English, recognize animals, stimulate children's interest in learning, inspire children's imagination, memory, creativity, and develop intelligence.
+Baby, come and play with the animal fun puzzle together!
+    </description>
+                            <promotional_text>Help the baby to know all kinds of animals</promotional_text>
+                            <keywords>
+                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                            </keywords>
+                           <version_whats_new>Fix a Bug</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                            
+                        </locale>
+
+                         <locale name="en-AU">
+                            <title>Kids Animal Puzzle</title>
+                            <subtitle>Kids puzzle piece</subtitle>
+                            <description>An interesting animal puzzle game of early education!
+There are all kinds of interesting and interesting animals in the zoo, so that babies can learn and learn quickly.
+It contains more than 100 species of animals, including birds, mammals, marine animals, insects, etc.
+Coordinate with standard pronunciation in Chinese and English, recognize animals, stimulate children's interest in learning, inspire children's imagination, memory, creativity, and develop intelligence.
+Baby, come and play with the animal fun puzzle together!
+    </description>
+                            <promotional_text>Help the baby to know all kinds of animals</promotional_text>
+                            <keywords>
+                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                            </keywords>
+                            <version_whats_new>Fix a Bug</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                            
+                        </locale>
+
+                         <locale name="en-GB">
+                            <title>Kids Animal Puzzle</title>
+                            <subtitle>Kids puzzle piece</subtitle>
+                            <description>An interesting animal puzzle game of early education!
+There are all kinds of interesting and interesting animals in the zoo, so that babies can learn and learn quickly.
+It contains more than 100 species of animals, including birds, mammals, marine animals, insects, etc.
+Coordinate with standard pronunciation in Chinese and English, recognize animals, stimulate children's interest in learning, inspire children's imagination, memory, creativity, and develop intelligence.
+Baby, come and play with the animal fun puzzle together!
+    </description>
+                            <promotional_text>Help the baby to know all kinds of animals</promotional_text>
+                            <keywords>
+                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                            </keywords>
+                            <version_whats_new>Fix a Bug</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                            
+                        </locale>
+                        
+                    </locales>
+                </version>
+            </versions>
+            <products>
+                <product>
+                    <territory>WW</territory>
+                    <sales_start_date>2010-05-25</sales_start_date>
+                    <cleared_for_sale>true</cleared_for_sale>
+                    <wholesale_price_tier>0</wholesale_price_tier>
+                    <allow_volume_discount>false</allow_volume_discount>
+                </product>
+                <product>
+                    <territory>RU</territory>
+                    <cleared_for_sale>true</cleared_for_sale>
+                </product>
+            </products>
+          
+          
+
+           <in_app_purchases>
+                <in_app_purchase>
+                    <product_id>com.moonma.animalpintu.noad</product_id>
+                    <reference_name>noad</reference_name>
+                    <type>non-consumable</type>
+                    <products>
+                        <product>
+                            <cleared_for_sale>true</cleared_for_sale>
+                            <wholesale_price_tier>2</wholesale_price_tier>
+                        </product>
+                    </products>
+                    <locales>
+                        <locale name="en-US">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+
+                        <locale name="zh-Hans">
+                            <title>去除广告</title>
+                            <description>该产品可以去除应用内的所有广告</description>
+                        </locale>
+                        <locale name="en-CA">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+                        <locale name="en-AU">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+                        <locale name="en-GB">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+
+                        
+                    </locales>
+                    <review_screenshot>
+                        <file_name>in_app_purchases_screenshot.png</file_name>
+                        <size>96482</size>
+                        <checksum type="md5">dc4f197705c3983c730d236f54de2950</checksum>
+                    </review_screenshot>
+                    <!-- <review_notes></review_notes> -->
+                </in_app_purchase>
+               <!--  <in_app_purchase remove="true">
+                    <product_id>obsolete_com.cyberinteractive.tf.missiles.15</product_id>
+                </in_app_purchase> -->
+            </in_app_purchases>
+
+
+        </software_metadata>
+    </software>
+</package>

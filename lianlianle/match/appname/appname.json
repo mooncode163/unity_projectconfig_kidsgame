@@ -1,0 +1,40 @@
+{
+    "APP_NAME_CN_ANDROID": "儿童爱配对",
+    "APP_NAME_EN_ANDROID": "KidsLoveMatch",
+    "APP_NAME_CN_IOS": "儿童爱配对",
+    "APP_NAME_EN_IOS": "KidsLoveMatch",
+    "PACKAGE_ANDROID": "com.moonma.lianlianlematch",
+    "PACKAGE_IOS": "com.moonma.peidui",
+    "APPVERSION_ANDROID": "1.0.0",
+    "APPVERSION_CODE_ANDROID": "100",
+    "APPVERSION_IOS": "1.2.0",
+    "need_upload_screenshot": true,
+    "APPSTORE_VERSION_UPDATE": {
+        "cn": "修复闪退",
+        "en": "Fix a Bug"
+    },
+    "APPSTORE_TITLE": {
+        "cn": "儿童爱配对",
+        "en": "Kids Love Match"
+    },
+    "APPSTORE_SUBTITLE": {
+        "cn": "配对识图早教",
+        "en": "Match pictures early teaching"
+    },
+    "APPSTORE_PROMOTION": {
+        "cn": "通过配对图片让宝贝学习事物",
+        "en": "Let baby learn things by pairing pictures"
+    },
+    "APPSTORE_KEYWORD": {
+        "cn": "气球游戏,熊博士餐厅,爱拼图,宝宝巴士,学多多,射击动物乐园,找数字学习,孩子儿歌故事,宝贝知道app,佳佳儿童歌曲大全,幼儿数学训练,懂礼貌,学车模拟游乐园,yoyo卡箱,早,家长版,认,拼音,宝妈",
+        "en": "儿童拖乐,小马宝莉彩虹跑将,字宝宝乐园,像素工厂,拼图游戏大全,发音软件免费3岁,我乐学习,易互动,电路仿真钓鱼高手,加减法,挑战智力,涂鸦跳跃,搞笑视频app,魔力小孩数学,3d画画教学,乐高玩具"
+    },
+    "XIAOMI_KEYWORD": {
+        "cn": "气球游戏 熊博士餐厅 爱拼图 宝宝巴士 学多多 射击动物乐园 找数字学习 孩子儿歌故事 宝贝知道app 佳佳儿童歌曲大全 幼儿数学训练 懂礼貌 学车模拟游乐园 yoyo卡箱 早 家长版 认 拼音 宝妈",
+        "en": "儿童拖乐 小马宝莉彩虹跑将 字宝宝乐园 像素工厂 拼图游戏大全 发音软件免费3岁 我乐学习 易互动 电路仿真钓鱼高手 加减法 挑战智力 涂鸦跳跃 搞笑视频app 魔力小孩数学 3d画画教学 乐高玩具"
+    },
+    "software_url": "http://www.mooncore.cn",
+    "privacy_url": "http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
+    "support_url": "http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html",
+    "sku_app": "moonma_peidui"
+}

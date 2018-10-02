@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://apple.com/itunes/importer" version="software5.9">
+   <!--  <provider>YuanFang Chen</provider> -->
+    <team_id>Y9ZUK2WTEE</team_id>
+    <software>
+        <vendor_id>moonma_xuehanzi</vendor_id>
+        <software_metadata>
+            <versions>
+                <version string="1.8.0">
+                    <locales>
+                        <locale name="en-US">
+                            <title>Kids Chinese Word</title>
+                            <subtitle>Practice the stroke of Chinese</subtitle>
+                            <description>Hundreds of thousands of children in the world are playing the game of Chinese characters in "baby paradise" series.
+Children's Chinese character garden is designed for children to learn Chinese characters, and learning by strokes of Chinese characters.
+It can make the children know clearly the writing of Chinese characters, the direction and order of the strokes and so on. The visual memory of the Chinese characters is visualized, and the pronunciation of each Chinese and Cantonese pronunciation, as well as the corresponding picture instructions, is a good helper for the children to learn the Chinese characters, so that the experience can be quickly downloaded.
+    </description>
+                            <promotional_text>Help children quickly master Chinese character strokes</promotional_text>
+                            <keywords>
+                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                            </keywords>
+                            <version_whats_new>New free write mode</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                        </locale>
+
+                         <locale name="zh-Hans">
+                            <title>儿童汉字园-描绘练字的好帮手</title>
+                            <subtitle>练习汉字笔划书写</subtitle>
+                            <description>全球几十万小朋友都在玩的《宝宝乐园》系列之学习汉字游戏，全新登场！
+儿童汉字园是专为小朋友学习汉字而设计的，通过汉字笔画的学习
+能够令孩子清楚的知道汉字的落笔、笔划的方向及次序等，可视化地抄写中文增强对汉字的视觉记忆 ,并配有每个汉字的普通话和粤语读音以及相应的图片说明，是孩子们学习汉字的好帮手，赶快来下载体验吧！
+    </description>
+                            <promotional_text>帮助宝宝快速掌握汉字的笔画书写</promotional_text>
+                            <keywords>
+                               <keyword>识字, 汉字, 学汉字, 文字, 拖拖乐, 拼图, 教育, 乐看, 动画, 书法, 笔画, 练字, 魔力小孩识字, 儿歌点点, 多多, 悟空识字, 睡前故事宝宝, 瓦贝儿歌,凯叔讲故事, 熊大叔,母婴</keyword> 
+                            </keywords>
+                            <version_whats_new>新增自由写模式</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                            
+                        </locale>
+
+                         <locale name="en-CA">
+                            <title>Kids Chinese Word</title>
+                            <subtitle>Practice the stroke of Chinese</subtitle>
+                            <description>Hundreds of thousands of children in the world are playing the game of Chinese characters in "baby paradise" series.
+Children's Chinese character garden is designed for children to learn Chinese characters, and learning by strokes of Chinese characters.
+It can make the children know clearly the writing of Chinese characters, the direction and order of the strokes and so on. The visual memory of the Chinese characters is visualized, and the pronunciation of each Chinese and Cantonese pronunciation, as well as the corresponding picture instructions, is a good helper for the children to learn the Chinese characters, so that the experience can be quickly downloaded.
+    </description>
+                            <promotional_text>Help children quickly master Chinese character strokes</promotional_text>
+                            <keywords>
+                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                            </keywords>
+                           <version_whats_new>New free write mode</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                            
+                        </locale>
+
+                         <locale name="en-AU">
+                            <title>Kids Chinese Word</title>
+                            <subtitle>Practice the stroke of Chinese</subtitle>
+                            <description>Hundreds of thousands of children in the world are playing the game of Chinese characters in "baby paradise" series.
+Children's Chinese character garden is designed for children to learn Chinese characters, and learning by strokes of Chinese characters.
+It can make the children know clearly the writing of Chinese characters, the direction and order of the strokes and so on. The visual memory of the Chinese characters is visualized, and the pronunciation of each Chinese and Cantonese pronunciation, as well as the corresponding picture instructions, is a good helper for the children to learn the Chinese characters, so that the experience can be quickly downloaded.
+    </description>
+                            <promotional_text>Help children quickly master Chinese character strokes</promotional_text>
+                            <keywords>
+                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                            </keywords>
+                            <version_whats_new>New free write mode</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                            
+                        </locale>
+
+                         <locale name="en-GB">
+                            <title>Kids Chinese Word</title>
+                            <subtitle>Practice the stroke of Chinese</subtitle>
+                            <description>Hundreds of thousands of children in the world are playing the game of Chinese characters in "baby paradise" series.
+Children's Chinese character garden is designed for children to learn Chinese characters, and learning by strokes of Chinese characters.
+It can make the children know clearly the writing of Chinese characters, the direction and order of the strokes and so on. The visual memory of the Chinese characters is visualized, and the pronunciation of each Chinese and Cantonese pronunciation, as well as the corresponding picture instructions, is a good helper for the children to learn the Chinese characters, so that the experience can be quickly downloaded.
+    </description>
+                            <promotional_text>Help children quickly master Chinese character strokes</promotional_text>
+                            <keywords>
+                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                            </keywords>
+                            <version_whats_new>New free write mode</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                            
+                        </locale>
+                        
+                    </locales>
+                </version>
+            </versions>
+            <products>
+                <product>
+                    <territory>WW</territory>
+                    <sales_start_date>2010-05-25</sales_start_date>
+                    <cleared_for_sale>true</cleared_for_sale>
+                    <wholesale_price_tier>0</wholesale_price_tier>
+                    <allow_volume_discount>false</allow_volume_discount>
+                </product>
+                <product>
+                    <territory>RU</territory>
+                    <cleared_for_sale>true</cleared_for_sale>
+                </product>
+            </products>
+          
+          
+
+           <in_app_purchases>
+                <in_app_purchase>
+                    <product_id>com.moonma.xuehanzi.noad</product_id>
+                    <reference_name>noad</reference_name>
+                    <type>non-consumable</type>
+                    <products>
+                        <product>
+                            <cleared_for_sale>true</cleared_for_sale>
+                            <wholesale_price_tier>2</wholesale_price_tier>
+                        </product>
+                    </products>
+                    <locales>
+                        <locale name="en-US">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+
+                        <locale name="zh-Hans">
+                            <title>去除广告</title>
+                            <description>该产品可以去除应用内的所有广告</description>
+                        </locale>
+                        <locale name="en-CA">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+                        <locale name="en-AU">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+                        <locale name="en-GB">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+
+                        
+                    </locales>
+                    <review_screenshot>
+                        <file_name>in_app_purchases_screenshot.png</file_name>
+                        <size>96482</size>
+                        <checksum type="md5">dc4f197705c3983c730d236f54de2950</checksum>
+                    </review_screenshot>
+                    <!-- <review_notes></review_notes> -->
+                </in_app_purchase>
+               <!--  <in_app_purchase remove="true">
+                    <product_id>obsolete_com.cyberinteractive.tf.missiles.15</product_id>
+                </in_app_purchase> -->
+            </in_app_purchases>
+
+
+        </software_metadata>
+    </software>
+</package>

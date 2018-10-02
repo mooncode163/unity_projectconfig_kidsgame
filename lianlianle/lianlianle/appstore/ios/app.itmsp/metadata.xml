@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://apple.com/itunes/importer" version="software5.9">
+   <!--  <provider>YuanFang Chen</provider> -->
+    <team_id>Y9ZUK2WTEE</team_id>
+    <software>
+        <vendor_id>moonma_lianlianle</vendor_id>
+        <software_metadata>
+            <versions>
+                <version string="1.9.0">
+                    <locales>
+                        <locale name="en-US">
+                            <title>Kids Match</title>
+                            <subtitle>Understanding early education</subtitle>
+                            <description>This is a children's early childhood learning game, which can effectively promote children's cognition of color and shape, and inspire children's imagination and creativity. Let parents play the game with their children, giving guidance and education during the game. Gameplay: drag the upper and lower items match correctly, that is, victory. Provide rich checkpoints, living rooms, kitchens, shops, schools, zoos, etc., so that your children can learn in different scenes.
+    </description>
+                            <promotional_text>Learn things quickly through the connection of items</promotional_text>
+                            <keywords>
+                               <keyword>儿童拖乐,小马宝莉彩虹跑将,字宝宝乐园,像素工厂,拼图游戏大全,发音软件免费3岁,我乐学习,易互动,电路仿真钓鱼高手,加减法,挑战智力,涂鸦跳跃,搞笑视频app,魔力小孩数学,3d画画教学,乐高玩具</keyword> 
+                            </keywords>
+                            <version_whats_new>Fix a Bug</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                        </locale>
+
+                         <locale name="zh-Hans">
+                            <title>儿童连连乐-连图认知早教</title>
+                            <subtitle>连图认知早教</subtitle>
+                            <description>这是一款儿童早教学习游戏，可以有效促进儿童对颜色，形状的认知，启发儿童的想象力和创造力。让爸妈陪同孩子一起玩该游戏，在游戏过程中给与指导与教育。 游戏玩法：拖动上下方物品匹配正确即胜利。提供丰富的关卡，客厅、厨房、商店、学校、动物园等，让您的孩子在不同场景中进行不停的学习！
+    </description>
+                            <promotional_text>通过物品的连线快速学习事物</promotional_text>
+                            <keywords>
+                               <keyword>儿童拖乐,小马宝莉彩虹跑将,嘉兴智慧公交日照,我乐学习,宝宝爱听,刷牙游戏王国,潘多拉app,树家长,快手小办,小熊猫做饭,魔盒,睡前故事大全,魔力小孩数学,幼儿园拼音,加减法,发音软件免费,巴士</keyword> 
+                            </keywords>
+                            <version_whats_new>修复闪退</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                            
+                        </locale>
+
+                         <locale name="en-CA">
+                            <title>Kids Match</title>
+                            <subtitle>Understanding early education</subtitle>
+                            <description>This is a children's early childhood learning game, which can effectively promote children's cognition of color and shape, and inspire children's imagination and creativity. Let parents play the game with their children, giving guidance and education during the game. Gameplay: drag the upper and lower items match correctly, that is, victory. Provide rich checkpoints, living rooms, kitchens, shops, schools, zoos, etc., so that your children can learn in different scenes.
+    </description>
+                            <promotional_text>Learn things quickly through the connection of items</promotional_text>
+                            <keywords>
+                               <keyword>儿童拖乐,小马宝莉彩虹跑将,字宝宝乐园,像素工厂,拼图游戏大全,发音软件免费3岁,我乐学习,易互动,电路仿真钓鱼高手,加减法,挑战智力,涂鸦跳跃,搞笑视频app,魔力小孩数学,3d画画教学,乐高玩具</keyword> 
+                            </keywords>
+                           <version_whats_new>Fix a Bug</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                            
+                        </locale>
+
+                         <locale name="en-AU">
+                            <title>Kids Match</title>
+                            <subtitle>Understanding early education</subtitle>
+                            <description>This is a children's early childhood learning game, which can effectively promote children's cognition of color and shape, and inspire children's imagination and creativity. Let parents play the game with their children, giving guidance and education during the game. Gameplay: drag the upper and lower items match correctly, that is, victory. Provide rich checkpoints, living rooms, kitchens, shops, schools, zoos, etc., so that your children can learn in different scenes.
+    </description>
+                            <promotional_text>Learn things quickly through the connection of items</promotional_text>
+                            <keywords>
+                               <keyword>儿童拖乐,小马宝莉彩虹跑将,字宝宝乐园,像素工厂,拼图游戏大全,发音软件免费3岁,我乐学习,易互动,电路仿真钓鱼高手,加减法,挑战智力,涂鸦跳跃,搞笑视频app,魔力小孩数学,3d画画教学,乐高玩具</keyword> 
+                            </keywords>
+                            <version_whats_new>Fix a Bug</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                            
+                        </locale>
+
+                         <locale name="en-GB">
+                            <title>Kids Match</title>
+                            <subtitle>Understanding early education</subtitle>
+                            <description>This is a children's early childhood learning game, which can effectively promote children's cognition of color and shape, and inspire children's imagination and creativity. Let parents play the game with their children, giving guidance and education during the game. Gameplay: drag the upper and lower items match correctly, that is, victory. Provide rich checkpoints, living rooms, kitchens, shops, schools, zoos, etc., so that your children can learn in different scenes.
+    </description>
+                            <promotional_text>Learn things quickly through the connection of items</promotional_text>
+                            <keywords>
+                               <keyword>儿童拖乐,小马宝莉彩虹跑将,字宝宝乐园,像素工厂,拼图游戏大全,发音软件免费3岁,我乐学习,易互动,电路仿真钓鱼高手,加减法,挑战智力,涂鸦跳跃,搞笑视频app,魔力小孩数学,3d画画教学,乐高玩具</keyword> 
+                            </keywords>
+                            <version_whats_new>Fix a Bug</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                            
+                        </locale>
+                        
+                    </locales>
+                </version>
+            </versions>
+            <products>
+                <product>
+                    <territory>WW</territory>
+                    <sales_start_date>2010-05-25</sales_start_date>
+                    <cleared_for_sale>true</cleared_for_sale>
+                    <wholesale_price_tier>0</wholesale_price_tier>
+                    <allow_volume_discount>false</allow_volume_discount>
+                </product>
+                <product>
+                    <territory>RU</territory>
+                    <cleared_for_sale>true</cleared_for_sale>
+                </product>
+            </products>
+          
+          
+
+           <in_app_purchases>
+                <in_app_purchase>
+                    <product_id>com.moonma.lianlianle.noad</product_id>
+                    <reference_name>noad</reference_name>
+                    <type>non-consumable</type>
+                    <products>
+                        <product>
+                            <cleared_for_sale>true</cleared_for_sale>
+                            <wholesale_price_tier>2</wholesale_price_tier>
+                        </product>
+                    </products>
+                    <locales>
+                        <locale name="en-US">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+
+                        <locale name="zh-Hans">
+                            <title>去除广告</title>
+                            <description>该产品可以去除应用内的所有广告</description>
+                        </locale>
+                        <locale name="en-CA">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+                        <locale name="en-AU">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+                        <locale name="en-GB">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+
+                        
+                    </locales>
+                    <review_screenshot>
+                        <file_name>in_app_purchases_screenshot.png</file_name>
+                        <size>96482</size>
+                        <checksum type="md5">dc4f197705c3983c730d236f54de2950</checksum>
+                    </review_screenshot>
+                    <!-- <review_notes></review_notes> -->
+                </in_app_purchase>
+               <!--  <in_app_purchase remove="true">
+                    <product_id>obsolete_com.cyberinteractive.tf.missiles.15</product_id>
+                </in_app_purchase> -->
+            </in_app_purchases>
+
+
+        </software_metadata>
+    </software>
+</package>

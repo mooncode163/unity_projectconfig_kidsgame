@@ -1,0 +1,36 @@
+{
+    "APP_NAME_CN_ANDROID": "宝宝农场找找乐HD",
+    "APP_NAME_EN_ANDROID": "BabyFarmFindHD",
+    "APP_NAME_CN_IOS": "宝宝农场找找乐HD",
+    "APP_NAME_EN_IOS": "BabyFarmFindHD",
+    "PACKAGE_ANDROID": "com.moonma.nongchangfind.pad",
+    "PACKAGE_IOS": "com.moonma.nongchangfind.pad",
+    "APPVERSION_ANDROID": "1.2.1",
+    "APPVERSION_CODE_ANDROID": "121",
+    "APPVERSION_IOS": "1.2.0",
+    "need_upload_screenshot": false,
+    "APPSTORE_VERSION_UPDATE": {
+        "cn": "修复闪退",
+        "en": "Fix a Bug"
+    },
+    "APPSTORE_TITLE": {
+        "cn": "宝宝农场找找乐HD-培养观察力",
+        "en": "Baby Farm Find HD Observability"
+    },
+    "APPSTORE_SUBTITLE": {
+        "cn": "锻炼视觉搜索能力",
+        "en": "Exercise visual search ability"
+    },
+    "APPSTORE_PROMOTION": {
+        "cn": "快速提高宝宝的观察力和视觉搜索能力！",
+        "en": "Quickly improve the baby's observation and visual search ability!"
+    },
+    "APPSTORE_KEYWORD": {
+        "cn": "拼多多机器人梦工厂碰碰狐宝宝美食街点点多纳多多宝宝巴士瓦贝儿歌悟空识字学数学未来骑士团宝贝英语说趣味食物火车总动员开心蔬菜小牙医美食节熊猫博士小镇画彩蛋悟空识字恐龙救援车马儿的神奇大冒险小企鹅乐园魔力",
+        "en": "拼多多机器人梦工厂碰碰狐宝宝美食街点点多纳多多宝宝巴士瓦贝儿歌悟空识字学数学未来骑士团宝贝英语说趣味食物火车总动员开心蔬菜小牙医美食节熊猫博士小镇画彩蛋悟空识字恐龙救援车马儿的神奇大冒险小企鹅乐园魔力"
+    },
+    "software_url": "http://www.mooncore.cn",
+    "privacy_url": "http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
+    "support_url": "http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html",
+    "sku_app": "nongchangfind_pad"
+}

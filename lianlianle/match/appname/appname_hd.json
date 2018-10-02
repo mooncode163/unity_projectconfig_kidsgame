@@ -1,0 +1,40 @@
+{
+    "APP_NAME_CN_ANDROID": "宝宝爱配对HD",
+    "APP_NAME_EN_ANDROID": "BabyLoveMatchHD",
+    "APP_NAME_CN_IOS": "宝宝爱配对HD",
+    "APP_NAME_EN_IOS": "BabyLoveMatchHD",
+    "PACKAGE_ANDROID": "com.moonma.lianlianlematch.pad",
+    "PACKAGE_IOS": "com.moonma.lianlianlematch.ipad",
+    "APPVERSION_ANDROID": "1.0.0",
+    "APPVERSION_CODE_ANDROID": "100",
+    "APPVERSION_IOS": "1.0.0",
+    "need_upload_screenshot": false,
+    "APPSTORE_VERSION_UPDATE": {
+        "cn": "修复闪退",
+        "en": "Fix a Bug"
+    },
+    "APPSTORE_TITLE": {
+        "cn": "宝宝爱配对HD",
+        "en": "Baby Love Match HD"
+    },
+    "APPSTORE_SUBTITLE": {
+        "cn": "配对识图早教",
+        "en": "Match pictures early teaching"
+    },
+    "APPSTORE_PROMOTION": {
+        "cn": "通过配对图片让宝贝学习事物",
+        "en": "Let baby learn things by pairing pictures"
+    },
+    "APPSTORE_KEYWORD": {
+        "cn": "小学一年级语文上册,文字转拼音打字,儿童学汉字,口语100分,练习写字,快乐小读,人教版,爱作业,识字游戏,直映认字软件,学习,噗通,汉子王国,认识字,宝宝认数字,拼读,宝贝数学,语文课本,法,成人",
+        "en": "宠物,洗澡,玩,的,音乐,星火,理财,加,减,乘除,3d,画画,教学,剪,头发,麦田,识字,乐高,忍者,画板,涂鸦,跳跃,保利,教育,教师,版,美,美发,助手,合,图,写,做,东西,熊猫,出行,汉子画面"
+    },
+    "XIAOMI_KEYWORD": {
+        "cn": "小学一年级语文上册 文字转拼音打字 儿童学汉字 口语100分 练习写字 快乐小读 人教版 爱作业 识字游戏 直映认字软件 学习 噗通 汉子王国 认识字 宝宝认数字 拼读 宝贝数学 语文课本 法 成人",
+        "en": "宠物 洗澡 玩 的 音乐 星火 理财 加 减 乘除 3d 画画 教学 剪 头发 麦田 识字 乐高 忍者 画板 涂鸦 跳跃 保利 教育 教师 版 美 美发 助手 合 图 写 做 东西 熊猫 出行 汉子画面"
+    },
+    "software_url": "http://www.mooncore.cn",
+    "privacy_url": "http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
+    "support_url": "http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html",
+    "sku_app": "lianlianlematch.pad"
+}

@@ -1,0 +1,36 @@
+{
+    "APP_NAME_CN_ANDROID": "疯狂填色绘本HD",
+    "APP_NAME_EN_ANDROID": "CrazyColorBookHD",
+    "APP_NAME_CN_IOS": "疯狂填色绘本HD",
+    "APP_NAME_EN_IOS": "CrazyColorBookHD",
+    "PACKAGE_ANDROID": "com.moonma.fillcolor.pad",
+    "PACKAGE_IOS": "com.moonma.fillcolor.pad",
+    "APPVERSION_ANDROID": "1.2.1",
+    "APPVERSION_CODE_ANDROID": "1201",
+    "APPVERSION_IOS": "1.0.0",
+    "need_upload_screenshot": false,
+    "APPSTORE_VERSION_UPDATE": {
+        "cn": " 新增功能：\n1,颜色吸管 \n2,任意颜色选择",
+        "en": "New features: \n1, color pipe \n2, arbitrary color selection"
+    },
+    "APPSTORE_TITLE": {
+        "cn": "疯狂填色绘本HD",
+        "en": "Crazy Color Book HD"
+    },
+    "APPSTORE_SUBTITLE": {
+        "cn": "colorly着色书绘画",
+        "en": "colorly coloring book"
+    },
+    "APPSTORE_PROMOTION": {
+        "cn": "选择喜爱的颜色,填绘美妙绝伦的画作",
+        "en": "Choose the favorite colors and fill out the wonderful paintings"
+    },
+    "APPSTORE_KEYWORD": {
+        "cn": "秘密花园,球球大作战,开心消消乐,霸王餐大众点评网,小微部落冲突360手机内存清理大师,我爱先锋吉吉影音免费下载驾考宝典2016驾照,易到用车,色彩游戏的阿里智能云购,微商水印相机,大鱼吃小球,火影忍者外",
+        "en": "秘密花园,球球大作战,开心消消乐,霸王餐大众点评网,小微部落冲突360手机内存清理大师,我爱先锋吉吉影音免费下载驾考宝典2016驾照,易到用车,色彩游戏的阿里智能云购,微商水印相机,大鱼吃小球,火影忍者外"
+    },
+    "software_url": "http://www.mooncore.cn",
+    "privacy_url": "",
+    "support_url": "http://blog.sina.com.cn/s/blog_6330a6410101bnih.html",
+    "sku_app": "sku_fillcolor_pad"
+}

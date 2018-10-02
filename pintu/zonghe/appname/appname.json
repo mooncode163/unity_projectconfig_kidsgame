@@ -1,0 +1,40 @@
+{
+    "APP_NAME_CN_ANDROID": "儿童爱拼图2",
+    "APP_NAME_EN_ANDROID": "KidsLovePuzzle",
+    "APP_NAME_CN_IOS": "儿童爱拼图",
+    "APP_NAME_EN_IOS": "KidsLovePuzzle",
+    "PACKAGE_ANDROID": "com.moonma.pingtu",
+    "PACKAGE_IOS": "com.moonma.pingtu",
+    "APPVERSION_ANDROID": "1.6.0",
+    "APPVERSION_CODE_ANDROID": "160",
+    "APPVERSION_IOS": "1.6.0",
+    "need_upload_screenshot": false,
+    "APPSTORE_VERSION_UPDATE": {
+        "cn": "修复闪退",
+        "en": "Fix a Bug"
+    },
+    "APPSTORE_TITLE": {
+        "cn": "儿童拼图乐园",
+        "en": "Kids Love Puzzle"
+    },
+    "APPSTORE_SUBTITLE": {
+        "cn": "儿童拼图乐园",
+        "en": "Children's Puzzle"
+    },
+    "APPSTORE_PROMOTION": {
+        "cn": "通过拼图让孩子认识常见的事物",
+        "en": "Make a child know the common things through a jigsaw puzzle"
+    },
+    "APPSTORE_KEYWORD": {
+        "cn": "小孩玩的游戏大全,宝宝爱拼图,飞利浦儿童牙刷,认识动物医院小维智慧家庭,睡前音乐相册免费6岁,幼儿英语启蒙,掌上宝贝学英语,视通2,0,卫士,幼信通,汪汪队动画片,学声音,360电话,孩子长相预测",
+        "en": "麦田认字软件,叫识字游戏,儿童益智,2kids学拼音,直映,学前数学,3岁宝宝爱学习汉字大赛,英大大智慧,画画大全,证券,幼儿园手工制作,悟空,认识字,童话故事成人,小鸡,在家早教音乐,巴巴熊儿歌多多"
+    },
+    "XIAOMI_KEYWORD": {
+        "cn": "小孩玩的游戏大全 宝宝爱拼图 飞利浦儿童牙刷 认识动物医院小维智慧家庭 睡前音乐相册免费6岁 幼儿英语启蒙 掌上宝贝学英语 视通2 0 卫士 幼信通 汪汪队动画片 学声音 360电话 孩子长相预测",
+        "en": "麦田认字软件 叫识字游戏 儿童益智 2kids学拼音 直映 学前数学 3岁宝宝爱学习汉字大赛 英大大智慧 画画大全 证券 幼儿园手工制作 悟空 认识字 童话故事成人 小鸡 在家早教音乐 巴巴熊儿歌多多"
+    },
+    "software_url": "http://www.mooncore.cn",
+    "privacy_url": "http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
+    "support_url": "http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html",
+    "sku_app": "commoonmapingtu"
+}

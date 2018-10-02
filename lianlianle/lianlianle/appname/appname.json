@@ -1,0 +1,36 @@
+{
+    "APP_NAME_CN_ANDROID": "儿童连连乐",
+    "APP_NAME_EN_ANDROID": "KidsMatchLe",
+    "APP_NAME_CN_IOS": "儿童连连乐",
+    "APP_NAME_EN_IOS": "KidsMatchLe",
+    "PACKAGE_ANDROID": "com.moonma.lianlianle2",
+    "PACKAGE_IOS": "com.moonma.lianlianle",
+    "APPVERSION_ANDROID": "1.9.0",
+    "APPVERSION_CODE_ANDROID": "190",
+    "APPVERSION_IOS": "1.9.0",
+    "need_upload_screenshot": false,
+    "APPSTORE_VERSION_UPDATE": {
+        "cn": "修复闪退",
+        "en": "Fix a Bug"
+    },
+    "APPSTORE_TITLE": {
+        "cn": "儿童连连乐-连图认知早教",
+        "en": "Kids Match"
+    },
+    "APPSTORE_SUBTITLE": {
+        "cn": "连图认知早教",
+        "en": "Understanding early education"
+    },
+    "APPSTORE_PROMOTION": {
+        "cn": "通过物品的连线快速学习事物",
+        "en": "Learn things quickly through the connection of items"
+    },
+    "APPSTORE_KEYWORD": {
+        "cn": "儿童拖乐,小马宝莉彩虹跑将,嘉兴智慧公交日照,我乐学习,宝宝爱听,刷牙游戏王国,潘多拉app,树家长,快手小办,小熊猫做饭,魔盒,睡前故事大全,魔力小孩数学,幼儿园拼音,加减法,发音软件免费,巴士",
+        "en": "儿童拖乐,小马宝莉彩虹跑将,字宝宝乐园,像素工厂,拼图游戏大全,发音软件免费3岁,我乐学习,易互动,电路仿真钓鱼高手,加减法,挑战智力,涂鸦跳跃,搞笑视频app,魔力小孩数学,3d画画教学,乐高玩具"
+    },
+    "software_url": "http://www.mooncore.cn",
+    "privacy_url": "http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
+    "support_url": "http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html",
+    "sku_app": "moonma_lianlianle"
+}

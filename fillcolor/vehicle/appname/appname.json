@@ -1,0 +1,40 @@
+{
+    "APP_NAME_CN_ANDROID": "儿童交通填色绘画",
+    "APP_NAME_EN_ANDROID": "KidsVehicleColor",
+    "APP_NAME_CN_IOS": "儿童交通填色绘画",
+    "APP_NAME_EN_IOS": "KidsVehicleColor",
+    "PACKAGE_ANDROID": "com.moonma.fillcolorvehicle",
+    "PACKAGE_IOS": "com.moonma.fillcolorvehicle",
+    "APPVERSION_ANDROID": "1.1.0",
+    "APPVERSION_CODE_ANDROID": "110",
+    "APPVERSION_IOS": "1.0.0",
+    "need_upload_screenshot": false,
+    "APPSTORE_VERSION_UPDATE": {
+        "cn": "修复闪退",
+        "en": "Fix a Bug"
+    },
+    "APPSTORE_TITLE": {
+        "cn": "儿童交通填色绘画-涂鸦着色书",
+        "en": "Kids Vehicle Color"
+    },
+    "APPSTORE_SUBTITLE": {
+        "cn": "交通工具着色书",
+        "en": "Vehicle Coloring Book"
+    },
+    "APPSTORE_PROMOTION": {
+        "cn": "通过绘画培养孩子的创造力和想象力",
+        "en": "Nurture children's creativity and imagination through painting"
+    },
+    "APPSTORE_KEYWORD": {
+        "cn": "宝宝爱画画,小画板涂鸦,奇妙,儿童绘画,艺术,记忆力游戏,认水果,填色,巴士儿歌视频,幼儿园,妙屋,简笔画大全,学,上厕所,集中注意力100,交通工具,游乐园,脑力训练,软件,米,教程,一画吧,概念",
+        "en": "画面,画家,添,汉子,笔画,顺序,画图,板,高,智商,奇,喵,动画,表情,涂色,认识,动物,教学,家,智力,开发,巨头,孩子,几何,笔顺,查询,大师,英文,动画片,播放器,学画,漫画,调色,盘"
+    },
+    "XIAOMI_KEYWORD": {
+        "cn": "宝宝爱画画 小画板涂鸦 奇妙 儿童绘画 艺术 记忆力游戏 认水果 填色 巴士儿歌视频 幼儿园 妙屋 简笔画大全 学 上厕所 集中注意力100 交通工具 游乐园 脑力训练 软件 米 教程 一画吧 概念",
+        "en": "画面 画家 添 汉子 笔画 顺序 画图 板 高 智商 奇 喵 动画 表情 涂色 认识 动物 教学 家 智力 开发 巨头 孩子 几何 笔顺 查询 大师 英文 动画片 播放器 学画 漫画 调色 盘"
+    },
+    "software_url": "http://www.mooncore.cn",
+    "privacy_url": "http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
+    "support_url": "http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html",
+    "sku_app": "fillcolorvehicle"
+}

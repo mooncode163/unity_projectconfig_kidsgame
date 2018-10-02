@@ -1,0 +1,18 @@
+{
+    
+       "APP_NAME_CN_ANDROID":"宝宝动物猜猜乐HD"
+       , "APP_NAME_EN_ANDROID":"BabyGuessAnimalHD"
+       , "APP_NAME_CN_IOS":"宝宝动物猜猜乐HD"
+       , "APP_NAME_EN_IOS":"BabyGuessAnimalHD"
+    
+       , "PACKAGE_ANDROID":"com.moonma.caicaileanimal.pad" 
+       , "PACKAGE_IOS":"com.moonma.caicaileanimal.pad" 
+    
+       , "APPVERSION_ANDROID":"1.0.0" 
+       , "APPVERSION_CODE_ANDROID":"100" 
+        
+    
+       , "APPVERSION_IOS":"1.0.0"  
+    
+    }
+    

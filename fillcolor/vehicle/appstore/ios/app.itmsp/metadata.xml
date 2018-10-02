@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://apple.com/itunes/importer" version="software5.9">
+   <!--  <provider>YuanFang Chen</provider> -->
+    <team_id>Y9ZUK2WTEE</team_id>
+    <software>
+        <vendor_id>fillcolorvehicle</vendor_id>
+        <software_metadata>
+            <versions>
+                <version string="1.0.0">
+                    <locales>
+                        <locale name="en-US">
+                            <title>Kids Vehicle Color</title>
+                            <subtitle>Vehicle Coloring Book</subtitle>
+                            <description>This is an interesting traffic color painting software for children, which allows children to choose different colors to color directly on the online manuscript and create their own wonderful paintings. Enrich the gradient color, give play to children's imagination, let children feel the joy of painting and color.
+When children are growing up, the outside world is fresh for them. Curiosity can make them interested in all things in the world. And this is the power source of children's painting. They like to paint new things in their eyes by paintbrush. A small thing, the children have to see through their own observation, find their more concrete structure, more colorful changes in color, so that the most essential and the most vivid beauty of things can be described. This observation method can also greatly improve rational thinking and logical reasoning ability.
+Entertainment is a child's nature and his right. Without enough entertainment, children can not develop physically and mentally. Painting is one of their favorite ways of entertainment. It is also the safest, the most economical, the most noble, and the most beneficial entertainment for physical and mental health.
+The children pick up your brush and create beautiful pictures. After the pictures are finished, you can share with your parents or the partners, and see whose paintings are more lovely and beautiful.
+Transportation tools include: reconnaissance aircraft, bus, warship, assault rifle, cannon, carbine, truck, double deck bus, jeep, dump, tank, garbage truck, missile, missile, car, cruiser, revolver, sailboat, boat, battleship, fighter, pistol, frigate, tractor, excavator, dozer, bulldozer, dozer, bulldozer, mixing truck, motorcycle, attack Machine, ambulance, open sports car, rifle, rifle, rifle, howitzer, fighter, water aircraft, hydrofoil, water and water aircraft, water and land, fire truck, submarine, artillery, rocket, train, fire balloon, sniper gun, electric car, trolley, cable car, old car, bicycle, aircraft carrier, ship gun, armored car, police car, sports car, tread. Board cars, ships, bombers, light rail, mortars, shotguns, AWACS, planes, destroyers, antiaircraft guns and so on.
+The features of our products:
+1, the product covers more than 300 kinds of transportation pictures and 100+ color selection.
+2, painting can be preserved. Next time you can choose to continue painting.
+3, the design is exquisite, accords with the visual demand of image learning, and deepens memory.
+4, the developer of our product itself is also the parent of the child, which is more concerned about the growth of the children, and we have also invited parenting experts to design this application.
+    </description>
+                            <promotional_text>Nurture children's creativity and imagination through painting</promotional_text>
+                            <keywords>
+                               <keyword>画面,画家,添,汉子,笔画,顺序,画图,板,高,智商,奇,喵,动画,表情,涂色,认识,动物,教学,家,智力,开发,巨头,孩子,几何,笔顺,查询,大师,英文,动画片,播放器,学画,漫画,调色,盘</keyword> 
+                            </keywords>
+                            <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots> 
+<software_screenshot display_target="iOS-iPad-Pro" position="1"> <file_name>en_ipadpro_1.jpg</file_name> <size>201447</size> <checksum type="md5">6793db4071c8d957fbec5c148c601f0f</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="2"> <file_name>en_ipadpro_2.jpg</file_name> <size>175786</size> <checksum type="md5">806faec9efd50526b51684349b4bfd84</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="3"> <file_name>en_ipadpro_3.jpg</file_name> <size>177691</size> <checksum type="md5">d1f732c28c168ab49f947ce19c315191</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="4"> <file_name>en_ipadpro_4.jpg</file_name> <size>288658</size> <checksum type="md5">09583e5b5718a9d310c7b3eb1aff8039</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="1"> <file_name>en_iphone_1.jpg</file_name> <size>124652</size> <checksum type="md5">e2eccb868f53a5c566e1b8f1f887e35a</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="2"> <file_name>en_iphone_2.jpg</file_name> <size>105310</size> <checksum type="md5">c8d0eab2f683f6d1e4f9796edf51a41e</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="3"> <file_name>en_iphone_3.jpg</file_name> <size>116827</size> <checksum type="md5">5b051a06dd00c85b635d1c8f1b56e574</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="4"> <file_name>en_iphone_4.jpg</file_name> <size>164980</size> <checksum type="md5">6298404c14a7357875a0ceb928e756b3</checksum> </software_screenshot></software_screenshots>
+
+                        </locale>
+
+                         <locale name="zh-Hans">
+                            <title>儿童交通填色绘画-涂鸦着色书</title>
+                            <subtitle>交通工具着色书</subtitle>
+                            <description>这是一款针对儿童的有趣的交通填色绘画软件， 可以让孩子选择不同的颜色直接在线稿图上涂色，创作出属于自己的美妙绝伦的绘画作品。丰富渐变的颜色，发挥孩子的想象力，让孩子感受绘画及色彩的乐趣 
+    	儿童在成长的阶段，外面世界对于他们来说都是新鲜的，好奇心可以让他们对世界万物充满兴趣。而这一点正是少儿绘画的动力源泉。他们喜欢把眼中的新鲜事物通过画笔描绘出来。一个细小的事物，孩子们要通过自己的观察，发现它们更具体的结构组成，更丰富的颜色变化，这样才能把事物最本质和最传神的美描绘出来。这种观察方法也可以大大提高理性思维和逻辑推理能力。
+
+娱乐是小孩子的天性，也是他的权利。没有足够的娱乐，小孩身心不可能健康发展。绘画是他们最喜欢的娱乐方式之一，同时也是最安全、最经济、最高尚、对身心健康最有利的娱乐。
+
+小朋友们拿起你的画笔一起创作美丽的图画吧，图画完成后可以跟爸爸妈妈或者小伙伴们分享，看看谁的画作更可爱更漂亮哦！
+
+涵盖的交通工具有：侦察机,公共汽车,军舰,冲锋枪,加农炮,卡宾枪,卡车,双层巴士,吉普车,地雷,坦克,垃圾车,导弹,导弹车,小轿车,巡洋舰,左轮手枪,帆船,快艇, 战列舰,战斗机,手枪,护卫舰,拖拉机,挖土机,推土机,搅拌车,摩托车,攻击机,救护车,敞篷跑车,无坐力炮,机关枪,来福枪,榴弹炮,歼击机,水上飞机,水翼船,水陆战车,水雷,消防车,潜艇,火炮,火箭炮,火车,灭雷具,热气球,狙击枪,电动车,电车,直升飞机,缆车,老爷车,自行车,航空母舰,舰炮,装甲车,警车,跑车,踏板车,轮船,轰炸机,轻轨,迫击炮,霰弹枪,预警机,飞机,驱逐舰,高射炮等等。
+
+我们产品的特点：
+1，产品涵盖300多种交通工具图片以及100+颜色选择。 
+2，绘画可以保存下来，下次可以选择继续作画。 
+3，图案精美，符合图像式学习的视觉需求，加深记忆
+4，我们产品的开发人员本身也是孩子的家长，更加关心孩子的成长，同时我们也请来了育儿专家一起来设计这款应用。
+    </description>
+                            <promotional_text>通过绘画培养孩子的创造力和想象力</promotional_text>
+                            <keywords>
+                               <keyword>宝宝爱画画,小画板涂鸦,奇妙,儿童绘画,艺术,记忆力游戏,认水果,填色,巴士儿歌视频,幼儿园,妙屋,简笔画大全,学,上厕所,集中注意力100,交通工具,游乐园,脑力训练,软件,米,教程,一画吧,概念</keyword> 
+                            </keywords>
+                            <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots> 
+<software_screenshot display_target="iOS-iPad-Pro" position="1"> <file_name>cn_ipadpro_1.jpg</file_name> <size>281428</size> <checksum type="md5">ce0e02f33aabe9c1e0a2408bbe699b8c</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="2"> <file_name>cn_ipadpro_2.jpg</file_name> <size>175786</size> <checksum type="md5">806faec9efd50526b51684349b4bfd84</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="3"> <file_name>cn_ipadpro_3.jpg</file_name> <size>184339</size> <checksum type="md5">29311a898d61d8182d27d861302a8b2c</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="4"> <file_name>cn_ipadpro_4.jpg</file_name> <size>290608</size> <checksum type="md5">0215b8dcd15e874b0e9395b411d9f283</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="1"> <file_name>cn_iphone_1.jpg</file_name> <size>121705</size> <checksum type="md5">0eecf7fcd08dca58431b6c1636178e2a</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="2"> <file_name>cn_iphone_2.jpg</file_name> <size>105310</size> <checksum type="md5">c8d0eab2f683f6d1e4f9796edf51a41e</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="3"> <file_name>cn_iphone_3.jpg</file_name> <size>122605</size> <checksum type="md5">49c6637c939c8c777b357e469c1b7fa7</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="4"> <file_name>cn_iphone_4.jpg</file_name> <size>166321</size> <checksum type="md5">663212afb500ef6aeb824cc134be6fbf</checksum> </software_screenshot></software_screenshots>
+
+                            
+                        </locale>
+
+                         <locale name="en-CA">
+                            <title>Kids Vehicle Color</title>
+                            <subtitle>Vehicle Coloring Book</subtitle>
+                            <description>This is an interesting traffic color painting software for children, which allows children to choose different colors to color directly on the online manuscript and create their own wonderful paintings. Enrich the gradient color, give play to children's imagination, let children feel the joy of painting and color.
+When children are growing up, the outside world is fresh for them. Curiosity can make them interested in all things in the world. And this is the power source of children's painting. They like to paint new things in their eyes by paintbrush. A small thing, the children have to see through their own observation, find their more concrete structure, more colorful changes in color, so that the most essential and the most vivid beauty of things can be described. This observation method can also greatly improve rational thinking and logical reasoning ability.
+Entertainment is a child's nature and his right. Without enough entertainment, children can not develop physically and mentally. Painting is one of their favorite ways of entertainment. It is also the safest, the most economical, the most noble, and the most beneficial entertainment for physical and mental health.
+The children pick up your brush and create beautiful pictures. After the pictures are finished, you can share with your parents or the partners, and see whose paintings are more lovely and beautiful.
+Transportation tools include: reconnaissance aircraft, bus, warship, assault rifle, cannon, carbine, truck, double deck bus, jeep, dump, tank, garbage truck, missile, missile, car, cruiser, revolver, sailboat, boat, battleship, fighter, pistol, frigate, tractor, excavator, dozer, bulldozer, dozer, bulldozer, mixing truck, motorcycle, attack Machine, ambulance, open sports car, rifle, rifle, rifle, howitzer, fighter, water aircraft, hydrofoil, water and water aircraft, water and land, fire truck, submarine, artillery, rocket, train, fire balloon, sniper gun, electric car, trolley, cable car, old car, bicycle, aircraft carrier, ship gun, armored car, police car, sports car, tread. Board cars, ships, bombers, light rail, mortars, shotguns, AWACS, planes, destroyers, antiaircraft guns and so on.
+The features of our products:
+1, the product covers more than 300 kinds of transportation pictures and 100+ color selection.
+2, painting can be preserved. Next time you can choose to continue painting.
+3, the design is exquisite, accords with the visual demand of image learning, and deepens memory.
+4, the developer of our product itself is also the parent of the child, which is more concerned about the growth of the children, and we have also invited parenting experts to design this application.
+    </description>
+                            <promotional_text>Nurture children's creativity and imagination through painting</promotional_text>
+                            <keywords>
+                               <keyword>画面,画家,添,汉子,笔画,顺序,画图,板,高,智商,奇,喵,动画,表情,涂色,认识,动物,教学,家,智力,开发,巨头,孩子,几何,笔顺,查询,大师,英文,动画片,播放器,学画,漫画,调色,盘</keyword> 
+                            </keywords>
+                           <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots></software_screenshots>
+
+                            
+                        </locale>
+
+                         <locale name="en-AU">
+                            <title>Kids Vehicle Color</title>
+                            <subtitle>Vehicle Coloring Book</subtitle>
+                            <description>This is an interesting traffic color painting software for children, which allows children to choose different colors to color directly on the online manuscript and create their own wonderful paintings. Enrich the gradient color, give play to children's imagination, let children feel the joy of painting and color.
+When children are growing up, the outside world is fresh for them. Curiosity can make them interested in all things in the world. And this is the power source of children's painting. They like to paint new things in their eyes by paintbrush. A small thing, the children have to see through their own observation, find their more concrete structure, more colorful changes in color, so that the most essential and the most vivid beauty of things can be described. This observation method can also greatly improve rational thinking and logical reasoning ability.
+Entertainment is a child's nature and his right. Without enough entertainment, children can not develop physically and mentally. Painting is one of their favorite ways of entertainment. It is also the safest, the most economical, the most noble, and the most beneficial entertainment for physical and mental health.
+The children pick up your brush and create beautiful pictures. After the pictures are finished, you can share with your parents or the partners, and see whose paintings are more lovely and beautiful.
+Transportation tools include: reconnaissance aircraft, bus, warship, assault rifle, cannon, carbine, truck, double deck bus, jeep, dump, tank, garbage truck, missile, missile, car, cruiser, revolver, sailboat, boat, battleship, fighter, pistol, frigate, tractor, excavator, dozer, bulldozer, dozer, bulldozer, mixing truck, motorcycle, attack Machine, ambulance, open sports car, rifle, rifle, rifle, howitzer, fighter, water aircraft, hydrofoil, water and water aircraft, water and land, fire truck, submarine, artillery, rocket, train, fire balloon, sniper gun, electric car, trolley, cable car, old car, bicycle, aircraft carrier, ship gun, armored car, police car, sports car, tread. Board cars, ships, bombers, light rail, mortars, shotguns, AWACS, planes, destroyers, antiaircraft guns and so on.
+The features of our products:
+1, the product covers more than 300 kinds of transportation pictures and 100+ color selection.
+2, painting can be preserved. Next time you can choose to continue painting.
+3, the design is exquisite, accords with the visual demand of image learning, and deepens memory.
+4, the developer of our product itself is also the parent of the child, which is more concerned about the growth of the children, and we have also invited parenting experts to design this application.
+    </description>
+                            <promotional_text>Nurture children's creativity and imagination through painting</promotional_text>
+                            <keywords>
+                               <keyword>画面,画家,添,汉子,笔画,顺序,画图,板,高,智商,奇,喵,动画,表情,涂色,认识,动物,教学,家,智力,开发,巨头,孩子,几何,笔顺,查询,大师,英文,动画片,播放器,学画,漫画,调色,盘</keyword> 
+                            </keywords>
+                            <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots></software_screenshots>
+
+                            
+                        </locale>
+
+                         <locale name="en-GB">
+                            <title>Kids Vehicle Color</title>
+                            <subtitle>Vehicle Coloring Book</subtitle>
+                            <description>This is an interesting traffic color painting software for children, which allows children to choose different colors to color directly on the online manuscript and create their own wonderful paintings. Enrich the gradient color, give play to children's imagination, let children feel the joy of painting and color.
+When children are growing up, the outside world is fresh for them. Curiosity can make them interested in all things in the world. And this is the power source of children's painting. They like to paint new things in their eyes by paintbrush. A small thing, the children have to see through their own observation, find their more concrete structure, more colorful changes in color, so that the most essential and the most vivid beauty of things can be described. This observation method can also greatly improve rational thinking and logical reasoning ability.
+Entertainment is a child's nature and his right. Without enough entertainment, children can not develop physically and mentally. Painting is one of their favorite ways of entertainment. It is also the safest, the most economical, the most noble, and the most beneficial entertainment for physical and mental health.
+The children pick up your brush and create beautiful pictures. After the pictures are finished, you can share with your parents or the partners, and see whose paintings are more lovely and beautiful.
+Transportation tools include: reconnaissance aircraft, bus, warship, assault rifle, cannon, carbine, truck, double deck bus, jeep, dump, tank, garbage truck, missile, missile, car, cruiser, revolver, sailboat, boat, battleship, fighter, pistol, frigate, tractor, excavator, dozer, bulldozer, dozer, bulldozer, mixing truck, motorcycle, attack Machine, ambulance, open sports car, rifle, rifle, rifle, howitzer, fighter, water aircraft, hydrofoil, water and water aircraft, water and land, fire truck, submarine, artillery, rocket, train, fire balloon, sniper gun, electric car, trolley, cable car, old car, bicycle, aircraft carrier, ship gun, armored car, police car, sports car, tread. Board cars, ships, bombers, light rail, mortars, shotguns, AWACS, planes, destroyers, antiaircraft guns and so on.
+The features of our products:
+1, the product covers more than 300 kinds of transportation pictures and 100+ color selection.
+2, painting can be preserved. Next time you can choose to continue painting.
+3, the design is exquisite, accords with the visual demand of image learning, and deepens memory.
+4, the developer of our product itself is also the parent of the child, which is more concerned about the growth of the children, and we have also invited parenting experts to design this application.
+    </description>
+                            <promotional_text>Nurture children's creativity and imagination through painting</promotional_text>
+                            <keywords>
+                               <keyword>画面,画家,添,汉子,笔画,顺序,画图,板,高,智商,奇,喵,动画,表情,涂色,认识,动物,教学,家,智力,开发,巨头,孩子,几何,笔顺,查询,大师,英文,动画片,播放器,学画,漫画,调色,盘</keyword> 
+                            </keywords>
+                            <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots></software_screenshots>
+
+                            
+                        </locale>
+                        
+                    </locales>
+                </version>
+            </versions>
+            <products>
+                <product>
+                    <territory>WW</territory>
+                    <sales_start_date>2010-05-25</sales_start_date>
+                    <cleared_for_sale>true</cleared_for_sale>
+                    <wholesale_price_tier>0</wholesale_price_tier>
+                    <allow_volume_discount>false</allow_volume_discount>
+                </product>
+                <product>
+                    <territory>RU</territory>
+                    <cleared_for_sale>true</cleared_for_sale>
+                </product>
+            </products>
+          
+          
+
+           <in_app_purchases>
+                <in_app_purchase>
+                    <product_id>com.moonma.fillcolorvehicle.noad</product_id>
+                    <reference_name>noad</reference_name>
+                    <type>non-consumable</type>
+                    <products>
+                        <product>
+                            <cleared_for_sale>true</cleared_for_sale>
+                            <wholesale_price_tier>2</wholesale_price_tier>
+                        </product>
+                    </products>
+                    <locales>
+                        <locale name="en-US">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+
+                        <locale name="zh-Hans">
+                            <title>去除广告</title>
+                            <description>该产品可以去除应用内的所有广告</description>
+                        </locale>
+                        <locale name="en-CA">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+                        <locale name="en-AU">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+                        <locale name="en-GB">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+
+                        
+                    </locales>
+                    <review_screenshot>
+                        <file_name>in_app_purchases_screenshot.png</file_name>
+                        <size>96482</size>
+                        <checksum type="md5">dc4f197705c3983c730d236f54de2950</checksum>
+                    </review_screenshot>
+                    <!-- <review_notes></review_notes> -->
+                </in_app_purchase>
+               <!--  <in_app_purchase remove="true">
+                    <product_id>obsolete_com.cyberinteractive.tf.missiles.15</product_id>
+                </in_app_purchase> -->
+            </in_app_purchases>
+
+
+        </software_metadata>
+    </software>
+</package>

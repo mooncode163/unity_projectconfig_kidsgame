@@ -1,0 +1,36 @@
+{
+    "APP_NAME_CN_ANDROID": "儿童拼拼乐2",
+    "APP_NAME_EN_ANDROID": "KidsPuzzle",
+    "APP_NAME_CN_IOS": "儿童拼拼乐",
+    "APP_NAME_EN_IOS": "KidsPuzzle",
+    "PACKAGE_ANDROID": "com.moonma.pinpinle",
+    "PACKAGE_IOS": "com.moonma.pinpinle",
+    "APPVERSION_ANDROID": "1.7.0",
+    "APPVERSION_CODE_ANDROID": "170",
+    "APPVERSION_IOS": "1.4.0",
+    "need_upload_screenshot": false,
+    "APPSTORE_VERSION_UPDATE": {
+        "cn": "修复闪退",
+        "en": "Fix a Bug"
+    },
+    "APPSTORE_TITLE": {
+        "cn": "儿童拼拼乐",
+        "en": "Kids Puzzle"
+    },
+    "APPSTORE_SUBTITLE": {
+        "cn": "拼图学习应用",
+        "en": "A Good PaintingTool"
+    },
+    "APPSTORE_PROMOTION": {
+        "cn": "拼图学习早教游戏",
+        "en": "Coloring cultivate children's painting skills and creativity"
+    },
+    "APPSTORE_KEYWORD": {
+        "cn": "连连看, 连连乐, 儿童游戏, 游乐园, 儿童, 早教, 儿歌, 小孩, 切西瓜, 水果, 乐看动画, 奇艺, 熊大叔, 快播, 切水果, 宝宝巴士, 2048, 拼图, flappy, 拖拖乐, 宝宝老大, 动画, 母婴",
+        "en": "COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber"
+    },
+    "software_url": "http://www.mooncore.cn",
+    "privacy_url": "http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
+    "support_url": "http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html",
+    "sku_app": "mooncore_pinpinle"
+}

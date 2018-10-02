@@ -1,0 +1,40 @@
+{
+    "APP_NAME_CN_ANDROID": "儿童动物贴纸",
+    "APP_NAME_EN_ANDROID": "KidsAnimalSticker",
+    "APP_NAME_CN_IOS": "儿童动物贴纸",
+    "APP_NAME_EN_IOS": "KidsAnimalSticker",
+    "PACKAGE_ANDROID": "com.moonma.animalsticker",
+    "PACKAGE_IOS": "com.moonma.animalsticker",
+    "APPVERSION_ANDROID": "1.6.0",
+    "APPVERSION_CODE_ANDROID": "160",
+    "APPVERSION_IOS": "1.2.1",
+    "need_upload_screenshot": false,
+    "APPSTORE_VERSION_UPDATE": {
+        "cn": "修复闪退",
+        "en": "Fix a Bug"
+    },
+    "APPSTORE_TITLE": {
+        "cn": "儿童动物贴纸",
+        "en": "Kids Sticker Animal"
+    },
+    "APPSTORE_SUBTITLE": {
+        "cn": "贴纸动物园",
+        "en": "Sticker Zoo"
+    },
+    "APPSTORE_PROMOTION": {
+        "cn": "宝宝早教认知学习的好帮手",
+        "en": "A good helper for baby's early teaching and cognitive learning"
+    },
+    "APPSTORE_KEYWORD": {
+        "cn": "宝宝贴纸书,翻牌游戏,填色,记忆彩,儿童绘画,添,孩子画画教学,宫殿,测试年龄识别,曲线,爱拼图,惠花,日,机,海洋动物乐园,汇,子,计算,2岁,无限,图画本,写字,大师,画面,手机,动物园,小吉",
+        "en": "小鸡叫儿歌,糖果派对游戏大全,熊猫识字大冒险,快刀切水果切切乐智小天地,贝贝熊大熊二农场,会跳舞吧数码宝贝听故事学游泳教学,巧虎相机,谜语世界2,小猫钓鱼王,凯叔讲,认识动物,大快跑,小豆,看图猜成语"
+    },
+    "XIAOMI_KEYWORD": {
+        "cn": "宝宝贴纸书 翻牌游戏 填色 记忆彩 儿童绘画 添 孩子画画教学 宫殿 测试年龄识别 曲线 爱拼图 惠花 日 机 海洋动物乐园 汇 子 计算 2岁 无限 图画本 写字 大师 画面 手机 动物园 小吉",
+        "en": "小鸡叫儿歌 糖果派对游戏大全 熊猫识字大冒险 快刀切水果切切乐智小天地 贝贝熊大熊二农场 会跳舞吧数码宝贝听故事学游泳教学 巧虎相机 谜语世界2 小猫钓鱼王 凯叔讲 认识动物 大快跑 小豆 看图猜成语"
+    },
+    "software_url": "http://www.mooncore.cn",
+    "privacy_url": "http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
+    "support_url": "http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html",
+    "sku_app": "animalsticker"
+}

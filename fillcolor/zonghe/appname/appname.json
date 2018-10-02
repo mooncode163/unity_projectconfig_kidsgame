@@ -1,0 +1,42 @@
+{
+    "APP_NAME_CN_ANDROID": "儿童填色乐园",
+    "APP_NAME_EN_ANDROID": "KidsFillColor",
+    "APP_NAME_CN_IOS": "儿童填色乐园",
+    "APP_NAME_EN_IOS": "KidsFillColor",
+    "PACKAGE_ANDROID": "com.moonma.fillcolorkids",
+    "PACKAGE_IOS": "com.moonma.fillcolorkids",
+    "APPVERSION_ANDROID": "1.1.0",
+    "APPVERSION_CODE_ANDROID": "110",
+    "APPVERSION_IOS": "1.0.0",
+    "need_upload_screenshot": false,
+    "APPSTORE_VERSION_UPDATE": {
+        "cn": "修复闪退",
+        "en": "Fix a Bug"
+    },
+    "APPSTORE_TITLE": {
+        "cn": "儿童填色乐园",
+        "en": "Kids FillColor"
+    },
+    "APPSTORE_SUBTITLE": {
+        "cn": "填色绘画好工具",
+        "en": "A Good FillColor Tool"
+    },
+    "APPSTORE_PROMOTION": {
+        "cn": "填色可以培养孩子的创造力和想象力",
+        "en": "Fillcolor can cultivate the creativity and imagination of children"
+    },
+    "APPSTORE_KEYWORD": {
+        "cn": "阳阳爱写字魔力小孩过年宝宝学写字中华恐龙园汉字与书法海绵宝宝做汉堡朵拉历险记学做饭宝宝爱洗澡三字经读写版宝宝书孕育跟我学写汉字蓝猫学拼音小嘀削削serato自由诵读经典儿歌巴巴熊巴巴宝贝熊孩子钢笔书法",
+        "en": "COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber"
+    },
+    "XIAOMI_KEYWORD": {
+        "cn": "阳阳爱写字魔力小孩过年宝宝学写字中华恐龙园汉字与书法海绵宝宝做汉堡朵拉历险记学做饭宝宝爱洗澡三字经读写版宝宝书孕育跟我学写汉字蓝猫学拼音小嘀削削serato自由诵读经典儿歌巴巴熊巴巴宝贝熊孩子钢笔书法",
+        "en": "COOKING MAMA Let's Cook Kids Shave Salon Spa Doodle Zedd the Zombie Shapes Toddler QuizUp Clawber"
+    },
+    "email": "chyfemail163@163.com",
+    "software_url": "http://www.mooncore.cn",
+    "privacy_url": "http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
+    "support_url": "http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html",
+    "privacy_url_gp": "http://blog.sina.com.cn/s/blog_1736372fb0102xmbz.html",
+    "sku_app": "paintanimal"
+}

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://apple.com/itunes/importer" version="software5.9">
+   <!--  <provider>YuanFang Chen</provider> -->
+    <team_id>Y9ZUK2WTEE</team_id>
+    <software>
+        <vendor_id>plantsticker.pad</vendor_id>
+        <software_metadata>
+            <versions>
+                <version string="1.0.0">
+                    <locales>
+                        <locale name="en-US">
+                            <title>Baby Plant Sticker HD</title>
+                            <subtitle>Sticker plant park</subtitle>
+                            <description>This is a plant cognition sticker game designed for children in the Pad. It covers hundreds of common plants and is divided into vegetables, flowers, fruits and trees. To help your baby perceive the world through vision and touch. At the same time, let your children play the stickers on the side, learn English, Chinese, fun and entertaining.
+Vegetables: cabbage spinach, cabbage, carcassan, carcassan, carcassan, mustard, mustard, broccoli, broccoli, lettuce, lettuce, cabbage, cabbage, cabbage, cabbage, cabbage, cabbage, potato, potato, potato, potato, potato, potato, potato, potato, yam, onion, ginger, garlic, chive, chives, chive, winter melon and pumpkin pumpkin Luffa cucumber, eggplant, tomato, bitter melon, pepper, corn, beans, peas, beans, lentils, beans, mushrooms, letinous edodes, mushrooms, fungus, tremella, Pleurotus ostreatus and mushrooms.
+Flowers: Plum Blossom peony flower peony flower flower jasmine flower Jasmine Gardenia jasminoides jasminoides jasminoides jasminoides jasminoides jasminoides jasminoides jasminoides Jasmine Camellia sinensis hyacinth
+Fruit: pineapple strawberry, crabapple, melon, red jujube, pitaya pear, plum, plum, melon, orange, cucumber, cucumber, cucumber, hawthorn, persimmon, persimmon, peach, peach, peach, peach, peach, fruit, black plum, fragrant melon, melon, melon, melon, melon and apricot cherry
+Trees: coralline, Ginkgo biloba, Ligustrum Larix, Larix acaciaena, Cycas acacia tree, cypress, linden, linden, mulberry, poplar, willow, cinnamon, cinnamon, tree tree, fig tree, maple tree
+    </description>
+                            <promotional_text>Let the baby know all kinds of plants in the Sticker Game</promotional_text>
+                            <keywords>
+                               <keyword>岁宝宝贴纸,学数字,儿童识字游戏,看图学英语,动物园,魔力小孩英语点读,认图形,少儿故事贴,爱学习,hooked,on,phonics,kids,动物,爸爸去哪儿2,写汉字,幼儿数学六壬,巴士大全免费</keyword> 
+                            </keywords>
+                            <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots> 
+<software_screenshot display_target="iOS-iPad-Pro" position="1"> <file_name>en_ipadpro_1.jpg</file_name> <size>426019</size> <checksum type="md5">7281317ce847c00b2df3b437ebb2cd2c</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="2"> <file_name>en_ipadpro_2.jpg</file_name> <size>325509</size> <checksum type="md5">0f96b344c86223ad30b4d22a9d9abbe4</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="3"> <file_name>en_ipadpro_3.jpg</file_name> <size>357578</size> <checksum type="md5">d5de5f9db37533a066e50bc49126176e</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="4"> <file_name>en_ipadpro_4.jpg</file_name> <size>425791</size> <checksum type="md5">b8561f4e372d8fdb5cf0d7d53fe021f5</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="1"> <file_name>en_iphone_1.jpg</file_name> <size>262290</size> <checksum type="md5">25d4589b218508c44c158cec4ba4322d</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="2"> <file_name>en_iphone_2.jpg</file_name> <size>153413</size> <checksum type="md5">5ac46ee7097ce34f10ac8295035fcd94</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="3"> <file_name>en_iphone_3.jpg</file_name> <size>216498</size> <checksum type="md5">acbdcbb024588c8c8434de7aa89ff606</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="4"> <file_name>en_iphone_4.jpg</file_name> <size>255828</size> <checksum type="md5">4c77b94ef6c3f68f8f63ec15a451c8ef</checksum> </software_screenshot></software_screenshots>
+
+                        </locale>
+
+                         <locale name="zh-Hans">
+                            <title>宝宝贴纸植物园HD</title>
+                            <subtitle>贴纸植物乐园</subtitle>
+                            <description>这是一款平板上针对儿童设计的植物认知贴纸游戏, 涵盖几百种常见的植物,分为蔬菜，花卉，水果和树木。帮助您的宝宝通过视觉、触觉全方位感知这个世界。同时让你的孩子边玩贴纸边学英语，中文吧，充满乐趣并且寓教于乐。
+    	蔬菜类：白菜 菠菜 油菜 卷心菜 苋菜 韭菜 蒿菜 香菜 芥菜 芥兰 茴香 蒜苗 莴笋 空心菜 生菜 白花菜 西兰花 油麦菜 甘蓝 小葱 萝卜 马铃薯 莲藕 红薯 山药 芋头 苤蓝 慈姑 洋葱 生姜 大蒜 蒜苔 韭菜花 大葱 韭黄 冬瓜 南瓜 西葫芦 丝瓜 黄瓜 茄子 西红柿 苦瓜 辣椒 玉米 毛豆 豌豆 蚕豆 扁豆 四季豆 平菇 香菇  金针菇 木耳 银耳 杏鲍菇 口蘑
+		花卉类： 梅花 桃花  牡丹 海棠 玉兰 紫荆 连翘  丁香 紫藤 杜鹃花 石榴花 含笑花 白兰花 茉莉花 栀子花 桂花 木芙蓉 腊梅 山茶花 风信子 郁金香 紫罗兰 菊花 荷花 石蒜 水仙 千日红
+		水果类： 菠萝 草莓 海棠果 哈密瓜 红提 红枣 火龙果 梨 李子 芒果 梅子 木瓜 柠檬 苹果 葡萄 脐橙 黄瓜 山楂 柿子 水晶葡萄 桃子 甜瓜  无花果 乌梅 香瓜 香蕉 西瓜 杏 樱桃 
+		树木类：珊瑚树 银杏 冬青 女贞 落叶松 柠檬树 合欢树 苏铁 紫薇树 桧柏 杉树 樟树 椴树 桑树 桃树 杨树 柳树 桂花树 梧桐树 榕树 枫树
+    </description>
+                            <promotional_text>让宝宝在贴纸游戏中认识各种植物</promotional_text>
+                            <keywords>
+                               <keyword>3岁宝宝拼图,儿童游戏免费学英语,识图,爱,贴纸动物园,早教认知,海绵,幼儿学拼音,神奇校车,动物乐园,海棉,巧虎益智,词汇abc英语,颜色形状和,6,直映认字软件,做汉堡,酷跑,喜羊羊与,写汉字</keyword> 
+                            </keywords>
+                            <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots> 
+<software_screenshot display_target="iOS-iPad-Pro" position="1"> <file_name>cn_ipadpro_1.jpg</file_name> <size>447376</size> <checksum type="md5">76037fcfd6ae814f83a993bee8919977</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="2"> <file_name>cn_ipadpro_2.jpg</file_name> <size>289832</size> <checksum type="md5">34f33ef1ae1d22b3a9c496dea34a3dc4</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="3"> <file_name>cn_ipadpro_3.jpg</file_name> <size>358935</size> <checksum type="md5">251834a810d0588b0daa16f1d21b6d11</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="4"> <file_name>cn_ipadpro_4.jpg</file_name> <size>440617</size> <checksum type="md5">ba6c1f12f0d82917233ad9d4e98b2827</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="1"> <file_name>cn_iphone_1.jpg</file_name> <size>262880</size> <checksum type="md5">5dfe8d314cf607cf1ba667c04b6a75db</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="2"> <file_name>cn_iphone_2.jpg</file_name> <size>156169</size> <checksum type="md5">3de794928b13c4f591ed60f77c9b8dfa</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="3"> <file_name>cn_iphone_3.jpg</file_name> <size>204445</size> <checksum type="md5">a571cc4e40c9f2f3a6aca0046b25740c</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="4"> <file_name>cn_iphone_4.jpg</file_name> <size>239248</size> <checksum type="md5">051acb402d2c4354b8c532950963182c</checksum> </software_screenshot></software_screenshots>
+
+                            
+                        </locale>
+
+                         <locale name="en-CA">
+                            <title>Baby Plant Sticker HD</title>
+                            <subtitle>Sticker plant park</subtitle>
+                            <description>This is a plant cognition sticker game designed for children in the Pad. It covers hundreds of common plants and is divided into vegetables, flowers, fruits and trees. To help your baby perceive the world through vision and touch. At the same time, let your children play the stickers on the side, learn English, Chinese, fun and entertaining.
+Vegetables: cabbage spinach, cabbage, carcassan, carcassan, carcassan, mustard, mustard, broccoli, broccoli, lettuce, lettuce, cabbage, cabbage, cabbage, cabbage, cabbage, cabbage, potato, potato, potato, potato, potato, potato, potato, potato, yam, onion, ginger, garlic, chive, chives, chive, winter melon and pumpkin pumpkin Luffa cucumber, eggplant, tomato, bitter melon, pepper, corn, beans, peas, beans, lentils, beans, mushrooms, letinous edodes, mushrooms, fungus, tremella, Pleurotus ostreatus and mushrooms.
+Flowers: Plum Blossom peony flower peony flower flower jasmine flower Jasmine Gardenia jasminoides jasminoides jasminoides jasminoides jasminoides jasminoides jasminoides jasminoides Jasmine Camellia sinensis hyacinth
+Fruit: pineapple strawberry, crabapple, melon, red jujube, pitaya pear, plum, plum, melon, orange, cucumber, cucumber, cucumber, hawthorn, persimmon, persimmon, peach, peach, peach, peach, peach, fruit, black plum, fragrant melon, melon, melon, melon, melon and apricot cherry
+Trees: coralline, Ginkgo biloba, Ligustrum Larix, Larix acaciaena, Cycas acacia tree, cypress, linden, linden, mulberry, poplar, willow, cinnamon, cinnamon, tree tree, fig tree, maple tree
+    </description>
+                            <promotional_text>Let the baby know all kinds of plants in the Sticker Game</promotional_text>
+                            <keywords>
+                               <keyword>岁宝宝贴纸,学数字,儿童识字游戏,看图学英语,动物园,魔力小孩英语点读,认图形,少儿故事贴,爱学习,hooked,on,phonics,kids,动物,爸爸去哪儿2,写汉字,幼儿数学六壬,巴士大全免费</keyword> 
+                            </keywords>
+                           <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots></software_screenshots>
+
+                            
+                        </locale>
+
+                         <locale name="en-AU">
+                            <title>Baby Plant Sticker HD</title>
+                            <subtitle>Sticker plant park</subtitle>
+                            <description>This is a plant cognition sticker game designed for children in the Pad. It covers hundreds of common plants and is divided into vegetables, flowers, fruits and trees. To help your baby perceive the world through vision and touch. At the same time, let your children play the stickers on the side, learn English, Chinese, fun and entertaining.
+Vegetables: cabbage spinach, cabbage, carcassan, carcassan, carcassan, mustard, mustard, broccoli, broccoli, lettuce, lettuce, cabbage, cabbage, cabbage, cabbage, cabbage, cabbage, potato, potato, potato, potato, potato, potato, potato, potato, yam, onion, ginger, garlic, chive, chives, chive, winter melon and pumpkin pumpkin Luffa cucumber, eggplant, tomato, bitter melon, pepper, corn, beans, peas, beans, lentils, beans, mushrooms, letinous edodes, mushrooms, fungus, tremella, Pleurotus ostreatus and mushrooms.
+Flowers: Plum Blossom peony flower peony flower flower jasmine flower Jasmine Gardenia jasminoides jasminoides jasminoides jasminoides jasminoides jasminoides jasminoides jasminoides Jasmine Camellia sinensis hyacinth
+Fruit: pineapple strawberry, crabapple, melon, red jujube, pitaya pear, plum, plum, melon, orange, cucumber, cucumber, cucumber, hawthorn, persimmon, persimmon, peach, peach, peach, peach, peach, fruit, black plum, fragrant melon, melon, melon, melon, melon and apricot cherry
+Trees: coralline, Ginkgo biloba, Ligustrum Larix, Larix acaciaena, Cycas acacia tree, cypress, linden, linden, mulberry, poplar, willow, cinnamon, cinnamon, tree tree, fig tree, maple tree
+    </description>
+                            <promotional_text>Let the baby know all kinds of plants in the Sticker Game</promotional_text>
+                            <keywords>
+                               <keyword>岁宝宝贴纸,学数字,儿童识字游戏,看图学英语,动物园,魔力小孩英语点读,认图形,少儿故事贴,爱学习,hooked,on,phonics,kids,动物,爸爸去哪儿2,写汉字,幼儿数学六壬,巴士大全免费</keyword> 
+                            </keywords>
+                            <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots></software_screenshots>
+
+                            
+                        </locale>
+
+                         <locale name="en-GB">
+                            <title>Baby Plant Sticker HD</title>
+                            <subtitle>Sticker plant park</subtitle>
+                            <description>This is a plant cognition sticker game designed for children in the Pad. It covers hundreds of common plants and is divided into vegetables, flowers, fruits and trees. To help your baby perceive the world through vision and touch. At the same time, let your children play the stickers on the side, learn English, Chinese, fun and entertaining.
+Vegetables: cabbage spinach, cabbage, carcassan, carcassan, carcassan, mustard, mustard, broccoli, broccoli, lettuce, lettuce, cabbage, cabbage, cabbage, cabbage, cabbage, cabbage, potato, potato, potato, potato, potato, potato, potato, potato, yam, onion, ginger, garlic, chive, chives, chive, winter melon and pumpkin pumpkin Luffa cucumber, eggplant, tomato, bitter melon, pepper, corn, beans, peas, beans, lentils, beans, mushrooms, letinous edodes, mushrooms, fungus, tremella, Pleurotus ostreatus and mushrooms.
+Flowers: Plum Blossom peony flower peony flower flower jasmine flower Jasmine Gardenia jasminoides jasminoides jasminoides jasminoides jasminoides jasminoides jasminoides jasminoides Jasmine Camellia sinensis hyacinth
+Fruit: pineapple strawberry, crabapple, melon, red jujube, pitaya pear, plum, plum, melon, orange, cucumber, cucumber, cucumber, hawthorn, persimmon, persimmon, peach, peach, peach, peach, peach, fruit, black plum, fragrant melon, melon, melon, melon, melon and apricot cherry
+Trees: coralline, Ginkgo biloba, Ligustrum Larix, Larix acaciaena, Cycas acacia tree, cypress, linden, linden, mulberry, poplar, willow, cinnamon, cinnamon, tree tree, fig tree, maple tree
+    </description>
+                            <promotional_text>Let the baby know all kinds of plants in the Sticker Game</promotional_text>
+                            <keywords>
+                               <keyword>岁宝宝贴纸,学数字,儿童识字游戏,看图学英语,动物园,魔力小孩英语点读,认图形,少儿故事贴,爱学习,hooked,on,phonics,kids,动物,爸爸去哪儿2,写汉字,幼儿数学六壬,巴士大全免费</keyword> 
+                            </keywords>
+                            <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots></software_screenshots>
+
+                            
+                        </locale>
+                        
+                    </locales>
+                </version>
+            </versions>
+            <products>
+                <product>
+                    <territory>WW</territory>
+                    <sales_start_date>2010-05-25</sales_start_date>
+                    <cleared_for_sale>true</cleared_for_sale>
+                    <wholesale_price_tier>0</wholesale_price_tier>
+                    <allow_volume_discount>false</allow_volume_discount>
+                </product>
+                <product>
+                    <territory>RU</territory>
+                    <cleared_for_sale>true</cleared_for_sale>
+                </product>
+            </products>
+          
+          
+
+           <in_app_purchases>
+                <in_app_purchase>
+                    <product_id>com.moonma.plantsticker.pad.noad</product_id>
+                    <reference_name>noad</reference_name>
+                    <type>non-consumable</type>
+                    <products>
+                        <product>
+                            <cleared_for_sale>true</cleared_for_sale>
+                            <wholesale_price_tier>2</wholesale_price_tier>
+                        </product>
+                    </products>
+                    <locales>
+                        <locale name="en-US">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+
+                        <locale name="zh-Hans">
+                            <title>去除广告</title>
+                            <description>该产品可以去除应用内的所有广告</description>
+                        </locale>
+                        <locale name="en-CA">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+                        <locale name="en-AU">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+                        <locale name="en-GB">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+
+                        
+                    </locales>
+                    <review_screenshot>
+                        <file_name>in_app_purchases_screenshot.png</file_name>
+                        <size>96482</size>
+                        <checksum type="md5">dc4f197705c3983c730d236f54de2950</checksum>
+                    </review_screenshot>
+                    <!-- <review_notes></review_notes> -->
+                </in_app_purchase>
+               <!--  <in_app_purchase remove="true">
+                    <product_id>obsolete_com.cyberinteractive.tf.missiles.15</product_id>
+                </in_app_purchase> -->
+            </in_app_purchases>
+
+
+        </software_metadata>
+    </software>
+</package>

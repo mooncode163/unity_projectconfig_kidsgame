@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://apple.com/itunes/importer" version="software5.9">
+   <!--  <provider>YuanFang Chen</provider> -->
+    <team_id>Y9ZUK2WTEE</team_id>
+    <software>
+        <vendor_id>animalsticker</vendor_id>
+        <software_metadata>
+            <versions>
+                <version string="1.2.1">
+                    <locales>
+                        <locale name="en-US">
+                            <title>Kids Sticker Animal</title>
+                            <subtitle>Sticker Zoo</subtitle>
+                            <description>This is an animal cognitive sticker game designed for children, including more than 100 animals, including birds, mammals, marine animals, insects and so on. Each animal has 2 language pronunciation: English, Chinese, children can know the animals in the process of playing sticker, hear their calls and see their cards. The real image helps your baby perceive the world through vision, hearing and touch. At the same time, let your children learn English with stickers, Chinese, fun and enjoyable. Children linguists point out that early childhood exposure to various languages, including different phonemes, will have great benefits for the development of children's language function.
+    </description>
+                            <promotional_text>A good helper for baby's early teaching and cognitive learning</promotional_text>
+                            <keywords>
+                               <keyword>小鸡叫儿歌,糖果派对游戏大全,熊猫识字大冒险,快刀切水果切切乐智小天地,贝贝熊大熊二农场,会跳舞吧数码宝贝听故事学游泳教学,巧虎相机,谜语世界2,小猫钓鱼王,凯叔讲,认识动物,大快跑,小豆,看图猜成语</keyword> 
+                            </keywords>
+                            <version_whats_new>Fix a Bug</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                        </locale>
+
+                         <locale name="zh-Hans">
+                            <title>儿童动物贴纸</title>
+                            <subtitle>贴纸动物园</subtitle>
+                            <description>这是一款针对儿童设计的动物认知贴纸游戏, 包含100多种动物,涵盖鸟类动物，哺乳动物，海洋动物，昆虫等， 每种动物有2种语言发音:英语, 中文, 孩子们可以在玩贴纸游戏的过程中认识这些动物, 听到它们的叫声, 看到它们的卡通及真实形象, 帮助您的宝宝通过视觉、听觉、触觉全方位感知这个世界。同时让你的孩子边玩贴纸边学英语，中文吧，充满乐趣并且寓教于乐，儿童语言学家指出，幼儿早期接触各种语言包括不同的音素语调，将对儿童语言功能发展有极大的好处
+    </description>
+                            <promotional_text>宝宝早教认知学习的好帮手</promotional_text>
+                            <keywords>
+                               <keyword>宝宝贴纸书,翻牌游戏,填色,记忆彩,儿童绘画,添,孩子画画教学,宫殿,测试年龄识别,曲线,爱拼图,惠花,日,机,海洋动物乐园,汇,子,计算,2岁,无限,图画本,写字,大师,画面,手机,动物园,小吉</keyword> 
+                            </keywords>
+                            <version_whats_new>修复闪退</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                            
+                        </locale>
+
+                         <locale name="en-CA">
+                            <title>Kids Sticker Animal</title>
+                            <subtitle>Sticker Zoo</subtitle>
+                            <description>This is an animal cognitive sticker game designed for children, including more than 100 animals, including birds, mammals, marine animals, insects and so on. Each animal has 2 language pronunciation: English, Chinese, children can know the animals in the process of playing sticker, hear their calls and see their cards. The real image helps your baby perceive the world through vision, hearing and touch. At the same time, let your children learn English with stickers, Chinese, fun and enjoyable. Children linguists point out that early childhood exposure to various languages, including different phonemes, will have great benefits for the development of children's language function.
+    </description>
+                            <promotional_text>A good helper for baby's early teaching and cognitive learning</promotional_text>
+                            <keywords>
+                               <keyword>小鸡叫儿歌,糖果派对游戏大全,熊猫识字大冒险,快刀切水果切切乐智小天地,贝贝熊大熊二农场,会跳舞吧数码宝贝听故事学游泳教学,巧虎相机,谜语世界2,小猫钓鱼王,凯叔讲,认识动物,大快跑,小豆,看图猜成语</keyword> 
+                            </keywords>
+                           <version_whats_new>Fix a Bug</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                            
+                        </locale>
+
+                         <locale name="en-AU">
+                            <title>Kids Sticker Animal</title>
+                            <subtitle>Sticker Zoo</subtitle>
+                            <description>This is an animal cognitive sticker game designed for children, including more than 100 animals, including birds, mammals, marine animals, insects and so on. Each animal has 2 language pronunciation: English, Chinese, children can know the animals in the process of playing sticker, hear their calls and see their cards. The real image helps your baby perceive the world through vision, hearing and touch. At the same time, let your children learn English with stickers, Chinese, fun and enjoyable. Children linguists point out that early childhood exposure to various languages, including different phonemes, will have great benefits for the development of children's language function.
+    </description>
+                            <promotional_text>A good helper for baby's early teaching and cognitive learning</promotional_text>
+                            <keywords>
+                               <keyword>小鸡叫儿歌,糖果派对游戏大全,熊猫识字大冒险,快刀切水果切切乐智小天地,贝贝熊大熊二农场,会跳舞吧数码宝贝听故事学游泳教学,巧虎相机,谜语世界2,小猫钓鱼王,凯叔讲,认识动物,大快跑,小豆,看图猜成语</keyword> 
+                            </keywords>
+                            <version_whats_new>Fix a Bug</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                            
+                        </locale>
+
+                         <locale name="en-GB">
+                            <title>Kids Sticker Animal</title>
+                            <subtitle>Sticker Zoo</subtitle>
+                            <description>This is an animal cognitive sticker game designed for children, including more than 100 animals, including birds, mammals, marine animals, insects and so on. Each animal has 2 language pronunciation: English, Chinese, children can know the animals in the process of playing sticker, hear their calls and see their cards. The real image helps your baby perceive the world through vision, hearing and touch. At the same time, let your children learn English with stickers, Chinese, fun and enjoyable. Children linguists point out that early childhood exposure to various languages, including different phonemes, will have great benefits for the development of children's language function.
+    </description>
+                            <promotional_text>A good helper for baby's early teaching and cognitive learning</promotional_text>
+                            <keywords>
+                               <keyword>小鸡叫儿歌,糖果派对游戏大全,熊猫识字大冒险,快刀切水果切切乐智小天地,贝贝熊大熊二农场,会跳舞吧数码宝贝听故事学游泳教学,巧虎相机,谜语世界2,小猫钓鱼王,凯叔讲,认识动物,大快跑,小豆,看图猜成语</keyword> 
+                            </keywords>
+                            <version_whats_new>Fix a Bug</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                            
+                        </locale>
+                        
+                    </locales>
+                </version>
+            </versions>
+            <products>
+                <product>
+                    <territory>WW</territory>
+                    <sales_start_date>2010-05-25</sales_start_date>
+                    <cleared_for_sale>true</cleared_for_sale>
+                    <wholesale_price_tier>0</wholesale_price_tier>
+                    <allow_volume_discount>false</allow_volume_discount>
+                </product>
+                <product>
+                    <territory>RU</territory>
+                    <cleared_for_sale>true</cleared_for_sale>
+                </product>
+            </products>
+          
+          
+
+           <in_app_purchases>
+                <in_app_purchase>
+                    <product_id>com.moonma.animalsticker.noad</product_id>
+                    <reference_name>noad</reference_name>
+                    <type>non-consumable</type>
+                    <products>
+                        <product>
+                            <cleared_for_sale>true</cleared_for_sale>
+                            <wholesale_price_tier>2</wholesale_price_tier>
+                        </product>
+                    </products>
+                    <locales>
+                        <locale name="en-US">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+
+                        <locale name="zh-Hans">
+                            <title>去除广告</title>
+                            <description>该产品可以去除应用内的所有广告</description>
+                        </locale>
+                        <locale name="en-CA">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+                        <locale name="en-AU">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+                        <locale name="en-GB">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+
+                        
+                    </locales>
+                    <review_screenshot>
+                        <file_name>in_app_purchases_screenshot.png</file_name>
+                        <size>96482</size>
+                        <checksum type="md5">dc4f197705c3983c730d236f54de2950</checksum>
+                    </review_screenshot>
+                    <!-- <review_notes></review_notes> -->
+                </in_app_purchase>
+               <!--  <in_app_purchase remove="true">
+                    <product_id>obsolete_com.cyberinteractive.tf.missiles.15</product_id>
+                </in_app_purchase> -->
+            </in_app_purchases>
+
+
+        </software_metadata>
+    </software>
+</package>

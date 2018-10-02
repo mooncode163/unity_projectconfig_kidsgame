@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://apple.com/itunes/importer" version="software5.9">
+   <!--  <provider>YuanFang Chen</provider> -->
+    <team_id>Y9ZUK2WTEE</team_id>
+    <software>
+        <vendor_id>commoonmapingtu</vendor_id>
+        <software_metadata>
+            <versions>
+                <version string="1.6.0">
+                    <locales>
+                        <locale name="en-US">
+                            <title>Kids Love Puzzle</title>
+                            <subtitle>Children's Puzzle</subtitle>
+                            <description>This is a specially designed jigsaw puzzle for children. It contains hundreds of passes and most of the common objects in life, including animals, fruits, vegetables, flowers, and transportation. By playing this game, your baby can improve your cognitive ability in life and promote your child's image thinking ability. The eye, hands and brain are also trained together to cultivate the comprehensive ability of the baby.
+    </description>
+                            <promotional_text>Make a child know the common things through a jigsaw puzzle</promotional_text>
+                            <keywords>
+                               <keyword>麦田认字软件,叫识字游戏,儿童益智,2kids学拼音,直映,学前数学,3岁宝宝爱学习汉字大赛,英大大智慧,画画大全,证券,幼儿园手工制作,悟空,认识字,童话故事成人,小鸡,在家早教音乐,巴巴熊儿歌多多</keyword> 
+                            </keywords>
+                            <version_whats_new>Fix a Bug</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                        </locale>
+
+                         <locale name="zh-Hans">
+                            <title>儿童拼图乐园</title>
+                            <subtitle>儿童拼图乐园</subtitle>
+                            <description>这是专为儿童精心设计的拼图游戏，内含上百道关卡，有生活中大部分常见的物体，涵盖动物，水果，蔬菜，花卉，交通工具等方面。宝宝通过玩该游戏可以提高对生活中事物的认知能力以及促进您孩子大脑的形象思维能力！眼，手，脑也一起得到锻炼，培养宝宝的综合能力，宝宝们赶快来体验吧！
+    </description>
+                            <promotional_text>通过拼图让孩子认识常见的事物</promotional_text>
+                            <keywords>
+                               <keyword>小孩玩的游戏大全,宝宝爱拼图,飞利浦儿童牙刷,认识动物医院小维智慧家庭,睡前音乐相册免费6岁,幼儿英语启蒙,掌上宝贝学英语,视通2,0,卫士,幼信通,汪汪队动画片,学声音,360电话,孩子长相预测</keyword> 
+                            </keywords>
+                            <version_whats_new>修复闪退</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                            
+                        </locale>
+
+                         <locale name="en-CA">
+                            <title>Kids Love Puzzle</title>
+                            <subtitle>Children's Puzzle</subtitle>
+                            <description>This is a specially designed jigsaw puzzle for children. It contains hundreds of passes and most of the common objects in life, including animals, fruits, vegetables, flowers, and transportation. By playing this game, your baby can improve your cognitive ability in life and promote your child's image thinking ability. The eye, hands and brain are also trained together to cultivate the comprehensive ability of the baby.
+    </description>
+                            <promotional_text>Make a child know the common things through a jigsaw puzzle</promotional_text>
+                            <keywords>
+                               <keyword>麦田认字软件,叫识字游戏,儿童益智,2kids学拼音,直映,学前数学,3岁宝宝爱学习汉字大赛,英大大智慧,画画大全,证券,幼儿园手工制作,悟空,认识字,童话故事成人,小鸡,在家早教音乐,巴巴熊儿歌多多</keyword> 
+                            </keywords>
+                           <version_whats_new>Fix a Bug</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                            
+                        </locale>
+
+                         <locale name="en-AU">
+                            <title>Kids Love Puzzle</title>
+                            <subtitle>Children's Puzzle</subtitle>
+                            <description>This is a specially designed jigsaw puzzle for children. It contains hundreds of passes and most of the common objects in life, including animals, fruits, vegetables, flowers, and transportation. By playing this game, your baby can improve your cognitive ability in life and promote your child's image thinking ability. The eye, hands and brain are also trained together to cultivate the comprehensive ability of the baby.
+    </description>
+                            <promotional_text>Make a child know the common things through a jigsaw puzzle</promotional_text>
+                            <keywords>
+                               <keyword>麦田认字软件,叫识字游戏,儿童益智,2kids学拼音,直映,学前数学,3岁宝宝爱学习汉字大赛,英大大智慧,画画大全,证券,幼儿园手工制作,悟空,认识字,童话故事成人,小鸡,在家早教音乐,巴巴熊儿歌多多</keyword> 
+                            </keywords>
+                            <version_whats_new>Fix a Bug</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                            
+                        </locale>
+
+                         <locale name="en-GB">
+                            <title>Kids Love Puzzle</title>
+                            <subtitle>Children's Puzzle</subtitle>
+                            <description>This is a specially designed jigsaw puzzle for children. It contains hundreds of passes and most of the common objects in life, including animals, fruits, vegetables, flowers, and transportation. By playing this game, your baby can improve your cognitive ability in life and promote your child's image thinking ability. The eye, hands and brain are also trained together to cultivate the comprehensive ability of the baby.
+    </description>
+                            <promotional_text>Make a child know the common things through a jigsaw puzzle</promotional_text>
+                            <keywords>
+                               <keyword>麦田认字软件,叫识字游戏,儿童益智,2kids学拼音,直映,学前数学,3岁宝宝爱学习汉字大赛,英大大智慧,画画大全,证券,幼儿园手工制作,悟空,认识字,童话故事成人,小鸡,在家早教音乐,巴巴熊儿歌多多</keyword> 
+                            </keywords>
+                            <version_whats_new>Fix a Bug</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                            
+                        </locale>
+                        
+                    </locales>
+                </version>
+            </versions>
+            <products>
+                <product>
+                    <territory>WW</territory>
+                    <sales_start_date>2010-05-25</sales_start_date>
+                    <cleared_for_sale>true</cleared_for_sale>
+                    <wholesale_price_tier>0</wholesale_price_tier>
+                    <allow_volume_discount>false</allow_volume_discount>
+                </product>
+                <product>
+                    <territory>RU</territory>
+                    <cleared_for_sale>true</cleared_for_sale>
+                </product>
+            </products>
+          
+          
+
+           <in_app_purchases>
+                <in_app_purchase>
+                    <product_id>com.moonma.pingtu.noad</product_id>
+                    <reference_name>noad</reference_name>
+                    <type>non-consumable</type>
+                    <products>
+                        <product>
+                            <cleared_for_sale>true</cleared_for_sale>
+                            <wholesale_price_tier>2</wholesale_price_tier>
+                        </product>
+                    </products>
+                    <locales>
+                        <locale name="en-US">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+
+                        <locale name="zh-Hans">
+                            <title>去除广告</title>
+                            <description>该产品可以去除应用内的所有广告</description>
+                        </locale>
+                        <locale name="en-CA">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+                        <locale name="en-AU">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+                        <locale name="en-GB">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+
+                        
+                    </locales>
+                    <review_screenshot>
+                        <file_name>in_app_purchases_screenshot.png</file_name>
+                        <size>96482</size>
+                        <checksum type="md5">dc4f197705c3983c730d236f54de2950</checksum>
+                    </review_screenshot>
+                    <!-- <review_notes></review_notes> -->
+                </in_app_purchase>
+               <!--  <in_app_purchase remove="true">
+                    <product_id>obsolete_com.cyberinteractive.tf.missiles.15</product_id>
+                </in_app_purchase> -->
+            </in_app_purchases>
+
+
+        </software_metadata>
+    </software>
+</package>
