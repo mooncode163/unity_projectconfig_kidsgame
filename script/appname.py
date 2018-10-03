@@ -51,6 +51,15 @@ def replaceString(strContent, strStart, strEnd, strReplace):
     return strRet
 
 
+def replaceFile(filePath, strOld, strReplace):
+    f = open(filePath, 'r')
+    strFile = f.read() 
+    strOut = strFile.replace(strOld, strReplace)
+    f.close()
+    saveString2File(strOut, filePath)
+    return strOut
+
+
 def replaceStringOfFile(filePath, strStart, strEnd, strReplace):
     f = open(filePath, 'r')
     strFile = f.read()
@@ -172,6 +181,18 @@ def updateXiaoASOkeyword(jsonData,isHd):
     strFile = replaceString2(strFile, strStart, strMid, strEnd, en)
     common.saveString2File(strFile, jsonfile)
 
+def copyResFiles(str):
+    dir_default = common.GetProjectConfigDefault()
+    # "../../../default"
+    dir_to = common.GetProjectConfigApp()
+
+    dir1 = dir_default+"/"+str
+    dir2 = dir_to + "/"+str
+    print(dir2)
+    flag = os.path.exists(dir2)
+    if flag:
+        shutil.rmtree(dir2)
+    shutil.copytree(dir1,dir2)
 
 def updateName(isHd):
     
@@ -254,6 +275,8 @@ def updateName(isHd):
     replaceGoogleServiceFile(file_google_service_android, PACKAGE_ANDROID)
 
 # ios
+    file_name_cn_ios = project_ios + "/appname/zh-Hans.lproj/InfoPlist.strings"
+    file_name_en_ios = project_ios + "/appname/en.lproj/InfoPlist.strings"
     strStart = "CFBundleDisplayName\" = \""
     strEnd = "\""
     # cn
@@ -295,7 +318,7 @@ def updateName(isHd):
         file_package_ios, strStart, strMid, strEnd, APPVERSION_IOS)
     saveString2File(strOut, file_package_ios)
 
-# CFBundleURLSchemes
+    # CFBundleURLSchemes
     src = source.WEIBO
     appid = config.GetShareAppId(src,source.IOS,isHd)
     replaceXcodeUrlScheme(file_package_ios,src,appid,0)
@@ -311,6 +334,30 @@ def updateName(isHd):
 
     # xiaomi aso keyword
     updateXiaoASOkeyword(data,isHd)
+
+# win
+    updateNameWin(isHd)
+
+
+def updateNameWin(isHd):
+    strOld = "_APP_NAME_"
+    rootConfig = common.GetProjectConfigApp()
+    project = rootConfig + "/win"
+    file_name_cn = project + "/strings/zh-cn/resources.resw"
+    file_name_en= project + "/strings/en-us/resources.resw"
+
+    data = loadJson(isHd)
+    APP_NAME_CN= data["APP_NAME_CN_ANDROID"]
+    APP_NAME_EN = data["APP_NAME_EN_ANDROID"] 
+
+    # cn
+    strOut = replaceFile(
+        file_name_cn, strOld, APP_NAME_CN)
+  
+    # en
+    strOut = replaceFile(
+        file_name_en, strOld, APP_NAME_EN) 
+
 
 
 # 主函数的实现
@@ -329,27 +376,15 @@ if __name__ == "__main__":
     
     common.SetCmdPath(cmdPath)
     
-    dir_default = common.GetProjectConfigDefault()
-    # "../../../default"
-    dir_to = common.GetProjectConfigApp()
+
 
 #先从default 拷贝 工程文件模版
     # ios project file
-    dir1 = dir_default+"/ios";
-    dir2 = dir_to + "/ios"
-    flag = os.path.exists(dir2)
-    if flag:
-        shutil.rmtree(dir2)
-    shutil.copytree(dir1,dir2)
-
+    copyResFiles(source.IOS)
     # android project file
-    dir1 = dir_default+"/android";
-    dir2 = dir_to + "/android"
-    flag = os.path.exists(dir2)
-    if flag:
-        shutil.rmtree(dir2)
-    shutil.copytree(dir1,dir2)
-#
+    copyResFiles(source.ANDROID)
+    # win 
+    copyResFiles(source.WIN)
 
     updateName(False)
     updateName(True)

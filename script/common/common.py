@@ -46,6 +46,10 @@ def copyFiles(sourceDir,  targetDir):
 #复制一级目录下的所有文件到指定目录：
 def coverFiles(sourceDir,  targetDir):
     for file in os.listdir(sourceDir):
+        # 过滤文件
+        if file == "Thumbs.db":
+            continue
+
         sourceFile = os.path.join(sourceDir,  file)
         targetFile = os.path.join(targetDir,  file)
             #cover the files
@@ -236,6 +240,8 @@ def GetRootProjectIos():
 def GetRootProjectAndroid():
     return GetRootDir()+"/project_android"
 
+def GetRootProjectWin():
+    return GetRootDir()+"/project_win"
 
 
 def GetProjectIconApp():

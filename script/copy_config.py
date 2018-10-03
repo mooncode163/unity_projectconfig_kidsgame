@@ -174,14 +174,19 @@ if  __name__ =="__main__":
 
     common.copyOneFile(file1,file2)
 
-    # ad libs
-    # dir1 = adCommonDir+"/libs_"+adDirName;
-    # dir2 = rootAndroidStudio+"/libs/ad"
-    # flag = os.path.exists(dir2)
-    # if flag:
-    #     shutil.rmtree(dir2)
+    # win res 
+    dir1 = iconRoot+"/"+resDataName+"/"+iconDirName+"/microsoft"
+    dir2 = common.GetRootProjectWin()+"/"+common.GetProjectName()+"/Assets"
+    common.coverFiles(dir1,   dir2)
 
-    # shutil.copytree(dir1,dir2)
+    # win strings 
+    dir1 = common.GetProjectConfigApp()+"/"+source.WIN+"/strings"
+    dir2 = common.GetRootProjectWin()+"/"+common.GetProjectName()+"/strings" 
+    flag = os.path.exists(dir2)
+    if flag:
+        shutil.rmtree(dir2)
+    shutil.copytree(dir1,dir2)
+    
 
 # ad src
     # dir1 = adSrcDir;

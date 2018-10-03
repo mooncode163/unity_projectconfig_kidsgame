@@ -9,6 +9,7 @@ import os.path
 # os
 IOS = "ios"
 ANDROID = "android"
+WIN = "win"
 
 # channel
 XIAOMI = "xiaomi"
