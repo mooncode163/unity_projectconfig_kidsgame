@@ -4,7 +4,10 @@
 filepath=$(cd "$(dirname "$0")"; pwd)
 echo $filepath
 cd $filepath
-cd ../../script
-python update_appstore.py $filepath
+cd ../../../script
+python copy_config.py $filepath icon 
+python clean_screenshot.py $filepath
+cd $filepath
+python ../../../clean_xcode_profile.py
  
  

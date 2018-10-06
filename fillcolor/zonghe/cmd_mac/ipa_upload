@@ -4,8 +4,8 @@
 filepath=$(cd "$(dirname "$0")"; pwd)
 echo $filepath
 cd $filepath
-cd ../../script
-python ipa_build.py
+cd ../../../script
+python ipa_build.py upload_ipa
  
 
  

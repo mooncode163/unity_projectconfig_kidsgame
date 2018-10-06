@@ -4,8 +4,9 @@
 filepath=$(cd "$(dirname "$0")"; pwd)
 echo $filepath
 cd $filepath
-cd ../../script
-python copy_cmd.py $filepath
+cd ../../../script
+python save_resource.py $filepath
+python appcode.py $filepath "save"
  
 
  

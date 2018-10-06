@@ -4,8 +4,8 @@
 filepath=$(cd "$(dirname "$0")"; pwd)
 echo $filepath
 cd $filepath
-cd ../../script
-python copy_config.py $filepath iconhd
-python clean_screenshot.py $filepath
-cd $filepath
-python ../../clean_xcode_profile.py
+cd ../../../script
+python ipa_build.py
+ 
+
+ 

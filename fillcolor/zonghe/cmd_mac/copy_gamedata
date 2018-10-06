@@ -4,6 +4,8 @@
 filepath=$(cd "$(dirname "$0")"; pwd)
 echo $filepath
 cd $filepath
-cd ../../script
-python apk_installapk.py $filepath 
+cd ../../../script
+python copy_gamedata.py $filepath
+ 
+
  

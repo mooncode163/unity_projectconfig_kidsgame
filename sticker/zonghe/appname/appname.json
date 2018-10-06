@@ -5,8 +5,8 @@
     "APP_NAME_EN_IOS": "KidsLearnSticker",
     "PACKAGE_ANDROID": "com.moonma.stickerzonghe",
     "PACKAGE_IOS": "com.moonma.sticker-zonghe",
-    "APPVERSION_ANDROID": "1.0.0",
-    "APPVERSION_CODE_ANDROID": "100",
+    "APPVERSION_ANDROID": "1.1.0",
+    "APPVERSION_CODE_ANDROID": "110",
     "APPVERSION_IOS": "1.1.0",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {

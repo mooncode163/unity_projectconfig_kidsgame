@@ -4,7 +4,8 @@
 filepath=$(cd "$(dirname "$0")"; pwd)
 echo $filepath
 cd $filepath
-cd ../../script
-python copy_ios_code.py
+cd ../../../script
+python ipa_build.py export_ipa 
  
+
  

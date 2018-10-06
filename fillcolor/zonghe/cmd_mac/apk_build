@@ -4,7 +4,7 @@
 filepath=$(cd "$(dirname "$0")"; pwd)
 echo $filepath
 cd $filepath
-cd ../../script
+cd ../../../script
 python apk_build_clean.py 
 python apk_build.py $filepath
 

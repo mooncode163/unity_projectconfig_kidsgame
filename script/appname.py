@@ -57,12 +57,12 @@ def replaceFile(filePath, strOld, strReplace):
     strOut = strFile.replace(strOld, strReplace)
     f.close()
     saveString2File(strOut, filePath)
-    return strOut
 
 
 def replaceStringOfFile(filePath, strStart, strEnd, strReplace):
     f = open(filePath, 'r')
     strFile = f.read()
+    # strFile.decode('utf-8')
     # print strFile
     strOut = replaceString(strFile, strStart, strEnd, strReplace)
     # print strOut
@@ -351,12 +351,21 @@ def updateNameWin(isHd):
     APP_NAME_EN = data["APP_NAME_EN_ANDROID"] 
 
     # cn
-    strOut = replaceFile(
-        file_name_cn, strOld, APP_NAME_CN)
-  
+    replaceFile(file_name_cn, strOld, APP_NAME_CN)
     # en
-    strOut = replaceFile(
-        file_name_en, strOld, APP_NAME_EN) 
+    replaceFile(file_name_en, strOld, APP_NAME_EN)
+
+    PACKAGE = data["PACKAGE_ANDROID"]
+   
+    filepath= project + "/strings/common.resw"
+    replaceFile(filepath, "_APP_PACKAGE_", PACKAGE)
+ 
+    # # <Identity Name="47113moonma.KidsShapeColor"
+    # strStart = "<Identity Name=\""
+    # strEnd = "\""
+    # filepath= common.GetRootProjectWin()+"/"+ common.GetProjectName()+ "/Package.appxmanifest"
+    # strOut = replaceStringOfFile(file, strStart, strEnd, PACKAGE)
+    # saveString2File(strOut, file)
 
 
 
