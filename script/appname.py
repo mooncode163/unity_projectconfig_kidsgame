@@ -15,6 +15,8 @@ import common
 import config
 import source
 
+versionCode = 100
+
 def GetPackage(osSrc,isHD): 
     jsonData = loadJson(isHD) 
     key = "PACKAGE_IOS"
@@ -194,7 +196,44 @@ def copyResFiles(str):
         shutil.rmtree(dir2)
     shutil.copytree(dir1,dir2)
 
-def updateName(isHd):
+def autoPlusVersion(isHd,jsonData):
+    global versionCode 
+    strold = "\"APPVERSION_CODE_ANDROID\": \""+versionCode+"\""
+    strold_version_android = "\"APPVERSION_ANDROID\": \""+jsonData["APPVERSION_ANDROID"]+"\""
+    strold_version_ios = "\"APPVERSION_IOS\": \""+jsonData["APPVERSION_IOS"]+"\""
+    int_v = int(versionCode)
+    int_v=int_v+1
+    versionCode = str(int_v)
+    strnew = "\"APPVERSION_CODE_ANDROID\": \""+versionCode+"\"" 
+    strnew_version_android = "\"APPVERSION_ANDROID\": \""+versionCodeToVersion()+"\""
+    strnew_version_ios = "\"APPVERSION_IOS\": \""+versionCodeToVersion()+"\""
+
+    # 替换json
+    jsonfile = GetJsonFile(isHd) 
+   
+    f = open(jsonfile, 'r')
+    strOut = f.read() 
+    strOut = strOut.replace(strold, strnew)
+    strOut = strOut.replace(strold_version_android, strnew_version_android)
+    strOut = strOut.replace(strold_version_ios, strnew_version_ios)
+    f.close()
+    saveString2File(strOut, jsonfile) 
+
+
+     
+
+
+# 161 to 1.6.1
+def versionCodeToVersion():
+    code_v = int(versionCode)
+    # 
+    v0 = int(code_v/100)
+    v1 =int((code_v-v0*100)/10)
+    v2 = code_v-v0*100-v1*10
+    ret = str(v0)+"."+str(v1)+"."+str(v2)
+    return ret
+
+def updateName(isHd,isAuto):
     
     rootConfig = common.GetProjectConfigApp()
     strHD = "HD"
@@ -229,10 +268,15 @@ def updateName(isHd):
     #     PACKAGE_HD_ANDROID = data["PACKAGE_HD_ANDROID"]
 
     PACKAGE_IOS = data["PACKAGE_IOS"]
+    global versionCode
+    versionCode = data["APPVERSION_CODE_ANDROID"]
+    if isAuto==True: 
+        autoPlusVersion(isHd,data) 
 
-    APPVERSION_ANDROID = data["APPVERSION_ANDROID"]
-    APPVERSION_CODE_ANDROID = data["APPVERSION_CODE_ANDROID"]
-    APPVERSION_IOS = data["APPVERSION_IOS"]
+
+    APPVERSION_ANDROID = versionCodeToVersion()
+    APPVERSION_CODE_ANDROID = versionCode
+    APPVERSION_IOS = versionCodeToVersion()
 
     print APP_NAME_CN_ANDROID
     print APP_NAME_EN_ANDROID
@@ -336,10 +380,10 @@ def updateName(isHd):
     updateXiaoASOkeyword(data,isHd)
 
 # win
-    updateNameWin(isHd)
+    updateNameWin(isHd,isAuto)
 
 
-def updateNameWin(isHd):
+def updateNameWin(isHd,isAuto):
     strOld = "_APP_NAME_"
     rootConfig = common.GetProjectConfigApp()
     project = rootConfig + "/win"
@@ -374,7 +418,7 @@ if __name__ == "__main__":
     # 设置为utf8编码
     reload(sys)
     sys.setdefaultencoding("utf-8")
-
+    is_auto_plus_version = False
     # 入口参数：http://blog.csdn.net/intel80586/article/details/8545572
     cmdPath = common.cur_file_dir()
     count = len(sys.argv)
@@ -382,7 +426,10 @@ if __name__ == "__main__":
         print "参数", i, sys.argv[i]
         if i==1:
             cmdPath = sys.argv[i]
-    
+        if i==2:
+            if sys.argv[i]=="true":
+                is_auto_plus_version = True
+
     common.SetCmdPath(cmdPath)
     
 
@@ -395,7 +442,7 @@ if __name__ == "__main__":
     # win 
     copyResFiles(source.WIN)
 
-    updateName(False)
-    updateName(True)
+    updateName(False,is_auto_plus_version)
+    updateName(True,is_auto_plus_version)
 
     print "appname sucess"

@@ -5,8 +5,8 @@
     "APP_NAME_EN_IOS": "KidsColoringWorld",
     "PACKAGE_ANDROID": "com.moonma.paintzonghe",
     "PACKAGE_IOS": "com.moonma.paintzonghe",
-    "APPVERSION_ANDROID": "1.1.0",
-    "APPVERSION_CODE_ANDROID": "110",
+    "APPVERSION_ANDROID": "1.2.1",
+    "APPVERSION_CODE_ANDROID": "121",
     "APPVERSION_IOS": "1.2.0",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {

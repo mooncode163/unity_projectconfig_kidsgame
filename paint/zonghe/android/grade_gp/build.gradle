@@ -2,13 +2,14 @@
 buildscript {
 	repositories {
 		jcenter()
+		google()
 	}
 
 	dependencies {
 	//gradle 版本要和主目录下 .gradle和 gradle文件夹下gradle-wrapper.properties设置的保持一致
 	//如2.3.3对应于gradle-wrapper.properties里设置的3.3版本
 	//同时apk-build 对应的gradle bin 路径（环境变量）也要指定为对应的版本
-		classpath 'com.android.tools.build:gradle:2.3.3'
+		classpath 'com.android.tools.build:gradle:3.1.2'
 	}
 }
 
@@ -17,6 +18,8 @@ allprojects {
       flatDir {
         dirs 'libs'
       }
+	  jcenter()
+	  google()
    }
 }
 
@@ -64,7 +67,7 @@ android {
 	buildToolsVersion '28.0.1'
 
 	defaultConfig {
-		targetSdkVersion 21
+		targetSdkVersion 26
 		multiDexEnabled true
 		minSdkVersion 21
 	}

@@ -7,7 +7,7 @@
       android:icon="@mipmap/ic_launcher"
       android:label="@string/app_name"
       android:isGame="true" >
-    <activity android:label="@string/app_name" android:name="com.moonma.unity.UnityPlayerActivity" android:screenOrientation="sensorPortrait" android:launchMode="singleTask" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection">
+    <activity android:label="@string/app_name" android:name="com.moonma.unity.MainActivity" android:screenOrientation="sensorPortrait" android:launchMode="singleTask" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection">
       <!--reverseLandscape  ng  android:screenOrientation="sensorLandscape" -->
       <intent-filter>--&gt;
       <action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /><category android:name="android.intent.category.LEANBACK_LAUNCHER" /></intent-filter>--&gt;

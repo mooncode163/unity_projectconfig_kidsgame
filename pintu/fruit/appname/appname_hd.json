@@ -5,8 +5,8 @@
     "APP_NAME_EN_IOS": "BabyFruitPuzzleHD",
     "PACKAGE_ANDROID": "com.moonma.pintufruit.pad",
     "PACKAGE_IOS": "com.moonma.pintufruit.pad",
-    "APPVERSION_ANDROID": "1.0.0",
-    "APPVERSION_CODE_ANDROID": "100",
+    "APPVERSION_ANDROID": "1.1.0",
+    "APPVERSION_CODE_ANDROID": "110",
     "APPVERSION_IOS": "1.0.0",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {

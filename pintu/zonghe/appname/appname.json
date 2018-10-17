@@ -5,8 +5,8 @@
     "APP_NAME_EN_IOS": "KidsLovePuzzle",
     "PACKAGE_ANDROID": "com.moonma.pingtu",
     "PACKAGE_IOS": "com.moonma.pingtu",
-    "APPVERSION_ANDROID": "1.6.0",
-    "APPVERSION_CODE_ANDROID": "160",
+    "APPVERSION_ANDROID": "1.6.1",
+    "APPVERSION_CODE_ANDROID": "161",
     "APPVERSION_IOS": "1.6.0",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {

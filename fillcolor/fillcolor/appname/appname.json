@@ -5,8 +5,8 @@
     "APP_NAME_EN_IOS": "CrazyColorBook",
     "PACKAGE_ANDROID": "com.moonma.fillcolor",
     "PACKAGE_IOS": "com.moonma.fillcolor",
-    "APPVERSION_ANDROID": "1.7.1",
-    "APPVERSION_CODE_ANDROID": "171",
+    "APPVERSION_ANDROID": "1.7.2",
+    "APPVERSION_CODE_ANDROID": "172",
     "APPVERSION_IOS": "1.3.1",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
