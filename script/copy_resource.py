@@ -20,6 +20,27 @@ def copy_plugins():
         # shutil.rmtree(dir2)
         shutil.copytree(dir1,dir2)
 
+def CopyResConfigData():
+    # ResConfigDataCommon 
+    reousceDataRoot = common.GetResourceDataRoot() 
+    dirname = "ConfigDataCommon"
+    dirUnity = common.GetRootProjectUnity()+ "/Assets/Resources/App"
+    dir1 = reousceDataRoot+"/"+dirname
+    dir2 = dirUnity+"/"+dirname
+    flag = os.path.exists(dir2)
+    if flag:
+        shutil.rmtree(dir2)
+    shutil.copytree(dir1,dir2)
+    
+    # ConfigData
+    dir1 = common.GetConfigDataDir()
+    dir2 = dirUnity+"/ConfigData"
+    flag = os.path.exists(dir2)
+    if flag:
+        shutil.rmtree(dir2)
+    shutil.copytree(dir1,dir2)
+
+
 #主函数的实现
 if  __name__ =="__main__":
     
@@ -38,11 +59,15 @@ if  __name__ =="__main__":
     print gameName
     print gameType 
 
-    # resoucedata
-    dirname = "Resources"
-    dir1 = common.GetResourceDataRoot()+"/"+gameType+"/"+gameName+"/"+dirname
-    dir2 = common.GetRootProjectUnity()+"/Assets/Resources"
-    common.copyResourceFiles(dir1,dir2)
+    # resoucedata 
+    dir1 = common.GetResourceDataRoot()+"/"+gameType+"/"+gameName+"/"+"Resources/App"
+    dir2 = common.GetRootProjectUnity()+"/Assets/Resources/App" 
+    flag = os.path.exists(dir2)
+    if flag:
+        shutil.rmtree(dir2)
+    shutil.copytree(dir1,dir2)
+
+    CopyResConfigData()
 
     copy_plugins()
 

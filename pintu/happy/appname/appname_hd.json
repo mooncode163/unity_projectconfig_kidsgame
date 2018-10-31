@@ -1,13 +1,13 @@
 {
-    "APP_NAME_CN_ANDROID": "天天拼多多HD",
+    "APP_NAME_CN_ANDROID": "天天开心拼图HD",
     "APP_NAME_EN_ANDROID": "HappyPuzzleHD",
-    "APP_NAME_CN_IOS": "天天拼多多HD",
+    "APP_NAME_CN_IOS": "天天开心拼图HD",
     "APP_NAME_EN_IOS": "HappyPuzzleHD",
     "PACKAGE_ANDROID": "com.moonma.happypintu.pad",
     "PACKAGE_IOS": "com.moonma.happypintu.pad",
-    "APPVERSION_ANDROID": "1.0.0",
-    "APPVERSION_CODE_ANDROID": "100",
-    "APPVERSION_IOS": "1.0.0",
+    "APPVERSION_ANDROID": "1.0.1",
+    "APPVERSION_CODE_ANDROID": "101",
+    "APPVERSION_IOS": "1.0.1",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",

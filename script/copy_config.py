@@ -35,6 +35,9 @@ def UpdateXcodeProjectFile(fileProject,isHD):
         common.saveString2File(strFile,fileProject)
 
     
+
+
+    
 def CopyAndroidJavaFile_Weixin(rootStudio,isHD):
     dirroot = common.GetProjectConfigApp()
     strFileFrom = dirroot+"/android/src/wxapi/WXEntryActivity.java"
@@ -49,11 +52,7 @@ def CopyAndroidJavaFile_Weixin(rootStudio,isHD):
 
     strOut = strFile.replace("_PACKAGE_", package)
     common.saveString2File(strOut,strFileTo)
-
-    # if os.path.isfile(strFileFrom):
-    #     shutil.copyfile(strFileFrom,strFileTo)
-    #
-    #   
+ 
 
 #主函数的实现
 if  __name__ =="__main__":
@@ -95,8 +94,7 @@ if  __name__ =="__main__":
  
     # project
     iconRoot =common.GetProjectIcon()+"/"+gameType
-    reousceDataRoot = common.GetResourceDataRoot()
-    reousceUnity =common.GetRootProjectUnity()+ "/Assets/Resources"
+    reousceDataRoot = common.GetResourceDataRoot() 
     sourceDir = common.GetProjectConfigApp()
     # sourceAdDir = "../../../../ad_src/"+adDirName
     # adCommonDir = "../../../../../common_ad"
@@ -180,7 +178,10 @@ if  __name__ =="__main__":
     common.coverFiles(dir1,   dir2)
 
     # win strings 
-    dir1 = common.GetProjectConfigApp()+"/"+source.WIN+"/strings"
+    dir_src_string = common.GetProjectConfigApp()+"/"+source.WIN + "/project"
+    if isHD:
+        dir_src_string = common.GetProjectConfigApp()+"/"+source.WIN + "/project_hd"
+    dir1 = dir_src_string+"/strings"
     dir2 = common.GetRootProjectWin()+"/"+common.GetProjectName()+"/strings" 
     flag = os.path.exists(dir2)
     if flag:
@@ -224,5 +225,6 @@ if  __name__ =="__main__":
     
     config_adsdk_android.SetAdSdk(source.UNITY, True)
     config_adsdk_android.SetAdSdk(source.ADMOB, False)
+ 
 
     print "copy_config sucess"

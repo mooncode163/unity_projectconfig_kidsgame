@@ -386,7 +386,10 @@ def updateName(isHd,isAuto):
 def updateNameWin(isHd,isAuto):
     strOld = "_APP_NAME_"
     rootConfig = common.GetProjectConfigApp()
-    project = rootConfig + "/win"
+    project = rootConfig + "/win/project"
+    if isHd:
+        project = rootConfig + "/win/project_hd"
+
     file_name_cn = project + "/strings/zh-cn/resources.resw"
     file_name_en= project + "/strings/en-us/resources.resw"
 

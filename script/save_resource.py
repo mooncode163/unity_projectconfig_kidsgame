@@ -31,7 +31,7 @@ if  __name__ =="__main__":
     print gameType 
     print gameName 
 
-    configDirUnity = common.GetRootProjectUnity()+"/Assets/StreamingAssets/GameData/config"
+    configDirUnity = common.GetRootProjectUnity()+"/Assets/Resources/App/ConfigData/config"
 
     configAppType = config.GetConfigAppType(configDirUnity)
     configAppName = config.GetConfigAppName(configDirUnity)
@@ -42,10 +42,12 @@ if  __name__ =="__main__":
         sys.exit(0)
 
 
-    dir1 = common.GetRootProjectUnity()+"/Assets/Resources"
-    dir2 = common.GetResourceDataRoot()+"/"+gameType+"/"+gameName+"/"+"Resources"
-  
-    common.saveResourceFiles(dir1,dir2)
+    dir1 = common.GetRootProjectUnity()+"/Assets/Resources/App"
+    dir2 = common.GetResourceDataRoot()+"/"+gameType+"/"+gameName+"/"+"Resources/App"
+    flag = os.path.exists(dir2)
+    if flag:
+        shutil.rmtree(dir2)
+    shutil.copytree(dir1,dir2)
 
 
 

@@ -252,6 +252,9 @@ def GetProjectIconApp():
 def GetRootDirAndroidStudio():
     return GetRootDir()+ "/project_android/"+GetProjectName()
 
+def GetRootDirAndroidAsset(): 
+    return GetRootDirAndroidStudio()+ "/src/main/assets"
+
 def GetRootDirXcode():
     return GetRootDir()+"/project_ios/"+GetProjectName()+"_device"
 
@@ -274,19 +277,18 @@ def getAndroidProjectApk():
     return path
 
     
-def GetAdConfigDir(): 
+def GetConfigDataDir(): 
     apptype = getGameType()
     appname = getGameName()
     ret_dir = GetResourceDataRoot()+"/"+apptype+"/"+appname
-    ret_dir+="/GameData/adconfig"
+    ret_dir+="/ConfigData"
     return ret_dir
 
+def GetAdConfigDir(): 
+    return GetConfigDataDir()+"/adconfig"
+
 def GetConfigDir(): 
-    apptype = getGameType()
-    appname = getGameName()
-    ret_dir = GetResourceDataRoot()+"/"+apptype+"/"+appname
-    ret_dir+="/GameData/config"
-    return ret_dir
+    return GetConfigDataDir()+"/config"
 
 def GetFileString(filePath): 
     f = open(filePath, 'r')

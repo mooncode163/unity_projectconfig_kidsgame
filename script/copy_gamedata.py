@@ -18,6 +18,14 @@ def getGameResName():
     game = name[idx+1:s_len]
     return game
 
+def CopyConfigDataToAndroid(): 
+    dir1 = common.GetConfigDataDir()
+    dir2 = common.GetRootDirAndroidAsset()+ "/ConfigData"
+    flag = os.path.exists(dir2)
+    if flag:
+        shutil.rmtree(dir2)
+    shutil.copytree(dir1,dir2)
+
 #主函数的实现
 if  __name__ =="__main__":
     
@@ -127,5 +135,7 @@ if  __name__ =="__main__":
     if flag:
         shutil.rmtree(dir2)
     shutil.copytree(dir1,dir2)
+
+    CopyConfigDataToAndroid()
 
     print "copy_gamedata sucess"
