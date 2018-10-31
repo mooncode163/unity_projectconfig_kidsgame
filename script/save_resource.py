@@ -31,7 +31,7 @@ if  __name__ =="__main__":
     print gameType 
     print gameName 
 
-    configDirUnity = common.GetRootProjectUnity()+"/Assets/Resources/App/ConfigData/config"
+    configDirUnity = common.GetRootProjectUnity()+"/Assets/Resources/ConfigData/config"
 
     configAppType = config.GetConfigAppType(configDirUnity)
     configAppName = config.GetConfigAppName(configDirUnity)
