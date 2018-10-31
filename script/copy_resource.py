@@ -24,7 +24,7 @@ def CopyResConfigData():
     # ResConfigDataCommon 
     reousceDataRoot = common.GetResourceDataRoot() 
     dirname = "ConfigDataCommon"
-    dirUnity = common.GetRootProjectUnity()+ "/Assets/Resources/App"
+    dirUnity = common.GetRootProjectUnity()+ "/Assets/Resources"
     dir1 = reousceDataRoot+"/"+dirname
     dir2 = dirUnity+"/"+dirname
     flag = os.path.exists(dir2)
