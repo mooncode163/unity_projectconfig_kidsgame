@@ -64,7 +64,7 @@ def updateChannel(channel):
         config_adsdk_android.SetAdSdk(source.ADMOB, True)
         project = common.GetProjectConfigApp() + "/android" + "/grade_"+source.GP
     else:
-        config_adsdk_android.SetAdSdk(source.ADMOB, False)
+        config_adsdk_android.SetAdSdk(source.ADMOB, True)
 
     #配置build.grade
     common.coverFiles(project,   targetDir)

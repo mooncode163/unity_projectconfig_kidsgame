@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "KidsVehicleColor",
     "PACKAGE_ANDROID": "com.moonma.fillcolorvehicle",
     "PACKAGE_IOS": "com.moonma.fillcolorvehicle",
-    "APPVERSION_ANDROID": "1.1.0",
-    "APPVERSION_CODE_ANDROID": "110",
-    "APPVERSION_IOS": "1.0.0",
+    "APPVERSION_ANDROID": "1.1.2",
+    "APPVERSION_CODE_ANDROID": "112",
+    "APPVERSION_IOS": "1.1.2",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",

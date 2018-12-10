@@ -224,7 +224,7 @@ if  __name__ =="__main__":
     config_adsdk_android.SetAdSdk(source.ADVIEW, False) 
     
     config_adsdk_android.SetAdSdk(source.UNITY, True)
-    config_adsdk_android.SetAdSdk(source.ADMOB, False)
+    config_adsdk_android.SetAdSdk(source.ADMOB, True)
  
 
     print "copy_config sucess"

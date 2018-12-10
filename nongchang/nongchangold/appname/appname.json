@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "Kids Farm",
     "PACKAGE_ANDROID": "com.moonma.nongchang2",
     "PACKAGE_IOS": "com.moonma.pinpinle.nongchang",
-    "APPVERSION_ANDROID": "1.9.3",
-    "APPVERSION_CODE_ANDROID": "193",
-    "APPVERSION_IOS": "1.8.0",
+    "APPVERSION_ANDROID": "1.9.5",
+    "APPVERSION_CODE_ANDROID": "195",
+    "APPVERSION_IOS": "1.9.5",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",
