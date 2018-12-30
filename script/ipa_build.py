@@ -10,6 +10,7 @@ import sys
 
 sys.path.append('./common')
 import common
+import source
 
 # 获取脚本文件的当前路径
 
@@ -78,7 +79,7 @@ if __name__ == "__main__":
     if isUploadIPA == True:
         strCmd = "/Applications/Xcode.app/Contents/Applications/Application\ Loader.app/Contents/Frameworks/ITunesSoftwareService.framework/Versions/A/Support/altool --upload-app -f " + \
             ipa_file + "/" + target + ".ipa" + \
-            " -t ios -u chyfemail163@163.com -p ayww-hcnh-uaau-lsgh"
+            " -t ios -u "+source.APPSTORE_USER+" -p "+source.APPSTORE_PASSWORD
         os.system(strCmd)
     else:
         # build target.app

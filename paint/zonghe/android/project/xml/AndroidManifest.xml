@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.moonma.paintzonghe" xmlns:tools="http://schemas.android.com/tools" android:versionName="1.2.1" android:versionCode="121" android:installLocation="preferExternal">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.moonma.paintzonghe" xmlns:tools="http://schemas.android.com/tools" android:versionName="1.2.2" android:versionCode="122" android:installLocation="preferExternal">
   <supports-screens android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" android:anyDensity="true" />
   <application
       android:name="com.moonma.unity.MyApplication"

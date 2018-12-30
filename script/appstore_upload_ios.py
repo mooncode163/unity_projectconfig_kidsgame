@@ -10,6 +10,7 @@ import sys
 #include appinfo.py
 sys.path.append('./common')
 import common
+import source
 
 ##获取脚本文件的当前路径
 def cur_file_dir():
@@ -45,7 +46,7 @@ if  __name__ =="__main__":
     if isHD:
         strFile = "app_pad.itmsp"
     # ／"/Applications/Xcode.app/Contents/Applications/Application\ Loader.app/Contents/itms/bin/iTMSTransporter -m upload -u chyfemail163@163.com -p ayww-hcnh-uaau-lsgh -f ./appstore/ios/app.itmsp -v eXtreme""/Applications/Xcode.app/Contents/Applications/Application\ Loader.app/Contents/itms/bin/iTMSTransporter -m upload -u chyfemail163@163.com -p ayww-hcnh-uaau-lsgh -f ./appstore/ios/app.itmsp -v eXtreme"
-    strCmd = "/Applications/Xcode.app/Contents/Applications/Application\ Loader.app/Contents/itms/bin/iTMSTransporter -m upload -u chyfemail163@163.com -p ayww-hcnh-uaau-lsgh  -v eXtreme -f "+common.GetProjectConfigApp()+ "/appstore/ios/"+strFile
+    strCmd = "/Applications/Xcode.app/Contents/Applications/Application\ Loader.app/Contents/itms/bin/iTMSTransporter -m upload -u "+source.APPSTORE_USER+" -p "+source.APPSTORE_PASSWORD+"  -v eXtreme -f "+common.GetProjectConfigApp()+ "/appstore/ios/"+strFile
     os.system(strCmd) 
         
     print "appstore_upload_ios sucess"

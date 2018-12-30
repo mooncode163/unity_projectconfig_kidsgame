@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "BabyAnimalStickerHD",
     "PACKAGE_ANDROID": "com.moonma.animalsticker.pad",
     "PACKAGE_IOS": "com.moonma.animalsticker.pad",
-    "APPVERSION_ANDROID": "1.1.5",
-    "APPVERSION_CODE_ANDROID": "115",
-    "APPVERSION_IOS": "1.1.5",
+    "APPVERSION_ANDROID": "1.1.6",
+    "APPVERSION_CODE_ANDROID": "116",
+    "APPVERSION_IOS": "1.1.6",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",
