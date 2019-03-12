@@ -34,7 +34,8 @@
         "en": "COOKING MAMA Let's Cook Kids Shave Salon Spa Doodle Zedd the Zombie Shapes Toddler QuizUp Clawber"
     },
     "software_url": "http://www.mooncore.cn",
-    "privacy_url": "http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
+    "privacy_url": "http://ec2-54-152-36-52.compute-1.amazonaws.com/privacy/privacyPolicy_kidsgame_aws.shtml",
+    "privacy_url_aliyun": "http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
     "support_url": "http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html",
     "sku_app": "animalcolor"
 }
