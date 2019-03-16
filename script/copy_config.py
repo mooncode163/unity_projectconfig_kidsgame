@@ -208,9 +208,12 @@ if  __name__ =="__main__":
     appid_xiaomi = adconfig.GetAppId(source.XIAOMI,source.ANDROID,isHD)
     if "0"==appid_xiaomi:
         print "no xiaomi ad appid"
+        # VUNGLE 和 XIAOMI sdk gson库 冲突
         config_adsdk_android.SetAdSdk(source.XIAOMI, False)
+        config_adsdk_android.SetAdSdk(source.VUNGLE, True)
     else:
         config_adsdk_android.SetAdSdk(source.XIAOMI, True)
+        config_adsdk_android.SetAdSdk(source.VUNGLE, False)
    
       
     appid_gdt = adconfig.GetAppId(source.GDT,source.ANDROID,isHD)

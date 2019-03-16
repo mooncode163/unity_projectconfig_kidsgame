@@ -66,6 +66,9 @@
         <activity android:name="com.kyview.AdActivity" />
         <!--  Adivew SDK end-->
 
+        <!--  Vungle SDK start-->
+        <activity android:name="com.vungle.warren.ui.VungleActivity" android:configChanges="keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize" android:launchMode="singleTop" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <!--  Vungle SDK end-->
 
         <!-- mobvista ad sdk -->
         <service android:name="com.mintegral.msdk.shell.MTGService">
@@ -197,11 +200,11 @@
     <!-- AdView SDK end -->
 
     <!-- google play 内购 -->
-        <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="com.android.vending.BILLING" />
     <!-- google play内购 end -->
- 
 
-<!-- 小米内购 -->
+
+    <!-- 小米内购 -->
     <!-- <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />

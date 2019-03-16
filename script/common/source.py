@@ -29,6 +29,7 @@ ADVIEW = "adview"
 GDT = "gdt"
 UNITY = "unity"
 ADMOB = "admob"
+VUNGLE = "vungle"
 
 # appstore 账号
 APPSTORE_USER = "chyfemail163@163.com"
