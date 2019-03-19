@@ -5,8 +5,8 @@
     "APP_NAME_EN_IOS": "HappyPuzzle",
     "PACKAGE_ANDROID": "com.moonma.happypintu",
     "PACKAGE_IOS": "com.moonma.happypintu",
-    "APPVERSION_ANDROID": "1.2.2",
-    "APPVERSION_CODE_ANDROID": "122",
+    "APPVERSION_ANDROID": "1.2.3",
+    "APPVERSION_CODE_ANDROID": "123",
     "APPVERSION_IOS": "1.2.3",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {

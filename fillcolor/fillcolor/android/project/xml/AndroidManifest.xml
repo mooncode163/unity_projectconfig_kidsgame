@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.moonma.fillcolor" 
-    xmlns:tools="http://schemas.android.com/tools" android:versionName="1.7.4" android:versionCode="174" android:installLocation="preferExternal">
+    xmlns:tools="http://schemas.android.com/tools" android:versionName="1.7.6" android:versionCode="176" android:installLocation="preferExternal">
     <supports-screens android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" android:anyDensity="true" />
     <application android:name="com.moonma.common.MyApplication" android:theme="@style/UnityThemeSelector" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:isGame="true">
         <activity android:label="@string/app_name" android:name="com.moonma.unity.MainActivity" android:screenOrientation="sensorPortrait" android:launchMode="singleTask" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection">
@@ -66,6 +66,9 @@
         <activity android:name="com.kyview.AdActivity" />
         <!--  Adivew SDK end-->
 
+        <!--  Vungle SDK start-->
+        <activity android:name="com.vungle.warren.ui.VungleActivity" android:configChanges="keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize" android:launchMode="singleTop" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <!--  Vungle SDK end-->
 
         <!-- mobvista ad sdk -->
         <service android:name="com.mintegral.msdk.shell.MTGService">
@@ -197,11 +200,11 @@
     <!-- AdView SDK end -->
 
     <!-- google play 内购 -->
-        <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="com.android.vending.BILLING" />
     <!-- google play内购 end -->
- 
 
-<!-- 小米内购 -->
+
+    <!-- 小米内购 -->
     <!-- <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
