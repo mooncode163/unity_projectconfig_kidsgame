@@ -1,13 +1,13 @@
 {
     "APP_NAME_CN_ANDROID": "儿童动物填色画画",
-    "APP_NAME_EN_ANDROID": "KidsAnimalColor",
+    "APP_NAME_EN_ANDROID": "Kids Animal Color",
     "APP_NAME_CN_IOS": "儿童动物填色画画",
-    "APP_NAME_EN_IOS": "KidsAnimalColor",
+    "APP_NAME_EN_IOS": "Kids Animal Color",
     "PACKAGE_ANDROID": "com.moonma.fillcoloranimal",
     "PACKAGE_IOS": "com.moonma.fillcoloranimal",
-    "APPVERSION_ANDROID": "1.3.2",
-    "APPVERSION_CODE_ANDROID": "132",
-    "APPVERSION_IOS": "1.3.2",
+    "APPVERSION_ANDROID": "1.3.3",
+    "APPVERSION_CODE_ANDROID": "133",
+    "APPVERSION_IOS": "1.3.3",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",
