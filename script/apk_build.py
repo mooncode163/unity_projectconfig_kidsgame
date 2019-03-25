@@ -18,13 +18,13 @@ import common
 
 def buildApk():
     if common.isWindowsSystem():
-        dir1 = "C:\Program Files\Android\Android Studio\gradle"
+        # dir1 = "C:\Program Files\Android\Android Studio\gradle"
     	dir2 = "C:/moon/gradle"
         flag = os.path.exists(dir2)
     	if not flag:
     		shutil.copytree(dir1,dir2)
         
-        os.system(dir2+"/gradle-4.4/bin/gradle assembleRelease")
+        os.system(dir2+"/gradle-4.10.1/bin/gradle assembleRelease")
     else:
         os.system("gradle assembleRelease")
    
