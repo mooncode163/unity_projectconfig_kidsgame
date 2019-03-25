@@ -95,11 +95,13 @@ android {
     }
 
     signingConfigs {
-        releaseConfig {
+        release {
             keyAlias 'moonma'
             keyPassword 'qianlizhiwai'
             storeFile file('./src/main/apk_sign_key.jks')
             storePassword 'qianlizhiwai'
+			v1SigningEnabled true  
+			v2SigningEnabled true 
         }
     }
 
@@ -114,7 +116,7 @@ android {
             minifyEnabled false
             useProguard false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-unity.txt'
-            signingConfig signingConfigs.debug
+            signingConfig signingConfigs.release
         }
     }
 
