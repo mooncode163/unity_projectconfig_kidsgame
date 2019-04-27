@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "KidsWriteChinese",
     "PACKAGE_ANDROID": "com.moonma.xiehanzi",
     "PACKAGE_IOS": "com.moonma.xiehanzi",
-    "APPVERSION_ANDROID": "1.7.3",
-    "APPVERSION_CODE_ANDROID": "173",
-    "APPVERSION_IOS": "1.7.3",
+    "APPVERSION_ANDROID": "1.7.4",
+    "APPVERSION_CODE_ANDROID": "174",
+    "APPVERSION_IOS": "1.7.4",
     "APPSTORE_VERSION_UPDATE": {
         "cn": "新增自由写模式",
         "en": "New free write mode"

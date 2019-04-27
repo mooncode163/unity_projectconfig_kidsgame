@@ -24,6 +24,7 @@ def CopyConfigDataToAndroid():
     flag = os.path.exists(dir2)
     if flag:
         shutil.rmtree(dir2)
+    # print "CopyConfigDataToAndroid:dir1=",dir1," dir2=",dir2
     shutil.copytree(dir1,dir2)
 
 #主函数的实现

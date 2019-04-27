@@ -58,16 +58,30 @@ def saveString2File(str, file):
 
 def updateChannel(channel): 
     
-    project = common.GetProjectConfigApp() + "/android" + "/grade"
+    project = common.GetProjectConfigApp() + "/android" + "/gradle"
     targetDir = common.GetRootDirAndroidStudio()
     if channel == source.GP:
-        config_adsdk_android.SetAdSdk(source.ADMOB, True)
-        project = common.GetProjectConfigApp() + "/android" + "/grade_"+source.GP
+        config_adsdk_android.SetAdSdk(source.ADMOB, True) 
     else:
         config_adsdk_android.SetAdSdk(source.ADMOB, True)
 
+
+    build_gradle = common.GetProjectConfigApp() + "/android" + "/gradle/build"
+    # or (channel == source.GP)
+    if (channel == source.HUAWEI) :
+        build_gradle = build_gradle+"_"+channel 
+
+    build_gradle = build_gradle+".gradle"
+
     #配置build.grade
-    common.coverFiles(project,   targetDir)
+    #common.coverFiles(build_gradle,   targetDir)
+
+    build_gradle_dst = targetDir+"/build.gradle"
+    flag = os.path.exists(build_gradle_dst)
+    if flag:
+        os.remove(build_gradle_dst)
+
+    common.copyOneFile(build_gradle,build_gradle_dst)
 
     #  "channel_android": "xiaomi"
     file = getConfigJsonFile()
