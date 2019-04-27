@@ -52,4 +52,4 @@ if __name__ == "__main__":
         apk_build.buildApk()
         apk_build.copyApk(channel)
 
-    print "apk_build_gp sucess"
+    print "apk_build_huawei sucess"

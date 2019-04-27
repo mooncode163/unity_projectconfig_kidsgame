@@ -38,10 +38,10 @@ def copyApk(channel):
  
 
     if common.AppForPad():
-        dirapk+="heng"
+        dirapk+="/heng"
         gameName += "_hd"
     else:
-        dirapk+="shu"
+        dirapk+="/shu"
 
     if not os.path.exists(dirapk):
         os.makedirs(dirapk)
