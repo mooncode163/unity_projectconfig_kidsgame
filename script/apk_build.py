@@ -35,11 +35,16 @@ def copyApk(channel):
     gameType = common.getGameType()
  # copy2 同时复制文件权限
     dirapk = common.GetProjectIconApp() + "/apk"
-    if not os.path.exists(dirapk):
-        os.makedirs(dirapk)
+ 
 
     if common.AppForPad():
+        dirapk+="heng"
         gameName += "_hd"
+    else:
+        dirapk+="shu"
+
+    if not os.path.exists(dirapk):
+        os.makedirs(dirapk)
 
     shutil.copy2(common.getAndroidProjectApk(), dirapk + "/" +
                  gameType + "_" + gameName + "_" + channel + ".apk")
