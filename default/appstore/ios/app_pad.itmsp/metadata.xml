@@ -105,7 +105,7 @@
                     <territory>WW</territory>
                     <sales_start_date>2010-05-25</sales_start_date>
                     <cleared_for_sale>true</cleared_for_sale>
-                    <wholesale_price_tier>0</wholesale_price_tier>
+                    <wholesale_price_tier>3</wholesale_price_tier>
                     <allow_volume_discount>false</allow_volume_discount>
                 </product>
                 <product>

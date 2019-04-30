@@ -252,6 +252,9 @@ def GetProjectIconApp():
 def GetRootDirAndroidStudio():
     return GetRootDir()+ "/project_android/"+GetProjectName()
 
+def GetRootDirAndroidOutput():
+    return GetRootDir()+ "/project_android_output/"+GetProjectName()
+
 def GetRootDirAndroidAsset(): 
     return GetRootDirAndroidStudio()+ "/src/main/assets"
 
