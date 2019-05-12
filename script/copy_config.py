@@ -213,7 +213,7 @@ if  __name__ =="__main__":
         # True
         config_adsdk_android.SetAdSdk(source.VUNGLE, False)
     else:
-        config_adsdk_android.SetAdSdk(source.XIAOMI, True)
+        config_adsdk_android.SetAdSdk(source.XIAOMI, False)
         config_adsdk_android.SetAdSdk(source.VUNGLE, False)
    
       

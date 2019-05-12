@@ -37,5 +37,6 @@ if __name__ == "__main__":
     config_adsdk_android.SetAdSdk(source.GDT, False)
     config_adsdk_android.SetAdSdk(source.XIAOMI, False)
     config_adsdk_android.SetAdSdk(source.UNITY, True)
+    config_adsdk_android.SetAdSdk(source.MOBVISTA, False)    
     
-    print "set_no_adview sucess"
+    print "set_ad_for_google_play sucess"

@@ -62,8 +62,15 @@ def updateChannel(channel):
     targetDir = common.GetRootDirAndroidStudio()
     if channel == source.GP:
         config_adsdk_android.SetAdSdk(source.ADMOB, True) 
+        config_adsdk_android.SetAdSdk(source.ADVIEW, False)
+        config_adsdk_android.SetAdSdk(source.GDT, False)
+        config_adsdk_android.SetAdSdk(source.XIAOMI, False)
+        config_adsdk_android.SetAdSdk(source.UNITY, True)
+        config_adsdk_android.SetAdSdk(source.MOBVISTA, False)   
     else:
         config_adsdk_android.SetAdSdk(source.ADMOB, True)
+        config_adsdk_android.SetAdSdk(source.MOBVISTA, True)
+        config_adsdk_android.SetAdSdk(source.UNITY, True)
 
 
     build_gradle = common.GetProjectConfigApp() + "/android" + "/gradle/build"

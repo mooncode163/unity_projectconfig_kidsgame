@@ -30,6 +30,8 @@ GDT = "gdt"
 UNITY = "unity"
 ADMOB = "admob"
 VUNGLE = "vungle"
+MOBVISTA = "mobvista"
+
 
 # appstore 账号
 APPSTORE_USER = "chyfemail163@163.com"
