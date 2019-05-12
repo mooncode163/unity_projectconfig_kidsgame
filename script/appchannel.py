@@ -75,7 +75,7 @@ def updateChannel(channel):
 
     build_gradle = common.GetProjectConfigApp() + "/android" + "/gradle/build"
     # or (channel == source.GP)
-    if (channel == source.HUAWEI) :
+    if (channel == source.TAPTAP) :
         build_gradle = build_gradle+"_"+channel 
 
     build_gradle = build_gradle+".gradle"

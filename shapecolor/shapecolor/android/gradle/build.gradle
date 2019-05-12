@@ -76,7 +76,7 @@ android {
     }
 
     defaultConfig {
-        minSdkVersion 21
+        minSdkVersion 26
         targetSdkVersion 28
        // applicationId 'com.moonma.kidsgame'
         ndk {
