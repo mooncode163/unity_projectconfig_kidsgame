@@ -13,12 +13,18 @@ import xml.etree.ElementTree as ET
 sys.path.append('./common')
 import common
 
+
+DEVICE_IPADPRO = "ipadpro"
+DEVICE_IPADPRO_2018 = "ipadpro"
+DEVICE_IPHONE_6_5 = "iphone_6_5"
+DEVICE_IPHONE_5_5 = "iphone"
+
 list_language = ["cn", "en"] 
 listCountry = ["en-US", "zh-Hans","en-CA","en-AU","en-GB"]  
 listCountryLanguage = ["en", "cn","en","en","en"] 
 
-totalScreenshot = 5
-list_device = ["ipadpro", "iphone"]
+totalScreenshot = 5 
+list_device = [DEVICE_IPADPRO, DEVICE_IPHONE_5_5]
 gameName = " "
 gameType = " "
 enableScrenshot = False
@@ -192,6 +198,7 @@ def copy_screenshots():
     list_hd = [False, True]
     
     for device in list_device:
+        print "copy_screenshots device="+device
         for language in list_language:
             for ishd in list_hd:
                 for i in range(0, totalScreenshot):
@@ -232,11 +239,14 @@ def getXmlStringScreenshots(isHd,language):
     return strRet
 
 def getAppStoreScreenshotDeviceName(device):
-    strRet = "iOS-iPad-Pro"
-    if device=="ipadpro":
+    strRet = device
+    if device==DEVICE_IPADPRO:
         strRet = "iOS-iPad-Pro"
-    if device=="iphone":
+    if device==DEVICE_IPHONE_5_5:
         strRet = "iOS-5.5-in"
+    if device==DEVICE_IPHONE_6_5:
+        strRet = "iOS-6.5-in"
+        
     return strRet
 
 def updateAppstore(isHd):

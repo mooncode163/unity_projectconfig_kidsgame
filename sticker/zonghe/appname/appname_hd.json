@@ -1,13 +1,13 @@
 {
     "APP_NAME_CN_ANDROID": "宝宝认知贴贴乐HD",
-    "APP_NAME_EN_ANDROID": "BabyLearnStickerHD",
+    "APP_NAME_EN_ANDROID": "Baby LearnSticker HD",
     "APP_NAME_CN_IOS": "宝宝认知贴贴乐HD",
-    "APP_NAME_EN_IOS": "BabyLearnStickerHD",
+    "APP_NAME_EN_IOS": "Baby LearnSticker HD",
     "PACKAGE_ANDROID": "com.moonma.stickerzonghe.pad",
     "PACKAGE_IOS": "com.moonma.sticker-zonghe.pad",
-    "APPVERSION_ANDROID": "1.0.1",
-    "APPVERSION_CODE_ANDROID": "101",
-    "APPVERSION_IOS": "1.0.1",
+    "APPVERSION_ANDROID": "1.2.0",
+    "APPVERSION_CODE_ANDROID": "120",
+    "APPVERSION_IOS": "1.2.0",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",
@@ -38,5 +38,5 @@
     "privacy_url": "http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
     "support_url": "http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html",
     "privacy_url_gp": "http://blog.sina.com.cn/s/blog_1736372fb0102xmbz.html",
-    "sku_app": "stickerzonghe.pad"
+    "sku_app": "sticker_zonghe_pad"
 }

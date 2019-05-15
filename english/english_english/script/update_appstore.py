@@ -13,6 +13,10 @@ import xml.etree.ElementTree as ET
 sys.path.append('./common')
 import common
 
+DEVICE_IPADPRO = "ipadpro"
+DEVICE_IPADPRO_2018 = "ipadpro"
+DEVICE_IPHONE_6_5 = "iphone_6_5"
+DEVICE_IPHONE_5_5 = "iphone"
 
 def loadJson(isHd):
     cur_path = common.getLastDir()+"/appname"
@@ -150,9 +154,9 @@ def getScreenshotFullFilePath(isHd,device,language,idx):
     return strFileTo;
 
 def copy_one_screenshot(isHd,device,language,idx):
-    strDirHorV = "竖屏"
+    strDirHorV = "shu"
     if isHd:
-        strDirHorV = "横屏" 
+        strDirHorV = "heng" 
 
     strDirRootFrom = "../../../../ProjectIcon/pintu/icon_pintu_plant/screenshot"
     strFileFrom = strDirRootFrom+"/"+strDirHorV+"/"+language+"/"+device+"/"+str(idx+1)+".jpg";
@@ -164,7 +168,7 @@ def copy_one_screenshot(isHd,device,language,idx):
 
 def copy_screenshots():
     total = 5
-    list_device = ["ipadpro", "iphone"]
+    list_device = [DEVICE_IPADPRO, DEVICE_IPHONE_5_5,DEVICE_IPHONE_6_5]
     list_language = ["cn", "en"]
     list_hd = [False, True]
     
@@ -188,7 +192,7 @@ def getXmlStringOneScreenshot(isHd,device,language,idx):
 
 def getXmlStringScreenshots(isHd):
     total = 5
-    list_device = ["ipadpro", "iphone"]
+    list_device = [DEVICE_IPADPRO, DEVICE_IPHONE_5_5,DEVICE_IPHONE_6_5] 
     list_language = ["cn", "en"] 
     strRet = " "
 
@@ -199,11 +203,15 @@ def getXmlStringScreenshots(isHd):
     return strRet
 
 def getAppStoreScreenshotDeviceName(device):
-    strRet = "iOS-iPad-Pro"
-    if device=="ipadpro":
+    strRet = device
+    if device==DEVICE_IPADPRO:
         strRet = "iOS-iPad-Pro"
-    if device=="iphone":
+    if device==DEVICE_IPHONE: 
         strRet = "iOS-5.5-in"
+    if device==DEVICE_IPHONE_6_5:
+        # iOS-5.5-in
+        strRet = "iOS-6.5-in"
+
     return strRet
 
 def updateAppstore(isHd):

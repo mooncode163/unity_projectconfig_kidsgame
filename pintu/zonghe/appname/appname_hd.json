@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "BabyLovePuzzleHD",
     "PACKAGE_ANDROID": "com.moonma.pintuzonghe.pad",
     "PACKAGE_IOS": "com.moonma.pintuzonghe.pad",
-    "APPVERSION_ANDROID": "1.0.5",
-    "APPVERSION_CODE_ANDROID": "105",
-    "APPVERSION_IOS": "1.0.5",
+    "APPVERSION_ANDROID": "1.2.1",
+    "APPVERSION_CODE_ANDROID": "121",
+    "APPVERSION_IOS": "1.2.1",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",
