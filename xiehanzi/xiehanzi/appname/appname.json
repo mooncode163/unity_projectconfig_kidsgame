@@ -5,9 +5,10 @@
     "APP_NAME_EN_IOS": "KidsWriteChinese",
     "PACKAGE_ANDROID": "com.moonma.xiehanzi",
     "PACKAGE_IOS": "com.moonma.xiehanzi",
-    "APPVERSION_ANDROID": "1.7.4",
-    "APPVERSION_CODE_ANDROID": "174",
-    "APPVERSION_IOS": "1.7.4",
+    "APPVERSION_ANDROID": "1.7.8",
+    "APPVERSION_CODE_ANDROID": "178",
+    "APPVERSION_IOS": "1.7.8",
+    "need_upload_screenshot": true,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "新增自由写模式",
         "en": "New free write mode"
@@ -28,7 +29,6 @@
         "cn": "拼多多机器人梦工厂碰碰狐宝宝美食街点点多纳多多宝宝巴士瓦贝儿歌悟空识字学数学未来骑士团宝贝英语说趣味食物火车总动员开心蔬菜童话故事小邮局恐龙农场宝宝认家庭成员马儿的神奇大冒险好爸爸学习机课堂学习拖拖乐",
         "en": "COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber"
     },
-    "need_upload_screenshot":false,
     "software_url": "http://www.mooncore.cn",
     "privacy_url": "http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
     "support_url": "http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html",

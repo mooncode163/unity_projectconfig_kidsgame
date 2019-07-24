@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "CrazyColorBookHD",
     "PACKAGE_ANDROID": "com.moonma.fillcolor.pad",
     "PACKAGE_IOS": "com.moonma.fillcolor.pad",
-    "APPVERSION_ANDROID": "12.0.9",
-    "APPVERSION_CODE_ANDROID": "1209",
-    "APPVERSION_IOS": "12.0.9",
+    "APPVERSION_ANDROID": "12.1.4",
+    "APPVERSION_CODE_ANDROID": "1214",
+    "APPVERSION_IOS": "12.1.4",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
         "cn": " 新增功能：\n1,颜色吸管 \n2,任意颜色选择",

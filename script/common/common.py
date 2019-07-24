@@ -74,6 +74,14 @@ def copyOneFile(sourceFile,  targetFile):
         if os.path.isfile(sourceFile):
             open(targetFile, "wb").write(open(sourceFile, "rb").read())
 
+
+ # 复制目录
+def CopyDir(sourceFile,  targetFile):
+    flag = os.path.exists(targetFile)
+    if flag:
+        shutil.rmtree(targetFile)
+    shutil.copytree(sourceFile,targetFile)
+    
 def copyResourceFiles(sourceDir,  targetDir):
 
     #  先清除

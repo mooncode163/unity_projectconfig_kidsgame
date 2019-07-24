@@ -5,13 +5,13 @@
 		<key>CFBundleDevelopmentRegion</key>
 		<string>en</string>
 		<key>CFBundleDisplayName</key>
-		<string>宝宝汉字园HD</string>
+		<string>儿童动物贴纸</string>
 		<key>CFBundleIconName</key>
 		<string>AppIcon</string>
 		<key>CFBundleExecutable</key>
 		<string>${EXECUTABLE_NAME}</string>
 		<key>CFBundleIdentifier</key>
-		<string>com.moonma.xuehanzi.ipad</string>
+		<string>com.moonma.animalsticker</string>
 		<key>CFBundleInfoDictionaryVersion</key>
 		<string>6.0</string>
 		<key>CFBundleName</key>
@@ -19,9 +19,9 @@
 		<key>CFBundlePackageType</key>
 		<string>APPL</string>
 		<key>CFBundleShortVersionString</key>
-		<string>1.1.1</string>
+		<string>1.2.1</string>
 		<key>CFBundleVersion</key>
-		<string>1.1.1</string>
+		<string>1.2.1</string>
 		<key>LSRequiresIPhoneOS</key>
 		<true/>
 		<key>NSAppTransportSecurity</key>
@@ -172,7 +172,7 @@
 				<string></string>
 				<key>CFBundleURLSchemes</key>
 				<array>
-					<string>wb0</string>
+					<string>WEIBO_APPID</string>
 				</array>
 			</dict>
 			<dict>
@@ -182,7 +182,7 @@
 				<string>weixin</string>
 				<key>CFBundleURLSchemes</key>
 				<array>
-					<string>wx0</string>
+					<string>WEIXIN_APPID</string>
 				</array>
 			</dict>
 			<dict>
@@ -190,7 +190,7 @@
 				<string>Editor</string>
 				<key>CFBundleURLSchemes</key>
 				<array>
-					<string>tencent0</string>
+					<string>QQ_APPID1</string>
 				</array>
 			</dict>
 			<dict>
@@ -218,7 +218,7 @@
 				<string>Editor</string>
 				<key>CFBundleURLSchemes</key>
 				<array>
-					<string>QQ00000000</string>
+					<string>QQ_APPID0</string>
 				</array>
 			</dict>
 			<dict>

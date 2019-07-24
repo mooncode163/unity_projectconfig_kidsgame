@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "Kids Fruit Puzzle",
     "PACKAGE_ANDROID": "com.moonma.pintufruit",
     "PACKAGE_IOS": "com.moonma.pintufruit",
-    "APPVERSION_ANDROID": "1.3.3",
-    "APPVERSION_CODE_ANDROID": "133",
-    "APPVERSION_IOS": "1.3.3",
+    "APPVERSION_ANDROID": "1.3.4",
+    "APPVERSION_CODE_ANDROID": "134",
+    "APPVERSION_IOS": "1.3.4",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",

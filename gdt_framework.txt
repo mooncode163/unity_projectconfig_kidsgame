@@ -1,0 +1,18 @@
+库名称	SDK	备注
+AdSupport.framework	4.7.2及以后版本	
+CoreLocation.framework	同上	
+//QuartzCore.framework	同上	
+//SystemConfiguration.framework	同上	
+CoreTelephony.framework	同上	
+libz.tbd	同上	 
+//Security.framework	同上	
+StoreKit.framework	同上	
+libxml2.tbd	同上	
+//AVFoundation.framework	同上	
+WebKit.framework	同上	可选
+说明：
+
+SystemConfiguration.framework、CoreTelephony.framework、Security.framework是为了统计app信息使用
+iOS9以后的版本，需要把libz.dylib替换成libz.tbd
+
+

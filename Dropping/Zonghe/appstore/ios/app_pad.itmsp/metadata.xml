@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://apple.com/itunes/importer" version="software5.9">
+   <!--  <provider>YuanFang Chen</provider> -->
+    <team_id>Y9ZUK2WTEE</team_id>
+    <software>
+        <vendor_id>sku_shapecolor_pad</vendor_id>
+        <software_metadata>
+            <versions>
+                <version string="1.3.1">
+                    <locales>
+                        <locale name="en-US">
+                            <title>Baby Shape Color HD</title>
+                            <subtitle>Learn shapes and colors</subtitle>
+                            <description>This is an application on the Pad to help children learn the shape and color quickly.
+Contains a dozen common shapes: triangular, square, rectangular, trapezoidal, rhombic, round, oval, round, heart-shaped Pentagon, pentagram, etc.; a dozen colors: red, blue, yellow, green, orange, orange, pink, purple, grey, brown, black, white, etc.. Let the child remember and distinguish the shapes and colors quickly in the fun and intuitive drag objects.
+The game consists of three modes: shape, color, shape, and color combination mode, each of which contains more than 50 levels.
+    </description>
+                            <promotional_text>Recognition of shape color baby happy learning and growth</promotional_text>
+                            <keywords>
+                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                            </keywords>
+                            <version_whats_new>Fix a Bug</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                        </locale>
+
+                         <locale name="zh-Hans">
+                            <title>宝宝形状颜色HD-快乐学习成长</title>
+                            <subtitle>学会各种形状颜色</subtitle>
+                            <description>这是平板上一款帮助孩子快速学习形状和颜色的应用!
+包含十几种常见的形状：三角形, 正方形, 长方形, 菱形, 梯形, 圆, 椭圆, 半圆, 五边形, 五角星, 心形等；十几种颜色: 红色, 蓝色, 黄色, 绿色, 橙色, 橙色, 粉色, 紫色, 灰色, 棕色, 黑色, 白色等。让孩子在有趣和直观的拖动物体过程中快速记住和分辨出这些形状和颜色。
+游戏包括三种模式：形状，颜色，形状和颜色组合模式，每个模式包含有50多个关卡。
+    </description>
+                            <promotional_text>认形状学颜色宝宝快乐学习成长</promotional_text>
+                            <keywords>
+                               <keyword>拼多多机器人梦工厂碰碰狐宝宝美食街点点多纳多多宝宝巴士瓦贝儿歌悟空识字学数学未来骑士团宝贝英语说趣味食物火车总动员开心蔬菜童话故事小邮局恐龙农场宝宝认家庭成员马儿的神奇大冒险好爸爸学习机课堂学习拖拖乐</keyword> 
+                            </keywords>
+                            <version_whats_new>修复内购失败的问题</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                            
+                        </locale>
+
+                         <locale name="en-CA">
+                            <title>Baby Shape Color HD</title>
+                            <subtitle>Learn shapes and colors</subtitle>
+                            <description>This is an application on the Pad to help children learn the shape and color quickly.
+Contains a dozen common shapes: triangular, square, rectangular, trapezoidal, rhombic, round, oval, round, heart-shaped Pentagon, pentagram, etc.; a dozen colors: red, blue, yellow, green, orange, orange, pink, purple, grey, brown, black, white, etc.. Let the child remember and distinguish the shapes and colors quickly in the fun and intuitive drag objects.
+The game consists of three modes: shape, color, shape, and color combination mode, each of which contains more than 50 levels.
+    </description>
+                            <promotional_text>Recognition of shape color baby happy learning and growth</promotional_text>
+                            <keywords>
+                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                            </keywords>
+                           <version_whats_new>Fix a Bug</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                            
+                        </locale>
+
+                         <locale name="en-AU">
+                            <title>Baby Shape Color HD</title>
+                            <subtitle>Learn shapes and colors</subtitle>
+                            <description>This is an application on the Pad to help children learn the shape and color quickly.
+Contains a dozen common shapes: triangular, square, rectangular, trapezoidal, rhombic, round, oval, round, heart-shaped Pentagon, pentagram, etc.; a dozen colors: red, blue, yellow, green, orange, orange, pink, purple, grey, brown, black, white, etc.. Let the child remember and distinguish the shapes and colors quickly in the fun and intuitive drag objects.
+The game consists of three modes: shape, color, shape, and color combination mode, each of which contains more than 50 levels.
+    </description>
+                            <promotional_text>Recognition of shape color baby happy learning and growth</promotional_text>
+                            <keywords>
+                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                            </keywords>
+                            <version_whats_new>Fix a Bug</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                            
+                        </locale>
+
+                         <locale name="en-GB">
+                            <title>Baby Shape Color HD</title>
+                            <subtitle>Learn shapes and colors</subtitle>
+                            <description>This is an application on the Pad to help children learn the shape and color quickly.
+Contains a dozen common shapes: triangular, square, rectangular, trapezoidal, rhombic, round, oval, round, heart-shaped Pentagon, pentagram, etc.; a dozen colors: red, blue, yellow, green, orange, orange, pink, purple, grey, brown, black, white, etc.. Let the child remember and distinguish the shapes and colors quickly in the fun and intuitive drag objects.
+The game consists of three modes: shape, color, shape, and color combination mode, each of which contains more than 50 levels.
+    </description>
+                            <promotional_text>Recognition of shape color baby happy learning and growth</promotional_text>
+                            <keywords>
+                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                            </keywords>
+                            <version_whats_new>Fix a Bug</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                            
+                        </locale>
+                        
+                    </locales>
+                </version>
+            </versions>
+            <products>
+                <product>
+                    <territory>WW</territory>
+                    <sales_start_date>2010-05-25</sales_start_date>
+                    <cleared_for_sale>true</cleared_for_sale>
+                    <wholesale_price_tier>0</wholesale_price_tier>
+                    <allow_volume_discount>false</allow_volume_discount>
+                </product>
+                <product>
+                    <territory>RU</territory>
+                    <cleared_for_sale>true</cleared_for_sale>
+                </product>
+            </products>
+          
+          
+
+           <in_app_purchases>
+                <in_app_purchase>
+                    <product_id>com.moonma.shapecolor.pad.noad</product_id>
+                    <reference_name>noad</reference_name>
+                    <type>non-consumable</type>
+                    <products>
+                        <product>
+                            <cleared_for_sale>true</cleared_for_sale>
+                            <wholesale_price_tier>2</wholesale_price_tier>
+                        </product>
+                    </products>
+                    <locales>
+                        <locale name="en-US">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+
+                        <locale name="zh-Hans">
+                            <title>去除广告</title>
+                            <description>该产品可以去除应用内的所有广告</description>
+                        </locale>
+                        <locale name="en-CA">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+                        <locale name="en-AU">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+                        <locale name="en-GB">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+
+                        
+                    </locales>
+                    <review_screenshot>
+                        <file_name>in_app_purchases_screenshot.png</file_name>
+                        <size>96482</size>
+                        <checksum type="md5">dc4f197705c3983c730d236f54de2950</checksum>
+                    </review_screenshot>
+                    <!-- <review_notes></review_notes> -->
+                </in_app_purchase>
+               <!--  <in_app_purchase remove="true">
+                    <product_id>obsolete_com.cyberinteractive.tf.missiles.15</product_id>
+                </in_app_purchase> -->
+            </in_app_purchases>
+
+
+        </software_metadata>
+    </software>
+</package>

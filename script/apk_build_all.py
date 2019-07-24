@@ -19,7 +19,7 @@ sys.path.append('./common')
 import common
 
 # listChannel = [source.XIAOMI, source.TAPTAP, source.HUAWEI, source.GP]
-listChannel = [source.XIAOMI, source.TAPTAP, source.HUAWEI, source.GP]
+listChannel = [source.HUAWEI, source.TAPTAP, source.XIAOMI, source.GP]
 
 
 
@@ -49,7 +49,7 @@ if __name__ == "__main__":
 
     for channel in listChannel:
         print "apk_build_all:" + channel
-        appchannel.updateChannel(channel) 
+        appchannel.updateChannel(channel,isHD) 
         apk_build.buildApk()
         apk_build.copyApk(channel)
 

@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "BabyVehiclePuzzleHD",
     "PACKAGE_ANDROID": "com.moonma.carpintu.pad",
     "PACKAGE_IOS": "com.moonma.carpintu.pad",
-    "APPVERSION_ANDROID": "1.1.4",
-    "APPVERSION_CODE_ANDROID": "114",
-    "APPVERSION_IOS": "1.1.4",
+    "APPVERSION_ANDROID": "1.2.1",
+    "APPVERSION_CODE_ANDROID": "121",
+    "APPVERSION_IOS": "1.2.1",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",
@@ -37,5 +37,5 @@
     "software_url": "http://www.mooncore.cn",
     "privacy_url": "http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
     "support_url": "http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html",
-    "sku_app": "sku_paintanimal_pad"
+    "sku_app": "moonma_carpintu"
 }

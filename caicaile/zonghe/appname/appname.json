@@ -7,7 +7,7 @@
     "PACKAGE_IOS": "com.moonma.caicaile",
     "APPVERSION_ANDROID": "1.2.3",
     "APPVERSION_CODE_ANDROID": "123",
-    "APPVERSION_IOS": "1.2.3",
+    "APPVERSION_IOS": "1.5.0",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",

@@ -8,7 +8,7 @@
     "APPVERSION_ANDROID": "1.4.2",
     "APPVERSION_CODE_ANDROID": "142",
     "APPVERSION_IOS": "1.4.2",
-    "need_upload_screenshot": false,
+    "need_upload_screenshot": true,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",
         "en": "Fix a Bug"

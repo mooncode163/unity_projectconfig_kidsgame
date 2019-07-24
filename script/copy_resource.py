@@ -67,6 +67,11 @@ if  __name__ =="__main__":
         shutil.rmtree(dir2)
     shutil.copytree(dir1,dir2)
 
+    # AppCommon
+    dir1 = common.GetResourceDataRoot()+"/"+gameType+"/"+"AppCommon/Resources"
+    dir2 = common.GetRootProjectUnity()+"/Assets/Resources/AppCommon" 
+    common.CopyDir(dir1,dir2)
+
     CopyResConfigData()
 
     copy_plugins()

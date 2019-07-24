@@ -25,6 +25,7 @@ listCountryLanguage = ["en", "cn","en","en","en"]
 
 totalScreenshot = 5 
 list_device = [DEVICE_IPADPRO, DEVICE_IPHONE_5_5]
+# list_device = [DEVICE_IPADPRO,DEVICE_IPADPRO_2018, DEVICE_IPHONE_6_5,DEVICE_IPHONE_5_5]
 gameName = " "
 gameType = " "
 enableScrenshot = False

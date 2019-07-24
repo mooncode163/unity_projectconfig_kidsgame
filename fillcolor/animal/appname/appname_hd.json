@@ -5,10 +5,10 @@
     "APP_NAME_EN_IOS": "Baby Animal ColorHD",
     "PACKAGE_ANDROID": "com.moonma.fillcoloranimal.pad",
     "PACKAGE_IOS": "com.moonma.fillcoloranimal.pad",
-    "APPVERSION_ANDROID": "1.0.8",
-    "APPVERSION_CODE_ANDROID": "108",
-    "APPVERSION_IOS": "1.0.8",
-    "need_upload_screenshot": false,
+    "APPVERSION_ANDROID": "1.2.0",
+    "APPVERSION_CODE_ANDROID": "120",
+    "APPVERSION_IOS": "1.2.0",
+    "need_upload_screenshot": true,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",
         "en": "Fix a Bug"

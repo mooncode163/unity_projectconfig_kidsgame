@@ -1,0 +1,36 @@
+{
+    "APP_NAME_CN_ANDROID": "梦幻冰淇凌HD",
+    "APP_NAME_EN_ANDROID": "Dream Ice Cream HD",
+    "APP_NAME_CN_IOS": "梦幻冰淇凌HD",
+    "APP_NAME_EN_IOS": "Dream Ice Cream HD",
+    "PACKAGE_ANDROID": "com.moonma.icecream.pad",
+    "PACKAGE_IOS": "com.moonma.icecream.pad",
+    "APPVERSION_ANDROID": "1.0.3",
+    "APPVERSION_CODE_ANDROID": "103",
+    "APPVERSION_IOS": "1.0.3",
+    "need_upload_screenshot": false,
+    "APPSTORE_VERSION_UPDATE": {
+        "cn": "修复bug",
+        "en": "Fix a Bug"
+    },
+    "APPSTORE_TITLE": {
+        "cn": "梦幻冰淇凌HD",
+        "en": "Dream Ice Cream HD"
+    },
+    "APPSTORE_SUBTITLE": {
+        "cn": "美味冰淇凌制作",
+        "en": "Delicious Ice Cream Making"
+    },
+    "APPSTORE_PROMOTION": {
+        "cn": "体验冰淇凌制作乐趣",
+        "en": "Experience the fun of ice cream making"
+    },
+    "APPSTORE_KEYWORD": {
+        "cn": "草莓甜心冰淇淋商店草莓甜心公主创意蛋糕店甜点制作甜心格格勺子烹饪大厨好吃好玩美味深蓝深海老爹三明治店汉堡店雪糕",
+        "en": "COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber"
+    },
+    "software_url": "http://www.mooncore.cn",
+    "privacy_url": "http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
+    "support_url": "http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html",
+    "sku_app": "icecream.pad"
+}

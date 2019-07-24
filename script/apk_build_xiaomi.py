@@ -48,7 +48,7 @@ if __name__ == "__main__":
 
     for channel in listChannel:
         print "apk_build_gp:" + channel
-        appchannel.updateChannel(channel) 
+        appchannel.updateChannel(channel,isHD) 
         apk_build.buildApk()
         apk_build.copyApk(channel)
 

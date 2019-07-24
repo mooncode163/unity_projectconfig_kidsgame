@@ -1,0 +1,36 @@
+{
+    "APP_NAME_CN_ANDROID": "酷奇儿童乐园HD",
+    "APP_NAME_EN_ANDROID": "CoolKi Kids World HD",
+    "APP_NAME_CN_IOS": "酷奇儿童乐园HD",
+    "APP_NAME_EN_IOS": "CoolKi Kids World HD",
+    "PACKAGE_ANDROID": "com.moonma.coolki.pad",
+    "PACKAGE_IOS": "com.moonma.coolki.pad",
+    "APPVERSION_ANDROID": "1.0.0",
+    "APPVERSION_CODE_ANDROID": "100",
+    "APPVERSION_IOS": "1.0.0",
+    "need_upload_screenshot": false,
+    "APPSTORE_VERSION_UPDATE": {
+        "cn": "修复内购失败的问题",
+        "en": "Fix a Bug"
+    },
+    "APPSTORE_TITLE": {
+        "cn": "酷奇儿童乐园HD-早教学习游戏",
+        "en": "CoolKi Kids World HD"
+    },
+    "APPSTORE_SUBTITLE": {
+        "cn": "学会各种形状颜色",
+        "en": "Learn shapes and colors"
+    },
+    "APPSTORE_PROMOTION": {
+        "cn": "认形状学颜色宝宝快乐学习成长",
+        "en": "Recognition of shape color baby happy learning and growth"
+    },
+    "APPSTORE_KEYWORD": {
+        "cn": "拼多多机器人梦工厂碰碰狐宝宝美食街点点多纳多多宝宝巴士瓦贝儿歌悟空识字学数学未来骑士团宝贝英语说趣味食物火车总动员开心蔬菜童话故事小邮局恐龙农场宝宝认家庭成员马儿的神奇大冒险好爸爸学习机课堂学习拖拖乐",
+        "en": "COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber"
+    },
+    "software_url": "http://www.mooncore.cn",
+    "privacy_url": "http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
+    "support_url": "http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html",
+    "sku_app": "sku_shapecolor_pad"
+}

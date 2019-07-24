@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "KidsVehiclePuzzle",
     "PACKAGE_ANDROID": "com.moonma.carpintu",
     "PACKAGE_IOS": "com.moonma.carpintu",
-    "APPVERSION_ANDROID": "1.4.4",
-    "APPVERSION_CODE_ANDROID": "144",
-    "APPVERSION_IOS": "1.4.4",
+    "APPVERSION_ANDROID": "1.5.1",
+    "APPVERSION_CODE_ANDROID": "151",
+    "APPVERSION_IOS": "1.5.1",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",
@@ -37,5 +37,5 @@
     "software_url": "http://www.mooncore.cn",
     "privacy_url": "http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
     "support_url": "http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html",
-    "sku_app": "sku_paintanimal"
+    "sku_app": "carping"
 }

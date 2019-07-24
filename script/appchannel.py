@@ -56,10 +56,16 @@ def saveString2File(str, file):
     f.close()
 
 
-def updateChannel(channel): 
+def updateChannel(channel,ishd): 
     
     project = common.GetProjectConfigApp() + "/android" + "/gradle"
     targetDir = common.GetRootDirAndroidStudio()
+    sourceDir = common.GetProjectConfigApp()
+    project_android = "android/project"
+
+    if ishd==True: 
+        project_android = "android/project_hd"
+
     if channel == source.GP:
         config_adsdk_android.SetAdSdk(source.ADMOB, True) 
         config_adsdk_android.SetAdSdk(source.ADVIEW, False)
@@ -67,10 +73,16 @@ def updateChannel(channel):
         config_adsdk_android.SetAdSdk(source.XIAOMI, False)
         config_adsdk_android.SetAdSdk(source.UNITY, True)
         config_adsdk_android.SetAdSdk(source.MOBVISTA, False)   
+            # 
+        project = sourceDir+"/"+project_android+"/xml_gp" 
     else:
         config_adsdk_android.SetAdSdk(source.ADMOB, True)
-        config_adsdk_android.SetAdSdk(source.MOBVISTA, True)
+        config_adsdk_android.SetAdSdk(source.MOBVISTA, False)
         config_adsdk_android.SetAdSdk(source.UNITY, True)
+            # 
+        project = sourceDir+"/"+project_android+"/xml"
+        
+    common.coverFiles(project,   targetDir)
 
 
     build_gradle = common.GetProjectConfigApp() + "/android" + "/gradle/build"

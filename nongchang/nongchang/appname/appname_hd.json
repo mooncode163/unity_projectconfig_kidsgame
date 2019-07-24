@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "BabyFarmFindHD",
     "PACKAGE_ANDROID": "com.moonma.nongchangfind.pad",
     "PACKAGE_IOS": "com.moonma.nongchangfind.pad",
-    "APPVERSION_ANDROID": "1.3.5",
-    "APPVERSION_CODE_ANDROID": "135",
-    "APPVERSION_IOS": "1.3.5",
+    "APPVERSION_ANDROID": "1.4.5",
+    "APPVERSION_CODE_ANDROID": "145",
+    "APPVERSION_IOS": "1.4.5",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",
@@ -15,7 +15,7 @@
     },
     "APPSTORE_TITLE": {
         "cn": "宝宝农场找找乐HD-培养观察力",
-        "en": "Baby Farm Find HD Observability"
+        "en": "Baby Farm Find HD"
     },
     "APPSTORE_SUBTITLE": {
         "cn": "锻炼视觉搜索能力",

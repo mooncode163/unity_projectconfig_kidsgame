@@ -5,9 +5,10 @@
     "APP_NAME_EN_IOS": "KidsPlantPuzzle",
     "PACKAGE_ANDROID": "com.moonma.pintuplant",
     "PACKAGE_IOS": "com.moonma.pintuplant",
-    "APPVERSION_ANDROID": "1.1.1",
-    "APPVERSION_CODE_ANDROID": "111",
-    "APPVERSION_IOS": "1.1.1",
+    "APPVERSION_ANDROID": "1.1.4",
+    "APPVERSION_CODE_ANDROID": "114",
+    "APPVERSION_IOS": "1.1.4",
+    "need_upload_screenshot": true,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",
         "en": "Fix a Bug"

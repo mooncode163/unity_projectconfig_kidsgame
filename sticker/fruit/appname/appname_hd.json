@@ -8,7 +8,7 @@
     "APPVERSION_ANDROID": "1.0.0",
     "APPVERSION_CODE_ANDROID": "100",
     "APPVERSION_IOS": "1.0.0",
-    "need_upload_screenshot": false,
+    "need_upload_screenshot": true,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",
         "en": "Fix a Bug"
@@ -38,5 +38,5 @@
     "privacy_url": "http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
     "support_url": "http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html",
     "privacy_url_gp": "http://blog.sina.com.cn/s/blog_1736372fb0102xmbz.html",
-    "sku_app": "paintanimal.pad"
+    "sku_app": "stickerfruit.pad"
 }

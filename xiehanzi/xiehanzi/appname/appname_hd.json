@@ -5,9 +5,10 @@
     "APP_NAME_EN_IOS": "BabyWriteChineseHD",
     "PACKAGE_ANDROID": "com.moonma.xiehanzi2.pad",
     "PACKAGE_IOS": "com.moonma.xiehanzi.pad",
-    "APPVERSION_ANDROID": "1.3.4",
-    "APPVERSION_CODE_ANDROID": "134",
-    "APPVERSION_IOS": "1.3.4",
+    "APPVERSION_ANDROID": "1.3.8",
+    "APPVERSION_CODE_ANDROID": "138",
+    "APPVERSION_IOS": "1.3.8",
+    "need_upload_screenshot": true,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "新增自由写模式",
         "en": "New free write mode"
@@ -28,7 +29,6 @@
         "cn": "阳阳爱写字魔力小孩过年宝宝学写字中华恐龙园汉字与书法海绵宝宝做汉堡朵拉历险记学做饭宝宝爱洗澡三字经读写版宝宝书孕育跟我学写汉字蓝猫学拼音小嘀削削serato自由诵读经典儿歌巴巴熊巴巴宝贝熊孩子钢笔书法",
         "en": "COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber"
     },
-    "need_upload_screenshot":true,
     "software_url": "http://www.mooncore.cn",
     "privacy_url": "http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
     "support_url": "http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html",

@@ -49,6 +49,11 @@ if  __name__ =="__main__":
         shutil.rmtree(dir2)
     shutil.copytree(dir1,dir2)
 
+    # AppCommon
+    dir1 = common.GetRootProjectUnity()+"/Assets/Resources/AppCommon" 
+    dir2 = common.GetResourceDataRoot()+"/"+gameType+"/"+"AppCommon/Resources"
+    flag = os.path.exists(dir2)
+    common.CopyDir(dir1,dir2)
 
 
     print "save_resource sucess"

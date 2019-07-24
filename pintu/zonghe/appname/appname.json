@@ -1,24 +1,24 @@
 {
-    "APP_NAME_CN_ANDROID": "儿童拼图世界",
+    "APP_NAME_CN_ANDROID": "奇妙拼图世界",
     "APP_NAME_EN_ANDROID": "Kids Puzzle World",
-    "APP_NAME_CN_IOS": "儿童爱拼图",
+    "APP_NAME_CN_IOS": "奇妙拼图世界",
     "APP_NAME_EN_IOS": "KidsLovePuzzle",
     "PACKAGE_ANDROID": "com.moonma.pingtu2",
     "PACKAGE_IOS": "com.moonma.pingtu",
-    "APPVERSION_ANDROID": "1.6.9",
-    "APPVERSION_CODE_ANDROID": "169",
-    "APPVERSION_IOS": "1.6.9",
-    "need_upload_screenshot": false,
+    "APPVERSION_ANDROID": "1.7.2",
+    "APPVERSION_CODE_ANDROID": "172",
+    "APPVERSION_IOS": "1.7.2",
+    "need_upload_screenshot": true,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",
         "en": "Fix a Bug"
     },
     "APPSTORE_TITLE": {
-        "cn": "儿童拼图乐园",
+        "cn": "奇妙拼图世界",
         "en": "Kids Love Puzzle"
     },
     "APPSTORE_SUBTITLE": {
-        "cn": "儿童拼图乐园",
+        "cn": "奇妙拼图世界",
         "en": "Children's Puzzle"
     },
     "APPSTORE_PROMOTION": {
