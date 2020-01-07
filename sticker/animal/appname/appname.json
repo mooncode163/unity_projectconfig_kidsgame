@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "KidsAnimalSticker",
     "PACKAGE_ANDROID": "com.moonma.animalsticker",
     "PACKAGE_IOS": "com.moonma.animalsticker",
-    "APPVERSION_ANDROID": "1.7.3",
-    "APPVERSION_CODE_ANDROID": "173",
-    "APPVERSION_IOS": "1.7.3",
+    "APPVERSION_ANDROID": "1.7.4",
+    "APPVERSION_CODE_ANDROID": "174",
+    "APPVERSION_IOS": "1.7.4",
     "need_upload_screenshot": true,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",

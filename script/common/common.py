@@ -261,7 +261,9 @@ def GetRootDirAndroidStudio():
     return GetRootDir()+ "/project_android/"+GetProjectName()
 
 def GetRootDirAndroidOutput():
-    return GetRootDir()+ "/project_android_output/"+GetProjectName()
+    # GetRootProjectUnity()+"/OutPut/Android/"+GetProjectName()
+    return GetRootProjectUnity()+"/OutPut/Android/"+"unityLibrary"
+    
 
 def GetRootDirAndroidAsset(): 
     return GetRootDirAndroidStudio()+ "/src/main/assets"
@@ -295,8 +297,15 @@ def GetConfigDataDir():
     ret_dir+="/ConfigData"
     return ret_dir
 
+def GetGameDataDirOfResourceData(): 
+    apptype = getGameType()
+    appname = getGameName()
+    ret_dir = GetResourceDataRoot()+"/"+apptype+"/"+appname
+    ret_dir+="/GameData"
+    return ret_dir
+
 def GetAdConfigDir(): 
-    return GetConfigDataDir()+"/adconfig"
+    return GetGameDataDirOfResourceData()+"/adconfig"
 
 def GetConfigDir(): 
     return GetConfigDataDir()+"/config"

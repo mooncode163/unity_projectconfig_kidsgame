@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "KidsLovePuzzle",
     "PACKAGE_ANDROID": "com.moonma.pingtu2",
     "PACKAGE_IOS": "com.moonma.pingtu",
-    "APPVERSION_ANDROID": "1.7.2",
-    "APPVERSION_CODE_ANDROID": "172",
-    "APPVERSION_IOS": "1.7.2",
+    "APPVERSION_ANDROID": "1.7.4",
+    "APPVERSION_CODE_ANDROID": "174",
+    "APPVERSION_IOS": "1.7.4",
     "need_upload_screenshot": true,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",

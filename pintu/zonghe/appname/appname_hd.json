@@ -1,13 +1,13 @@
 {
     "APP_NAME_CN_ANDROID": "奇妙拼图世界HD",
-    "APP_NAME_EN_ANDROID": "BabyLovePuzzleHD",
+    "APP_NAME_EN_ANDROID": "Baby Puzzle World HD",
     "APP_NAME_CN_IOS": "奇妙拼图世界HD",
-    "APP_NAME_EN_IOS": "BabyLovePuzzleHD",
+    "APP_NAME_EN_IOS": "Baby Puzzle World HD",
     "PACKAGE_ANDROID": "com.moonma.pintuzonghe.pad",
     "PACKAGE_IOS": "com.moonma.pintuzonghe.pad",
-    "APPVERSION_ANDROID": "1.2.5",
-    "APPVERSION_CODE_ANDROID": "125",
-    "APPVERSION_IOS": "1.2.5",
+    "APPVERSION_ANDROID": "1.2.7",
+    "APPVERSION_CODE_ANDROID": "127",
+    "APPVERSION_IOS": "1.2.7",
     "need_upload_screenshot": true,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",
@@ -15,7 +15,7 @@
     },
     "APPSTORE_TITLE": {
         "cn": "奇妙拼图世界HD",
-        "en": "Baby Love Puzzle HD"
+        "en": "Baby Puzzle World HD"
     },
     "APPSTORE_SUBTITLE": {
         "cn": "奇妙拼图世界HD",

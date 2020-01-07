@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://apple.com/itunes/importer" version="software5.9">
+   <!--  <provider>YuanFang Chen</provider> -->
+    <team_id>Y9ZUK2WTEE</team_id>
+    <software>
+        <vendor_id>chengyu.pad</vendor_id>
+        <software_metadata>
+            <versions>
+                <version string="1.0.0">
+                    <locales>
+                        <locale name="en-US">
+                            <title>Chinese Idiom Congress HD</title>
+                            <subtitle>Great Chinese Culture</subtitle>
+                            <description> There are tens of millions of Chinese idioms, but not every idiom player knows them. The game (Pad version) featured hundreds of pictures and photos related to idioms. Players guess the names of the idioms according to their pictures and the implications of the prompts. Challenge more levels, learn idioms and share fun with friends. It's a picture puzzle game suitable for both young and old. It's fun to teach. Players who like this game can try it out.
+    </description>
+                            <promotional_text>Seeing pictures, guessing words, learning things and words</promotional_text>
+                            <keywords>
+                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                            </keywords>
+                            <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots> 
+<software_screenshot display_target="iOS-iPad-Pro" position="1"> <file_name>en_ipadpro_1.jpg</file_name> <size>280846</size> <checksum type="md5">e0137695b994b6134cac47ca5222a5b4</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="2"> <file_name>en_ipadpro_2.jpg</file_name> <size>276031</size> <checksum type="md5">6c8b1c0c14c62146626f4554e6442b2c</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="3"> <file_name>en_ipadpro_3.jpg</file_name> <size>420710</size> <checksum type="md5">7ecaa0ec78144134e009037ac094e221</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="4"> <file_name>en_ipadpro_4.jpg</file_name> <size>194533</size> <checksum type="md5">fb177997aa62abeebfa0e6e71b3c93a3</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="5"> <file_name>en_ipadpro_5.jpg</file_name> <size>287352</size> <checksum type="md5">87a4cc8ca21bfaaaae3cf8b11fa1b3a3</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="1"> <file_name>en_iphone_1.jpg</file_name> <size>175141</size> <checksum type="md5">ddedfaf21b24a29f9cf36751126bb080</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="2"> <file_name>en_iphone_2.jpg</file_name> <size>173042</size> <checksum type="md5">f32c9913f09f7b24380d5a61575bdf8d</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="3"> <file_name>en_iphone_3.jpg</file_name> <size>224260</size> <checksum type="md5">c1646d0e779c7bdcae20c2073f7fbf8e</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="4"> <file_name>en_iphone_4.jpg</file_name> <size>105272</size> <checksum type="md5">165250e349914d7614c93ee71ceaabe9</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="5"> <file_name>en_iphone_5.jpg</file_name> <size>178801</size> <checksum type="md5">2bc01b092187aaf61ef845fc2d7ed636</checksum> </software_screenshot></software_screenshots>
+
+                        </locale>
+
+                         <locale name="zh-Hans">
+                            <title>中华成语大会HD</title>
+                            <subtitle>弘扬中华文化</subtitle>
+                            <description>中华成语千千万，但是并不是每一个成语玩家都了解。该游戏（平板版本）精选了几百幅与成语有关的图片、照片等。玩家根据图片以及提示的成语寓意，猜成语的名字。挑战更多关卡，学习成语知识，与朋友分享乐趣。是一款老少皆宜的图片猜谜类游戏，寓教于乐。喜欢这款游戏的玩家可以试玩一下
+    </description>
+                            <promotional_text>学成语涨知识</promotional_text>
+                            <keywords>
+                               <keyword>阳阳爱写字魔力小孩过年宝宝学写字中华恐龙园汉字与书法海绵宝宝做汉堡朵拉历险记学做饭宝宝爱洗澡三字经读写版宝宝书孕育跟我学写汉字蓝猫学拼音小嘀削削serato自由诵读经典儿歌巴巴熊巴巴宝贝熊孩子钢笔书法</keyword> 
+                            </keywords>
+                            <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots> 
+<software_screenshot display_target="iOS-iPad-Pro" position="1"> <file_name>cn_ipadpro_1.jpg</file_name> <size>282152</size> <checksum type="md5">0398613ff6e63a6afea8765cc348148c</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="2"> <file_name>cn_ipadpro_2.jpg</file_name> <size>276307</size> <checksum type="md5">b818d7861d1ce89544c648f97e482f6a</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="3"> <file_name>cn_ipadpro_3.jpg</file_name> <size>420829</size> <checksum type="md5">4ae8d4df8c43c21232f8e004052b1099</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="4"> <file_name>cn_ipadpro_4.jpg</file_name> <size>188051</size> <checksum type="md5">20b8bd23209bb35d6209866d4724e24e</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="5"> <file_name>cn_ipadpro_5.jpg</file_name> <size>284929</size> <checksum type="md5">8cdefffa530b4dba5562fbb5bc32b38c</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="1"> <file_name>cn_iphone_1.jpg</file_name> <size>177077</size> <checksum type="md5">0d319796b63fed6152efb4c9d1fdb7c0</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="2"> <file_name>cn_iphone_2.jpg</file_name> <size>172660</size> <checksum type="md5">84392025cbba7ab6c6b684a987b10ea1</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="3"> <file_name>cn_iphone_3.jpg</file_name> <size>224382</size> <checksum type="md5">cde0a3414351d40e346bb1d2564e0522</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="4"> <file_name>cn_iphone_4.jpg</file_name> <size>100087</size> <checksum type="md5">c9fc7f045428fefb0b64fcc531dcf0a3</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="5"> <file_name>cn_iphone_5.jpg</file_name> <size>177860</size> <checksum type="md5">ac3089d4525ada7fe42f13c5dddfdd4f</checksum> </software_screenshot></software_screenshots>
+
+                            
+                        </locale>
+
+                         <locale name="en-CA">
+                            <title>Chinese Idiom Congress HD</title>
+                            <subtitle>Great Chinese Culture</subtitle>
+                            <description> There are tens of millions of Chinese idioms, but not every idiom player knows them. The game (Pad version) featured hundreds of pictures and photos related to idioms. Players guess the names of the idioms according to their pictures and the implications of the prompts. Challenge more levels, learn idioms and share fun with friends. It's a picture puzzle game suitable for both young and old. It's fun to teach. Players who like this game can try it out.
+    </description>
+                            <promotional_text>Seeing pictures, guessing words, learning things and words</promotional_text>
+                            <keywords>
+                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                            </keywords>
+                           <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots></software_screenshots>
+
+                            
+                        </locale>
+
+                         <locale name="en-AU">
+                            <title>Chinese Idiom Congress HD</title>
+                            <subtitle>Great Chinese Culture</subtitle>
+                            <description> There are tens of millions of Chinese idioms, but not every idiom player knows them. The game (Pad version) featured hundreds of pictures and photos related to idioms. Players guess the names of the idioms according to their pictures and the implications of the prompts. Challenge more levels, learn idioms and share fun with friends. It's a picture puzzle game suitable for both young and old. It's fun to teach. Players who like this game can try it out.
+    </description>
+                            <promotional_text>Seeing pictures, guessing words, learning things and words</promotional_text>
+                            <keywords>
+                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                            </keywords>
+                            <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots></software_screenshots>
+
+                            
+                        </locale>
+
+                         <locale name="en-GB">
+                            <title>Chinese Idiom Congress HD</title>
+                            <subtitle>Great Chinese Culture</subtitle>
+                            <description> There are tens of millions of Chinese idioms, but not every idiom player knows them. The game (Pad version) featured hundreds of pictures and photos related to idioms. Players guess the names of the idioms according to their pictures and the implications of the prompts. Challenge more levels, learn idioms and share fun with friends. It's a picture puzzle game suitable for both young and old. It's fun to teach. Players who like this game can try it out.
+    </description>
+                            <promotional_text>Seeing pictures, guessing words, learning things and words</promotional_text>
+                            <keywords>
+                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                            </keywords>
+                            <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots></software_screenshots>
+
+                            
+                        </locale>
+                        
+                    </locales>
+                </version>
+            </versions>
+            <products>
+                <product>
+                    <territory>WW</territory>
+                    <sales_start_date>2010-05-25</sales_start_date>
+                    <cleared_for_sale>true</cleared_for_sale>
+                    <wholesale_price_tier>0</wholesale_price_tier>
+                    <allow_volume_discount>false</allow_volume_discount>
+                </product>
+                <product>
+                    <territory>RU</territory>
+                    <cleared_for_sale>true</cleared_for_sale>
+                </product>
+            </products>
+          
+          
+
+           <in_app_purchases>
+                <in_app_purchase>
+                    <product_id>com.moonma.chengyu.pad.noad</product_id>
+                    <reference_name>noad</reference_name>
+                    <type>non-consumable</type>
+                    <products>
+                        <product>
+                            <cleared_for_sale>true</cleared_for_sale>
+                            <wholesale_price_tier>3</wholesale_price_tier>
+                        </product>
+                    </products>
+                    <locales>
+                        <locale name="en-US">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+
+                        <locale name="zh-Hans">
+                            <title>去除广告</title>
+                            <description>该产品可以去除应用内的所有广告</description>
+                        </locale>
+                        <locale name="en-CA">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+                        <locale name="en-AU">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+                        <locale name="en-GB">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+
+                        
+                    </locales>
+                    <review_screenshot>
+                        <file_name>in_app_purchases_screenshot.png</file_name>
+                        <size>96482</size>
+                        <checksum type="md5">dc4f197705c3983c730d236f54de2950</checksum>
+                    </review_screenshot>
+                    <!-- <review_notes></review_notes> -->
+                </in_app_purchase>
+               <!--  <in_app_purchase remove="true">
+                    <product_id>obsolete_com.cyberinteractive.tf.missiles.15</product_id>
+                </in_app_purchase> -->
+            </in_app_purchases>
+
+
+        </software_metadata>
+    </software>
+</package>

@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "Kids Shape Color",
     "PACKAGE_ANDROID": "com.moonma.shapecolor",
     "PACKAGE_IOS": "com.moonma.shapecolor",
-    "APPVERSION_ANDROID": "1.9.3",
-    "APPVERSION_CODE_ANDROID": "193",
-    "APPVERSION_IOS": "1.9.3",
+    "APPVERSION_ANDROID": "2.0.0",
+    "APPVERSION_CODE_ANDROID": "200",
+    "APPVERSION_IOS": "2.0.0",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "过关时不再弹出广告",

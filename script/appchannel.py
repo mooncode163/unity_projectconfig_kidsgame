@@ -57,8 +57,8 @@ def saveString2File(str, file):
 
 
 def updateChannel(channel,ishd): 
-    
-    project = common.GetProjectConfigApp() + "/android" + "/gradle"
+    print "updateChannel"
+    # project_config = common.GetProjectConfigApp() + "/android" + "/gradle"
     targetDir = common.GetRootDirAndroidStudio()
     sourceDir = common.GetProjectConfigApp()
     project_android = "android/project"
@@ -74,15 +74,15 @@ def updateChannel(channel,ishd):
         config_adsdk_android.SetAdSdk(source.UNITY, True)
         config_adsdk_android.SetAdSdk(source.MOBVISTA, False)   
             # 
-        project = sourceDir+"/"+project_android+"/xml_gp" 
+        project_config = sourceDir+"/"+project_android+"/config" 
     else:
         config_adsdk_android.SetAdSdk(source.ADMOB, True)
         config_adsdk_android.SetAdSdk(source.MOBVISTA, False)
         config_adsdk_android.SetAdSdk(source.UNITY, True)
             # 
-        project = sourceDir+"/"+project_android+"/xml"
+        project_config = sourceDir+"/"+project_android+"/config"
         
-    common.coverFiles(project,   targetDir)
+    common.coverFiles(project_config,   targetDir)
 
 
     build_gradle = common.GetProjectConfigApp() + "/android" + "/gradle/build"
@@ -104,6 +104,7 @@ def updateChannel(channel,ishd):
 
     #  "channel_android": "xiaomi"
     file = getConfigJsonFile()
+    print "channel_android="+file
     strStart = "channel_android\": \""
     strEnd = "\""
     strOut = replaceStringOfFile(file, strStart, strEnd, channel)

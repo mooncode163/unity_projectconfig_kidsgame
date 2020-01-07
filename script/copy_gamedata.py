@@ -30,6 +30,11 @@ def CopyConfigDataToAndroid():
 #主函数的实现
 if  __name__ =="__main__":
     
+    # 设置为utf8编码
+    reload(sys)
+    sys.setdefaultencoding("utf-8")
+ 
+
     #入口参数：http://blog.csdn.net/intel80586/article/details/8545572
     cmdPath = common.cur_file_dir()
     count = len(sys.argv)

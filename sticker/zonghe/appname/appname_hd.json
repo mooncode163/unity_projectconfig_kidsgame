@@ -1,13 +1,13 @@
 {
     "APP_NAME_CN_ANDROID": "宝宝认知贴贴乐HD",
-    "APP_NAME_EN_ANDROID": "Baby LearnSticker HD",
+    "APP_NAME_EN_ANDROID": "Baby Learn Sticker HD",
     "APP_NAME_CN_IOS": "宝宝认知贴贴乐HD",
-    "APP_NAME_EN_IOS": "Baby LearnSticker HD",
+    "APP_NAME_EN_IOS": "Baby Learn Sticker HD",
     "PACKAGE_ANDROID": "com.moonma.stickerzonghe.pad",
     "PACKAGE_IOS": "com.moonma.sticker-zonghe.pad",
-    "APPVERSION_ANDROID": "1.2.7",
-    "APPVERSION_CODE_ANDROID": "127",
-    "APPVERSION_IOS": "1.2.7",
+    "APPVERSION_ANDROID": "1.2.8",
+    "APPVERSION_CODE_ANDROID": "128",
+    "APPVERSION_IOS": "1.2.8",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",

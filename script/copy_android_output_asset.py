@@ -59,6 +59,20 @@ if  __name__ =="__main__":
         shutil.rmtree(dir2)
     shutil.copytree(dir1,dir2)
 
+
+    # android jniLibs
+    dir_asset = "/src/main/jniLibs"
+    dir1 = common.GetRootDirAndroidOutput()+dir_asset
+    dir2 = rootAndroidStudio+dir_asset
+    flag = os.path.exists(dir2)
+    if flag:
+        shutil.rmtree(dir2)
+    shutil.copytree(dir1,dir2)
+
+
+    filename = "/libs/unity-classes.jar"
+    shutil.copy2(common.GetRootDirAndroidOutput()+filename, rootAndroidStudio+filename)
+
     CopyConfigDataToAndroid()
 
     print "copy_android_output_asset sucess"

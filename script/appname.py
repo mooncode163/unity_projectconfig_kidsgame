@@ -80,6 +80,18 @@ def replacePackage(filePath,package):
     strFile = strFile.replace("_PACKAGE_", package)
     common.saveString2File(strFile,filePath)
      
+def replaceScreenOrientation(filePath,isHd):
+    f = open(filePath, 'r')
+    strFile = f.read()
+    f.close() 
+
+    str = "sensorPortrait"
+    if isHd:
+        str = "sensorLandscape"
+
+    strFile = strFile.replace("_SCREENORIENTATION_", str)
+
+    common.saveString2File(strFile,filePath)
 
 def replaceString2(strContent, strStart, strMid, strEnd, strReplace):
     idx = strContent.find(strStart)
@@ -249,7 +261,7 @@ def updateName(isHd,isAuto):
     file_name_cn_android = project_android + "/res/values/strings.xml"
     file_name_en_android = project_android + "/res/values-en/strings.xml"
     file_package_android = project_android + "/xml/AndroidManifest.xml"
-    file_google_service_android = project_android + "/xml/google-services.json"
+    file_google_service_android = project_android + "/config/google-services.json"
 
     # ios
     file_name_cn_ios = project_ios + "/appname/zh-Hans.lproj/InfoPlist.strings"
@@ -276,7 +288,7 @@ def updateName(isHd,isAuto):
 
     APPVERSION_ANDROID = versionCodeToVersion()
     APPVERSION_CODE_ANDROID = versionCode
-    APPVERSION_IOS = versionCodeToVersion()
+    APPVERSION_IOS = data["APPVERSION_IOS"]
 
     print APP_NAME_CN_ANDROID
     print APP_NAME_EN_ANDROID
@@ -302,6 +314,9 @@ def updateName(isHd,isAuto):
     # package 
     replacePackage(file_package_android,PACKAGE_ANDROID) 
     
+    # ScreenOrientation
+    replaceScreenOrientation(file_package_android,isHd) 
+
     # version
     strStart = "versionName=\""
     strEnd = "\""

@@ -55,5 +55,11 @@ if  __name__ =="__main__":
     flag = os.path.exists(dir2)
     common.CopyDir(dir1,dir2)
 
+   # ConfigData
+    dir1 = common.GetRootProjectUnity()+"/Assets/Resources/ConfigData" 
+    dir2 = common.GetResourceDataRoot()+"/"+gameType+"/"+gameName+"/ConfigData"
+    flag = os.path.exists(dir2)
+    common.CopyDir(dir1,dir2)
+
 
     print "save_resource sucess"

@@ -1,0 +1,42 @@
+{
+    "APP_NAME_CN_ANDROID": "宝宝动物猜猜乐HD",
+    "APP_NAME_EN_ANDROID": "BabyGuessAnimalHD",
+    "APP_NAME_CN_IOS": "宝宝动物猜猜乐HD",
+    "APP_NAME_EN_IOS": "BabyGuessAnimalHD",
+    "PACKAGE_ANDROID": "com.moonma.caicaileanimal.pad",
+    "PACKAGE_IOS": "com.moonma.caicaileanimal.pad",
+    "APPVERSION_ANDROID": "1.0.5",
+    "APPVERSION_CODE_ANDROID": "105",
+    "APPVERSION_IOS": "1.0.5",
+    "need_upload_screenshot": false,
+    "APPSTORE_VERSION_UPDATE": {
+        "cn": "修复闪退",
+        "en": "Fix a Bug"
+    },
+    "APPSTORE_TITLE": {
+        "cn": "宝宝动物猜猜乐HD",
+        "en": "Baby Guess Animal HD"
+    },
+    "APPSTORE_SUBTITLE": {
+        "cn": "早教学习游戏",
+        "en": "Early learning game"
+    },
+    "APPSTORE_PROMOTION": {
+        "cn": "看图猜动物学习事物认识汉字",
+        "en": "Seeing animals, guessing words, learning things and words"
+    },
+    "APPSTORE_KEYWORD": {
+        "cn": "连连乐,儿童游戏,游乐园,拼图,儿童,早教,儿歌,小孩,乐看动画,奇艺动画,猜图,沙滩乐多纳学英语儿歌多多迷宫小镇汉字王国小牙医美食节熊猫博士小镇画彩蛋悟空识字恐龙救援车马儿的神奇大冒险小企鹅乐园魔力",
+        "en": "COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber"
+    },
+    "XIAOMI_KEYWORD": {
+        "cn": "连连乐 儿童游戏 游乐园 拼图 儿童 早教 儿歌 小孩 乐看动画 奇艺动画 猜图 沙滩乐多纳学英语儿歌多多迷宫小镇汉字王国小牙医美食节熊猫博士小镇画彩蛋悟空识字恐龙救援车马儿的神奇大冒险小企鹅乐园魔力",
+        "en": "COOKING MAMA Let's Cook Kids Shave Salon Spa Doodle Zedd the Zombie Shapes Toddler QuizUp Clawber"
+    },
+    "email": "chyfemail163@163.com",
+    "software_url": "http://www.mooncore.cn",
+    "privacy_url": "http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
+    "support_url": "http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html",
+    "privacy_url_gp": "http://blog.sina.com.cn/s/blog_1736372fb0102xmbz.html",
+    "sku_app": "caicaileanimal.pad"
+}

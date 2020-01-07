@@ -1,13 +1,13 @@
 {
     "APP_NAME_CN_ANDROID": "宝宝动物填色画画HD",
-    "APP_NAME_EN_ANDROID": "Baby Animal ColorHD",
+    "APP_NAME_EN_ANDROID": "Baby Animal Color HD",
     "APP_NAME_CN_IOS": "宝宝动物填色画画HD",
-    "APP_NAME_EN_IOS": "Baby Animal ColorHD",
+    "APP_NAME_EN_IOS": "Baby Animal Color HD",
     "PACKAGE_ANDROID": "com.moonma.fillcoloranimal.pad",
     "PACKAGE_IOS": "com.moonma.fillcoloranimal.pad",
-    "APPVERSION_ANDROID": "1.2.0",
-    "APPVERSION_CODE_ANDROID": "120",
-    "APPVERSION_IOS": "1.2.0",
+    "APPVERSION_ANDROID": "1.2.1",
+    "APPVERSION_CODE_ANDROID": "121",
+    "APPVERSION_IOS": "1.2.1",
     "need_upload_screenshot": true,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",

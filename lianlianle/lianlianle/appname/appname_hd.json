@@ -1,13 +1,13 @@
 {
     "APP_NAME_CN_ANDROID": "宝宝连连乐HD",
-    "APP_NAME_EN_ANDROID": "BabyMatchLeHD",
+    "APP_NAME_EN_ANDROID": "宝宝连连乐HD",
     "APP_NAME_CN_IOS": "宝宝连连乐HD",
     "APP_NAME_EN_IOS": "BabyMatchLeHD",
     "PACKAGE_ANDROID": "com.moonma.lianlianle.pad",
     "PACKAGE_IOS": "com.mooncore.tv.ipad",
-    "APPVERSION_ANDROID": "1.6.2",
-    "APPVERSION_CODE_ANDROID": "162",
-    "APPVERSION_IOS": "1.6.2",
+    "APPVERSION_ANDROID": "1.6.7",
+    "APPVERSION_CODE_ANDROID": "167",
+    "APPVERSION_IOS": "1.6.7",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",

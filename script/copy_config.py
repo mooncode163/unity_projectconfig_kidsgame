@@ -155,8 +155,8 @@ if  __name__ =="__main__":
         shutil.rmtree(dir2)
 
     shutil.copytree(dir1,dir2)
+ 
 
-    
     # ios
     # appname
     dir1 = sourceDir+"/"+project_ios+"/appname"

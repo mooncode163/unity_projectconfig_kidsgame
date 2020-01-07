@@ -6,6 +6,4 @@ echo $filepath
 cd $filepath
 cd ../../../script
 python ipa_build.py
- 
-
- 
+python ipa_build.py upload_ipa

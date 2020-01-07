@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "Dream Ice Cream",
     "PACKAGE_ANDROID": "com.moonma.icecream",
     "PACKAGE_IOS": "com.moonma.icecream",
-    "APPVERSION_ANDROID": "1.0.4",
-    "APPVERSION_CODE_ANDROID": "104",
-    "APPVERSION_IOS": "1.0.4",
+    "APPVERSION_ANDROID": "1.0.7",
+    "APPVERSION_CODE_ANDROID": "107",
+    "APPVERSION_IOS": "1.0.7",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复bug",

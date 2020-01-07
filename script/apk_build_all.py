@@ -20,7 +20,7 @@ import common
 
 # listChannel = [source.XIAOMI, source.TAPTAP, source.HUAWEI, source.GP]
 listChannel = [source.HUAWEI, source.TAPTAP, source.XIAOMI, source.GP]
-
+# listChannel = [source.HUAWEI, source.TAPTAP, source.XIAOMI]
 
 
 
