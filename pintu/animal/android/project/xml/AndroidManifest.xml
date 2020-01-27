@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.moonma.animalpintu" android:versionName="1.4.3" android:versionCode="143" 
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.moonma.animalpintu" android:versionName="1.4.4" android:versionCode="144" 
     xmlns:tools="http://schemas.android.com/tools" android:installLocation="preferExternal">
     <supports-screens android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" android:anyDensity="true" />
-    <application android:name="com.moonma.common.MyApplication" android:theme="@style/UnityThemeSelector" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:isGame="true" android:banner="@mipmap/ic_launcher"
-     android:usesCleartextTraffic="true"
-     >
-        <activity android:label="@string/app_name" android:screenOrientation="sensorPortrait" android:launchMode="singleTask" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density" android:hardwareAccelerated="false" android:name="com.moonma.unity.MainActivity"
-        >
+    <application android:name="com.moonma.common.MyApplication" android:theme="@style/UnityThemeSelector" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:isGame="true" android:banner="@mipmap/ic_launcher" android:usesCleartextTraffic="true">
+        <activity android:label="@string/app_name" android:screenOrientation="sensorPortrait" android:launchMode="singleTask" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density" android:hardwareAccelerated="false" android:name="com.moonma.unity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -20,18 +17,11 @@
 
         <!-- gdt ad -->
         <!-- 声明SDK所需要的组件 -->
-         <uses-library
-            android:name="org.apache.http.legacy"
-            android:required="false" /> <!-- targetSDKVersion >= 24时才需要添加这个provider。provider的authorities属性的值为${applicationId}.fileprovider，请开发者根据自己的${applicationId}来设置这个值，例如本例中applicationId为"com.moonma.chengyu"。 -->
-        <provider
-            android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.moonma.animalpintu.fileprovider"
-            android:exported="false"
-            android:grantUriPermissions="true" >
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/gdt_file_path" />
-        </provider> <!-- 声明SDK所需要的组件 -->
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+        <!-- targetSDKVersion >= 24时才需要添加这个provider。provider的authorities属性的值为${applicationId}.fileprovider，请开发者根据自己的${applicationId}来设置这个值，例如本例中applicationId为"com.moonma.chengyu"。 -->
+        <provider android:name="android.support.v4.content.FileProvider" android:authorities="com.moonma.animalpintu.fileprovider" android:exported="false" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/gdt_file_path" />
+        </provider>        <!-- 声明SDK所需要的组件 -->
 
         <service android:name="com.qq.e.comm.DownloadService" android:exported="false"/>
         <!-- 请开发者注意字母的大小写，ADActivity，而不是AdActivity -->
@@ -153,7 +143,7 @@
 
 
     <!-- GDT SDK 相关声明 -->
-    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- <uses-permission android:name="android.permission.INTERNET" /> -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -162,25 +152,12 @@
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
 
     <!--umeng share-->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
 
 
     <!-- AdView SDK mandatory or important permissions -->
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <!-- AdView SDK end -->

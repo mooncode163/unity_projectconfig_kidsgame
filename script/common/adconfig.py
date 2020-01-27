@@ -22,6 +22,10 @@ def GetConfigFile(osSrc, isHd):
         filepath = dir + "/ad_config_" + osSrc+".json"
     return filepath
 
+def GetCommonConfigFile(osSrc, isHd):
+    dir = common.GetCommonAdConfigDir() 
+    filepath = dir + "/ad_config_common_" + osSrc+".json"
+    return filepath
 
 def LoadJson(osSrc, isHd):
     global jsonRoot
@@ -30,6 +34,24 @@ def LoadJson(osSrc, isHd):
     with open(jsonfile) as json_file:
         jsonRoot = json.load(json_file)
         jsonPlat = jsonRoot["platform"]
+
+
+def LoadJsonFile(jsonfile):
+    global jsonRoot
+    global jsonPlat
+    with open(jsonfile) as json_file:
+        jsonRoot = json.load(json_file)
+        jsonPlat = jsonRoot["platform"]
+
+
+def GetCommonAppId(src, osSrc, isHd):
+    jsonfile = GetCommonConfigFile(osSrc, isHd)
+    LoadJsonFile(jsonfile)
+    appid = "0"
+    for jsontmp in jsonPlat:
+        if jsontmp["source"] == src:
+            appid = jsontmp["appid"]
+    return appid
 
 def GetAppId(src, osSrc, isHd):
     LoadJson(osSrc, isHd)

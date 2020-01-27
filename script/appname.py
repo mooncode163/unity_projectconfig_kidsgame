@@ -14,6 +14,7 @@ sys.path.append('./common')
 import common
 import config
 import source
+import adconfig
 
 versionCode = 100
 
@@ -79,7 +80,14 @@ def replacePackage(filePath,package):
     f.close() 
     strFile = strFile.replace("_PACKAGE_", package)
     common.saveString2File(strFile,filePath)
-     
+
+def replaceFile(filePath,key,value):
+    f = open(filePath, 'r')
+    strFile = f.read()
+    f.close() 
+    strFile = strFile.replace(key, value)
+    common.saveString2File(strFile,filePath) 
+
 def replaceScreenOrientation(filePath,isHd):
     f = open(filePath, 'r')
     strFile = f.read()
@@ -266,7 +274,7 @@ def updateName(isHd,isAuto):
     # ios
     file_name_cn_ios = project_ios + "/appname/zh-Hans.lproj/InfoPlist.strings"
     file_name_en_ios = project_ios + "/appname/en.lproj/InfoPlist.strings"
-    file_package_ios = project_ios + "/Info.plist"
+    file_info_plist_ios = project_ios + "/Info.plist"
 
     # loadJson
     data = loadJson(isHd)
@@ -334,65 +342,46 @@ def updateName(isHd,isAuto):
     replaceGoogleServiceFile(file_google_service_android, PACKAGE_ANDROID)
 
 # ios
+
+    #appname
+    replaceFile(file_info_plist_ios,"_APP_NAME_",APP_NAME_CN_IOS)
     file_name_cn_ios = project_ios + "/appname/zh-Hans.lproj/InfoPlist.strings"
-    file_name_en_ios = project_ios + "/appname/en.lproj/InfoPlist.strings"
-    strStart = "CFBundleDisplayName\" = \""
-    strEnd = "\""
+    file_name_en_ios = project_ios + "/appname/en.lproj/InfoPlist.strings" 
     # cn
-    strOut = replaceStringOfFile(
-        file_name_cn_ios, strStart, strEnd, APP_NAME_CN_IOS)
-    saveString2File(strOut, file_name_cn_ios)
+    replaceFile(file_name_cn_ios,"_APP_NAME_",APP_NAME_CN_IOS) 
     # en
-    strOut = replaceStringOfFile(
-        file_name_en_ios, strStart, strEnd, APP_NAME_EN_IOS)
-    saveString2File(strOut, file_name_en_ios)
+    replaceFile(file_name_en_ios,"_APP_NAME_",APP_NAME_EN_IOS)  
 
-    # package
-    strStart = "CFBundleIdentifier"
-    strMid = "<string>"
-    strEnd = "</string>"
-    strOut = replaceStringOfFile2(
-        file_package_ios, strStart, strMid, strEnd, PACKAGE_IOS)
-    saveString2File(strOut, file_package_ios)
 
-    strStart = "CFBundleDisplayName"
-    strMid = "<string>"
-    strEnd = "</string>"
-    strOut = replaceStringOfFile2(
-        file_package_ios, strStart, strMid, strEnd, APP_NAME_CN_IOS)
-    saveString2File(strOut, file_package_ios)
+    # package 
+    replaceFile(file_info_plist_ios,"_APP_PACKAGE_",PACKAGE_IOS)
 
-    # version
-    strStart = "CFBundleShortVersionString"
-    strMid = "<string>"
-    strEnd = "</string>"
-    strOut = replaceStringOfFile2(
-        file_package_ios, strStart, strMid, strEnd, APPVERSION_IOS)
-    saveString2File(strOut, file_package_ios)
+     
+    # version 
+    replaceFile(file_info_plist_ios,"_APP_VERSION_",APPVERSION_IOS) 
 
-    strStart = "CFBundleVersion"
-    strMid = "<string>"
-    strEnd = "</string>"
-    strOut = replaceStringOfFile2(
-        file_package_ios, strStart, strMid, strEnd, APPVERSION_IOS)
-    saveString2File(strOut, file_package_ios)
+    #admob appid  
+    appid = adconfig.GetCommonAppId(source.ADMOB,source.IOS,isHd)
+    replaceFile(file_info_plist_ios,"_APP_ID_ADMOB_",appid) 
 
     # CFBundleURLSchemes
     src = source.WEIBO
     appid = config.GetShareAppId(src,source.IOS,isHd)
-    replaceXcodeUrlScheme(file_package_ios,src,appid,0)
+    replaceXcodeUrlScheme(file_info_plist_ios,src,appid,0)
 
     src = source.WEIXIN
     appid = config.GetShareAppId(src,source.IOS,isHd)
-    replaceXcodeUrlScheme(file_package_ios,src,appid,0)
+    replaceXcodeUrlScheme(file_info_plist_ios,src,appid,0)
 
     src = source.QQ
     appid = config.GetShareAppId(src,source.IOS,isHd)
-    replaceXcodeUrlScheme(file_package_ios,src,appid,0)
-    replaceXcodeUrlScheme(file_package_ios,src,appid,1)
+    replaceXcodeUrlScheme(file_info_plist_ios,src,appid,0)
+    replaceXcodeUrlScheme(file_info_plist_ios,src,appid,1)
 
     # xiaomi aso keyword
     updateXiaoASOkeyword(data,isHd)
+
+
 
 # win
     updateNameWin(isHd,isAuto)

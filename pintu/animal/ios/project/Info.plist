@@ -29,8 +29,6 @@
 			<key>NSAllowsArbitraryLoads</key>
 			<true/>
 		</dict>
-		<key>UIApplicationExitsOnSuspend</key>
-		<false/>
 		<key>UIPrerenderedIcon</key>
 		<true/>
 		<key>UIRequiredDeviceCapabilities</key>

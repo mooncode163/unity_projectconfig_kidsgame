@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "Happy Guess",
     "PACKAGE_ANDROID": "com.moonma.guess",
     "PACKAGE_IOS": "com.moonma.guess",
-    "APPVERSION_ANDROID": "1.0.1",
-    "APPVERSION_CODE_ANDROID": "101",
-    "APPVERSION_IOS": "1.0.1",
+    "APPVERSION_ANDROID": "1.0.3",
+    "APPVERSION_CODE_ANDROID": "103",
+    "APPVERSION_IOS": "1.0.3",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",

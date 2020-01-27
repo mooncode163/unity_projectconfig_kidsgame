@@ -307,6 +307,9 @@ def GetGameDataDirOfResourceData():
 def GetAdConfigDir(): 
     return GetGameDataDirOfResourceData()+"/adconfig"
 
+def GetCommonAdConfigDir(): 
+    return GetResourceDataRoot()+"/ConfigDataCommon/adconfig/cn"
+
 def GetConfigDir(): 
     return GetConfigDataDir()+"/config"
 
