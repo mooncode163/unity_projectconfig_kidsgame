@@ -182,7 +182,7 @@ def copy_or_delete_one_screenshot(isHd,device,language,idx,isDel):
     if isHd:
         strDirHorV = "heng" 
 
-    strDirRootFrom =common.GetProjectIcon()+"/"+gameType+"/"+gameName+"/screenshot"
+    strDirRootFrom =common.GetProjectOutPutApp()+"/screenshot"
     strFileFrom = strDirRootFrom+"/"+strDirHorV+"/"+language+"/"+device+"/"+str(idx+1)+".jpg";
  
     strFileTo = getScreenshotFullFilePath(isHd,device,language,idx)

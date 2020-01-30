@@ -93,7 +93,7 @@ if  __name__ =="__main__":
  
  
     # project
-    iconRoot =common.GetProjectIcon()+"/"+gameType
+    iconRoot =common.GetProjectIconApp()
     reousceDataRoot = common.GetResourceDataRoot() 
     sourceDir = common.GetProjectConfigApp()
     # sourceAdDir = "../../../../ad_src/"+adDirName
@@ -120,7 +120,7 @@ if  __name__ =="__main__":
         shutil.rmtree(dir2)
     shutil.copytree(dir1,dir2)
 
-    dir1 = iconRoot+"/"+resDataName+"/"+iconDirName+"/ios"
+    dir1 = iconRoot+"/"+iconDirName+"/ios"
     dir2 = rootiOSXcode + "/Unity-iPhone/Images.xcassets/AppIcon.appiconset"
     flag = os.path.exists(dir1) and os.path.exists(dir2)
     if flag:
@@ -128,7 +128,7 @@ if  __name__ =="__main__":
 
 
     #android icon
-    dir1 = iconRoot+"/"+resDataName+"/"+iconDirName+"/android"
+    dir1 = iconRoot+"/"+iconDirName+"/android"
     # dir2 = sourceDir+"/res"
     dir2 = common.GetProjectConfigApp()+"/"+project_android+"/res"
     # if iconDirName=="iconhd":
@@ -173,7 +173,7 @@ if  __name__ =="__main__":
     common.copyOneFile(file1,file2)
 
     # win res 
-    dir1 = iconRoot+"/"+resDataName+"/"+iconDirName+"/microsoft"
+    dir1 = iconRoot+"/"+iconDirName+"/microsoft"
     dir2 = common.GetRootProjectWin()+"/"+common.GetProjectName()+"/Assets"
     common.coverFiles(dir1,   dir2)
 

@@ -242,6 +242,13 @@ def GetProjectConfig():
 def GetProjectIcon():
     return GetRootDir()+"/ProjectIcon"
 
+def GetProjectOutPut():
+    return GetRootDir()+"/ProjectOutPut"
+def GetProjectOutPutApp():
+    gameType = getGameType()
+    gameName = getGameName()
+    return GetProjectOutPut()+"/"+gameType+"/"+gameName
+
 def GetRootProjectIos():
     return GetRootDir()+"/project_ios"
 

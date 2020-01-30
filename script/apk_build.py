@@ -34,7 +34,7 @@ def copyApk(channel):
     gameName = common.getGameName()
     gameType = common.getGameType()
  # copy2 同时复制文件权限
-    dirapk = common.GetProjectIconApp() + "/apk"
+    dirapk = common.GetProjectOutPutApp() + "/apk"
  
 
     if common.AppForPad():
