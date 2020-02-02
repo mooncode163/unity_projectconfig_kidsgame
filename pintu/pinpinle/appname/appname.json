@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "KidsPuzzle",
     "PACKAGE_ANDROID": "com.moonma.pinpinle",
     "PACKAGE_IOS": "com.moonma.pinpinle",
-    "APPVERSION_ANDROID": "1.8.2",
-    "APPVERSION_CODE_ANDROID": "182",
-    "APPVERSION_IOS": "1.8.2",
+    "APPVERSION_ANDROID": "1.8.9",
+    "APPVERSION_CODE_ANDROID": "189",
+    "APPVERSION_IOS": "1.8.9",
     "need_upload_screenshot": true,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",

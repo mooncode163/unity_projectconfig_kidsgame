@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "KidsFarmFind",
     "PACKAGE_ANDROID": "com.moonma.nongchangfind2",
     "PACKAGE_IOS": "com.moonma.nongchangfind",
-    "APPVERSION_ANDROID": "1.4.9",
-    "APPVERSION_CODE_ANDROID": "149",
-    "APPVERSION_IOS": "1.4.9",
+    "APPVERSION_ANDROID": "1.5.0",
+    "APPVERSION_CODE_ANDROID": "150",
+    "APPVERSION_IOS": "1.5.0",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",

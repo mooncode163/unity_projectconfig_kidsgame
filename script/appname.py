@@ -278,6 +278,8 @@ def updateName(isHd,isAuto):
 
     # loadJson
     data = loadJson(isHd)
+
+
     APP_NAME_CN_ANDROID = data["APP_NAME_CN_ANDROID"]
     APP_NAME_EN_ANDROID = data["APP_NAME_EN_ANDROID"]
     APP_NAME_CN_IOS = data["APP_NAME_CN_IOS"]
@@ -290,9 +292,11 @@ def updateName(isHd,isAuto):
     PACKAGE_IOS = data["PACKAGE_IOS"]
     global versionCode
     versionCode = data["APPVERSION_CODE_ANDROID"]
+ 
     if isAuto==True: 
-        autoPlusVersion(isHd,data) 
-
+        autoPlusVersion(isHd,data)
+        # 重新加载
+        data = loadJson(isHd)
 
     APPVERSION_ANDROID = versionCodeToVersion()
     APPVERSION_CODE_ANDROID = versionCode
