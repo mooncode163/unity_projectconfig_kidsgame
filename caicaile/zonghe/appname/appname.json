@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "KidsGuess",
     "PACKAGE_ANDROID": "com.moonma.caicaile",
     "PACKAGE_IOS": "com.moonma.caicaile",
-    "APPVERSION_ANDROID": "1.2.5",
-    "APPVERSION_CODE_ANDROID": "125",
-    "APPVERSION_IOS": "1.2.5",
+    "APPVERSION_ANDROID": "1.2.9",
+    "APPVERSION_CODE_ANDROID": "129",
+    "APPVERSION_IOS": "1.2.9",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",

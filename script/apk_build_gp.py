@@ -47,7 +47,7 @@ if __name__ == "__main__":
     os.chdir(android_studio_dir)
 
     for channel in listChannel:
-        print "apk_build_gp:" + channel
+        print "apk_build_gp:" + channel +" isHD="+str(isHD)
         appchannel.updateChannel(channel,isHD) 
         apk_build.buildApk()
         apk_build.copyApk(channel)

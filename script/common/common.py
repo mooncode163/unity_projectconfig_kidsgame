@@ -242,8 +242,15 @@ def GetProjectConfig():
 def GetProjectIcon():
     return GetRootDir()+"/ProjectIcon"
 
+def GetProjectIconApp():
+    gameType = getGameType()
+    gameName = getGameName()
+    return GetProjectIcon()+"/"+gameType+"/"+gameName
+
+
 def GetProjectOutPut():
     return GetRootDir()+"/ProjectOutPut"
+    
 def GetProjectOutPutApp():
     gameType = getGameType()
     gameName = getGameName()
@@ -259,10 +266,6 @@ def GetRootProjectWin():
     return GetRootDir()+"/project_win"
 
 
-def GetProjectIconApp():
-    gameType = getGameType()
-    gameName = getGameName()
-    return GetProjectIcon()+"/"+gameType+"/"+gameName
 
 def GetRootDirAndroidStudio():
     return GetRootDir()+ "/project_android/"+GetProjectName()

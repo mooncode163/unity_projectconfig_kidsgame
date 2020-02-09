@@ -81,6 +81,13 @@ def replacePackage(filePath,package):
     strFile = strFile.replace("_PACKAGE_", package)
     common.saveString2File(strFile,filePath)
 
+def replaceFileForKey(filePath,key,content):
+    f = open(filePath, 'r')
+    strFile = f.read()
+    f.close() 
+    strFile = strFile.replace(key, content)
+    common.saveString2File(strFile,filePath)
+
 def replaceFile(filePath,key,value):
     f = open(filePath, 'r')
     strFile = f.read()
@@ -253,6 +260,19 @@ def versionCodeToVersion():
     ret = str(v0)+"."+str(v1)+"."+str(v2)
     return ret
 
+def updateAndroidManifest(filepath,package,appversion,appversioncode,isHd):
+    # version 
+    replaceFileForKey(filepath,"_VERSIONNAME_",appversion) 
+ 
+    replaceFileForKey(filepath,"_VERSIONCODE_",appversioncode) 
+
+    # package 
+    replaceFileForKey(filepath,"_PACKAGE_",package) 
+    # ScreenOrientation
+    replaceScreenOrientation(filepath,isHd) 
+
+
+
 def updateName(isHd,isAuto):
     
     rootConfig = common.GetProjectConfigApp()
@@ -268,7 +288,10 @@ def updateName(isHd,isAuto):
     # android
     file_name_cn_android = project_android + "/res/values/strings.xml"
     file_name_en_android = project_android + "/res/values-en/strings.xml"
-    file_package_android = project_android + "/xml/AndroidManifest.xml"
+    file_AndroidManifest = project_android + "/xml/AndroidManifest.xml"
+    file_AndroidManifest_GP = project_android + "/xml_gp/AndroidManifest.xml"
+    
+
     file_google_service_android = project_android + "/config/google-services.json"
 
     # ios
@@ -310,6 +333,7 @@ def updateName(isHd,isAuto):
 
     print "android version:"+APPVERSION_ANDROID
     print "ios version:"+APPVERSION_IOS
+
  # android
     # name
     strStart = "app_name\">"
@@ -323,24 +347,8 @@ def updateName(isHd,isAuto):
         file_name_en_android, strStart, strEnd, APP_NAME_EN_ANDROID)
     saveString2File(strOut, file_name_en_android)
 
-    # package 
-    replacePackage(file_package_android,PACKAGE_ANDROID) 
-    
-    # ScreenOrientation
-    replaceScreenOrientation(file_package_android,isHd) 
-
-    # version
-    strStart = "versionName=\""
-    strEnd = "\""
-    strOut = replaceStringOfFile(
-        file_package_android, strStart, strEnd, APPVERSION_ANDROID)
-    saveString2File(strOut, file_package_android)
-
-    strStart = "versionCode=\""
-    strEnd = "\""
-    strOut = replaceStringOfFile(
-        file_package_android, strStart, strEnd, APPVERSION_CODE_ANDROID)
-    saveString2File(strOut, file_package_android)
+    updateAndroidManifest(file_AndroidManifest,PACKAGE_ANDROID,APPVERSION_ANDROID,APPVERSION_CODE_ANDROID,isHd)
+    updateAndroidManifest(file_AndroidManifest_GP,PACKAGE_ANDROID,APPVERSION_ANDROID,APPVERSION_CODE_ANDROID,isHd)
 
     # admob
     replaceGoogleServiceFile(file_google_service_android, PACKAGE_ANDROID)

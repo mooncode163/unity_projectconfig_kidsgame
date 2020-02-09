@@ -35,9 +35,10 @@ def copyCmdDir(name):
     dir1 = common.GetProjectConfigDefault()+"/"+name
     dir2 = common.GetProjectConfigApp() + "/"+name
     flag = os.path.exists(dir2)
-    if flag:
-        shutil.rmtree(dir2)
-    shutil.copytree(dir1,dir2)
+    # if flag:
+    #     shutil.rmtree(dir2)
+    # shutil.copytree(dir1,dir2)
+    common.coverFiles(dir1,dir2)
 
 
 #主函数的实现
@@ -61,7 +62,7 @@ if  __name__ =="__main__":
     dir1 = common.GetProjectConfigDefault()
     dir2 = common.GetProjectConfigApp()
   
-    copyCmdFiles(dir1,dir2)
+    #copyCmdFiles(dir1,dir2)
 
     copyCmdDir("cmd_win")
     copyCmdDir("cmd_mac")

@@ -19,9 +19,9 @@
 		<key>CFBundlePackageType</key>
 		<string>APPL</string>
 		<key>CFBundleShortVersionString</key>
-		<string>1.4.0</string>
+		<string>1.4.4</string>
 		<key>CFBundleVersion</key>
-		<string>1.4.0</string>
+		<string>1.4.4</string>
 		<key>LSRequiresIPhoneOS</key>
 		<true/>
 		<key>NSAppTransportSecurity</key>
@@ -29,8 +29,6 @@
 			<key>NSAllowsArbitraryLoads</key>
 			<true/>
 		</dict>
-		<key>UIApplicationExitsOnSuspend</key>
-		<false/>
 		<key>UIPrerenderedIcon</key>
 		<true/>
 		<key>UIRequiredDeviceCapabilities</key>
@@ -54,8 +52,6 @@
 		<string>8354358b-5e99-4247-a6d2-2a01565010cb</string>
 		<key>UnityCrashSubmissionURL</key>
 		<string>https://a:b@perf-events.cloud.unity3d.com/symbolicate</string>
-		<key>Unity_LoadingActivityIndicatorStyle</key>
-		<integer>-1</integer>
 		<key>NSLocationWhenInUseUsageDescription</key>
 		<string>在使用期间访问位置</string>
 		<!-- 相册 -->
@@ -64,6 +60,8 @@
 		<!-- 相机 -->
 		<key>NSCameraUsageDescription</key>
 		<string>App需要您的同意,才能访问相机</string>
+		<key>Unity_LoadingActivityIndicatorStyle</key>
+		<integer>-1</integer>
 		<key>LSApplicationQueriesSchemes</key>
 		<array>
 			<string>linkedin</string>
@@ -310,5 +308,7 @@
 				</array>
 			</dict>
 		</array>
+		<key>GADApplicationIdentifier</key>
+		<string>ca-app-pub-9172948412628142~2786113316</string>
 	</dict>
 </plist>

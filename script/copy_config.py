@@ -93,7 +93,7 @@ if  __name__ =="__main__":
  
  
     # project
-    iconRoot =common.GetProjectIconApp()
+    iconRoot =common.GetProjectOutPutApp()
     reousceDataRoot = common.GetResourceDataRoot() 
     sourceDir = common.GetProjectConfigApp()
     # sourceAdDir = "../../../../ad_src/"+adDirName

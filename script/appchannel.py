@@ -62,6 +62,8 @@ def updateChannel(channel,ishd):
     targetDir = common.GetRootDirAndroidStudio()
     sourceDir = common.GetProjectConfigApp()
     project_android = "android/project"
+    rootAndroidStudio = common.GetRootDirAndroidStudio()
+    targetDir = rootAndroidStudio+"/src/main"
 
     if ishd==True: 
         project_android = "android/project_hd"
@@ -75,7 +77,10 @@ def updateChannel(channel,ishd):
         config_adsdk_android.SetAdSdk(source.MOBVISTA, False)   
             # 
         project_config = sourceDir+"/"+project_android+"/config" 
+        xml = sourceDir+"/"+project_android+"/xml_gp" 
+
     else:
+        xml = sourceDir+"/"+project_android+"/xml"
         config_adsdk_android.SetAdSdk(source.ADMOB, True)
         config_adsdk_android.SetAdSdk(source.MOBVISTA, False)
         config_adsdk_android.SetAdSdk(source.UNITY, True)
@@ -83,7 +88,7 @@ def updateChannel(channel,ishd):
         project_config = sourceDir+"/"+project_android+"/config"
         
     common.coverFiles(project_config,   targetDir)
-
+    common.coverFiles(xml,   targetDir)
 
     build_gradle = common.GetProjectConfigApp() + "/android" + "/gradle/build"
     # or (channel == source.GP)
