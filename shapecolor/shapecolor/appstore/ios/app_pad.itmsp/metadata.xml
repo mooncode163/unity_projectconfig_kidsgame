@@ -3,111 +3,96 @@
    <!--  <provider>YuanFang Chen</provider> -->
     <team_id>Y9ZUK2WTEE</team_id>
     <software>
-        <vendor_id>sku_shapecolor_pad</vendor_id>
+        <vendor_id>sku_paintanimal</vendor_id>
         <software_metadata>
             <versions>
-                <version string="1.3.1">
+                <version string="1.0.0">
                     <locales>
                         <locale name="en-US">
-                            <title>Baby Shape Color HD</title>
-                            <subtitle>Learn shapes and colors</subtitle>
-                            <description>This is an application on the Pad to help children learn the shape and color quickly.
-Contains a dozen common shapes: triangular, square, rectangular, trapezoidal, rhombic, round, oval, round, heart-shaped Pentagon, pentagram, etc.; a dozen colors: red, blue, yellow, green, orange, orange, pink, purple, grey, brown, black, white, etc.. Let the child remember and distinguish the shapes and colors quickly in the fun and intuitive drag objects.
-The game consists of three modes: shape, color, shape, and color combination mode, each of which contains more than 50 levels.
-    </description>
-                            <promotional_text>Recognition of shape color baby happy learning and growth</promotional_text>
+                            <title>Touch Fighter</title>
+                            <subtitle>Action-filled combat game</subtitle>
+                            <description>Challenging, action-filled combat game with fighter jets and missiles.</description>
+                            <promotional_text>On sale for a limited time.</promotional_text>
                             <keywords>
-                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                               <keyword>combat,绘画好工具</keyword> 
                             </keywords>
-                            <version_whats_new>Fix a Bug</version_whats_new>
+                            <version_whats_new></version_whats_new>
                             <software_url>http://www.mooncore.cn</software_url>
                             <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
                             <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
 
-                            <!-- <software_screenshots></software_screenshots> -->
+                            <software_screenshots></software_screenshots>
 
                         </locale>
 
                          <locale name="zh-Hans">
-                            <title>宝宝形状颜色HD-快乐学习成长</title>
-                            <subtitle>学会各种形状颜色</subtitle>
-                            <description>这是平板上一款帮助孩子快速学习形状和颜色的应用!
-包含十几种常见的形状：三角形, 正方形, 长方形, 菱形, 梯形, 圆, 椭圆, 半圆, 五边形, 五角星, 心形等；十几种颜色: 红色, 蓝色, 黄色, 绿色, 橙色, 橙色, 粉色, 紫色, 灰色, 棕色, 黑色, 白色等。让孩子在有趣和直观的拖动物体过程中快速记住和分辨出这些形状和颜色。
-游戏包括三种模式：形状，颜色，形状和颜色组合模式，每个模式包含有50多个关卡。
-    </description>
-                            <promotional_text>认形状学颜色宝宝快乐学习成长</promotional_text>
+                            <title>Touch Fighter</title>
+                            <subtitle>Action-filled combat game</subtitle>
+                            <description>Challenging, action-filled combat game with fighter jets and missiles.</description>
+                            <promotional_text>On sale for a limited time.</promotional_text>
                             <keywords>
-                               <keyword>拼多多机器人梦工厂碰碰狐宝宝美食街点点多纳多多宝宝巴士瓦贝儿歌悟空识字学数学未来骑士团宝贝英语说趣味食物火车总动员开心蔬菜童话故事小邮局恐龙农场宝宝认家庭成员马儿的神奇大冒险好爸爸学习机课堂学习拖拖乐</keyword> 
+                               <keyword>combat</keyword> 
                             </keywords>
-                            <version_whats_new>修复内购失败的问题</version_whats_new>
+                            <version_whats_new></version_whats_new>
                             <software_url>http://www.mooncore.cn</software_url>
                             <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
                             <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
 
-                            <!-- <software_screenshots></software_screenshots> -->
+                            <software_screenshots></software_screenshots>
 
                             
                         </locale>
 
                          <locale name="en-CA">
-                            <title>Baby Shape Color HD</title>
-                            <subtitle>Learn shapes and colors</subtitle>
-                            <description>This is an application on the Pad to help children learn the shape and color quickly.
-Contains a dozen common shapes: triangular, square, rectangular, trapezoidal, rhombic, round, oval, round, heart-shaped Pentagon, pentagram, etc.; a dozen colors: red, blue, yellow, green, orange, orange, pink, purple, grey, brown, black, white, etc.. Let the child remember and distinguish the shapes and colors quickly in the fun and intuitive drag objects.
-The game consists of three modes: shape, color, shape, and color combination mode, each of which contains more than 50 levels.
-    </description>
-                            <promotional_text>Recognition of shape color baby happy learning and growth</promotional_text>
+                            <title>Touch Fighter</title>
+                            <subtitle>Action-filled combat game</subtitle>
+                            <description>Challenging, action-filled combat game with fighter jets and missiles.</description>
+                            <promotional_text>On sale for a limited time.</promotional_text>
                             <keywords>
-                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                               <keyword>combat</keyword> 
                             </keywords>
-                           <version_whats_new>Fix a Bug</version_whats_new>
+                           <version_whats_new></version_whats_new>
                             <software_url>http://www.mooncore.cn</software_url>
                             <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
                             <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
 
-                            <!-- <software_screenshots></software_screenshots> -->
+                            <software_screenshots></software_screenshots>
 
                             
                         </locale>
 
                          <locale name="en-AU">
-                            <title>Baby Shape Color HD</title>
-                            <subtitle>Learn shapes and colors</subtitle>
-                            <description>This is an application on the Pad to help children learn the shape and color quickly.
-Contains a dozen common shapes: triangular, square, rectangular, trapezoidal, rhombic, round, oval, round, heart-shaped Pentagon, pentagram, etc.; a dozen colors: red, blue, yellow, green, orange, orange, pink, purple, grey, brown, black, white, etc.. Let the child remember and distinguish the shapes and colors quickly in the fun and intuitive drag objects.
-The game consists of three modes: shape, color, shape, and color combination mode, each of which contains more than 50 levels.
-    </description>
-                            <promotional_text>Recognition of shape color baby happy learning and growth</promotional_text>
+                            <title>Touch Fighter</title>
+                            <subtitle>Action-filled combat game</subtitle>
+                            <description>Challenging, action-filled combat game with fighter jets and missiles.</description>
+                            <promotional_text>On sale for a limited time.</promotional_text>
                             <keywords>
-                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                               <keyword>combat</keyword> 
                             </keywords>
-                            <version_whats_new>Fix a Bug</version_whats_new>
+                            <version_whats_new></version_whats_new>
                             <software_url>http://www.mooncore.cn</software_url>
                             <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
                             <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
 
-                            <!-- <software_screenshots></software_screenshots> -->
+                            <software_screenshots></software_screenshots>
 
                             
                         </locale>
 
                          <locale name="en-GB">
-                            <title>Baby Shape Color HD</title>
-                            <subtitle>Learn shapes and colors</subtitle>
-                            <description>This is an application on the Pad to help children learn the shape and color quickly.
-Contains a dozen common shapes: triangular, square, rectangular, trapezoidal, rhombic, round, oval, round, heart-shaped Pentagon, pentagram, etc.; a dozen colors: red, blue, yellow, green, orange, orange, pink, purple, grey, brown, black, white, etc.. Let the child remember and distinguish the shapes and colors quickly in the fun and intuitive drag objects.
-The game consists of three modes: shape, color, shape, and color combination mode, each of which contains more than 50 levels.
-    </description>
-                            <promotional_text>Recognition of shape color baby happy learning and growth</promotional_text>
+                            <title>Touch Fighter</title>
+                            <subtitle>Action-filled combat game</subtitle>
+                            <description>Challenging, action-filled combat game with fighter jets and missiles.</description>
+                            <promotional_text>On sale for a limited time.</promotional_text>
                             <keywords>
-                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                               <keyword>combat</keyword> 
                             </keywords>
-                            <version_whats_new>Fix a Bug</version_whats_new>
+                            <version_whats_new></version_whats_new>
                             <software_url>http://www.mooncore.cn</software_url>
                             <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
                             <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
 
-                            <!-- <software_screenshots></software_screenshots> -->
+                            <software_screenshots></software_screenshots>
 
                             
                         </locale>
@@ -133,13 +118,13 @@ The game consists of three modes: shape, color, shape, and color combination mod
 
            <in_app_purchases>
                 <in_app_purchase>
-                    <product_id>com.moonma.shapecolor.pad.noad</product_id>
+                    <product_id>com.moonma.kids.noad</product_id>
                     <reference_name>noad</reference_name>
                     <type>non-consumable</type>
                     <products>
                         <product>
                             <cleared_for_sale>true</cleared_for_sale>
-                            <wholesale_price_tier>2</wholesale_price_tier>
+                            <wholesale_price_tier>3</wholesale_price_tier>
                         </product>
                     </products>
                     <locales>

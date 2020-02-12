@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "KidsStickerFruit",
     "PACKAGE_ANDROID": "com.moonma.stickerfruit",
     "PACKAGE_IOS": "com.moonma.stickerfruit",
-    "APPVERSION_ANDROID": "1.1.1",
-    "APPVERSION_CODE_ANDROID": "111",
-    "APPVERSION_IOS": "1.1.1",
+    "APPVERSION_ANDROID": "1.1.2",
+    "APPVERSION_CODE_ANDROID": "112",
+    "APPVERSION_IOS": "1.1.2",
     "need_upload_screenshot": true,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",
