@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "Baby Farm HD",
     "PACKAGE_ANDROID": "com.moonma.nongchang.pad",
     "PACKAGE_IOS": "com.moonma.nongchang.pad",
-    "APPVERSION_ANDROID": "1.3.7",
-    "APPVERSION_CODE_ANDROID": "137",
-    "APPVERSION_IOS": "1.3.7",
+    "APPVERSION_ANDROID": "1.4.0",
+    "APPVERSION_CODE_ANDROID": "140",
+    "APPVERSION_IOS": "1.4.0",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",
