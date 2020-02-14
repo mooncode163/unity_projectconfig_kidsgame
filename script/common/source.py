@@ -35,4 +35,4 @@ MOBVISTA = "mobvista"
 
 # appstore 账号
 APPSTORE_USER = "chyfemail163@163.com"
-APPSTORE_PASSWORD = "svnc-fqkl-gbsf-chyq"
+APPSTORE_PASSWORD = "uyok-ghdh-wzvc-vrcf"

@@ -247,16 +247,29 @@ def GetProjectIconApp():
     gameName = getGameName()
     return GetProjectIcon()+"/"+gameType+"/"+gameName
 
-
 def GetProjectOutPut():
     return GetRootDir()+"/ProjectOutPut"
-    
+
+def GetProjectOutPutIPA():
+    return GetProjectOutPut()+"/IPA"
+
+def GetOutPutIPAName():
+    gameType = getGameType()
+    gameName = getGameName()
+    return  "ipa"+"_"+gameType+"_"+gameName+".ipa"
+
 def GetProjectOutPutApp():
     gameType = getGameType()
     gameName = getGameName()
     return GetProjectOutPut()+"/"+gameType+"/"+gameName
 
 def GetRootProjectIos():
+    return GetRootProjectIosUser() 
+
+def GetRootProjectIosUser():
+    return "/Users/moon/sourcecode/unity/product/"+GetProjectName()+"/project_ios"
+
+def GetRootProjectIosVMVare():
     return GetRootDir()+"/project_ios"
 
 def GetRootProjectAndroid():
@@ -278,8 +291,30 @@ def GetRootDirAndroidOutput():
 def GetRootDirAndroidAsset(): 
     return GetRootDirAndroidStudio()+ "/src/main/assets"
 
-def GetRootDirXcode():
-    return GetRootDir()+"/project_ios/"+GetProjectName()+"_device"
+def GetRootDirXcode(): 
+    return GetRootDirXcodeUser()
+
+def IsVMWare(): 
+    my_file =  "/Volumes/VMware Shared Folders"
+    if os.path.exists(my_file):
+        # 指定的目录存在
+        return True
+    return False
+
+
+def GetProjectNameApp():
+    gameType = getGameType()
+    gameName = getGameName()
+    return GetProjectName()+"_device"+"_"+gameType+"_"+gameName
+
+def GetRootDirXcodeVMWare():
+    return GetRootProjectIosVMVare()+"/"+GetProjectNameApp()
+
+def GetRootDirXcodeUser():
+    #Users/moon/sourcecode/unity/product/kidsgame
+    # "../../"
+    return GetRootProjectIosUser()+"/"+GetProjectNameApp()
+
 
 def GetProjectConfigDefault():
     return GetProjectConfig()+"/default"  

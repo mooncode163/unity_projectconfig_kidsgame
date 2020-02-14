@@ -25,18 +25,24 @@ def cur_file_dir():
 # 主函数的实现
 if __name__ == "__main__":
 
-    # cmdPath = common.cur_file_dir()
+    cmdPath = common.cur_file_dir()
     count = len(sys.argv)
     for i in range(1, count):
         print "参数", i, sys.argv[i]
         if i == 1:
             cmdPath = sys.argv[i]
+   
+    print "cmdPath="+cmdPath+" count="+str(count)
+    common.SetCmdPath(cmdPath)
+    gameName = common.getGameName()
+    gameType = common.getGameType()
+    print "gameName="+gameName
+    print "gameType="+gameType
 
-    # common.SetCmdPath(cmdPath)
     isUploadIPA = False
     isExportIPA = False
     if count > 1:
-        argv1 = sys.argv[1]
+        argv1 = sys.argv[2]
         if argv1 == "upload_ipa":
             isUploadIPA = True
 
@@ -77,9 +83,11 @@ if __name__ == "__main__":
                 fp.close()
 
     if isUploadIPA == True:
+        # 上传ipa
         strCmd = "/Applications/Xcode.app/Contents/Applications/Application\ Loader.app/Contents/Frameworks/ITunesSoftwareService.framework/Versions/A/Support/altool --upload-app -f " + \
             ipa_file + "/" + target + ".ipa" + \
-            " -t ios -u "+source.APPSTORE_USER+" -p "+source.APPSTORE_PASSWORD
+            " -t ios -u "+source.APPSTORE_USER+" -p "+source.APPSTORE_PASSWORD 
+            # + "--output-format xml"
         os.system(strCmd)
     else:
         # build target.app
@@ -105,5 +113,22 @@ if __name__ == "__main__":
             archive_file + " -exportPath " + ipa_file + \
             " -exportOptionsPlist " + exportOptionPlist_file
         os.system(strCmd)
+
+        #copy ipa 到共享目录
+        if common.IsVMWare():
+            ipa_file_src = common.GetRootProjectIos() + "/app/" + target+"/" + target + ".ipa"
+
+            #GetRootProjectIosVMVare
+            dir_ipa = common.GetProjectOutPutIPA()
+            if not os.path.exists(dir_ipa):
+                os.makedirs(dir_ipa) 
+
+            ipa_file_dst =dir_ipa + "/" + common.GetOutPutIPAName()
+            print "ipa_file_src= "+ipa_file_src
+            print "ipa_file_dst= "+ipa_file_dst
+
+            if os.path.isfile(ipa_file_src):
+                shutil.copyfile(ipa_file_src,ipa_file_dst)
+
 
     print "ipa_build sucess"
