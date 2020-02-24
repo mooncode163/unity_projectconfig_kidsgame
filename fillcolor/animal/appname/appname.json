@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "Kids Animal Color",
     "PACKAGE_ANDROID": "com.moonma.fillcoloranimal",
     "PACKAGE_IOS": "com.moonma.fillcoloranimal",
-    "APPVERSION_ANDROID": "1.4.7",
-    "APPVERSION_CODE_ANDROID": "147",
-    "APPVERSION_IOS": "1.4.7",
+    "APPVERSION_ANDROID": "1.4.9",
+    "APPVERSION_CODE_ANDROID": "149",
+    "APPVERSION_IOS": "1.4.9",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",

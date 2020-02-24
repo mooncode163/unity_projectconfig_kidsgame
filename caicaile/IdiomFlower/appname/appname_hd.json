@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "Idiom Flower HD",
     "PACKAGE_ANDROID": "com.moonma.idiomflower.pad",
     "PACKAGE_IOS": "com.moonma.idiomflower.pad",
-    "APPVERSION_ANDROID": "1.0.0",
-    "APPVERSION_CODE_ANDROID": "100",
-    "APPVERSION_IOS": "1.0.0",
+    "APPVERSION_ANDROID": "1.1.4",
+    "APPVERSION_CODE_ANDROID": "114",
+    "APPVERSION_IOS": "1.1.4",
     "need_upload_screenshot": true,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",

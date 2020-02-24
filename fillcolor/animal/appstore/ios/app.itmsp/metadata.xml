@@ -6,7 +6,7 @@
         <vendor_id>sku_fillcoloranimal</vendor_id>
         <software_metadata>
             <versions>
-                <version string="1.3.0">
+                <version string="1.4.8">
                     <locales>
                         <locale name="en-US">
                             <title>Kids Animal Color</title>
@@ -190,7 +190,7 @@ The features of our products:
                     <products>
                         <product>
                             <cleared_for_sale>true</cleared_for_sale>
-                            <wholesale_price_tier>2</wholesale_price_tier>
+                            <wholesale_price_tier>3</wholesale_price_tier>
                         </product>
                     </products>
                     <locales>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://apple.com/itunes/importer" version="software5.9">
+   <!--  <provider>YuanFang Chen</provider> -->
+    <team_id>Y9ZUK2WTEE</team_id>
+    <software>
+        <vendor_id>cairiddle.pad</vendor_id>
+        <software_metadata>
+            <versions>
+                <version string="1.0.0">
+                    <locales>
+                        <locale name="en-US">
+                            <title>Guess Riddle</title>
+                            <subtitle>Joyful riddles</subtitle>
+                            <description>This is a leisure puzzle software about Chinese riddles in the Pad. It can experience the charm of Chinese riddles with friends. It contains a rich variety of riddles, such as crossword riddles, love riddles, animal riddles, plant riddles, children riddles, funny riddles. Don't restrict your own thinking. Take riddles and brainstorming ideas together. Only in this way can we solve riddles easily.
+Riddles mainly refer to hidden words, such as allusions or words, which can be guessed by others. They can also be extended to things containing mysteries. Riddles originated from ancient Chinese folk, and have gone through thousands of years of evolution and development. It is a cultural product created by the collective wisdom of the working people in ancient China.
+There are many ways to guess riddles, and there are more than twenty common ones. It belongs to the method of understanding, reflection, debit, side-buckle, sub-buckle and traceability; it belongs to the method of adding, subtracting, adding and subtracting; it belongs to the clutch, the off-plane method; it belongs to the pictographic method and the pictographic method; it belongs to the straight harmonic method and the inter-harmonic method of homophonic body; it belongs to the complex. There are comparative law, anthropomorphic law, quasi-physical law, question-and-answer law and code of transportation law.
+Let's test our knowledge reserve. It's time to test your knowledge.
+[Characteristics]
+Interesting Plays
+Challenging barriers
+Testing Knowledge
+Easy to use</description>
+                            <promotional_text>Riddle-guessing tests intelligence</promotional_text>
+                            <keywords>
+                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                            </keywords>
+                            <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots> 
+<software_screenshot display_target="iOS-5.5-in" position="1"> <file_name>en_iphone_1.jpg</file_name> <size>145003</size> <checksum type="md5">d7402ba9d93940b3f90985a469afc0bb</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="2"> <file_name>en_iphone_2.jpg</file_name> <size>182550</size> <checksum type="md5">b86d687bc00c3c8835d77d58696bfe62</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="3"> <file_name>en_iphone_3.jpg</file_name> <size>202055</size> <checksum type="md5">6ccef4b0fd985e07916eceab5acf602e</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="4"> <file_name>en_iphone_4.jpg</file_name> <size>108442</size> <checksum type="md5">85c031521cbcb715a8921746cb1a92d6</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="5"> <file_name>en_iphone_5.jpg</file_name> <size>178218</size> <checksum type="md5">26e6e543cd08188fbc47850d081173b3</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="1"> <file_name>en_ipadpro_1.jpg</file_name> <size>251230</size> <checksum type="md5">2951c8ac28541a327decbb0820417a10</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="2"> <file_name>en_ipadpro_2.jpg</file_name> <size>262917</size> <checksum type="md5">de2b9f6db68b095abdbc118a63b2acf8</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="3"> <file_name>en_ipadpro_3.jpg</file_name> <size>370995</size> <checksum type="md5">bf5653b9f42bc5a873218749e17ee125</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="4"> <file_name>en_ipadpro_4.jpg</file_name> <size>195028</size> <checksum type="md5">a79c4ccb4d510d99c6658c4dd05bb451</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="5"> <file_name>en_ipadpro_5.jpg</file_name> <size>263041</size> <checksum type="md5">02c6fb0eb3ced2b5846c4abfa5f5e7f5</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="1"> <file_name>en_ipadpro_1.jpg</file_name> <size>251230</size> <checksum type="md5">2951c8ac28541a327decbb0820417a10</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="2"> <file_name>en_ipadpro_2.jpg</file_name> <size>262917</size> <checksum type="md5">de2b9f6db68b095abdbc118a63b2acf8</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="3"> <file_name>en_ipadpro_3.jpg</file_name> <size>370995</size> <checksum type="md5">bf5653b9f42bc5a873218749e17ee125</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="4"> <file_name>en_ipadpro_4.jpg</file_name> <size>195028</size> <checksum type="md5">a79c4ccb4d510d99c6658c4dd05bb451</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="5"> <file_name>en_ipadpro_5.jpg</file_name> <size>263041</size> <checksum type="md5">02c6fb0eb3ced2b5846c4abfa5f5e7f5</checksum> </software_screenshot></software_screenshots>
+
+                        </locale>
+
+                         <locale name="zh-Hans">
+                            <title>疯狂猜谜语HD-谜语大全</title>
+                            <subtitle>欢乐猜谜语</subtitle>
+                            <description>
+    这是一款平板上关于中华谜语的休闲益智软件，可以和好友一起体验中国谜语的魅力,包含丰富的谜语种类，有字谜、爱情谜语、动物谜语、植物谜语、儿童谜语、搞笑谜语,不要限制自己的思路，带着谜语和脑筋急转弯的思路一起上路，才能轻松破解谜语哦！
+ 谜语主要指暗射事物或文字等供人猜测的隐语，也可引申为蕴含奥秘的事物。 谜语源自中国古代民间，历经数千年的演变和发展。它是中国古代劳动人民集体智慧创造的文化产物。
+ 谜语的猜法多种多样，比较常见的有二十多种。属于会意体的有会意法、反射法、借扣法、侧扣法、分扣发、溯源法；属于增损体的有加法、减法、加减法；属于离合体的有离底法、离面法；属于象形体的有象形法、象画法；属于谐音体的有直谐法、间谐法；属于综合体的有比较法、拟人法、拟物法、问答法、运典法。
+小伙伴们赶紧来测试一下自己的知识储备吧，也是考验你知识的时候了！
+【特色】
+◎有趣的玩法
+◎极具挑战的关卡
+◎考验知识
+◎简单易上手
+    </description>
+                            <promotional_text>猜谜语考验智力</promotional_text>
+                            <keywords>
+                               <keyword>天天猜歇后语,蔡如后,雨后行菜,甜甜菜,爱猜图,猜题王,天天聚会,小孩,乐看动画,奇艺动画,猜图,沙滩乐学英语</keyword> 
+                            </keywords>
+                            <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots> 
+<software_screenshot display_target="iOS-5.5-in" position="1"> <file_name>cn_iphone_1.jpg</file_name> <size>174424</size> <checksum type="md5">6bdccf053943656bb70047a3751b8c7f</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="2"> <file_name>cn_iphone_2.jpg</file_name> <size>181464</size> <checksum type="md5">885aba3ac1c4085e656d69569d6ea33b</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="3"> <file_name>cn_iphone_3.jpg</file_name> <size>204093</size> <checksum type="md5">b02cee93ea526f7840f72b37fd8eda37</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="4"> <file_name>cn_iphone_4.jpg</file_name> <size>111204</size> <checksum type="md5">9835023481abe03fce1db2f11d5f73a7</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="5"> <file_name>cn_iphone_5.jpg</file_name> <size>180293</size> <checksum type="md5">4543e6395f3e0e43b2a786b53d8c0be7</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="1"> <file_name>cn_ipadpro_1.jpg</file_name> <size>309460</size> <checksum type="md5">7f17ed0987320052a67b24d16542d33c</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="2"> <file_name>cn_ipadpro_2.jpg</file_name> <size>264057</size> <checksum type="md5">180c2b6f4191fdbd09be8c7d2491bf48</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="3"> <file_name>cn_ipadpro_3.jpg</file_name> <size>373644</size> <checksum type="md5">08c5dbe32bfcd3047672b78c897726e2</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="4"> <file_name>cn_ipadpro_4.jpg</file_name> <size>200115</size> <checksum type="md5">cdef4c007c5706ba54ff1c2844c3d1b5</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="5"> <file_name>cn_ipadpro_5.jpg</file_name> <size>260773</size> <checksum type="md5">1d8fb3fde655ede47f6e15382766a268</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="1"> <file_name>cn_ipadpro_1.jpg</file_name> <size>309460</size> <checksum type="md5">7f17ed0987320052a67b24d16542d33c</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="2"> <file_name>cn_ipadpro_2.jpg</file_name> <size>264057</size> <checksum type="md5">180c2b6f4191fdbd09be8c7d2491bf48</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="3"> <file_name>cn_ipadpro_3.jpg</file_name> <size>373644</size> <checksum type="md5">08c5dbe32bfcd3047672b78c897726e2</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="4"> <file_name>cn_ipadpro_4.jpg</file_name> <size>200115</size> <checksum type="md5">cdef4c007c5706ba54ff1c2844c3d1b5</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="5"> <file_name>cn_ipadpro_5.jpg</file_name> <size>260773</size> <checksum type="md5">1d8fb3fde655ede47f6e15382766a268</checksum> </software_screenshot></software_screenshots>
+
+                            
+                        </locale>
+
+                         <locale name="en-CA">
+                            <title>Guess Riddle</title>
+                            <subtitle>Joyful riddles</subtitle>
+                            <description>This is a leisure puzzle software about Chinese riddles in the Pad. It can experience the charm of Chinese riddles with friends. It contains a rich variety of riddles, such as crossword riddles, love riddles, animal riddles, plant riddles, children riddles, funny riddles. Don't restrict your own thinking. Take riddles and brainstorming ideas together. Only in this way can we solve riddles easily.
+Riddles mainly refer to hidden words, such as allusions or words, which can be guessed by others. They can also be extended to things containing mysteries. Riddles originated from ancient Chinese folk, and have gone through thousands of years of evolution and development. It is a cultural product created by the collective wisdom of the working people in ancient China.
+There are many ways to guess riddles, and there are more than twenty common ones. It belongs to the method of understanding, reflection, debit, side-buckle, sub-buckle and traceability; it belongs to the method of adding, subtracting, adding and subtracting; it belongs to the clutch, the off-plane method; it belongs to the pictographic method and the pictographic method; it belongs to the straight harmonic method and the inter-harmonic method of homophonic body; it belongs to the complex. There are comparative law, anthropomorphic law, quasi-physical law, question-and-answer law and code of transportation law.
+Let's test our knowledge reserve. It's time to test your knowledge.
+[Characteristics]
+Interesting Plays
+Challenging barriers
+Testing Knowledge
+Easy to use</description>
+                            <promotional_text>Riddle-guessing tests intelligence</promotional_text>
+                            <keywords>
+                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                            </keywords>
+                           <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots></software_screenshots>
+
+                            
+                        </locale>
+
+                         <locale name="en-AU">
+                            <title>Guess Riddle</title>
+                            <subtitle>Joyful riddles</subtitle>
+                            <description>This is a leisure puzzle software about Chinese riddles in the Pad. It can experience the charm of Chinese riddles with friends. It contains a rich variety of riddles, such as crossword riddles, love riddles, animal riddles, plant riddles, children riddles, funny riddles. Don't restrict your own thinking. Take riddles and brainstorming ideas together. Only in this way can we solve riddles easily.
+Riddles mainly refer to hidden words, such as allusions or words, which can be guessed by others. They can also be extended to things containing mysteries. Riddles originated from ancient Chinese folk, and have gone through thousands of years of evolution and development. It is a cultural product created by the collective wisdom of the working people in ancient China.
+There are many ways to guess riddles, and there are more than twenty common ones. It belongs to the method of understanding, reflection, debit, side-buckle, sub-buckle and traceability; it belongs to the method of adding, subtracting, adding and subtracting; it belongs to the clutch, the off-plane method; it belongs to the pictographic method and the pictographic method; it belongs to the straight harmonic method and the inter-harmonic method of homophonic body; it belongs to the complex. There are comparative law, anthropomorphic law, quasi-physical law, question-and-answer law and code of transportation law.
+Let's test our knowledge reserve. It's time to test your knowledge.
+[Characteristics]
+Interesting Plays
+Challenging barriers
+Testing Knowledge
+Easy to use</description>
+                            <promotional_text>Riddle-guessing tests intelligence</promotional_text>
+                            <keywords>
+                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                            </keywords>
+                            <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots></software_screenshots>
+
+                            
+                        </locale>
+
+                         <locale name="en-GB">
+                            <title>Guess Riddle</title>
+                            <subtitle>Joyful riddles</subtitle>
+                            <description>This is a leisure puzzle software about Chinese riddles in the Pad. It can experience the charm of Chinese riddles with friends. It contains a rich variety of riddles, such as crossword riddles, love riddles, animal riddles, plant riddles, children riddles, funny riddles. Don't restrict your own thinking. Take riddles and brainstorming ideas together. Only in this way can we solve riddles easily.
+Riddles mainly refer to hidden words, such as allusions or words, which can be guessed by others. They can also be extended to things containing mysteries. Riddles originated from ancient Chinese folk, and have gone through thousands of years of evolution and development. It is a cultural product created by the collective wisdom of the working people in ancient China.
+There are many ways to guess riddles, and there are more than twenty common ones. It belongs to the method of understanding, reflection, debit, side-buckle, sub-buckle and traceability; it belongs to the method of adding, subtracting, adding and subtracting; it belongs to the clutch, the off-plane method; it belongs to the pictographic method and the pictographic method; it belongs to the straight harmonic method and the inter-harmonic method of homophonic body; it belongs to the complex. There are comparative law, anthropomorphic law, quasi-physical law, question-and-answer law and code of transportation law.
+Let's test our knowledge reserve. It's time to test your knowledge.
+[Characteristics]
+Interesting Plays
+Challenging barriers
+Testing Knowledge
+Easy to use</description>
+                            <promotional_text>Riddle-guessing tests intelligence</promotional_text>
+                            <keywords>
+                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                            </keywords>
+                            <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots></software_screenshots>
+
+                            
+                        </locale>
+                        
+                    </locales>
+                </version>
+            </versions>
+            <products>
+                <product>
+                    <territory>WW</territory>
+                    <sales_start_date>2010-05-25</sales_start_date>
+                    <cleared_for_sale>true</cleared_for_sale>
+                    <wholesale_price_tier>0</wholesale_price_tier>
+                    <allow_volume_discount>false</allow_volume_discount>
+                </product>
+                <product>
+                    <territory>RU</territory>
+                    <cleared_for_sale>true</cleared_for_sale>
+                </product>
+            </products>
+          
+          
+
+           <in_app_purchases>
+                <in_app_purchase>
+                    <product_id>com.moonma.cairiddle.pad.noad</product_id>
+                    <reference_name>noad</reference_name>
+                    <type>non-consumable</type>
+                    <products>
+                        <product>
+                            <cleared_for_sale>true</cleared_for_sale>
+                            <wholesale_price_tier>3</wholesale_price_tier>
+                        </product>
+                    </products>
+                    <locales>
+                        <locale name="en-US">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+
+                        <locale name="zh-Hans">
+                            <title>去除广告</title>
+                            <description>该产品可以去除应用内的所有广告</description>
+                        </locale>
+                        <locale name="en-CA">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+                        <locale name="en-AU">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+                        <locale name="en-GB">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+
+                        
+                    </locales>
+                    <review_screenshot>
+                        <file_name>in_app_purchases_screenshot.png</file_name>
+                        <size>96482</size>
+                        <checksum type="md5">dc4f197705c3983c730d236f54de2950</checksum>
+                    </review_screenshot>
+                    <!-- <review_notes></review_notes> -->
+                </in_app_purchase>
+               <!--  <in_app_purchase remove="true">
+                    <product_id>obsolete_com.cyberinteractive.tf.missiles.15</product_id>
+                </in_app_purchase> -->
+            </in_app_purchases>
+
+
+        </software_metadata>
+    </software>
+</package>

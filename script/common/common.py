@@ -177,6 +177,15 @@ def getLastDirofDir(path):
     ret = path[0:idx]
     return ret
 
+# 不包含.
+def getFileExt(path):  
+    idx = path.rfind(".")+1
+    slen=len(path)
+    size = slen-idx
+    ret = path[idx:]
+    # print "path="+path+" idx="+str(idx)+" ret="+ret+" slen="+str(slen)
+    return ret
+
 def getPathName():
     return getDirNameofPath(getLastDir())
 
@@ -251,12 +260,21 @@ def GetProjectOutPut():
     return GetRootDir()+"/ProjectOutPut"
 
 def GetProjectOutPutIPA():
-    return GetProjectOutPut()+"/IPA"
+    dir="shu"
+    if AppForPad(True):
+        dir="heng" 
+
+    return GetProjectOutPut()+"/IPA/"+dir
 
 def GetOutPutIPAName():
     gameType = getGameType()
     gameName = getGameName()
-    return  "ipa"+"_"+gameType+"_"+gameName+".ipa"
+
+    ipa="ipa"+"_"+gameType+"_"+gameName+"_"+GetAppVersionIos()+".ipa"
+    if AppForPad(True):
+        ipa="ipa"+"_"+gameType+"_"+gameName+"_hd_"+GetAppVersionIos()+".ipa" 
+
+    return ipa
 
 def GetProjectOutPutApp():
     gameType = getGameType()
@@ -264,12 +282,14 @@ def GetProjectOutPutApp():
     return GetProjectOutPut()+"/"+gameType+"/"+gameName
 
 def GetRootProjectIos():
-    return GetRootProjectIosUser() 
+    if IsVMWare():
+        return GetRootProjectIosUser()
+    return GetRootProjectIosNormal() 
 
 def GetRootProjectIosUser():
     return "/Users/moon/sourcecode/unity/product/"+GetProjectName()+"/project_ios"
 
-def GetRootProjectIosVMVare():
+def GetRootProjectIosNormal():
     return GetRootDir()+"/project_ios"
 
 def GetRootProjectAndroid():
@@ -292,7 +312,10 @@ def GetRootDirAndroidAsset():
     return GetRootDirAndroidStudio()+ "/src/main/assets"
 
 def GetRootDirXcode(): 
-    return GetRootDirXcodeUser()
+    if IsVMWare():
+        return GetRootDirXcodeUser()
+
+    return GetRootDirXcodeNormal()
 
 def IsVMWare(): 
     my_file =  "/Volumes/VMware Shared Folders"
@@ -307,8 +330,8 @@ def GetProjectNameApp():
     gameName = getGameName()
     return GetProjectName()+"_device"+"_"+gameType+"_"+gameName
 
-def GetRootDirXcodeVMWare():
-    return GetRootProjectIosVMVare()+"/"+GetProjectNameApp()
+def GetRootDirXcodeNormal():
+    return GetRootProjectIosNormal()+"/"+GetProjectNameApp()
 
 def GetRootDirXcodeUser():
     #Users/moon/sourcecode/unity/product/kidsgame
@@ -381,9 +404,61 @@ def GetPackageAndroidFromXml():
     
     return package
 
-def AppForPad():
-    package = GetPackageAndroidFromXml()
+
+def GetPackageIos():
+    xcode_plist = GetRootDirXcode()+ "/Info.plist" 
+    print("xcode_plist="+xcode_plist)
+    strFile = GetFileString(xcode_plist)
+    # 		<key>CFBundleIdentifier</key>
+	#	<string>com.moonma.pinpinle.nongchang</string>
+    strHead = "CFBundleIdentifier"
+    strMid = "<string>"
+    strEnd = "</string>"
+    idx = strFile.find(strHead)
+    package = ""
+    if idx>=0:
+        idx +=len(strHead)
+        strOther = strFile[idx:] 
+        idx = strOther.find(strMid)
+        if idx>=0:
+            idx +=len(strMid)
+            strOther = strOther[idx:] 
+            idx = strOther.find(strEnd)
+            package = strOther[0:idx]
     
+    return package
+
+
+def GetAppVersionIos():
+    xcode_plist = GetRootDirXcode()+ "/Info.plist" 
+    print("xcode_plist="+xcode_plist)
+    strFile = GetFileString(xcode_plist)
+    # 		<key>CFBundleIdentifier</key>
+	#	<string>com.moonma.pinpinle.nongchang</string>
+    strHead = "CFBundleShortVersionString"
+    strMid = "<string>"
+    strEnd = "</string>"
+    idx = strFile.find(strHead)
+    package = ""
+    if idx>=0:
+        idx +=len(strHead)
+        strOther = strFile[idx:] 
+        idx = strOther.find(strMid)
+        if idx>=0:
+            idx +=len(strMid)
+            strOther = strOther[idx:] 
+            idx = strOther.find(strEnd)
+            package = strOther[0:idx]
+    
+    return package
+
+def AppForPad(isIos):
+    package = GetPackageAndroidFromXml()
+    if isIos: 
+        package = GetPackageIos()
+
+    print("package="+package)
+
     ret = False
     if package.find(".ipad")>=0 or package.find(".pad")>=0:
         ret = True

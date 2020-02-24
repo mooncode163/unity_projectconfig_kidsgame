@@ -6,7 +6,7 @@
         <vendor_id>sku_fillcoloranimal_pad</vendor_id>
         <software_metadata>
             <versions>
-                <version string="1.1.0">
+                <version string="1.2.4">
                     <locales>
                         <locale name="en-US">
                             <title>Baby Animal Color HD</title>
@@ -33,7 +33,17 @@ The features of our products:
                             <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
                             <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
 
-                            <!-- <software_screenshots></software_screenshots> -->
+                            <software_screenshots> 
+<software_screenshot display_target="iOS-iPad-Pro" position="1"> <file_name>en_ipadpro_1.jpg</file_name> <size>178094</size> <checksum type="md5">8481de2ccc061453d4dcf177685a063c</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="2"> <file_name>en_ipadpro_2.jpg</file_name> <size>153899</size> <checksum type="md5">0fa2c04abd09505ffc3f2178f5a9d093</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="3"> <file_name>en_ipadpro_3.jpg</file_name> <size>208803</size> <checksum type="md5">de10c42923e7d1fdac638c0f7e5a8bff</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="4"> <file_name>en_ipadpro_4.jpg</file_name> <size>108152</size> <checksum type="md5">3f3367d29603ed4148f5364a61f59ee0</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="5"> <file_name>en_ipadpro_5.jpg</file_name> <size>168502</size> <checksum type="md5">f4c9918bdc69ce1bca986f362e512808</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="1"> <file_name>en_iphone_1.jpg</file_name> <size>103952</size> <checksum type="md5">4442a101072259a11f9b8eb96e66eacf</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="2"> <file_name>en_iphone_2.jpg</file_name> <size>87501</size> <checksum type="md5">78b6f416544fdfba9a92148d8406c3c3</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="3"> <file_name>en_iphone_3.jpg</file_name> <size>116505</size> <checksum type="md5">89f6ae7b145f224fd322ef531b5a0ff8</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="4"> <file_name>en_iphone_4.jpg</file_name> <size>59815</size> <checksum type="md5">d0ff7e46627e43ed8e6b50c9201c1b32</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="5"> <file_name>en_iphone_5.jpg</file_name> <size>97144</size> <checksum type="md5">16074c5b94f1a48d23cfdcfde1f5e022</checksum> </software_screenshot></software_screenshots>
 
                         </locale>
 
@@ -68,7 +78,17 @@ The features of our products:
                             <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
                             <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
 
-                            <!-- <software_screenshots></software_screenshots> -->
+                            <software_screenshots> 
+<software_screenshot display_target="iOS-iPad-Pro" position="1"> <file_name>cn_ipadpro_1.jpg</file_name> <size>178094</size> <checksum type="md5">8481de2ccc061453d4dcf177685a063c</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="2"> <file_name>cn_ipadpro_2.jpg</file_name> <size>153899</size> <checksum type="md5">0fa2c04abd09505ffc3f2178f5a9d093</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="3"> <file_name>cn_ipadpro_3.jpg</file_name> <size>208350</size> <checksum type="md5">a5e3832e66deae2391eec0914bff7cb4</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="4"> <file_name>cn_ipadpro_4.jpg</file_name> <size>105583</size> <checksum type="md5">853e32a375dd0dd47532032bb556442c</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="5"> <file_name>cn_ipadpro_5.jpg</file_name> <size>168502</size> <checksum type="md5">f4c9918bdc69ce1bca986f362e512808</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="1"> <file_name>cn_iphone_1.jpg</file_name> <size>103952</size> <checksum type="md5">4442a101072259a11f9b8eb96e66eacf</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="2"> <file_name>cn_iphone_2.jpg</file_name> <size>87501</size> <checksum type="md5">78b6f416544fdfba9a92148d8406c3c3</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="3"> <file_name>cn_iphone_3.jpg</file_name> <size>116383</size> <checksum type="md5">20bb6829f9b221ba1fe6c5c312b78cad</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="4"> <file_name>cn_iphone_4.jpg</file_name> <size>58091</size> <checksum type="md5">681eaafbf4feeff15d1325d978df1d91</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="5"> <file_name>cn_iphone_5.jpg</file_name> <size>97144</size> <checksum type="md5">16074c5b94f1a48d23cfdcfde1f5e022</checksum> </software_screenshot></software_screenshots>
 
                             
                         </locale>
@@ -98,7 +118,7 @@ The features of our products:
                             <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
                             <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
 
-                            <!-- <software_screenshots></software_screenshots> -->
+                            <software_screenshots></software_screenshots>
 
                             
                         </locale>
@@ -128,7 +148,7 @@ The features of our products:
                             <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
                             <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
 
-                            <!-- <software_screenshots></software_screenshots> -->
+                            <software_screenshots></software_screenshots>
 
                             
                         </locale>
@@ -158,7 +178,7 @@ The features of our products:
                             <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
                             <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
 
-                            <!-- <software_screenshots></software_screenshots> -->
+                            <software_screenshots></software_screenshots>
 
                             
                         </locale>
@@ -190,7 +210,7 @@ The features of our products:
                     <products>
                         <product>
                             <cleared_for_sale>true</cleared_for_sale>
-                            <wholesale_price_tier>2</wholesale_price_tier>
+                            <wholesale_price_tier>3</wholesale_price_tier>
                         </product>
                     </products>
                     <locales>

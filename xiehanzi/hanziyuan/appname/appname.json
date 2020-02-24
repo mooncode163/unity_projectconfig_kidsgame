@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "KidsChineseWord",
     "PACKAGE_ANDROID": "com.moonma.hanziyuan",
     "PACKAGE_IOS": "com.moonma.xuehanzi",
-    "APPVERSION_ANDROID": "1.8.8",
-    "APPVERSION_CODE_ANDROID": "188",
-    "APPVERSION_IOS": "1.8.8",
+    "APPVERSION_ANDROID": "1.9.1",
+    "APPVERSION_CODE_ANDROID": "191",
+    "APPVERSION_IOS": "1.9.1",
     "need_upload_screenshot":true,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "新增自由写模式",

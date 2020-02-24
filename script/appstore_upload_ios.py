@@ -51,9 +51,9 @@ if  __name__ =="__main__":
     if common.isWindowsSystem():
         strCmd = " "
     else:
-        # ／"/Applications/Xcode.app/Contents/Applications/Application\ Loader.app/Contents/itms/bin/iTMSTransporter -m upload -u chyfemail163@163.com -p ayww-hcnh-uaau-lsgh -f ./appstore/ios/app.itmsp -v eXtreme""/Applications/Xcode.app/Contents/Applications/Application\ Loader.app/Contents/itms/bin/iTMSTransporter -m upload -u chyfemail163@163.com -p ayww-hcnh-uaau-lsgh -f ./appstore/ios/app.itmsp -v eXtreme"
-        strCmd = "/Applications/Xcode.app/Contents/Applications/Application\ Loader.app/Contents/itms/bin/iTMSTransporter -m upload -u "+source.APPSTORE_USER+" -p "+source.APPSTORE_PASSWORD+"  -v eXtreme -f "+common.GetProjectConfigApp()+ "/appstore/ios/"+strFile
-    
+        #strCmd = "/Applications/Xcode.app/Contents/Applications/Application\ Loader.app/Contents/itms/bin/iTMSTransporter -m upload -u "+source.APPSTORE_USER+" -p "+source.APPSTORE_PASSWORD+"  -v eXtreme -f "+common.GetProjectConfigApp()+ "/appstore/ios/"+strFile
+        #xcode 11: 手动更新Transporter组件(java)方法： https://www.lagou.com/lgeduarticle/94642.html
+        strCmd = "/Applications/Transporter.app/Contents/itms/bin/iTMSTransporter -m upload -u "+source.APPSTORE_USER+" -p "+source.APPSTORE_PASSWORD+"  -v eXtreme -f "+common.GetProjectConfigApp()+ "/appstore/ios/"+strFile
     os.system(strCmd) 
         
     print "appstore_upload_ios sucess"

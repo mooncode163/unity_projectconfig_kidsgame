@@ -37,7 +37,7 @@ def copyApk(channel):
     dirapk = common.GetProjectOutPutApp() + "/apk"
  
 
-    if common.AppForPad():
+    if common.AppForPad(False):
         dirapk+="/heng"
         gameName += "_hd"
     else:

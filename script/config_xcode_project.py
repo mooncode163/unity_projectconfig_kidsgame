@@ -6,6 +6,7 @@ import shutil
 import os
 import os.path
 import time,  datetime
+
  
 #include common.py
 sys.path.append('./common')
@@ -14,7 +15,7 @@ import source
 import appname
 import adconfig
 import config_adsdk_android
- 
+
 
 def ConfigXcodeProjectFile(fileProject):  
     strFile = common.GetFileString(fileProject)  

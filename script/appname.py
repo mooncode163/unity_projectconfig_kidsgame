@@ -18,12 +18,25 @@ import adconfig
 
 versionCode = 100
 
+def GetJsonAppId(jsonData, channel):  
+    return jsonData["appid"][channel] 
+ 
+
 def GetPackage(osSrc,isHD): 
     jsonData = loadJson(isHD) 
-    key = "PACKAGE_IOS"
-    if osSrc == source.ANDROID:
-        key = "PACKAGE_ANDROID" 
-    ret = jsonData[key]
+    isOld = IsOldVersion(jsonData)
+    ret = ""
+    if isOld:
+        key = "PACKAGE_IOS"
+        if osSrc == source.ANDROID:
+            key = "PACKAGE_ANDROID" 
+        ret = jsonData[key]
+    else:      
+        if osSrc == source.ANDROID:
+            ret = data["apppackage"][source.ANDROID]["default"] 
+        if osSrc == source.IOS:
+            ret = data["apppackage"][source.IOS]["default"]
+
     return ret
 
 def GetJsonFile(isHd):
@@ -192,13 +205,21 @@ def replaceXcodeUrlScheme(filePath, src, appid,idx):
 
 def updateXiaoASOkeyword(jsonData,isHd):
     jsonfile = GetJsonFile(isHd)
-    APPSTORE_KEYWORD = jsonData["APPSTORE_KEYWORD"]
+    isOld = IsOldVersion(jsonData)
+    if isOld:
+        APPSTORE_KEYWORD = jsonData["APPSTORE_KEYWORD"]
+        strStart = "XIAOMI_KEYWORD"
+    else:
+        APPSTORE_KEYWORD =  jsonData["appstore"]["aso"]
+        strStart = "aso_xiaomi"
+
+    
     cn = APPSTORE_KEYWORD["cn"]
     en = APPSTORE_KEYWORD["en"]
     cn = cn.replace(","," ")
     en = en.replace(","," ")
 
-    strStart = "XIAOMI_KEYWORD"
+    
     strEnd = "\""
 
     strFile = common.GetFileString(jsonfile)
@@ -223,7 +244,50 @@ def copyResFiles(str):
         shutil.rmtree(dir2)
     shutil.copytree(dir1,dir2)
 
+def SaveJson(filePath,dataRoot): 
+    oldvalue = ""
+    # "huawei": "0",
+    # str1 = "\""+key+"\""+": \""+oldvalue+"\""
+    # str2 = "\""+key+"\""+": \""+value+"\""
+    # replaceFile(filePath, str1, str2)
+
+    # 保存json
+    with open(filePath, 'w') as f:
+        json.dump(dataRoot, f, ensure_ascii=False,indent=4,sort_keys = True)
+
+
 def autoPlusVersion(isHd,jsonData):
+    global versionCode
+    isOld = IsOldVersion(jsonData)
+    if isOld:
+        autoPlusVersionOldVersion(isHd,jsonData)
+    else:
+        jsonfile = GetJsonFile(isHd) 
+        int_v = int(versionCode)
+        int_v=int_v+1
+        versionCode = str(int_v)
+        dataCode = jsonData["appversion"][source.ANDROID]
+        dataCode["code"]=versionCode
+
+        data = jsonData["appversion"][source.ANDROID]
+        data["value"]=versionCodeToVersion()
+
+        
+        data = jsonData["appversion"][source.IOS]
+        codeios = data["code"]
+        int_v = int(codeios)
+        int_v=int_v+1
+        codeios = str(int_v)
+        data["code"]=codeios
+        versionCode = codeios
+        data["value"]=versionCodeToVersion()
+
+        SaveJson(jsonfile,jsonData)  
+        # strnew_version_ios = "\"APPVERSION_IOS\": \""+versionCodeToVersion()+"\""
+
+
+
+def autoPlusVersionOldVersion(isHd,jsonData): 
     global versionCode 
     strold = "\"APPVERSION_CODE_ANDROID\": \""+versionCode+"\""
     strold_version_android = "\"APPVERSION_ANDROID\": \""+jsonData["APPVERSION_ANDROID"]+"\""
@@ -237,7 +301,7 @@ def autoPlusVersion(isHd,jsonData):
 
     # 替换json
     jsonfile = GetJsonFile(isHd) 
-   
+
     f = open(jsonfile, 'r')
     strOut = f.read() 
     strOut = strOut.replace(strold, strnew)
@@ -273,6 +337,65 @@ def updateAndroidManifest(filepath,package,appversion,appversioncode,isHd):
 
 
 
+def IsOldVersion(data):
+    isOld = True
+    if ("appname" in data) :
+        isOld = False  
+    
+    return isOld
+
+def GetCSVName(strContent,isHd): 
+    idxstart = strContent.find("APP_NAME")
+    if isHd:
+        idxstart = strContent.find("APP_NAME_HD")
+
+    strContent = strContent[idxstart:] 
+    idxend = strContent.find("\r\n")
+    if idxend<0:
+        idxend = strContent.find("\n")
+
+    strContent = strContent[0:idxend] 
+    return strContent
+
+
+def UpdateLanguageName(name_cn,name_en,ishd): 
+    dirconfig = common.GetConfigDataDir()
+    csvfile = dirconfig+"/language/language.csv"
+
+    strContent = common.GetFileString(csvfile)
+    key_name = GetCSVName(strContent,ishd) 
+
+    head = "APP_NAME"
+    if ishd:
+        head = "APP_NAME_HD"
+
+    str_new = head+","+name_cn+"," +name_en
+    # +"\n"
+    replaceFile(csvfile,key_name,str_new)
+
+
+
+def SetConfigDataAppId(os,chanel,appid,ishd):
+    dirconfig = common.GetConfigDataDir()
+    filepath = ""
+    if os==source.ANDROID:
+        filepath = dirconfig+"/config/config_android.json"
+        if ishd:
+            filepath = dirconfig+"/config/config_android_hd.json"
+   
+    if os==source.IOS:
+        filepath = dirconfig+"/config/config_ios.json"
+        if ishd:
+            filepath = dirconfig+"/config/config_ios_hd.json"
+     
+
+    with open(filepath) as json_file:
+        data = json.load(json_file)
+        data["APPID"][chanel] = appid
+        SaveJson(filepath,data)
+
+    
+
 def updateName(isHd,isAuto):
     
     rootConfig = common.GetProjectConfigApp()
@@ -300,21 +423,48 @@ def updateName(isHd,isAuto):
     file_info_plist_ios = project_ios + "/Info.plist"
 
     # loadJson
-    data = loadJson(isHd)
+    data = loadJson(isHd) 
 
+    isOld = IsOldVersion(data)
+    global versionCode
+    
+    if not isOld : 
+        appname = data["appname"]
 
-    APP_NAME_CN_ANDROID = data["APP_NAME_CN_ANDROID"]
-    APP_NAME_EN_ANDROID = data["APP_NAME_EN_ANDROID"]
-    APP_NAME_CN_IOS = data["APP_NAME_CN_IOS"]
-    APP_NAME_EN_IOS = data["APP_NAME_EN_IOS"]
+    if isOld:
+        APP_NAME_CN_ANDROID = data["APP_NAME_CN_ANDROID"]
+        APP_NAME_EN_ANDROID = data["APP_NAME_EN_ANDROID"]
+        APP_NAME_CN_IOS = data["APP_NAME_CN_IOS"]
+        APP_NAME_EN_IOS = data["APP_NAME_EN_IOS"]
+        PACKAGE_ANDROID = data["PACKAGE_ANDROID"]
+        PACKAGE_IOS = data["PACKAGE_IOS"]
+        versionCode = data["APPVERSION_CODE_ANDROID"]
+        APPVERSION_IOS = data["APPVERSION_IOS"]
+    else:
+        APP_NAME_CN_ANDROID = appname[source.ANDROID]["cn"]
+        APP_NAME_EN_ANDROID = appname[source.ANDROID]["en"]
+        APP_NAME_CN_IOS = appname[source.IOS]["cn"]
+        APP_NAME_EN_IOS = appname[source.IOS]["en"]       
+        PACKAGE_ANDROID = data["apppackage"][source.ANDROID]["default"]
+        PACKAGE_IOS = data["apppackage"][source.IOS]["default"]
+        versionCode = data["appversion"][source.ANDROID]["code"]
+        APPVERSION_IOS =  data["appversion"][source.IOS]["value"]
+        
+        #appid 
+        appid_ios = GetJsonAppId(data,source.APPSTORE)
+        appid_taptap = GetJsonAppId(data,source.TAPTAP)
+        appid_huawei = GetJsonAppId(data,source.HUAWEI)
+        SetConfigDataAppId(source.IOS,source.APPSTORE,appid_ios,isHd)
+        SetConfigDataAppId(source.ANDROID,source.TAPTAP,appid_taptap,isHd)
+        SetConfigDataAppId(source.ANDROID,source.HUAWEI,appid_huawei,isHd)
+        UpdateLanguageName(APP_NAME_CN_ANDROID,APP_NAME_EN_ANDROID,isHd)
 
-    PACKAGE_ANDROID = data["PACKAGE_ANDROID"]
+    
     # if data.has_key("PACKAGE_HD_ANDROID"):
     #     PACKAGE_HD_ANDROID = data["PACKAGE_HD_ANDROID"]
 
-    PACKAGE_IOS = data["PACKAGE_IOS"]
-    global versionCode
-    versionCode = data["APPVERSION_CODE_ANDROID"]
+
+    
  
     if isAuto==True: 
         autoPlusVersion(isHd,data)
@@ -323,7 +473,7 @@ def updateName(isHd,isAuto):
 
     APPVERSION_ANDROID = versionCodeToVersion()
     APPVERSION_CODE_ANDROID = versionCode
-    APPVERSION_IOS = data["APPVERSION_IOS"]
+    
 
     print APP_NAME_CN_ANDROID
     print APP_NAME_EN_ANDROID
@@ -410,15 +560,26 @@ def updateNameWin(isHd,isAuto):
     file_name_en= project + "/strings/en-us/resources.resw"
 
     data = loadJson(isHd)
-    APP_NAME_CN= data["APP_NAME_CN_ANDROID"]
-    APP_NAME_EN = data["APP_NAME_EN_ANDROID"] 
+    isOld = IsOldVersion(data)
+    
+    if not isOld : 
+        appname = data["appname"]
 
+    if isOld:
+        APP_NAME_CN= data["APP_NAME_CN_ANDROID"]
+        APP_NAME_EN = data["APP_NAME_EN_ANDROID"]
+        PACKAGE = data["PACKAGE_ANDROID"]
+    else:
+        APP_NAME_CN = appname["android"]["cn"]
+        APP_NAME_EN = appname["android"]["en"]
+        PACKAGE = data["apppackage"]["android"]["default"]
+ 
     # cn
     replaceFile(file_name_cn, strOld, APP_NAME_CN)
     # en
     replaceFile(file_name_en, strOld, APP_NAME_EN)
 
-    PACKAGE = data["PACKAGE_ANDROID"]
+    
    
     filepath= project + "/strings/common.resw"
     replaceFile(filepath, "_APP_PACKAGE_", PACKAGE)
@@ -464,4 +625,6 @@ if __name__ == "__main__":
     updateName(False,is_auto_plus_version)
     updateName(True,is_auto_plus_version)
 
+   # common.AppForPad(True)
+    
     print "appname sucess"

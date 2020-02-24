@@ -15,6 +15,7 @@ WIN = "win"
 XIAOMI = "xiaomi"
 HUAWEI = "huawei"
 TAPTAP = "taptap"
+APPSTORE = "appstore"
 GP = "gp"
 
 # share

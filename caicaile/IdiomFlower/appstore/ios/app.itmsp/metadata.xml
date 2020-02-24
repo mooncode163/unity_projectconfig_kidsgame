@@ -3,17 +3,17 @@
    <!--  <provider>YuanFang Chen</provider> -->
     <team_id>Y9ZUK2WTEE</team_id>
     <software>
-        <vendor_id>moonma_chengyu11</vendor_id>
+        <vendor_id>idiomflower</vendor_id>
         <software_metadata>
             <versions>
-                <version string="1.2.0">
+                <version string="1.0.7">
                     <locales>
                         <locale name="en-US">
-                            <title>Chinese Idiom Congress</title>
-                            <subtitle>Great Chinese Culture</subtitle>
-                            <description> There are tens of millions of Chinese idioms, but not every idiom player knows them. The game featured hundreds of pictures and photos related to idioms. Players guess the names of the idioms according to their pictures and the implications of the prompts. Challenge more levels, learn idioms and share fun with friends. It's a picture puzzle game suitable for both young and old. It's fun to teach. Players who like this game can try it out.
+                            <title>Chinese Idiom Flower</title>
+                            <subtitle>Chinese Idiom Culture</subtitle>
+                            <description> Feihualing, originally a word game of the ancients when they were drinking, originated from the interest of the ancients' poetry and got its name from the famous sentence "spring city is everywhere but flying flowers" in Han Hong's cold food of Tang Dynasty. The game will be tens of millions of Chinese idioms into the flying flowers, teaching and entertainment, suitable for all ages. At the same time, we can learn idiom interpretation, origin, example sentences and other related knowledge. Try your idiom skills.
     </description>
-                            <promotional_text>Learning Idioms Enhances Knowledge</promotional_text>
+                            <promotional_text>Learning idioms and promoting Chinese culture</promotional_text>
                             <keywords>
                                <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
                             </keywords>
@@ -22,26 +22,16 @@
                             <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
                             <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
 
-                            <software_screenshots> 
-<software_screenshot display_target="iOS-iPad-Pro" position="1"> <file_name>en_ipadpro_1.jpg</file_name> <size>314062</size> <checksum type="md5">5e69d23c2d8a3670a74cd75dd36957e6</checksum> </software_screenshot>
-<software_screenshot display_target="iOS-iPad-Pro" position="2"> <file_name>en_ipadpro_2.jpg</file_name> <size>310931</size> <checksum type="md5">f749481813b0760de7d35bfd95b5b04e</checksum> </software_screenshot>
-<software_screenshot display_target="iOS-iPad-Pro" position="3"> <file_name>en_ipadpro_3.jpg</file_name> <size>462163</size> <checksum type="md5">98c9461fc283ebdcfb85d490d423c58f</checksum> </software_screenshot>
-<software_screenshot display_target="iOS-iPad-Pro" position="4"> <file_name>en_ipadpro_4.jpg</file_name> <size>330852</size> <checksum type="md5">8301eb0d6eb69ea3185c79e628db2b14</checksum> </software_screenshot>
-<software_screenshot display_target="iOS-iPad-Pro" position="5"> <file_name>en_ipadpro_5.jpg</file_name> <size>317600</size> <checksum type="md5">0916204a37cf6f62e73813b649f0b701</checksum> </software_screenshot>
-<software_screenshot display_target="iOS-5.5-in" position="1"> <file_name>en_iphone_1.jpg</file_name> <size>181585</size> <checksum type="md5">e6bc0ac16e9abf99e3528f1d54ba7a86</checksum> </software_screenshot>
-<software_screenshot display_target="iOS-5.5-in" position="2"> <file_name>en_iphone_2.jpg</file_name> <size>177866</size> <checksum type="md5">d25289870a8ffaa4afd4f140c803beec</checksum> </software_screenshot>
-<software_screenshot display_target="iOS-5.5-in" position="3"> <file_name>en_iphone_3.jpg</file_name> <size>242027</size> <checksum type="md5">58b020fe82e8d06c4ddbeaa68d10b8ef</checksum> </software_screenshot>
-<software_screenshot display_target="iOS-5.5-in" position="4"> <file_name>en_iphone_4.jpg</file_name> <size>125877</size> <checksum type="md5">19f690ee9f45fa7e2270282ffec73c4b</checksum> </software_screenshot>
-<software_screenshot display_target="iOS-5.5-in" position="5"> <file_name>en_iphone_5.jpg</file_name> <size>183067</size> <checksum type="md5">ccea678f3110f0ceb8e5083f4c317d16</checksum> </software_screenshot></software_screenshots>
+                            <software_screenshots> </software_screenshots>
 
                         </locale>
 
                          <locale name="zh-Hans">
-                            <title>中华成语大会</title>
-                            <subtitle>弘扬中华文化</subtitle>
-                            <description>中华成语千千万，但是并不是每一个成语玩家都了解。该游戏精选了几百幅与成语有关的图片、照片等。玩家根据图片以及提示的成语寓意，猜成语的名字。挑战更多关卡，学习成语知识，与朋友分享乐趣。是一款老少皆宜的图片猜谜类游戏，寓教于乐。喜欢这款游戏的玩家可以试玩一下
-    </description>
-                            <promotional_text>学成语涨知识</promotional_text>
+                            <title>成语大飞花</title>
+                            <subtitle>成语飞花令</subtitle>
+                            <description>飞花令，原本是古人行酒令时的一个文字游戏，源自古人的诗词之趣，得名于唐代诗人韩翃《寒食》中的名句“春城无处不飞花”。该游戏将千千万中华成语融入飞花令，寓教于乐，老少皆宜。同时可以学习成语解释、出处、例句等相关知识。快来试试你的成语功底吧。
+ </description>
+                            <promotional_text>学成语弘扬中华文化</promotional_text>
                             <keywords>
                                <keyword>连连乐,儿童游戏,游乐园,拼图,儿童,早教,儿歌,小孩,乐看动画,奇艺动画,猜图,沙滩乐多纳学英语儿歌多多迷宫小镇汉字王国小牙医美食节熊猫博士小镇画彩蛋悟空识字恐龙救援车马儿的神奇大冒险小企鹅乐园魔力</keyword> 
                             </keywords>
@@ -50,27 +40,17 @@
                             <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
                             <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
 
-                            <software_screenshots> 
-<software_screenshot display_target="iOS-iPad-Pro" position="1"> <file_name>cn_ipadpro_1.jpg</file_name> <size>313566</size> <checksum type="md5">26d871c0236361839cfcd49694653dfe</checksum> </software_screenshot>
-<software_screenshot display_target="iOS-iPad-Pro" position="2"> <file_name>cn_ipadpro_2.jpg</file_name> <size>309356</size> <checksum type="md5">82c75e58b5f642eb5439d103c8a90ce6</checksum> </software_screenshot>
-<software_screenshot display_target="iOS-iPad-Pro" position="3"> <file_name>cn_ipadpro_3.jpg</file_name> <size>462245</size> <checksum type="md5">952230d9904261707ce43bd38db28777</checksum> </software_screenshot>
-<software_screenshot display_target="iOS-iPad-Pro" position="4"> <file_name>cn_ipadpro_4.jpg</file_name> <size>342133</size> <checksum type="md5">90448494e46cef6a76361680caffe2f8</checksum> </software_screenshot>
-<software_screenshot display_target="iOS-iPad-Pro" position="5"> <file_name>cn_ipadpro_5.jpg</file_name> <size>318264</size> <checksum type="md5">9456e8e3e3b21b1964289680e751064d</checksum> </software_screenshot>
-<software_screenshot display_target="iOS-5.5-in" position="1"> <file_name>cn_iphone_1.jpg</file_name> <size>181911</size> <checksum type="md5">7973bc6d5ccb784ab3e17c3700e909d8</checksum> </software_screenshot>
-<software_screenshot display_target="iOS-5.5-in" position="2"> <file_name>cn_iphone_2.jpg</file_name> <size>180262</size> <checksum type="md5">0cff1b90e8e068e63645a71e639b89ed</checksum> </software_screenshot>
-<software_screenshot display_target="iOS-5.5-in" position="3"> <file_name>cn_iphone_3.jpg</file_name> <size>242357</size> <checksum type="md5">fde30546ed08aecf93f00f193ff721fa</checksum> </software_screenshot>
-<software_screenshot display_target="iOS-5.5-in" position="4"> <file_name>cn_iphone_4.jpg</file_name> <size>125781</size> <checksum type="md5">000fc5259843c4b128ff824405c21e89</checksum> </software_screenshot>
-<software_screenshot display_target="iOS-5.5-in" position="5"> <file_name>cn_iphone_5.jpg</file_name> <size>183633</size> <checksum type="md5">bdbe9dbdb4d927aa17ba4cdb6f092712</checksum> </software_screenshot></software_screenshots>
+                            <software_screenshots> </software_screenshots>
 
                             
                         </locale>
 
                          <locale name="en-CA">
-                            <title>Chinese Idiom Congress</title>
-                            <subtitle>Great Chinese Culture</subtitle>
-                            <description> There are tens of millions of Chinese idioms, but not every idiom player knows them. The game featured hundreds of pictures and photos related to idioms. Players guess the names of the idioms according to their pictures and the implications of the prompts. Challenge more levels, learn idioms and share fun with friends. It's a picture puzzle game suitable for both young and old. It's fun to teach. Players who like this game can try it out.
+                            <title>Chinese Idiom Flower</title>
+                            <subtitle>Chinese Idiom Culture</subtitle>
+                            <description> Feihualing, originally a word game of the ancients when they were drinking, originated from the interest of the ancients' poetry and got its name from the famous sentence "spring city is everywhere but flying flowers" in Han Hong's cold food of Tang Dynasty. The game will be tens of millions of Chinese idioms into the flying flowers, teaching and entertainment, suitable for all ages. At the same time, we can learn idiom interpretation, origin, example sentences and other related knowledge. Try your idiom skills.
     </description>
-                            <promotional_text>Learning Idioms Enhances Knowledge</promotional_text>
+                            <promotional_text>Learning idioms and promoting Chinese culture</promotional_text>
                             <keywords>
                                <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
                             </keywords>
@@ -85,11 +65,11 @@
                         </locale>
 
                          <locale name="en-AU">
-                            <title>Chinese Idiom Congress</title>
-                            <subtitle>Great Chinese Culture</subtitle>
-                            <description> There are tens of millions of Chinese idioms, but not every idiom player knows them. The game featured hundreds of pictures and photos related to idioms. Players guess the names of the idioms according to their pictures and the implications of the prompts. Challenge more levels, learn idioms and share fun with friends. It's a picture puzzle game suitable for both young and old. It's fun to teach. Players who like this game can try it out.
+                            <title>Chinese Idiom Flower</title>
+                            <subtitle>Chinese Idiom Culture</subtitle>
+                            <description> Feihualing, originally a word game of the ancients when they were drinking, originated from the interest of the ancients' poetry and got its name from the famous sentence "spring city is everywhere but flying flowers" in Han Hong's cold food of Tang Dynasty. The game will be tens of millions of Chinese idioms into the flying flowers, teaching and entertainment, suitable for all ages. At the same time, we can learn idiom interpretation, origin, example sentences and other related knowledge. Try your idiom skills.
     </description>
-                            <promotional_text>Learning Idioms Enhances Knowledge</promotional_text>
+                            <promotional_text>Learning idioms and promoting Chinese culture</promotional_text>
                             <keywords>
                                <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
                             </keywords>
@@ -104,11 +84,11 @@
                         </locale>
 
                          <locale name="en-GB">
-                            <title>Chinese Idiom Congress</title>
-                            <subtitle>Great Chinese Culture</subtitle>
-                            <description> There are tens of millions of Chinese idioms, but not every idiom player knows them. The game featured hundreds of pictures and photos related to idioms. Players guess the names of the idioms according to their pictures and the implications of the prompts. Challenge more levels, learn idioms and share fun with friends. It's a picture puzzle game suitable for both young and old. It's fun to teach. Players who like this game can try it out.
+                            <title>Chinese Idiom Flower</title>
+                            <subtitle>Chinese Idiom Culture</subtitle>
+                            <description> Feihualing, originally a word game of the ancients when they were drinking, originated from the interest of the ancients' poetry and got its name from the famous sentence "spring city is everywhere but flying flowers" in Han Hong's cold food of Tang Dynasty. The game will be tens of millions of Chinese idioms into the flying flowers, teaching and entertainment, suitable for all ages. At the same time, we can learn idiom interpretation, origin, example sentences and other related knowledge. Try your idiom skills.
     </description>
-                            <promotional_text>Learning Idioms Enhances Knowledge</promotional_text>
+                            <promotional_text>Learning idioms and promoting Chinese culture</promotional_text>
                             <keywords>
                                <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
                             </keywords>
@@ -125,13 +105,25 @@
                     </locales>
                 </version>
             </versions>
-         
+            <products>
+                <product>
+                    <territory>WW</territory>
+                    <sales_start_date>2010-05-25</sales_start_date>
+                    <cleared_for_sale>true</cleared_for_sale>
+                    <wholesale_price_tier>0</wholesale_price_tier>
+                    <allow_volume_discount>false</allow_volume_discount>
+                </product>
+                <product>
+                    <territory>RU</territory>
+                    <cleared_for_sale>true</cleared_for_sale>
+                </product>
+            </products>
           
           
 
            <in_app_purchases>
                 <in_app_purchase>
-                    <product_id>com.moonma.chengyu.noad</product_id>
+                    <product_id>com.moonma.idiomflower.noad</product_id>
                     <reference_name>noad</reference_name>
                     <type>non-consumable</type>
                     <products>

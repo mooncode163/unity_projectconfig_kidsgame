@@ -12,7 +12,7 @@ import xml.etree.ElementTree as ET
 #include common.py
 sys.path.append('./common')
 import common
-
+import source
 
 DEVICE_IPADPRO = "ipadpro"
 DEVICE_IPADPRO_2018 = "ipadpro"
@@ -24,8 +24,10 @@ listCountry = ["en-US", "zh-Hans","en-CA","en-AU","en-GB"]
 listCountryLanguage = ["en", "cn","en","en","en"] 
 
 totalScreenshot = 5 
-list_device = [DEVICE_IPADPRO, DEVICE_IPHONE_5_5]
-# list_device = [DEVICE_IPADPRO,DEVICE_IPADPRO_2018, DEVICE_IPHONE_6_5,DEVICE_IPHONE_5_5]
+# "Mac", "appletvos", "iOS-3.5-in", "iOS-4-in", "iOS-4.7-in", "iOS-5.5-in", "iOS-5.8-in", "iOS-Apple-Watch", "iOS-iPad", "iOS-iPad-Pro" or "iOS-iPad-Pro-10.5-in"
+
+list_device = [DEVICE_IPHONE_5_5,DEVICE_IPADPRO]
+#list_device = [DEVICE_IPADPRO, DEVICE_IPHONE_6_5,DEVICE_IPHONE_5_5]
 gameName = " "
 gameType = " "
 enableScrenshot = False
@@ -250,9 +252,29 @@ def getAppStoreScreenshotDeviceName(device):
         
     return strRet
 
+def CopyInAppPurchasesScreenshot(isHd):   
+    # src =common.GetProjectConfig() + "/default/appstore/in_app_purchases_screenshot.png"
+    src =common.GetResourceDataRoot() + "/in_app_purchases_screenshot.png"
+    rootConfig = common.GetProjectConfigApp() 
+    dst = rootConfig + "/appstore/ios/app.itmsp" 
+    if isHd:
+        dst = rootConfig + "/appstore/ios/app_pad.itmsp"  
+    dst =dst+"/in_app_purchases_screenshot.png"
+    
+    if not os.path.isfile(dst):
+        shutil.copyfile(src,dst)
+
+def IsOldVersion(data):
+    isOld = True
+    if ("appname" in data) :
+        isOld = False  
+
+    return isOld
+
 def updateAppstore(isHd):
     
-   
+    CopyInAppPurchasesScreenshot(isHd)
+
     rootConfig = common.GetProjectConfigApp()
     strHD = "HD"
 
@@ -268,15 +290,27 @@ def updateAppstore(isHd):
 
     # loadJson
     data = loadJson(isHd)
-    APP_NAME_CN_ANDROID = data["APP_NAME_CN_ANDROID"]
-    APPSTORE_VERSION_UPDATE = data["APPSTORE_VERSION_UPDATE"]
-    APPSTORE_TITLE = data["APPSTORE_TITLE"]
-    APPSTORE_SUBTITLE = data["APPSTORE_SUBTITLE"]
-    APPSTORE_PROMOTION = data["APPSTORE_PROMOTION"]
-    PACKAGE = data["PACKAGE_IOS"]
-    # APPSTORE_DESCRIPTION = data["APPSTORE_DESCRIPTION"]
-    APPSTORE_KEYWORD = data["APPSTORE_KEYWORD"]
-    APPVERSION_IOS = data["APPVERSION_IOS"]
+
+    isOld = IsOldVersion(data)
+    if isOld:
+        # APP_NAME_CN_ANDROID = data["APP_NAME_CN_ANDROID"]
+        APPSTORE_VERSION_UPDATE = data["APPSTORE_VERSION_UPDATE"]
+        APPSTORE_TITLE = data["APPSTORE_TITLE"]
+        APPSTORE_SUBTITLE = data["APPSTORE_SUBTITLE"]
+        APPSTORE_PROMOTION = data["APPSTORE_PROMOTION"]
+        PACKAGE = data["PACKAGE_IOS"]
+        # APPSTORE_DESCRIPTION = data["APPSTORE_DESCRIPTION"]
+        APPSTORE_KEYWORD = data["APPSTORE_KEYWORD"]
+        APPVERSION_IOS = data["APPVERSION_IOS"]
+    else:
+        APPVERSION_IOS =  data["appversion"][source.IOS]["value"]
+        APPSTORE_KEYWORD =  data["appstore"]["aso"]
+        PACKAGE = data["apppackage"][source.IOS]["default"]
+        APPSTORE_VERSION_UPDATE = data["appstore"]["version_update"]
+        APPSTORE_PROMOTION =  data["appstore"]["promotion"]
+        APPSTORE_SUBTITLE = data["appstore"]["subtitle"]
+        APPSTORE_TITLE = data["appstore"]["title"]
+
     software_url = data["software_url"]
     privacy_url = data["privacy_url"]
     support_url = data["support_url"]

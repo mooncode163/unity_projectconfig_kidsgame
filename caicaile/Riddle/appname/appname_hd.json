@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "Guess Riddle HD",
     "PACKAGE_ANDROID": "com.moonma.cairiddle.pad",
     "PACKAGE_IOS": "com.moonma.cairiddle.pad",
-    "APPVERSION_ANDROID": "1.0.4",
-    "APPVERSION_CODE_ANDROID": "104",
-    "APPVERSION_IOS": "1.0.4",
+    "APPVERSION_ANDROID": "1.0.5",
+    "APPVERSION_CODE_ANDROID": "105",
+    "APPVERSION_IOS": "1.0.0",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",
@@ -26,11 +26,11 @@
         "en": "Riddle-guessing tests intelligence"
     },
     "APPSTORE_KEYWORD": {
-        "cn": "天天猜歇后语,蔡如后,雨后行菜,甜甜菜,爱猜图,猜题王,天天聚会,小孩,乐看动画,奇艺动画,猜图,沙滩乐多纳学英语儿歌多多迷宫小镇汉字王国小牙医美食节熊猫博士小镇画彩蛋悟空识字恐龙救援车马儿的神奇大冒险小企鹅乐园魔力",
+        "cn": "天天猜歇后语,蔡如后,雨后行菜,甜甜菜,爱猜图,猜题王,天天聚会,小孩,乐看动画,奇艺动画,猜图,沙滩乐学英语",
         "en": "COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber"
     },
     "XIAOMI_KEYWORD": {
-        "cn": "天天猜歇后语 蔡如后 雨后行菜 甜甜菜 爱猜图 猜题王 天天聚会 小孩 乐看动画 奇艺动画 猜图 沙滩乐多纳学英语儿歌多多迷宫小镇汉字王国小牙医美食节熊猫博士小镇画彩蛋悟空识字恐龙救援车马儿的神奇大冒险小企鹅乐园魔力",
+        "cn": "天天猜歇后语 蔡如后 雨后行菜 甜甜菜 爱猜图 猜题王 天天聚会 小孩 乐看动画 奇艺动画 猜图 沙滩乐学英语",
         "en": "COOKING MAMA Let's Cook Kids Shave Salon Spa Doodle Zedd the Zombie Shapes Toddler QuizUp Clawber"
     },
     "email": "chyfemail163@163.com",

@@ -6,7 +6,7 @@
         <vendor_id>mooncore_tvhd</vendor_id>
         <software_metadata>
             <versions>
-                <version string="1.6.0">
+                <version string="1.7.6">
                     <locales>
                         <locale name="en-US">
                             <title>Baby Match HD</title>
@@ -129,7 +129,7 @@
                     <products>
                         <product>
                             <cleared_for_sale>true</cleared_for_sale>
-                            <wholesale_price_tier>2</wholesale_price_tier>
+                            <wholesale_price_tier>3</wholesale_price_tier>
                         </product>
                     </products>
                     <locales>
