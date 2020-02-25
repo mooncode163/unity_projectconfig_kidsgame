@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "Kids Animal Color",
     "PACKAGE_ANDROID": "com.moonma.animalcolor",
     "PACKAGE_IOS": "com.moonma.animalcolor",
-    "APPVERSION_ANDROID": "1.0.4",
-    "APPVERSION_CODE_ANDROID": "104",
-    "APPVERSION_IOS": "1.0.4",
+    "APPVERSION_ANDROID": "1.0.8",
+    "APPVERSION_CODE_ANDROID": "108",
+    "APPVERSION_IOS": "1.0.8",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "过关时不再弹出广告",

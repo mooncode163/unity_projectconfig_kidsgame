@@ -79,8 +79,8 @@ android {
         minSdkVersion 26
         targetSdkVersion 28
        // applicationId 'com.moonma.kidsgame'
-        ndk {
-            abiFilters 'armeabi-v7a'
+        ndk { 
+            abiFilters 'armeabi-v7a', 'arm64-v8a'
         }
      //   versionCode 1
      //   versionName '0.1'
@@ -122,8 +122,9 @@ android {
         }
     }
 
-    packagingOptions {
+    packagingOptions { 
         doNotStrip '*/armeabi-v7a/*.so'
+        doNotStrip '*/arm64-v8a/*.so'
     }
 
 
