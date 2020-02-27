@@ -11,6 +11,7 @@ import sys
 # include appinfo.py
 # sys.path.append('./common')
 import appname
+import source
 
 
 sys.path.append('./common')
@@ -19,12 +20,18 @@ import common
 def buildApk():
     if common.isWindowsSystem():
         # dir1 = "C:\Program Files\Android\Android Studio\gradle"
-    	dir2 = "C:/moon/gradle"
-        flag = os.path.exists(dir2)
+    	dir2 = "C:/moon/gradle/gradle-4.10.1"
+        flag = os.path.exists(dir2) 
     	if not flag:
-    		shutil.copytree(dir1,dir2)
-        
-        os.system(dir2+"/gradle-4.10.1/bin/gradle assembleRelease")
+    		# shutil.copytree(dir1,dir2)
+            dir2 = "E:/Program Files/Android/Android Studio/gradle/gradle-4.10.1"
+            flag = os.path.exists(dir2)
+            if not flag:
+                # aliyun
+                dir2 = "C:/Program Files/Unity/Hub/Editor/"+source.UNITY_VERSION+"/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/gradle"
+
+ 
+        os.system(dir2+"/bin/gradle assembleRelease")
     else:
         os.system("gradle assembleRelease")
    

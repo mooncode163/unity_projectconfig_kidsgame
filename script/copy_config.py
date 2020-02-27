@@ -175,7 +175,8 @@ if  __name__ =="__main__":
     # win res 
     dir1 = iconRoot+"/"+iconDirName+"/microsoft"
     dir2 = common.GetRootProjectWin()+"/"+common.GetProjectName()+"/Assets"
-    common.coverFiles(dir1,   dir2)
+    if os.path.exists(dir2):
+        common.coverFiles(dir1,   dir2)
 
     # win strings 
     dir_src_string = common.GetProjectConfigApp()+"/"+source.WIN + "/project"
@@ -186,7 +187,8 @@ if  __name__ =="__main__":
     flag = os.path.exists(dir2)
     if flag:
         shutil.rmtree(dir2)
-    shutil.copytree(dir1,dir2)
+        shutil.copytree(dir1,dir2)
+    
     
 
 # ad src

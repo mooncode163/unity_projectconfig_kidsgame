@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "Baby Farm Animal HD",
     "PACKAGE_ANDROID": "com.moonma.ncanimal.pad",
     "PACKAGE_IOS": "com.moonma.ncanimal.pad",
-    "APPVERSION_ANDROID": "1.0.2",
-    "APPVERSION_CODE_ANDROID": "102",
-    "APPVERSION_IOS": "1.0.2",
+    "APPVERSION_ANDROID": "1.0.3",
+    "APPVERSION_CODE_ANDROID": "103",
+    "APPVERSION_IOS": "1.0.3",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",

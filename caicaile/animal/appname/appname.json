@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "KidsGuessAnimal",
     "PACKAGE_ANDROID": "com.moonma.caicaileanimal",
     "PACKAGE_IOS": "com.moonma.caicaileanimal",
-    "APPVERSION_ANDROID": "1.0.5",
-    "APPVERSION_CODE_ANDROID": "105",
-    "APPVERSION_IOS": "1.0.5",
+    "APPVERSION_ANDROID": "1.0.6",
+    "APPVERSION_CODE_ANDROID": "106",
+    "APPVERSION_IOS": "1.0.6",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",

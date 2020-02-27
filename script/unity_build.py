@@ -38,8 +38,12 @@ if __name__ == "__main__":
             stros = sys.argv[i] 
 
     common.SetCmdPath(cmdPath)
+    # 0f6 2f1
+    UNITYPATH="E:/Unity/"+source.UNITY_VERSION+"/Editor/Unity.exe"
+    if os.path.exists(UNITYPATH):
+        UNITYPATH="C:/Program\ Files/Unity/Hub/Editor/"+source.UNITY_VERSION+".3.2f1/Editor/Unity.exe"
     
-    UNITYPATH="E:/Unity/2019.3.0f6/Editor/Unity.exe"
+    
     PROJECT_PATH= common.GetRootProjectUnity()
 
     
