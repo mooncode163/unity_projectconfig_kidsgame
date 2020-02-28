@@ -29,11 +29,11 @@ def UploadAllIPA(dir):
 def UploadOneIPA(ipafile):
     print "UploadOneIPA= "+ipafile
     # 上传ipa
-    # strCmd = "/Applications/Xcode.app/Contents/Applications/Application\ Loader.app/Contents/Frameworks/ITunesSoftwareService.framework/Versions/A/Support/altool --upload-app -f " + \
-    # ipafile + \
-            # " -t ios -u "+source.APPSTORE_USER+" -p "+source.APPSTORE_PASSWORD 
+    if IsXcode10():
+        strCmd = "/Applications/Xcode.app/Contents/Applications/Application\ Loader.app/Contents/Frameworks/ITunesSoftwareService.framework/Versions/A/Support/altool --upload-app -f " + ipafile + " -t ios -u "+source.APPSTORE_USER+" -p "+source.APPSTORE_PASSWORD 
     #    xcode 11
-    strCmd = "xcrun altool --upload-app -f " +  ipafile +  " -t ios -u "+source.APPSTORE_USER+" -p "+source.APPSTORE_PASSWORD 
+    else:
+        strCmd = "xcrun altool --upload-app -f " +  ipafile +  " -t ios -u "+source.APPSTORE_USER+" -p "+source.APPSTORE_PASSWORD 
    
     # + "--output-format xml"
     os.system(strCmd)
@@ -56,6 +56,11 @@ def ExportIPA(ipafile):
 
 def BuildIPA(ipafile):
     CopyExportOptionsPlist()
+
+    # curDir = "/Users/moon/Library/MobileDevice/Provisioning Profiles"
+    curDir = "/Users/moon/Library/MobileDevice/Provisioning Profiles"
+    DeleteProvisioningProfiles(curDir)  
+
     RootDir = common.GetRootProjectIos()
     archive_file = RootDir + "/app.xcarchive"
     target = "Unity-iPhone"
@@ -147,6 +152,38 @@ def UnZipProject():
         file_sh = project+ "/MapFileParser.sh"
         if os.path.exists(file_sh):
             os.system("chmod a+x "+file_sh)
+
+
+def IsXcode10():
+    ret = False
+    if os.path.exists("/Applications/Xcode.app/Contents/Applications/Application\ Loader.app"):
+        ret = True
+    
+    return ret
+
+# xcode 证书 清空
+def DeleteProvisioningProfiles(sourceDir):
+    for file in os.listdir(sourceDir):
+        sourceFile = os.path.join(sourceDir,  file)
+            #cover the files
+        if os.path.isfile(sourceFile):
+            # print sourceFile
+            # 分割文件名与后缀
+            temp_list = os.path.splitext(file)
+            # name without extension
+            src_apk_name = temp_list[0]
+            # 后缀名，包含.   例如: ".apk "
+            src_apk_extension = temp_list[1]
+            apk_ext='.mobileprovision';
+            if apk_ext==src_apk_extension:
+                 print sourceFile
+                 os.remove(sourceFile)
+                
+        #目录嵌套
+        if os.path.isdir(sourceFile):
+            # print sourceFile
+            deleteFiles(sourceFile)
+  
 
 
 def DeleteMetaFiles(sourceDir):

@@ -624,7 +624,6 @@ if __name__ == "__main__":
 
     updateName(False,is_auto_plus_version)
     updateName(True,is_auto_plus_version)
-
-   # common.AppForPad(True)
+ 
     
     print "appname sucess"

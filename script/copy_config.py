@@ -169,7 +169,7 @@ if  __name__ =="__main__":
     #info
     file1 = sourceDir + "/"+project_ios+"/info.plist"
     file2 = rootiOSXcode + "/info.plist"
-
+    print("info.plist file2= "+file2)
     common.copyOneFile(file1,file2)
 
     # win res 

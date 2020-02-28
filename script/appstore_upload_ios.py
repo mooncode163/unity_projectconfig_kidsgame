@@ -11,6 +11,7 @@ import sys
 sys.path.append('./common')
 import common
 import source
+import ipa_build
 
 ##获取脚本文件的当前路径
 def cur_file_dir():
@@ -51,9 +52,11 @@ if  __name__ =="__main__":
     if common.isWindowsSystem():
         strCmd = " "
     else:
-        #strCmd = "/Applications/Xcode.app/Contents/Applications/Application\ Loader.app/Contents/itms/bin/iTMSTransporter -m upload -u "+source.APPSTORE_USER+" -p "+source.APPSTORE_PASSWORD+"  -v eXtreme -f "+common.GetProjectConfigApp()+ "/appstore/ios/"+strFile
-        #xcode 11: 手动更新Transporter组件(java)方法： https://www.lagou.com/lgeduarticle/94642.html
-        strCmd = "/Applications/Transporter.app/Contents/itms/bin/iTMSTransporter -m upload -u "+source.APPSTORE_USER+" -p "+source.APPSTORE_PASSWORD+"  -v eXtreme -f "+common.GetProjectConfigApp()+ "/appstore/ios/"+strFile
+        if ipa_build.IsXcode10():
+            strCmd = "/Applications/Xcode.app/Contents/Applications/Application\ Loader.app/Contents/itms/bin/iTMSTransporter -m upload -u "+source.APPSTORE_USER+" -p "+source.APPSTORE_PASSWORD+"  -v eXtreme -f "+common.GetProjectConfigApp()+ "/appstore/ios/"+strFile
+        else:
+            #xcode 11: 手动更新Transporter组件(java)方法： https://www.lagou.com/lgeduarticle/94642.html
+            strCmd = "/Applications/Transporter.app/Contents/itms/bin/iTMSTransporter -m upload -u "+source.APPSTORE_USER+" -p "+source.APPSTORE_PASSWORD+"  -v eXtreme -f "+common.GetProjectConfigApp()+ "/appstore/ios/"+strFile
     os.system(strCmd) 
         
     print "appstore_upload_ios sucess"
