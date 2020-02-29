@@ -17,6 +17,10 @@ import config_adsdk_android
  
 
 def UpdateXcodeProjectFile(fileProject,isHD):
+    flag = os.path.exists(fileProject)
+    if not flag:
+        return
+
     package = appname.GetPackage(source.IOS,isHD) 
 
     # 读取xcode文件的包名
@@ -202,8 +206,8 @@ if  __name__ =="__main__":
 
     CopyAndroidJavaFile_Weixin(rootAndroidStudio,isHD)
 
-    if not common.isWindowsSystem():
-        UpdateXcodeProjectFile(xcodeProject,isHD)
+    # if not common.isWindowsSystem():
+    UpdateXcodeProjectFile(xcodeProject,isHD)
 
     # AD LIB JAVA CODE
 
