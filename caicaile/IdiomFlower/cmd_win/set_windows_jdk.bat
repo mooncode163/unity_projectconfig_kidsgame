@@ -1,6 +1,8 @@
 @echo off
 set regpath=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment
-set javahome=C:\Program Files\Android\Android Studio\jre\jre
+set javahome=C:\Program Files\Unity\Hub\Editor\2019.3.2f1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\jre
+:aliyun  C:\Program Files\Unity\Hub\Editor\2019.3.2f1\Editor\Data\PlaybackEngines\AndroidPlayer\OpenJDK\jre 
+:win10  C:\Program Files\Android\Android Studio\jre\jre
 rem LPY
 echo.
 echo ************************************************************

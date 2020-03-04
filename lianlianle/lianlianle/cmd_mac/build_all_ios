@@ -15,7 +15,11 @@ then
     cd /Volumes/VMware\ Shared\ Folders
     
     cd $filepath
-    sh ./copy_and_build_all_ipa_ios
+    sh ./update_appname_auto
+    sh ./copy_config
+    sh ./ipa_build
+    sh ./copy_config_hd
+    sh ./ipa_build
 
 else
     echo "不包含"

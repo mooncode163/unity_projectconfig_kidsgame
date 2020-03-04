@@ -107,7 +107,7 @@ def CopyXcodeProject(isDel):
     if not common.IsVMWare():
         return
 
-    # ZipProject()
+    ZipProject()
 
     dirsrc = common.GetRootDirXcodeNormal()+ ".zip" 
     dirdst = common.GetRootDirXcodeUser()+ ".zip" 
@@ -126,7 +126,9 @@ def ZipProject():
         return
 
     if os.path.exists(file_zip):
-        os.remove(file_zip) 
+        # os.remove(file_zip) 
+        return
+        
     DeleteMetaFiles(dirproject+"/Frameworks/Plugins")
     DeleteMetaFiles(dirproject+"/Libraries/Plugins")
     # DeleteMetaFiles(dirproject+"/Frameworks/Plugins/iOS/ThirdParty/umeng/thirdparties/thirdparties_ios_1.0.5/SecurityEnvSDK.framework")

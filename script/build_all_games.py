@@ -7,7 +7,12 @@ import os.path
 import time
 import datetime
 import sys
- 
+
+
+sys.path.append('./common')
+import common
+
+
 def cur_file_dir():
      #获取脚本路径
      path = sys.path[0]
@@ -22,13 +27,25 @@ def ScanDir(sourceDir,channel):
         sourceFile = os.path.join(sourceDir,  file) 
         if os.path.isdir(sourceFile):
             # python 里无法直接执行cd目录，想要用chdir改变当前的工作目录
-            os.chdir(sourceFile+"/cmd_win")
+            if common.isWindowsSystem():
+                os.chdir(sourceFile+"/cmd_win")
+                os.system("echo.| copy_cmd.bat")
+            else:
+                os.chdir(sourceFile+"/cmd_mac")
+                os.system("copy_cmd")
+
             print(file)
             # update_appname build_huawei
+            
             if channel=="huawei":
                 os.system("echo.| call build_huawei.bat")
-            if channel=="all":
+            if channel=="android":
                 os.system("echo.| call build_all_android.bat")
+            if channel=="ios":
+                if common.isWindowsSystem():
+                    os.system("echo.| build_all_ios.bat")
+                else:
+                    os.system("build_all_ios")
             
 
     
