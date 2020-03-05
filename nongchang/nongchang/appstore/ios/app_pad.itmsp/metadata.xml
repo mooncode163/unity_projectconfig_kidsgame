@@ -6,10 +6,10 @@
         <vendor_id>nongchangfind_pad</vendor_id>
         <software_metadata>
             <versions>
-                <version string="1.2.0">
+                <version string="1.5.5">
                     <locales>
                         <locale name="en-US">
-                            <title>Baby Farm Find HD Observability</title>
+                            <title>Baby Farm Find HD</title>
                             <subtitle>Exercise visual search ability</subtitle>
                             <description>This is a very interesting discovery farm children game in the pad, fully tap the visual ability of children Octavia, hiding in
 All kinds of animals, plants, fruits and vegetables on the farm can be found out. The operation is simple, the real person pronunciation, vivid and interesting.
@@ -56,7 +56,7 @@ The rich theme and the barrier let the baby play enough, the more clever the mor
                         </locale>
 
                          <locale name="en-CA">
-                            <title>Baby Farm Find HD Observability</title>
+                            <title>Baby Farm Find HD</title>
                             <subtitle>Exercise visual search ability</subtitle>
                             <description>This is a very interesting discovery farm children game in the pad, fully tap the visual ability of children Octavia, hiding in
 All kinds of animals, plants, fruits and vegetables on the farm can be found out. The operation is simple, the real person pronunciation, vivid and interesting.
@@ -80,7 +80,7 @@ The rich theme and the barrier let the baby play enough, the more clever the mor
                         </locale>
 
                          <locale name="en-AU">
-                            <title>Baby Farm Find HD Observability</title>
+                            <title>Baby Farm Find HD</title>
                             <subtitle>Exercise visual search ability</subtitle>
                             <description>This is a very interesting discovery farm children game in the pad, fully tap the visual ability of children Octavia, hiding in
 All kinds of animals, plants, fruits and vegetables on the farm can be found out. The operation is simple, the real person pronunciation, vivid and interesting.
@@ -104,7 +104,7 @@ The rich theme and the barrier let the baby play enough, the more clever the mor
                         </locale>
 
                          <locale name="en-GB">
-                            <title>Baby Farm Find HD Observability</title>
+                            <title>Baby Farm Find HD</title>
                             <subtitle>Exercise visual search ability</subtitle>
                             <description>This is a very interesting discovery farm children game in the pad, fully tap the visual ability of children Octavia, hiding in
 All kinds of animals, plants, fruits and vegetables on the farm can be found out. The operation is simple, the real person pronunciation, vivid and interesting.
@@ -154,7 +154,7 @@ The rich theme and the barrier let the baby play enough, the more clever the mor
                     <products>
                         <product>
                             <cleared_for_sale>true</cleared_for_sale>
-                            <wholesale_price_tier>2</wholesale_price_tier>
+                            <wholesale_price_tier>3</wholesale_price_tier>
                         </product>
                     </products>
                     <locales>

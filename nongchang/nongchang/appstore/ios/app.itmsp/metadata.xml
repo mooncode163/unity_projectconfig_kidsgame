@@ -6,7 +6,7 @@
         <vendor_id>sku_nongchangfind</vendor_id>
         <software_metadata>
             <versions>
-                <version string="1.2.0">
+                <version string="1.5.4">
                     <locales>
                         <locale name="en-US">
                             <title>Kids Farm Find Observability</title>
@@ -154,7 +154,7 @@ The rich theme and the barrier let the baby play enough, the more clever the mor
                     <products>
                         <product>
                             <cleared_for_sale>true</cleared_for_sale>
-                            <wholesale_price_tier>2</wholesale_price_tier>
+                            <wholesale_price_tier>3</wholesale_price_tier>
                         </product>
                     </products>
                     <locales>
