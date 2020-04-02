@@ -347,6 +347,9 @@ def GetProjectConfigApp():
     gameName = getGameName()
     return GetProjectConfig()+"/"+gameType+"/"+gameName
 
+def GetProjectConfigAppType():
+    gameType = getGameType()
+    return GetProjectConfig()+"/"+gameType
 
 def getAndroidProjectGameData(): 
     path = GetRootDir()+"/project_android/"+GetProjectName()+"/src/main/assets/GameData"
@@ -466,5 +469,27 @@ def AppForPad(isIos):
     return ret
 
 
+def DeleteMetaFiles(sourceDir):
+    for file in os.listdir(sourceDir):
+        sourceFile = os.path.join(sourceDir,  file)
+            #cover the files
+        if os.path.isfile(sourceFile):
+            # print sourceFile
+            # 分割文件名与后缀
+            temp_list = os.path.splitext(file)
+            # name without extension
+            src_apk_name = temp_list[0]
+            # 后缀名，包含.   例如: ".apk "
+            ext = getFileExt(file) 
+            # print "file="+file+" ext="+ext 
+            apk_ext='meta'
+            if apk_ext==ext:
+                 print sourceFile
+                 os.remove(sourceFile)
+                
+        #目录嵌套
+        if os.path.isdir(sourceFile):
+            # print sourceFile
+            DeleteMetaFiles(sourceFile)
 
  

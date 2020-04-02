@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="app_name">成语大飞花</string>
+  <string name="app_name">成语飞花令</string>
   <string name="game_view_content_description">Game view</string>
 </resources>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://apple.com/itunes/importer" version="software5.9">
+   <!--  <provider>YuanFang Chen</provider> -->
+    <team_id>Y9ZUK2WTEE</team_id>
+    <software>
+        <vendor_id>sku_nongchangfind</vendor_id>
+        <software_metadata>
+            <versions>
+                <version string="1.2.0">
+                    <locales>
+                        <locale name="en-US">
+                            <title>Kids Farm Find Observability</title>
+                            <subtitle>Exercise visual search ability</subtitle>
+                            <description>This is a very interesting discovery farm children game, fully tap the visual ability of children Octavia, hiding in
+All kinds of animals, plants, fruits and vegetables on the farm can be found out. The operation is simple, the real person pronunciation, vivid and interesting.
+This is a wise choice for millions of moms and moms to open the door to the wisdom of the children! Young friends come to find a look, quickly to challenge your intelligence bar!
+* quickly nurture the baby's observation and visual search ability.
+* to improve the thinking ability of the baby's image.
+The rich theme and the barrier let the baby play enough, the more clever the more play!
+    </description>
+                            <promotional_text>Quickly improve the baby's observation and visual search ability!</promotional_text>
+                            <keywords>
+                               <keyword>居家安全宝宝巴士托马斯和朋友我是消防员兴趣启蒙小帮手小伴龙森林动物草莓甜心糖果果园沙滩乐多纳学英语儿歌多多迷宫小镇汉字王国小牙医美食节熊猫博士小镇画彩蛋悟空识字恐龙救援车马儿的神奇大冒险小企鹅乐园魔力</keyword> 
+                            </keywords>
+                            <version_whats_new>Fix a Bug</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                        </locale>
+
+                         <locale name="zh-Hans">
+                            <title>儿童农场找找乐-培养观察力</title>
+                            <subtitle>锻炼视觉搜索能力</subtitle>
+                            <description>这是一款有趣的农场探索发现类儿童游戏，充分挖掘小孩子们明锐的视觉能力，把隐藏在
+农场里的各种动物，植物，水果和蔬菜，统统找出来即可完成任务。操作简单，真人发音，生动有趣。
+这是百万爸爸妈妈的明智选择，开启孩子们的智慧大门！小朋友们赶快来找一找，快来挑战一下你的智力吧！
+＊快速培养宝宝们的观察力和视觉搜索能力。
+＊提高宝宝们的形象思维能力。
+＊丰富的主题和关卡让宝宝玩个够，越玩越聪明！
+    </description>
+                            <promotional_text>快速提高宝宝的观察力和视觉搜索能力！</promotional_text>
+                            <keywords>
+                               <keyword>居家安全宝宝巴士托马斯和朋友我是消防员兴趣启蒙小帮手小伴龙森林动物草莓甜心糖果果园沙滩乐多纳学英语儿歌多多迷宫小镇汉字王国小牙医美食节熊猫博士小镇画彩蛋悟空识字恐龙救援车马儿的神奇大冒险小企鹅乐园魔力</keyword> 
+                            </keywords>
+                            <version_whats_new>修复闪退</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                            
+                        </locale>
+
+                         <locale name="en-CA">
+                            <title>Kids Farm Find Observability</title>
+                            <subtitle>Exercise visual search ability</subtitle>
+                            <description>This is a very interesting discovery farm children game, fully tap the visual ability of children Octavia, hiding in
+All kinds of animals, plants, fruits and vegetables on the farm can be found out. The operation is simple, the real person pronunciation, vivid and interesting.
+This is a wise choice for millions of moms and moms to open the door to the wisdom of the children! Young friends come to find a look, quickly to challenge your intelligence bar!
+* quickly nurture the baby's observation and visual search ability.
+* to improve the thinking ability of the baby's image.
+The rich theme and the barrier let the baby play enough, the more clever the more play!
+    </description>
+                            <promotional_text>Quickly improve the baby's observation and visual search ability!</promotional_text>
+                            <keywords>
+                               <keyword>居家安全宝宝巴士托马斯和朋友我是消防员兴趣启蒙小帮手小伴龙森林动物草莓甜心糖果果园沙滩乐多纳学英语儿歌多多迷宫小镇汉字王国小牙医美食节熊猫博士小镇画彩蛋悟空识字恐龙救援车马儿的神奇大冒险小企鹅乐园魔力</keyword> 
+                            </keywords>
+                           <version_whats_new>Fix a Bug</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                            
+                        </locale>
+
+                         <locale name="en-AU">
+                            <title>Kids Farm Find Observability</title>
+                            <subtitle>Exercise visual search ability</subtitle>
+                            <description>This is a very interesting discovery farm children game, fully tap the visual ability of children Octavia, hiding in
+All kinds of animals, plants, fruits and vegetables on the farm can be found out. The operation is simple, the real person pronunciation, vivid and interesting.
+This is a wise choice for millions of moms and moms to open the door to the wisdom of the children! Young friends come to find a look, quickly to challenge your intelligence bar!
+* quickly nurture the baby's observation and visual search ability.
+* to improve the thinking ability of the baby's image.
+The rich theme and the barrier let the baby play enough, the more clever the more play!
+    </description>
+                            <promotional_text>Quickly improve the baby's observation and visual search ability!</promotional_text>
+                            <keywords>
+                               <keyword>居家安全宝宝巴士托马斯和朋友我是消防员兴趣启蒙小帮手小伴龙森林动物草莓甜心糖果果园沙滩乐多纳学英语儿歌多多迷宫小镇汉字王国小牙医美食节熊猫博士小镇画彩蛋悟空识字恐龙救援车马儿的神奇大冒险小企鹅乐园魔力</keyword> 
+                            </keywords>
+                            <version_whats_new>Fix a Bug</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                            
+                        </locale>
+
+                         <locale name="en-GB">
+                            <title>Kids Farm Find Observability</title>
+                            <subtitle>Exercise visual search ability</subtitle>
+                            <description>This is a very interesting discovery farm children game, fully tap the visual ability of children Octavia, hiding in
+All kinds of animals, plants, fruits and vegetables on the farm can be found out. The operation is simple, the real person pronunciation, vivid and interesting.
+This is a wise choice for millions of moms and moms to open the door to the wisdom of the children! Young friends come to find a look, quickly to challenge your intelligence bar!
+* quickly nurture the baby's observation and visual search ability.
+* to improve the thinking ability of the baby's image.
+The rich theme and the barrier let the baby play enough, the more clever the more play!
+    </description>
+                            <promotional_text>Quickly improve the baby's observation and visual search ability!</promotional_text>
+                            <keywords>
+                               <keyword>居家安全宝宝巴士托马斯和朋友我是消防员兴趣启蒙小帮手小伴龙森林动物草莓甜心糖果果园沙滩乐多纳学英语儿歌多多迷宫小镇汉字王国小牙医美食节熊猫博士小镇画彩蛋悟空识字恐龙救援车马儿的神奇大冒险小企鹅乐园魔力</keyword> 
+                            </keywords>
+                            <version_whats_new>Fix a Bug</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                            
+                        </locale>
+                        
+                    </locales>
+                </version>
+            </versions>
+            <products>
+                <product>
+                    <territory>WW</territory>
+                    <sales_start_date>2010-05-25</sales_start_date>
+                    <cleared_for_sale>true</cleared_for_sale>
+                    <wholesale_price_tier>0</wholesale_price_tier>
+                    <allow_volume_discount>false</allow_volume_discount>
+                </product>
+                <product>
+                    <territory>RU</territory>
+                    <cleared_for_sale>true</cleared_for_sale>
+                </product>
+            </products>
+          
+          
+
+           <in_app_purchases>
+                <in_app_purchase>
+                    <product_id>com.moonma.nongchangfind.noad</product_id>
+                    <reference_name>noad</reference_name>
+                    <type>non-consumable</type>
+                    <products>
+                        <product>
+                            <cleared_for_sale>true</cleared_for_sale>
+                            <wholesale_price_tier>2</wholesale_price_tier>
+                        </product>
+                    </products>
+                    <locales>
+                        <locale name="en-US">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+
+                        <locale name="zh-Hans">
+                            <title>去除广告</title>
+                            <description>该产品可以去除应用内的所有广告</description>
+                        </locale>
+                        <locale name="en-CA">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+                        <locale name="en-AU">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+                        <locale name="en-GB">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+
+                        
+                    </locales>
+                    <review_screenshot>
+                        <file_name>in_app_purchases_screenshot.png</file_name>
+                        <size>96482</size>
+                        <checksum type="md5">dc4f197705c3983c730d236f54de2950</checksum>
+                    </review_screenshot>
+                    <!-- <review_notes></review_notes> -->
+                </in_app_purchase>
+               <!--  <in_app_purchase remove="true">
+                    <product_id>obsolete_com.cyberinteractive.tf.missiles.15</product_id>
+                </in_app_purchase> -->
+            </in_app_purchases>
+
+
+        </software_metadata>
+    </software>
+</package>

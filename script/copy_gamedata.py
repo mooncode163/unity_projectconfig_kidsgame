@@ -85,11 +85,11 @@ if  __name__ =="__main__":
     # shutil.copytree(dir1,dir2)
 
    # android asset
-    # dir2 = rootAndroidStudio+"/src/main/assets/"+dirname
-    # flag = os.path.exists(dir2)
-    # if flag:
-    #     shutil.rmtree(dir2)
-    # shutil.copytree(dir1,dir2)
+    dir2 = rootAndroidStudio+"/src/main/assets/"+dirname
+    flag = os.path.exists(dir2)
+    if flag:
+        shutil.rmtree(dir2)
+    shutil.copytree(dir1,dir2)
 
 
  # copy GameData 游戏配置等数据 
@@ -111,11 +111,11 @@ if  __name__ =="__main__":
     # shutil.copytree(dir1,dir2)
 
    # android asset
-    # dir2 = rootAndroidStudio+"/src/main/assets/"+dirname
-    # flag = os.path.exists(dir2)
-    # if flag:
-    #     shutil.rmtree(dir2)
-    # shutil.copytree(dir1,dir2)
+    dir2 = rootAndroidStudio+"/src/main/assets/"+dirname
+    flag = os.path.exists(dir2)
+    if flag:
+        shutil.rmtree(dir2)
+    shutil.copytree(dir1,dir2)
 
 
     dirname = "GameData/common"
@@ -136,11 +136,11 @@ if  __name__ =="__main__":
     # shutil.copytree(dir1,dir2)
 
    # android asset
-    # dir2 = rootAndroidStudio+"/src/main/assets/"+dirname
-    # flag = os.path.exists(dir2)
-    # if flag:
-    #     shutil.rmtree(dir2)
-    # shutil.copytree(dir1,dir2)
+    dir2 = rootAndroidStudio+"/src/main/assets/"+dirname
+    flag = os.path.exists(dir2)
+    if flag:
+        shutil.rmtree(dir2)
+    shutil.copytree(dir1,dir2)
 
     CopyConfigDataToAndroid()
 

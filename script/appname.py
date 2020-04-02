@@ -33,9 +33,9 @@ def GetPackage(osSrc,isHD):
         ret = jsonData[key]
     else:      
         if osSrc == source.ANDROID:
-            ret = data["apppackage"][source.ANDROID]["default"] 
+            ret = jsonData["apppackage"][source.ANDROID]["default"] 
         if osSrc == source.IOS:
-            ret = data["apppackage"][source.IOS]["default"]
+            ret = jsonData["apppackage"][source.IOS]["default"]
 
     return ret
 

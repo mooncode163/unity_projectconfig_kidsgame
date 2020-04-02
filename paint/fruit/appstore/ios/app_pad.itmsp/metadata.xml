@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://apple.com/itunes/importer" version="software5.9">
+   <!--  <provider>YuanFang Chen</provider> -->
+    <team_id>Y9ZUK2WTEE</team_id>
+    <software>
+        <vendor_id>sku_paintanimal_pad</vendor_id>
+        <software_metadata>
+            <versions>
+                <version string="1.0.0">
+                    <locales>
+                        <locale name="en-US">
+                            <title>Baby Coloring Zoo HD</title>
+                            <subtitle>A Good PaintingTool</subtitle>
+                            <description>This is a children's interesting coloring software in the Pad.
+        As a starting point from the child's interest in drawing enlightenment, provide an interesting and practical color painting tools for the children, let them create their own wonderful paintings, give full play to the children's imagination and creativity, and color painting feel fun.
+        
+        
+        The features of our products:
+        Color with heart smear: easy operation, baby easy to hand.
+        Free painting: in the world of lines and colors, the sky and the sky, and all the imagination.
+        Save the paintings: keep the children's creative work.
+        Rich line draft: more than 100 beautiful animal pictures.
+        Custom color: directly select the color or direct input color RGB, so that the baby can choose any color.
+        Unique color sucker: it is convenient and quick to choose the desired color in the direct painting.
+        Automatic recognition of boundaries: let the children in the pattern painted not transcendence.
+    </description>
+                            <promotional_text>Coloring cultivate children's painting skills and creativity</promotional_text>
+                            <keywords>
+                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                            </keywords>
+                           <!--  <version_whats_new>Fixed a bug.</version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                             <software_screenshots> 
+<software_screenshot display_target="iOS-iPad-Pro" position="1"> <file_name>en_ipadpro_1.jpg</file_name> <size>253893</size> <checksum type="md5">97adbcbc6790e1b9bbd951ed6fbfe385</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="2"> <file_name>en_ipadpro_2.jpg</file_name> <size>260107</size> <checksum type="md5">4d1f8683fddd59c1e06e01ac9567f6f4</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="3"> <file_name>en_ipadpro_3.jpg</file_name> <size>223774</size> <checksum type="md5">e60b0c2c5d7f18ed73ded44519c17639</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="4"> <file_name>en_ipadpro_4.jpg</file_name> <size>233160</size> <checksum type="md5">7b545de5a869ad0d0444f9500cace59f</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="5"> <file_name>en_ipadpro_5.jpg</file_name> <size>200612</size> <checksum type="md5">95da0a9f891ea5d5e4672a721f0bf504</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="1"> <file_name>en_iphone_1.jpg</file_name> <size>160440</size> <checksum type="md5">4c80aeed08e6cc078d19e1c40a9224a3</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="2"> <file_name>en_iphone_2.jpg</file_name> <size>166221</size> <checksum type="md5">1c92e256bde63c259bbf00c6c97b48c9</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="3"> <file_name>en_iphone_3.jpg</file_name> <size>147005</size> <checksum type="md5">b09df9003d1f05246f52ada08ae48af1</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="4"> <file_name>en_iphone_4.jpg</file_name> <size>136144</size> <checksum type="md5">0223b0e16fdd254b084f3b8ec3faee61</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="5"> <file_name>en_iphone_5.jpg</file_name> <size>111364</size> <checksum type="md5">52aeb5d68ccf190b6cea749d98a2cd0a</checksum> </software_screenshot></software_screenshots>
+
+                        </locale>
+
+                         <locale name="zh-Hans">
+                            <title>宝宝涂色动物园HD</title>
+                            <subtitle>绘画好工具</subtitle>
+                            <description>这是一款平板上针对儿童的有趣的涂色绘画软件.
+        从孩子的绘画兴趣启蒙作为出发点，为孩子们提供一个有趣实用的涂色绘画工具，让他们创作出属于自己的美妙绝伦的绘画作品，充分发挥孩子们的想象力和创造力，感受绘画及色彩的乐趣。
+        我们产品的特点：
+        色彩随心涂：简易操作，宝宝轻松上手。
+        任意自由画 ：在线条和色彩的世界天马行空，尽情挥洒想象力。
+        保存绘画作品：保留孩子们的创作成果。
+        丰富的线稿：100多种精美的动物图片。
+        自定义颜色：直接点选颜色或者直接输入颜色RGB,让宝宝能够选择任何颜色。
+        独特颜色吸管：直接再画作中选取想要的颜色，方便又快捷。
+        自动识别边界：让孩子们在图案上涂色不会超出界。
+    </description>
+                            <promotional_text>涂色培养孩子的绘画技能和创造力</promotional_text>
+                            <keywords>
+                               <keyword>阳阳爱写字魔力小孩过年宝宝学写字中华恐龙园汉字与书法海绵宝宝做汉堡朵拉历险记学做饭宝宝爱洗澡三字经读写版宝宝书孕育跟我学写汉字蓝猫学拼音小嘀削削serato自由诵读经典儿歌巴巴熊巴巴宝贝熊孩子钢笔书法</keyword> 
+                            </keywords>
+                           <!--  <version_whats_new>Fixed a bug.</version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots> 
+<software_screenshot display_target="iOS-iPad-Pro" position="1"> <file_name>cn_ipadpro_1.jpg</file_name> <size>260729</size> <checksum type="md5">c01d9af257937ca8b4e80bc29cb481f0</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="2"> <file_name>cn_ipadpro_2.jpg</file_name> <size>260107</size> <checksum type="md5">4d1f8683fddd59c1e06e01ac9567f6f4</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="3"> <file_name>cn_ipadpro_3.jpg</file_name> <size>227283</size> <checksum type="md5">db66e176132977c2029ecc87bf57294f</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="4"> <file_name>cn_ipadpro_4.jpg</file_name> <size>224117</size> <checksum type="md5">39cd01be7c0a29398c096540ed4d5518</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="5"> <file_name>cn_ipadpro_5.jpg</file_name> <size>199945</size> <checksum type="md5">ace801089c195b8b0317ea3db84805ba</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="1"> <file_name>cn_iphone_1.jpg</file_name> <size>165177</size> <checksum type="md5">c0f9f4715e9f850cc7c4f626a8b81054</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="2"> <file_name>cn_iphone_2.jpg</file_name> <size>166221</size> <checksum type="md5">1c92e256bde63c259bbf00c6c97b48c9</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="3"> <file_name>cn_iphone_3.jpg</file_name> <size>149958</size> <checksum type="md5">2d1c513d2bdd2bdf065c337e1f9582fe</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="4"> <file_name>cn_iphone_4.jpg</file_name> <size>133103</size> <checksum type="md5">ee5c3252482ad62b42f8bedf66e98d38</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="5"> <file_name>cn_iphone_5.jpg</file_name> <size>110871</size> <checksum type="md5">7487f8bdcab1eda55a088e5e6e6bcc8c</checksum> </software_screenshot></software_screenshots>
+
+                            
+                        </locale>
+
+                         <locale name="en-CA">
+                            <title>Baby Coloring Zoo HD</title>
+                            <subtitle>A Good PaintingTool</subtitle>
+                            <description>This is a children's interesting coloring software in the Pad.
+        As a starting point from the child's interest in drawing enlightenment, provide an interesting and practical color painting tools for the children, let them create their own wonderful paintings, give full play to the children's imagination and creativity, and color painting feel fun.
+        
+        
+        The features of our products:
+        Color with heart smear: easy operation, baby easy to hand.
+        Free painting: in the world of lines and colors, the sky and the sky, and all the imagination.
+        Save the paintings: keep the children's creative work.
+        Rich line draft: more than 100 beautiful animal pictures.
+        Custom color: directly select the color or direct input color RGB, so that the baby can choose any color.
+        Unique color sucker: it is convenient and quick to choose the desired color in the direct painting.
+        Automatic recognition of boundaries: let the children in the pattern painted not transcendence.
+    </description>
+                            <promotional_text>Coloring cultivate children's painting skills and creativity</promotional_text>
+                            <keywords>
+                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                            </keywords>
+                           <!--  <version_whats_new>Fixed a bug.</version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots>
+                                
+                            </software_screenshots>
+
+                            
+                        </locale>
+
+                         <locale name="en-AU">
+                            <title>Baby Coloring Zoo HD</title>
+                            <subtitle>A Good PaintingTool</subtitle>
+                            <description>This is a children's interesting coloring software in the Pad.
+        As a starting point from the child's interest in drawing enlightenment, provide an interesting and practical color painting tools for the children, let them create their own wonderful paintings, give full play to the children's imagination and creativity, and color painting feel fun.
+        
+        
+        The features of our products:
+        Color with heart smear: easy operation, baby easy to hand.
+        Free painting: in the world of lines and colors, the sky and the sky, and all the imagination.
+        Save the paintings: keep the children's creative work.
+        Rich line draft: more than 100 beautiful animal pictures.
+        Custom color: directly select the color or direct input color RGB, so that the baby can choose any color.
+        Unique color sucker: it is convenient and quick to choose the desired color in the direct painting.
+        Automatic recognition of boundaries: let the children in the pattern painted not transcendence.
+    </description>
+                            <promotional_text>Coloring cultivate children's painting skills and creativity</promotional_text>
+                            <keywords>
+                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                            </keywords>
+                           <!--  <version_whats_new>Fixed a bug.</version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots>
+                                
+                            </software_screenshots>
+
+                            
+                        </locale>
+
+                         <locale name="en-GB">
+                            <title>Baby Coloring Zoo HD</title>
+                            <subtitle>A Good PaintingTool</subtitle>
+                            <description>This is a children's interesting coloring software in the Pad.
+        As a starting point from the child's interest in drawing enlightenment, provide an interesting and practical color painting tools for the children, let them create their own wonderful paintings, give full play to the children's imagination and creativity, and color painting feel fun.
+        
+        
+        The features of our products:
+        Color with heart smear: easy operation, baby easy to hand.
+        Free painting: in the world of lines and colors, the sky and the sky, and all the imagination.
+        Save the paintings: keep the children's creative work.
+        Rich line draft: more than 100 beautiful animal pictures.
+        Custom color: directly select the color or direct input color RGB, so that the baby can choose any color.
+        Unique color sucker: it is convenient and quick to choose the desired color in the direct painting.
+        Automatic recognition of boundaries: let the children in the pattern painted not transcendence.
+    </description>
+                            <promotional_text>Coloring cultivate children's painting skills and creativity</promotional_text>
+                            <keywords>
+                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                            </keywords>
+                           <!--  <version_whats_new>Fixed a bug.</version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots>
+                                
+                            </software_screenshots>
+
+                            
+                        </locale>
+                        
+                    </locales>
+                </version>
+            </versions>
+            <products>
+                <product>
+                    <territory>WW</territory>
+                    <sales_start_date>2010-05-25</sales_start_date>
+                    <cleared_for_sale>true</cleared_for_sale>
+                    <wholesale_price_tier>0</wholesale_price_tier>
+                    <allow_volume_discount>false</allow_volume_discount>
+                </product>
+                <product>
+                    <territory>RU</territory>
+                    <cleared_for_sale>true</cleared_for_sale>
+                </product>
+            </products>
+          
+          
+
+           <in_app_purchases>
+                <in_app_purchase>
+                    <product_id>com.moonma.paintanimal.pad.noad</product_id>
+                    <reference_name>noad</reference_name>
+                    <type>non-consumable</type>
+                    <products>
+                        <product>
+                            <cleared_for_sale>true</cleared_for_sale>
+                            <wholesale_price_tier>2</wholesale_price_tier>
+                        </product>
+                    </products>
+                    <locales>
+                        <locale name="en-US">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+
+                        <locale name="zh-Hans">
+                            <title>去除广告</title>
+                            <description>该产品可以去除应用内的所有广告</description>
+                        </locale>
+                        <locale name="en-CA">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+                        <locale name="en-AU">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+                        <locale name="en-GB">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+
+                        
+                    </locales>
+                    <review_screenshot>
+                        <file_name>in_app_purchases_screenshot.png</file_name>
+                        <size>96482</size>
+                        <checksum type="md5">dc4f197705c3983c730d236f54de2950</checksum>
+                    </review_screenshot>
+                    <!-- <review_notes></review_notes> -->
+                </in_app_purchase>
+               <!--  <in_app_purchase remove="true">
+                    <product_id>obsolete_com.cyberinteractive.tf.missiles.15</product_id>
+                </in_app_purchase> -->
+            </in_app_purchases>
+
+
+        </software_metadata>
+    </software>
+</package>

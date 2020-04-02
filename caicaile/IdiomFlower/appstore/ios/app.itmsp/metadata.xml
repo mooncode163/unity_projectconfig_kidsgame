@@ -6,7 +6,7 @@
         <vendor_id>idiomflower</vendor_id>
         <software_metadata>
             <versions>
-                <version string="1.0.7">
+                <version string="1.0.0">
                     <locales>
                         <locale name="en-US">
                             <title>Chinese Idiom Flower</title>
@@ -17,17 +17,27 @@
                             <keywords>
                                <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
                             </keywords>
-                            <version_whats_new>Fix a Bug</version_whats_new>
+                            <!-- <version_whats_new></version_whats_new> -->
                             <software_url>http://www.mooncore.cn</software_url>
-                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <privacy_url>https://6c69-lianlianle-shkb3-1259451541.tcb.qcloud.la/PrivacyPolicy.txt</privacy_url>
                             <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
 
-                            <software_screenshots> </software_screenshots>
+                            <software_screenshots> 
+<software_screenshot display_target="iOS-5.5-in" position="1"> <file_name>en_iphone_1.jpg</file_name> <size>180812</size> <checksum type="md5">a16eb12b5bb5b4607572187801238ee7</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="2"> <file_name>en_iphone_2.jpg</file_name> <size>163096</size> <checksum type="md5">b86fd09c465093231f0402d06fd9705e</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="3"> <file_name>en_iphone_3.jpg</file_name> <size>165501</size> <checksum type="md5">37921b3f4f84fc365f6419e015abab1e</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="4"> <file_name>en_iphone_4.jpg</file_name> <size>152061</size> <checksum type="md5">eea252bfe988a1b3b180fb2adbbd11dc</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="5"> <file_name>en_iphone_5.jpg</file_name> <size>139773</size> <checksum type="md5">6be3e2336493d066606876a4d76da31e</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="1"> <file_name>en_ipadpro_1.jpg</file_name> <size>289943</size> <checksum type="md5">291ef528ab311c3fc94054cca5b975c7</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="2"> <file_name>en_ipadpro_2.jpg</file_name> <size>262576</size> <checksum type="md5">f9977f043ea7118b39a28c4b376c4980</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="3"> <file_name>en_ipadpro_3.jpg</file_name> <size>273706</size> <checksum type="md5">0c69e31d157ae4c533499570a0ad3b2e</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="4"> <file_name>en_ipadpro_4.jpg</file_name> <size>269595</size> <checksum type="md5">3cf5f2cbd5d9a2c30e7483840b7bdaed</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="5"> <file_name>en_ipadpro_5.jpg</file_name> <size>224291</size> <checksum type="md5">2ce16b932a576a63d6dd340d70cc4ef0</checksum> </software_screenshot></software_screenshots>
 
                         </locale>
 
                          <locale name="zh-Hans">
-                            <title>成语大飞花</title>
+                            <title>成语飞花令</title>
                             <subtitle>成语飞花令</subtitle>
                             <description>飞花令，原本是古人行酒令时的一个文字游戏，源自古人的诗词之趣，得名于唐代诗人韩翃《寒食》中的名句“春城无处不飞花”。该游戏将千千万中华成语融入飞花令，寓教于乐，老少皆宜。同时可以学习成语解释、出处、例句等相关知识。快来试试你的成语功底吧。
  </description>
@@ -35,12 +45,22 @@
                             <keywords>
                                <keyword>连连乐,儿童游戏,游乐园,拼图,儿童,早教,儿歌,小孩,乐看动画,奇艺动画,猜图,沙滩乐多纳学英语儿歌多多迷宫小镇汉字王国小牙医美食节熊猫博士小镇画彩蛋悟空识字恐龙救援车马儿的神奇大冒险小企鹅乐园魔力</keyword> 
                             </keywords>
-                            <version_whats_new>修复闪退</version_whats_new>
+                            <!-- <version_whats_new></version_whats_new> -->
                             <software_url>http://www.mooncore.cn</software_url>
-                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <privacy_url>https://6c69-lianlianle-shkb3-1259451541.tcb.qcloud.la/PrivacyPolicy.txt</privacy_url>
                             <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
 
-                            <software_screenshots> </software_screenshots>
+                            <software_screenshots> 
+<software_screenshot display_target="iOS-5.5-in" position="1"> <file_name>cn_iphone_1.jpg</file_name> <size>181678</size> <checksum type="md5">a25e2f62748a4049bc6f33fa8136cec8</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="2"> <file_name>cn_iphone_2.jpg</file_name> <size>163640</size> <checksum type="md5">f09ff9270d7c796257c6b76b06ca7860</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="3"> <file_name>cn_iphone_3.jpg</file_name> <size>166155</size> <checksum type="md5">fa0369743108e51c009830214522d92d</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="4"> <file_name>cn_iphone_4.jpg</file_name> <size>153378</size> <checksum type="md5">fec0285f6ab330f5addf246cafdb0af4</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="5"> <file_name>cn_iphone_5.jpg</file_name> <size>137577</size> <checksum type="md5">3be9262c5bea9a4910f83e0e754cece3</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="1"> <file_name>cn_ipadpro_1.jpg</file_name> <size>281224</size> <checksum type="md5">1aa48d4bf51aad0077ce0fd385369804</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="2"> <file_name>cn_ipadpro_2.jpg</file_name> <size>270868</size> <checksum type="md5">7bc1c018340e88c3c5c8bd36d9246ed2</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="3"> <file_name>cn_ipadpro_3.jpg</file_name> <size>292959</size> <checksum type="md5">a295d9be883790a425a178d8cec48d0b</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="4"> <file_name>cn_ipadpro_4.jpg</file_name> <size>269467</size> <checksum type="md5">3666cb883dc8ea4c426134307ebb0b67</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="5"> <file_name>cn_ipadpro_5.jpg</file_name> <size>221441</size> <checksum type="md5">9802083f38d521118ba708db1065535d</checksum> </software_screenshot></software_screenshots>
 
                             
                         </locale>
@@ -54,9 +74,9 @@
                             <keywords>
                                <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
                             </keywords>
-                           <version_whats_new>Fix a Bug</version_whats_new>
+                           <!-- <version_whats_new></version_whats_new> -->
                             <software_url>http://www.mooncore.cn</software_url>
-                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <privacy_url>https://6c69-lianlianle-shkb3-1259451541.tcb.qcloud.la/PrivacyPolicy.txt</privacy_url>
                             <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
 
                             <software_screenshots></software_screenshots>
@@ -73,9 +93,9 @@
                             <keywords>
                                <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
                             </keywords>
-                            <version_whats_new>Fix a Bug</version_whats_new>
+                            <!-- <version_whats_new></version_whats_new> -->
                             <software_url>http://www.mooncore.cn</software_url>
-                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <privacy_url>https://6c69-lianlianle-shkb3-1259451541.tcb.qcloud.la/PrivacyPolicy.txt</privacy_url>
                             <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
 
                             <software_screenshots></software_screenshots>
@@ -92,9 +112,9 @@
                             <keywords>
                                <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
                             </keywords>
-                            <version_whats_new>Fix a Bug</version_whats_new>
+                            <!-- <version_whats_new></version_whats_new> -->
                             <software_url>http://www.mooncore.cn</software_url>
-                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <privacy_url>https://6c69-lianlianle-shkb3-1259451541.tcb.qcloud.la/PrivacyPolicy.txt</privacy_url>
                             <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
 
                             <software_screenshots></software_screenshots>

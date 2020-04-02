@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://apple.com/itunes/importer" version="software5.9">
+   <!--  <provider>YuanFang Chen</provider> -->
+    <team_id>Y9ZUK2WTEE</team_id>
+    <software>
+        <vendor_id>mooncore_tvhd</vendor_id>
+        <software_metadata>
+            <versions>
+                <version string="1.7.6">
+                    <locales>
+                        <locale name="en-US">
+                            <title>Baby Match HD</title>
+                            <subtitle>Understanding early education</subtitle>
+                            <description>This is a children's early childhood learning game in the Pad, which can effectively promote children's cognition of color and shape, and inspire children's imagination and creativity. Let parents play the game with their children, giving guidance and education during the game. Gameplay: drag the upper and lower items match correctly, that is, victory. Provide rich checkpoints, living rooms, kitchens, shops, schools, zoos, etc., so that your children can learn in different scenes.
+    </description>
+                            <promotional_text>Learn things quickly through the connection of items</promotional_text>
+                            <keywords>
+                               <keyword>宠物,洗澡,玩,的,音乐,星火,理财,加,减,乘除,3d,画画,教学,剪,头发,麦田,识字,乐高,忍者,画板,涂鸦,跳跃,保利,教育,教师,版,美,美发,助手,合,图,写,做,东西,熊猫,出行,汉子画面</keyword> 
+                            </keywords>
+                            <version_whats_new>Fix a Bug</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                        </locale>
+
+                         <locale name="zh-Hans">
+                            <title>宝宝连连乐HD</title>
+                            <subtitle>连图认知早教</subtitle>
+                            <description>这是平板上一款儿童早教学习游戏，可以有效促进儿童对颜色，形状的认知，启发儿童的想象力和创造力。让爸妈陪同孩子一起玩该游戏，在游戏过程中给与指导与教育。 游戏玩法：拖动上下方物品匹配正确即胜利。提供丰富的关卡，客厅、厨房、商店、学校、动物园等，让您的孩子在不同场景中进行不停的学习！
+    </description>
+                            <promotional_text>通过物品的连线快速学习事物</promotional_text>
+                            <keywords>
+                               <keyword>儿童拖乐,6岁宝宝打地鼠游戏,todo,math,中华美食,小伴龙,加减法,认知大全,学数字,掌声110,幼儿教师资格证,家园,10,加减乘除,麦田识字卡片,掌上,小学数学训练,小孩玩的,爱学习,三</keyword> 
+                            </keywords>
+                            <version_whats_new>修复闪退</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                            
+                        </locale>
+
+                         <locale name="en-CA">
+                            <title>Baby Match HD</title>
+                            <subtitle>Understanding early education</subtitle>
+                            <description>This is a children's early childhood learning game in the Pad, which can effectively promote children's cognition of color and shape, and inspire children's imagination and creativity. Let parents play the game with their children, giving guidance and education during the game. Gameplay: drag the upper and lower items match correctly, that is, victory. Provide rich checkpoints, living rooms, kitchens, shops, schools, zoos, etc., so that your children can learn in different scenes.
+    </description>
+                            <promotional_text>Learn things quickly through the connection of items</promotional_text>
+                            <keywords>
+                               <keyword>宠物,洗澡,玩,的,音乐,星火,理财,加,减,乘除,3d,画画,教学,剪,头发,麦田,识字,乐高,忍者,画板,涂鸦,跳跃,保利,教育,教师,版,美,美发,助手,合,图,写,做,东西,熊猫,出行,汉子画面</keyword> 
+                            </keywords>
+                           <version_whats_new>Fix a Bug</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                            
+                        </locale>
+
+                         <locale name="en-AU">
+                            <title>Baby Match HD</title>
+                            <subtitle>Understanding early education</subtitle>
+                            <description>This is a children's early childhood learning game in the Pad, which can effectively promote children's cognition of color and shape, and inspire children's imagination and creativity. Let parents play the game with their children, giving guidance and education during the game. Gameplay: drag the upper and lower items match correctly, that is, victory. Provide rich checkpoints, living rooms, kitchens, shops, schools, zoos, etc., so that your children can learn in different scenes.
+    </description>
+                            <promotional_text>Learn things quickly through the connection of items</promotional_text>
+                            <keywords>
+                               <keyword>宠物,洗澡,玩,的,音乐,星火,理财,加,减,乘除,3d,画画,教学,剪,头发,麦田,识字,乐高,忍者,画板,涂鸦,跳跃,保利,教育,教师,版,美,美发,助手,合,图,写,做,东西,熊猫,出行,汉子画面</keyword> 
+                            </keywords>
+                            <version_whats_new>Fix a Bug</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                            
+                        </locale>
+
+                         <locale name="en-GB">
+                            <title>Baby Match HD</title>
+                            <subtitle>Understanding early education</subtitle>
+                            <description>This is a children's early childhood learning game in the Pad, which can effectively promote children's cognition of color and shape, and inspire children's imagination and creativity. Let parents play the game with their children, giving guidance and education during the game. Gameplay: drag the upper and lower items match correctly, that is, victory. Provide rich checkpoints, living rooms, kitchens, shops, schools, zoos, etc., so that your children can learn in different scenes.
+    </description>
+                            <promotional_text>Learn things quickly through the connection of items</promotional_text>
+                            <keywords>
+                               <keyword>宠物,洗澡,玩,的,音乐,星火,理财,加,减,乘除,3d,画画,教学,剪,头发,麦田,识字,乐高,忍者,画板,涂鸦,跳跃,保利,教育,教师,版,美,美发,助手,合,图,写,做,东西,熊猫,出行,汉子画面</keyword> 
+                            </keywords>
+                            <version_whats_new>Fix a Bug</version_whats_new>
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <!-- <software_screenshots></software_screenshots> -->
+
+                            
+                        </locale>
+                        
+                    </locales>
+                </version>
+            </versions>
+            <products>
+                <product>
+                    <territory>WW</territory>
+                    <sales_start_date>2010-05-25</sales_start_date>
+                    <cleared_for_sale>true</cleared_for_sale>
+                    <wholesale_price_tier>0</wholesale_price_tier>
+                    <allow_volume_discount>false</allow_volume_discount>
+                </product>
+                <product>
+                    <territory>RU</territory>
+                    <cleared_for_sale>true</cleared_for_sale>
+                </product>
+            </products>
+          
+          
+
+           <in_app_purchases>
+                <in_app_purchase>
+                    <product_id>com.mooncore.tv.ipad.noad</product_id>
+                    <reference_name>noad</reference_name>
+                    <type>non-consumable</type>
+                    <products>
+                        <product>
+                            <cleared_for_sale>true</cleared_for_sale>
+                            <wholesale_price_tier>3</wholesale_price_tier>
+                        </product>
+                    </products>
+                    <locales>
+                        <locale name="en-US">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+
+                        <locale name="zh-Hans">
+                            <title>去除广告</title>
+                            <description>该产品可以去除应用内的所有广告</description>
+                        </locale>
+                        <locale name="en-CA">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+                        <locale name="en-AU">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+                        <locale name="en-GB">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+
+                        
+                    </locales>
+                    <review_screenshot>
+                        <file_name>in_app_purchases_screenshot.png</file_name>
+                        <size>96482</size>
+                        <checksum type="md5">dc4f197705c3983c730d236f54de2950</checksum>
+                    </review_screenshot>
+                    <!-- <review_notes></review_notes> -->
+                </in_app_purchase>
+               <!--  <in_app_purchase remove="true">
+                    <product_id>obsolete_com.cyberinteractive.tf.missiles.15</product_id>
+                </in_app_purchase> -->
+            </in_app_purchases>
+
+
+        </software_metadata>
+    </software>
+</package>

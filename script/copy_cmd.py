@@ -40,6 +40,11 @@ def copyCmdDir(name):
     # shutil.copytree(dir1,dir2)
     common.coverFiles(dir1,dir2)
 
+def copyAllBuildDir():
+    dir1 = common.GetProjectConfigDefault()+"/all_build"
+    dir2 = common.GetProjectConfigAppType() 
+    flag = os.path.exists(dir2)
+    common.coverFiles(dir1,dir2)
 
 #主函数的实现
 if  __name__ =="__main__":
@@ -66,5 +71,6 @@ if  __name__ =="__main__":
 
     copyCmdDir("cmd_win")
     copyCmdDir("cmd_mac")
+    copyAllBuildDir()
 
     print "copy_cmd sucess"
