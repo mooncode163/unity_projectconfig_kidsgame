@@ -4,4 +4,4 @@
 filepath=$(cd "$(dirname "$0")"; pwd)
 echo $filepath
 cd $filepath
-python git_update.py
+python git_upload.py

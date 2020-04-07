@@ -56,7 +56,7 @@ def ExportIPA(ipafile):
 
 def BuildIPA(ipafile):
     CopyExportOptionsPlist()
-
+    ChmodSh()
     # curDir = "/Users/moon/Library/MobileDevice/Provisioning Profiles"
     curDir = "/Users/moon/Library/MobileDevice/Provisioning Profiles"
     DeleteProvisioningProfiles(curDir)  
@@ -136,6 +136,17 @@ def ZipProject():
     # 压缩目录
     ziputils.zipDir(dirproject,file_zip)
 
+
+def ChmodSh(): 
+    project = common.GetRootDirXcodeUser() 
+    # MapFileParser.sh: Permission denied
+    # https://www.cnblogs.com/jukaiit/p/6860871.html
+    # chmod a+x /Users/imac-1/Desktop/iosbuild-1/MapFileParser.sh
+    file_sh = project+ "/MapFileParser.sh"
+    print("file_sh ="+file_sh)
+    if os.path.exists(file_sh):
+        os.system("chmod a+x "+file_sh)
+
 def UnZipProject():
     diroutput = common.GetRootProjectIosUser()
     project = common.GetRootDirXcodeUser()
@@ -148,12 +159,8 @@ def UnZipProject():
         #解压
         ziputils.un_zip(file_zip,diroutput)
 
-        # MapFileParser.sh: Permission denied
-        # https://www.cnblogs.com/jukaiit/p/6860871.html
-        # chmod a+x /Users/imac-1/Desktop/iosbuild-1/MapFileParser.sh
-        file_sh = project+ "/MapFileParser.sh"
-        if os.path.exists(file_sh):
-            os.system("chmod a+x "+file_sh)
+    ChmodSh()
+
 
 
 def IsXcode10():
@@ -165,6 +172,8 @@ def IsXcode10():
 
 # xcode 证书 清空
 def DeleteProvisioningProfiles(sourceDir):
+    if not os.path.exists(sourceDir): 
+        return
     for file in os.listdir(sourceDir):
         sourceFile = os.path.join(sourceDir,  file)
             #cover the files

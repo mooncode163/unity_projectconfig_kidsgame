@@ -16,6 +16,10 @@ def cur_file_dir():
          return os.path.dirname(path)
  
 def deleteFiles(sourceDir):
+    
+    if not os.path.exists(sourceDir): 
+        return
+
     for file in os.listdir(sourceDir):
         sourceFile = os.path.join(sourceDir,  file)
             #cover the files
