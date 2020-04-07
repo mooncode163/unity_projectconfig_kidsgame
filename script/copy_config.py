@@ -177,7 +177,7 @@ if  __name__ =="__main__":
     print("info.plist file2= "+file2)
     common.copyOneFile(file1,file2) 
 
-
+   
     # win res 
     dir1 = iconRoot+"/"+iconDirName+"/microsoft"
     dir2 = common.GetRootProjectWin()+"/"+common.GetProjectName()+"/Assets"
