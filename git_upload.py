@@ -12,7 +12,7 @@ import socket
  
 
 def upload():
-    # os.system("git stash")
+    os.system("git config --global user.name \"chyfemail163@163.com\"")
     os.system("git add .")
     os.system("git commit -m \"ui\"")
     # os.system("git commit")  
