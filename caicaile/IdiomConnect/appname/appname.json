@@ -1,20 +1,20 @@
 {
     "APP_NAME_CN_ANDROID": "成语大状元",
     "APP_NAME_EN_ANDROID": "Idiom Master",
-    "APP_NAME_CN_IOS": "成语大状元",
+    "APP_NAME_CN_IOS": "成语大状元2",
     "APP_NAME_EN_IOS": "Idiom Master",
     "PACKAGE_ANDROID": "com.moonma.idiommaster",
     "PACKAGE_IOS": "com.moonma.idiommaster",
     "APPVERSION_ANDROID": "1.0.5",
     "APPVERSION_CODE_ANDROID": "105",
-    "APPVERSION_IOS": "1.0.5",
+    "APPVERSION_IOS": "1.0.0",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "全新设计，适配最新设备",
         "en": "New design, suitable for the latest equipment"
     },
     "APPSTORE_TITLE": {
-        "cn": "成语大状元",
+        "cn": "成语大状元2",
         "en": "Idiom Master"
     },
     "APPSTORE_SUBTITLE": {

@@ -39,11 +39,16 @@ if __name__ == "__main__":
 
     common.SetCmdPath(cmdPath)
     # 0f6 2f1
-    UNITYPATH="E:/Unity/"+source.UNITY_VERSION+"/Editor/Unity.exe"
-    if not os.path.exists(UNITYPATH):
-        # 阿里云添加环境变量 C:\Program Files\Unity\Hub\Editor\2019.3.2f1\Editor
-        # UNITYPATH="C:/Program Files/Unity/Hub/Editor/"+source.UNITY_VERSION+"/Editor/Unity.exe"
-        UNITYPATH= "Unity.exe"
+    UNITYPATH=""
+    if common.isWindowsSystem():
+        UNITYPATH="E:/Unity/"+source.UNITY_VERSION+"/Editor/Unity.exe"
+        if not os.path.exists(UNITYPATH):
+            # 阿里云添加环境变量 C:\Program Files\Unity\Hub\Editor\2019.3.2f1\Editor
+            # UNITYPATH="C:/Program Files/Unity/Hub/Editor/"+source.UNITY_VERSION+"/Editor/Unity.exe"
+            UNITYPATH= "Unity.exe"
+    else:
+        UNITYPATH="/Applications/Unity/Hub/Editor/2019.3.4f1/Unity.app/Contents/MacOS/Unity" 
+
     
     PROJECT_PATH= common.GetRootProjectUnity()
 

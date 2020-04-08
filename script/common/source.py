@@ -38,5 +38,5 @@ MOBVISTA = "mobvista"
 APPSTORE_USER = "chyfemail163@163.com"
 APPSTORE_PASSWORD = "uyok-ghdh-wzvc-vrcf"
 
-# Unity
-UNITY_VERSION = "2019.3.2f1"
+# Unity 3.2f1
+UNITY_VERSION = "2019.3.4f1"

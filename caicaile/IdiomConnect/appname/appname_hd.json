@@ -7,7 +7,7 @@
     "PACKAGE_IOS": "com.moonma.idiommaster.pad",
     "APPVERSION_ANDROID": "1.0.5",
     "APPVERSION_CODE_ANDROID": "105",
-    "APPVERSION_IOS": "1.0.5",
+    "APPVERSION_IOS": "1.0.0",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "全新设计，适配最新设备",
