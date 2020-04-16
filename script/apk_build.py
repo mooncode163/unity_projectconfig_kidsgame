@@ -33,7 +33,13 @@ def buildApk():
  
         os.system(dir2+"/bin/gradle assembleRelease")
     else:
-        os.system("gradle assembleRelease")
+        dir2 = "/Users/moon/sourcecode/gradle/gradle-4.10.1/bin"
+        flag = os.path.exists(dir2) 
+        if flag:
+            # os.system("chmod 777 "+dir2+"/gradle")
+            os.system(dir2+"/gradle assembleRelease")
+        else:
+            os.system("gradle assembleRelease")
    
 
 

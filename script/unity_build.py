@@ -47,7 +47,8 @@ if __name__ == "__main__":
             # UNITYPATH="C:/Program Files/Unity/Hub/Editor/"+source.UNITY_VERSION+"/Editor/Unity.exe"
             UNITYPATH= "Unity.exe"
     else:
-        UNITYPATH="/Applications/Unity/Hub/Editor/2019.3.4f1/Unity.app/Contents/MacOS/Unity" 
+        UNITYPATH="/Applications/Unity/Hub/Editor/"+source.UNITY_VERSION+"/Unity.app/Contents/MacOS/Unity" 
+
 
     
     PROJECT_PATH= common.GetRootProjectUnity()

@@ -3,111 +3,129 @@
    <!--  <provider>YuanFang Chen</provider> -->
     <team_id>Y9ZUK2WTEE</team_id>
     <software>
-        <vendor_id>moonma_mathmaster</vendor_id>
+        <vendor_id>idiommaster</vendor_id>
         <software_metadata>
             <versions>
-                <version string="1.7.3">
+                <version string="1.0.0">
                     <locales>
                         <locale name="en-US">
-                            <title>Math Zero</title>
-                            <subtitle>Good Math Game</subtitle>
-                            <description>If you think your math is very good, then to challenge the math master it, the method is very simple: through the appropriate mathematical equation, the result is equal to zero, and let the grid of all the squares disappeared that victory. 
- Began as a simple exercise, behind the numbers and operations will be more and more, more and more complex, if you want to become the true masters of mathematics, in addition to find the correct operation equation, also need to choose the correct order of operations! As long as one step is wrong, you are likely to get stuck in this case, you can use the left corner of the "re" button to start again to try the new correct computing equation and order. 
- You are not able to become a real master of mathematics? You come to a challenge to know, small partners to quickly download it! I wish you success!
-    </description>
-                            <promotional_text>The most burned brain math elimination game in the history</promotional_text>
+                            <title>Idiom Master</title>
+                            <subtitle>Idiom filling in words</subtitle>
+                            <description>This is a recreational and intellectual software for filling in idioms and breaking through customs. It tests your idiom reserve step by step from simplicity to complexity. Playing while learning, teaching while enjoying, can not only cheer the mood, but also train the thinking, enhance the personal connotation of self-cultivation.
+Whatever your age and occupation, it suits you.
+There are thousands of Chinese idioms. It seems very simple, but sometimes you can't guess if you scratch your scalp. If you don't agree, just guess!</description>
+                            <promotional_text>Learning Millions of Chinese Idioms</promotional_text>
                             <keywords>
                                <keyword>记,步,经传,贪吃蛇,2048,数字,少年宫,海马,游戏,大全,火箭,vpn,翻,墙,小说,写作,猫,拍,题,神器,s,换机,卫士</keyword> 
                             </keywords>
-                            <version_whats_new>New design, suitable for the latest equipment</version_whats_new>
+                            <!-- <version_whats_new></version_whats_new> -->
                             <software_url>http://www.mooncore.cn</software_url>
-                            <privacy_url></privacy_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
                             <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
 
-                            <!-- <software_screenshots></software_screenshots> -->
+                            <software_screenshots> 
+<software_screenshot display_target="iOS-5.5-in" position="1"> <file_name>en_iphone_1.jpg</file_name> <size>173523</size> <checksum type="md5">876b53fae12087e7d49ee25d2601092f</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="2"> <file_name>en_iphone_2.jpg</file_name> <size>177596</size> <checksum type="md5">71d37cd9248109af0b287c195bc0faa3</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="3"> <file_name>en_iphone_3.jpg</file_name> <size>223114</size> <checksum type="md5">8c7f1b89c596d032af9db667468c699a</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="4"> <file_name>en_iphone_4.jpg</file_name> <size>171613</size> <checksum type="md5">809d98c9f3a620b8ef0c88c1f1c10516</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="5"> <file_name>en_iphone_5.jpg</file_name> <size>181590</size> <checksum type="md5">55ea2a2a94ab7e74727f6c08f04b0fc7</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="1"> <file_name>en_ipadpro_1.jpg</file_name> <size>225433</size> <checksum type="md5">48e47c5c1eb7b2492ed92c72a5828b2e</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="2"> <file_name>en_ipadpro_2.jpg</file_name> <size>230466</size> <checksum type="md5">f76f2112dc008729f62039202af061a7</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="3"> <file_name>en_ipadpro_3.jpg</file_name> <size>438575</size> <checksum type="md5">6fe59e6bd65cc6f6e8be1785f16cac91</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="4"> <file_name>en_ipadpro_4.jpg</file_name> <size>279082</size> <checksum type="md5">d919bd6d5b32a1f27accff51e6d7a2ef</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="5"> <file_name>en_ipadpro_5.jpg</file_name> <size>234131</size> <checksum type="md5">12a0637f7da76ca1e9a739261f9a4f75</checksum> </software_screenshot></software_screenshots>
 
                         </locale>
 
                          <locale name="zh-Hans">
-                            <title>数学零点</title>
-                            <subtitle>好玩的数学游戏</subtitle>
-                            <description>如果你的数学很棒的话，那就来挑战一下数学大师吧，方法很简单：通过合适的数学等式运算，结果等于零，并让网格里的所有方格消失即胜利。
-一开始是简单的练习，后面的数字和运算会越来越多，越来越复杂，如果你想成为真正的数学大师，除了要找到正确的运算等式，还需要选择正确的运算顺序！只要其中一步错了，你都有可能卡住，在这种情况下你可以使用左下角的“重来”按钮重新开始以尝试新的正确的运算等式和顺序。
-你是不是能成为真正的数学大师？你来挑战了才知道，小伙伴们赶快来下载吧！祝你成功
+                            <title>成语大状元2</title>
+                            <subtitle>成语填词闯关</subtitle>
+                            <description> 
+    这是一个成语填词闯关类的休闲益智软件，从简单到复杂，一步步考验你的成语储备。边玩边学，寓教于乐，既可以愉悦心情，又可以训练思维，提升个人内涵修养。
+无论你是什么年龄，什么职业，它都适合你。
+中华成语千千万，看起来很简单，可是有时候抓破头皮也不一定能猜到，不服就来猜猜看！
+
     </description>
-                            <promotional_text>烧脑数学消除游戏</promotional_text>
+                            <promotional_text>学习千万中华成语</promotional_text>
                             <keywords>
                                <keyword>xy苹果助手苹果版,爱思手机铃声,360杀毒软件下载,微信多开版表格制作,qq同步,老照片换发型设计免费通话录音功能,pp,灵犀语音转发,小米投屏小助手,玩机宝典,办公,装逼,电话号码定位,cad看片</keyword> 
                             </keywords>
-                            <version_whats_new>全新设计，适配最新设备</version_whats_new>
+                            <!-- <version_whats_new></version_whats_new> -->
                             <software_url>http://www.mooncore.cn</software_url>
-                            <privacy_url></privacy_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
                             <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
 
-                            <!-- <software_screenshots></software_screenshots> -->
+                            <software_screenshots> 
+<software_screenshot display_target="iOS-5.5-in" position="1"> <file_name>cn_iphone_1.jpg</file_name> <size>172996</size> <checksum type="md5">7c5a45109ec6da35b6f413088d046f92</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="2"> <file_name>cn_iphone_2.jpg</file_name> <size>178592</size> <checksum type="md5">efbfac180361593bb84687a611305bf3</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="3"> <file_name>cn_iphone_3.jpg</file_name> <size>223386</size> <checksum type="md5">a7cddeff6e27310fb4d8072fef11dc43</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="4"> <file_name>cn_iphone_4.jpg</file_name> <size>173280</size> <checksum type="md5">b3499b947267836f35b6bd0b80a61d76</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="5"> <file_name>cn_iphone_5.jpg</file_name> <size>180944</size> <checksum type="md5">3a38f2daf8aac8057d6b1b7b3f82fc7e</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="1"> <file_name>cn_ipadpro_1.jpg</file_name> <size>228715</size> <checksum type="md5">244e3bd1d7f814462f922b3560c89aaf</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="2"> <file_name>cn_ipadpro_2.jpg</file_name> <size>236503</size> <checksum type="md5">52aacc2dc510c9d96bcc6c298b0c5cec</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="3"> <file_name>cn_ipadpro_3.jpg</file_name> <size>443334</size> <checksum type="md5">514904188b7bffa611d82dbee2763244</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="4"> <file_name>cn_ipadpro_4.jpg</file_name> <size>279221</size> <checksum type="md5">682d66b3db63c94a7c53c3edc6c8d65e</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="5"> <file_name>cn_ipadpro_5.jpg</file_name> <size>234386</size> <checksum type="md5">31cc21dabe0308f0fe2c51d83dfffbfb</checksum> </software_screenshot></software_screenshots>
 
                             
                         </locale>
 
                          <locale name="en-CA">
-                            <title>Math Zero</title>
-                            <subtitle>Good Math Game</subtitle>
-                            <description>If you think your math is very good, then to challenge the math master it, the method is very simple: through the appropriate mathematical equation, the result is equal to zero, and let the grid of all the squares disappeared that victory. 
- Began as a simple exercise, behind the numbers and operations will be more and more, more and more complex, if you want to become the true masters of mathematics, in addition to find the correct operation equation, also need to choose the correct order of operations! As long as one step is wrong, you are likely to get stuck in this case, you can use the left corner of the "re" button to start again to try the new correct computing equation and order. 
- You are not able to become a real master of mathematics? You come to a challenge to know, small partners to quickly download it! I wish you success!
-    </description>
-                            <promotional_text>The most burned brain math elimination game in the history</promotional_text>
+                            <title>Idiom Master</title>
+                            <subtitle>Idiom filling in words</subtitle>
+                            <description>This is a recreational and intellectual software for filling in idioms and breaking through customs. It tests your idiom reserve step by step from simplicity to complexity. Playing while learning, teaching while enjoying, can not only cheer the mood, but also train the thinking, enhance the personal connotation of self-cultivation.
+Whatever your age and occupation, it suits you.
+There are thousands of Chinese idioms. It seems very simple, but sometimes you can't guess if you scratch your scalp. If you don't agree, just guess!</description>
+                            <promotional_text>Learning Millions of Chinese Idioms</promotional_text>
                             <keywords>
                                <keyword>记,步,经传,贪吃蛇,2048,数字,少年宫,海马,游戏,大全,火箭,vpn,翻,墙,小说,写作,猫,拍,题,神器,s,换机,卫士</keyword> 
                             </keywords>
-                           <version_whats_new>New design, suitable for the latest equipment</version_whats_new>
+                           <!-- <version_whats_new></version_whats_new> -->
                             <software_url>http://www.mooncore.cn</software_url>
-                            <privacy_url></privacy_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
                             <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
 
-                            <!-- <software_screenshots></software_screenshots> -->
+                            <software_screenshots></software_screenshots>
 
                             
                         </locale>
 
                          <locale name="en-AU">
-                            <title>Math Zero</title>
-                            <subtitle>Good Math Game</subtitle>
-                            <description>If you think your math is very good, then to challenge the math master it, the method is very simple: through the appropriate mathematical equation, the result is equal to zero, and let the grid of all the squares disappeared that victory. 
- Began as a simple exercise, behind the numbers and operations will be more and more, more and more complex, if you want to become the true masters of mathematics, in addition to find the correct operation equation, also need to choose the correct order of operations! As long as one step is wrong, you are likely to get stuck in this case, you can use the left corner of the "re" button to start again to try the new correct computing equation and order. 
- You are not able to become a real master of mathematics? You come to a challenge to know, small partners to quickly download it! I wish you success!
-    </description>
-                            <promotional_text>The most burned brain math elimination game in the history</promotional_text>
+                            <title>Idiom Master</title>
+                            <subtitle>Idiom filling in words</subtitle>
+                            <description>This is a recreational and intellectual software for filling in idioms and breaking through customs. It tests your idiom reserve step by step from simplicity to complexity. Playing while learning, teaching while enjoying, can not only cheer the mood, but also train the thinking, enhance the personal connotation of self-cultivation.
+Whatever your age and occupation, it suits you.
+There are thousands of Chinese idioms. It seems very simple, but sometimes you can't guess if you scratch your scalp. If you don't agree, just guess!</description>
+                            <promotional_text>Learning Millions of Chinese Idioms</promotional_text>
                             <keywords>
                                <keyword>记,步,经传,贪吃蛇,2048,数字,少年宫,海马,游戏,大全,火箭,vpn,翻,墙,小说,写作,猫,拍,题,神器,s,换机,卫士</keyword> 
                             </keywords>
-                            <version_whats_new>New design, suitable for the latest equipment</version_whats_new>
+                            <!-- <version_whats_new></version_whats_new> -->
                             <software_url>http://www.mooncore.cn</software_url>
-                            <privacy_url></privacy_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
                             <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
 
-                            <!-- <software_screenshots></software_screenshots> -->
+                            <software_screenshots></software_screenshots>
 
                             
                         </locale>
 
                          <locale name="en-GB">
-                            <title>Math Zero</title>
-                            <subtitle>Good Math Game</subtitle>
-                            <description>If you think your math is very good, then to challenge the math master it, the method is very simple: through the appropriate mathematical equation, the result is equal to zero, and let the grid of all the squares disappeared that victory. 
- Began as a simple exercise, behind the numbers and operations will be more and more, more and more complex, if you want to become the true masters of mathematics, in addition to find the correct operation equation, also need to choose the correct order of operations! As long as one step is wrong, you are likely to get stuck in this case, you can use the left corner of the "re" button to start again to try the new correct computing equation and order. 
- You are not able to become a real master of mathematics? You come to a challenge to know, small partners to quickly download it! I wish you success!
-    </description>
-                            <promotional_text>The most burned brain math elimination game in the history</promotional_text>
+                            <title>Idiom Master</title>
+                            <subtitle>Idiom filling in words</subtitle>
+                            <description>This is a recreational and intellectual software for filling in idioms and breaking through customs. It tests your idiom reserve step by step from simplicity to complexity. Playing while learning, teaching while enjoying, can not only cheer the mood, but also train the thinking, enhance the personal connotation of self-cultivation.
+Whatever your age and occupation, it suits you.
+There are thousands of Chinese idioms. It seems very simple, but sometimes you can't guess if you scratch your scalp. If you don't agree, just guess!</description>
+                            <promotional_text>Learning Millions of Chinese Idioms</promotional_text>
                             <keywords>
                                <keyword>记,步,经传,贪吃蛇,2048,数字,少年宫,海马,游戏,大全,火箭,vpn,翻,墙,小说,写作,猫,拍,题,神器,s,换机,卫士</keyword> 
                             </keywords>
-                            <version_whats_new>New design, suitable for the latest equipment</version_whats_new>
+                            <!-- <version_whats_new></version_whats_new> -->
                             <software_url>http://www.mooncore.cn</software_url>
-                            <privacy_url></privacy_url>
+                            <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
                             <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
 
-                            <!-- <software_screenshots></software_screenshots> -->
+                            <software_screenshots></software_screenshots>
 
                             
                         </locale>
@@ -133,13 +151,13 @@
 
            <in_app_purchases>
                 <in_app_purchase>
-                    <product_id>com.moonma.mathmaster.noad</product_id>
+                    <product_id>com.moonma.idiommaster.noad</product_id>
                     <reference_name>noad</reference_name>
                     <type>non-consumable</type>
                     <products>
                         <product>
                             <cleared_for_sale>true</cleared_for_sale>
-                            <wholesale_price_tier>2</wholesale_price_tier>
+                            <wholesale_price_tier>3</wholesale_price_tier>
                         </product>
                     </products>
                     <locales>

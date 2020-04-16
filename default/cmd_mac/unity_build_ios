@@ -21,4 +21,6 @@ fi
 echo $filepath
 cd $filepath
 cd ../../../script
-python unity_build.py %~dp0 ios
+python unity_build.py $filepath ios
+ 
+ 
