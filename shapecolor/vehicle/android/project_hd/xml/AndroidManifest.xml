@@ -85,54 +85,42 @@
                 <action android:name="com.mintegral.msdk.download.action" />
             </intent-filter>
         </service>
-
-        <!-- mintegral base activity-->
-        <activity android:name="com.mintegral.msdk.activity.MTGCommonActivity" android:configChanges="keyboard|orientation" android:screenOrientation="portrait" android:exported="true" android:theme="@android:style/Theme.Translucent.NoTitleBar">
-        </activity>
-
-        <!-- if appwall need added Immersive Mode，pls plus android:theme="@style/MintegralAppTheme" attribute -->
-        <!-- android:theme="@style/MintegralAppTheme" -->
-        <activity android:name="com.mintegral.msdk.shell.MTGActivity" android:configChanges="keyboard|orientation" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
-        </activity>
-
-        <activity android:name=".NativeVideoRecycleViewActivity" android:configChanges="orientation|keyboardHidden|screenSize" />
-        <!-- Include the AdActivity configChanges and theme. -->
-        <!--integration rewardVideo if aggregation nativeX pls add start -->
-        <activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:theme="@android:style/Theme.Translucent" />
-
-        <activity android:name="com.mintegral.msdk.out.LoadingActivity" />
-        <!--integration rewardVideo if aggregation nativeX pls add end -->
-
-        <!--integration rewardVideo if aggregation applovin pls add start -->
-        <meta-data android:name="applovin.sdk.key" android:value="HmrZmGOS5KNRGvmbOGt-cc6o2hvL4KeL5TwrkIIqdfFvZ0UyGMxtz1f_iTLnu-7-S1pBK5_ymFrJFKGWgBNeD1" />
-
-        <!--integration rewardVideo if aggregation applovin pls add end -->
-        <!--integration interstitial needed activty start  -->
-        <activity android:name="com.mintegral.msdk.interstitial.view.MTGInterstitialActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
-        <!--integration interstitial needed activty end  -->
-        <!--integration offerwall needed activty start  -->
-        <activity android:name="com.mintegral.msdk.offerwall.view.MTGOfferWallActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation"/>
-        <activity android:name="com.mintegral.msdk.offerwall.view.MTGOfferWallRewardVideoActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:screenOrientation="landscape" />
-        <!--integration offerwall needed activty end  -->
-        <activity android:name="com.mintegral.msdk.reward.player.MTGRewardVideoActivity" android:configChanges="orientation|keyboardHidden|screenSize" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-        <activity android:name="com.mintegral.msdk.videofeeds.vfplayer.VideoFeedsActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:screenOrientation="portrait" />
-
-        <activity android:name="com.mintegral.msdk.mtgjscommon.authority.activity.MTGAuthorityActivity" android:configChanges="keyboardHidden|orientation|screenSize"></activity>
-
-        <receiver android:name="com.alphab.receiver.AlphabReceiver" android:enabled="true" android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.PACKAGE_ADDED" />
-                <data android:scheme="package" />
-            </intent-filter>
-        </receiver>
+ 
+   <!--MTG激励视频所需的Activity，此处配置作用于流量分配功能，关于流量分配功能，详情请咨询商务-->
+        <activity
+            android:name="com.mintegral.msdk.reward.player.MTGRewardVideoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.mintegral.msdk.activity.MTGCommonActivity"
+            android:configChanges="keyboard|orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+        <!--国内流量版本必需，海外版本可以不添加-->
         <receiver android:name="com.mintegral.msdk.click.AppReceiver">
             <intent-filter>
-                <!-- 一个新应用包已经安装在设备上，数据包括包名（监听所在的app，新安装时，不能接收到这个广播） -->
                 <action android:name="android.intent.action.PACKAGE_ADDED" />
                 <data android:scheme="package" />
             </intent-filter>
         </receiver>
-
+        <!--国内流量必需，海外版本可以不添加-->
+        <service android:name="com.mintegral.msdk.shell.MTGService">
+            <intent-filter>
+                <action android:name="com.mintegral.msdk.download.action" />
+            </intent-filter>
+        </service>
+        <!--国内流量版本必需，海外版本可以不添加。-->
+        <provider
+            android:name="com.mintegral.msdk.base.utils.MTGFileProvider"
+            android:authorities="${applicationId}.mtgFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/mtg_provider_paths" />
+        </provider>
+        <!--MTG所需的组件结束-->
 
     </application>
     <uses-feature android:glEsVersion="0x00020000" />

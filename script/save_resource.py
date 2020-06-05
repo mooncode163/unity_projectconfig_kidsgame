@@ -16,11 +16,11 @@ import config
 if  __name__ =="__main__":
     
     #入口参数：http://blog.csdn.net/intel80586/article/details/8545572
-    print "脚本名：", sys.argv[0]
+    print ("脚本名：", sys.argv[0])
     cmdPath = common.cur_file_dir()
     count = len(sys.argv)
     for i in range(1,count):
-        print "参数", i, sys.argv[i]
+        print ("参数", i, sys.argv[i])
         if i==1:
             cmdPath = sys.argv[i]
     
@@ -28,17 +28,17 @@ if  __name__ =="__main__":
     gameName = common.getGameName()
     gameType = common.getGameType()
     
-    print gameType 
-    print gameName 
+    print (gameType) 
+    print (gameName) 
 
     configDirUnity = common.GetRootProjectUnity()+"/Assets/Resources/ConfigData/config"
 
     configAppType = config.GetConfigAppType(configDirUnity)
     configAppName = config.GetConfigAppName(configDirUnity)
-    print "unity:"+configAppType+" "+configAppName
+    print ("unity:"+configAppType+" "+configAppName)
 
     if gameType!=configAppType or gameName!=configAppName:
-        print "check app type and name fail"
+        print ("check app type and name fail")
         sys.exit(0)
 
 
@@ -62,4 +62,4 @@ if  __name__ =="__main__":
     common.CopyDir(dir1,dir2)
 
 
-    print "save_resource sucess"
+    print ("save_resource sucess")

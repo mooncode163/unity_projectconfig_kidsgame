@@ -33,7 +33,7 @@ def deleteFiles(sourceDir):
             src_apk_extension = temp_list[1]
             apk_ext='.mobileprovision';
             if apk_ext==src_apk_extension:
-                 print sourceFile
+                #  print sourceFile
                  os.remove(sourceFile)
                 
         #目录嵌套

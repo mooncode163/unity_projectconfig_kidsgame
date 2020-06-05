@@ -1,13 +1,13 @@
 {
     "APP_NAME_CN_ANDROID": "儿童拼拼乐2",
-    "APP_NAME_EN_ANDROID": "KidsPuzzle",
+    "APP_NAME_EN_ANDROID": "Kids Puzzle",
     "APP_NAME_CN_IOS": "儿童拼拼乐",
-    "APP_NAME_EN_IOS": "KidsPuzzle",
+    "APP_NAME_EN_IOS": "Kids Puzzle",
     "PACKAGE_ANDROID": "com.moonma.pinpinle",
     "PACKAGE_IOS": "com.moonma.pinpinle",
-    "APPVERSION_ANDROID": "1.8.9",
-    "APPVERSION_CODE_ANDROID": "189",
-    "APPVERSION_IOS": "1.8.9",
+    "APPVERSION_ANDROID": "1.9.1",
+    "APPVERSION_CODE_ANDROID": "191",
+    "APPVERSION_IOS": "1.9.1",
     "need_upload_screenshot": true,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",

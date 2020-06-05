@@ -20,9 +20,9 @@ import common
 def buildApk():
     if common.isWindowsSystem():
         # dir1 = "C:\Program Files\Android\Android Studio\gradle"
-    	dir2 = "C:/moon/gradle/gradle-4.10.1"
-        flag = os.path.exists(dir2) 
-    	if not flag:
+        dir2 = "C:/moon/gradle/gradle-4.10.1"
+        flag = os.path.exists(dir2)
+        if not flag:
     		# shutil.copytree(dir1,dir2)
             dir2 = "E:/Program Files/Android/Android Studio/gradle/gradle-4.10.1"
             flag = os.path.exists(dir2)
@@ -70,13 +70,13 @@ if __name__ == "__main__":
     # reload(sys)
     # sys.setdefaultencoding("utf-8")
 
-    print "脚本名：", sys.argv[0]
+    print("脚本名：", sys.argv[0])
     cmdPath = common.cur_file_dir()
     count = len(sys.argv)
     isHD = False
 
     for i in range(1, count):
-        print "参数", i, sys.argv[i]
+        print("参数", i, sys.argv[i])
         if i == 1:
             cmdPath = sys.argv[i]
 
@@ -84,17 +84,17 @@ if __name__ == "__main__":
             if sys.argv[i] == "hd":
                 isHD = True
 
-    print "cmdPath="+cmdPath
+    print ("cmdPath="+cmdPath)
     common.SetCmdPath(cmdPath)
     gameName = common.getGameName()
     gameType = common.getGameType()
-    print "gameName="+gameName
-    print "gameType="+gameType
+    print("gameName="+gameName)
+    print ("gameType="+gameType)
     android_studio_dir = common.GetRootDirAndroidStudio()
-    print "android_studio_dir="+android_studio_dir
+    print("android_studio_dir="+android_studio_dir)
     # python 里无法直接执行cd目录，想要用chdir改变当前的工作目录
     os.chdir(android_studio_dir)
     buildApk()
     copyApk("")
 
-    print "apk_build sucess"
+    print("apk_build sucess")

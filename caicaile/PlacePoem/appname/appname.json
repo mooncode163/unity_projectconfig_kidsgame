@@ -1,0 +1,70 @@
+{
+    "appid": {
+        "appstore": "1515220827", 
+        "huawei": "102207313", 
+        "taptap": "190948", 
+        "xiaomi": "0"
+    }, 
+    "appname": {
+        "android": {
+            "cn": "诗词换换乐", 
+            "en": "Place Poem"
+        }, 
+        "ios": {
+            "cn": "诗词换换乐", 
+            "en": "Place Poem"
+        }
+    }, 
+    "apppackage": {
+        "android": {
+            "default": "com.moonma.placepoem"
+        }, 
+        "ios": {
+            "default": "com.moonma.placepoem"
+        }
+    }, 
+    "appstore": {
+        "aso": {
+            "cn": "连连乐,儿童游戏,游乐园,拼图,儿童,早教,儿歌,小孩,乐看动画,奇艺动画,猜图,沙滩乐多纳学英语儿歌多多迷宫小镇汉字王国小牙医美食节熊猫博士小镇画彩蛋悟空识字恐龙救援车马儿的神奇大冒险小企鹅乐园魔力", 
+            "en": "COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber"
+        }, 
+        "aso_xiaomi": {
+            "cn": "连连乐 儿童游戏 游乐园 拼图 儿童 早教 儿歌 小孩 乐看动画 奇艺动画 猜图 沙滩乐多纳学英语儿歌多多迷宫小镇汉字王国小牙医美食节熊猫博士小镇画彩蛋悟空识字恐龙救援车马儿的神奇大冒险小企鹅乐园魔力", 
+            "en": "COOKING MAMA Let's Cook Kids Shave Salon Spa Doodle Zedd the Zombie Shapes Toddler QuizUp Clawber"
+        }, 
+        "promotion": {
+            "cn": "学诗词弘扬中华文化", 
+            "en": "Learning poem and promoting Chinese culture"
+        }, 
+        "subtitle": {
+            "cn": "诗词换换乐", 
+            "en": "Chinese Poem Culture"
+        }, 
+        "title": {
+            "cn": "诗词换换乐", 
+            "en": "Place Poem"
+        }, 
+        "version_update": {
+            "cn": "修复闪退", 
+            "en": "Fix a Bug"
+        }
+    }, 
+    "appversion": {
+        "android": {
+            "code": "106", 
+            "value": "1.0.6"
+        }, 
+        "ios": {
+            "code": "102", 
+            "value": "1.0.2"
+        }
+    }, 
+    "email": "chyfemail163@163.com", 
+    "need_upload_screenshot": true, 
+    "privacy_url": "https://6c69-lianlianle-shkb3-1259451541.tcb.qcloud.la/PrivacyPolicy.txt", 
+    "privacy_url2": "https://6d6f-moonma-dbb297-1258816908.tcb.qcloud.la/Moonma/privacyPolicy_kidsgame.txt", 
+    "privacy_url3": "http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml", 
+    "sku_app": "placepoem", 
+    "software_url": "http://www.mooncore.cn", 
+    "support_url": "http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html"
+}

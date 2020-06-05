@@ -6,7 +6,7 @@
         <vendor_id>moonma_xiehanzi</vendor_id>
         <software_metadata>
             <versions>
-                <version string="1.3.2">
+                <version string="1.9.4">
                     <locales>
                         <locale name="en-US">
                             <title>Kids Write Chinese</title>
@@ -30,7 +30,7 @@ The characteristics of our products:
                             <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
                             <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
 
-                            <!-- <software_screenshots></software_screenshots> -->
+                            <software_screenshots> </software_screenshots>
 
                         </locale>
 
@@ -56,7 +56,7 @@ The characteristics of our products:
                             <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
                             <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
 
-                            <!-- <software_screenshots></software_screenshots> -->
+                            <software_screenshots> </software_screenshots>
 
                             
                         </locale>
@@ -83,7 +83,7 @@ The characteristics of our products:
                             <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
                             <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
 
-                            <!-- <software_screenshots></software_screenshots> -->
+                            <software_screenshots></software_screenshots>
 
                             
                         </locale>
@@ -110,7 +110,7 @@ The characteristics of our products:
                             <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
                             <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
 
-                            <!-- <software_screenshots></software_screenshots> -->
+                            <software_screenshots></software_screenshots>
 
                             
                         </locale>
@@ -137,7 +137,7 @@ The characteristics of our products:
                             <privacy_url>http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml</privacy_url>
                             <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
 
-                            <!-- <software_screenshots></software_screenshots> -->
+                            <software_screenshots></software_screenshots>
 
                             
                         </locale>
@@ -169,7 +169,7 @@ The characteristics of our products:
                     <products>
                         <product>
                             <cleared_for_sale>true</cleared_for_sale>
-                            <wholesale_price_tier>2</wholesale_price_tier>
+                            <wholesale_price_tier>3</wholesale_price_tier>
                         </product>
                     </products>
                     <locales>

@@ -24,7 +24,7 @@ if __name__ == "__main__":
     
     count = len(sys.argv)
     for i in range(1,count):
-        print "参数", i, sys.argv[i]
+        print ("参数", i, sys.argv[i])
         if i==1:
             cmdPath = sys.argv[i]
     
@@ -80,4 +80,4 @@ if __name__ == "__main__":
         os.system(strCmd)
 
     
-    print "ipa_build sucess"
+    print ("ipa_build sucess")

@@ -21,9 +21,9 @@ fi
 echo $filepath
 cd $filepath
 cd ../../../script
-python copy_resource.py $filepath
-python copy_gamedata.py $filepath
-python appcode.py $filepath "copy"
+python3 copy_resource.py $filepath
+python3 copy_gamedata.py $filepath
+python3 appcode.py $filepath "copy"
  
 
  

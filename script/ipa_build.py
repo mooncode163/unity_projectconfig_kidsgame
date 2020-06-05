@@ -27,7 +27,7 @@ def UploadAllIPA(dir):
             UploadAllIPA(srcfile)
 
 def UploadOneIPA(ipafile):
-    print "UploadOneIPA= "+ipafile
+    print ("UploadOneIPA= "+ipafile)
     # 上传ipa
     if IsXcode10():
         strCmd = "/Applications/Xcode.app/Contents/Applications/Application\ Loader.app/Contents/Frameworks/ITunesSoftwareService.framework/Versions/A/Support/altool --upload-app -f " + ipafile + " -t ios -u "+source.APPSTORE_USER+" -p "+source.APPSTORE_PASSWORD 
@@ -74,6 +74,20 @@ def BuildIPA(ipafile):
     if flag:
         shutil.rmtree(ipafile)
 
+
+
+    RootDir = common.GetRootProjectIos() 
+    AppDir = RootDir + "/app"
+    flag = os.path.exists(AppDir)
+    if flag:
+        shutil.rmtree(AppDir)
+    
+    AppDir = RootDir + "/app_export_ipa"
+    flag = os.path.exists(AppDir)
+    if flag:
+        shutil.rmtree(AppDir)
+
+
     strCmd = "xcodebuild -allowProvisioningUpdates -project " + xcode_project + " -scheme " + \
         target + " -configuration Release clean archive" + " -archivePath " + archive_file
     os.system(strCmd)
@@ -96,8 +110,8 @@ def CopyIPA(ipafile):
         os.makedirs(dir_ipa) 
 
     ipa_file_dst =dir_ipa + "/" + common.GetOutPutIPAName()
-    print "ipa_file_src= "+ipa_file_src
-    print "ipa_file_dst= "+ipa_file_dst
+    print ("ipa_file_src= "+ipa_file_src)
+    print ("ipa_file_dst= "+ipa_file_dst)
 
     if os.path.isfile(ipa_file_src):
         shutil.copyfile(ipa_file_src,ipa_file_dst)
@@ -187,7 +201,7 @@ def DeleteProvisioningProfiles(sourceDir):
             src_apk_extension = temp_list[1]
             apk_ext='.mobileprovision';
             if apk_ext==src_apk_extension:
-                 print sourceFile
+                 print (sourceFile)
                  os.remove(sourceFile)
                 
         #目录嵌套
@@ -212,7 +226,7 @@ def DeleteMetaFiles(sourceDir):
             # print "file="+file+" ext="+ext 
             apk_ext='meta'
             if apk_ext==ext:
-                 print sourceFile
+                 print (sourceFile)
                  os.remove(sourceFile)
                 
         #目录嵌套
@@ -227,16 +241,16 @@ if __name__ == "__main__":
     cmdPath = common.cur_file_dir()
     count = len(sys.argv)
     for i in range(1, count):
-        print "参数", i, sys.argv[i]
+        print ("参数", i, sys.argv[i])
         if i == 1:
             cmdPath = sys.argv[i]
    
-    print "cmdPath="+cmdPath+" count="+str(count)
+    print ("cmdPath="+cmdPath+" count="+str(count))
     common.SetCmdPath(cmdPath)
     gameName = common.getGameName()
     gameType = common.getGameType()
-    print "gameName="+gameName
-    print "gameType="+gameType
+    print ("gameName="+gameName)
+    print ("gameType="+gameType)
 
     RootDir = common.GetRootProjectIos()
     target = "Unity-iPhone"  
@@ -255,6 +269,7 @@ if __name__ == "__main__":
         argv1 = sys.argv[2]
         if argv1 == "upload_ipa":
             isUploadIPA = True
+            # ipa_file = RootDir + "/app_export_ipa/" + target
             UploadOneIPA(ipa_file + "/" + target + ".ipa")
 
         if argv1 == "export_ipa":
@@ -287,4 +302,4 @@ if __name__ == "__main__":
         if argv1 == "zip_project":
             ZipProject()
 
-    print "ipa_build sucess"
+    print ("ipa_build sucess")

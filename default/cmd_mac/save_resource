@@ -21,8 +21,8 @@ fi
 echo $filepath
 cd $filepath
 cd ../../../script
-python save_resource.py $filepath
-python appcode.py $filepath "save"
+python3 save_resource.py $filepath
+python3 appcode.py $filepath "save"
  
 
  

@@ -25,11 +25,11 @@ def cur_file_dir():
 #主函数的实现
 if  __name__ =="__main__":
     
-    print "脚本名：", sys.argv[0] 
+    print ("脚本名：", sys.argv[0]) 
     cmdPath = common.cur_file_dir()
     count = len(sys.argv)
     for i in range(1,count):
-        print "参数", i, sys.argv[i]
+        print ("参数", i, sys.argv[i])
         if i==1:
             cmdPath = sys.argv[i]
     
@@ -37,8 +37,8 @@ if  __name__ =="__main__":
     gameName = common.getGameName()
     gameType = common.getGameType()
     
-    print gameType 
-    print gameName 
+    print (gameType) 
+    print (gameName) 
 
     isHD = False 
     if count>2:
@@ -59,7 +59,7 @@ if  __name__ =="__main__":
             strCmd = "/Applications/Transporter.app/Contents/itms/bin/iTMSTransporter -m upload -u "+source.APPSTORE_USER+" -p "+source.APPSTORE_PASSWORD+"  -v eXtreme -f "+common.GetProjectConfigApp()+ "/appstore/ios/"+strFile
     os.system(strCmd) 
         
-    print "appstore_upload_ios sucess"
+    print ("appstore_upload_ios sucess")
 
 
 

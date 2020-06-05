@@ -1,0 +1,2 @@
+
+keytool -v -list -keystore ~/sourcecode/mssp_baidu/moonma.jks

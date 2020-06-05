@@ -26,7 +26,7 @@ if  __name__ =="__main__":
     cmdPath = common.cur_file_dir()
     count = len(sys.argv)
     for i in range(1,count):
-        print "参数", i, sys.argv[i]
+        print("参数", i, sys.argv[i])
         if i==1:
             cmdPath = sys.argv[i]
     
@@ -34,8 +34,8 @@ if  __name__ =="__main__":
 
     gameName = common.getGameName()
     gameType = common.getGameType()
-    print gameName
-    print gameType
+    print(gameName)
+    print(gameType)
 
     resDataName = common.getGameName()#sys.argv[1]
     gameResName = getGameResName()
@@ -70,4 +70,4 @@ if  __name__ =="__main__":
         shutil.rmtree(dir2) 
 
 
-    print "clean_screenshot sucess"
+    print("clean_screenshot sucess")

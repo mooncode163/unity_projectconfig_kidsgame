@@ -54,11 +54,11 @@ def coverFiles(sourceDir,  targetDir):
         targetFile = os.path.join(targetDir,  file)
             #cover the files
         if os.path.isfile(sourceFile):
-            # print sourceFile
+            # print(sourceFile)
             open(targetFile, "wb").write(open(sourceFile, "rb").read())
         #目录嵌套
         if os.path.isdir(sourceFile):
-            # print sourceFile
+            # print(sourceFile)
             coverFiles(sourceFile,targetFile)
 
 
@@ -183,7 +183,7 @@ def getFileExt(path):
     slen=len(path)
     size = slen-idx
     ret = path[idx:]
-    # print "path="+path+" idx="+str(idx)+" ret="+ret+" slen="+str(slen)
+    # print(path="+path+" idx="+str(idx)+" ret="+ret+" slen="+str(slen)
     return ret
 
 def getPathName():
@@ -474,22 +474,22 @@ def DeleteMetaFiles(sourceDir):
         sourceFile = os.path.join(sourceDir,  file)
             #cover the files
         if os.path.isfile(sourceFile):
-            # print sourceFile
+            # print(sourceFile)
             # 分割文件名与后缀
             temp_list = os.path.splitext(file)
             # name without extension
             src_apk_name = temp_list[0]
             # 后缀名，包含.   例如: ".apk "
             ext = getFileExt(file) 
-            # print "file="+file+" ext="+ext 
+            # print(file="+file+" ext="+ext 
             apk_ext='meta'
             if apk_ext==ext:
-                 print sourceFile
+                 print(sourceFile)
                  os.remove(sourceFile)
                 
         #目录嵌套
         if os.path.isdir(sourceFile):
-            # print sourceFile
+            # print(sourceFile)
             DeleteMetaFiles(sourceFile)
 
  

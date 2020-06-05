@@ -23,7 +23,7 @@ fi
 echo $filepath
 cd $filepath
 cd ../../../script
-python ipa_build.py export_ipa inmob
+python3 ipa_build.py export_ipa inmob
  
 
  

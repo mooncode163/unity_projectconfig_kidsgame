@@ -34,7 +34,7 @@ def UpdateXcodeProjectFile(fileProject,isHD):
         strOther = strFile[idx:]
         idx = strOther.find(strEnd)
         packageold = strOther[0:idx]
-        print "packageold="+packageold
+        print("packageold="+packageold) 
         strFile = strFile.replace(packageold,package)
         common.saveString2File(strFile,fileProject)
 
@@ -62,22 +62,22 @@ def CopyAndroidJavaFile_Weixin(rootStudio,isHD):
 if  __name__ =="__main__":
     
       # 设置为utf8编码
-    reload(sys)
-    sys.setdefaultencoding("utf-8")
+    # reload(sys)
+    # sys.setdefaultencoding("utf-8")
     
     #入口参数：http://blog.csdn.net/intel80586/article/details/8545572
     cmdPath = common.cur_file_dir() 
     count = len(sys.argv)
     for i in range(1,count):
-        print "参数", i, sys.argv[i]
+        print("参数", i, sys.argv[i])
         if i==1:
             cmdPath = sys.argv[i] 
 
     common.SetCmdPath(cmdPath)
     gameName = common.getGameName()
     gameType = common.getGameType()
-    print gameName
-    print gameType
+    print(gameName)
+    print(gameType)
     # rootDir ="/Users/jaykie/sourcecode/cocos2dx/product/game/ertong"
     rootAndroidStudio = common.GetRootDirAndroidStudio()
     rootiOSXcode = common.GetRootDirXcode()
@@ -215,7 +215,7 @@ if  __name__ =="__main__":
 
     appid_xiaomi = adconfig.GetAppId(source.XIAOMI,source.ANDROID,isHD)
     if "0"==appid_xiaomi:
-        print "no xiaomi ad appid"
+        print("no xiaomi ad appid")
         # VUNGLE 和 XIAOMI sdk gson库 冲突
         config_adsdk_android.SetAdSdk(source.XIAOMI, False)
         # True
@@ -227,7 +227,7 @@ if  __name__ =="__main__":
       
     appid_gdt = adconfig.GetAppId(source.GDT,source.ANDROID,isHD)
     if "0"==appid_gdt:
-        print "no gdt ad appid"
+        print("no gdt ad appid")
         config_adsdk_android.SetAdSdk(source.GDT, False)
     else:
         config_adsdk_android.SetAdSdk(source.GDT, True)
@@ -239,4 +239,4 @@ if  __name__ =="__main__":
     config_adsdk_android.SetAdSdk(source.ADMOB, True)
  
 
-    print "copy_config sucess"
+    print("copy_config sucess")

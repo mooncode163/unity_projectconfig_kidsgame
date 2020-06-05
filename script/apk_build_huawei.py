@@ -26,13 +26,13 @@ listChannel = [source.HUAWEI]
 # 主函数的实现
 if __name__ == "__main__":
 
-    print "脚本名：", sys.argv[0]
+    print("脚本名：", sys.argv[0])
     cmdPath = common.cur_file_dir()
     count = len(sys.argv)
     isHD = False
 
     for i in range(1, count):
-        print "参数", i, sys.argv[i]
+        print("参数", i, sys.argv[i])
         if i == 1:
             cmdPath = sys.argv[i]
 
@@ -47,9 +47,9 @@ if __name__ == "__main__":
     os.chdir(android_studio_dir)
 
     for channel in listChannel:
-        print "apk_build_gp:" + channel
+        print("apk_build_gp:" + channel)
         appchannel.updateChannel(channel,isHD) 
         apk_build.buildApk()
         apk_build.copyApk(channel)
 
-    print "apk_build_huawei sucess"
+    print("apk_build_huawei sucess")

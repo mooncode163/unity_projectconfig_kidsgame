@@ -33,7 +33,7 @@ def replaceString(strContent, strStart, strEnd, strReplace):
     # print "strOther1:"+strOther
     idx = strOther.find(strEnd)
     strOther = strOther[idx:]
-    # print "strOther2:"+strOther
+    # print(strOther2:"+strOther
     strRet = strHead + strStart + strReplace + strOther
     return strRet
 
@@ -57,7 +57,7 @@ def saveString2File(str, file):
 
 
 def updateChannel(channel,ishd): 
-    print "updateChannel"
+    print("updateChannel")
     # project_config = common.GetProjectConfigApp() + "/android" + "/gradle"
     targetDir = common.GetRootDirAndroidStudio()
     sourceDir = common.GetProjectConfigApp()
@@ -109,7 +109,7 @@ def updateChannel(channel,ishd):
 
     #  "channel_android": "xiaomi"
     file = getConfigJsonFile()
-    print "channel_android="+file
+    print ("channel_android="+file)
     strStart = "channel_android\": \""
     strEnd = "\""
     strOut = replaceStringOfFile(file, strStart, strEnd, channel)
@@ -119,14 +119,14 @@ def updateChannel(channel,ishd):
 # 主函数的实现
 if __name__ == "__main__":
     # 设置为utf8编码
-    reload(sys)
-    sys.setdefaultencoding("utf-8")
+    # reload(sys)
+    # sys.setdefaultencoding("utf-8")
 
     # 入口参数：http://blog.csdn.net/intel80586/article/details/8545572
     cmdPath = common.cur_file_dir()
     count = len(sys.argv)
     for i in range(1, count):
-        print "参数", i, sys.argv[i]
+        print("参数", i, sys.argv[i])
         if i == 1:
             cmdPath = sys.argv[i]
 
@@ -134,4 +134,4 @@ if __name__ == "__main__":
 
     # updateChannel(source.TAPTAP)
 
-    print "appchannel sucess"
+    print ("appchannel sucess")

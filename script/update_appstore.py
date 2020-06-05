@@ -193,7 +193,7 @@ def copy_or_delete_one_screenshot(isHd,device,language,idx,isDel):
         if os.path.isfile(strFileTo):
             os.remove(strFileTo)
     else:
-        print strFileFrom
+        # print strFileFrom
         if os.path.isfile(strFileFrom):
             shutil.copyfile(strFileFrom,strFileTo)
 
@@ -201,7 +201,7 @@ def copy_screenshots():
     list_hd = [False, True]
     
     for device in list_device:
-        print "copy_screenshots device="+device
+        print ("copy_screenshots device="+device)
         for language in list_language:
             for ishd in list_hd:
                 for i in range(0, totalScreenshot):
@@ -447,14 +447,14 @@ def updateAppstore(isHd):
 # 主函数的实现
 if __name__ == "__main__":
     # 设置为utf8编码
-    reload(sys)
-    sys.setdefaultencoding("utf-8")
+    # reload(sys)
+    # sys.setdefaultencoding("utf-8")
 
     # 入口参数：http://blog.csdn.net/intel80586/article/details/8545572
     cmdPath = common.cur_file_dir()
     count = len(sys.argv)
     for i in range(1,count):
-        print "参数", i, sys.argv[i]
+        print ("参数", i, sys.argv[i])
         if i==1:
             cmdPath = sys.argv[i]
     
@@ -462,8 +462,8 @@ if __name__ == "__main__":
     gameName = common.getGameName()
     gameType = common.getGameType()
    
-    print gameName
-    print gameType
+    print (gameName)
+    print (gameType)
 
     if len(sys.argv)>2:
         if sys.argv[2] == "delete_screenshot":
@@ -488,4 +488,4 @@ if __name__ == "__main__":
     updateAppstore(False)
     updateAppstore(True)
 
-    print "appname sucess"
+    print ("appname sucess")

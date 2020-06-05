@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "KidsMatchLe",
     "PACKAGE_ANDROID": "com.moonma.lianlianle2",
     "PACKAGE_IOS": "com.moonma.lianlianle",
-    "APPVERSION_ANDROID": "2.1.8",
-    "APPVERSION_CODE_ANDROID": "218",
-    "APPVERSION_IOS": "2.1.8",
+    "APPVERSION_ANDROID": "2.2.1",
+    "APPVERSION_CODE_ANDROID": "221",
+    "APPVERSION_IOS": "2.2.0",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",

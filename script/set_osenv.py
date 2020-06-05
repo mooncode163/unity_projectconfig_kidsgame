@@ -12,8 +12,8 @@ import common
 # 主函数的实现
 if __name__ == "__main__":
     # 设置为utf8编码
-    reload(sys)
-    sys.setdefaultencoding("utf-8")
+    # reload(sys)
+    # sys.setdefaultencoding("utf-8")
 
     # 入口参数：http://blog.csdn.net/intel80586/article/details/8545572
     strCmd = ""
@@ -21,7 +21,7 @@ if __name__ == "__main__":
     count = len(sys.argv) 
 
     for i in range(1, count):
-        print "参数", i, sys.argv[i]
+        print ("参数", i, sys.argv[i])
         if i == 1:
             cmdPath = sys.argv[i]
 

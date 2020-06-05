@@ -475,14 +475,14 @@ def updateName(isHd,isAuto):
     APPVERSION_CODE_ANDROID = versionCode
     
 
-    print APP_NAME_CN_ANDROID
-    print APP_NAME_EN_ANDROID
-    print APP_NAME_CN_IOS
-    print APP_NAME_EN_IOS
-    print PACKAGE_ANDROID
+    print (APP_NAME_CN_ANDROID)
+    print (APP_NAME_EN_ANDROID)
+    print (APP_NAME_CN_IOS)
+    print (APP_NAME_EN_IOS)
+    print (PACKAGE_ANDROID)
 
-    print "android version:"+APPVERSION_ANDROID
-    print "ios version:"+APPVERSION_IOS
+    print("android version:"+APPVERSION_ANDROID)
+    print("ios version:"+APPVERSION_IOS)
 
  # android
     # name
@@ -596,14 +596,14 @@ def updateNameWin(isHd,isAuto):
 # 主函数的实现
 if __name__ == "__main__":
     # 设置为utf8编码
-    reload(sys)
-    sys.setdefaultencoding("utf-8")
+    # reload(sys)
+    # sys.setdefaultencoding("utf-8")
     is_auto_plus_version = False
     # 入口参数：http://blog.csdn.net/intel80586/article/details/8545572
     cmdPath = common.cur_file_dir()
     count = len(sys.argv)
     for i in range(1,count):
-        print "参数", i, sys.argv[i]
+        print("参数", i, sys.argv[i])
         if i==1:
             cmdPath = sys.argv[i]
         if i==2:
@@ -626,4 +626,4 @@ if __name__ == "__main__":
     updateName(True,is_auto_plus_version)
  
     
-    print "appname sucess"
+    print("appname sucess")

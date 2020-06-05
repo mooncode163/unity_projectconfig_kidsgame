@@ -23,15 +23,15 @@ import common
 if __name__ == "__main__":
 
     # 设置为utf8编码
-    reload(sys)
-    sys.setdefaultencoding("utf-8")
+    # reload(sys)
+    # sys.setdefaultencoding("utf-8")
     is_auto_plus_version = False
     # 入口参数：http://blog.csdn.net/intel80586/article/details/8545572
     cmdPath = common.cur_file_dir()
     count = len(sys.argv)
     stros = ""
     for i in range(1,count):
-        print "参数", i, sys.argv[i]
+        print("参数", i, sys.argv[i])
         if i==1:
             cmdPath = sys.argv[i]
         if i==2:
@@ -60,12 +60,12 @@ if __name__ == "__main__":
     if stros == source.IOS:
         methond = "BuildPlayer.PerformiPhoneBuild"
 
-    print "unity_build  start"
+    print("unity_build  start")
     cmd = UNITYPATH+" -quit "+" -batchmode "+" -projectPath "+PROJECT_PATH+" -executeMethod  "+methond
     # ps = subprocess.Popen(cmd)
     # ps.wait()#让程序阻塞
     os.system(cmd)
-    print "unity_build  end"
+    print("unity_build  end")
 
     
 

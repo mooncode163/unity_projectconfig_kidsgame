@@ -50,11 +50,11 @@ def copyAllBuildDir():
 if  __name__ =="__main__":
     
     #入口参数：http://blog.csdn.net/intel80586/article/details/8545572
-    print "脚本名：", sys.argv[0]
+    print("脚本名：", sys.argv[0])
     cmdPath = common.cur_file_dir()
     count = len(sys.argv)
     for i in range(1,count):
-        print "参数", i, sys.argv[i]
+        print ("参数", i, sys.argv[i])
         if i==1:
             cmdPath = sys.argv[i]
     
@@ -62,8 +62,8 @@ if  __name__ =="__main__":
     gameName = common.getGameName()
     gameType = common.getGameType()
     
-    print gameType 
-    print gameName 
+    print(gameType) 
+    print(gameName) 
     dir1 = common.GetProjectConfigDefault()
     dir2 = common.GetProjectConfigApp()
   
@@ -73,4 +73,4 @@ if  __name__ =="__main__":
     copyCmdDir("cmd_mac")
     copyAllBuildDir()
 
-    print "copy_cmd sucess"
+    print("copy_cmd sucess")

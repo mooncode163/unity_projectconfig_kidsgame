@@ -23,7 +23,7 @@ fi
 echo $filepath
 cd $filepath
 cd ../../../script
-python ipa_build.py $filepath copy_project
+python3 ipa_build.py $filepath copy_project
  
 
  

@@ -6,7 +6,7 @@
         <vendor_id>xiehanzi_pad</vendor_id>
         <software_metadata>
             <versions>
-                <version string="1.2.1">
+                <version string="1.5.3">
                     <locales>
                         <locale name="en-US">
                             <title>Baby Write Chinese HD</title>
@@ -169,7 +169,7 @@ The characteristics of our products:
                     <products>
                         <product>
                             <cleared_for_sale>true</cleared_for_sale>
-                            <wholesale_price_tier>2</wholesale_price_tier>
+                            <wholesale_price_tier>3</wholesale_price_tier>
                         </product>
                     </products>
                     <locales>

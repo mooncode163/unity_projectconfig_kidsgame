@@ -31,23 +31,23 @@ def CopyConfigDataToAndroid():
 if  __name__ =="__main__":
     
     # 设置为utf8编码
-    reload(sys)
-    sys.setdefaultencoding("utf-8")
+    # reload(sys)
+    # sys.setdefaultencoding("utf-8")
  
 
     #入口参数：http://blog.csdn.net/intel80586/article/details/8545572
     cmdPath = common.cur_file_dir()
     count = len(sys.argv)
     for i in range(1,count):
-        print "参数", i, sys.argv[i]
+        print ("参数", i, sys.argv[i])
         if i==1:
             cmdPath = sys.argv[i]
     
     common.SetCmdPath(cmdPath)
     gameName = common.getGameName()
     gameType = common.getGameType()
-    print gameName
-    print gameType
+    print(gameName)
+    print(gameType)
 
     resDataName = common.getGameName()#sys.argv[1]
     gameResName = getGameResName()
@@ -144,4 +144,4 @@ if  __name__ =="__main__":
 
     CopyConfigDataToAndroid()
 
-    print "copy_gamedata sucess"
+    print ("copy_gamedata sucess")

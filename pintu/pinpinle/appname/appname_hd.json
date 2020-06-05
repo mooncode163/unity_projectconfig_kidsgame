@@ -1,13 +1,13 @@
 {
     "APP_NAME_CN_ANDROID": "宝宝拼拼乐HD",
-    "APP_NAME_EN_ANDROID": "BabyPuzzleHD",
+    "APP_NAME_EN_ANDROID": "Baby Puzzle HD",
     "APP_NAME_CN_IOS": "宝宝拼拼乐HD",
-    "APP_NAME_EN_IOS": "BabyPuzzleHD",
+    "APP_NAME_EN_IOS": "Baby Puzzle HD",
     "PACKAGE_ANDROID": "com.moonma.pinpinle.pad",
     "PACKAGE_IOS": "com.moonma.pinpinle.ipad",
-    "APPVERSION_ANDROID": "1.4.7",
-    "APPVERSION_CODE_ANDROID": "147",
-    "APPVERSION_IOS": "1.4.7",
+    "APPVERSION_ANDROID": "1.4.9",
+    "APPVERSION_CODE_ANDROID": "149",
+    "APPVERSION_IOS": "1.4.9",
     "need_upload_screenshot": true,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",

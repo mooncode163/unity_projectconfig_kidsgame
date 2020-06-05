@@ -56,8 +56,8 @@ def SetAdSdkLib(src,enable):
     rootdir_ad = GetRootDirAdSdk()
     file_zip = GetZipFileAdSdk(src)   
 
-    print rootdir_ad
-    print file_zip
+    print (rootdir_ad)
+    print(file_zip)
 
     dir_adsdk = GetDirAdSdk(src)
     flag = os.path.exists(dir_adsdk)
@@ -77,8 +77,8 @@ def SetAdSdkJavaCode(src,noad):
     rootdir_ad = GetRootDirAdSdkJavaCode()
     file_zip = GetZipFileAdSdkJavaCode(src,noad)   
     dir_adsdk = GetDirAdSdkJavaCode(src)
-    print dir_adsdk
-    print file_zip
+    print (dir_adsdk)
+    print(file_zip)
 
     flag = os.path.exists(dir_adsdk)
     if flag:

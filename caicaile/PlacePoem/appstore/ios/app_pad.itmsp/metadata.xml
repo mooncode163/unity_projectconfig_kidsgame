@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://apple.com/itunes/importer" version="software5.9">
+   <!--  <provider>YuanFang Chen</provider> -->
+    <team_id>Y9ZUK2WTEE</team_id>
+    <software>
+        <vendor_id>placepoem.pad</vendor_id>
+        <software_metadata>
+            <versions>
+                <version string="1.0.0">
+                    <locales>
+                        <locale name="en-US">
+                            <title>Place Poem HD</title>
+                            <subtitle>Chinese Poem Culture</subtitle>
+                            <description>This is a text app with ancient poetry as the core on the Pad. It has exquisite classical Chinese style, fresh and elegant visual effect and innovative game experience. In the game, you can feel the charm of ancient Chinese literature and enter the world of poetry.
+Play super simple: exchange text position, let the text display in the right position.
+It is suitable for all ages to teach and enjoy. Let's try your poetry and culture.</description>
+                            <promotional_text>Learning poem and promoting Chinese culture</promotional_text>
+                            <keywords>
+                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                            </keywords>
+                            <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>https://6c69-lianlianle-shkb3-1259451541.tcb.qcloud.la/PrivacyPolicy.txt</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots> 
+<software_screenshot display_target="iOS-5.5-in" position="1"> <file_name>en_iphone_1.jpg</file_name> <size>291421</size> <checksum type="md5">4c978e3998d8f07eaecb24c45823c168</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="2"> <file_name>en_iphone_2.jpg</file_name> <size>233862</size> <checksum type="md5">777318f726de449e0f56e9d147cee089</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="3"> <file_name>en_iphone_3.jpg</file_name> <size>196787</size> <checksum type="md5">1cd719631b6b8d50c55031f850c547e7</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="4"> <file_name>en_iphone_4.jpg</file_name> <size>126191</size> <checksum type="md5">01ebb5f6b346e4a1bd0d57118a73e4e0</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="5"> <file_name>en_iphone_5.jpg</file_name> <size>203383</size> <checksum type="md5">0fe2e50eaa182b993755eaaf78afe742</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="1"> <file_name>en_ipadpro_1.jpg</file_name> <size>487425</size> <checksum type="md5">54728d44ae134def6c459ee297c299af</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="2"> <file_name>en_ipadpro_2.jpg</file_name> <size>396656</size> <checksum type="md5">b437daa67068277378eb88768a078c43</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="3"> <file_name>en_ipadpro_3.jpg</file_name> <size>347213</size> <checksum type="md5">6a596bc239a896a9d47900c44ef7ac99</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="4"> <file_name>en_ipadpro_4.jpg</file_name> <size>219654</size> <checksum type="md5">c92ad6c7cda7923f2d66e7f3b3a0a5e6</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="5"> <file_name>en_ipadpro_5.jpg</file_name> <size>348744</size> <checksum type="md5">d078c3e43a79a6eee9e8935b3c7b682d</checksum> </software_screenshot></software_screenshots>
+
+                        </locale>
+
+                         <locale name="zh-Hans">
+                            <title>诗词换换乐HD</title>
+                            <subtitle>诗词换换乐HD</subtitle>
+                            <description>这是一款平板上以古诗词为核心的文字类应用，细腻的古典中国风，清新淡雅的视觉效果，创新式的游戏体验，在游戏中可以感受到中国古代文学的魅力，进入诗词的世界。
+        玩法超级简单：交换文字位置，让文字显示在正确的位置。
+        寓教于乐，老少皆宜。快来试试你的诗词文化功底吧。
+ </description>
+                            <promotional_text>学诗词弘扬中华文化</promotional_text>
+                            <keywords>
+                               <keyword>连连乐,儿童游戏,游乐园,拼图,儿童,早教,儿歌,小孩,乐看动画,奇艺动画,猜图,沙滩乐多纳学英语儿歌多多迷宫小镇汉字王国小牙医美食节熊猫博士小镇画彩蛋悟空识字恐龙救援车马儿的神奇大冒险小企鹅乐园魔力</keyword> 
+                            </keywords>
+                            <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>https://6c69-lianlianle-shkb3-1259451541.tcb.qcloud.la/PrivacyPolicy.txt</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots> 
+<software_screenshot display_target="iOS-5.5-in" position="1"> <file_name>cn_iphone_1.jpg</file_name> <size>221823</size> <checksum type="md5">aff6539f41ae51747e2637eec2d3bd3d</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="2"> <file_name>cn_iphone_2.jpg</file_name> <size>236297</size> <checksum type="md5">7634a98e9ef0a03c0a3c0ed0bc249c49</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="3"> <file_name>cn_iphone_3.jpg</file_name> <size>187333</size> <checksum type="md5">8eb58b1d203e103641be8e8d97747076</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="4"> <file_name>cn_iphone_4.jpg</file_name> <size>131669</size> <checksum type="md5">982b5c22ccf503fa601a8af6d91c40b2</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-5.5-in" position="5"> <file_name>cn_iphone_5.jpg</file_name> <size>206791</size> <checksum type="md5">20649dbeb8f099bf2cf7d63c190fa454</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="1"> <file_name>cn_ipadpro_1.jpg</file_name> <size>404938</size> <checksum type="md5">ed4d4873e96d54c73dab63d65100eebf</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="2"> <file_name>cn_ipadpro_2.jpg</file_name> <size>401787</size> <checksum type="md5">c1bc2aed7c0e13c5b58f7e6a13bfe086</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="3"> <file_name>cn_ipadpro_3.jpg</file_name> <size>334578</size> <checksum type="md5">f6313ea92d2bb59f6b68ec8c8b9a3dba</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="4"> <file_name>cn_ipadpro_4.jpg</file_name> <size>223752</size> <checksum type="md5">d535a41acdf7953be223ef798a57655d</checksum> </software_screenshot>
+<software_screenshot display_target="iOS-iPad-Pro" position="5"> <file_name>cn_ipadpro_5.jpg</file_name> <size>354250</size> <checksum type="md5">54b45611f82a53291cb45de68ec9170d</checksum> </software_screenshot></software_screenshots>
+
+                            
+                        </locale>
+
+                         <locale name="en-CA">
+                            <title>Place Poem HD</title>
+                            <subtitle>Chinese Poem Culture</subtitle>
+                            <description>This is a text app with ancient poetry as the core on the Pad. It has exquisite classical Chinese style, fresh and elegant visual effect and innovative game experience. In the game, you can feel the charm of ancient Chinese literature and enter the world of poetry.
+Play super simple: exchange text position, let the text display in the right position.
+It is suitable for all ages to teach and enjoy. Let's try your poetry and culture.</description>
+                            <promotional_text>Learning poem and promoting Chinese culture</promotional_text>
+                            <keywords>
+                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                            </keywords>
+                           <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>https://6c69-lianlianle-shkb3-1259451541.tcb.qcloud.la/PrivacyPolicy.txt</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots></software_screenshots>
+
+                            
+                        </locale>
+
+                         <locale name="en-AU">
+                            <title>Place Poem HD</title>
+                            <subtitle>Chinese Poem Culture</subtitle>
+                            <description>This is a text app with ancient poetry as the core on the Pad. It has exquisite classical Chinese style, fresh and elegant visual effect and innovative game experience. In the game, you can feel the charm of ancient Chinese literature and enter the world of poetry.
+Play super simple: exchange text position, let the text display in the right position.
+It is suitable for all ages to teach and enjoy. Let's try your poetry and culture.</description>
+                            <promotional_text>Learning poem and promoting Chinese culture</promotional_text>
+                            <keywords>
+                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                            </keywords>
+                            <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>https://6c69-lianlianle-shkb3-1259451541.tcb.qcloud.la/PrivacyPolicy.txt</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots></software_screenshots>
+
+                            
+                        </locale>
+
+                         <locale name="en-GB">
+                            <title>Place Poem HD</title>
+                            <subtitle>Chinese Poem Culture</subtitle>
+                            <description>This is a text app with ancient poetry as the core on the Pad. It has exquisite classical Chinese style, fresh and elegant visual effect and innovative game experience. In the game, you can feel the charm of ancient Chinese literature and enter the world of poetry.
+Play super simple: exchange text position, let the text display in the right position.
+It is suitable for all ages to teach and enjoy. Let's try your poetry and culture.</description>
+                            <promotional_text>Learning poem and promoting Chinese culture</promotional_text>
+                            <keywords>
+                               <keyword>COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber</keyword> 
+                            </keywords>
+                            <!-- <version_whats_new></version_whats_new> -->
+                            <software_url>http://www.mooncore.cn</software_url>
+                            <privacy_url>https://6c69-lianlianle-shkb3-1259451541.tcb.qcloud.la/PrivacyPolicy.txt</privacy_url>
+                            <support_url>http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html</support_url>
+
+                            <software_screenshots></software_screenshots>
+
+                            
+                        </locale>
+                        
+                    </locales>
+                </version>
+            </versions>
+            <products>
+                <product>
+                    <territory>WW</territory>
+                    <sales_start_date>2010-05-25</sales_start_date>
+                    <cleared_for_sale>true</cleared_for_sale>
+                    <wholesale_price_tier>0</wholesale_price_tier>
+                    <allow_volume_discount>false</allow_volume_discount>
+                </product>
+                <product>
+                    <territory>RU</territory>
+                    <cleared_for_sale>true</cleared_for_sale>
+                </product>
+            </products>
+          
+          
+
+           <in_app_purchases>
+                <in_app_purchase>
+                    <product_id>com.moonma.placepoem.pad.noad</product_id>
+                    <reference_name>noad</reference_name>
+                    <type>non-consumable</type>
+                    <products>
+                        <product>
+                            <cleared_for_sale>true</cleared_for_sale>
+                            <wholesale_price_tier>3</wholesale_price_tier>
+                        </product>
+                    </products>
+                    <locales>
+                        <locale name="en-US">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+
+                        <locale name="zh-Hans">
+                            <title>去除广告</title>
+                            <description>该产品可以去除应用内的所有广告</description>
+                        </locale>
+                        <locale name="en-CA">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+                        <locale name="en-AU">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+                        <locale name="en-GB">
+                            <title>Remove AD</title>
+                            <description>Remove all the ads in the app.</description>
+                        </locale>
+
+                        
+                    </locales>
+                    <review_screenshot>
+                        <file_name>in_app_purchases_screenshot.png</file_name>
+                        <size>96482</size>
+                        <checksum type="md5">dc4f197705c3983c730d236f54de2950</checksum>
+                    </review_screenshot>
+                    <!-- <review_notes></review_notes> -->
+                </in_app_purchase>
+               <!--  <in_app_purchase remove="true">
+                    <product_id>obsolete_com.cyberinteractive.tf.missiles.15</product_id>
+                </in_app_purchase> -->
+            </in_app_purchases>
+
+
+        </software_metadata>
+    </software>
+</package>

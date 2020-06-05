@@ -71,13 +71,13 @@ if __name__ == "__main__":
     # reload(sys)
     # sys.setdefaultencoding("utf-8")
 
-    print "脚本名：", sys.argv[0]
+    print ("脚本名：", sys.argv[0])
     cmdPath = cur_file_dir()
     count = len(sys.argv)
     channel = ""
 
     for i in range(1, count):
-        print "参数", i, sys.argv[i]
+        print ("参数", i, sys.argv[i])
         if i == 1:
             cmdPath = sys.argv[i]
 

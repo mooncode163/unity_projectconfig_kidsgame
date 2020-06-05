@@ -1,0 +1,3 @@
+
+
+jarsigner -verbose -keystore ~/sourcecode/mssp_baidu/moonma.jks -signedjar ~/sourcecode/mssp_baidu/signed.apk ~/sourcecode/mssp_baidu/empty.apk moonma -storepass qianlizhiwai

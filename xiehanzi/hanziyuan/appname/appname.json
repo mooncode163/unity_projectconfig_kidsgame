@@ -1,13 +1,13 @@
 {
     "APP_NAME_CN_ANDROID": "儿童汉字园",
-    "APP_NAME_EN_ANDROID": "KidsChineseWord",
+    "APP_NAME_EN_ANDROID": "Kids Chinese Word",
     "APP_NAME_CN_IOS": "儿童汉字园",
-    "APP_NAME_EN_IOS": "KidsChineseWord",
+    "APP_NAME_EN_IOS": "Kids Chinese Word",
     "PACKAGE_ANDROID": "com.moonma.hanziyuan",
     "PACKAGE_IOS": "com.moonma.xuehanzi",
-    "APPVERSION_ANDROID": "1.9.1",
-    "APPVERSION_CODE_ANDROID": "191",
-    "APPVERSION_IOS": "1.9.1",
+    "APPVERSION_ANDROID": "1.9.2",
+    "APPVERSION_CODE_ANDROID": "192",
+    "APPVERSION_IOS": "1.9.2",
     "need_upload_screenshot":true,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "新增自由写模式",

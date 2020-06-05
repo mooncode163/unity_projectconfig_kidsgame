@@ -26,13 +26,13 @@ listChannel = [source.TAPTAP]
 # 主函数的实现
 if __name__ == "__main__":
 
-    print "脚本名：", sys.argv[0]
+    print ("脚本名：", sys.argv[0])
     cmdPath = common.cur_file_dir()
     count = len(sys.argv)
     isHD = False
 
     for i in range(1, count):
-        print "参数", i, sys.argv[i]
+        print ("参数", i, sys.argv[i])
         if i == 1:
             cmdPath = sys.argv[i]
 
