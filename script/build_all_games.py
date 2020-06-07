@@ -62,6 +62,10 @@ def ScanDir(sourceDir,channel,dir2):
                     # os.system("cd "+dirapp)
                     os.system("sh "+"./build_all_ios")
             
+            if channel=="ios_copy_cmd":
+                print("ios_copy_cmd")
+
+            
 
     
 # 主函数的实现
@@ -88,9 +92,9 @@ if __name__ == "__main__":
     if common.IsVMWare():
         cmdPath="/Volumes/VMware Shared Folders/"+cmdPath
 
-    print "dir2="+dir2
+    print ("dir2="+dir2)
 
 
     ScanDir(cmdPath,channel,dir2)
 
-    print "build_huawei sucess"
+    print  ("build_huawei sucess")

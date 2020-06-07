@@ -21,8 +21,8 @@ fi
 echo $filepath
 cd $filepath
 cd ../../../script
-python copy_config.py $filepath icon 
-python clean_screenshot.py $filepath
+python3 copy_config.py $filepath icon 
+python3 clean_screenshot.py $filepath
 
 if [[ $str1 =~ $str2 ]]
 then
@@ -33,5 +33,5 @@ fi
 
 cd $filepath
 cd ../../../
-python clean_xcode_profile.py
+python3 clean_xcode_profile.py
  

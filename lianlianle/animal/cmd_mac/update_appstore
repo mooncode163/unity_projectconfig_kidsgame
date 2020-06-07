@@ -21,6 +21,6 @@ fi
 echo $filepath
 cd $filepath
 cd ../../../script
-python update_appstore.py $filepath
+python3 update_appstore.py $filepath
  
  

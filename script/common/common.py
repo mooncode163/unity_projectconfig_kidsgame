@@ -55,7 +55,14 @@ def coverFiles(sourceDir,  targetDir):
             #cover the files
         if os.path.isfile(sourceFile):
             # print(sourceFile)
-            open(targetFile, "wb").write(open(sourceFile, "rb").read())
+            # open(targetFile, "wb").write(open(sourceFile, "rb").read())
+            
+            # flag = os.path.exists(targetFile)
+            # if flag:
+            #     os.remove(targetFile)
+
+            shutil.copyfile(sourceFile, targetFile)
+
         #目录嵌套
         if os.path.isdir(sourceFile):
             # print(sourceFile)

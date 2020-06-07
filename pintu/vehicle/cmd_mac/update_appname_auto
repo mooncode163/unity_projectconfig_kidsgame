@@ -23,6 +23,6 @@ fi
 echo $filepath
 cd $filepath
 cd ../../../script
-python appname.py $filepath true
+python3 appname.py $filepath true
  
  

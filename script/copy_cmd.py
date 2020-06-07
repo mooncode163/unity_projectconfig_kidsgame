@@ -35,15 +35,16 @@ def copyCmdDir(name):
     dir1 = common.GetProjectConfigDefault()+"/"+name
     dir2 = common.GetProjectConfigApp() + "/"+name
     flag = os.path.exists(dir2)
-    # if flag:
-    #     shutil.rmtree(dir2)
-    # shutil.copytree(dir1,dir2)
-    common.coverFiles(dir1,dir2)
+    if flag:
+        shutil.rmtree(dir2)
+    shutil.copytree(dir1,dir2)
+    # common.coverFiles(dir1,dir2)
 
 def copyAllBuildDir():
     dir1 = common.GetProjectConfigDefault()+"/all_build"
     dir2 = common.GetProjectConfigAppType() 
     flag = os.path.exists(dir2)
+    
     common.coverFiles(dir1,dir2)
 
 #主函数的实现

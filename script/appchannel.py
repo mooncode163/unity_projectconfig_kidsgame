@@ -100,7 +100,7 @@ def updateChannel(channel,ishd):
     #配置build.grade
     #common.coverFiles(build_gradle,   targetDir)
 
-    build_gradle_dst = targetDir+"/build.gradle"
+    build_gradle_dst = rootAndroidStudio+"/build.gradle"
     flag = os.path.exists(build_gradle_dst)
     if flag:
         os.remove(build_gradle_dst)

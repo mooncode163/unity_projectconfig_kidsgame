@@ -21,7 +21,7 @@ fi
 echo $filepath
 cd $filepath
 cd ../../../script
-python copy_cmd.py $filepath
+python3 copy_cmd.py $filepath
  
 
  

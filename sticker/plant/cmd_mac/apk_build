@@ -21,6 +21,6 @@ fi
 echo $filepath
 cd $filepath
 cd ../../../script
-python apk_build_clean.py 
-python apk_build.py $filepath
+python3 apk_build_clean.py 
+python3 apk_build.py $filepath
 

@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "BabyLoveMatchHD",
     "PACKAGE_ANDROID": "com.moonma.lianlianlematch.pad",
     "PACKAGE_IOS": "com.moonma.lianlianlematch.pad",
-    "APPVERSION_ANDROID": "1.0.9",
-    "APPVERSION_CODE_ANDROID": "109",
-    "APPVERSION_IOS": "1.0.9",
+    "APPVERSION_ANDROID": "1.0.6",
+    "APPVERSION_CODE_ANDROID": "106",
+    "APPVERSION_IOS": "1.0.6",
     "need_upload_screenshot": true,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",

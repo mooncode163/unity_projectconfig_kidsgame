@@ -13,13 +13,24 @@ then
     #filepath=${filepath// /\\ } 
     filepath=${filepath#/Volumes/VMware Shared Folders/}
     cd /Volumes/VMware\ Shared\ Folders
+    
+    cd $filepath
+    sh ./copy_and_build_all_ipa_ios
+
 else
     echo "不包含"
+
+    cd $filepath
+    sh ./copy_resource
+    sh ./unity_build_ios
+    sh ./update_appname_auto
+    sh ./copy_config
+    sh ./ipa_build
+    sh ./copy_config_hd
+    sh ./ipa_build
+
 fi
 
-cd $filepath
-sh ./update_appname
-sh ./copy_config
-sh ./ipa_build
-sh ./copy_config_hd
-sh ./ipa_build
+    
+
+

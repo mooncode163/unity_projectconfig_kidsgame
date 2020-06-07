@@ -19,4 +19,4 @@ fi
 
 cd $filepath
 cd ../script
-python build_all_games.py $filepath ios
+python3 build_all_games.py $filepath ios

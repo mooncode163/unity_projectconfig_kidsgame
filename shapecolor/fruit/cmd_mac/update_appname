@@ -21,6 +21,6 @@ fi
 echo $filepath
 cd $filepath
 cd ../../../script
-python appname.py $filepath
+python3 appname.py $filepath
  
  

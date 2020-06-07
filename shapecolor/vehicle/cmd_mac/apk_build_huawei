@@ -22,15 +22,15 @@ echo $filepath
 cd $filepath
 cd ../../../script 
 
-python copy_android_output_asset.py $filepath 
-python copy_config.py $filepath icon
-python clean_screenshot.py $filepath
-python apk_build_clean.py 
-python apk_build_huawei.py $filepath
+python3 copy_android_output_asset.py $filepath 
+python3 copy_config.py $filepath icon
+python3 clean_screenshot.py $filepath
+python3 apk_build_clean.py 
+python3 apk_build_huawei.py $filepath
  
-python copy_config.py $filepath iconhd
-python clean_screenshot.py $filepath
-python apk_build_clean.py 
-python apk_build_huawei.py $filepath hd
+python3 copy_config.py $filepath iconhd
+python3 clean_screenshot.py $filepath
+python3 apk_build_clean.py 
+python3 apk_build_huawei.py $filepath hd
 
 

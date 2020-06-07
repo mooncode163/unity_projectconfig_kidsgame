@@ -21,8 +21,8 @@ fi
 echo $filepath
 cd $filepath
 cd ../../../script
-python ipa_build.py $filepath export_ipa
-python ipa_build.py $filepath upload_ipa
+python3 ipa_build.py $filepath export_ipa
+python3 ipa_build.py $filepath upload_ipa
  
 
  

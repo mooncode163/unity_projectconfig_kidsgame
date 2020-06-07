@@ -21,6 +21,6 @@ fi
 echo $filepath
 cd $filepath
 cd ../../../script
-python copy_ios_code.py
+python3 copy_ios_code.py
  
  
