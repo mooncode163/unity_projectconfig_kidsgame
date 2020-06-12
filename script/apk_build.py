@@ -28,7 +28,7 @@ def buildApk():
             flag = os.path.exists(dir2)
             if not flag:
                 # aliyun
-                dir2 = "C:/Program Files/Unity/Hub/Editor/"+source.UNITY_VERSION+"/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/gradle"
+                dir2 = "C:/Program Files/Unity/Hub/Editor/"+source.UNITY_VERSION_WIN+"/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/gradle"
 
  
         os.system(dir2+"/bin/gradle assembleRelease")

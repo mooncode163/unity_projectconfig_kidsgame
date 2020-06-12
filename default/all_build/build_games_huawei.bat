@@ -2,6 +2,6 @@
 @set filepath = %~dp0 
 
 cd ../script
-c:/Python27/python build_all_games.py %~dp0 huawei
+python build_all_games.py %~dp0 huawei
   
 @Pause

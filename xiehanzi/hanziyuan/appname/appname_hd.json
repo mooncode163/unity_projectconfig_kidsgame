@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "Baby Chinese Word HD",
     "PACKAGE_ANDROID": "com.moonma.hanziyuan.pad",
     "PACKAGE_IOS": "com.moonma.xuehanzi.ipad",
-    "APPVERSION_ANDROID": "1.9.2",
-    "APPVERSION_CODE_ANDROID": "192",
-    "APPVERSION_IOS": "1.9.2",
+    "APPVERSION_ANDROID": "1.9.3",
+    "APPVERSION_CODE_ANDROID": "193",
+    "APPVERSION_IOS": "1.9.3",
     "need_upload_screenshot":true,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "新增自由写模式",

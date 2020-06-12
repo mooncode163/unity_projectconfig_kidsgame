@@ -212,8 +212,9 @@ def getGameType():
     return getDirNameofPath(getLastDirofDir(g_CmdPath)) 
     
 def saveString2File(str, file):
-    f = open(file, 'w')  # 若是'wb'就表示写二进制文件
-    f.write(str)
+    f = open(file, 'wb')  # 若是'wb'就表示写二进制文件
+    b = str.encode('utf-8',"ignore")
+    f.write(b)
     f.close()
 
 def get_FileSize(filePath):
@@ -391,9 +392,9 @@ def GetCommonAdConfigDir():
 def GetConfigDir(): 
     return GetConfigDataDir()+"/config"
 
-def GetFileString(filePath): 
-    f = open(filePath, 'r')
-    strFile = f.read()
+def GetFileString(filePath):  
+    f = open(filePath, 'rb')
+    strFile = f.read().decode('utf-8',"ignore")
     f.close()
     return strFile
 

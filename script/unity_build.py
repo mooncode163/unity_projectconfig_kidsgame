@@ -41,13 +41,13 @@ if __name__ == "__main__":
     # 0f6 2f1
     UNITYPATH=""
     if common.isWindowsSystem():
-        UNITYPATH="E:/Unity/"+source.UNITY_VERSION+"/Editor/Unity.exe"
+        UNITYPATH="E:/Unity/"+source.UNITY_VERSION_WIN+"/Editor/Unity.exe"
         if not os.path.exists(UNITYPATH):
             # 阿里云添加环境变量 C:\Program Files\Unity\Hub\Editor\2019.3.2f1\Editor
             # UNITYPATH="C:/Program Files/Unity/Hub/Editor/"+source.UNITY_VERSION+"/Editor/Unity.exe"
             UNITYPATH= "Unity.exe"
     else:
-        UNITYPATH="/Applications/Unity/Hub/Editor/"+source.UNITY_VERSION+"/Unity.app/Contents/MacOS/Unity" 
+        UNITYPATH="/Applications/Unity/Hub/Editor/"+source.UNITY_VERSION_MAC+"/Unity.app/Contents/MacOS/Unity" 
 
 
     

@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "BabyFarmFindHD",
     "PACKAGE_ANDROID": "com.moonma.nongchangfind.pad",
     "PACKAGE_IOS": "com.moonma.nongchangfind.pad",
-    "APPVERSION_ANDROID": "1.6.2",
-    "APPVERSION_CODE_ANDROID": "162",
-    "APPVERSION_IOS": "1.6.2",
+    "APPVERSION_ANDROID": "1.6.4",
+    "APPVERSION_CODE_ANDROID": "164",
+    "APPVERSION_IOS": "1.6.4",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",

@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "BabyMatchLeHD",
     "PACKAGE_ANDROID": "com.moonma.lianlianle.pad",
     "PACKAGE_IOS": "com.mooncore.tv.ipad",
-    "APPVERSION_ANDROID": "1.7.9",
-    "APPVERSION_CODE_ANDROID": "179",
-    "APPVERSION_IOS": "1.7.9",
+    "APPVERSION_ANDROID": "1.8.1",
+    "APPVERSION_CODE_ANDROID": "181",
+    "APPVERSION_IOS": "1.8.1",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",

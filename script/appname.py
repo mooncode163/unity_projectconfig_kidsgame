@@ -48,7 +48,8 @@ def GetJsonFile(isHd):
 
 def loadJson(isHd): 
     jsonfile = GetJsonFile(isHd) 
-    with open(jsonfile) as json_file:
+    
+    with  open(jsonfile, 'rb') as json_file:
         data = json.load(json_file)
         return data
 
@@ -67,51 +68,43 @@ def replaceString(strContent, strStart, strEnd, strReplace):
     return strRet
 
 
-def replaceFile(filePath, strOld, strReplace):
-    f = open(filePath, 'r')
-    strFile = f.read() 
-    strOut = strFile.replace(strOld, strReplace)
-    f.close()
+def replaceFile(filePath, strOld, strReplace): 
+    strFile = common.GetFileString(filePath)
+    strOut = strFile.replace(strOld, strReplace) 
     saveString2File(strOut, filePath)
 
 
 def replaceStringOfFile(filePath, strStart, strEnd, strReplace):
-    f = open(filePath, 'r')
-    strFile = f.read()
+    # f = open(filePath)
+    # f = open(filePath,'r', encoding='UTF-8') 
+    strFile = common.GetFileString(filePath)
     # strFile.decode('utf-8')
     # print strFile
     strOut = replaceString(strFile, strStart, strEnd, strReplace)
     # print strOut
     # fp_name.seek(0)
-    # fp_name.write(strOut)
-    f.close()
+    # fp_name.write(strOut) 
     return strOut
 
 def replacePackage(filePath,package):
-    f = open(filePath, 'r')
-    strFile = f.read()
-    f.close() 
+    strFile = common.GetFileString(filePath) 
     strFile = strFile.replace("_PACKAGE_", package)
     common.saveString2File(strFile,filePath)
 
 def replaceFileForKey(filePath,key,content):
-    f = open(filePath, 'r')
-    strFile = f.read()
-    f.close() 
+    # f = open(filePath, 'rb')
+    # f = open(filePath,'r', encoding='utf-8')
+    strFile = common.GetFileString(filePath) 
     strFile = strFile.replace(key, content)
     common.saveString2File(strFile,filePath)
 
 def replaceFile(filePath,key,value):
-    f = open(filePath, 'r')
-    strFile = f.read()
-    f.close() 
+    strFile = common.GetFileString(filePath) 
     strFile = strFile.replace(key, value)
     common.saveString2File(strFile,filePath) 
 
 def replaceScreenOrientation(filePath,isHd):
-    f = open(filePath, 'r')
-    strFile = f.read()
-    f.close() 
+    strFile = common.GetFileString(filePath)
 
     str = "sensorPortrait"
     if isHd:
@@ -144,21 +137,17 @@ def replaceString2(strContent, strStart, strMid, strEnd, strReplace):
 
 
 def replaceStringOfFile2(filePath, strStart, strMid, strEnd, strReplace):
-    f = open(filePath, 'r')
-    strFile = f.read()
+    strFile = common.GetFileString(filePath)
     # print strFile
     strOut = replaceString2(strFile, strStart, strMid, strEnd, strReplace)
     # print strOut
     # fp_name.seek(0)
-    # fp_name.write(strOut)
-    f.close()
+    # fp_name.write(strOut) 
     return strOut
 
 
 def saveString2File(str, file):
-    f = open(file, 'w')  # 若是'wb'就表示写二进制文件
-    f.write(str)
-    f.close()
+    common.saveString2File(str, file)
 
 
 def replaceGoogleServiceFile(file, package):
@@ -180,9 +169,7 @@ def replaceGoogleServiceFile(file, package):
     saveString2File(strOut, file)
 
 def replaceXcodeUrlScheme(filePath, src, appid,idx):
-    f = open(filePath, 'r')
-    strFile = f.read() 
-    f.close()
+    strFile = common.GetFileString(filePath)
 
     # <string>WEIXIN_APPID</string>
     if src==source.WEIXIN or src==source.WEIXINFRIEND:
@@ -301,13 +288,12 @@ def autoPlusVersionOldVersion(isHd,jsonData):
 
     # 替换json
     jsonfile = GetJsonFile(isHd) 
-
-    f = open(jsonfile, 'r')
-    strOut = f.read() 
+ 
+    strOut = common.GetFileString(jsonfile)
     strOut = strOut.replace(strold, strnew)
     strOut = strOut.replace(strold_version_android, strnew_version_android)
-    strOut = strOut.replace(strold_version_ios, strnew_version_ios)
-    f.close()
+    strOut = strOut.replace(strold_version_ios, strnew_version_ios) 
+
     saveString2File(strOut, jsonfile) 
 
 

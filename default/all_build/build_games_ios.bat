@@ -2,6 +2,6 @@
 @set filepath = %~dp0 
 
 cd ../script
-c:/Python27/python build_all_games.py %~dp0 ios
+python build_all_games.py %~dp0 ios
   
 @Pause

@@ -31,7 +31,7 @@ def LoadJson(osSrc, isHd):
     global jsonRoot
     global jsonPlat
     jsonfile = GetConfigFile(osSrc, isHd)
-    with open(jsonfile) as json_file:
+    with open(jsonfile, 'rb') as json_file:
         jsonRoot = json.load(json_file)
         jsonPlat = jsonRoot["platform"]
 
@@ -39,7 +39,7 @@ def LoadJson(osSrc, isHd):
 def LoadJsonFile(jsonfile):
     global jsonRoot
     global jsonPlat
-    with open(jsonfile) as json_file:
+    with open(jsonfile, 'rb') as json_file:
         jsonRoot = json.load(json_file)
         jsonPlat = jsonRoot["platform"]
 
