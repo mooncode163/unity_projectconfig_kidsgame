@@ -1,8 +1,8 @@
 {
     "APP_NAME_CN_ANDROID": "儿童涂色动物园",
-    "APP_NAME_EN_ANDROID": "KidsColoringZoo",
+    "APP_NAME_EN_ANDROID": "Kids Coloring Zoo",
     "APP_NAME_CN_IOS": "儿童涂色动物园",
-    "APP_NAME_EN_IOS": "KidsColoringZoo",
+    "APP_NAME_EN_IOS": "Kids Coloring Zoo",
     "PACKAGE_ANDROID": "com.moonma.paintanimal",
     "PACKAGE_IOS": "com.moonma.paintanimal",
     "APPVERSION_ANDROID": "1.0.4",

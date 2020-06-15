@@ -9,13 +9,13 @@
 		<key>CFBundleDevelopmentRegion</key>
 		<string>en</string>
 		<key>CFBundleDisplayName</key>
-		<string>_APP_NAME_</string>
+		<string>儿童农场发现</string>
 		<key>CFBundleIconName</key>
 		<string>AppIcon</string>
 		<key>CFBundleExecutable</key>
 		<string>${EXECUTABLE_NAME}</string>
 		<key>CFBundleIdentifier</key>
-		<string>_APP_PACKAGE_</string>
+		<string>com.moonma.pinpinle.nongchang</string>
 		<key>CFBundleInfoDictionaryVersion</key>
 		<string>6.0</string>
 		<key>CFBundleName</key>
@@ -23,9 +23,9 @@
 		<key>CFBundlePackageType</key>
 		<string>APPL</string>
 		<key>CFBundleShortVersionString</key>
-		<string>_APP_VERSION_</string>
+		<string>2.0.8</string>
 		<key>CFBundleVersion</key>
-		<string>_APP_VERSION_</string>
+		<string>2.0.8</string>
 		<key>LSRequiresIPhoneOS</key>
 		<true/>
 		<key>NSAppTransportSecurity</key>
@@ -180,7 +180,7 @@
 				<string></string>
 				<key>CFBundleURLSchemes</key>
 				<array>
-					<string>WEIBO_APPID</string>
+					<string>wb0</string>
 				</array>
 			</dict>
 			<dict>
@@ -190,7 +190,7 @@
 				<string>weixin</string>
 				<key>CFBundleURLSchemes</key>
 				<array>
-					<string>WEIXIN_APPID</string>
+					<string>wx0</string>
 				</array>
 			</dict>
 			<dict>
@@ -198,7 +198,7 @@
 				<string>Editor</string>
 				<key>CFBundleURLSchemes</key>
 				<array>
-					<string>QQ_APPID1</string>
+					<string>tencent0</string>
 				</array>
 			</dict>
 			<dict>
@@ -226,7 +226,7 @@
 				<string>Editor</string>
 				<key>CFBundleURLSchemes</key>
 				<array>
-					<string>QQ_APPID0</string>
+					<string>QQ00000000</string>
 				</array>
 			</dict>
 			<dict>
@@ -319,6 +319,6 @@
 			</dict>
 		</array>
 		<key>GADApplicationIdentifier</key>
-		<string>_APP_ID_ADMOB_</string>
+		<string>ca-app-pub-9172948412628142~2786113316</string>
 	</dict>
 </plist>

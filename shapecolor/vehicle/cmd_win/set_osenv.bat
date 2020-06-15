@@ -3,6 +3,6 @@
 
 cd ../../../script
 
-c:/Python27/python set_osenv.py %~dp0
+python set_osenv.py %~dp0
   
 @Pause

@@ -4,9 +4,9 @@
 
 cd ../../../script
 
-c:/Python27/python copy_resource.py %~dp0
-c:/Python27/python copy_gamedata.py %~dp0
-c:/Python27/python appcode.py %~dp0 "copy"
+python copy_resource.py %~dp0
+python copy_gamedata.py %~dp0
+python appcode.py %~dp0 "copy"
 
 
 @Pause

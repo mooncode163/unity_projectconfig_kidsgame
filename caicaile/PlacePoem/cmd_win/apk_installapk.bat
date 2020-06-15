@@ -2,7 +2,7 @@
 
 cd ../../../script
 
-c:/Python27/python apk_installapk.py %~dp0
+python apk_installapk.py %~dp0
 
 
 

@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "Baby Shape Color HD",
     "PACKAGE_ANDROID": "com.moonma.shapecolor.pad",
     "PACKAGE_IOS": "com.moonma.shapecolor.pad",
-    "APPVERSION_ANDROID": "1.7.1",
-    "APPVERSION_CODE_ANDROID": "171",
-    "APPVERSION_IOS": "1.7.1",
+    "APPVERSION_ANDROID": "1.7.2",
+    "APPVERSION_CODE_ANDROID": "172",
+    "APPVERSION_IOS": "1.7.2",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复内购失败的问题",

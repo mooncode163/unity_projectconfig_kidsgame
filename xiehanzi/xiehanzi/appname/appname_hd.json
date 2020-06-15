@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "BabyWriteChineseHD",
     "PACKAGE_ANDROID": "com.moonma.xiehanzi2.pad",
     "PACKAGE_IOS": "com.moonma.xiehanzi.pad",
-    "APPVERSION_ANDROID": "1.5.7",
-    "APPVERSION_CODE_ANDROID": "157",
-    "APPVERSION_IOS": "1.5.7",
+    "APPVERSION_ANDROID": "1.6.0",
+    "APPVERSION_CODE_ANDROID": "160",
+    "APPVERSION_IOS": "1.6.0",
     "need_upload_screenshot": true,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "新增自由写模式",

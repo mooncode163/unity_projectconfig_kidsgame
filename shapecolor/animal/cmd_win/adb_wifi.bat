@@ -3,7 +3,7 @@
 
 cd ../../../script
 
-c:/Python27/python adb_wifi.py %~dp0
+python adb_wifi.py %~dp0
 
 
 

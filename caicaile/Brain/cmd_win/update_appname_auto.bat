@@ -4,7 +4,7 @@
 
 cd ../../../script
 
-c:/Python27/python appname.py %~dp0 true 
+python appname.py %~dp0 true 
 
 @Pause
 

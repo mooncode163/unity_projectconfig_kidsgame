@@ -4,7 +4,7 @@
 
 cd ../../../script
 
-c:/Python27/python copy_gamedata.py %~dp0
+python copy_gamedata.py %~dp0
 
 
 
