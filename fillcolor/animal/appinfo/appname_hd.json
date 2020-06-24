@@ -1,0 +1,36 @@
+{
+    "APP_NAME_CN_ANDROID": "宝宝动物填色画画HD",
+    "APP_NAME_EN_ANDROID": "Baby Animal Color HD",
+    "APP_NAME_CN_IOS": "宝宝动物填色画画HD",
+    "APP_NAME_EN_IOS": "Baby Animal Color HD",
+    "PACKAGE_ANDROID": "com.moonma.fillcoloranimal.pad",
+    "PACKAGE_IOS": "com.moonma.fillcoloranimal.pad",
+    "APPVERSION_ANDROID": "1.2.3",
+    "APPVERSION_CODE_ANDROID": "123",
+    "APPVERSION_IOS": "1.3.0",
+    "need_upload_screenshot": true,
+    "APPSTORE_VERSION_UPDATE": {
+        "cn": "修复闪退",
+        "en": "Fix a Bug"
+    },
+    "APPSTORE_TITLE": {
+        "cn": "宝宝动物填色画画HD",
+        "en": "Baby Animal Color HD"
+    },
+    "APPSTORE_SUBTITLE": {
+        "cn": "动物着色书HD",
+        "en": "Animal Coloring Book HD"
+    },
+    "APPSTORE_PROMOTION": {
+        "cn": "通过绘画培养孩子的创造力和想象力",
+        "en": "Nurture children's creativity and imagination through painting"
+    },
+    "APPSTORE_KEYWORD": {
+        "cn": "居家安全宝宝巴士托马斯和朋友我是消防员兴趣启蒙小帮手小伴龙森林动物草莓甜心糖果果园沙滩乐多纳学英语儿歌多多迷宫小镇汉字王国小牙医美食节熊猫博士小镇画彩蛋悟空识字恐龙救援车马儿的神奇大冒险小企鹅乐园魔力",
+        "en": "拼多多机器人梦工厂碰碰狐宝宝美食街点点多纳多多宝宝巴士瓦贝儿歌悟空识字学数学未来骑士团宝贝英语说趣味食物火车总动员开心蔬菜童话故事小邮局恐龙农场宝宝认家庭成员马儿的神奇大冒险好爸爸学习机课堂学习拖拖乐"
+    },
+    "software_url": "http://www.mooncore.cn",
+    "privacy_url": "http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
+    "support_url": "http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html",
+    "sku_app": "sku_fillcoloranimal_pad"
+}

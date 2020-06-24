@@ -1,0 +1,13 @@
+{
+    "update_note": {
+        "cn": "修复闪退",
+        "en": "Fix a Bug"
+    },
+    "version": {
+        "android": "2.2.3"
+    }
+    ,
+    "version_hd": {
+        "android": "1.8.7"
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "APP_NAME_CN_ANDROID": "宝宝汉字园HD",
+    "APP_NAME_EN_ANDROID": "Baby Chinese Word HD",
+    "APP_NAME_CN_IOS": "宝宝汉字园HD",
+    "APP_NAME_EN_IOS": "Baby Chinese Word HD",
+    "PACKAGE_ANDROID": "com.moonma.hanziyuan.pad",
+    "PACKAGE_IOS": "com.moonma.xuehanzi.ipad",
+    "APPVERSION_ANDROID": "1.9.4",
+    "APPVERSION_CODE_ANDROID": "194",
+    "APPVERSION_IOS": "1.9.4",
+    "need_upload_screenshot":true,
+    "APPSTORE_VERSION_UPDATE": {
+        "cn": "新增自由写模式",
+        "en": "New free write mode"
+    },
+    "APPSTORE_TITLE": {
+        "cn": "宝宝汉字园HD-练字书写软件",
+        "en": "Baby Chinese Word HD"
+    },
+    "APPSTORE_SUBTITLE": {
+        "cn": "练习汉字笔划书写",
+        "en": "Practice the stroke of Chinese"
+    },
+    "APPSTORE_PROMOTION": {
+        "cn": "帮助宝宝快速掌握汉字的笔画书写",
+        "en": "Help children quickly master Chinese character strokes"
+    },
+    "APPSTORE_KEYWORD": {
+        "cn": "儿童, 早教, 小孩, 识字, 汉字, 学汉字, 文字, 拖拖乐, 拼图, 教育, 乐看, 动画, 书法, 笔画, 练字, 魔力小孩识字, 儿歌点点, 多多, 悟空识字, 睡前故事宝宝, 瓦贝儿歌, 宝宝孕育, 性爱姿势, 猪迪克识字, 魔卡幻想",
+        "en": "COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber"
+    },
+    "software_url": "http://www.mooncore.cn",
+    "privacy_url": "http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
+    "support_url": "http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html",
+    "sku_app": "moonma_xuehanziipad"
+}

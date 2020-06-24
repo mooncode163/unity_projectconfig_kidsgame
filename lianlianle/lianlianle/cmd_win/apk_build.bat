@@ -3,16 +3,16 @@
 
 cd ../../../script
 
-c:/Python27/python copy_config.py %~dp0 icon
-c:/Python27/python clean_screenshot.py %~dp0
-c:/Python27/python apk_build_clean.py 
-c:/Python27/python apk_build_xiaomi.py %~dp0
+python copy_config.py %~dp0 icon
+python clean_screenshot.py %~dp0
+python apk_build_clean.py 
+python apk_build_xiaomi.py %~dp0
 
 
-c:/Python27/python copy_config.py %~dp0 iconhd
-c:/Python27/python clean_screenshot.py %~dp0
-c:/Python27/python apk_build_clean.py 
-c:/Python27/python apk_build_xiaomi.py %~dp0
+python copy_config.py %~dp0 iconhd
+python clean_screenshot.py %~dp0
+python apk_build_clean.py
+python apk_build_xiaomi.py %~dp0
 
 
 @Pause

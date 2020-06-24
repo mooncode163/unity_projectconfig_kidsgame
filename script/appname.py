@@ -15,6 +15,7 @@ import common
 import config
 import source
 import adconfig
+import AppVersionHuawei
 
 versionCode = 100
 
@@ -40,7 +41,7 @@ def GetPackage(osSrc,isHD):
     return ret
 
 def GetJsonFile(isHd):
-    cur_path = common.GetProjectConfigApp()+"/appname"
+    cur_path = common.GetProjectConfigApp()+"/appinfo"
     jsonfile = cur_path+'/appname.json'
     if isHd:
         jsonfile = cur_path+'/appname_hd.json'
@@ -461,6 +462,31 @@ def updateName(isHd,isAuto):
     APPVERSION_CODE_ANDROID = versionCode
     
 
+    # appversion.json
+    if isAuto==False: 
+        src = common.GetProjectConfigDefault()+"/appinfo/appversion.json"
+        dst = common.GetProjectConfigApp()+"/appinfo/appversion.json"
+        flag = os.path.exists(dst)
+        # 
+        if not isHd:
+            shutil.copyfile(src,dst)
+
+        strfile = common.GetFileString(dst)
+        key = "_VERSION_ANDROID_"
+        if isHd:
+            key = "_VERSION_HD_ANDROID_"
+
+        
+        if isOld:
+            version_web = APPVERSION_ANDROID
+        else:          
+            version_web = AppVersionHuawei.ParseVersion(appid_huawei)
+        strfile = strfile.replace(key,version_web) 
+        common.saveString2File(strfile,dst)
+
+
+
+
     print (APP_NAME_CN_ANDROID)
     print (APP_NAME_EN_ANDROID)
     print (APP_NAME_CN_IOS)
@@ -607,7 +633,14 @@ if __name__ == "__main__":
     copyResFiles(source.ANDROID)
     # win 
     copyResFiles(source.WIN)
-
+   
+    # rename
+    src = common.GetProjectConfigApp()+"/appname"
+    dst = common.GetProjectConfigApp()+"/appinfo"
+    flag = os.path.exists(src)
+    if flag:
+        os.rename(src,dst)
+     
     updateName(False,is_auto_plus_version)
     updateName(True,is_auto_plus_version)
  
