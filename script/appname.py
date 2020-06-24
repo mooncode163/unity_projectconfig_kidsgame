@@ -361,6 +361,26 @@ def UpdateLanguageName(name_cn,name_en,ishd):
     replaceFile(csvfile,key_name,str_new)
 
 
+def GetConfigDataAppId(os,chanel,ishd):
+    dirconfig = common.GetConfigDataDir()
+    filepath = ""
+    appid = ""
+    if os==source.ANDROID:
+        filepath = dirconfig+"/config/config_android.json"
+        if ishd:
+            filepath = dirconfig+"/config/config_android_hd.json"
+   
+    if os==source.IOS:
+        filepath = dirconfig+"/config/config_ios.json"
+        if ishd:
+            filepath = dirconfig+"/config/config_ios_hd.json"
+     
+
+    with open(filepath) as json_file:
+        data = json.load(json_file)
+        appid = data["APPID"][chanel] 
+
+    return appid
 
 def SetConfigDataAppId(os,chanel,appid,ishd):
     dirconfig = common.GetConfigDataDir()
@@ -427,6 +447,7 @@ def updateName(isHd,isAuto):
         PACKAGE_IOS = data["PACKAGE_IOS"]
         versionCode = data["APPVERSION_CODE_ANDROID"]
         APPVERSION_IOS = data["APPVERSION_IOS"]
+        appid_huawei = GetConfigDataAppId(source.ANDROID,source.HUAWEI,isHd)
     else:
         APP_NAME_CN_ANDROID = appname[source.ANDROID]["cn"]
         APP_NAME_EN_ANDROID = appname[source.ANDROID]["en"]
@@ -476,11 +497,8 @@ def updateName(isHd,isAuto):
         if isHd:
             key = "_VERSION_HD_ANDROID_"
 
-        
-        if isOld:
-            version_web = APPVERSION_ANDROID
-        else:          
-            version_web = AppVersionHuawei.ParseVersion(appid_huawei)
+                 
+        version_web = AppVersionHuawei.ParseVersion(appid_huawei)
         strfile = strfile.replace(key,version_web) 
         common.saveString2File(strfile,dst)
 
