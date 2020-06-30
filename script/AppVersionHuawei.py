@@ -41,7 +41,7 @@ def ParseVersion(appid):
 
     # 加载百度页面
     driver.get(url)
-    time.sleep(5)
+    time.sleep(3)
 
     # 获取页面名为wrapper的id标签的文本内容
     # data = driver.find_element_by_id("wrapper").text
@@ -61,8 +61,8 @@ def ParseVersion(appid):
 
     html = driver.execute_script("return document.documentElement.outerHTML")
     html = driver.page_source
-    start = "版本"
-    start_en = "Version"
+    start = ">版本<"
+    start_en = ">Version<"
     mid = "info_val\">"
     end = "</div>"
 

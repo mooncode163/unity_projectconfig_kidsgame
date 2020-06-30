@@ -3,6 +3,6 @@
 
 cd ../../../script
 
-c:/Python27/python unity_build.py %~dp0 ios
+python unity_build.py %~dp0 ios
   
 @Pause
