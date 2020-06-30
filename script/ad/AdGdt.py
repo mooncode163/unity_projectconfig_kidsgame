@@ -5,8 +5,9 @@ import json
 o_path = os.getcwd()  # 返回当前工作目录
 sys.path.append(o_path)  # 添加自己指定的搜索路径
 from common import common
-import appname
-import source
+from common import source
+
+import appname 
 
 from selenium import webdriver
 
@@ -88,9 +89,14 @@ class AdGdt():
     def Login(self):
         # 3452644866
         print("waiting for login")
-        time.sleep(20)
-        return
+        time.sleep(2)
+        # return
         # driver.add_cookie("[{'domain': '.id1.cloud.huawei.com', 'expiry': 1908869785, 'httpOnly': False, 'name': 'sid', 'path': '/', 'secure': True, 'value': '2049382e3828ef4470bef8b426c4bb3370e7d9e1147f53a18839e47dad7caf10a233e61ee15337b4373e'}, {'domain': '.id1.cloud.huawei.com', 'expiry': 1908869785, 'httpOnly': False, 'name': 'hwid_cas_sid', 'path': '/', 'secure': True, 'value': '2049382e3828ef4470bef8b426c4bb3370e7d9e1147f53a18839e47dad7caf10a233e61ee15337b4373e'}, {'domain': 'id1.cloud.huawei.com', 'expiry': 1624872984, 'httpOnly': False, 'name': 'HW_idts_id1_cloud_huawei_com_id1_cloud_huawei_com', 'path': '/', 'secure': False, 'value': '1593336984125'}, {'domain': 'id1.cloud.huawei.com', 'expiry': 1624872984, 'httpOnly': False, 'name': 'HW_id_id1_cloud_huawei_com_id1_cloud_huawei_com', 'path': '/', 'secure': False, 'value': 'cf787be41ac24d65887dcd20c826ac97'}, {'domain': 'id1.cloud.huawei.com', 'expiry': 1624872984, 'httpOnly': False, 'name': 'HW_idvc_id1_cloud_huawei_com_id1_cloud_huawei_com', 'path': '/', 'secure': False, 'value': '1'}, {'domain': 'id1.cloud.huawei.com', 'expiry': 1593338788, 'httpOnly': False, 'name': 'HW_idn_id1_cloud_huawei_com_id1_cloud_huawei_com', 'path': '/', 'secure': False, 'value': 'ec569450f0ac4cd78fc72965d91ec7e8'}, {'domain': 'id1.cloud.huawei.com', 'expiry': 1608888984, 'httpOnly': False, 'name': 'HW_refts_id1_cloud_huawei_com_id1_cloud_huawei_com', 'path': '/', 'secure': False, 'value': '1593336984124'}, {'domain': '.id1.cloud.huawei.com', 'httpOnly': True, 'name': 'CAS_THEME_NAME', 'path': '/', 'secure': True, 'value': 'red'}, {'domain': 'id1.cloud.huawei.com', 'httpOnly': False, 'name': 'cookieBannerOnOff', 'path': '/', 'secure': False, 'value': 'true'}, {'domain': '.id1.cloud.huawei.com', 'httpOnly': True, 'name': 'VERSION_NO', 'path': '/', 'secure': True, 'value': 'UP_CAS_4.0.4.100'}, {'domain': 'id1.cloud.huawei.com', 'httpOnly': True, 'name': 'JSESSIONID', 'path': '/CAS', 'secure': True, 'value': '144E8B2ED3F5D9C8576742C1DDF4CF3D0DCF6949E13D6943'}]")
+        self.driver.switch_to.frame("ptlogin_iframe")
+        time.sleep(2)
+
+        self.driver.find_element_by_id('switcher_plogin').click()
+        time.sleep(1) 
 
         item = self.driver.find_element(
             By.XPATH, "//input[@id='u']")
@@ -99,9 +105,11 @@ class AdGdt():
         item = self.driver.find_element(By.XPATH, "//input[@id='p']")
         item.send_keys("qq31415926")
 
-        # item = self.driver.find_element(
-        #     By.XPATH, "//div[@ht='click_pwdlogin_submitLogin']")
-        # item.click()
+ 
+        item = self.driver.find_element(
+            By.XPATH, "//input[@id='login_button']")
+        item.click()
+        time.sleep(3) 
 
         # cookie = self.driver.get_cookies()
         # print(cookie)
@@ -191,26 +199,32 @@ class AdGdt():
         # url
         item = self.driver.find_element(
             By.XPATH, "//input[@class='form-control size-410 form-control']")
-        item.send_keys("http://appstore.huawei.com/c1000")
+        appid  = appname.GetAppId(isHD,source.HUAWEI)
+        item.send_keys("http://appstore.huawei.com/C"+appid)
         
         # name
+        name = appname.GetAppName(isHD)
         list = self.driver.find_elements(
             By.XPATH, "//input[@id='placementName']")
-        list[0].send_keys("appname")
+        list[0].send_keys(name)
 
         list = self.driver.find_elements(
             By.XPATH, "//input[@id='placementName']")
-        list[1].send_keys("keyname")
+        list[1].send_keys(name)
         
 
         item = self.driver.find_element_by_id('formControlsTextarea')
-        item.send_keys("detail")
+        name+=name
+        name+=name
+        name+=name
+        name+=name 
+        item.send_keys(name)
 
 
         item = self.driver.find_element(
             By.XPATH, "//input[@id='packageName']")
-        # package = appname.GetPackage(source.ANDROID,isHD)
-        # item.send_keys(package)
+        package = appname.GetPackage(source.ANDROID,isHD)
+        item.send_keys(package)
         
 
 
@@ -239,14 +253,23 @@ if __name__ == "__main__":
     # cmdPath = cmdPath.replace("ad\\", "")
 
     dir = common.getLastDirofDir(cmdPath)
-    dir = common.getLastDirofDir(dir)
+    # dir = common.getLastDirofDir(dir)
     common.SetCmdPath(dir)
     print(cmdPath)
+    package = appname.GetPackage(source.ANDROID,False)
+    print(package)
+    package = appname.GetAppName(False)
+    print(package)
+    package = appname.GetAppId(False,source.HUAWEI)
+    print(package)
+    
+    
     ad = AdGdt()
     ad.SetCmdPath(cmdPath)
     ad.Init()
     ad.GoHome()
     ad.Login()
     ad.CreateApp(False)
+    time.sleep(3)
     ad.CreateApp(True)
     print("AdGdt sucess")

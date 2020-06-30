@@ -10,11 +10,15 @@ import datetime
 import json
 
 #include common.py
-sys.path.append('./common')
-import common
-import config
-import source
-import adconfig
+# sys.path.append('./common')
+
+o_path = os.getcwd()  # 返回当前工作目录
+sys.path.append(o_path)  # 添加自己指定的搜索路径
+from common import common
+from common import config
+from common import source
+from common import adconfig  
+
 import AppVersionHuawei
 
 versionCode = 100
@@ -402,6 +406,64 @@ def SetConfigDataAppId(os,chanel,appid,ishd):
         SaveJson(filepath,data)
 
     
+def GetAppName(isHd): 
+    # loadJson
+    data = loadJson(isHd) 
+
+    isOld = IsOldVersion(data)
+    global versionCode
+    
+    if not isOld : 
+        appname = data["appname"]
+
+    if isOld:
+        APP_NAME_CN_ANDROID = data["APP_NAME_CN_ANDROID"]
+        APP_NAME_EN_ANDROID = data["APP_NAME_EN_ANDROID"]
+        APP_NAME_CN_IOS = data["APP_NAME_CN_IOS"]
+        APP_NAME_EN_IOS = data["APP_NAME_EN_IOS"]
+        PACKAGE_ANDROID = data["PACKAGE_ANDROID"]
+        PACKAGE_IOS = data["PACKAGE_IOS"]
+        versionCode = data["APPVERSION_CODE_ANDROID"]
+        APPVERSION_IOS = data["APPVERSION_IOS"]
+        appid_huawei = GetConfigDataAppId(source.ANDROID,source.HUAWEI,isHd)
+    else:
+        APP_NAME_CN_ANDROID = appname[source.ANDROID]["cn"]
+        APP_NAME_EN_ANDROID = appname[source.ANDROID]["en"]
+        APP_NAME_CN_IOS = appname[source.IOS]["cn"]
+        APP_NAME_EN_IOS = appname[source.IOS]["en"]  
+
+    return APP_NAME_CN_ANDROID     
+        
+        
+def GetAppId(isHd,channel): 
+    # loadJson
+    data = loadJson(isHd) 
+
+    isOld = IsOldVersion(data)
+    global versionCode
+    
+    if not isOld : 
+        appname = data["appname"]
+
+    if isOld:
+        APP_NAME_CN_ANDROID = data["APP_NAME_CN_ANDROID"]
+        APP_NAME_EN_ANDROID = data["APP_NAME_EN_ANDROID"]
+        APP_NAME_CN_IOS = data["APP_NAME_CN_IOS"]
+        APP_NAME_EN_IOS = data["APP_NAME_EN_IOS"]
+        PACKAGE_ANDROID = data["PACKAGE_ANDROID"]
+        PACKAGE_IOS = data["PACKAGE_IOS"]
+        versionCode = data["APPVERSION_CODE_ANDROID"]
+        APPVERSION_IOS = data["APPVERSION_IOS"]
+        appid_huawei = GetConfigDataAppId(source.ANDROID,source.HUAWEI,isHd)
+    else:
+        APP_NAME_CN_ANDROID = appname[source.ANDROID]["cn"]
+        APP_NAME_EN_ANDROID = appname[source.ANDROID]["en"]
+        APP_NAME_CN_IOS = appname[source.IOS]["cn"]
+        APP_NAME_EN_IOS = appname[source.IOS]["en"] 
+        appid_huawei = GetJsonAppId(data,source.HUAWEI) 
+
+    return appid_huawei 
+
 
 def updateName(isHd,isAuto):
     

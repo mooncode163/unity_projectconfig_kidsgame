@@ -1,0 +1,36 @@
+{
+    "APP_NAME_CN_ANDROID": "疯狂填色绘本",
+    "APP_NAME_EN_ANDROID": "Crazy Color Book",
+    "APP_NAME_CN_IOS": "疯狂填色绘本",
+    "APP_NAME_EN_IOS": "Crazy Color Book",
+    "PACKAGE_ANDROID": "com.moonma.fillcolor",
+    "PACKAGE_IOS": "com.moonma.fillcolor",
+    "APPVERSION_ANDROID": "1.9.0",
+    "APPVERSION_CODE_ANDROID": "190",
+    "APPVERSION_IOS": "1.9.0",
+    "need_upload_screenshot": false,
+    "APPSTORE_VERSION_UPDATE": {
+        "cn": " 新增功能：\n1,颜色吸管 \n2,任意颜色选择",
+        "en": "New features: \n1, color pipe \n2, arbitrary color selection"
+    },
+    "APPSTORE_TITLE": {
+        "cn": "疯狂填色绘本",
+        "en": "Crazy Color Book"
+    },
+    "APPSTORE_SUBTITLE": {
+        "cn": "colorly着色书绘画",
+        "en": "colorly coloring book"
+    },
+    "APPSTORE_PROMOTION": {
+        "cn": "选择喜爱的颜色,填绘美妙绝伦的画作",
+        "en": "Choose the favorite colors and fill out the wonderful paintings"
+    },
+    "APPSTORE_KEYWORD": {
+        "cn": "秘密花园colorfy涂色书我的全民手绘花园填色世界lake小蜡笔涂鸦色彩娱乐涂画上色艾尔之光手机画图小吉成人画画着色书手绘板绘素描肖像人物全能画图板彩铅画墙绘彩绘mimi视界仿手绘momi创意设计",
+        "en": "秘密花园colorfy涂色书我的全民手绘花园填色世界lake小蜡笔涂鸦色彩娱乐涂画上色艾尔之光手机画图小吉成人画画着色书手绘板绘素描肖像人物全能画图板彩铅画墙绘彩绘mimi视界仿手绘momi创意设计"
+    },
+    "software_url": "http://www.mooncore.cn",
+    "privacy_url": "",
+    "support_url": "http://blog.sina.com.cn/s/blog_6330a6410101bnih.html",
+    "sku_app": "moonma_fillcolor"
+}
