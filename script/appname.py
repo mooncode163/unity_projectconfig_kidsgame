@@ -445,24 +445,16 @@ def GetAppId(isHd,channel):
     if not isOld : 
         appname = data["appname"]
 
-    if isOld:
-        APP_NAME_CN_ANDROID = data["APP_NAME_CN_ANDROID"]
-        APP_NAME_EN_ANDROID = data["APP_NAME_EN_ANDROID"]
-        APP_NAME_CN_IOS = data["APP_NAME_CN_IOS"]
-        APP_NAME_EN_IOS = data["APP_NAME_EN_IOS"]
-        PACKAGE_ANDROID = data["PACKAGE_ANDROID"]
-        PACKAGE_IOS = data["PACKAGE_IOS"]
-        versionCode = data["APPVERSION_CODE_ANDROID"]
-        APPVERSION_IOS = data["APPVERSION_IOS"]
-        appid_huawei = GetConfigDataAppId(source.ANDROID,source.HUAWEI,isHd)
-    else:
-        APP_NAME_CN_ANDROID = appname[source.ANDROID]["cn"]
-        APP_NAME_EN_ANDROID = appname[source.ANDROID]["en"]
-        APP_NAME_CN_IOS = appname[source.IOS]["cn"]
-        APP_NAME_EN_IOS = appname[source.IOS]["en"] 
-        appid_huawei = GetJsonAppId(data,source.HUAWEI) 
+    if isOld: 
+        if channel==source.IOS:
+            appid = GetConfigDataAppId(source.IOS,source.APPSTORE,isHd)
+        else:
+            appid = GetConfigDataAppId(source.ANDROID,channel,isHd)
 
-    return appid_huawei 
+    else:
+        appid = GetJsonAppId(data,channel) 
+
+    return appid 
 
 
 def updateName(isHd,isAuto):

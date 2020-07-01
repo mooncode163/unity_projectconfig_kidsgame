@@ -1,39 +1,38 @@
 # 导入selenium的浏览器驱动接口
+from ParseAdGdt import ParseAdGdt
+import appname
+import win32con
+import win32gui
+import sqlite3
+import time
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.keys import Keys
+from selenium import webdriver
+from common import source
+from common import common
 import sys
 import os
 import json
 o_path = os.getcwd()  # 返回当前工作目录
 sys.path.append(o_path)  # 添加自己指定的搜索路径
-from common import common
-from common import source
 
-import appname 
-
-from selenium import webdriver
 
 # 要想调用键盘按键操作需要引入keys包
-from selenium.webdriver.common.keys import Keys
 
 # 导入chrome选项
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.by import By
-import time
 
-
-import sqlite3
 
 # pip3 install pywin32
-import win32gui
-import win32con
 
-# sys.path.append('../common') 
-from ParseAdGdt import ParseAdGdt 
+# sys.path.append('../common')
+
 
 class AdGdt():
     driver: None
-    dirRoot:None
-    urlCreatePlaceId:None
-    osApp:None
+    dirRoot: None
+    urlCreatePlaceId: None
+    osApp: None
 
     def saveString2File(self, str, file):
         f = open(file, 'wb')  # 若是'wb'就表示写二进制文件
@@ -46,9 +45,7 @@ class AdGdt():
         dir = common.getLastDirofDir(dir)
         dir = common.getLastDirofDir(dir)
         self.dirRoot = dir
-        print("dir = ",dir)
- 
-  
+        print("dir = ", dir)
 
     def GoHome(self):
         # 加载百度页面
@@ -71,7 +68,7 @@ class AdGdt():
         time.sleep(2)
 
         self.driver.find_element_by_id('switcher_plogin').click()
-        time.sleep(1) 
+        time.sleep(1)
 
         item = self.driver.find_element(
             By.XPATH, "//input[@id='u']")
@@ -80,11 +77,10 @@ class AdGdt():
         item = self.driver.find_element(By.XPATH, "//input[@id='p']")
         item.send_keys("qq31415926")
 
- 
         item = self.driver.find_element(
             By.XPATH, "//input[@id='login_button']")
         item.click()
-        time.sleep(3) 
+        time.sleep(3)
 
         # cookie = self.driver.get_cookies()
         # print(cookie)
@@ -114,7 +110,7 @@ class AdGdt():
         self.driver.quit()
 
 # 3452644866 qq31415926
-    def CreateApp(self,isHD):
+    def CreateApp(self, isHD):
         self.driver.get("https://adnet.qq.com/medium/add")
         time.sleep(1)
 
@@ -127,7 +123,12 @@ class AdGdt():
 
         list = self.driver.find_elements(
             By.XPATH, "//a[@role='option']")
-        list[0].click()
+
+        if self.osApp == source.ANDROID:
+            list[0].click()
+
+        if self.osApp == source.IOS:
+            list[1].click()
 
         # 应用商店
 
@@ -142,8 +143,12 @@ class AdGdt():
 
         list = ul_list[1].find_elements(
             By.XPATH, "//a[@role='option']")
-        list[7].click()
+        
+        if self.osApp == source.ANDROID:
+            list[7].click()
 
+        if self.osApp == source.IOS:
+            list[0].click()
 
 
     # 应用分类
@@ -152,31 +157,38 @@ class AdGdt():
         item.click()
         time.sleep(1)
         ul_list = self.driver.find_elements(
-        By.XPATH, "//ul[@class='dropdown-menu inner']")
+            By.XPATH, "//ul[@class='dropdown-menu inner']")
         list = ul_list[2].find_elements(
             By.XPATH, "//a[@role='option']")
         list[12].click()
-
 
         item = self.driver.find_element(
             By.XPATH, "//button[@data-id='industrySecondSelector']")
         item.click()
         time.sleep(1)
         ul_list = self.driver.find_elements(
-        By.XPATH, "//ul[@class='dropdown-menu inner']")
+            By.XPATH, "//ul[@class='dropdown-menu inner']")
         list = ul_list[3].find_elements(
             By.XPATH, "//a[@role='option']")
         list[3].click()
-        
-
-
 
         # url
         item = self.driver.find_element(
             By.XPATH, "//input[@class='form-control size-410 form-control']")
-        appid  = appname.GetAppId(isHD,source.HUAWEI)
-        item.send_keys("http://appstore.huawei.com/C"+appid)
         
+        
+        url = ""
+        if self.osApp == source.ANDROID:
+            appid = appname.GetAppId(isHD, source.HUAWEI)
+            url = "http://appstore.huawei.com/C"+appid
+
+        if self.osApp == source.IOS:
+            appid = appname.GetAppId(isHD, source.APPSTORE)
+            # https://itunes.apple.com/cn/app/id1303020002
+            url = "https://itunes.apple.com/cn/app/id"+appid
+        
+        item.send_keys(url)
+
         # name
         name = self.GetAppName(isHD)
         list = self.driver.find_elements(
@@ -186,127 +198,122 @@ class AdGdt():
         list = self.driver.find_elements(
             By.XPATH, "//input[@id='placementName']")
         list[1].send_keys(name)
-        
 
         item = self.driver.find_element_by_id('formControlsTextarea')
-        name+=name
-        name+=name
-        name+=name
-        name+=name 
+        name += name
+        name += name
+        name += name
+        name += name
         item.send_keys(name)
-
 
         item = self.driver.find_element(
             By.XPATH, "//input[@id='packageName']")
-        package = appname.GetPackage(source.ANDROID,isHD)
+        package = appname.GetPackage(source.ANDROID, isHD)
         item.send_keys(package)
-        
-
 
         # 创建
-        
+
         item = self.driver.find_element(
             By.XPATH, "//a[@class='btn btn-primary btn-160']")
         item.click()
 
-    def GetAppName(self,ishd):
-        return appname.GetAppName(self.osApp,ishd)+self.osApp
+    def GetAppName(self, ishd):
+        return appname.GetAppName(self.osApp, ishd)+self.osApp
 
-    def SearchAppAddPlace(self,ishd):
+    def SearchAppAddPlace(self, ishd):
         name = self.GetAppName(ishd)
         self.driver.get("https://adnet.qq.com/medium/list")
-        time.sleep(2)  
-        item = self.driver.find_element(By.XPATH, "//input[@class='form-control']") 
+        time.sleep(2)
+        item = self.driver.find_element(
+            By.XPATH, "//input[@class='form-control']")
         time.sleep(1)
 
         item.send_keys(name)
         # item.send_keys("儿童写汉字")
-        
+
         time.sleep(1)
 
         self.driver.find_element_by_id('search_medium_id').click()
         time.sleep(2)
 
-        item = self.driver.find_element(By.XPATH, "//div[@class='media']") 
+        item = self.driver.find_element(By.XPATH, "//div[@class='media']")
         item.click()
         time.sleep(1)
-        
+
         # 新建广告
-        list = self.driver.find_elements(By.XPATH, "//a[@class='btn btn-default btn-120']") 
+        list = self.driver.find_elements(
+            By.XPATH, "//a[@class='btn btn-default btn-120']")
         a = list[1]
         url = a.get_attribute('href')
         print(url)
         self.urlCreatePlaceId = url
         # a.click()
-        # time.sleep(1) 
-        
-        
-    def SearchAppGetAdInfo(self,ishd):
+        # time.sleep(1)
+
+    def SearchAppGetAdInfo(self, ishd):
         name = self.GetAppName(ishd)
         self.driver.get("https://adnet.qq.com/medium/list")
-        time.sleep(2)  
-        item = self.driver.find_element(By.XPATH, "//input[@class='form-control']") 
+        time.sleep(2)
+        item = self.driver.find_element(
+            By.XPATH, "//input[@class='form-control']")
         time.sleep(1)
 
         item.send_keys(name)
         # item.send_keys("儿童写汉字")
-        
+
         time.sleep(1)
 
         self.driver.find_element_by_id('search_medium_id').click()
         time.sleep(2)
 
-        item = self.driver.find_element(By.XPATH, "//div[@class='media']") 
+        item = self.driver.find_element(By.XPATH, "//div[@class='media']")
         item.click()
         time.sleep(1)
-        
+
         # 关联广告位
         # <a style="cursor: pointer;">关联广告位</a>
-        list = self.driver.find_elements(By.XPATH, "//a[@style='cursor: pointer;']") 
-        a = list[1]  
+        list = self.driver.find_elements(
+            By.XPATH, "//a[@style='cursor: pointer;']")
+        a = list[1]
         a.click()
-        time.sleep(1) 
-
+        time.sleep(1)
 
         # table media-table js-media-details
-        # table = self.driver.find_element(By.XPATH, "//table[@class='table media-table js-media-details']") 
+        # table = self.driver.find_element(By.XPATH, "//table[@class='table media-table js-media-details']")
         # list = table.find_elements_by_xpath('//tbody/tr')
         # print("tr len =",len(list))
         # print(table.get_attribute('innerHTML'))
         # for tr in list:
-        #     span_list = tr.find_elements_by_xpath("//span") 
+        #     span_list = tr.find_elements_by_xpath("//span")
         #     # [@class='field-value']
         #     # print(span_list[1].text)
 
         parse = ParseAdGdt()
-        parse.ParseAdData(self.driver.page_source,ishd,self.osApp)
+        parse.ParseAdData(self.driver.page_source, ishd, self.osApp)
 
-            
+    def GetAdInfo(self, isHD):
+        self.SearchAppGetAdInfo(isHD)
 
-
-    def GetAdInfo(self,isHD):
-        self.SearchAppGetAdInfo(isHD) 
-
-    def CreatePlaceId(self,isHD): 
+    def CreatePlaceId(self, isHD):
         self.SearchAppAddPlace(isHD)
         self.CreateAdBanner(isHD)
         self.CreateAdInsert(isHD)
         self.CreateAdVideo(isHD)
-        
 
     def OpenFileBrowser(self):
         # win32gui
-        dialog = win32gui.FindWindow('#32770',u'打开')  # 对话框
-        ComboBoxEx32 = win32gui.FindWindowEx(dialog,0,'ComboBoxEx32',None)
-        ComboBox = win32gui.FindWindowEx(ComboBoxEx32,0,'ComboBox',None)
-        Edit = win32gui.FindWindowEx(ComboBox,0,'Edit',None)  # 上面三句依次寻找对象，直到找到输入框Edit对象的句柄
-        button = win32gui.FindWindowEx(dialog,0,'Button',None)  # 确定按钮Button
-        win32gui.SendMessage(Edit,win32con.WM_SETTEXT,None,"F:\\sourcecode\\unity\\product\\kidsgame\\ProjectOutPut\\xiehanzi\\hanziyuan\\screenshot\\shu\\cn\\480p\\1.jpg")
+        dialog = win32gui.FindWindow('#32770', u'打开')  # 对话框
+        ComboBoxEx32 = win32gui.FindWindowEx(dialog, 0, 'ComboBoxEx32', None)
+        ComboBox = win32gui.FindWindowEx(ComboBoxEx32, 0, 'ComboBox', None)
+        # 上面三句依次寻找对象，直到找到输入框Edit对象的句柄
+        Edit = win32gui.FindWindowEx(ComboBox, 0, 'Edit', None)
+        button = win32gui.FindWindowEx(dialog, 0, 'Button', None)  # 确定按钮Button
+        win32gui.SendMessage(Edit, win32con.WM_SETTEXT, None,
+                             "F:\\sourcecode\\unity\\product\\kidsgame\\ProjectOutPut\\xiehanzi\\hanziyuan\\screenshot\\shu\\cn\\480p\\1.jpg")
         # win32gui.SendMessage(Edit,win32con.WM_SETTEXT,None,'F:\sourcecode\unity\product\kidsgame\ProjectOutPut\xiehanzi\hanziyuan\screenshot\shu\cn\480p\1.jpg')  # 往输入框输入绝对地址
-        win32gui.SendMessage(dialog,win32con.WM_COMMAND,1,button)  # 按button
+        win32gui.SendMessage(dialog, win32con.WM_COMMAND, 1, button)  # 按button
 
-
-    def CreateAdBanner(self,isHD):
+    def CreateAdBanner(self, isHD):
         # self.driver.get("https://adnet.qq.com/placement/add")
         # https://adnet.qq.com/placement/60503466885129/add
         self.driver.get(self.urlCreatePlaceId)
@@ -323,7 +330,7 @@ class AdGdt():
         # <ul class="union-card-list card-list-banner list-contain-1"
         ul = self.driver.find_element(
             By.XPATH, "//ul[@class='union-card-list card-list-banner list-contain-1']")
-       
+
         # bug
         # list = ul.find_elements(By.XPATH, "//li[@class='union-card-item']")
         # ok 查找子元素li
@@ -331,14 +338,13 @@ class AdGdt():
         li = list[0]
         li.click()
         time.sleep(1)
-        
+
         # item = self.driver.find_element(By.XPATH, "//input[@class='spaui-input has-normal spaui-component']")
         list = self.driver.find_elements(By.XPATH, "//input[@type='text']")
         # self.driver.execute_script("arguments[0].scrollIntoView();", item)
         # self.driver.execute_script('window.scrollTo(0,1000000)')
         time.sleep(1)
         list[1].send_keys("b")
-
 
         # upload image
         item = self.driver.find_element(
@@ -348,15 +354,13 @@ class AdGdt():
         self.OpenFileBrowser()
         time.sleep(1)
 
-
         # finish
         item = self.driver.find_element(
             By.XPATH, "//button[@class='union-complete-btn spaui-button spaui-button-primary spaui-component']")
         item.click()
         time.sleep(1)
-        
 
-    def CreateAdInsert(self,isHD):
+    def CreateAdInsert(self, isHD):
         # self.driver.get("https://adnet.qq.com/placement/add")
         # https://adnet.qq.com/placement/60503466885129/add
         self.driver.get(self.urlCreatePlaceId)
@@ -371,8 +375,9 @@ class AdGdt():
         time.sleep(2)
 
         # <ul class="union-card-list card-list-banner list-contain-1"
-        ul = self.driver.find_element( By.XPATH, "//ul[@class='union-card-list card-list-cp list-contain-2']")
-        
+        ul = self.driver.find_element(
+            By.XPATH, "//ul[@class='union-card-list card-list-cp list-contain-2']")
+
         # bug
         # list = ul.find_elements By.XPATH, "//li[@class='union-card-item']")
         # ok 查找子元素li
@@ -380,14 +385,13 @@ class AdGdt():
 
         list[1].click()
         time.sleep(1)
-        
+
         # item = self.driver.find_element(By.XPATH, "//input[@class='spaui-input has-normal spaui-component']")
         list = self.driver.find_elements(By.XPATH, "//input[@type='text']")
         # self.driver.execute_script("arguments[0].scrollIntoView();", item)
         # self.driver.execute_script('window.scrollTo(0,1000000)')
         time.sleep(1)
         list[1].send_keys("i")
-
 
         # upload image
         item = self.driver.find_element(
@@ -397,14 +401,13 @@ class AdGdt():
         self.OpenFileBrowser()
         time.sleep(1)
 
-
         # finish
         item = self.driver.find_element(
             By.XPATH, "//button[@class='union-complete-btn spaui-button spaui-button-primary spaui-component']")
         item.click()
         time.sleep(1)
 
-    def CreateAdVideo(self,isHD):
+    def CreateAdVideo(self, isHD):
         # self.driver.get("https://adnet.qq.com/placement/add")
         # https://adnet.qq.com/placement/60503466885129/add
         self.driver.get(self.urlCreatePlaceId)
@@ -417,14 +420,13 @@ class AdGdt():
             By.XPATH, "//div[@class='card-inner']")
         list[2].click()
         time.sleep(2)
- 
+
         # item = self.driver.find_element(By.XPATH, "//input[@class='spaui-input has-normal spaui-component']")
         list = self.driver.find_elements(By.XPATH, "//input[@type='text']")
         # self.driver.execute_script("arguments[0].scrollIntoView();", item)
         # self.driver.execute_script('window.scrollTo(0,1000000)')
         time.sleep(1)
         list[1].send_keys("v")
-
 
         # upload image
         item = self.driver.find_element(
@@ -433,7 +435,6 @@ class AdGdt():
         time.sleep(1)
         self.OpenFileBrowser()
         time.sleep(1)
-
 
         # finish
         item = self.driver.find_element(
@@ -456,19 +457,17 @@ if __name__ == "__main__":
         if i == 1:
             cmdPath = sys.argv[i]
 
-     
     # cmdPath = cmdPath.replace("ad\\", "")
 
     dir = common.getLastDirofDir(cmdPath)
     # dir = common.getLastDirofDir(dir)
     common.SetCmdPath(dir)
     print(cmdPath)
-    package = appname.GetPackage(source.ANDROID,False)
-    print(package) 
-    package = appname.GetAppId(False,source.HUAWEI)
+    package = appname.GetPackage(source.ANDROID, False)
     print(package)
-    
-    
+    package = appname.GetAppId(False, source.HUAWEI)
+    print(package)
+
     ad = AdGdt()
     ad.SetCmdPath(cmdPath)
     ad.Init()
@@ -481,18 +480,15 @@ if __name__ == "__main__":
         ad.CreateApp(False)
         time.sleep(3)
         ad.CreateApp(True)
-        
+
     if argv1 == "createplaceid":
-        ad.CreatePlaceId(False)  
+        ad.CreatePlaceId(False)
         time.sleep(3)
         ad.CreatePlaceId(True)
 
     if argv1 == "adinfo":
-        ad.GetAdInfo(False)  
+        ad.GetAdInfo(False)
         time.sleep(3)
         ad.GetAdInfo(True)
- 
-    
-    
 
     print("AdGdt sucess")

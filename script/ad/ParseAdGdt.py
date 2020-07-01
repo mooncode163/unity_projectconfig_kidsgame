@@ -1,12 +1,16 @@
+import os
+import shutil
+import zipfile
+import sys
+
+o_path = os.getcwd()  # 返回当前工作目录
+sys.path.append(o_path)  # 添加自己指定的搜索路径
 from common import adconfig
 from common import source
 from common import config
 from common import common
 import json
-import os
-import shutil
-import zipfile
-import sys
+
 from bs4 import BeautifulSoup
 
 from urllib.request import urlopen
@@ -17,8 +21,7 @@ import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 
 
-o_path = os.getcwd()  # 返回当前工作目录
-sys.path.append(o_path)  # 添加自己指定的搜索路径
+
 
 
 class ParseAdGdt():
