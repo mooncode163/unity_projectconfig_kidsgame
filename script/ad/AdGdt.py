@@ -22,6 +22,9 @@ import time
 
 import sqlite3
 
+# pip3 install pywin32
+import win32gui
+import win32con
 
 # sys.path.append('../common')
 
@@ -30,6 +33,7 @@ import sqlite3
 class AdGdt():
     driver: None
     dirRoot:None
+    urlCreatePlaceId:None
     def saveString2File(self, str, file):
         f = open(file, 'wb')  # 若是'wb'就表示写二进制文件
         b = str.encode('utf-8', "ignore")
@@ -42,38 +46,8 @@ class AdGdt():
         dir = common.getLastDirofDir(dir)
         self.dirRoot = dir
         print("dir = ",dir)
-    
-    def GetJsonFile(self,isHd):
-        cur_path = self.dirRoot+"/appinfo"
-        jsonfile = cur_path+'/appname.json'
-        if isHd:
-            jsonfile = cur_path+'/appname_hd.json'
-        return jsonfile
-
-    def loadJson(self,isHd): 
-        jsonfile = self.GetJsonFile(isHd) 
-        
-        with  open(jsonfile, 'rb') as json_file:
-            data = json.load(json_file)
-            return data
-
-
-    def GetPackage(self,osSrc,isHD): 
-        jsonData = self,loadJson(isHD) 
-        isOld = IsOldVersion(jsonData)
-        ret = ""
-        if isOld:
-            key = "PACKAGE_IOS"
-            if osSrc == source.ANDROID:
-                key = "PACKAGE_ANDROID" 
-            ret = jsonData[key]
-        else:      
-            if osSrc == source.ANDROID:
-                ret = jsonData["apppackage"][source.ANDROID]["default"] 
-            if osSrc == source.IOS:
-                ret = jsonData["apppackage"][source.IOS]["default"]
-
-        return ret
+ 
+  
 
     def GoHome(self):
         # 加载百度页面
@@ -235,6 +209,190 @@ class AdGdt():
         item.click()
 
 
+    def SearchAppAddPlace(self,name):
+        self.driver.get("https://adnet.qq.com/medium/list")
+        time.sleep(2)  
+        item = self.driver.find_element(By.XPATH, "//input[@class='form-control']") 
+        time.sleep(1)
+
+        item.send_keys(name)
+        # item.send_keys("儿童写汉字")
+        
+        time.sleep(1)
+
+        self.driver.find_element_by_id('search_medium_id').click()
+        time.sleep(2)
+
+        item = self.driver.find_element(By.XPATH, "//div[@class='media']") 
+        item.click()
+        time.sleep(1)
+        
+        list = self.driver.find_elements(By.XPATH, "//a[@class='btn btn-default btn-120']") 
+        a = list[1]
+        url = a.get_attribute('href')
+        print(url)
+        self.urlCreatePlaceId = url
+        # a.click()
+        # time.sleep(1) 
+        
+        
+
+
+    def CreatePlaceId(self,isHD):
+        self.SearchAppAddPlace(appname.GetAppName(isHD))
+        self.CreateAdBanner(isHD)
+        self.CreateAdInsert(isHD)
+        self.CreateAdVideo(isHD)
+        
+
+    def OpenFileBrowser(self):
+        # win32gui
+        dialog = win32gui.FindWindow('#32770',u'打开')  # 对话框
+        ComboBoxEx32 = win32gui.FindWindowEx(dialog,0,'ComboBoxEx32',None)
+        ComboBox = win32gui.FindWindowEx(ComboBoxEx32,0,'ComboBox',None)
+        Edit = win32gui.FindWindowEx(ComboBox,0,'Edit',None)  # 上面三句依次寻找对象，直到找到输入框Edit对象的句柄
+        button = win32gui.FindWindowEx(dialog,0,'Button',None)  # 确定按钮Button
+        win32gui.SendMessage(Edit,win32con.WM_SETTEXT,None,"F:\\sourcecode\\unity\\product\\kidsgame\\ProjectOutPut\\xiehanzi\\hanziyuan\\screenshot\\shu\\cn\\480p\\1.jpg")
+        # win32gui.SendMessage(Edit,win32con.WM_SETTEXT,None,'F:\sourcecode\unity\product\kidsgame\ProjectOutPut\xiehanzi\hanziyuan\screenshot\shu\cn\480p\1.jpg')  # 往输入框输入绝对地址
+        win32gui.SendMessage(dialog,win32con.WM_COMMAND,1,button)  # 按button
+
+
+    def CreateAdBanner(self,isHD):
+        # self.driver.get("https://adnet.qq.com/placement/add")
+        # https://adnet.qq.com/placement/60503466885129/add
+        self.driver.get(self.urlCreatePlaceId)
+        time.sleep(1)
+
+        # time.sleep(5)
+
+        # div class="card-inner"
+        list = self.driver.find_elements(
+            By.XPATH, "//div[@class='card-inner']")
+        list[4].click()
+        time.sleep(2)
+
+        # <ul class="union-card-list card-list-banner list-contain-1"
+        ul = self.driver.find_element(
+            By.XPATH, "//ul[@class='union-card-list card-list-banner list-contain-1']")
+       
+        # bug
+        # list = ul.find_elements(By.XPATH, "//li[@class='union-card-item']")
+        # ok 查找子元素li
+        list = ul.find_elements_by_xpath('li')
+        li = list[0]
+        li.click()
+        time.sleep(1)
+        
+        # item = self.driver.find_element(By.XPATH, "//input[@class='spaui-input has-normal spaui-component']")
+        list = self.driver.find_elements(By.XPATH, "//input[@type='text']")
+        # self.driver.execute_script("arguments[0].scrollIntoView();", item)
+        # self.driver.execute_script('window.scrollTo(0,1000000)')
+        time.sleep(1)
+        list[1].send_keys("b")
+
+
+        # upload image
+        item = self.driver.find_element(
+            By.XPATH, "//button[@id='spaui-uploader_2-empty']")
+        item.click()
+        time.sleep(1)
+        self.OpenFileBrowser()
+        time.sleep(1)
+
+
+        # finish
+        item = self.driver.find_element(
+            By.XPATH, "//button[@class='union-complete-btn spaui-button spaui-button-primary spaui-component']")
+        item.click()
+        time.sleep(1)
+        
+
+    def CreateAdInsert(self,isHD):
+        # self.driver.get("https://adnet.qq.com/placement/add")
+        # https://adnet.qq.com/placement/60503466885129/add
+        self.driver.get(self.urlCreatePlaceId)
+        time.sleep(1)
+
+        # time.sleep(5)
+
+        # div class="card-inner"
+        list = self.driver.find_elements(
+            By.XPATH, "//div[@class='card-inner']")
+        list[5].click()
+        time.sleep(2)
+
+        # <ul class="union-card-list card-list-banner list-contain-1"
+        ul = self.driver.find_element( By.XPATH, "//ul[@class='union-card-list card-list-cp list-contain-2']")
+        
+        # bug
+        # list = ul.find_elements By.XPATH, "//li[@class='union-card-item']")
+        # ok 查找子元素li
+        list = ul.find_elements_by_xpath('li')
+
+        list[1].click()
+        time.sleep(1)
+        
+        # item = self.driver.find_element(By.XPATH, "//input[@class='spaui-input has-normal spaui-component']")
+        list = self.driver.find_elements(By.XPATH, "//input[@type='text']")
+        # self.driver.execute_script("arguments[0].scrollIntoView();", item)
+        # self.driver.execute_script('window.scrollTo(0,1000000)')
+        time.sleep(1)
+        list[1].send_keys("i")
+
+
+        # upload image
+        item = self.driver.find_element(
+            By.XPATH, "//button[@id='spaui-uploader_2-empty']")
+        item.click()
+        time.sleep(1)
+        self.OpenFileBrowser()
+        time.sleep(1)
+
+
+        # finish
+        item = self.driver.find_element(
+            By.XPATH, "//button[@class='union-complete-btn spaui-button spaui-button-primary spaui-component']")
+        item.click()
+        time.sleep(1)
+
+    def CreateAdVideo(self,isHD):
+        # self.driver.get("https://adnet.qq.com/placement/add")
+        # https://adnet.qq.com/placement/60503466885129/add
+        self.driver.get(self.urlCreatePlaceId)
+        time.sleep(1)
+
+        # time.sleep(5)
+
+        # div class="card-inner"
+        list = self.driver.find_elements(
+            By.XPATH, "//div[@class='card-inner']")
+        list[2].click()
+        time.sleep(2)
+ 
+        # item = self.driver.find_element(By.XPATH, "//input[@class='spaui-input has-normal spaui-component']")
+        list = self.driver.find_elements(By.XPATH, "//input[@type='text']")
+        # self.driver.execute_script("arguments[0].scrollIntoView();", item)
+        # self.driver.execute_script('window.scrollTo(0,1000000)')
+        time.sleep(1)
+        list[1].send_keys("v")
+
+
+        # upload image
+        item = self.driver.find_element(
+            By.XPATH, "//button[@id='spaui-uploader_2-empty']")
+        item.click()
+        time.sleep(1)
+        self.OpenFileBrowser()
+        time.sleep(1)
+
+
+        # finish
+        item = self.driver.find_element(
+            By.XPATH, "//button[@class='union-complete-btn spaui-button spaui-button-primary spaui-component']")
+        item.click()
+        time.sleep(1)
+
+
 # 主函数的实现
 if __name__ == "__main__":
     # 设置为utf8编码
@@ -269,7 +427,18 @@ if __name__ == "__main__":
     ad.Init()
     ad.GoHome()
     ad.Login()
-    ad.CreateApp(False)
-    time.sleep(3)
-    ad.CreateApp(True)
+
+    argv1 = sys.argv[2]
+    if argv1 == "createapp":
+        ad.CreateApp(False)
+        time.sleep(3)
+        ad.CreateApp(True)
+        
+    if argv1 == "createplaceid":
+        ad.CreatePlaceId(False)  
+        time.sleep(3)
+        ad.CreatePlaceId(True)
+
+ 
+    
     print("AdGdt sucess")
