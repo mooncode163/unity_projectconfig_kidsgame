@@ -57,7 +57,7 @@ class ParseAdGdt():
     #     html = self.GetHtml(url)
     #     self.ParseAdData(html,json)
 
-    def ParseAdData(self, data,ishd):
+    def ParseAdData(self, data,ishd,osApp):
         # url = WEB_HOME_URL
         html = data
     # 本质上是一个tag类型,生成一个tag实例对象，调用tag的方法
@@ -121,7 +121,7 @@ class ParseAdGdt():
         # dictad = dict (source="gdt",appname= self.strAppName,appid= self.strAppId,key_splash= self.strAdIdSplash,key_splash_insert= self.strAdIdInsert,key_insert= self.strAdIdInsert,key_native= self.strAdIdNative,key_video= self.strAdIdVideo,key_banner= self.strAdIdBanner)
         # jsonroot = dict (List=dictad)
         # self.SaveJson(json,jsonroot)
-        self.SaveAdIdToJson(source.ANDROID,ishd)
+        self.SaveAdIdToJson(osApp,ishd)
 
     # def SaveJson(self,filePath,dataRoot):
     #     # 保存json

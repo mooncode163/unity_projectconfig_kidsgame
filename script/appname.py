@@ -406,7 +406,7 @@ def SetConfigDataAppId(os,chanel,appid,ishd):
         SaveJson(filepath,data)
 
     
-def GetAppName(isHd): 
+def GetAppName(os,isHd): 
     # loadJson
     data = loadJson(isHd) 
 

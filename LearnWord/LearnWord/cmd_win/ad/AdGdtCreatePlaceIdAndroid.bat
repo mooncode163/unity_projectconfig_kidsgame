@@ -4,8 +4,7 @@
 
 cd ../../../../script
 
-python ad/AdGdt.py %~dp0 createapp
-
+python ad/AdGdt.py %~dp0 createplaceid android
 
 @Pause
 

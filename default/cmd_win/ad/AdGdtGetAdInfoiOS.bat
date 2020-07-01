@@ -4,8 +4,7 @@
 
 cd ../../../../script
 
-python ad/AdGdt.py %~dp0 adinfo
-
+python ad/AdGdt.py %~dp0 adinfo ios
 
 @Pause
 

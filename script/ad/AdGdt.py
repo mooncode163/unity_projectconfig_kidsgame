@@ -33,6 +33,8 @@ class AdGdt():
     driver: None
     dirRoot:None
     urlCreatePlaceId:None
+    osApp:None
+
     def saveString2File(self, str, file):
         f = open(file, 'wb')  # 若是'wb'就表示写二进制文件
         b = str.encode('utf-8', "ignore")
@@ -176,7 +178,7 @@ class AdGdt():
         item.send_keys("http://appstore.huawei.com/C"+appid)
         
         # name
-        name = appname.GetAppName(isHD)
+        name = self.GetAppName(isHD)
         list = self.driver.find_elements(
             By.XPATH, "//input[@id='placementName']")
         list[0].send_keys(name)
@@ -207,8 +209,11 @@ class AdGdt():
             By.XPATH, "//a[@class='btn btn-primary btn-160']")
         item.click()
 
+    def GetAppName(self,ishd):
+        return appname.GetAppName(self.osApp,ishd)+self.osApp
 
-    def SearchAppAddPlace(self,name):
+    def SearchAppAddPlace(self,ishd):
+        name = self.GetAppName(ishd)
         self.driver.get("https://adnet.qq.com/medium/list")
         time.sleep(2)  
         item = self.driver.find_element(By.XPATH, "//input[@class='form-control']") 
@@ -236,8 +241,8 @@ class AdGdt():
         # time.sleep(1) 
         
         
-    def SearchAppGetAdInfoo(self,ishd):
-        name = appname.GetAppName(ishd)
+    def SearchAppGetAdInfo(self,ishd):
+        name = self.GetAppName(ishd)
         self.driver.get("https://adnet.qq.com/medium/list")
         time.sleep(2)  
         item = self.driver.find_element(By.XPATH, "//input[@class='form-control']") 
@@ -274,16 +279,16 @@ class AdGdt():
         #     # print(span_list[1].text)
 
         parse = ParseAdGdt()
-        parse.ParseAdData(self.driver.page_source,ishd)
+        parse.ParseAdData(self.driver.page_source,ishd,self.osApp)
 
             
 
 
     def GetAdInfo(self,isHD):
-        self.SearchAppGetAdInfoo(isHD) 
+        self.SearchAppGetAdInfo(isHD) 
 
     def CreatePlaceId(self,isHD): 
-        self.SearchAppAddPlace(appname.GetAppName(isHD))
+        self.SearchAppAddPlace(isHD)
         self.CreateAdBanner(isHD)
         self.CreateAdInsert(isHD)
         self.CreateAdVideo(isHD)
@@ -459,9 +464,7 @@ if __name__ == "__main__":
     common.SetCmdPath(dir)
     print(cmdPath)
     package = appname.GetPackage(source.ANDROID,False)
-    print(package)
-    package = appname.GetAppName(False)
-    print(package)
+    print(package) 
     package = appname.GetAppId(False,source.HUAWEI)
     print(package)
     
@@ -473,6 +476,7 @@ if __name__ == "__main__":
     ad.Login()
 
     argv1 = sys.argv[2]
+    ad.osApp = sys.argv[3]
     if argv1 == "createapp":
         ad.CreateApp(False)
         time.sleep(3)
