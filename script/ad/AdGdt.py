@@ -218,9 +218,13 @@ class AdGdt():
         item.click()
 
     def GetAppName(self, ishd):
-        return appname.GetAppName(self.osApp, ishd)+self.osApp
+        name = appname.GetAppName(self.osApp, ishd)
+        # if self.osApp == source.IOS:
+        #     appname.GetAppName(self.osApp, ishd)+self.osApp
 
-    def SearchAppAddPlace(self, ishd):
+        return name
+ 
+    def SearchApp(self, ishd):
         name = self.GetAppName(ishd)
         self.driver.get("https://adnet.qq.com/medium/list")
         time.sleep(2)
@@ -233,12 +237,48 @@ class AdGdt():
 
         time.sleep(1)
 
+        # search
         self.driver.find_element_by_id('search_medium_id').click()
         time.sleep(2)
+ 
+        # 筛选
+        item = self.driver.find_element(By.XPATH, "//button[@class='btn filter-operate']")
+        # item = self.driver.find_element(By.XPATH, "//div[@class='filter-parent-control']")
 
+        # error
+        # item.click()  
+        self.driver.execute_script("arguments[0].click();", item)
+        time.sleep(2)
+
+# <input type="checkbox" class="check" name="" value="IOS"> 
+        if self.osApp == source.ANDROID:
+            item = self.driver.find_element(By.XPATH, "//input[@value='Android']")
+            # item.click()
+            self.driver.execute_script("arguments[0].click();", item)
+            time.sleep(1)
+
+        if self.osApp == source.IOS:
+            item = self.driver.find_element(By.XPATH, "//input[@value='IOS']")
+            # item.click()
+            self.driver.execute_script("arguments[0].click();", item)
+            time.sleep(1)
+         
+        # 确定
+        item = self.driver.find_element(By.XPATH, "//button[@class='btn btn-primary']")
+        # item.click()
+        self.driver.execute_script("arguments[0].click();", item)
+        time.sleep(2)
+
+
+        # 点击第一个
         item = self.driver.find_element(By.XPATH, "//div[@class='media']")
         item.click()
         time.sleep(1)
+
+
+    def SearchAppAddPlace(self, ishd):
+
+        self.SearchApp(ishd)
 
         # 新建广告
         list = self.driver.find_elements(
@@ -251,25 +291,7 @@ class AdGdt():
         # time.sleep(1)
 
     def SearchAppGetAdInfo(self, ishd):
-        name = self.GetAppName(ishd)
-        self.driver.get("https://adnet.qq.com/medium/list")
-        time.sleep(2)
-        item = self.driver.find_element(
-            By.XPATH, "//input[@class='form-control']")
-        time.sleep(1)
-
-        item.send_keys(name)
-        # item.send_keys("儿童写汉字")
-
-        time.sleep(1)
-
-        self.driver.find_element_by_id('search_medium_id').click()
-        time.sleep(2)
-
-        item = self.driver.find_element(By.XPATH, "//div[@class='media']")
-        item.click()
-        time.sleep(1)
-
+        self.SearchApp(ishd)
         # 关联广告位
         # <a style="cursor: pointer;">关联广告位</a>
         list = self.driver.find_elements(
