@@ -243,8 +243,8 @@ class AdGdt():
         item = self.driver.find_element(By.XPATH, "//input[@class='form-control']") 
         time.sleep(1)
 
-        # item.send_keys(name)
-        item.send_keys("儿童写汉字")
+        item.send_keys(name)
+        # item.send_keys("儿童写汉字")
         
         time.sleep(1)
 
@@ -264,9 +264,9 @@ class AdGdt():
 
 
         # table media-table js-media-details
-        table = self.driver.find_element(By.XPATH, "//table[@class='table media-table js-media-details']") 
-        list = table.find_elements_by_xpath('//tbody/tr')
-        print("tr len =",len(list))
+        # table = self.driver.find_element(By.XPATH, "//table[@class='table media-table js-media-details']") 
+        # list = table.find_elements_by_xpath('//tbody/tr')
+        # print("tr len =",len(list))
         # print(table.get_attribute('innerHTML'))
         # for tr in list:
         #     span_list = tr.find_elements_by_xpath("//span") 
