@@ -26,9 +26,8 @@ import sqlite3
 import win32gui
 import win32con
 
-# sys.path.append('../common')
-
-
+# sys.path.append('../common') 
+from ParseAdGdt import ParseAdGdt 
 
 class AdGdt():
     driver: None
@@ -227,6 +226,7 @@ class AdGdt():
         item.click()
         time.sleep(1)
         
+        # 新建广告
         list = self.driver.find_elements(By.XPATH, "//a[@class='btn btn-default btn-120']") 
         a = list[1]
         url = a.get_attribute('href')
@@ -236,9 +236,53 @@ class AdGdt():
         # time.sleep(1) 
         
         
+    def SearchAppGetAdInfoo(self,ishd):
+        name = appname.GetAppName(ishd)
+        self.driver.get("https://adnet.qq.com/medium/list")
+        time.sleep(2)  
+        item = self.driver.find_element(By.XPATH, "//input[@class='form-control']") 
+        time.sleep(1)
+
+        # item.send_keys(name)
+        item.send_keys("儿童写汉字")
+        
+        time.sleep(1)
+
+        self.driver.find_element_by_id('search_medium_id').click()
+        time.sleep(2)
+
+        item = self.driver.find_element(By.XPATH, "//div[@class='media']") 
+        item.click()
+        time.sleep(1)
+        
+        # 关联广告位
+        # <a style="cursor: pointer;">关联广告位</a>
+        list = self.driver.find_elements(By.XPATH, "//a[@style='cursor: pointer;']") 
+        a = list[1]  
+        a.click()
+        time.sleep(1) 
 
 
-    def CreatePlaceId(self,isHD):
+        # table media-table js-media-details
+        table = self.driver.find_element(By.XPATH, "//table[@class='table media-table js-media-details']") 
+        list = table.find_elements_by_xpath('//tbody/tr')
+        print("tr len =",len(list))
+        # print(table.get_attribute('innerHTML'))
+        # for tr in list:
+        #     span_list = tr.find_elements_by_xpath("//span") 
+        #     # [@class='field-value']
+        #     # print(span_list[1].text)
+
+        parse = ParseAdGdt()
+        parse.ParseAdData(self.driver.page_source,ishd)
+
+            
+
+
+    def GetAdInfo(self,isHD):
+        self.SearchAppGetAdInfoo(isHD) 
+
+    def CreatePlaceId(self,isHD): 
         self.SearchAppAddPlace(appname.GetAppName(isHD))
         self.CreateAdBanner(isHD)
         self.CreateAdInsert(isHD)
@@ -439,6 +483,12 @@ if __name__ == "__main__":
         time.sleep(3)
         ad.CreatePlaceId(True)
 
+    if argv1 == "adinfo":
+        ad.GetAdInfo(False)  
+        time.sleep(3)
+        ad.GetAdInfo(True)
  
     
+    
+
     print("AdGdt sucess")
