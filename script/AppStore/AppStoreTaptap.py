@@ -195,14 +195,14 @@ class AppStoreTaptap(AppStoreBase):
         # F:\\sourcecode\\unity\\product\\kidsgame\\ProjectOutPut\\xiehanzi\\hanziyuan\\screenshot\\shu\\cn\\480p\\1.jpg
         self.OpenFileBrowser(apk,True)
 
-
-        # while True:
-        #     time.sleep(2)
-        #     # self.driver.switch_to.window(self.driver.window_handles[0])  
-        #     self.urlnew = self.driver.current_url
-        #     print("urlnew=",self.urlnew)
-        #     if self.urlnew!=self.urlold:
-        #         break
+        search_window = self.driver.current_window_handle
+        while True:
+            time.sleep(2)
+            # self.driver.switch_to.window(self.driver.window_handles[0])  
+            self.urlnew = self.driver.current_url
+            print("urlnew=",self.urlnew)
+            if self.urlnew!=self.urlold:
+                break
 
         # <div class="progress"><div class="progress-bar" style="width: 82%;" aria-valuenow="82"></div></div>
         # while True:
