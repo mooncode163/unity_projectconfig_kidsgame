@@ -180,7 +180,9 @@ class AdGdt():
         url = ""
         if self.osApp == source.ANDROID:
             appid = appname.GetAppId(isHD, source.HUAWEI)
-            url = "http://appstore.huawei.com/C"+appid
+            # url = "http://appstore.huawei.com/C"+appid
+            # https://appgallery1.huawei.com/#/app/C100358289
+            url = "https://appgallery1.huawei.com/#/app/C"+appid
 
         if self.osApp == source.IOS:
             appid = appname.GetAppId(isHD, source.APPSTORE)
