@@ -26,4 +26,4 @@ if __name__ == "__main__":
 
     upload() 
 
-    print "git_upload end"
+    print("git_upload end")
