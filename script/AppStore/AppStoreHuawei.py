@@ -418,5 +418,6 @@ if __name__ == "__main__":
         ad.UpdateApp(isHD)
         time.sleep(3)
         # ad.UpdateApp(True)
-
+        
+    # ad.Quit()
     print("AppStoreHuawei sucess")

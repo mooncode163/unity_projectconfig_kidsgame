@@ -33,7 +33,7 @@ from AppStoreBase import AppStoreBase
 class AppStoreTaptap(AppStoreBase):  
 
 
-    def GoHome(self,isHD): 
+    def GoHome(self,isHD,login): 
         # self.driver.get("https://www.taptap.com/developer") 
         # self.driver.get("https://www.taptap.com/developer/dashboard/14628/apps") 
         # app
@@ -44,13 +44,16 @@ class AppStoreTaptap(AppStoreBase):
         self.driver.get(url)
         time.sleep(1)
 
+        if login==True:
         # <div class="icon-font ic_qq"></div>
         # 跳转qq登录
-        item = self.driver.find_element( By.XPATH, "//div[@class='icon-font ic_qq']")
-        item.click()
-        time.sleep(1)
+            item = self.driver.find_element( By.XPATH, "//div[@class='icon-font ic_qq']")
+            item.click()
+            time.sleep(1)
 
-
+    
+    def Login(self,user,password):
+        self.LoginQQ(user,password)
     
 # 3452644866 qq31415926
     def CreateApp(self, isHD):
@@ -163,45 +166,67 @@ class AppStoreTaptap(AppStoreBase):
     def UpdateApp(self, isHD): 
         appid = appname.GetAppId(isHD, source.TAPTAP)
         # https://www.taptap.com/developer/app-update/56016/14628
-        time.sleep(4)
+        time.sleep(2)
+        old_window = self.driver.current_window_handle
         item = self.driver.find_element(By.XPATH, "//a[@data-taptap-btn='updateAppData']")
         item.click()
-        time.sleep(4)
+        time.sleep(2)
+
+        # 跳转到新的页面
+        print("self.driver.current_url=",self.driver.current_url)
+        # self.driver.switch_to.window(self.driver.window_handles[0]) 
+        for win in self.driver.window_handles:
+                if win!=old_window:
+                    self.driver.switch_to.window(win)
+        time.sleep(1)
+        print("self.driver.current_url 2=",self.driver.current_url)
  
         # url = "https://www.taptap.com/developer/app-update/"+appid+"/14628"
         # self.driver.get(url) 
         # time.sleep(2)
 
         # <a data-toggle="modal" data-target=".confirm-upload-apk" class="btn btn-primary">上传APK</a>
-        # item = self.driver.find_element(By.XPATH, "//a[@data-target='.confirm-upload-apk']")
+        item = self.driver.find_element(By.XPATH, "//a[@data-target='.confirm-upload-apk']")
         # item = self.driver.find_element(By.XPATH, "//a[@data-toggle='modal']")
-        # item.click()
-        # time.sleep(2)
+        item.click()
+        time.sleep(2)
      
 
         # <a id="selectfiles" href="javascript:void(0);" class="btn btn-primary" style="position: relative; z-index: 1;">开始上传APK</a>
-        # item = self.driver.find_element(By.XPATH, "//a[@id='selectfiles']")
-        # item.click()
-        # time.sleep(1)
+        item = self.driver.find_element(By.XPATH, "//a[@id='selectfiles']")
+        item.click()
+        time.sleep(2)
 
         self.urlold = self.driver.current_url
+        old_window = self.driver.current_window_handle
         print("urlold=",self.urlold)
         # 手动点击上传
         
-        time.sleep(10)
+        # time.sleep(10)
 
         rootdir = "F:\\sourcecode\\unity\\product\\kidsgame\\ProjectOutPut"
         apk = common.GetOutPutApkPathWin32(rootdir,source.TAPTAP,isHD)
         # F:\\sourcecode\\unity\\product\\kidsgame\\ProjectOutPut\\xiehanzi\\hanziyuan\\screenshot\\shu\\cn\\480p\\1.jpg
         self.OpenFileBrowser(apk,True)
 
-        search_window = self.driver.current_window_handle
+      
+
+
         while True:
             time.sleep(2)
+            # for win in self.driver.window_handles:
+            #     if win!=old_window:
+            #         self.driver.switch_to.window(win)
+            #         self.urlold = self.driver.current_url
+            #         old_window = win
+            #         print("urlold 2=",self.urlold)
+                    
+
             # self.driver.switch_to.window(self.driver.window_handles[0])  
             self.urlnew = self.driver.current_url
             print("urlnew=",self.urlnew)
             if self.urlnew!=self.urlold:
+                print("new page =",self.urlnew)
                 break
 
         # <div class="progress"><div class="progress-bar" style="width: 82%;" aria-valuenow="82"></div></div>
@@ -216,7 +241,7 @@ class AppStoreTaptap(AppStoreBase):
         # time.sleep(1)
 
         # 手动等待上传
-        time.sleep(60*2)
+        # time.sleep(60*2)
 
 
         # https://www.taptap.com/developer/fill-form/14628?apk_id=496448&app_id=56016
@@ -236,6 +261,19 @@ class AppStoreTaptap(AppStoreBase):
         # <button id="postAppSubmitV2" type="submit" value="submit" class="leave_current_page btn btn-primary btn-lg">保存并提交审核</button>
         item = self.driver.find_element(By.XPATH, "//button[@id='postAppSubmitV2']")
         item.click()
+        time.sleep(2)
+
+        # 确定
+
+        
+        # section = self.driver.find_element(By.XPATH, "//section[@class='modal fade taptap-modal global-tip-modal in']")
+        # # <button class="btn btn-primary" data-default-text="确定">确定</button>
+        # # item = self.driver.find_element(By.XPATH, "//button[@data-default-text='确定']")
+        # item = section.find_element(By.XPATH, "//button[@data-default-text='确定']")
+        list = self.driver.find_elements(By.XPATH, "//button[@data-default-text='确定']")
+        item = list[1]
+        print("确定") 
+        self.driver.execute_script("arguments[0].click();", item)
         time.sleep(1)
 
 
@@ -332,9 +370,11 @@ if __name__ == "__main__":
     ad = AppStoreTaptap()
     ad.SetCmdPath(cmdPath)
     ad.Init()
-    ad.GoHome(False)
-    ad.LoginQQ("651577315","qq31415926")
-
+    ad.GoHome(False,True)
+    ad.Login("651577315","qq31415926")
+    # ad.GoHome(False,False)
+    # time.sleep(2)
+    
     argv1 = sys.argv[2]
     # ad.osApp = sys.argv[3]
     if argv1 == "createapp":
@@ -343,8 +383,10 @@ if __name__ == "__main__":
         ad.CreateApp(True)
  
     if argv1 == "update":
-        ad.UpdateApp(isHD)
+        ad.UpdateApp(False)
         time.sleep(3)
-        # ad.UpdateApp(True)
+        ad.UpdateApp(True)
 
+    # time.sleep(30)
+    # ad.Quit()
     print("AppStoreTaptap sucess")
