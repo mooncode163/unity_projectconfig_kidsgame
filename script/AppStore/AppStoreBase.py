@@ -75,8 +75,10 @@ class AppStoreBase():
         # print(driver.save_screenshot('jietu.png'))
         # driver.quit()
 
-    def Quit(self):
+    def Quit(self,delay):
+        time.sleep(delay) 
         self.driver.quit()
+        time.sleep(1)
 
     def SetCmdPath(self, str):
         dir = common.getLastDirofDir(str)
@@ -84,6 +86,21 @@ class AppStoreBase():
         dir = common.getLastDirofDir(dir)
         self.dirRoot = dir
         print("dir = ", dir)
+    
+    
+#   该方法用来确认元素是否存在，如果存在返回flag=true，否则返回false        
+    def IsElementExist(self,element):
+        flag=True
+        browser=self.driver
+        try:
+            # browser.find_element_by_css_selector(element)
+            browser.find_element(By.XPATH, element)
+            return flag
+        
+        except:
+            flag=False
+            return flag
+
 
     def OpenFileBrowser(self,path,autoclick):
         # win32gui

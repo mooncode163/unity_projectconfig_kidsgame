@@ -386,7 +386,7 @@ if __name__ == "__main__":
         ad.UpdateApp(False)
         time.sleep(3)
         ad.UpdateApp(True)
+ 
+    ad.Quit(30)
 
-    # time.sleep(30)
-    # ad.Quit()
     print("AppStoreTaptap sucess")

@@ -229,6 +229,8 @@ class AppStoreHuawei(AppStoreBase):
         time.sleep(3)
 
         self.driver.switch_to.frame("mainIframeView")
+        time.sleep(1)
+        # 软件包管理
         item = self.driver.find_element(By.XPATH, "//a[@id='VerInfoDownloadLink']")
         #  Message: element click intercepted
         self.driver.execute_script("arguments[0].click();", item)
@@ -254,56 +256,55 @@ class AppStoreHuawei(AppStoreBase):
         apk = common.GetOutPutApkPathWin32(rootdir,source.HUAWEI,isHD)
         print(apk)
         # F:\\sourcecode\\unity\\product\\kidsgame\\ProjectOutPut\\xiehanzi\\hanziyuan\\screenshot\\shu\\cn\\480p\\1.jpg
-        self.OpenFileBrowser(apk,False)
+        self.OpenFileBrowser(apk,True)
 
-        time.sleep(20)
+        time.sleep(1)
  
-        # # <a data-toggle="modal" data-target=".confirm-upload-apk" class="btn btn-primary">上传APK</a>
-        # item = self.driver.find_element(By.XPATH, "//a[@data-target='.confirm-upload-apk']")
-        # item.click()
-        # time.sleep(2)
-
-        # # <a id="selectfiles" href="javascript:void(0);" class="btn btn-primary" style="position: relative; z-index: 1;">开始上传APK</a>
-        # item = self.driver.find_element(By.XPATH, "//a[@id='selectfiles']")
-        # item.click()
-        # time.sleep(1)
-
-        # rootdir = "F:\\sourcecode\\unity\\product\\kidsgame\\ProjectOutPut"
-        # apk = common.GetOutPutApkPathWin32(rootdir,source.TAPTAP,isHD)
-        # # F:\\sourcecode\\unity\\product\\kidsgame\\ProjectOutPut\\xiehanzi\\hanziyuan\\screenshot\\shu\\cn\\480p\\1.jpg
-        # self.OpenFileBrowser(apk)
-
+     
+        # <div class="uploader-progress-bar" ng-style="{width: uploadProgress}"></div>
 
         # # <div class="progress"><div class="progress-bar" style="width: 82%;" aria-valuenow="82"></div></div>
-        # while True:
-        #     item = self.driver.find_element(By.XPATH, "//div[@class='progress']")
-        #     if item is not None:
-        #         value = item.get_attribute('aria-valuenow')
-        #         int_v = int(value)
-        #         if int_v>=100:
-        #             break
+        isUploading = False
+        while True:
+            time.sleep(1)
+            key = "//div[@class='uploader-progress-bar']"
+            if self.IsElementExist(key):
+                item = self.driver.find_element(By.XPATH, key)
+                if item is not None:
+                    style = item.get_attribute('style') 
+                    isUploading = True
+                    print(style)
+                    # if style.find("100") >=0:
+                    #     time.sleep(1)
+                    #     print("upload apk finish")
+                    #     break
+            else:
+                if isUploading == True:
+                    isUploading = False
+                    time.sleep(1)
+                    print("upload apk finish")
+                    break
+
+
+
         
-        # time.sleep(1)
+        time.sleep(1)
+
+        # 不申请
+        item = self.driver.find_element(By.XPATH, "//span[@id='VerInfoNotApplyButton']")
+        item.click()
+        time.sleep(1)
 
 
-        # # https://www.taptap.com/developer/fill-form/14628?apk_id=496448&app_id=56016
+        # 提交审核
+        item = self.driver.find_element(By.XPATH, "//a[@id='VerInfoSubmitButton']")
+        item.click()
+        time.sleep(3)
 
-
-        # # 未成年人防沉迷
-        # # <input required="" type="radio" name="anti_addiction_read" value="1">
-        # item = self.driver.find_element(By.XPATH, "//input[@name='anti_addiction_read']")
-        # item.click()
-        # time.sleep(1)
-        # # <input required="required" type="radio" name="anti_addiction_status" value="1">
-        # item = self.driver.find_element(By.XPATH, "//input[@name='anti_addiction_status']")
-        # item.click()
-        # time.sleep(1)
-
-        # # 提交审核
-        # # <button id="postAppSubmitV2" type="submit" value="submit" class="leave_current_page btn btn-primary btn-lg">保存并提交审核</button>
-        # item = self.driver.find_element(By.XPATH, "//button[@id='postAppSubmitV2']")
-        # item.click()
-        # time.sleep(1)
+        # 确定
+        item = self.driver.find_element(By.XPATH, "//a[@id='AppSubmitConfirmButtonOk']")
+        item.click()
+        time.sleep(3)
 
 
     def GetAppName(self, ishd):
@@ -416,9 +417,13 @@ if __name__ == "__main__":
         ad.CreateApp(True)
  
     if argv1 == "update":
-        ad.UpdateApp(isHD)
+        # ad.UpdateApp(isHD)
+        ad.UpdateApp(False)
         time.sleep(3)
-        # ad.UpdateApp(True)
-        
-    # ad.Quit()
+        ad.UpdateApp(True)
+
+ 
+    ad.Quit(30)
+
+
     print("AppStoreHuawei sucess")
