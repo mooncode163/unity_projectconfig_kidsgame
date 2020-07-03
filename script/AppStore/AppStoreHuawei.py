@@ -243,11 +243,12 @@ class AppStoreHuawei(AppStoreBase):
         # self.driver.switch_to.frame("mainIframeView")
         # item = self.driver.find_element(By.XPATH, "//input[@type='file']")
         # item = self.driver.find_element(By.XPATH, "//div[@class='uploader-pick']")
-        
-        # item.click()
+        item = self.driver.find_element(By.XPATH, "//div[@id='uploaderSelectContainer']")
+        item.click()
+        time.sleep(2)
         #  Message: element click intercepted
         # self.driver.execute_script("arguments[0].click();", item)
-        time.sleep(10)
+        # time.sleep(10)
         
         rootdir = "F:\\sourcecode\\unity\\product\\kidsgame\\ProjectOutPut"
         apk = common.GetOutPutApkPathWin32(rootdir,source.HUAWEI,isHD)

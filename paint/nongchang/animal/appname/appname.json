@@ -1,0 +1,36 @@
+{
+    "APP_NAME_CN_ANDROID": "儿童农场找动物",
+    "APP_NAME_EN_ANDROID": "Kids Farm Animal",
+    "APP_NAME_CN_IOS": "儿童农场找动物",
+    "APP_NAME_EN_IOS": "Kids Farm Animal",
+    "PACKAGE_ANDROID": "com.moonma.ncanimal",
+    "PACKAGE_IOS": "com.moonma.ncanimal",
+    "APPVERSION_ANDROID": "1.0.3",
+    "APPVERSION_CODE_ANDROID": "103",
+    "APPVERSION_IOS": "1.0.3",
+    "need_upload_screenshot": false,
+    "APPSTORE_VERSION_UPDATE": {
+        "cn": "修复闪退",
+        "en": "Fix a Bug"
+    },
+    "APPSTORE_TITLE": {
+        "cn": "儿童农场找动物-培养观察力",
+        "en": "Find Animals-Observability"
+    },
+    "APPSTORE_SUBTITLE": {
+        "cn": "锻炼视觉搜索能力",
+        "en": "Exercise visual search ability"
+    },
+    "APPSTORE_PROMOTION": {
+        "cn": "快速提高宝宝的观察力和视觉搜索能力！",
+        "en": "Quickly improve the baby's observation and visual search ability!"
+    },
+    "APPSTORE_KEYWORD": {
+        "cn": "居家安全宝宝巴士托马斯和朋友我是消防员兴趣启蒙小帮手小伴龙森林动物草莓甜心糖果果园沙滩乐多纳学英语儿歌多多迷宫小镇汉字王国小牙医美食节熊猫博士小镇画彩蛋悟空识字恐龙救援车马儿的神奇大冒险小企鹅乐园魔力",
+        "en": "居家安全宝宝巴士托马斯和朋友我是消防员兴趣启蒙小帮手小伴龙森林动物草莓甜心糖果果园沙滩乐多纳学英语儿歌多多迷宫小镇汉字王国小牙医美食节熊猫博士小镇画彩蛋悟空识字恐龙救援车马儿的神奇大冒险小企鹅乐园魔力"
+    },
+    "software_url": "http://www.mooncore.cn",
+    "privacy_url": "http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
+    "support_url": "http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html",
+    "sku_app": "ncanimal"
+}
