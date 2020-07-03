@@ -278,7 +278,7 @@ class AppStoreTaptap(AppStoreBase):
 
 
     def GetAppName(self, ishd):
-        name = appname.GetAppName(self.osApp, ishd)
+        name = appname.GetAppName(source.ANDROID, ishd)
         # if self.osApp == source.IOS:
         #     appname.GetAppName(self.osApp, ishd)+self.osApp
 
@@ -286,54 +286,32 @@ class AppStoreTaptap(AppStoreBase):
  
     def SearchApp(self, ishd):
         name = self.GetAppName(ishd)
-        self.driver.get("https://adnet.qq.com/medium/list")
+        
+        # self.driver.get("https://adnet.qq.com/medium/list")
         time.sleep(2)
-        item = self.driver.find_element(
-            By.XPATH, "//input[@class='form-control']")
-        time.sleep(1)
+  
+        div = self.driver.find_element(
+            By.XPATH, "//div[@class='developer-search-app']")
+        time.sleep(1) 
 
+        item = div.find_element_by_xpath("input")
         item.send_keys(name)
         # item.send_keys("儿童写汉字")
 
         time.sleep(1)
 
-        # search
-        self.driver.find_element_by_id('search_medium_id').click()
-        time.sleep(2)
- 
-        # 筛选
-        item = self.driver.find_element(By.XPATH, "//button[@class='btn filter-operate']")
-        # item = self.driver.find_element(By.XPATH, "//div[@class='filter-parent-control']")
 
-        # error
-        # item.click()  
-        self.driver.execute_script("arguments[0].click();", item)
-        time.sleep(2)
-
-# <input type="checkbox" class="check" name="" value="IOS"> 
-        if self.osApp == source.ANDROID:
-            item = self.driver.find_element(By.XPATH, "//input[@value='Android']")
-            # item.click()
-            self.driver.execute_script("arguments[0].click();", item)
-            time.sleep(1)
-
-        if self.osApp == source.IOS:
-            item = self.driver.find_element(By.XPATH, "//input[@value='IOS']")
-            # item.click()
-            self.driver.execute_script("arguments[0].click();", item)
-            time.sleep(1)
-         
-        # 确定
-        item = self.driver.find_element(By.XPATH, "//button[@class='btn btn-primary']")
-        # item.click()
-        self.driver.execute_script("arguments[0].click();", item)
-        time.sleep(2)
-
-
-        # 点击第一个
-        item = self.driver.find_element(By.XPATH, "//div[@class='media']")
-        item.click()
-        time.sleep(1)
+        div = self.driver.find_element(By.XPATH, "//div[@class='dropdown search-app-dropdown']")
+        item = div.find_element_by_xpath("ul/li/a")
+        # app_id=56016
+        url = item.get_attribute('href')
+        strfind = "app_id="
+        idx =  url.find(strfind)+len(strfind)
+        print(url)
+        appid = url[idx:] 
+        print(appid)
+        appname.SetAppId(ishd,source.ANDROID,source.TAPTAP,appid)
+       
  
 
 
@@ -387,6 +365,11 @@ if __name__ == "__main__":
         time.sleep(3)
         ad.UpdateApp(True)
  
+    if argv1 == "getappid": 
+        ad.SearchApp(False)
+        time.sleep(3)
+        ad.SearchApp(True)
+
     ad.Quit(30)
 
     print("AppStoreTaptap sucess")

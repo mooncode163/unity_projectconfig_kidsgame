@@ -456,6 +456,22 @@ def GetAppId(isHd,channel):
 
     return appid 
 
+def SetAppId(isHd,os,channel,appid):
+    # loadJson
+    data = loadJson(isHd) 
+
+    isOld = IsOldVersion(data)
+    global versionCode
+     
+    
+    if isOld:
+        SetConfigDataAppId(os,channel,appid,isHd)
+    else:
+        data["appid"][channel] =appid
+        filePath = GetJsonFile(isHd)
+        common.SaveJson(filePath,data)
+  
+ 
 
 def updateName(isHd,isAuto):
     
