@@ -8,15 +8,16 @@ import time
 import datetime
 import sys
 
-# include appinfo.py
+# include AppInfo.py
 # sys.path.append('./common')
-import appname
-import appchannel
-import source
+import AppInfo
+import appchannel 
 import apk_build
-
-sys.path.append('./common')
-import common
+ 
+o_path = os.getcwd()  # 返回当前工作目录
+sys.path.append(o_path)  # 添加自己指定的搜索路径  
+from common import common
+from common import source
 
 listChannel = [source.TAPTAP]
 
@@ -46,10 +47,9 @@ if __name__ == "__main__":
     # python 里无法直接执行cd目录，要用chdir改变当前的工作目录
     os.chdir(android_studio_dir)
 
-    for channel in listChannel:
-        print "apk_build_taptap:" + channel
+    for channel in listChannel: 
         appchannel.updateChannel(channel,isHD) 
         apk_build.buildApk()
         apk_build.copyApk(channel)
 
-    print "apk_build_taptap sucess"
+    print ("apk_build_taptap sucess")

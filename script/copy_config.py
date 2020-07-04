@@ -6,13 +6,15 @@ import shutil
 import os
 import os.path
 import time,  datetime
+o_path = os.getcwd()  # 返回当前工作目录
+sys.path.append(o_path)  # 添加自己指定的搜索路径
+from common import common
+from common import config
+from common import source
+from common import adconfig  
  
-#include common.py
-sys.path.append('./common')
-import common
-import source
-import appname
-import adconfig
+import AppInfo
+ 
 import config_adsdk_android
  
 
@@ -21,7 +23,7 @@ def UpdateXcodeProjectFile(fileProject,isHD):
     if not flag:
         return
 
-    package = appname.GetPackage(source.IOS,isHD) 
+    package = AppInfo.GetPackage(source.IOS,isHD) 
 
     # 读取xcode文件的包名
     # PRODUCT_BUNDLE_IDENTIFIER = com.moonma.xiehanzi.pad;
@@ -48,7 +50,7 @@ def CopyAndroidJavaFile_Weixin(rootStudio,isHD):
     strFileTo = rootStudio+"/src/main/java/com/moonma/common/share/wxapi/WXEntryActivity.java"
     
     # loadJson
-    package = appname.GetPackage(source.ANDROID,isHD)  
+    package = AppInfo.GetPackage(source.ANDROID,isHD)  
     # 替换包名
     f = open(strFileFrom, 'r')
     strFile = f.read()

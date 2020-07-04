@@ -10,9 +10,9 @@ import sys
 
 import socket
 
-# include appinfo.py
+# include AppInfo.py
 # sys.path.append('./common')
-import appname
+import AppInfo
 
 
 sys.path.append('./common')

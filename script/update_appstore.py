@@ -34,7 +34,7 @@ enableScrenshot = False
 
 def loadJson(isHd):
     cur_path = common.GetProjectConfigApp()+"/appname"
-    jsonfile = cur_path+'/appinfo.json'
+    jsonfile = cur_path+'/AppInfo.json'
     if isHd:
         jsonfile = cur_path+'/appinfo_hd.json'
 

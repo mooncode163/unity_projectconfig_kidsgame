@@ -9,9 +9,9 @@ import datetime
 import sys
 import subprocess
 
-# include appinfo.py
+# include AppInfo.py
 # sys.path.append('./common')
-import appname
+import AppInfo
 import appchannel
 import source
 import apk_build

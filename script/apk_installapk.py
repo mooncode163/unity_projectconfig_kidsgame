@@ -7,9 +7,9 @@ import os.path
 import time,  datetime
 import sys
 
-#include appinfo.py
+#include AppInfo.py
 # sys.path.append('./common')
-import appname
+import AppInfo
 import source
 
 sys.path.append('./common')
@@ -36,7 +36,7 @@ if  __name__ =="__main__":
     gameName = common.getGameName()
     gameType = common.getGameType() 
 
-    # package = appname.GetPackage(source.source.SOURCE_ANDROID,isHD) 
+    # package = AppInfo.GetPackage(source.source.SOURCE_ANDROID,isHD) 
     package = common.GetPackageAndroidFromXml()
     print package
     os.system("adb uninstall "+package)

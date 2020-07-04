@@ -8,15 +8,17 @@ import time
 import datetime
 import sys
 
-# include appinfo.py
+# include AppInfo.py
 # sys.path.append('./common')
-import appname
-import appchannel
-import source
+import AppInfo
+import appchannel 
 import apk_build
 
-sys.path.append('./common')
-import common
+ 
+o_path = os.getcwd()  # 返回当前工作目录
+sys.path.append(o_path)  # 添加自己指定的搜索路径  
+from common import common
+from common import source
 
 listChannel = [source.HUAWEI]
 

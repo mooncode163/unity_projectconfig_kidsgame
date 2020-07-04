@@ -8,9 +8,9 @@ import time
 import datetime
 import sys
 
-# include appinfo.py
+# include AppInfo.py
 # sys.path.append('./common')
-import appname
+import AppInfo
 import appchannel
 import source
 import apk_build

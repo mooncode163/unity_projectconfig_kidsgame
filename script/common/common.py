@@ -165,12 +165,15 @@ def cur_file_dir():
 def SetCmdPath(cmdPath): 
     global g_CmdPath
     g_CmdPath = cmdPath 
-    if isWindowsSystem():
-        # windows 系统路径最后一个是\字符，需要删除
-        g_CmdPath = getLastDirofDir(g_CmdPath)
+    print("SetCmdPath cmdPath=",cmdPath)
+    idx = cmdPath.find("\\cmd_")
+    g_CmdPath = cmdPath[0:idx]
+    # if isWindowsSystem():
+    #     # windows 系统路径最后一个是\字符，需要删除
+    #     g_CmdPath = getLastDirofDir(g_CmdPath)
 
-    # 跳过才cmd_xxx目录
-    g_CmdPath = getLastDirofDir(g_CmdPath)
+    # # 跳过cmd_xxx目录
+    # g_CmdPath = getLastDirofDir(g_CmdPath)
 
 #last dir
 def getLastDir(): 

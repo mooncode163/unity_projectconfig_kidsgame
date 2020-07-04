@@ -33,7 +33,8 @@ if  __name__ =="__main__":
         print("参数", i, sys.argv[i])
         if i==1:
             cmdPath = sys.argv[i]
-    
+
+    cmdPath = common.getLastDirofDir(cmdPath)
     common.SetCmdPath(cmdPath)
     gameName = common.getGameName()
     gameType = common.getGameType()

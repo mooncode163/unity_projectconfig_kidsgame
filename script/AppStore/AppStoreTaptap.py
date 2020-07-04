@@ -7,7 +7,7 @@ import json
 o_path = os.getcwd()  # 返回当前工作目录
 sys.path.append(o_path)  # 添加自己指定的搜索路径
  
-import appname
+import AppInfo
 import win32con
 import win32gui
 import sqlite3
@@ -38,7 +38,7 @@ class AppStoreTaptap(AppStoreBase):
         # self.driver.get("https://www.taptap.com/developer/dashboard/14628/apps") 
         # app
         # https://www.taptap.com/developer/dashboard/14628?app_id=56016
-        appid = appname.GetAppId(isHD, source.TAPTAP)
+        appid = AppInfo.GetAppId(isHD, source.TAPTAP)
         url = "https://www.taptap.com/developer/dashboard/14628?app_id="+appid
         print(url)
         self.driver.get(url)
@@ -125,11 +125,11 @@ class AppStoreTaptap(AppStoreBase):
         
         url = ""
         if self.osApp == source.ANDROID:
-            appid = appname.GetAppId(isHD, source.HUAWEI)
+            appid = AppInfo.GetAppId(isHD, source.HUAWEI)
             url = "http://appstore.huawei.com/C"+appid
 
         if self.osApp == source.IOS:
-            appid = appname.GetAppId(isHD, source.APPSTORE)
+            appid = AppInfo.GetAppId(isHD, source.APPSTORE)
             # https://itunes.apple.com/cn/app/id1303020002
             url = "https://itunes.apple.com/cn/app/id"+appid
         
@@ -154,7 +154,7 @@ class AppStoreTaptap(AppStoreBase):
 
         item = self.driver.find_element(
             By.XPATH, "//input[@id='packageName']")
-        package = appname.GetPackage(source.ANDROID, isHD)
+        package = AppInfo.GetPackage(source.ANDROID, isHD)
         item.send_keys(package)
 
         # 创建
@@ -164,7 +164,7 @@ class AppStoreTaptap(AppStoreBase):
         item.click()
 
     def UpdateApp(self, isHD): 
-        appid = appname.GetAppId(isHD, source.TAPTAP)
+        appid = AppInfo.GetAppId(isHD, source.TAPTAP)
         # https://www.taptap.com/developer/app-update/56016/14628
         time.sleep(2)
         old_window = self.driver.current_window_handle
@@ -278,9 +278,9 @@ class AppStoreTaptap(AppStoreBase):
 
 
     def GetAppName(self, ishd):
-        name = appname.GetAppName(source.ANDROID, ishd)
+        name = AppInfo.GetAppName(source.ANDROID, ishd)
         # if self.osApp == source.IOS:
-        #     appname.GetAppName(self.osApp, ishd)+self.osApp
+        #     AppInfo.GetAppName(self.osApp, ishd)+self.osApp
 
         return name
  
@@ -310,7 +310,7 @@ class AppStoreTaptap(AppStoreBase):
         print(url)
         appid = url[idx:] 
         print(appid)
-        appname.SetAppId(ishd,source.ANDROID,source.TAPTAP,appid)
+        AppInfo.SetAppId(ishd,source.ANDROID,source.TAPTAP,appid)
        
  
 

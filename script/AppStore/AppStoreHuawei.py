@@ -7,7 +7,7 @@ import json
 o_path = os.getcwd()  # 返回当前工作目录
 sys.path.append(o_path)  # 添加自己指定的搜索路径
  
-import appname
+import AppInfo
 import win32con
 import win32gui
 import sqlite3
@@ -35,7 +35,7 @@ class AppStoreHuawei(AppStoreBase):
   
 
     def GoHome(self,isHD):  
-        appid = appname.GetAppId(isHD, source.HUAWEI)
+        appid = AppInfo.GetAppId(isHD, source.HUAWEI)
         url = "https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/myApp"
         print(url)
         self.driver.get(url)
@@ -145,11 +145,11 @@ class AppStoreHuawei(AppStoreBase):
         
         url = ""
         if self.osApp == source.ANDROID:
-            appid = appname.GetAppId(isHD, source.HUAWEI)
+            appid = AppInfo.GetAppId(isHD, source.HUAWEI)
             url = "http://appstore.huawei.com/C"+appid
 
         if self.osApp == source.IOS:
-            appid = appname.GetAppId(isHD, source.APPSTORE)
+            appid = AppInfo.GetAppId(isHD, source.APPSTORE)
             # https://itunes.apple.com/cn/app/id1303020002
             url = "https://itunes.apple.com/cn/app/id"+appid
         
@@ -174,7 +174,7 @@ class AppStoreHuawei(AppStoreBase):
 
         item = self.driver.find_element(
             By.XPATH, "//input[@id='packageName']")
-        package = appname.GetPackage(source.ANDROID, isHD)
+        package = AppInfo.GetPackage(source.ANDROID, isHD)
         item.send_keys(package)
 
         # 创建
@@ -185,9 +185,9 @@ class AppStoreHuawei(AppStoreBase):
 
 
     def GetAppName(self, ishd):
-        name = appname.GetAppName(self.osApp, ishd)
+        name = AppInfo.GetAppName(self.osApp, ishd)
         # if self.osApp == source.IOS:
-        #     appname.GetAppName(self.osApp, ishd)+self.osApp
+        #     AppInfo.GetAppName(self.osApp, ishd)+self.osApp
 
         return name
 
@@ -210,7 +210,7 @@ class AppStoreHuawei(AppStoreBase):
         # self.driver.execute_script(js)
         # time.sleep(2)
 
-        appid = appname.GetAppId(isHD, source.HUAWEI)
+        appid = AppInfo.GetAppId(isHD, source.HUAWEI)
         # https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/myApp/101054959 
         url = "https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/myApp/"+appid
         self.driver.get(url) 
@@ -308,9 +308,9 @@ class AppStoreHuawei(AppStoreBase):
 
 
     def GetAppName(self, ishd):
-        name = appname.GetAppName(self.osApp, ishd)
+        name = AppInfo.GetAppName(self.osApp, ishd)
         # if self.osApp == source.IOS:
-        #     appname.GetAppName(self.osApp, ishd)+self.osApp
+        #     AppInfo.GetAppName(self.osApp, ishd)+self.osApp
 
         return name
  

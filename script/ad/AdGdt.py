@@ -1,6 +1,6 @@
 # 导入selenium的浏览器驱动接口
 from ParseAdGdt import ParseAdGdt
-import appname
+import AppInfo
 import win32con
 import win32gui
 import sqlite3
@@ -179,13 +179,13 @@ class AdGdt():
         
         url = ""
         if self.osApp == source.ANDROID:
-            appid = appname.GetAppId(isHD, source.HUAWEI)
+            appid = AppInfo.GetAppId(isHD, source.HUAWEI)
             # url = "http://appstore.huawei.com/C"+appid
             # https://appgallery1.huawei.com/#/app/C100358289
             url = "https://appgallery1.huawei.com/#/app/C"+appid
 
         if self.osApp == source.IOS:
-            appid = appname.GetAppId(isHD, source.APPSTORE)
+            appid = AppInfo.GetAppId(isHD, source.APPSTORE)
             # https://itunes.apple.com/cn/app/id1303020002
             url = "https://itunes.apple.com/cn/app/id"+appid
         
@@ -210,7 +210,7 @@ class AdGdt():
 
         item = self.driver.find_element(
             By.XPATH, "//input[@id='packageName']")
-        package = appname.GetPackage(source.ANDROID, isHD)
+        package = AppInfo.GetPackage(source.ANDROID, isHD)
         item.send_keys(package)
 
         # 创建
@@ -220,9 +220,9 @@ class AdGdt():
         item.click()
 
     def GetAppName(self, ishd):
-        name = appname.GetAppName(self.osApp, ishd)
+        name = AppInfo.GetAppName(self.osApp, ishd)
         # if self.osApp == source.IOS:
-        #     appname.GetAppName(self.osApp, ishd)+self.osApp
+        #     AppInfo.GetAppName(self.osApp, ishd)+self.osApp
 
         return name
  
@@ -487,9 +487,9 @@ if __name__ == "__main__":
     # dir = common.getLastDirofDir(dir)
     common.SetCmdPath(dir)
     print(cmdPath)
-    package = appname.GetPackage(source.ANDROID, False)
+    package = AppInfo.GetPackage(source.ANDROID, False)
     print(package)
-    package = appname.GetAppId(False, source.HUAWEI)
+    package = AppInfo.GetAppId(False, source.HUAWEI)
     print(package)
 
     ad = AdGdt()

@@ -7,7 +7,7 @@ import os.path
 import time,  datetime
 import sys
 
-#include appinfo.py
+#include AppInfo.py
 sys.path.append('./common')
 import common
 import source

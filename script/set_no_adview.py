@@ -11,7 +11,7 @@ import time,  datetime
 sys.path.append('./common')
 import common
 import source
-import appname
+import AppInfo
 import config_adsdk_android
   
 

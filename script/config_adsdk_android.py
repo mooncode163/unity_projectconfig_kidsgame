@@ -6,12 +6,15 @@ import shutil
 import os
 import os.path
 
-sys.path.append('./common')
-import common
+# sys.path.append('./common')
+# import common
 
+o_path = os.getcwd()  # 返回当前工作目录
+sys.path.append(o_path)  # 添加自己指定的搜索路径  
+from common import common
 
-sys.path.append('./ziputils')
-import ziputils
+# sys.path.append('./ziputils')
+from common import ziputils 
  
 
 
