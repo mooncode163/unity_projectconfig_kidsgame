@@ -39,7 +39,9 @@ class AppStoreTaptap(AppStoreBase):
         # app
         # https://www.taptap.com/developer/dashboard/14628?app_id=56016
         appid = AppInfo.GetAppId(isHD, source.TAPTAP)
+        print("GoHome appid=",appid," isHD="+str(isHD))
         url = "https://www.taptap.com/developer/dashboard/14628?app_id="+appid
+        # 
         print(url)
         self.driver.get(url)
         time.sleep(1)
@@ -53,7 +55,19 @@ class AppStoreTaptap(AppStoreBase):
 
     
     def Login(self,user,password):
-        self.LoginQQ(user,password)
+        self.urlold = self.driver.current_url
+        print("Login urlold=",self.urlold)
+        self.LoginQQ(user,password) 
+        
+        # 等待登录成功
+        while True:
+            time.sleep(1)  
+            self.urlnew = self.driver.current_url
+            print("Login urlnew=",self.urlnew)
+            if self.urlnew!=self.urlold:
+                print("Login Finish =",self.urlnew)
+                break
+
     
 # 3452644866 qq31415926
     def CreateApp(self, isHD):
@@ -163,15 +177,32 @@ class AppStoreTaptap(AppStoreBase):
             By.XPATH, "//a[@class='btn btn-primary btn-160']")
         item.click()
 
+    def GoToAPPPage(self,isHD):  
+        appid = AppInfo.GetAppId(isHD, source.TAPTAP) 
+        url = "https://www.taptap.com/developer/dashboard/14628?app_id="+appid 
+        print(url)
+        self.driver.get(url)
+        time.sleep(1)
+ 
+
     def UpdateApp(self, isHD): 
         appid = AppInfo.GetAppId(isHD, source.TAPTAP)
+        # print("UpdateApp appid=",appid," isHD="+isHD)
         # https://www.taptap.com/developer/app-update/56016/14628
         time.sleep(2)
         old_window = self.driver.current_window_handle
-        item = self.driver.find_element(By.XPATH, "//a[@data-taptap-btn='updateAppData']")
-        item.click()
-        time.sleep(2)
+        key = "//a[@data-taptap-btn='updateAppData']"
+        if self.IsElementExist(key):
+            item = self.driver.find_element(By.XPATH, key)
+            item.click()
+            time.sleep(2)
+        else:
+            print("updateAppData button not find ")
+            print("updateAppData current_url=",self.driver.current_url)
+            self.GoToAPPPage(isHD)
+            self.UpdateApp(isHD)
 
+         
         # 跳转到新的页面
         print("self.driver.current_url=",self.driver.current_url)
         # self.driver.switch_to.window(self.driver.window_handles[0]) 
@@ -209,9 +240,7 @@ class AppStoreTaptap(AppStoreBase):
         # F:\\sourcecode\\unity\\product\\kidsgame\\ProjectOutPut\\xiehanzi\\hanziyuan\\screenshot\\shu\\cn\\480p\\1.jpg
         self.OpenFileBrowser(apk,True)
 
-      
-
-
+        # 檢查是否文件長傳結束 
         while True:
             time.sleep(2)
             # for win in self.driver.window_handles:
@@ -257,11 +286,15 @@ class AppStoreTaptap(AppStoreBase):
         item.click()
         time.sleep(1)
 
+        # 等待后台apk解析
+        time.sleep(10)
+
         # 提交审核
         # <button id="postAppSubmitV2" type="submit" value="submit" class="leave_current_page btn btn-primary btn-lg">保存并提交审核</button>
         item = self.driver.find_element(By.XPATH, "//button[@id='postAppSubmitV2']")
         item.click()
-        time.sleep(2)
+        time.sleep(1)
+     
 
         # 确定
 
@@ -287,7 +320,7 @@ class AppStoreTaptap(AppStoreBase):
     def SearchApp(self, ishd):
         name = self.GetAppName(ishd)
         
-        # self.driver.get("https://adnet.qq.com/medium/list")
+        self.driver.get("https://www.taptap.com/developer/dashboard/14628/apps")
         time.sleep(2)
   
         div = self.driver.find_element(
@@ -335,7 +368,9 @@ if __name__ == "__main__":
             cmdPath = sys.argv[i]
 
         if i == 3:
+            print("check hd", i, sys.argv[i])
             if sys.argv[i] == "hd":
+                print("isHD true")
                 isHD = True
 
     # cmdPath = cmdPath.replace("ad\\", "")
@@ -348,10 +383,8 @@ if __name__ == "__main__":
     ad = AppStoreTaptap()
     ad.SetCmdPath(cmdPath)
     ad.Init()
-    ad.GoHome(False,True)
-    ad.Login("651577315","qq31415926")
-    # ad.GoHome(False,False)
-    # time.sleep(2)
+    ad.GoHome(isHD,True)
+    ad.Login("651577315","qq31415926") 
     
     argv1 = sys.argv[2]
     # ad.osApp = sys.argv[3]
@@ -361,15 +394,19 @@ if __name__ == "__main__":
         ad.CreateApp(True)
  
     if argv1 == "update":
-        ad.UpdateApp(False)
-        time.sleep(3)
-        ad.UpdateApp(True)
+        if isHD==True:
+            ad.UpdateApp(True)
+        else:
+            ad.UpdateApp(False)
+            time.sleep(3)
+            ad.UpdateApp(True)
+
  
     if argv1 == "getappid": 
         ad.SearchApp(False)
         time.sleep(3)
         ad.SearchApp(True)
 
-    ad.Quit(30)
+    # ad.Quit(30)
 
     print("AppStoreTaptap sucess")

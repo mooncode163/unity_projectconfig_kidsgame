@@ -46,7 +46,7 @@ def GetPackage(osSrc,isHD):
 
 def GetJsonFile(isHd):
     cur_path = common.GetProjectConfigApp()+"/appinfo"
-    jsonfile = cur_path+'/AppInfo.json'
+    jsonfile = cur_path+'/appinfo.json'
     if isHd:
         jsonfile = cur_path+'/appinfo_hd.json'
     return jsonfile
@@ -729,8 +729,8 @@ if __name__ == "__main__":
     if flag:
         os.rename(src,dst)
 
-    src = common.GetProjectConfigApp()+"/appinfo/AppInfo.json"
-    dst = common.GetProjectConfigApp()+"/appinfo/AppInfo.json"
+    src = common.GetProjectConfigApp()+"/appinfo/appname.json"
+    dst = common.GetProjectConfigApp()+"/appinfo/appinfo.json"
     flag = os.path.exists(src)
     if flag:
         os.rename(src,dst)

@@ -406,7 +406,7 @@ if __name__ == "__main__":
     ad = AppStoreHuawei()
     ad.SetCmdPath(cmdPath)
     ad.Init()
-    ad.GoHome(False)
+    ad.GoHome(isHD)
     ad.Login("chyfemail163@163.com","Qianlizhiwai1")
 
     argv1 = sys.argv[2]
