@@ -39,18 +39,30 @@ class AppStoreApple(AppStoreBase):
         # url ="https://appstoreconnect.apple.com/apps/"+appid+"/appstore/ios/version/deliverable"
         print(url)
         self.driver.get(url)
-        time.sleep(20)
+        time.sleep(1)
   
     
     def Login(self,user,password):
+        self.urlold = self.driver.current_url
+        print("Login urlold=",self.urlold) 
+
+        # 等待网页加载成功
+        key = "//iframe[@id='aid-auth-widget-iFrame']"
+        while True:
+            # self.driver.switch_to.frame('aid-auth-widget-iFrame')
+            time.sleep(1)
+            print("web is loading...")
+            if self.IsElementExist(key)==True:
+                print("web loading finish")
+                break
 
         self.driver.switch_to.frame('aid-auth-widget-iFrame')
-        time.sleep(2)
+        time.sleep(1)
         item = self.driver.find_element(By.XPATH, "//input[@id='account_name_text_field']")
         item.send_keys(user)
         item = self.driver.find_element(By.XPATH, "//button[@id='sign-in']")
         item.click() 
-        time.sleep(3)
+        time.sleep(1)
 
         item = self.driver.find_element(By.XPATH, "//input[@id='password_text_field']")
         item.send_keys(password)
@@ -60,6 +72,15 @@ class AppStoreApple(AppStoreBase):
         item = self.driver.find_element(By.XPATH, "//button[@id='sign-in']")
         item.click() 
         time.sleep(1)
+ 
+        # 等待登录成功
+        while True:
+            time.sleep(1)  
+            self.urlnew = self.driver.current_url
+            print("Login urlnew=",self.urlnew)
+            if self.urlnew!=self.urlold:
+                print("Login Finish =",self.urlnew)
+                break
   
 
 

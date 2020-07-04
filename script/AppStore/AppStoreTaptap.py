@@ -335,15 +335,22 @@ class AppStoreTaptap(AppStoreBase):
 
 
         div = self.driver.find_element(By.XPATH, "//div[@class='dropdown search-app-dropdown']")
-        item = div.find_element_by_xpath("ul/li/a")
-        # app_id=56016
-        url = item.get_attribute('href')
-        strfind = "app_id="
-        idx =  url.find(strfind)+len(strfind)
-        print(url)
-        appid = url[idx:] 
-        print(appid)
-        AppInfo.SetAppId(ishd,source.ANDROID,source.TAPTAP,appid)
+        list = div.find_elements_by_xpath("ul/li/a")
+        for a in list:
+            title = a.text
+            print(title)
+            if title.find(name)==0:
+            # app_id=56016
+                url = a.get_attribute('href')
+                strfind = "app_id="
+                idx =  url.find(strfind)+len(strfind)
+                print(url)
+                appid = url[idx:] 
+                print(appid)
+                AppInfo.SetAppId(ishd,source.ANDROID,source.TAPTAP,appid)
+                break
+
+      
        
  
 
