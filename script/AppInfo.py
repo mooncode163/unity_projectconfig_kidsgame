@@ -236,16 +236,16 @@ def copyResFiles(str):
         shutil.rmtree(dir2)
     shutil.copytree(dir1,dir2)
 
-def SaveJson(filePath,dataRoot): 
-    oldvalue = ""
-    # "huawei": "0",
-    # str1 = "\""+key+"\""+": \""+oldvalue+"\""
-    # str2 = "\""+key+"\""+": \""+value+"\""
-    # replaceFile(filePath, str1, str2)
+# def SaveJson(filePath,dataRoot): 
+#     oldvalue = ""
+#     # "huawei": "0",
+#     # str1 = "\""+key+"\""+": \""+oldvalue+"\""
+#     # str2 = "\""+key+"\""+": \""+value+"\""
+#     # replaceFile(filePath, str1, str2)
 
-    # 保存json
-    with open(filePath, 'w') as f:
-        json.dump(dataRoot, f, ensure_ascii=False,indent=4,sort_keys = True)
+#     # 保存json
+#     with open(filePath, 'w') as f:
+#         json.dump(dataRoot, f, ensure_ascii=False,indent=4,sort_keys = True)
 
 
 def autoPlusVersion(isHd,jsonData):
@@ -274,7 +274,8 @@ def autoPlusVersion(isHd,jsonData):
         versionCode = codeios
         data["value"]=versionCodeToVersion()
 
-        SaveJson(jsonfile,jsonData)  
+        # SaveJson(jsonfile,jsonData)
+        common.SaveJson(jsonfile,jsonData)  
         # strnew_version_ios = "\"APPVERSION_IOS\": \""+versionCodeToVersion()+"\""
 
 
@@ -403,7 +404,8 @@ def SetConfigDataAppId(os,chanel,appid,ishd):
     with open(filepath) as json_file:
         data = json.load(json_file)
         data["APPID"][chanel] = appid
-        SaveJson(filepath,data)
+        # SaveJson(filepath,data)
+        common.SaveJson(filepath,data)
 
     
 def GetAppName(os,isHd): 

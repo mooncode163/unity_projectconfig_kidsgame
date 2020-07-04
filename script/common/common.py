@@ -530,7 +530,7 @@ def DeleteMetaFiles(sourceDir):
             # print(sourceFile)
             DeleteMetaFiles(sourceFile)
 
-def SaveJson(self,filePath,dataRoot):   
+def SaveJson(filePath,dataRoot):   
     # 保存json 
     # json.dumps(dataRoot, f, ensure_ascii=False,indent=4,sort_keys = True).encode('utf8',"ignore")
     json_str = json.dumps(dataRoot,ensure_ascii=False,indent=4,sort_keys = True)
