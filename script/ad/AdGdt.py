@@ -220,7 +220,7 @@ class AdGdt():
         item.click()
 
     def GetAppName(self, ishd):
-        name = AppInfo.GetAppName(self.osApp, ishd)
+        name = AppInfo.GetAppName(self.osApp, ishd,source.LANGUAGE_CN)
         # if self.osApp == source.IOS:
         #     AppInfo.GetAppName(self.osApp, ishd)+self.osApp
 
@@ -273,9 +273,14 @@ class AdGdt():
 
 
         # 点击第一个
-        item = self.driver.find_element(By.XPATH, "//div[@class='media']")
-        item.click()
-        time.sleep(1)
+        # <span class="media-heading" title="天天开心拼图">天天开心拼图</span>
+        # key = "//span[@class='media-heading' and title ='"+name+"']"
+        key = "//span[@class='media-heading']"
+        list = self.driver.find_elements(By.XPATH, key)
+        for span in list:
+            if span.get_attribute('title') == name:
+                span.click()
+                time.sleep(1)
 
 
     def SearchAppAddPlace(self, ishd):
@@ -323,6 +328,8 @@ class AdGdt():
         self.CreateAdBanner(isHD)
         self.CreateAdInsert(isHD)
         self.CreateAdVideo(isHD)
+        time.sleep(1)
+        self.GetAdInfo(isHD)
 
     def OpenFileBrowser(self):
         # win32gui
@@ -442,7 +449,8 @@ class AdGdt():
         # div class="card-inner"
         list = self.driver.find_elements(
             By.XPATH, "//div[@class='card-inner']")
-        list[2].click()
+        # list[2].click()
+        self.driver.execute_script("arguments[0].click();", list[2])
         time.sleep(2)
 
         # item = self.driver.find_element(By.XPATH, "//input[@class='spaui-input has-normal spaui-component']")

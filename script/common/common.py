@@ -319,6 +319,37 @@ def GetOutPutApkPathWin32(rootdir,channel,isHd):
         
     return dirapk + "\\" + gameType + "_" + gameName + "_" + channel + ".apk"
 
+def GetOutPutIconPathWin32(rootdir,channel,isHd):
+    gameType = getGameType()
+    gameName = getGameName() 
+    # GetProjectOutPut
+    dirapk = rootdir+"\\"+gameType+"\\"+gameName  
+    if isHd==True:
+        dirapk+="\\iconhd" 
+    else:
+        dirapk+="\\icon"
+        
+    return dirapk
+
+def GetOutPutScreenshotPathWin32(rootdir,channel,isHd):
+    gameType = getGameType()
+    gameName = getGameName() 
+    # GetProjectOutPut
+    dirapk = rootdir+"\\"+gameType+"\\"+gameName+"\\screenshot"
+    if isHd==True:
+        dirapk+="\\heng" 
+    else:
+        dirapk+="\\shu"
+        
+    return dirapk
+
+def GetOutPutAdPathWin32(rootdir,channel,isHd):
+    gameType = getGameType()
+    gameName = getGameName() 
+    # GetProjectOutPut
+    dirapk = rootdir+"\\"+gameType+"\\"+gameName+"\\ad" 
+    return dirapk
+
 def GetRootProjectIos():
     if IsVMWare():
         return GetRootProjectIosUser()

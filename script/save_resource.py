@@ -7,10 +7,11 @@ import os
 import os.path
 import time,  datetime
 
-#include common.py
-sys.path.append('./common')
-import common
-import config
+o_path = os.getcwd()  # 返回当前工作目录
+sys.path.append(o_path)  # 添加自己指定的搜索路径  
+
+from common import config 
+from common import common  
 
 #主函数的实现
 if  __name__ =="__main__":

@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "Baby Animal Puzzle HD",
     "PACKAGE_ANDROID": "com.moonma.animalpintu.pad",
     "PACKAGE_IOS": "com.moonma.animalpintu.pad",
-    "APPVERSION_ANDROID": "1.3.9",
-    "APPVERSION_CODE_ANDROID": "139",
-    "APPVERSION_IOS": "1.3.9",
+    "APPVERSION_ANDROID": "1.4.1",
+    "APPVERSION_CODE_ANDROID": "141",
+    "APPVERSION_IOS": "1.4.1",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",

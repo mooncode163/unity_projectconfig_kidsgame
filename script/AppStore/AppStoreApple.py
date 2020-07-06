@@ -308,7 +308,7 @@ class AppStoreApple(AppStoreBase):
 
 
     def GetAppName(self, ishd):
-        name = AppInfo.GetAppName(source.ANDROID, ishd)
+        name = AppInfo.GetAppName(source.ANDROID, ishd,source.LANGUAGE_CN)
         # if self.osApp == source.IOS:
         #     AppInfo.GetAppName(self.osApp, ishd)+self.osApp
 

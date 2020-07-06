@@ -33,6 +33,9 @@ ADMOB = "admob"
 VUNGLE = "vungle"
 MOBVISTA = "mobvista"
 
+# language
+LANGUAGE_CN = "cn"
+LANGUAGE_EN = "en"
 
 # appstore 账号
 APPSTORE_USER = "chyfemail163@163.com"

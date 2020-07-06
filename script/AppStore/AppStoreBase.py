@@ -18,7 +18,6 @@ from selenium.webdriver.common.keys import Keys
 from selenium import webdriver
 from common import source
 from common import common
-
 # 要想调用键盘按键操作需要引入keys包
 
 # 导入chrome选项
@@ -36,6 +35,7 @@ class AppStoreBase():
     osApp: None
     urlold:None
     urlnew:None
+    rootDirProjectOutPut="F:\\sourcecode\\unity\\product\\kidsgame\\ProjectOutPut"
 
     def SetCmdPath(self, str):
         dir = common.getLastDirofDir(str)
@@ -95,12 +95,18 @@ class AppStoreBase():
         try:
             # browser.find_element_by_css_selector(element)
             browser.find_element(By.XPATH, element)
-            return flag
-        
+            return flag 
         except:
             flag=False
             return flag
 
+    def GetAppName(self, ishd,lan):
+        name = AppInfo.GetAppName(source.ANDROID, ishd,lan) 
+        return name
+
+    def GetAppDetail(self, ishd,lan):
+        name = AppInfo.GetAppDetail(ishd,lan)  
+        return name
 
     def OpenFileBrowser(self,path,autoclick):
         # win32gui

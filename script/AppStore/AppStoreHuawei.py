@@ -185,7 +185,7 @@ class AppStoreHuawei(AppStoreBase):
 
 
     def GetAppName(self, ishd):
-        name = AppInfo.GetAppName(self.osApp, ishd)
+        name = AppInfo.GetAppName(self.osApp, ish,source.LANGUAGE_CN)
         # if self.osApp == source.IOS:
         #     AppInfo.GetAppName(self.osApp, ishd)+self.osApp
 
@@ -305,14 +305,7 @@ class AppStoreHuawei(AppStoreBase):
         item = self.driver.find_element(By.XPATH, "//a[@id='AppSubmitConfirmButtonOk']")
         item.click()
         time.sleep(3)
-
-
-    def GetAppName(self, ishd):
-        name = AppInfo.GetAppName(self.osApp, ishd)
-        # if self.osApp == source.IOS:
-        #     AppInfo.GetAppName(self.osApp, ishd)+self.osApp
-
-        return name
+ 
  
     def SearchApp(self, ishd):
         name = self.GetAppName(ishd)

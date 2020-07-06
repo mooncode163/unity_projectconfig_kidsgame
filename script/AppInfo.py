@@ -19,6 +19,8 @@ from common import config
 from common import source
 from common import adconfig  
 
+from xml.dom.minidom import parse
+
 import AppVersionHuawei
 
 versionCode = 100
@@ -407,8 +409,41 @@ def SetConfigDataAppId(os,chanel,appid,ishd):
         # SaveJson(filepath,data)
         common.SaveJson(filepath,data)
 
+def GetAppDetail(isHd,lan): 
+    src = common.GetProjectConfigApp()+"/appinfo/app_description.xml"
+    if isHd:
+        src = common.GetProjectConfigApp()+"/appinfo/app_description_hd.xml"
+
+    domTree = parse(src)
+    # 文档根元素root = domTree.documentElement
+    root = domTree.documentElement
+    print(root.nodeName)
     
-def GetAppName(os,isHd): 
+    strret =" " 
+    key = lan
+    # if lan==source.LANGUAGE_CN:
+    #     key = "cn"
+
+    list = root.getElementsByTagName(key)
+    for item in list:
+        strret = item.childNodes[0].data 
+
+    print(strret)
+    return strret
+	# for customer in customers:
+	# 	if customer.hasAttribute("ID"):
+	# 		print("ID:", customer.getAttribute("ID"))
+	# 		# name 元素
+	# 		name = customer.getElementsByTagName("name")[0]
+	# 		print(name.nodeName, ":", name.childNodes[0].data)
+	# 		# phone 元素
+	# 		phone = customer.getElementsByTagName("phone")[0]
+	# 		print(phone.nodeName, ":", phone.childNodes[0].data)
+	# 		# comments 元素
+	# 		comments = customer.getElementsByTagName("comments")[0]
+	# 		print(comments.nodeName, ":", comments.childNodes[0].data)
+
+def GetAppName(os,isHd,lan): 
     # loadJson
     data = loadJson(isHd) 
 
@@ -418,6 +453,7 @@ def GetAppName(os,isHd):
     if not isOld : 
         appname = data["appname"]
 
+    
     if isOld:
         APP_NAME_CN_ANDROID = data["APP_NAME_CN_ANDROID"]
         APP_NAME_EN_ANDROID = data["APP_NAME_EN_ANDROID"]
@@ -434,7 +470,22 @@ def GetAppName(os,isHd):
         APP_NAME_CN_IOS = appname[source.IOS]["cn"]
         APP_NAME_EN_IOS = appname[source.IOS]["en"]  
 
-    return APP_NAME_CN_ANDROID     
+
+    name = ""
+    if os==source.ANDROID:
+        if lan==source.LANGUAGE_CN:
+            name = APP_NAME_CN_ANDROID
+        if lan==source.LANGUAGE_EN:
+            name = APP_NAME_EN_ANDROID
+
+    if os==source.IOS:
+        if lan==source.LANGUAGE_CN:
+            name = APP_NAME_CN_IOS
+        if lan==source.LANGUAGE_EN:
+            name = APP_NAME_EN_IOS
+
+
+    return name     
         
         
 def GetAppId(isHd,channel): 
