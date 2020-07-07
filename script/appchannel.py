@@ -70,6 +70,7 @@ def updateChannel(channel,ishd):
         project_android = "android/project_hd"
 
     if channel == source.GP:
+        config_adsdk_android.SetShareSdk(False)
         config_adsdk_android.SetAdSdk(source.ADMOB, True) 
         config_adsdk_android.SetAdSdk(source.ADVIEW, False)
         config_adsdk_android.SetAdSdk(source.GDT, False)
@@ -80,11 +81,16 @@ def updateChannel(channel,ishd):
         project_config = sourceDir+"/"+project_android+"/config" 
         xml = sourceDir+"/"+project_android+"/xml_gp" 
 
+         
     else:
         xml = sourceDir+"/"+project_android+"/xml"
         config_adsdk_android.SetAdSdk(source.ADMOB, True)
         config_adsdk_android.SetAdSdk(source.MOBVISTA, False)
         config_adsdk_android.SetAdSdk(source.UNITY, True)
+
+        config_adsdk_android.SetShareSdk(True)
+        
+
             # 
         project_config = sourceDir+"/"+project_android+"/config"
         

@@ -19,6 +19,10 @@ from selenium import webdriver
 from common import source
 from common import common
 from AppStoreBase import AppStoreBase
+from WebDriverCmd import CmdType
+from WebDriverCmd import WebDriverCmd 
+from WebDriverCmd import CmdInfo 
+
 
 # 要想调用键盘按键操作需要引入keys包
 
@@ -204,6 +208,7 @@ class AppStoreHuawei(AppStoreBase):
   
 
     def UpdateApp(self, isHD):
+        webcmd = WebDriverCmd(self.driver)
         # 打开新标签
         # self.driver.find_element_by_xpath('//body').send_keys(Keys.CONTROL,"t")
         # js = "window.open('')"
@@ -231,11 +236,19 @@ class AppStoreHuawei(AppStoreBase):
         self.driver.switch_to.frame("mainIframeView")
         time.sleep(1)
         # 软件包管理
-        item = self.driver.find_element(By.XPATH, "//a[@id='VerInfoDownloadLink']")
-        #  Message: element click intercepted
-        self.driver.execute_script("arguments[0].click();", item)
-        # item.click()
-        time.sleep(1)
+        # item = self.driver.find_element(By.XPATH, "//a[@id='VerInfoDownloadLink']")
+        # #  Message: element click intercepted
+        # self.driver.execute_script("arguments[0].click();", item)
+        # # item.click()
+        # time.sleep(1)
+        info = CmdInfo()
+        info.type = CmdType.CLICK
+        info.cmd = "//a[@id='VerInfoDownloadLink']"
+        info.value = ""
+        info.delay = 1
+        info.isWaiting = True
+        webcmd.AddCmdInfo(info)
+        webcmd.Run(True)
         
         item = self.driver.find_element(By.XPATH, "//a[@id='ManageAppUploadPackageButton']")
         item.click()
@@ -410,13 +423,15 @@ if __name__ == "__main__":
         ad.CreateApp(True)
  
     if argv1 == "update":
-        # ad.UpdateApp(isHD)
-        ad.UpdateApp(False)
-        time.sleep(3)
-        ad.UpdateApp(True)
+        if isHD:
+            ad.UpdateApp(True)
+        else:
+            ad.UpdateApp(False)
+            time.sleep(3)
+            # ad.UpdateApp(True)
 
  
-    ad.Quit(30)
+    # ad.Quit(300)
 
 
     print("AppStoreHuawei sucess")

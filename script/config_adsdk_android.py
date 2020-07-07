@@ -54,10 +54,55 @@ def SetAdSdk(src,enable):
     SetAdSdkLib(src,enable)
     SetAdSdkJavaCode(src,not enable)
 
+
+def GetDirShareSdkLib():
+    return common.GetRootDirAndroidStudio() + "/libs/share"
+
+def SetShareSdk(enable): 
+    # lib
+    dir_lib = GetDirShareSdkLib()
+    file_zip = common.GetRootDirAndroidStudio() + "/libs/share.zip"
+    rootdir_lib = common.GetRootDirAndroidStudio() + "/libs"
+
+    flag = os.path.exists(dir_lib)
+    if flag:
+        shutil.rmtree(dir_lib) 
+
+    if enable:
+        flag = os.path.exists(file_zip)
+        if flag:
+            ziputils.un_zip(file_zip,rootdir_lib)
+
+    DeleteMACOSX(rootdir_lib)
+
+    # F:\sourcecode\unity\product\kidsgame\project_android\kidsgame\src\main\java\com\moonma\common\share
+    # code
+    dir_code = common.GetRootDirAndroidStudio() + "/src/main/java/com/moonma/common/share"
+    file_zip_enable = common.GetRootDirAndroidStudio() + "/src/main/java/com/moonma/common/share.zip"
+    file_zip_disable = common.GetRootDirAndroidStudio() + "/src/main/java/com/moonma/common/share_disable.zip"
+    rootdir_code = common.GetRootDirAndroidStudio() + "/src/main/java/com/moonma/common"
+
+    flag = os.path.exists(dir_code)
+    if flag:
+        shutil.rmtree(dir_code) 
+
+    file_zip = file_zip_disable
+    if enable:
+        file_zip = file_zip_enable 
+
+    flag = os.path.exists(file_zip)
+    if flag:
+        ziputils.un_zip(file_zip,rootdir_code)
+
+    DeleteMACOSX(rootdir_code)
+
+ 
+
 # 备份游戏代码到CodeZip  压缩zip
 def SetAdSdkLib(src,enable):
     rootdir_ad = GetRootDirAdSdk()
     file_zip = GetZipFileAdSdk(src)   
+    
 
     print (rootdir_ad)
     print(file_zip)

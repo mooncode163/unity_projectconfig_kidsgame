@@ -6,12 +6,15 @@ import shutil
 import os
 import os.path
 import time,  datetime
+import json
+ 
 
-#include common.py
-sys.path.append('./common')
-import common 
+o_path = os.getcwd()  # 返回当前工作目录
+sys.path.append(o_path)  # 添加自己指定的搜索路径  
+from common import common
+from common import source 
 
-
+import copy_gamedata
 
 def CopyConfigDataToAndroid(): 
     dir1 = common.GetConfigDataDir()
@@ -21,6 +24,13 @@ def CopyConfigDataToAndroid():
         shutil.rmtree(dir2)
     # print(CopyConfigDataToAndroid:dir1=",dir1," dir2=",dir2
     shutil.copytree(dir1,dir2)
+
+def LoadJsonAndroidAssetConfigCommon():  
+    jsonfile = common.GetRootDirAndroidAsset()+"/ConfigData/config/config_common.json"
+    with  open(jsonfile, 'rb') as json_file:
+        data = json.load(json_file)
+        return data
+
 
 # 复制从unity打包输出的assets目录
 #主函数的实现
@@ -74,6 +84,18 @@ if  __name__ =="__main__":
     filename = "/libs/unity-classes.jar"
     shutil.copy2(common.GetRootDirAndroidOutput()+filename, rootAndroidStudio+filename)
 
+    dataJson = LoadJsonAndroidAssetConfigCommon()
+    appNameAndroidAsset = dataJson["APP_NAME_KEYWORD"]
+    appTypeAndroidAsset = dataJson["APP_TYPE"]
+    print(appTypeAndroidAsset)
+    print(appNameAndroidAsset)
+
+    if appTypeAndroidAsset!=gameType or appNameAndroidAsset!=gameName:
+        copy_gamedata.DoCopy()
+
     CopyConfigDataToAndroid()
+
+
+  
 
     print("copy_android_output_asset sucess")

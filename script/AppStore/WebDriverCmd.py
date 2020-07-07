@@ -22,6 +22,7 @@ class CmdInfo(object):
     cmd:None
     value:None
     delay:None
+    isWaiting:None
 
 
 
@@ -40,17 +41,45 @@ class WebDriverCmd():
         info.cmd = cmd
         info.value = value
         info.delay = delay
+        info.isWaiting = False
 
         self.listCmd.append(info)
     
+    def AddCmdInfo(self,info): 
+        self.listCmd.append(info)    
+    
     def Clear(self):
         self.listCmd.clear()
+
+    def IsElementExist(self,element):
+        flag=True
+        browser=self.driver
+        try:
+            # browser.find_element_by_css_selector(element)
+            browser.find_element(By.XPATH, element)
+            return flag 
+        except:
+            flag=False
+            return flag
 
 # 组合查找 https://blog.csdn.net/qq_32189701/article/details/100176577
 # find_element_by_xpath("//input[@class=‘s_ipt’ and @name=‘wd’]")
     def Run(self,isClear):
         for info in self.listCmd:
-            item = self.driver.find_element(By.XPATH, info.cmd)
+            if info.isWaiting:
+                if self.IsElementExist(info.cmd):
+                    item = self.driver.find_element(By.XPATH, info.cmd)
+                else:
+                    # waiting
+                    while True:
+                        time.sleep(1) 
+                        print("waiting info.cmd=", info.cmd)
+                        if self.IsElementExist(info.cmd): 
+                            item = self.driver.find_element(By.XPATH, info.cmd)
+                            break
+
+            else:
+                item = self.driver.find_element(By.XPATH, info.cmd)
             # item.click()
             if info.type == CmdType.CLICK:
                 self.driver.execute_script("arguments[0].click();", item)

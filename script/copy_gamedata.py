@@ -6,11 +6,13 @@ import shutil
 import os
 import os.path
 import time,  datetime
-
-#include common.py
-sys.path.append('./common')
-import common
  
+
+o_path = os.getcwd()  # 返回当前工作目录
+sys.path.append(o_path)  # 添加自己指定的搜索路径  
+from common import common
+from common import source 
+
 def getGameResName():
     name = common.getGameName()
     idx = name.rfind('_')
@@ -27,23 +29,7 @@ def CopyConfigDataToAndroid():
     # print "CopyConfigDataToAndroid:dir1=",dir1," dir2=",dir2
     shutil.copytree(dir1,dir2)
 
-#主函数的实现
-if  __name__ =="__main__":
-    
-    # 设置为utf8编码
-    # reload(sys)
-    # sys.setdefaultencoding("utf-8")
- 
-
-    #入口参数：http://blog.csdn.net/intel80586/article/details/8545572
-    cmdPath = common.cur_file_dir()
-    count = len(sys.argv)
-    for i in range(1,count):
-        print ("参数", i, sys.argv[i])
-        if i==1:
-            cmdPath = sys.argv[i]
-    
-    common.SetCmdPath(cmdPath)
+def DoCopy():
     gameName = common.getGameName()
     gameType = common.getGameType()
     print(gameName)
@@ -143,5 +129,24 @@ if  __name__ =="__main__":
     shutil.copytree(dir1,dir2)
 
     CopyConfigDataToAndroid()
+
+#主函数的实现
+if  __name__ =="__main__":
+    
+    # 设置为utf8编码
+    # reload(sys)
+    # sys.setdefaultencoding("utf-8")
+ 
+
+    #入口参数：http://blog.csdn.net/intel80586/article/details/8545572
+    cmdPath = common.cur_file_dir()
+    count = len(sys.argv)
+    for i in range(1,count):
+        print ("参数", i, sys.argv[i])
+        if i==1:
+            cmdPath = sys.argv[i]
+    
+    common.SetCmdPath(cmdPath)
+    DoCopy()
 
     print ("copy_gamedata sucess")

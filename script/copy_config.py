@@ -208,7 +208,7 @@ if  __name__ =="__main__":
 
     # shutil.copytree(dir1,dir2)
 
-    CopyAndroidJavaFile_Weixin(rootAndroidStudio,isHD)
+    # CopyAndroidJavaFile_Weixin(rootAndroidStudio,isHD)
 
     # if not common.isWindowsSystem():
     UpdateXcodeProjectFile(xcodeProject,isHD)

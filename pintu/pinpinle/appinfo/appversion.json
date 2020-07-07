@@ -4,10 +4,10 @@
         "en": "Fix a Bug"
     },
     "version": {
-        "android": "_VERSION_ANDROID_"
+        "android": "1.9.8"
     }
     ,
     "version_hd": {
-        "android": "_VERSION_HD_ANDROID_"
+        "android": "1.5.6"
     }
 }

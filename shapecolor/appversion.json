@@ -1,0 +1,62 @@
+{
+    "animal": {
+        "update_note": {
+            "cn": "修复闪退",
+            "en": "Fix a Bug"
+        },
+        "version": {
+            "android": "1.0.7"
+        },
+        "version_hd": {
+            "android": "1.0.8"
+        }
+    },
+    "fruit": {
+        "update_note": {
+            "cn": "修复闪退",
+            "en": "Fix a Bug"
+        },
+        "version": {
+            "android": "1.0.0"
+        },
+        "version_hd": {
+            "android": "1.0.1"
+        }
+    },
+    "plant": {
+        "update_note": {
+            "cn": "修复闪退",
+            "en": "Fix a Bug"
+        },
+        "version": {
+            "android": "1.0.4"
+        },
+        "version_hd": {
+            "android": "1.0.4"
+        }
+    },
+    "shapecolor": {
+        "update_note": {
+            "cn": "修复闪退",
+            "en": "Fix a Bug"
+        },
+        "version": {
+            "android": "2.2.2"
+        },
+        "version_hd": {
+            "android": "1.7.2"
+        }
+    },
+    "vehicle": {
+        "update_note": {
+            "cn": "修复闪退",
+            "en": "Fix a Bug"
+        },
+        "version": {
+            "android": "1.0.0"
+        },
+        "version_hd": {
+            "android": "1.0.0"
+        }
+    }
+}

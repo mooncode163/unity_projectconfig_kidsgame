@@ -374,7 +374,9 @@ def GetRootDirAndroidStudio():
 
 def GetRootDirAndroidOutput():
     # GetRootProjectUnity()+"/OutPut/Android/"+GetProjectName()
-    return GetRootProjectUnity()+"/OutPut/Android/"+"unityLibrary"
+    gameType = getGameType()
+    gameName = getGameName() 
+    return GetProjectOutPut()+"/Unity"+"/"+gameType+"/"+gameName+"/Android/"+"unityLibrary"
     
 
 def GetRootDirAndroidAsset(): 

@@ -625,6 +625,17 @@ def updateName(isHd,isAuto):
         strfile = strfile.replace(key,version_web) 
         common.saveString2File(strfile,dst)
 
+        filepath = common.GetProjectConfigAppType()+"/appversion.json" 
+        flag = os.path.exists(filepath)
+        strFileJson = "{}"
+        if flag:
+            strFileJson = common.GetFileString(filepath)
+        dataRoot = json.loads(strFileJson)
+        dataRoot[common.getGameName()]= json.loads(strfile)
+        common.SaveJson(filepath,dataRoot)
+
+
+         
 
 
 

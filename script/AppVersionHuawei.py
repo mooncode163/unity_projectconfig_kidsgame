@@ -70,6 +70,9 @@ def ParseVersion(appid):
     if version=="":
         version = GetVersion(html,start_en,mid,end)
 
+    if version=="":
+        version = "1.0.0"
+
     print(version) 
     # print(html)
     # saveString2File(html,"1.html")

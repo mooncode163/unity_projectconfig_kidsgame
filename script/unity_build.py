@@ -12,12 +12,17 @@ import subprocess
 # include AppInfo.py
 # sys.path.append('./common')
 import AppInfo
-import appchannel
-import source
+import appchannel 
 import apk_build
+ 
 
-sys.path.append('./common')
-import common 
+o_path = os.getcwd()  # 返回当前工作目录
+sys.path.append(o_path)  # 添加自己指定的搜索路径
+from common import common
+from common import config
+from common import source
+from common import adconfig  
+
 
 # 主函数的实现
 if __name__ == "__main__":

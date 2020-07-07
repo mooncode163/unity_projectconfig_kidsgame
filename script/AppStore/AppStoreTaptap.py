@@ -73,16 +73,28 @@ class AppStoreTaptap(AppStoreBase):
 
 
 # 3452644866 qq31415926
-
+    def SelectLanguage(self,webcmd, lan):  
+        if lan == 0:
+            # 填写中文资料
+                # webcmd.AddCmd(  CmdType.CLICK, "//li[@class='nav-item js-chs-contents-li js-spec-lang-li']", "", 1)
+                # <a class="nav-link" data-toggle="tab" href="#chs-contents" role="tab" aria-controls="chs" aria-selected="true" aria-expanded="true">简体中文</a>
+            webcmd.AddCmd(  CmdType.CLICK, "//a[@aria-controls='chs']", "", 2) 
+            webcmd.Run(True)
+        if lan == 1:
+                # 填写英文资料
+                # webcmd.AddCmd(  CmdType.CLICK, "//li[@class='nav-item js-en-contents-li js-spec-lang-li active']", "", 1)
+            webcmd.AddCmd(  CmdType.CLICK, "//a[@aria-controls='en']", "", 2)
+            webcmd.Run(True)  
+                
     def CreateApp(self, isHD):
         url = "https://www.taptap.com/developer/app-create/14628"
-        # self.driver.get(url)
-        # time.sleep(1)
-        # self.UpLoadApk(isHD)
- 
-        url = "https://www.taptap.com/developer/fill-form/14628"
         self.driver.get(url)
         time.sleep(1)
+        self.UpLoadApk(isHD)
+ 
+        # url = "https://www.taptap.com/developer/fill-form/14628"
+        # self.driver.get(url)
+        # time.sleep(1)
 
 
         webcmd = WebDriverCmd(self.driver)
@@ -155,17 +167,18 @@ class AppStoreTaptap(AppStoreBase):
         lanKeys =("zh_CN", "en_US")
         applans = (source.LANGUAGE_CN, source.LANGUAGE_EN)
         for lan in range(0, len(lanKeys)):
-            if lan == 0:
-                # 填写中文资料
-                # webcmd.AddCmd(  CmdType.CLICK, "//li[@class='nav-item js-chs-contents-li js-spec-lang-li']", "", 1)
-                # <a class="nav-link" data-toggle="tab" href="#chs-contents" role="tab" aria-controls="chs" aria-selected="true" aria-expanded="true">简体中文</a>
-                webcmd.AddCmd(  CmdType.CLICK, "//a[@aria-controls='chs']", "", 2) 
-                webcmd.Run(True)
-            if lan == 1:
-                # 填写英文资料
-                # webcmd.AddCmd(  CmdType.CLICK, "//li[@class='nav-item js-en-contents-li js-spec-lang-li active']", "", 1)
-                webcmd.AddCmd(  CmdType.CLICK, "//a[@aria-controls='en']", "", 2)
-                webcmd.Run(True)
+            # if lan == 0:
+            #     # 填写中文资料
+            #     # webcmd.AddCmd(  CmdType.CLICK, "//li[@class='nav-item js-chs-contents-li js-spec-lang-li']", "", 1)
+            #     # <a class="nav-link" data-toggle="tab" href="#chs-contents" role="tab" aria-controls="chs" aria-selected="true" aria-expanded="true">简体中文</a>
+            #     webcmd.AddCmd(  CmdType.CLICK, "//a[@aria-controls='chs']", "", 2) 
+            #     webcmd.Run(True)
+            # if lan == 1:
+            #     # 填写英文资料
+            #     # webcmd.AddCmd(  CmdType.CLICK, "//li[@class='nav-item js-en-contents-li js-spec-lang-li active']", "", 1)
+            #     webcmd.AddCmd(  CmdType.CLICK, "//a[@aria-controls='en']", "", 2)
+            #     webcmd.Run(True)
+            self.SelectLanguage(webcmd,lan)
 
             # title "//input[@type='text' and @name='translations[zh_CN][title]']"
             print(lanKeys[lan])
@@ -180,51 +193,69 @@ class AppStoreTaptap(AppStoreBase):
             webcmd.AddCmd(CmdType.INPUT, key, title, 1)
             webcmd.Run(True)
 
+       
+
+            # title = self.GetAppName(isHD, applans[lan])
+            # webcmd.AddCmd(CmdType.INPUT, key, title, 1)
+            # webcmd.Run(True)
+
+
             # icon
             # <input type="file" name="image" data-valid-width="512" data-valid-height="512" data-taptap-ajax="upload" data-target="#icon-zh_CN" data-target-input="#icon-input-zh_CN" data-url="https://www.taptap.com/ajax/image">
             # "//input[@type='file' and @data-target='#icon-zh_CN']"
             key = "//input[@type='file' and @data-target='#icon-" +   lanKeys[lan]+"']"
             # key = "//input[@type='file' and @data-target='#icon']"
             print(key)
-            webcmd.AddCmd(CmdType.CLICK, key, "", 1)
+            # self.driver.switch_to.window(self.driver.window_handles[0])
+            webcmd.AddCmd(CmdType.CLICK, key, "", 2)
             icon = common.GetOutPutIconPathWin32(
                 self.rootDirProjectOutPut, source.TAPTAP, isHD)+"\\icon_android_512.png"
             print(icon)
             webcmd.Run(True)
             self.OpenFileBrowser(icon, True)
-            time.sleep(5)
+            time.sleep(2)
+
+            # adhome
+            # self.SelectLanguage(webcmd,lan)
+            # self.driver.switch_to.window(self.driver.window_handles[0])
+            key = "//input[@type='file' and @data-target='#banner_1_android-"+lanKeys[lan]+"']"
+            webcmd.AddCmd(CmdType.CLICK, key, "", 3)
+            webcmd.Run(True)
+            pic = common.GetOutPutAdPathWin32(self.rootDirProjectOutPut, source.TAPTAP, isHD) + "\\"+applans[lan]+"\\"+"ad_home_1024x500.png"
+            print(pic)
+            self.OpenFileBrowser(pic, True)
+            time.sleep(3)
+            
+            # self.SelectLanguage(webcmd,lan)
+            # self.driver.switch_to.window(self.driver.window_handles[0])
+            key = "//input[@type='file' and @data-target='#banner_1_ios-"+lanKeys[lan]+"']"
+            webcmd.AddCmd(CmdType.CLICK, key, "", 3)
+            webcmd.Run(True)
+            print(pic)
+            self.OpenFileBrowser(pic, True)
+            time.sleep(3)
+
+
+
+
 
 
             # screenshot
             for i in range(0, 5):
                 # <input type="file" name="image" data-taptap-ajax="upload" data-target="#screenshots" data-url="https://www.taptap.com/ajax/image">
                 # add-screenshot-li
-                webcmd.AddCmd(CmdType.CLICK, "//input[@type='file' and @data-target='#screenshots']", "", 2)
+                # self.driver.switch_to.window(self.driver.window_handles[0])
+                webcmd.AddCmd(CmdType.CLICK, "//input[@type='file' and @data-target='#screenshots']", "", 3)
                 # webcmd.AddCmd(CmdType.CLICK, "//li[@class='add-screenshot-li]", "", 1)
                 webcmd.Run(True)
-                pic = common.GetOutPutScreenshotPathWin32(
-                    self.rootDirProjectOutPut, source.TAPTAP, isHD) + "\\"+applans[lan]+"\\1080p\\"+str(i+1)+".jpg"
+                pic = common.GetOutPutScreenshotPathWin32(self.rootDirProjectOutPut, source.TAPTAP, isHD) + "\\"+applans[lan]+"\\1080p\\"+str(i+1)+".jpg"
                 
                 flag = os.path.exists(pic)
                 if flag:
                     print(pic)
                     self.OpenFileBrowser(pic, True)
-                    time.sleep(3)
+                    time.sleep(5)
 
-            # adhome
-            key = "//input[@type='file' and @data-target='#banner_1_android-"+lanKeys[lan]+"']"
-            webcmd.AddCmd(CmdType.CLICK, key, "", 2)
-            webcmd.Run(True)
-            pic = common.GetOutPutAdPathWin32(
-                self.rootDirProjectOutPut, source.TAPTAP, isHD) + "\\"+applans[lan]+"\\"+"ad_home_1024x500.png"
-            self.OpenFileBrowser(pic, True)
-            time.sleep(3)
-
-            key = "//input[@type='file' and @data-target='#banner_1_ios-"+lanKeys[lan]+"']"
-            webcmd.AddCmd(CmdType.CLICK, key, "", 2)
-            webcmd.Run(True)
-            self.OpenFileBrowser(pic, True)
-            time.sleep(3)
 
         # 发布状态
         webcmd.AddCmd( CmdType.CLICK, "//input[@type='radio' and @name='flag_android' and @value='4']", "", 1) 
@@ -272,7 +303,7 @@ class AppStoreTaptap(AppStoreBase):
             #         old_window = win
             #         print("urlold 2=",self.urlold)
 
-            # self.driver.switch_to.window(self.driver.window_handles[0])
+            # self.driver.switch_to.window(self.driver.windowop_handles[0])
             self.urlnew = self.driver.current_url
             print("urlnew=", self.urlnew)
             if self.urlnew != self.urlold:
