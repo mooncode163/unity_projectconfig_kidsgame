@@ -16,6 +16,11 @@ from selenium import webdriver
 class CmdType(object): 
     CLICK = "click"
     INPUT = "input" 
+    INPUT_CLEAR = "input_clear" 
+    ENTER = "enter"
+    # 粘贴
+    CTR_V = "control_v"
+    
 
 class CmdInfo(object):  
     type:None
@@ -98,6 +103,15 @@ class WebDriverCmd():
                 # item.clear()
                 # item.send_keys(info.value)
                 # item.text = info.value
+
+            if info.type == CmdType.INPUT_CLEAR:
+                item.clear()
+
+            if info.type == CmdType.ENTER:
+                item.send_keys(Keys.ENTER)
+            if info.type == CmdType.CTR_V:
+                item.send_keys(Keys.CONTROL,"v")
+                 
 
             time.sleep(info.delay)
 

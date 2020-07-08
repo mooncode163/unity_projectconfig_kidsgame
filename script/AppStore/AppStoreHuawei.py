@@ -15,6 +15,8 @@ import time
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver import ActionChains
+
 from selenium import webdriver
 from common import source
 from common import common
@@ -23,6 +25,7 @@ from WebDriverCmd import CmdType
 from WebDriverCmd import WebDriverCmd 
 from WebDriverCmd import CmdInfo 
 
+import pyperclip
 
 # 要想调用键盘按键操作需要引入keys包
 
@@ -173,40 +176,78 @@ class AppStoreHuawei(AppStoreBase):
 
 
         title = self.GetAppName(isHD,lanKey)
-        webcmd.AddCmd(CmdType.INPUT, "//input[@id='AppInfoAppNameInputBox']",title,3) 
+        print(title)
+        pyperclip.copy(title)
+        key = "//input[@id='AppInfoAppNameInputBox']"
+        webcmd.AddCmd2(CmdType.INPUT_CLEAR, key)
+        # webcmd.AddCmd(CmdType.ENTER, "//input[@id='AppInfoAppNameInputBox']",title,1) 
+        pyperclip.paste()
+        
+        webcmd.AddCmd2(CmdType.CTR_V, key) 
         webcmd.Run(True)
 
         title = self.GetAppDetail(isHD,lanKey)
-        webcmd.AddCmd(CmdType.INPUT, "//textarea[@id='AppInfoAppIntroduceInputBox']",title,2) 
+        pyperclip.copy(title)
+        key = "//textarea[@id='AppInfoAppIntroduceInputBox']"
+        # webcmd.AddCmd(CmdType.CLICK, key,title,1) 
+        pyperclip.paste()
+        webcmd.AddCmd2(CmdType.CTR_V, key) 
+        # webcmd.AddCmd(CmdType.INPUT, "//textarea[@id='AppInfoAppIntroduceInputBox']",title,2) 
         webcmd.Run(True)
-        time.sleep(5)
+        time.sleep(2)
 
         title = self.GetAppPromotion(isHD,lanKey)
-        webcmd.AddCmd(CmdType.INPUT, "//input[@id='AppInfoAppBriefInputBox']",title,3) 
+        print(title)
+        pyperclip.copy(title)
+        key = "//input[@id='AppInfoAppBriefInputBox']"
+        item = self.driver.find_element(By.XPATH, key)
+        
+        ActionChains(self.driver).move_to_element(item)
+        time.sleep(1)
+        # webcmd.AddCmd(CmdType.ENTER, "//input[@id='AppInfoAppBriefInputBox']",title,1) 
+        pyperclip.paste()
+        # webcmd.AddCmd2(CmdType.INPUT_CLEAR, key)
+        webcmd.AddCmd2(CmdType.CLICK, key)
+        # 必须enter选中
+        webcmd.AddCmd2(CmdType.ENTER, key)
+        webcmd.AddCmd2(CmdType.CTR_V, key)
         webcmd.Run(True)
         time.sleep(2)
 
 
         # icon 
         key = "//img[@id='AppInfoAppIconAddButton']" 
-        webcmd.AddCmd(CmdType.CLICK, key, "", 2)
+        item = self.driver.find_element(By.XPATH, key)
+        ActionChains(self.driver).move_to_element(item).perform()
+        time.sleep(2)
+        # webcmd.AddCmd2(CmdType.ENTER, key)
+        # webcmd.AddCmd(CmdType.CLICK, key, "", 2)
+        item.click()
+        
         icon = common.GetOutPutIconPathWin32(self.rootDirProjectOutPut, source.TAPTAP, isHD)+"\\huawei\\icon_android_216.png"
         print(icon)
-        webcmd.Run(True)
+        # webcmd.Run(True)
+        time.sleep(2)
         self.OpenFileBrowser(icon, True)
-        time.sleep(3)
+        time.sleep(2)
              
    
 #    <span class="text ng-binding">横向截图</span>
-
-        # key = "//img[@id='AppIntroScreenshot1']" 
-        # webcmd.AddCmd(CmdType.CLICK, key, "", 2)
-        # i = 0
-        # pic = common.GetOutPutScreenshotPathWin32(self.rootDirProjectOutPut, source.TAPTAP, isHD) + "\\"+lanKey+"\\1080p\\"+str(i+1)+".jpg"
-        # print(pic)
-        # webcmd.Run(True)
-        # self.OpenFileBrowser(pic, True)
-        # time.sleep(2)
+        for i in range(0,5):
+            key = "//img[@id='AppIntroScreenshot"+str(i+1)+"']" 
+            item = self.driver.find_element(By.XPATH, key)
+            # 鼠标悬停
+            ActionChains(self.driver).move_to_element(item).perform()
+            time.sleep(2)
+            # webcmd.AddCmd(CmdType.CLICK, key, "", 2)
+            item.click()
+            time.sleep(2)
+            # webcmd.AddCmd2(CmdType.ENTER, key) 
+            pic = common.GetOutPutScreenshotPathWin32(self.rootDirProjectOutPut, source.TAPTAP, isHD) + "\\"+lanKey+"\\1080p\\"+str(i+1)+".jpg"
+            print(pic)
+            # webcmd.Run(True)
+            self.OpenFileBrowser(pic, True)
+            time.sleep(2)
 
 
     def FillAppInfo(self, isHD):
