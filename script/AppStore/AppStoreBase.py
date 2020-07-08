@@ -104,6 +104,11 @@ class AppStoreBase():
         name = AppInfo.GetAppName(source.ANDROID, ishd,lan) 
         return name
 
+    def GetAppPromotion(self, ishd,lan):
+        name = AppInfo.GetAppPromotion(ishd,lan) 
+        return name
+        
+
     def GetAppDetail(self, ishd,lan):
         name = AppInfo.GetAppDetail(ishd,lan)  
         return name

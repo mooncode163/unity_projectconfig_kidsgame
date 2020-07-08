@@ -448,7 +448,7 @@ def GetAppDetail(isHd,lan):
 
 
 
-def GetAppPromotion(self,isHd,lan): 
+def GetAppPromotion(isHd,lan): 
     data = loadJson(isHd) 
     name = data["appstore"] ["promotion"][lan]
     return name 

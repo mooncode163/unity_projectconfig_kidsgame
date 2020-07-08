@@ -93,6 +93,7 @@ class WebDriverCmd():
             if info.type == CmdType.CLICK:
                 self.driver.execute_script("arguments[0].click();", item)
             if info.type == CmdType.INPUT:
+                item.clear()
                 item.send_keys(info.value)
                 # item.clear()
                 # item.send_keys(info.value)

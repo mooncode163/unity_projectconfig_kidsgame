@@ -135,10 +135,79 @@ class AppStoreHuawei(AppStoreBase):
     def AddLanguage(self,webcmd, title):
         webcmd.AddCmd2(CmdType.CLICK, "//a[@id='AppInfoManageLanguageButton']") 
         webcmd.AddCmd(CmdType.INPUT, "//input[@ng-model='searchTxt']",title,1)
+
         key = "//span[@title='"+title+"']"
-        webcmd.AddCmd2(CmdType.CLICK, key)
+        print(key)
+        if self.IsElementExist(key):
+            webcmd.AddCmd2(CmdType.CLICK, key)
+            webcmd.AddCmd2(CmdType.CLICK, "//label[@class='checkbox lang-item ng-scope']") 
+        else:
+            print(key,"is not exit")
+
+        webcmd.AddCmd2(CmdType.CLICK, "//label[@class='checkbox lang-item ng-scope']") 
+
         webcmd.AddCmd2(CmdType.CLICK, "//a[@class='btn btn-primary btn-small ng-binding']")
         webcmd.Run(True) 
+        time.sleep(2) 
+
+    def FillLanguage(self,webcmd, isHD,lanName,lanKey):
+  
+        # 选择语言 
+        # webcmd.AddCmd(CmdType.CLICK, "//input[@type='search' and @aria-owns='ui-select-choices-3']", "", 1)
+        webcmd.AddCmd(CmdType.CLICK, "//span[@class='ui-select-match-text pull-left']", "", 2)
+        
+        # 简体中文-默认
+        if lanName =="简体中文":
+            lanName = lanName+"-默认"
+
+        key = "//div[@class='ucd-droplist-option ng-binding' and text()='"+lanName+"']" 
+        # key = "//div[@class='ucd-droplist-option ng-binding' and text()='"+lanName+"-默认"+"']" 
+        # if self.IsElementExist(key)==False:
+        #     key = "//div[@class='ucd-droplist-option ng-binding' and text()='"+lanName+"']" 
+            
+        # 模糊匹配
+        # key = "//div[@class='ucd-droplist-option ng-binding' and contains(text(),'"+lanName+"')]"  
+
+        webcmd.AddCmd(CmdType.CLICK, key, "", 1) 
+        webcmd.Run(True)
+
+
+        title = self.GetAppName(isHD,lanKey)
+        webcmd.AddCmd(CmdType.INPUT, "//input[@id='AppInfoAppNameInputBox']",title,3) 
+        webcmd.Run(True)
+
+        title = self.GetAppDetail(isHD,lanKey)
+        webcmd.AddCmd(CmdType.INPUT, "//textarea[@id='AppInfoAppIntroduceInputBox']",title,2) 
+        webcmd.Run(True)
+        time.sleep(5)
+
+        title = self.GetAppPromotion(isHD,lanKey)
+        webcmd.AddCmd(CmdType.INPUT, "//input[@id='AppInfoAppBriefInputBox']",title,3) 
+        webcmd.Run(True)
+        time.sleep(2)
+
+
+        # icon 
+        key = "//img[@id='AppInfoAppIconAddButton']" 
+        webcmd.AddCmd(CmdType.CLICK, key, "", 2)
+        icon = common.GetOutPutIconPathWin32(self.rootDirProjectOutPut, source.TAPTAP, isHD)+"\\huawei\\icon_android_216.png"
+        print(icon)
+        webcmd.Run(True)
+        self.OpenFileBrowser(icon, True)
+        time.sleep(3)
+             
+   
+#    <span class="text ng-binding">横向截图</span>
+
+        # key = "//img[@id='AppIntroScreenshot1']" 
+        # webcmd.AddCmd(CmdType.CLICK, key, "", 2)
+        # i = 0
+        # pic = common.GetOutPutScreenshotPathWin32(self.rootDirProjectOutPut, source.TAPTAP, isHD) + "\\"+lanKey+"\\1080p\\"+str(i+1)+".jpg"
+        # print(pic)
+        # webcmd.Run(True)
+        # self.OpenFileBrowser(pic, True)
+        # time.sleep(2)
+
 
     def FillAppInfo(self, isHD):
         webcmd = WebDriverCmd(self.driver) 
@@ -160,46 +229,16 @@ class AppStoreHuawei(AppStoreBase):
         
         self.driver.switch_to.frame("mainIframeView")
 
-         
-        self.AddLanguage(webcmd,"美式英语")
-        self.AddLanguage(webcmd,"英式英语")
-        
-        time.sleep(5) 
-        # webcmd.AddCmd2(CmdType.CLICK, "//a[@id='CommonConfirmButtonOk']")
-        
-        title = self.GetAppDetail(isHD,source.LANGUAGE_CN)
-        webcmd.AddCmd(CmdType.INPUT, "//textarea[@id='AppInfoAppIntroduceInputBox']",title,1) 
-        webcmd.Run(True)
-        time.sleep(5)
+        lanKeys =("简体中文", "英式英语","美式英语")
+        applans = (source.LANGUAGE_CN,source.LANGUAGE_EN, source.LANGUAGE_EN)
 
-        title = self.GetAppName(isHD,source.LANGUAGE_CN)
-        webcmd.AddCmd(CmdType.INPUT, "//input[@id='AppInfoAppBriefInputBox']",title,1) 
-        webcmd.Run(True)
-        time.sleep(2)
+        # 添加语言
+        for lan in range(0, len(lanKeys)): 
+            self.AddLanguage(webcmd,lanKeys[lan])
+ 
 
-
-        # icon 
-        key = "//img[@id='AppInfoAppIconAddButton']" 
-        webcmd.AddCmd(CmdType.CLICK, key, "", 2)
-        icon = common.GetOutPutIconPathWin32(self.rootDirProjectOutPut, source.TAPTAP, isHD)+"\\huawei\\icon_android_216.png"
-        print(icon)
-        webcmd.Run(True)
-        self.OpenFileBrowser(icon, True)
-        time.sleep(2)
-             
-   
-#    <span class="text ng-binding">横向截图</span>
-
-        key = "//img[@id='AppIntroScreenshot1']" 
-        webcmd.AddCmd(CmdType.CLICK, key, "", 2)
-        i = 0
-        pic = common.GetOutPutScreenshotPathWin32(self.rootDirProjectOutPut, source.TAPTAP, isHD) + "\\"+source.LANGUAGE_CN+"\\1080p\\"+str(i+1)+".jpg"
-        print(pic)
-        webcmd.Run(True)
-        self.OpenFileBrowser(pic, True)
-        time.sleep(2)
-
-   
+        for lan in range(0, len(lanKeys)):
+            self.FillLanguage(webcmd,isHD,lanKeys[lan],applans[lan]) 
 
 
         return  
