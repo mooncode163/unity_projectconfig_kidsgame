@@ -81,122 +81,185 @@ class AppStoreHuawei(AppStoreBase):
     
 # 3452644866 qq31415926
     def CreateApp(self, isHD):
-        # ad.GoHome(isHD)
+        self.FillAppInfo(isHD)
+        return
+
+        webcmd = WebDriverCmd(self.driver)
+        old_window = self.driver.current_window_handle
+        url = "https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/myApp"
+        self.driver.get(url)
+        time.sleep(1) 
+
+        # 跳转到新的页面
+        print("self.driver.current_url=", self.driver.current_url)
+        # self.driver.switch_to.window(self.driver.window_handles[0])
+        for win in self.driver.window_handles:
+            if win != old_window:
+                self.driver.switch_to.window(win)
         time.sleep(1)
+        print("self.driver.current_url 2=", self.driver.current_url)
 
-        # Android平台
-        item = self.driver.find_element(
-            By.XPATH, "//button[@data-id='mediumTypeSelector']")
-        item.click()
-
-        time.sleep(1)
-
-        list = self.driver.find_elements(
-            By.XPATH, "//a[@role='option']")
-
-        if self.osApp == source.ANDROID:
-            list[0].click()
-
-        if self.osApp == source.IOS:
-            list[1].click()
-
-        # 应用商店
-
-        item = self.driver.find_element(
-            By.XPATH, "//button[@data-id='appStoreSelector']")
-        item.click()
-
-        time.sleep(1)
-
-        ul_list = self.driver.find_elements(
-            By.XPATH, "//ul[@class='dropdown-menu inner']")
-
-        list = ul_list[1].find_elements(
-            By.XPATH, "//a[@role='option']")
-        
-        if self.osApp == source.ANDROID:
-            list[7].click()
-
-        if self.osApp == source.IOS:
-            list[0].click()
-
-
-    # 应用分类
-        item = self.driver.find_element(
-            By.XPATH, "//button[@data-id='industryOneSelector']")
-        item.click()
-        time.sleep(1)
-        ul_list = self.driver.find_elements(
-            By.XPATH, "//ul[@class='dropdown-menu inner']")
-        list = ul_list[2].find_elements(
-            By.XPATH, "//a[@role='option']")
-        list[12].click()
-
-        item = self.driver.find_element(
-            By.XPATH, "//button[@data-id='industrySecondSelector']")
-        item.click()
-        time.sleep(1)
-        ul_list = self.driver.find_elements(
-            By.XPATH, "//ul[@class='dropdown-menu inner']")
-        list = ul_list[3].find_elements(
-            By.XPATH, "//a[@role='option']")
-        list[3].click()
-
-        # url
-        item = self.driver.find_element(
-            By.XPATH, "//input[@class='form-control size-410 form-control']")
+        self.driver.switch_to.frame("mainIframeView")
         
         
-        url = ""
-        if self.osApp == source.ANDROID:
-            appid = AppInfo.GetAppId(isHD, source.HUAWEI)
-            url = "http://appstore.huawei.com/C"+appid
-
-        if self.osApp == source.IOS:
-            appid = AppInfo.GetAppId(isHD, source.APPSTORE)
-            # https://itunes.apple.com/cn/app/id1303020002
-            url = "https://itunes.apple.com/cn/app/id"+appid
+        webcmd.AddCmd(CmdType.CLICK, "//a[@id='MyAppListNewApp']", "", 1)
+        webcmd.Run(True) 
         
-        item.send_keys(url)
+        title = self.GetAppName(isHD, source.LANGUAGE_CN)
+        webcmd.AddCmd(CmdType.INPUT, "//input[@ng-model='Model.productAndApp.appName']", title, 1)  
+        webcmd.Run(True)
+ 
+        old_window = self.driver.current_window_handle
+        # waiting 确定
+        while True:
+            time.sleep(1)
+            if self.IsElementExist("//a[@id='PubProDetermine']")==False:
+                break
+        
+        
+        print("self.driver.current_url=", self.driver.current_url)
+        # self.driver.switch_to.window(self.driver.window_handles[0])
+        for win in self.driver.window_handles:
+            if win != old_window:
+                self.driver.switch_to.window(win)
+        time.sleep(1)
 
-        # name
-        name = self.GetAppName(isHD)
-        list = self.driver.find_elements(
-            By.XPATH, "//input[@id='placementName']")
-        list[0].send_keys(name)
+        self.driver.switch_to.frame("mainIframeView")
+        
+        item = self.driver.find_element(By.XPATH, "//span[@id='AppInfoAppIdContent']") 
+        appid = item.text
+        print(appid)
+        AppInfo.SetAppId(isHD, source.ANDROID, source.HUAWEI, appid)
+        
+    
+    def AddLanguage(self,webcmd, title):
+        webcmd.AddCmd2(CmdType.CLICK, "//a[@id='AppInfoManageLanguageButton']") 
+        webcmd.AddCmd(CmdType.INPUT, "//input[@ng-model='searchTxt']",title,1)
+        key = "//span[@title='"+title+"']"
+        webcmd.AddCmd2(CmdType.CLICK, key)
+        webcmd.AddCmd2(CmdType.CLICK, "//a[@class='btn btn-primary btn-small ng-binding']")
+        webcmd.Run(True) 
 
-        list = self.driver.find_elements(
-            By.XPATH, "//input[@id='placementName']")
-        list[1].send_keys(name)
+    def FillAppInfo(self, isHD):
+        webcmd = WebDriverCmd(self.driver) 
+        old_window = self.driver.current_window_handle
+        appid = AppInfo.GetAppId(isHD, source.HUAWEI) 
+        url = "https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/myApp/"+appid
+        print(url)
+        self.driver.get(url) 
+        time.sleep(3) 
 
-        item = self.driver.find_element_by_id('formControlsTextarea')
-        name += name
-        name += name
-        name += name
-        name += name
-        item.send_keys(name)
+       # 跳转到新的页面
+        print("self.driver.current_url=", self.driver.current_url)
+        # self.driver.switch_to.window(self.driver.window_handles[0])
+        for win in self.driver.window_handles:
+            if win != old_window:
+                self.driver.switch_to.window(win)
+        time.sleep(1)
+        print("self.driver.current_url 2=", self.driver.current_url)
+        
+        self.driver.switch_to.frame("mainIframeView")
 
-        item = self.driver.find_element(
-            By.XPATH, "//input[@id='packageName']")
-        package = AppInfo.GetPackage(source.ANDROID, isHD)
-        item.send_keys(package)
+         
+        self.AddLanguage(webcmd,"美式英语")
+        self.AddLanguage(webcmd,"英式英语")
+        
+        time.sleep(5) 
+        # webcmd.AddCmd2(CmdType.CLICK, "//a[@id='CommonConfirmButtonOk']")
+        
+        title = self.GetAppDetail(isHD,source.LANGUAGE_CN)
+        webcmd.AddCmd(CmdType.INPUT, "//textarea[@id='AppInfoAppIntroduceInputBox']",title,1) 
+        webcmd.Run(True)
+        time.sleep(5)
 
-        # 创建
+        title = self.GetAppName(isHD,source.LANGUAGE_CN)
+        webcmd.AddCmd(CmdType.INPUT, "//input[@id='AppInfoAppBriefInputBox']",title,1) 
+        webcmd.Run(True)
+        time.sleep(2)
 
-        item = self.driver.find_element(
-            By.XPATH, "//a[@class='btn btn-primary btn-160']")
+
+        # icon 
+        key = "//img[@id='AppInfoAppIconAddButton']" 
+        webcmd.AddCmd(CmdType.CLICK, key, "", 2)
+        icon = common.GetOutPutIconPathWin32(self.rootDirProjectOutPut, source.TAPTAP, isHD)+"\\huawei\\icon_android_216.png"
+        print(icon)
+        webcmd.Run(True)
+        self.OpenFileBrowser(icon, True)
+        time.sleep(2)
+             
+   
+#    <span class="text ng-binding">横向截图</span>
+
+        key = "//img[@id='AppIntroScreenshot1']" 
+        webcmd.AddCmd(CmdType.CLICK, key, "", 2)
+        i = 0
+        pic = common.GetOutPutScreenshotPathWin32(self.rootDirProjectOutPut, source.TAPTAP, isHD) + "\\"+source.LANGUAGE_CN+"\\1080p\\"+str(i+1)+".jpg"
+        print(pic)
+        webcmd.Run(True)
+        self.OpenFileBrowser(pic, True)
+        time.sleep(2)
+
+   
+
+
+        return  
+        rootdir = "F:\\sourcecode\\unity\\product\\kidsgame\\ProjectOutPut"
+        apk = common.GetOutPutApkPathWin32(rootdir,source.HUAWEI,isHD)
+        print(apk)
+        # F:\\sourcecode\\unity\\product\\kidsgame\\ProjectOutPut\\xiehanzi\\hanziyuan\\screenshot\\shu\\cn\\480p\\1.jpg
+        self.OpenFileBrowser(apk,True)
+
+        time.sleep(2)
+ 
+     
+        # <div class="uploader-progress-bar" ng-style="{width: uploadProgress}"></div>
+
+        # # <div class="progress"><div class="progress-bar" style="width: 82%;" aria-valuenow="82"></div></div>
+        isUploading = False
+        while True:
+            time.sleep(1)
+            key = "//div[@class='uploader-progress-bar']"
+            if self.IsElementExist(key):
+                item = self.driver.find_element(By.XPATH, key)
+                if item is not None:
+                    style = item.get_attribute('style') 
+                    isUploading = True
+                    print(style)
+                    # if style.find("100") >=0:
+                    #     time.sleep(1)
+                    #     print("upload apk finish")
+                    #     break
+            else:
+                if isUploading == True:
+                    isUploading = False
+                    time.sleep(1)
+                    print("upload apk finish")
+                    break
+
+
+
+        
+        time.sleep(1)
+
+        # 不申请
+        item = self.driver.find_element(By.XPATH, "//span[@id='VerInfoNotApplyButton']")
         item.click()
+        time.sleep(1)
 
 
-    def GetAppName(self, ishd):
-        name = AppInfo.GetAppName(self.osApp, ish,source.LANGUAGE_CN)
-        # if self.osApp == source.IOS:
-        #     AppInfo.GetAppName(self.osApp, ishd)+self.osApp
+        # 提交审核
+        item = self.driver.find_element(By.XPATH, "//a[@id='VerInfoSubmitButton']")
+        item.click()
+        time.sleep(3)
 
-        return name
+        # 确定
+        item = self.driver.find_element(By.XPATH, "//a[@id='AppSubmitConfirmButtonOk']")
+        item.click()
+        time.sleep(3)
+
 
     def SearchApp(self, ishd):
-        name = self.GetAppName(ishd) 
+        name = self.GetAppName(isHD, source.LANGUAGE_CN)
         item = self.driver.find_element(
             By.XPATH, "//input[@ng-model='Model.product.query.appName']")
         item.send_keys(name)
@@ -321,7 +384,7 @@ class AppStoreHuawei(AppStoreBase):
  
  
     def SearchApp(self, ishd):
-        name = self.GetAppName(ishd)
+        name = self.GetAppName(isHD, source.LANGUAGE_CN)
         self.driver.get("https://adnet.qq.com/medium/list")
         time.sleep(2)
         item = self.driver.find_element(
@@ -418,7 +481,7 @@ if __name__ == "__main__":
     argv1 = sys.argv[2]
     # ad.osApp = sys.argv[3]
     if argv1 == "createapp":
-        ad.CreateApp(False)
+        # ad.CreateApp(False)
         time.sleep(3)
         ad.CreateApp(True)
  

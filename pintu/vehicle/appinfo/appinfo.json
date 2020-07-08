@@ -5,9 +5,9 @@
     "APP_NAME_EN_IOS": "Kids Vehicle Puzzle",
     "PACKAGE_ANDROID": "com.moonma.carpintu",
     "PACKAGE_IOS": "com.moonma.carpintu",
-    "APPVERSION_ANDROID": "1.5.4",
-    "APPVERSION_CODE_ANDROID": "154",
-    "APPVERSION_IOS": "1.5.4",
+    "APPVERSION_ANDROID": "1.5.5",
+    "APPVERSION_CODE_ANDROID": "155",
+    "APPVERSION_IOS": "1.5.5",
     "need_upload_screenshot": false,
     "APPSTORE_VERSION_UPDATE": {
         "cn": "修复闪退",

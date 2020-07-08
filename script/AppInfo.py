@@ -21,7 +21,9 @@ from common import adconfig
 
 from xml.dom.minidom import parse
 
-import AppVersionHuawei
+import AppVersionHuawei 
+from AppInfoOld import AppInfoOld
+from AppInfoNew import AppInfoNew
 
 versionCode = 100
 
@@ -409,6 +411,7 @@ def SetConfigDataAppId(os,chanel,appid,ishd):
         # SaveJson(filepath,data)
         common.SaveJson(filepath,data)
 
+
 def GetAppDetail(isHd,lan): 
     src = common.GetProjectConfigApp()+"/appinfo/app_description.xml"
     if isHd:
@@ -443,91 +446,114 @@ def GetAppDetail(isHd,lan):
 	# 		comments = customer.getElementsByTagName("comments")[0]
 	# 		print(comments.nodeName, ":", comments.childNodes[0].data)
 
+
+
+def GetAppPromotion(self,isHd,lan): 
+    data = loadJson(isHd) 
+    name = data["appstore"] ["promotion"][lan]
+    return name 
+ 
 def GetAppName(os,isHd,lan): 
     # loadJson
-    data = loadJson(isHd) 
-
-    isOld = IsOldVersion(data)
-    global versionCode
-    
-    if not isOld : 
-        appname = data["appname"]
-
-    
-    if isOld:
-        APP_NAME_CN_ANDROID = data["APP_NAME_CN_ANDROID"]
-        APP_NAME_EN_ANDROID = data["APP_NAME_EN_ANDROID"]
-        APP_NAME_CN_IOS = data["APP_NAME_CN_IOS"]
-        APP_NAME_EN_IOS = data["APP_NAME_EN_IOS"]
-        PACKAGE_ANDROID = data["PACKAGE_ANDROID"]
-        PACKAGE_IOS = data["PACKAGE_IOS"]
-        versionCode = data["APPVERSION_CODE_ANDROID"]
-        APPVERSION_IOS = data["APPVERSION_IOS"]
-        appid_huawei = GetConfigDataAppId(source.ANDROID,source.HUAWEI,isHd)
-    else:
-        APP_NAME_CN_ANDROID = appname[source.ANDROID]["cn"]
-        APP_NAME_EN_ANDROID = appname[source.ANDROID]["en"]
-        APP_NAME_CN_IOS = appname[source.IOS]["cn"]
-        APP_NAME_EN_IOS = appname[source.IOS]["en"]  
-
-
-    name = ""
-    if os==source.ANDROID:
-        if lan==source.LANGUAGE_CN:
-            name = APP_NAME_CN_ANDROID
-        if lan==source.LANGUAGE_EN:
-            name = APP_NAME_EN_ANDROID
-
-    if os==source.IOS:
-        if lan==source.LANGUAGE_CN:
-            name = APP_NAME_CN_IOS
-        if lan==source.LANGUAGE_EN:
-            name = APP_NAME_EN_IOS
-
-
+    data = loadJson(isHd)  
+    name = data["appname"][os][lan]
     return name     
         
         
 def GetAppId(isHd,channel): 
     # loadJson
     data = loadJson(isHd) 
-
-    isOld = IsOldVersion(data)
-    global versionCode
-    
-    if not isOld : 
-        appname = data["appname"]
-
-    if isOld: 
-        if channel==source.IOS:
-            appid = GetConfigDataAppId(source.IOS,source.APPSTORE,isHd)
-        else:
-            appid = GetConfigDataAppId(source.ANDROID,channel,isHd)
-
-    else:
-        appid = GetJsonAppId(data,channel) 
-
+    appid = data["appid"][channel] 
     return appid 
 
 def SetAppId(isHd,os,channel,appid):
     # loadJson
-    data = loadJson(isHd) 
-
-    isOld = IsOldVersion(data)
-    global versionCode
-     
-    
-    if isOld:
-        SetConfigDataAppId(os,channel,appid,isHd)
-    else:
-        data["appid"][channel] =appid
-        filePath = GetJsonFile(isHd)
-        common.SaveJson(filePath,data)
+    data = loadJson(isHd)  
+    data["appid"][channel] =appid
+    filePath = GetJsonFile(isHd)
+    common.SaveJson(filePath,data)
   
  
+def ConvertOld2New(isHd,appinfoOld):
+    appinfoNew = AppInfoNew(isHd)
+
+    # appid
+    appid = appinfoOld.GetAppId(source.HUAWEI)
+    appinfoNew.SetAppId(source.HUAWEI,appid)
+
+    appid = appinfoOld.GetAppId(source.TAPTAP)
+    appinfoNew.SetAppId(source.TAPTAP,appid)
+
+    appid = appinfoOld.GetAppId(source.APPSTORE) 
+    appinfoNew.SetAppId(source.APPSTORE,appid)
+
+    appid = "0"
+    appinfoNew.SetAppId(source.XIAOMI,appid)
+
+    # appname 
+    name = appinfoOld.GetAppName(source.ANDROID,source.LANGUAGE_CN)
+    appinfoNew.SetAppName(source.ANDROID,source.LANGUAGE_CN,name)
+    name = appinfoOld.GetAppName(source.ANDROID,source.LANGUAGE_EN)
+    appinfoNew.SetAppName(source.ANDROID,source.LANGUAGE_EN,name)
+    name = appinfoOld.GetAppName(source.IOS,source.LANGUAGE_CN)
+    appinfoNew.SetAppName(source.IOS,source.LANGUAGE_CN,name)
+    name = appinfoOld.GetAppName(source.IOS,source.LANGUAGE_EN)
+    appinfoNew.SetAppName(source.IOS,source.LANGUAGE_EN,name)
+
+    # apppackage
+    name = appinfoOld.GetPackage(source.ANDROID)
+    appinfoNew.SetAppPackage(source.ANDROID,name)
+    name = appinfoOld.GetPackage(source.IOS)
+    appinfoNew.SetAppPackage(source.IOS,name)
+
+
+    # appstore
+    aso = appinfoOld.APPSTORE_KEYWORD(source.LANGUAGE_CN)
+    aso_xiaomi = appinfoOld.APPSTORE_KEYWORD(source.LANGUAGE_CN)
+    promotion = appinfoOld.APPSTORE_PROMOTION(source.LANGUAGE_CN)
+    subtitle = appinfoOld.APPSTORE_SUBTITLE(source.LANGUAGE_CN)
+    title = appinfoOld.APPSTORE_TITLE(source.LANGUAGE_CN)
+    version_update = appinfoOld.APPSTORE_VERSION_UPDATE(source.LANGUAGE_CN)
+    appinfoNew.SetAppstore(source.LANGUAGE_CN,aso,aso_xiaomi,promotion,subtitle,title,version_update)
+
+    aso = appinfoOld.APPSTORE_KEYWORD(source.LANGUAGE_EN)
+    aso_xiaomi = appinfoOld.APPSTORE_KEYWORD(source.LANGUAGE_EN)
+    promotion = appinfoOld.APPSTORE_PROMOTION(source.LANGUAGE_EN)
+    subtitle = appinfoOld.APPSTORE_SUBTITLE(source.LANGUAGE_EN)
+    title = appinfoOld.APPSTORE_TITLE(source.LANGUAGE_EN)
+    version_update = appinfoOld.APPSTORE_VERSION_UPDATE(source.LANGUAGE_EN)
+    appinfoNew.SetAppstore(source.LANGUAGE_EN,aso,aso_xiaomi,promotion,subtitle,title,version_update)
+
+
+# appversion
+    version =  appinfoOld.GetAppVersion(source.ANDROID)
+    code =  appinfoOld.GetAppVersionCode(source.ANDROID)
+    appinfoNew.SetAppversion(source.ANDROID,code,version)
+
+    version =  appinfoOld.GetAppVersion(source.IOS)
+    code =  appinfoOld.GetAppVersionCode(source.IOS)
+    appinfoNew.SetAppversion(source.IOS,code,version)
+
+
+    appinfoNew.SetKeyVaule("need_upload_screenshot",appinfoOld.need_upload_screenshot())
+
+    appinfoNew.SetKeyVaule("email","chyfemail163@163.com")
+    appinfoNew.SetKeyVaule("privacy_url","https://6c69-lianlianle-shkb3-1259451541.tcb.qcloud.la/PrivacyPolicy.txt")
+    appinfoNew.SetKeyVaule("privacy_url2","https://6d6f-moonma-dbb297-1258816908.tcb.qcloud.la/Moonma/privacyPolicy_kidsgame.txt")
+    appinfoNew.SetKeyVaule("privacy_url3"," http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml")
+    appinfoNew.SetKeyVaule("software_url"," http://www.mooncore.cn")
+    appinfoNew.SetKeyVaule("support_url"," http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html")
+    appinfoNew.SetKeyVaule("sku_app",appinfoOld.sku_app())
+    
+    appinfoNew.Save()   
 
 def updateName(isHd,isAuto):
-    
+    appinfoOld = AppInfoOld(isHd)
+    if appinfoOld.IsOldVersion():
+        # 转换
+        ConvertOld2New(isHd,appinfoOld)
+
+
     rootConfig = common.GetProjectConfigApp()
     strHD = "HD"
 
@@ -804,6 +830,8 @@ if __name__ == "__main__":
     flag = os.path.exists(src)
     if flag:
         os.rename(src,dst)
+
+   
 
      
     updateName(False,is_auto_plus_version)

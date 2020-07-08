@@ -1,36 +1,70 @@
 {
-    "APP_NAME_CN_ANDROID": "宝宝识汉字HD",
-    "APP_NAME_EN_ANDROID": "BabyWriteChineseHD",
-    "APP_NAME_CN_IOS": "宝宝识汉字HD",
-    "APP_NAME_EN_IOS": "BabyWriteChineseHD",
-    "PACKAGE_ANDROID": "com.moonma.learnword.pad",
-    "PACKAGE_IOS": "com.moonma.learnword.pad",
-    "APPVERSION_ANDROID": "1.4.3",
-    "APPVERSION_CODE_ANDROID": "143",
-    "APPVERSION_IOS": "1.4.3",
+    "appid": {
+        "appstore": "1260469315",
+        "huawei": "102521609",
+        "taptap": "56869",
+        "xiaomi": "0"
+    },
+    "appname": {
+        "android": {
+            "cn": "宝宝识汉字HD",
+            "en": "BabyWriteChineseHD"
+        },
+        "ios": {
+            "cn": "宝宝识汉字HD",
+            "en": "BabyWriteChineseHD"
+        }
+    },
+    "apppackage": {
+        "android": {
+            "default": "com.moonma.learnword.pad"
+        },
+        "ios": {
+            "default": "com.moonma.learnword.pad"
+        }
+    },
+    "appstore": {
+        "aso": {
+            "cn": "阳阳爱写字魔力小孩过年宝宝学写字中华恐龙园汉字与书法海绵宝宝做汉堡朵拉历险记学做饭宝宝爱洗澡三字经读写版宝宝书孕育跟我学写汉字蓝猫学拼音小嘀削削serato自由诵读经典儿歌巴巴熊巴巴宝贝熊孩子钢笔书法",
+            "en": "COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber"
+        },
+        "aso_xiaomi": {
+            "cn": "阳阳爱写字魔力小孩过年宝宝学写字中华恐龙园汉字与书法海绵宝宝做汉堡朵拉历险记学做饭宝宝爱洗澡三字经读写版宝宝书孕育跟我学写汉字蓝猫学拼音小嘀削削serato自由诵读经典儿歌巴巴熊巴巴宝贝熊孩子钢笔书法",
+            "en": "COOKING MAMA Let's Cook Kids Shave Salon Spa Doodle Zedd the Zombie Shapes Toddler QuizUp Clawber"
+        },
+        "promotion": {
+            "cn": "帮助宝宝快速掌握汉字的笔画书写",
+            "en": "Help children quickly master Chinese character strokes"
+        },
+        "subtitle": {
+            "cn": "汉字书写练习",
+            "en": "Writing Chinese"
+        },
+        "title": {
+            "cn": "宝宝写汉字HD-练字书写软件",
+            "en": "Baby Write Chinese HD"
+        },
+        "version_update": {
+            "cn": "新增自由写模式",
+            "en": "New free write mode"
+        }
+    },
+    "appversion": {
+        "android": {
+            "code": "143",
+            "value": "1.4.3"
+        },
+        "ios": {
+            "code": "143",
+            "value": "1.4.3"
+        }
+    },
+    "email": "chyfemail163@163.com",
     "need_upload_screenshot": true,
-    "APPSTORE_VERSION_UPDATE": {
-        "cn": "新增自由写模式",
-        "en": "New free write mode"
-    },
-    "APPSTORE_TITLE": {
-        "cn": "宝宝写汉字HD-练字书写软件",
-        "en": "Baby Write Chinese HD"
-    },
-    "APPSTORE_SUBTITLE": {
-        "cn": "汉字书写练习",
-        "en": "Writing Chinese"
-    },
-    "APPSTORE_PROMOTION": {
-        "cn": "帮助宝宝快速掌握汉字的笔画书写",
-        "en": "Help children quickly master Chinese character strokes"
-    },
-    "APPSTORE_KEYWORD": {
-        "cn": "阳阳爱写字魔力小孩过年宝宝学写字中华恐龙园汉字与书法海绵宝宝做汉堡朵拉历险记学做饭宝宝爱洗澡三字经读写版宝宝书孕育跟我学写汉字蓝猫学拼音小嘀削削serato自由诵读经典儿歌巴巴熊巴巴宝贝熊孩子钢笔书法",
-        "en": "COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber"
-    },
-    "software_url": "http://www.mooncore.cn",
-    "privacy_url": "http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
-    "support_url": "http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html",
-    "sku_app": "xiehanzi_pad"
+    "privacy_url": "https://6c69-lianlianle-shkb3-1259451541.tcb.qcloud.la/PrivacyPolicy.txt",
+    "privacy_url2": "https://6d6f-moonma-dbb297-1258816908.tcb.qcloud.la/Moonma/privacyPolicy_kidsgame.txt",
+    "privacy_url3": " http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
+    "sku_app": "xiehanzi_pad",
+    "software_url": " http://www.mooncore.cn",
+    "support_url": " http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html"
 }

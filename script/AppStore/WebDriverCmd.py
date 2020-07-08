@@ -44,7 +44,16 @@ class WebDriverCmd():
         info.isWaiting = False
 
         self.listCmd.append(info)
-    
+    def AddCmd2(self,type,cmd):
+        info = CmdInfo()
+        info.type = type
+        info.cmd = cmd
+        info.value = ""
+        info.delay = 1
+        info.isWaiting = False
+
+        self.listCmd.append(info)
+
     def AddCmdInfo(self,info): 
         self.listCmd.append(info)    
     
@@ -85,6 +94,9 @@ class WebDriverCmd():
                 self.driver.execute_script("arguments[0].click();", item)
             if info.type == CmdType.INPUT:
                 item.send_keys(info.value)
+                # item.clear()
+                # item.send_keys(info.value)
+                # item.text = info.value
 
             time.sleep(info.delay)
 
