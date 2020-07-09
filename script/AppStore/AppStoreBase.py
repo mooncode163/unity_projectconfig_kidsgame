@@ -15,6 +15,7 @@ import time
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver import ActionChains
 from selenium import webdriver
 from common import source
 from common import common
@@ -87,6 +88,12 @@ class AppStoreBase():
         self.dirRoot = dir
         print("dir = ", dir)
     
+
+    # 让元素在可见范围 可以点击操作
+    def SetItemVisible(self,item,delay=1):
+        ActionChains(self.driver).move_to_element(item).perform()
+        time.sleep(delay)
+
     
 #   该方法用来确认元素是否存在，如果存在返回flag=true，否则返回false        
     def IsElementExist(self,element):

@@ -202,7 +202,7 @@ class AppStoreHuawei(AppStoreBase):
         key = "//input[@id='AppInfoAppBriefInputBox']"
         item = self.driver.find_element(By.XPATH, key)
         
-        ActionChains(self.driver).move_to_element(item)
+        ActionChains(self.driver).move_to_element(item).perform()
         time.sleep(1)
         # webcmd.AddCmd(CmdType.ENTER, "//input[@id='AppInfoAppBriefInputBox']",title,1) 
         pyperclip.paste()
@@ -236,6 +236,12 @@ class AppStoreHuawei(AppStoreBase):
         for i in range(0,5):
             key = "//img[@id='AppIntroScreenshot"+str(i+1)+"']" 
             item = self.driver.find_element(By.XPATH, key)
+
+            
+            if i>=2:
+                # 将 滚动条 底部对齐 
+                self.driver.execute_script("arguments[0].scrollIntoView(false);", item) 
+                time.sleep(2)
             # 鼠标悬停
             ActionChains(self.driver).move_to_element(item).perform()
             time.sleep(2)

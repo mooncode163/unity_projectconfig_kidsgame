@@ -14,13 +14,16 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
+from selenium.webdriver import ActionChains 
+
+
 import time
 import sqlite3
 import win32gui
 import win32con
 import AppInfo
 
-
+import pyperclip
 
 # 要想调用键盘按键操作需要引入keys包
 
@@ -34,6 +37,9 @@ import AppInfo
 
 class AppStoreTaptap(AppStoreBase):
 
+    LAN_KEY_default = "default"
+    LAN_KEY_CN = "zh_CN"
+    LAN_KEY_EN = "en_US" 
     def GoHome(self, isHD, login):
         # self.driver.get("https://www.taptap.com/developer")
         # self.driver.get("https://www.taptap.com/developer/dashboard/14628/apps")
@@ -73,28 +79,209 @@ class AppStoreTaptap(AppStoreBase):
 
 
 # 3452644866 qq31415926
-    def SelectLanguage(self,webcmd, lan):  
-        if lan == 0:
+    def SelectLanguage(self,webcmd, lan):
+        if lan == self.LAN_KEY_default:
+            # 填写中文资料
+                # webcmd.AddCmd(  CmdType.CLICK, "//li[@class='nav-item js-chs-contents-li js-spec-lang-li']", "", 1)
+                # <a class="nav-link" data-toggle="tab" href="#chs-contents" role="tab" aria-controls="chs" aria-selected="true" aria-expanded="true">简体中文</a>
+            webcmd.AddCmd(  CmdType.CLICK, "//a[@aria-controls='default']", "", 2) 
+            webcmd.Run(True)
+
+        if lan == self.LAN_KEY_CN:
             # 填写中文资料
                 # webcmd.AddCmd(  CmdType.CLICK, "//li[@class='nav-item js-chs-contents-li js-spec-lang-li']", "", 1)
                 # <a class="nav-link" data-toggle="tab" href="#chs-contents" role="tab" aria-controls="chs" aria-selected="true" aria-expanded="true">简体中文</a>
             webcmd.AddCmd(  CmdType.CLICK, "//a[@aria-controls='chs']", "", 2) 
             webcmd.Run(True)
-        if lan == 1:
+        if lan == self.LAN_KEY_EN:
                 # 填写英文资料
                 # webcmd.AddCmd(  CmdType.CLICK, "//li[@class='nav-item js-en-contents-li js-spec-lang-li active']", "", 1)
             webcmd.AddCmd(  CmdType.CLICK, "//a[@aria-controls='en']", "", 2)
             webcmd.Run(True)  
+
+    def UploadIcon(self, webcmd,isHD,lan):
+        # bug 上传图片之前先要重新选择语言 不然无法弹出文件浏览器
+        # self.SelectLanguage(webcmd,lan)
+       # icon
+            # <input type="file" name="image" data-valid-width="512" data-valid-height="512" data-taptap-ajax="upload" data-target="#icon-zh_CN" data-target-input="#icon-input-zh_CN" data-url="https://www.taptap.com/ajax/image">
+            # "//input[@type='file' and @data-target='#icon-zh_CN']"
+        key = "//input[@type='file' and @data-target='#icon-" +   lan+"']"
+        if lan==self.LAN_KEY_default:
+            key = "//input[@type='file' and @data-target='#icon']"
+
+            # key ="//img[@id='icon-" +   lanKeys[lan]+"']"
+            # key = "//input[@type='file' and  @name='image']"
+            # key = "//span[@class='fileinput-button fixed-size square icon']"
+            
+            # "//input[@name='anti_addiction_read']"
+        print(key) 
                 
+        # item = self.driver.find_element(By.XPATH, key) 
+        item = webcmd.AddCmd2(CmdType.CLICK_Action, key)
+        self.SetItemVisible(item)
+        webcmd.Run(True)  
+        # self.driver.execute_script("arguments[0].click();", item)
+        time.sleep(2)
+
+        icon = common.GetOutPutIconPathWin32( self.rootDirProjectOutPut, source.TAPTAP, isHD)+"\\icon_android_512.png"
+        print(icon)
+            # webcmd.Run(True)
+        self.OpenFileBrowser(icon, True)
+        time.sleep(2)
+
+    def UploadTitle(self, webcmd,isHD,lan,applan):
+        key = "//input[@type='text' and @name='translations[" + lan+"][title]']"
+        if lan==self.LAN_KEY_default:
+            key = "//input[@type='text' and @name='title']"
+
+
+        print(key)
+        title = self.GetAppName(isHD, applan)
+        webcmd.AddCmd(CmdType.INPUT, key, title, 1)
+            # detail "//textarea[@name='translations[zh_CN][description]']"
+
+                   
+       
+        key = "//textarea[@name='translations[" +  lan+"][description]']"
+        if lan==self.LAN_KEY_default:
+            key = "//textarea[@name='description']"
+        
+        print(key)
+        title = self.GetAppDetail(isHD, applan)
+        pyperclip.copy(title)
+        # webcmd.AddCmd(CmdType.INPUT, key, title, 1)
+        pyperclip.paste()
+        webcmd.AddCmd2(CmdType.CLICK, key)
+        webcmd.AddCmd2(CmdType.CTR_V, key) 
+        webcmd.Run(True)
+
+    def UploadAdHome(self, webcmd,isHD,lan,applan):
+        # bug 上传图片之前先要重新选择语言 不然无法弹出文件浏览器
+        # self.SelectLanguage(webcmd,lan)
+        # adhome
+            # self.SelectLanguage(webcmd,lan)
+            # self.driver.switch_to.window(self.driver.window_handles[0])
+        key = "//input[@type='file' and @data-target='#banner_1_android-"+lan+"']"
+        if lan==self.LAN_KEY_default:
+            key = "//input[@type='file' and @data-target='#banner_1_android']"
+
+            # key ="//span[@class='fileinput-button fixed-size banner']"
+        print(key)
+        # item = self.driver.find_element(By.XPATH, key)
+        #     # item = webcmd.AddCmd(CmdType.CLICK_SCRIPT, key, "", 3)
+        # self.SetItemVisible(item)
+        #     # item = webcmd.AddCmd(CmdType.CLICK_SCRIPT, key, "", 1)
+        #     # webcmd.Run(True)
+        # # self.driver.execute_script("arguments[0].click();", item)
+        # action= ActionChains(self.driver)
+        # action.click(item).perform()
+        # time.sleep(2)
+        #     # item.click()
+        #     # item.send_keys(Keys.ENTER)
+        item = webcmd.AddCmd2(CmdType.CLICK_Action, key)
+        self.SetItemVisible(item)
+        webcmd.Run(True)
+        pic = common.GetOutPutAdPathWin32(self.rootDirProjectOutPut, source.TAPTAP, isHD) + "\\"+applan+"\\"+"ad_home_1024x500.png"
+        print(pic)
+        self.OpenFileBrowser(pic, True)
+        time.sleep(3)
+
+
+        # bug 上传图片之前先要重新选择语言 不然无法弹出文件浏览器
+        # self.SelectLanguage(webcmd,lan)
+        key = "//input[@type='file' and @data-target='#banner_1_ios-"+lan+"']"
+        if lan==self.LAN_KEY_default:
+            key = "//input[@type='file' and @data-target='#banner_1_ios']"
+        item = webcmd.AddCmd2(CmdType.CLICK_Action, key)
+        self.SetItemVisible(item)
+        webcmd.Run(True)
+        print(pic)            
+        self.OpenFileBrowser(pic, True)
+        time.sleep(3)       
+
+
+    def GetLanguageIndex(self,lan):
+        index = 0
+        for tmp in self.lanKeys:
+
+            if lan==tmp:
+                break
+                 
+            index=index+1
+
+        return index
+
+    def GetItemOfScreenShot(self,lan):
+        key = "//input[@type='file' and @data-target='#screenshots']" 
+        item_add = None
+        index = 0
+        list = self.driver.find_elements(By.XPATH, key)  
+        for tmp in list:
+            print("screenshot tag index=",index) 
+            if index==self.GetLanguageIndex(lan):
+                item_add = tmp
+            index=index+1
+
+        return item_add
+
+
+    def UploadScreenShot(self, webcmd,isHD,lan,applan):
+        # screenshot
+        for i in range(0, 5):
+            # bug 上传图片之前先要重新选择语言 不然无法弹出文件浏览器
+            # self.SelectLanguage(webcmd,lan)
+            time.sleep(1)
+ 
+            # 将 滚动条 底部对齐
+
+
+            # lan_shot = "chs-contents"
+            # key = "//div[@id='"+lan_shot+"']"
+            # div = self.driver.find_element(By.XPATH, key) 
+            # if div==None:
+            #     print("not find screenshot div")
+            #     return
+
+            # 查找子元素
+            # 当您启动XPath表达式时//，它会从文档的根目录中搜索，忽略您的父元素。你应该在表达前加上.
+
+            # element2 = driver.find_element_by_xpath("//div[@title='div2']")
+            # element2.find_element_by_xpath(".//p[@class='test']").text 
+
+            # key = ".//input[@type='file' and @data-target='#screenshots']" 
+            # item = div.find_element(By.XPATH, key)  
+            item = self.GetItemOfScreenShot(lan)
+            # self.driver.execute_script("arguments[0].scrollIntoView(false);", item) 
+            time.sleep(1)
+            self.SetItemVisible(item)
+            time.sleep(1)
+            # self.driver.execute_script("arguments[0].click();", item) 
+            # item.click()
+
+            action= ActionChains(self.driver)
+            action.click(item).perform()
+
+            time.sleep(1)
+            # webcmd.AddCmd(CmdType.CLICK, "//li[@class='add-screenshot-li]", "", 1)
+            webcmd.Run(True)
+            pic = common.GetOutPutScreenshotPathWin32(self.rootDirProjectOutPut, source.TAPTAP, isHD) + "\\"+applan+"\\1080p\\"+str(i+1)+".jpg"
+            flag = os.path.exists(pic)
+            if flag:
+                print(pic)
+                self.OpenFileBrowser(pic, True)
+                time.sleep(3)
+
     def CreateApp(self, isHD):
         url = "https://www.taptap.com/developer/app-create/14628"
-        self.driver.get(url)
-        time.sleep(1)
-        self.UpLoadApk(isHD)
- 
-        # url = "https://www.taptap.com/developer/fill-form/14628"
         # self.driver.get(url)
         # time.sleep(1)
+        # self.UpLoadApk(isHD)
+        self.FillAppInfo(isHD)
+
+    def FillAppInfo(self, isHD): 
+        url = "https://www.taptap.com/developer/fill-form/14628"
+        self.driver.get(url)
+        time.sleep(1)
 
 
         webcmd = WebDriverCmd(self.driver)
@@ -147,115 +334,34 @@ class AppStoreTaptap(AppStoreBase):
         # # key ="//input[@id='banner_1_android-input']"
         # # key ="//span[@class='fileinput-button fixed-size banner']"
         
-
-        # # 
-        # #banner_1_android
-        # # webcmd.AddCmd(CmdType.CLICK, key, "", 1)
-        # # webcmd.Run(True)
-        # item = self.driver.find_element(By.XPATH, key)
-        # item.click() 
-        # # item.send_keys(Keys.ENTER)
-        # time.sleep(1)
-        # pic = common.GetOutPutAdPathWin32(self.rootDirProjectOutPut, source.TAPTAP, isHD) + "\\"+"cn"+"\\"+"ad_home_1024x500.png"
-        # self.OpenFileBrowser(pic, True)
-        # time.sleep(3)
-        # return
+ 
 
 
+        # default zh_CN en_US
+        # self.lanKeys =(self.LAN_KEY_default,self.LAN_KEY_CN, self.LAN_KEY_EN)
+        # applans = (source.LANGUAGE_CN,source.LANGUAGE_CN, source.LANGUAGE_EN)
 
-        # zh_CN en_US
-        lanKeys =("zh_CN", "en_US")
-        applans = (source.LANGUAGE_CN, source.LANGUAGE_EN)
-        for lan in range(0, len(lanKeys)):
-            # if lan == 0:
-            #     # 填写中文资料
-            #     # webcmd.AddCmd(  CmdType.CLICK, "//li[@class='nav-item js-chs-contents-li js-spec-lang-li']", "", 1)
-            #     # <a class="nav-link" data-toggle="tab" href="#chs-contents" role="tab" aria-controls="chs" aria-selected="true" aria-expanded="true">简体中文</a>
-            #     webcmd.AddCmd(  CmdType.CLICK, "//a[@aria-controls='chs']", "", 2) 
-            #     webcmd.Run(True)
-            # if lan == 1:
-            #     # 填写英文资料
-            #     # webcmd.AddCmd(  CmdType.CLICK, "//li[@class='nav-item js-en-contents-li js-spec-lang-li active']", "", 1)
-            #     webcmd.AddCmd(  CmdType.CLICK, "//a[@aria-controls='en']", "", 2)
-            #     webcmd.Run(True)
-            self.SelectLanguage(webcmd,lan)
-
-            # title "//input[@type='text' and @name='translations[zh_CN][title]']"
-            print(lanKeys[lan])
-            key = "//input[@type='text' and @name='translations[" + lanKeys[lan]+"][title]']"
-
-            print(key)
-            title = self.GetAppName(isHD, applans[lan])
-            webcmd.AddCmd(CmdType.INPUT, key, title, 1)
-            # detail "//textarea[@name='translations[zh_CN][description]']"
-            key = "//textarea[@name='translations[" +  lanKeys[lan]+"][description]']"
-            title = self.GetAppDetail(isHD, applans[lan])
-            webcmd.AddCmd(CmdType.INPUT, key, title, 1)
-            webcmd.Run(True)
-
-       
-
-            # title = self.GetAppName(isHD, applans[lan])
-            # webcmd.AddCmd(CmdType.INPUT, key, title, 1)
-            # webcmd.Run(True)
+        # default zh_CN
+        self.lanKeys =(self.LAN_KEY_default,self.LAN_KEY_CN)
+        applans = (source.LANGUAGE_EN,source.LANGUAGE_CN)
 
 
-            # icon
-            # <input type="file" name="image" data-valid-width="512" data-valid-height="512" data-taptap-ajax="upload" data-target="#icon-zh_CN" data-target-input="#icon-input-zh_CN" data-url="https://www.taptap.com/ajax/image">
-            # "//input[@type='file' and @data-target='#icon-zh_CN']"
-            key = "//input[@type='file' and @data-target='#icon-" +   lanKeys[lan]+"']"
-            # key = "//input[@type='file' and @data-target='#icon']"
-            print(key)
-            # self.driver.switch_to.window(self.driver.window_handles[0])
-            webcmd.AddCmd(CmdType.CLICK, key, "", 2)
-            icon = common.GetOutPutIconPathWin32(
-                self.rootDirProjectOutPut, source.TAPTAP, isHD)+"\\icon_android_512.png"
-            print(icon)
-            webcmd.Run(True)
-            self.OpenFileBrowser(icon, True)
-            time.sleep(2)
-
-            # adhome
-            # self.SelectLanguage(webcmd,lan)
-            # self.driver.switch_to.window(self.driver.window_handles[0])
-            key = "//input[@type='file' and @data-target='#banner_1_android-"+lanKeys[lan]+"']"
-            webcmd.AddCmd(CmdType.CLICK, key, "", 3)
-            webcmd.Run(True)
-            pic = common.GetOutPutAdPathWin32(self.rootDirProjectOutPut, source.TAPTAP, isHD) + "\\"+applans[lan]+"\\"+"ad_home_1024x500.png"
-            print(pic)
-            self.OpenFileBrowser(pic, True)
-            time.sleep(3)
+        for lan in range(0, len(self.lanKeys)): 
+            self.SelectLanguage(webcmd,self.lanKeys[lan])
+ 
+            self.UploadTitle(webcmd,isHD,self.lanKeys[lan],applans[lan])
+  
+            self.UploadIcon(webcmd,isHD,self.lanKeys [lan])
             
-            # self.SelectLanguage(webcmd,lan)
-            # self.driver.switch_to.window(self.driver.window_handles[0])
-            key = "//input[@type='file' and @data-target='#banner_1_ios-"+lanKeys[lan]+"']"
-            webcmd.AddCmd(CmdType.CLICK, key, "", 3)
-            webcmd.Run(True)
-            print(pic)
-            self.OpenFileBrowser(pic, True)
-            time.sleep(3)
+            self.UploadAdHome(webcmd,isHD,self.lanKeys [lan],applans[lan])
 
 
-
-
-
-
-            # screenshot
-            for i in range(0, 5):
-                # <input type="file" name="image" data-taptap-ajax="upload" data-target="#screenshots" data-url="https://www.taptap.com/ajax/image">
-                # add-screenshot-li
-                # self.driver.switch_to.window(self.driver.window_handles[0])
-                webcmd.AddCmd(CmdType.CLICK, "//input[@type='file' and @data-target='#screenshots']", "", 3)
-                # webcmd.AddCmd(CmdType.CLICK, "//li[@class='add-screenshot-li]", "", 1)
-                webcmd.Run(True)
-                pic = common.GetOutPutScreenshotPathWin32(self.rootDirProjectOutPut, source.TAPTAP, isHD) + "\\"+applans[lan]+"\\1080p\\"+str(i+1)+".jpg"
-                
-                flag = os.path.exists(pic)
-                if flag:
-                    print(pic)
-                    self.OpenFileBrowser(pic, True)
-                    time.sleep(5)
-
+            self.UploadScreenShot(webcmd,isHD,self.lanKeys [lan],applans[lan])
+ 
+            
+            
+            # break
+ 
 
         # 发布状态
         webcmd.AddCmd( CmdType.CLICK, "//input[@type='radio' and @name='flag_android' and @value='4']", "", 1) 
@@ -473,7 +579,7 @@ if __name__ == "__main__":
     if argv1 == "createapp":
         ad.CreateApp(False)
         time.sleep(3)
-        ad.CreateApp(True)
+        # ad.CreateApp(True)
 
     if argv1 == "update":
         if isHD == True:

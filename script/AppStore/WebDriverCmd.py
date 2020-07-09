@@ -11,10 +11,12 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
 from selenium import webdriver 
-
+from selenium.webdriver import ActionChains 
 
 class CmdType(object): 
     CLICK = "click"
+    CLICK_SCRIPT = "click_script"
+    CLICK_Action = "CLICK_Action"
     INPUT = "input" 
     INPUT_CLEAR = "input_clear" 
     ENTER = "enter"
@@ -28,6 +30,7 @@ class CmdInfo(object):
     value:None
     delay:None
     isWaiting:None
+    item:None
 
 
 
@@ -47,8 +50,8 @@ class WebDriverCmd():
         info.value = value
         info.delay = delay
         info.isWaiting = False
+        return self.AddCmdInfo(info)
 
-        self.listCmd.append(info)
     def AddCmd2(self,type,cmd):
         info = CmdInfo()
         info.type = type
@@ -57,10 +60,17 @@ class WebDriverCmd():
         info.delay = 1
         info.isWaiting = False
 
-        self.listCmd.append(info)
+        return self.AddCmdInfo(info)
 
     def AddCmdInfo(self,info): 
-        self.listCmd.append(info)    
+        self.listCmd.append(info) 
+        item = None
+        if self.IsElementExist(info.cmd):
+            item = self.driver.find_element(By.XPATH, info.cmd)
+            
+        info.item = item
+
+        return item
     
     def Clear(self):
         self.listCmd.clear()
@@ -93,10 +103,20 @@ class WebDriverCmd():
                             break
 
             else:
-                item = self.driver.find_element(By.XPATH, info.cmd)
-            # item.click()
+                item = info.item
+                # item = self.driver.find_element(By.XPATH, info.cmd) 
             if info.type == CmdType.CLICK:
-                self.driver.execute_script("arguments[0].click();", item)
+                # self.driver.execute_script("arguments[0].click();", item)
+                item.click()
+            if info.type == CmdType.CLICK_SCRIPT:
+                # 有些item.click() 会报InvalidArgumentException: Message: invalid argument
+                self.driver.execute_script("arguments[0].click();", item) 
+                
+            if info.type == CmdType.CLICK_Action:
+                # 有些item.click() 无响应 用这个鼠标模拟点击 
+                action= ActionChains(self.driver)
+                action.click(item).perform()
+
             if info.type == CmdType.INPUT:
                 item.clear()
                 item.send_keys(info.value)
