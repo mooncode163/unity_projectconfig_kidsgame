@@ -458,7 +458,12 @@ def GetAppName(os,isHd,lan):
     data = loadJson(isHd)  
     name = data["appname"][os][lan]
     return name     
-        
+
+def GetAppPrivacyUrl(isHd): 
+    # loadJson
+    data = loadJson(isHd)  
+    name = data["privacy_url"]
+    return name       
         
 def GetAppId(isHd,channel): 
     # loadJson

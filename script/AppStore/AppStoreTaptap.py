@@ -130,18 +130,21 @@ class AppStoreTaptap(AppStoreBase):
         time.sleep(2)
 
     def UploadTitle(self, webcmd,isHD,lan,applan):
+        # 名称
         key = "//input[@type='text' and @name='translations[" + lan+"][title]']"
         if lan==self.LAN_KEY_default:
             key = "//input[@type='text' and @name='title']"
-
-
         print(key)
-        title = self.GetAppName(isHD, applan)
-        webcmd.AddCmd(CmdType.INPUT, key, title, 1)
-            # detail "//textarea[@name='translations[zh_CN][description]']"
+        title = self.GetAppName(isHD, applan) 
+        pyperclip.copy(title)
+        # webcmd.AddCmd(CmdType.INPUT, key, title, 1)
+        pyperclip.paste()
+        webcmd.AddCmd2(CmdType.CLICK, key)
+        webcmd.AddCmd2(CmdType.CTR_V, key) 
+        webcmd.Run(True)
 
-                   
-       
+
+        # 介绍
         key = "//textarea[@name='translations[" +  lan+"][description]']"
         if lan==self.LAN_KEY_default:
             key = "//textarea[@name='description']"
@@ -273,21 +276,31 @@ class AppStoreTaptap(AppStoreBase):
 
     def CreateApp(self, isHD):
         url = "https://www.taptap.com/developer/app-create/14628"
+        self.driver.get(url)
+        time.sleep(1)
+        self.UpLoadApk(isHD)
+
+        # url = "https://www.taptap.com/developer/fill-form/14628"
         # self.driver.get(url)
         # time.sleep(1)
-        # self.UpLoadApk(isHD)
+
         self.FillAppInfo(isHD)
 
     def FillAppInfo(self, isHD): 
-        url = "https://www.taptap.com/developer/fill-form/14628"
-        self.driver.get(url)
-        time.sleep(1)
-
-
+      
         webcmd = WebDriverCmd(self.driver)
         
+        
+        # default zh_CN en_US
+        # self.lanKeys =(self.LAN_KEY_default,self.LAN_KEY_CN, self.LAN_KEY_EN)
+        # applans = (source.LANGUAGE_CN,source.LANGUAGE_CN, source.LANGUAGE_EN)
 
-
+        # default zh_CN
+        self.lanKeys =(self.LAN_KEY_default,self.LAN_KEY_CN)
+        applans = (source.LANGUAGE_EN,source.LANGUAGE_CN)
+        # addlans = ("chs","en")
+        # addlans = ("default","chs")
+        addlans = ["chs"]
         #
         webcmd.AddCmd(CmdType.CLICK, "//select[@id='developer_type']", "", 1)
         webcmd.Run(True)
@@ -313,10 +326,14 @@ class AppStoreTaptap(AppStoreBase):
         webcmd.AddCmd(CmdType.CLICK, "//input[@id='area_available_cn']", "", 1)
         webcmd.AddCmd(CmdType.CLICK, "//input[@id='area_available_tw']", "", 1)
 
-        # 管理多语言
+        # 添加多语言
         webcmd.AddCmd(CmdType.CLICK, "//a[@id='manage-trans-btn']", "", 1)
-        webcmd.AddCmd(CmdType.CLICK, "//input[@id='trans-select-chs']", "", 1)
-        webcmd.AddCmd(CmdType.CLICK, "//input[@id='trans-select-en']", "", 1)
+        # trans-select-chs
+        for lan in range(0, len(addlans)):
+            key = "//input[@id='trans-select-"+addlans[lan]+"']"
+            print(key)
+            webcmd.AddCmd2(CmdType.CLICK, key)
+  
         webcmd.AddCmd(CmdType.CLICK, "//button[@id='manage-trans-submit']", "", 1)
 
         webcmd.Run(True)
@@ -337,13 +354,6 @@ class AppStoreTaptap(AppStoreBase):
  
 
 
-        # default zh_CN en_US
-        # self.lanKeys =(self.LAN_KEY_default,self.LAN_KEY_CN, self.LAN_KEY_EN)
-        # applans = (source.LANGUAGE_CN,source.LANGUAGE_CN, source.LANGUAGE_EN)
-
-        # default zh_CN
-        self.lanKeys =(self.LAN_KEY_default,self.LAN_KEY_CN)
-        applans = (source.LANGUAGE_EN,source.LANGUAGE_CN)
 
 
         for lan in range(0, len(self.lanKeys)): 

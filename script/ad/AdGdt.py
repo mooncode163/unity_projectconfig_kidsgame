@@ -18,6 +18,11 @@ o_path = os.getcwd()  # 返回当前工作目录
 sys.path.append(o_path)  # 添加自己指定的搜索路径
 
 
+from AppStore.WebDriverCmd import CmdType
+from AppStore.WebDriverCmd import WebDriverCmd 
+from AppStore.WebDriverCmd import CmdInfo 
+
+
 # 要想调用键盘按键操作需要引入keys包
 
 # 导入chrome选项
@@ -58,8 +63,22 @@ class AdGdt():
         # self.driver.find_element_by_id('switcher_plogin').click()
         # time.sleep(1)
 
-    def Login(self):
-        # 3452644866
+    def Login(self, user, password):
+        self.urlold = self.driver.current_url
+        print("Login urlold=", self.urlold)
+        self.LoginQQ(user, password)
+
+        # 等待登录成功
+        while True:
+            time.sleep(1)
+            self.urlnew = self.driver.current_url
+            print("Login urlnew=", self.urlnew)
+            if self.urlnew != self.urlold:
+                print("Login Finish =", self.urlnew)
+                break
+
+    def LoginQQ(self,user,password):
+        # 3452644866 
         print("waiting for login")
         time.sleep(2)
         # return
@@ -72,20 +91,22 @@ class AdGdt():
 
         item = self.driver.find_element(
             By.XPATH, "//input[@id='u']")
-        item.send_keys("3452644866")
+        item.send_keys(user)
 
         item = self.driver.find_element(By.XPATH, "//input[@id='p']")
-        item.send_keys("qq31415926")
+        item.send_keys(password)
 
         item = self.driver.find_element(
             By.XPATH, "//input[@id='login_button']")
         item.click()
-        time.sleep(3)
+        time.sleep(5)
 
         # cookie = self.driver.get_cookies()
         # print(cookie)
         # [{'domain': '.id1.cloud.huawei.com', 'expiry': 1908869785, 'httpOnly': False, 'name': 'sid', 'path': '/', 'secure': True, 'value': '2049382e3828ef4470bef8b426c4bb3370e7d9e1147f53a18839e47dad7caf10a233e61ee15337b4373e'}, {'domain': '.id1.cloud.huawei.com', 'expiry': 1908869785, 'httpOnly': False, 'name': 'hwid_cas_sid', 'path': '/', 'secure': True, 'value': '2049382e3828ef4470bef8b426c4bb3370e7d9e1147f53a18839e47dad7caf10a233e61ee15337b4373e'}, {'domain': 'id1.cloud.huawei.com', 'expiry': 1624872984, 'httpOnly': False, 'name': 'HW_idts_id1_cloud_huawei_com_id1_cloud_huawei_com', 'path': '/', 'secure': False, 'value': '1593336984125'}, {'domain': 'id1.cloud.huawei.com', 'expiry': 1624872984, 'httpOnly': False, 'name': 'HW_id_id1_cloud_huawei_com_id1_cloud_huawei_com', 'path': '/', 'secure': False, 'value': 'cf787be41ac24d65887dcd20c826ac97'}, {'domain': 'id1.cloud.huawei.com', 'expiry': 1624872984, 'httpOnly': False, 'name': 'HW_idvc_id1_cloud_huawei_com_id1_cloud_huawei_com', 'path': '/', 'secure': False, 'value': '1'}, {'domain': 'id1.cloud.huawei.com', 'expiry': 1593338788, 'httpOnly': False, 'name': 'HW_idn_id1_cloud_huawei_com_id1_cloud_huawei_com', 'path': '/', 'secure': False, 'value': 'ec569450f0ac4cd78fc72965d91ec7e8'}, {'domain': 'id1.cloud.huawei.com', 'expiry': 1608888984, 'httpOnly': False, 'name': 'HW_refts_id1_cloud_huawei_com_id1_cloud_huawei_com', 'path': '/', 'secure': False, 'value': '1593336984124'}, {'domain': '.id1.cloud.huawei.com', 'httpOnly': True, 'name': 'CAS_THEME_NAME', 'path': '/', 'secure': True, 'value': 'red'}, {'domain': 'id1.cloud.huawei.com', 'httpOnly': False, 'name': 'cookieBannerOnOff', 'path': '/', 'secure': False, 'value': 'true'}, {'domain': '.id1.cloud.huawei.com', 'httpOnly': True, 'name': 'VERSION_NO', 'path': '/', 'secure': True, 'value': 'UP_CAS_4.0.4.100'}, {'domain': 'id1.cloud.huawei.com', 'httpOnly': True, 'name': 'JSESSIONID', 'path': '/CAS', 'secure': True, 'value': '144E8B2ED3F5D9C8576742C1DDF4CF3D0DCF6949E13D6943'}]
+ 
 
+ 
     def Init(self):
         # 创建chrome浏览器驱动，无头模式（超爽）
         chrome_options = Options()
@@ -349,14 +370,18 @@ class AdGdt():
         # https://adnet.qq.com/placement/60503466885129/add
         self.driver.get(self.urlCreatePlaceId)
         time.sleep(1)
+        webcmd = WebDriverCmd(self.driver)
 
         # time.sleep(5)
 
         # div class="card-inner"
-        list = self.driver.find_elements(
-            By.XPATH, "//div[@class='card-inner']")
-        list[4].click()
-        time.sleep(2)
+        # list = self.driver.find_elements(
+        #     By.XPATH, "//div[@class='card-inner']")
+        # list[4].click()
+        # time.sleep(2)
+        key = "//div[@class='card-inner']"
+        webcmd.AddCmdList(CmdType.CLICK_Action, key,4,2)
+        webcmd.Run(True) 
 
         # <ul class="union-card-list card-list-banner list-contain-1"
         ul = self.driver.find_element(
@@ -392,6 +417,7 @@ class AdGdt():
         time.sleep(1)
 
     def CreateAdInsert(self, isHD):
+        webcmd = WebDriverCmd(self.driver)
         # self.driver.get("https://adnet.qq.com/placement/add")
         # https://adnet.qq.com/placement/60503466885129/add
         self.driver.get(self.urlCreatePlaceId)
@@ -400,10 +426,10 @@ class AdGdt():
         # time.sleep(5)
 
         # div class="card-inner"
-        list = self.driver.find_elements(
-            By.XPATH, "//div[@class='card-inner']")
-        list[5].click()
-        time.sleep(2)
+        key = "//div[@class='card-inner']"
+        webcmd.AddCmdList(CmdType.CLICK_Action, key,5,2)
+        webcmd.Run(True) 
+
 
         # <ul class="union-card-list card-list-banner list-contain-1"
         ul = self.driver.find_element(
@@ -439,6 +465,7 @@ class AdGdt():
         time.sleep(1)
 
     def CreateAdVideo(self, isHD):
+        webcmd = WebDriverCmd(self.driver)
         # self.driver.get("https://adnet.qq.com/placement/add")
         # https://adnet.qq.com/placement/60503466885129/add
         self.driver.get(self.urlCreatePlaceId)
@@ -446,12 +473,10 @@ class AdGdt():
 
         # time.sleep(5)
 
-        # div class="card-inner"
-        list = self.driver.find_elements(
-            By.XPATH, "//div[@class='card-inner']")
-        # list[2].click()
-        self.driver.execute_script("arguments[0].click();", list[2])
-        time.sleep(2)
+        # div class="card-inner" 
+        key = "//div[@class='card-inner']"
+        webcmd.AddCmdList(CmdType.CLICK_Action, key,2,2)
+        webcmd.Run(True) 
 
         # item = self.driver.find_element(By.XPATH, "//input[@class='spaui-input has-normal spaui-component']")
         list = self.driver.find_elements(By.XPATH, "//input[@type='text']")
@@ -504,7 +529,7 @@ if __name__ == "__main__":
     ad.SetCmdPath(cmdPath)
     ad.Init()
     ad.GoHome()
-    ad.Login()
+    ad.Login("3452644866","qq31415926")
 
     argv1 = sys.argv[2]
     ad.osApp = sys.argv[3]

@@ -17,6 +17,8 @@ class CmdType(object):
     CLICK = "click"
     CLICK_SCRIPT = "click_script"
     CLICK_Action = "CLICK_Action"
+    CLICK_List_ALL = "CLICK_List_ALL"
+    CLICK_List_Item = "CLICK_List_Item"
     INPUT = "input" 
     INPUT_CLEAR = "input_clear" 
     ENTER = "enter"
@@ -26,11 +28,14 @@ class CmdType(object):
 
 class CmdInfo(object):  
     type:None
+    type2:None
     cmd:None
     value:None
     delay:None
     isWaiting:None
     item:None
+    index=0
+
 
 
 
@@ -43,11 +48,30 @@ class WebDriverCmd():
         self.listCmd= []
         self.driver = webdv
 
-    def AddCmd(self,type,cmd,value,delay):
+    def AddCmd(self,type,cmd,value="",delay=1):
         info = CmdInfo()
         info.type = type
         info.cmd = cmd
         info.value = value
+        info.delay = delay
+        info.isWaiting = False
+        return self.AddCmdInfo(info)
+
+    def AddCmdWait(self,type,cmd,value="",delay=1):
+        info = CmdInfo()
+        info.type = type
+        info.cmd = cmd
+        info.value = value
+        info.delay = delay
+        info.isWaiting = True
+        return self.AddCmdInfo(info)
+
+    def AddCmdList(self,type2,cmd,index=0,delay=1):
+        info = CmdInfo()
+        info.type = CmdType.CLICK_List_Item
+        info.type2 = type2
+        info.cmd = cmd
+        info.index = index
         info.delay = delay
         info.isWaiting = False
         return self.AddCmdInfo(info)
@@ -104,7 +128,11 @@ class WebDriverCmd():
 
             else:
                 item = info.item
-                # item = self.driver.find_element(By.XPATH, info.cmd) 
+                if item == None:
+                    item = self.driver.find_element(By.XPATH, info.cmd) 
+                    info.item = item
+
+            
             if info.type == CmdType.CLICK:
                 # self.driver.execute_script("arguments[0].click();", item)
                 item.click()
@@ -132,6 +160,21 @@ class WebDriverCmd():
             if info.type == CmdType.CTR_V:
                 item.send_keys(Keys.CONTROL,"v")
                  
+            if info.type == CmdType.CLICK_List_ALL:
+                list =  self.driver.find_elements(By.XPATH, info.cmd)
+                for item in list:
+                    item.click()
+
+            if info.type == CmdType.CLICK_List_Item:
+                list =  self.driver.find_elements(By.XPATH, info.cmd)
+                item = list[info.index]
+                if info.type2 == CmdType.CLICK:
+                    item.click()
+                if info.type2 == CmdType.CLICK_SCRIPT:
+                    self.driver.execute_script("arguments[0].click();", item)
+                if info.type2 == CmdType.CLICK_Action:
+                    action= ActionChains(self.driver)
+                    action.click(item).perform()
 
             time.sleep(info.delay)
 

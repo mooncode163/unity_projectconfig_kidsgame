@@ -39,7 +39,7 @@ import pyperclip
 
 class AppStoreHuawei(AppStoreBase):  
 
-  
+    defaultLanguage = "美式英语"
 
     def GoHome(self,isHD):  
         appid = AppInfo.GetAppId(isHD, source.HUAWEI)
@@ -84,14 +84,27 @@ class AppStoreHuawei(AppStoreBase):
     
 # 3452644866 qq31415926
     def CreateApp(self, isHD):
-        self.FillAppInfo(isHD)
-        return
+        appid = AppInfo.GetAppId(isHD, source.HUAWEI)
+
+        if appid!="0":
+            self.FillAppInfo(isHD)
+            # PreSubmitApp FillAppInfo
+            return
 
         webcmd = WebDriverCmd(self.driver)
         old_window = self.driver.current_window_handle
         url = "https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/myApp"
         self.driver.get(url)
         time.sleep(1) 
+
+        # 等待网页加载成功
+        key = "//iframe[@id='mainIframeView']"
+        while True: 
+            time.sleep(1)
+            print("web is loading...")
+            if self.IsElementExist(key)==True:
+                print("web loading finish")
+                break
 
         # 跳转到新的页面
         print("self.driver.current_url=", self.driver.current_url)
@@ -105,15 +118,29 @@ class AppStoreHuawei(AppStoreBase):
         self.driver.switch_to.frame("mainIframeView")
         
         
-        webcmd.AddCmd(CmdType.CLICK, "//a[@id='MyAppListNewApp']", "", 1)
+        webcmd.AddCmd(CmdType.CLICK, "//a[@id='MyAppListNewApp']")
         webcmd.Run(True) 
         
         title = self.GetAppName(isHD, source.LANGUAGE_CN)
         webcmd.AddCmd(CmdType.INPUT, "//input[@ng-model='Model.productAndApp.appName']", title, 1)  
         webcmd.Run(True)
- 
+  
+        key = "//span[contains(text(),'请选择应用分类')]"
+        webcmd.AddCmd(CmdType.CLICK, key)
+        # <div class="ucd-droplist-option ng-binding ng-scope" ng-bind="parentType.value">应用</div>
+        key = "//div[@class='ucd-droplist-option ng-binding ng-scope' and contains(text(),'应用')]"
+        webcmd.AddCmd(CmdType.CLICK, key) 
+        webcmd.Run(True)
+
+        key = "//span[contains(text(),'请选择语言')]"
+        webcmd.AddCmd(CmdType.CLICK, key)
+        key = "//div[@class='ucd-droplist-option ng-binding ng-scope' and contains(text(),'"+self.defaultLanguage+"')]"
+        webcmd.AddCmd(CmdType.CLICK, key) 
+        webcmd.Run(True) 
+
         old_window = self.driver.current_window_handle
         # waiting 确定
+        print("waiting 确定 手动点击 ")
         while True:
             time.sleep(1)
             if self.IsElementExist("//a[@id='PubProDetermine']")==False:
@@ -134,22 +161,31 @@ class AppStoreHuawei(AppStoreBase):
         print(appid)
         AppInfo.SetAppId(isHD, source.ANDROID, source.HUAWEI, appid)
         
+
+        self.FillAppInfo(isHD)
+
     
     def AddLanguage(self,webcmd, title):
-        webcmd.AddCmd2(CmdType.CLICK, "//a[@id='AppInfoManageLanguageButton']") 
-        webcmd.AddCmd(CmdType.INPUT, "//input[@ng-model='searchTxt']",title,1)
+        item = webcmd.AddCmdWait(CmdType.CLICK, "//a[@id='AppInfoManageLanguageButton']") 
+        # self.SetItemVisible(item)
+        webcmd.Run(True)
+
+        webcmd.AddCmd(CmdType.INPUT, "//input[@ng-model='searchTxt']",title,2)
+        webcmd.Run(True)
 
         key = "//span[@title='"+title+"']"
         print(key)
         if self.IsElementExist(key):
-            webcmd.AddCmd2(CmdType.CLICK, key)
+            # webcmd.AddCmd2(CmdType.CLICK, key)
             webcmd.AddCmd2(CmdType.CLICK, "//label[@class='checkbox lang-item ng-scope']") 
         else:
             print(key,"is not exit")
 
-        webcmd.AddCmd2(CmdType.CLICK, "//label[@class='checkbox lang-item ng-scope']") 
+        # webcmd.AddCmd2(CmdType.CLICK, "//label[@class='checkbox lang-item ng-scope']") 
+        webcmd.Run(True) 
 
-        webcmd.AddCmd2(CmdType.CLICK, "//a[@class='btn btn-primary btn-small ng-binding']")
+        item = webcmd.AddCmd2(CmdType.CLICK, "//a[@class='btn btn-primary btn-small ng-binding']")
+        # self.SetItemVisible(item) 
         webcmd.Run(True) 
         time.sleep(2) 
 
@@ -157,10 +193,12 @@ class AppStoreHuawei(AppStoreBase):
   
         # 选择语言 
         # webcmd.AddCmd(CmdType.CLICK, "//input[@type='search' and @aria-owns='ui-select-choices-3']", "", 1)
-        webcmd.AddCmd(CmdType.CLICK, "//span[@class='ui-select-match-text pull-left']", "", 2)
-        
+        item = webcmd.AddCmd(CmdType.CLICK, "//span[@class='ui-select-match-text pull-left']", "", 2) 
+        self.SetItemVisible(item)
+        webcmd.Run(True)
+
         # 简体中文-默认
-        if lanName =="简体中文":
+        if lanName ==self.defaultLanguage:
             lanName = lanName+"-默认"
 
         key = "//div[@class='ucd-droplist-option ng-binding' and text()='"+lanName+"']" 
@@ -171,7 +209,12 @@ class AppStoreHuawei(AppStoreBase):
         # 模糊匹配
         # key = "//div[@class='ucd-droplist-option ng-binding' and contains(text(),'"+lanName+"')]"  
 
-        webcmd.AddCmd(CmdType.CLICK, key, "", 1) 
+        item = webcmd.AddCmd(CmdType.CLICK, key, "", 1) 
+        if item==None:
+            print(key)
+        else:
+            self.SetItemVisible(item)
+
         webcmd.Run(True)
 
 
@@ -191,6 +234,7 @@ class AppStoreHuawei(AppStoreBase):
         key = "//textarea[@id='AppInfoAppIntroduceInputBox']"
         # webcmd.AddCmd(CmdType.CLICK, key,title,1) 
         pyperclip.paste()
+        webcmd.AddCmd2(CmdType.INPUT_CLEAR, key)
         webcmd.AddCmd2(CmdType.CTR_V, key) 
         # webcmd.AddCmd(CmdType.INPUT, "//textarea[@id='AppInfoAppIntroduceInputBox']",title,2) 
         webcmd.Run(True)
@@ -208,6 +252,7 @@ class AppStoreHuawei(AppStoreBase):
         pyperclip.paste()
         # webcmd.AddCmd2(CmdType.INPUT_CLEAR, key)
         webcmd.AddCmd2(CmdType.CLICK, key)
+        webcmd.AddCmd2(CmdType.INPUT_CLEAR, key)
         # 必须enter选中
         webcmd.AddCmd2(CmdType.ENTER, key)
         webcmd.AddCmd2(CmdType.CTR_V, key)
@@ -233,8 +278,19 @@ class AppStoreHuawei(AppStoreBase):
              
    
 #    <span class="text ng-binding">横向截图</span>
+        idx_start = 6
+        strkey = "竖向截图"
+        if isHD:
+            idx_start = 1
+            strkey = "横向截图"
+
+        key = "//span[@class='text ng-binding' and text()='"+strkey+"']" 
+        item = webcmd.AddCmd(CmdType.CLICK, key)
+        self.SetItemVisible(item)
+        webcmd.Run(True)
+
         for i in range(0,5):
-            key = "//img[@id='AppIntroScreenshot"+str(i+1)+"']" 
+            key = "//img[@id='AppIntroScreenshot"+str(i+idx_start)+"']" 
             item = self.driver.find_element(By.XPATH, key)
 
             
@@ -256,6 +312,10 @@ class AppStoreHuawei(AppStoreBase):
             time.sleep(2)
 
 
+        
+        
+        
+
     def FillAppInfo(self, isHD):
         webcmd = WebDriverCmd(self.driver) 
         old_window = self.driver.current_window_handle
@@ -274,8 +334,20 @@ class AppStoreHuawei(AppStoreBase):
         time.sleep(1)
         print("self.driver.current_url 2=", self.driver.current_url)
         
-        self.driver.switch_to.frame("mainIframeView")
 
+        # 等待网页加载成功
+        key = "//iframe[@id='mainIframeView']"
+        while True: 
+            time.sleep(1)
+            print("web is loading...")
+            if self.IsElementExist(key)==True:
+                print("web loading finish")
+                break
+
+        self.driver.switch_to.frame("mainIframeView")
+        time.sleep(2)
+        
+        # 填写语言资料
         lanKeys =("简体中文", "英式英语","美式英语")
         applans = (source.LANGUAGE_CN,source.LANGUAGE_EN, source.LANGUAGE_EN)
 
@@ -284,23 +356,248 @@ class AppStoreHuawei(AppStoreBase):
             self.AddLanguage(webcmd,lanKeys[lan])
  
 
+        # 填写语言
         for lan in range(0, len(lanKeys)):
             self.FillLanguage(webcmd,isHD,lanKeys[lan],applans[lan]) 
 
 
-        return  
-        rootdir = "F:\\sourcecode\\unity\\product\\kidsgame\\ProjectOutPut"
-        apk = common.GetOutPutApkPathWin32(rootdir,source.HUAWEI,isHD)
-        print(apk)
-        # F:\\sourcecode\\unity\\product\\kidsgame\\ProjectOutPut\\xiehanzi\\hanziyuan\\screenshot\\shu\\cn\\480p\\1.jpg
-        self.OpenFileBrowser(apk,True)
-
+        #滚动到浏览器顶部
+        js_top = "var q=document.documentElement.scrollTop=0"
+        #滚动到浏览器底部
+        js_bottom = "var q=document.documentElement.scrollTop=document.documentElement.scrollHeight" 
+        self.driver.execute_script(js_bottom)
         time.sleep(2)
+
+
+
+        # 应用分类
+        isSort = True
+        # 请选择二级分类  
+        key = "//span[contains(text(),'请选择二级分类')]"
+        isSort = self.IsElementExist(key) 
+        if isSort==False:
+            print("not find key="+key)
+            isSort = False
+            # return
+
+        if isSort:
+            item = webcmd.AddCmd(CmdType.CLICK, key)
+            self.SetItemVisible(item)
+            webcmd.Run(True)
+
+            # <div class="ucd-droplist-option ng-binding">教育</div>
+            key = "//div[@class='ucd-droplist-option ng-binding' and contains(text(),'教育')]"
+            item = webcmd.AddCmd(CmdType.CLICK, key)
+            self.SetItemVisible(item)
+            webcmd.Run(True)
+
+                                                
+            key = "//span[contains(text(),'请选择三级分类')]"
+            webcmd.AddCmd(CmdType.CLICK, key)
+            webcmd.Run(True)
+
+            # <div class="ucd-droplist-option ng-binding">学习</div>
+            key = "//div[@class='ucd-droplist-option ng-binding' and contains(text(),'学习')]"
+            item = webcmd.AddCmd(CmdType.CLICK, key)
+            self.SetItemVisible(item)
+            webcmd.Run(True)
+
+
+        key = "//input[@id='AppInfoCustomerEmailInputBox']"
+        item = webcmd.AddCmd(CmdType.INPUT, key,"chyfemail163@163.com") 
+        self.SetItemVisible(item)
+        webcmd.Run(True)
+
+
+        # 保存
+        key = "//a[@id='AppInfoSaveButtonCn']"
+        webcmd.AddCmd(CmdType.CLICK, key)
+        webcmd.Run(True)
+
+        time.sleep(3) 
+        
+        # 确定
+        key = "//a[@id='CommonConfirmButtonOk']" 
+        if self.IsElementExist(key):
+            webcmd.AddCmd(CmdType.CLICK, key)
+            webcmd.Run(True)
+            self.PreSubmitApp(isHD)
+        else:
+            self.PreSubmitApp(isHD)
+        
+
+        
+    
+
+    # 准备提交app
+    def PreSubmitApp(self, isHD):
+
+        appid = AppInfo.GetAppId(isHD, source.HUAWEI) 
+        url = "https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/myApp/"+appid
+        print(url)
+        self.driver.get(url) 
+        time.sleep(3) 
+        old_window = self.driver.current_window_handle
+
+        webcmd = WebDriverCmd(self.driver) 
+           # 准备提交
+        key = "//span[@class='yellow-circle']" 
+        webcmd.AddCmdWait(CmdType.CLICK, key)
+        webcmd.Run(True)
+ 
+
+ 
+       # 跳转到新的页面
+        print("self.driver.current_url=", self.driver.current_url)
+        # self.driver.switch_to.window(self.driver.window_handles[0])
+        for win in self.driver.window_handles:
+            if win != old_window:
+                self.driver.switch_to.window(win)
+        time.sleep(1)
+        print("self.driver.current_url 2=", self.driver.current_url)
+
+
+        # 等待网页加载成功
+        key = "//iframe[@id='mainIframeView']"
+        while True: 
+            time.sleep(1)
+            print("web is loading...")
+            if self.IsElementExist(key)==True:
+                print("web loading finish")
+                break
+
+        self.driver.switch_to.frame("mainIframeView")
+        time.sleep(3)
+
+        # # 管理国家
+        # key = "//a[@id='VerInfoManageCountryButton']"
+        # webcmd.AddCmd(CmdType.CLICK, key)
+        # webcmd.Run(True)
+
+        # # 全球
+        # key = "//span[@id='CountryCheckMarkGlobal']"
+        # webcmd.AddCmd(CmdType.CLICK, key)
+        # webcmd.Run(True)
+
+        # self.UpdateApk(isHD)
+
+        # 分级
+        # key = "//a[@class='agc-button-primary agc-button-normal version-info-rate ml-0 ng-binding' and contains(text(),'分级')]"
+        key = "//a[contains(text(),'分级')]"
+        webcmd.AddCmd(CmdType.CLICK, key)
+        webcmd.Run(True)       
+
+        # 分级勾选
+        key = "//div[@class='rate-dialog-content']"
+        # div =  self.driver.find_element(By.XPATH, key)
+        key = "//label[@class='radio rate-dialog-huaweiRating']"
+        webcmd.AddCmd(CmdType.CLICK, key) 
+
+        
+
+        # 分级确认
+        key = "//a[@id='submit']"
+        webcmd.AddCmd(CmdType.CLICK, key)
+        webcmd.Run(True)
+        
+
+        # copyright 
+        key = "//img[@id='AppInfoUploadCertificateURLs1']"
+        webcmd.AddCmd(CmdType.CLICK, key)
+        webcmd.Run(True) 
+        apk = common.GetOutPutCopyRightPathWin32(self.rootDirProjectOutPut,isHD)+"\\huawei.png"
+        print(apk) 
+        self.OpenFileBrowser(apk,True)
+        time.sleep(2)
+
+
+        # 隐私政策网址
+        key = "//input[@id='VerInfoPrivacyPolicyInputBox']"
+        webcmd.AddCmd(CmdType.INPUT, key,AppInfo.GetAppPrivacyUrl(isHD))
+        webcmd.Run(True)
+
+        # <span class="text ng-binding">审核通过立即上架</span>
+        key = "//span[@class='text ng-binding' and contains(text(),'审核通过立即上架')]"
+        webcmd.AddCmd(CmdType.CLICK, key) 
+        webcmd.Run(True)
+
+        # 保存
+        key = "//a[@id='VerInfoSaveButton']"
+        webcmd.AddCmd(CmdType.CLICK, key)
+        webcmd.Run(True)
+        time.sleep(2)
+
+        # 确定 保存
+        # <a class="btn btn-primary btn-small ng-binding" data-dismiss="dialog" ng-click="callback()">确定</a>
+        key = "//a[@class='btn btn-primary btn-small ng-binding' and contains(text(),'确定')]"
+        if self.IsElementExist(key):
+            webcmd.AddCmd(CmdType.CLICK, key)
+            webcmd.Run(True)
+            self.UpdateApk(isHD)
+
+        
+        
+
+    def SearchApp(self, ishd):
+        name = self.GetAppName(isHD, source.LANGUAGE_CN)
+        item = self.driver.find_element(
+            By.XPATH, "//input[@ng-model='Model.product.query.appName']")
+        item.send_keys(name)
+        time.sleep(1)
+  
+        # search
+        self.driver.find_element_by_id('search_medium_id').click()
+        time.sleep(2)
+    
+    def UpdateApk(self, isHD):
+        webcmd = WebDriverCmd(self.driver)
+        
+        #滚动到浏览器顶部
+        js_top = "var q=document.documentElement.scrollTop=0"
+        #滚动到浏览器底部
+        js_bottom = "var q=document.documentElement.scrollTop=document.documentElement.scrollHeight" 
+        self.driver.execute_script(js_top)
+        time.sleep(2)
+
+        # self.driver.switch_to.frame("mainIframeView")
+        time.sleep(1)
+
+
+        # 软件包管理 
+        # time.sleep(1)
+        info = CmdInfo()
+        info.type = CmdType.CLICK_SCRIPT
+        info.cmd = "//a[@id='VerInfoDownloadLink']"
+        info.value = ""
+        info.delay = 1
+        info.isWaiting = True
+        item = webcmd.AddCmdInfo(info)
+        # self.SetItemVisible(item)
+        webcmd.Run(True)
+         
+        webcmd.AddCmd(CmdType.CLICK_SCRIPT,"//a[@id='ManageAppUploadPackageButton']")
+        webcmd.Run(True)
+
+        # <a class="agc-button-primary agc-button-normal ng-binding" ng-click="uploadPkg()" ng-show="!notAllowedUploadPkg" target="_blank">上传</a>
+        # 第一次上传
+        key = "//a[@ng-show='!notAllowedUploadPkg' and contains(text(),'上传')]"
+        if self.IsElementExist(key):
+            webcmd.AddCmd(CmdType.CLICK_SCRIPT, key)
+            webcmd.Run(True)
+
+        webcmd.AddCmd(CmdType.CLICK_Action,"//div[@id='uploaderSelectContainer']")
+        webcmd.Run(True)
+
+        apk = common.GetOutPutApkPathWin32(self.rootDirProjectOutPut,source.HUAWEI,isHD)
+        print(apk) 
+        self.OpenFileBrowser(apk,True)
+        time.sleep(1)
  
      
         # <div class="uploader-progress-bar" ng-style="{width: uploadProgress}"></div>
 
         # # <div class="progress"><div class="progress-bar" style="width: 82%;" aria-valuenow="82"></div></div>
+        # 等待上传完成
         isUploading = False
         while True:
             time.sleep(1)
@@ -327,6 +624,86 @@ class AppStoreHuawei(AppStoreBase):
         
         time.sleep(1)
 
+        # 不申请 
+        webcmd.AddCmd(CmdType.CLICK,"//span[@id='VerInfoNotApplyButton']")
+        webcmd.Run(True)
+
+
+        # 提交审核
+        webcmd.AddCmd(CmdType.CLICK,"//a[@id='VerInfoSubmitButton']")
+        webcmd.Run(True) 
+        time.sleep(3)
+
+        # 确定 
+        webcmd.AddCmd(CmdType.CLICK,"//a[@id='AppSubmitConfirmButtonOk']")
+        webcmd.Run(True) 
+        time.sleep(3)
+
+    def UpdateApp(self, isHD):
+        webcmd = WebDriverCmd(self.driver)
+        # 打开新标签
+        # self.driver.find_element_by_xpath('//body').send_keys(Keys.CONTROL,"t")
+        # js = "window.open('')"
+        # self.driver.execute_script(js)
+        # time.sleep(2)
+
+        appid = AppInfo.GetAppId(isHD, source.HUAWEI)
+        # https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/myApp/101054959 
+        url = "https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/myApp/"+appid
+        self.driver.get(url) 
+        time.sleep(1)
+                # 等待网页加载成功
+        key = "//iframe[@id='mainIframeView']"
+        while True: 
+            time.sleep(1)
+            print("web is loading...")
+            if self.IsElementExist(key)==True:
+                print("web loading finish")
+                break
+
+        self.driver.switch_to.frame("mainIframeView")
+        time.sleep(2)
+ 
+        old_window = self.driver.current_window_handle
+
+        key = "//span[@class='green-circle']"
+       
+        # red-circle
+        if self.IsElementExist(key)==False:
+            # 待修改
+            key = "//span[@class='red-circle']"
+            if self.IsElementExist(key)==False:
+                # 第一次上传apk
+                self.PreSubmitApp(isHD) 
+                return
+ 
+        item = self.driver.find_element(By.XPATH, key)
+        item.click()
+        time.sleep(5)
+ 
+        # 跳转到新的页面
+        print("self.driver.current_url=", self.driver.current_url)
+        # self.driver.switch_to.window(self.driver.window_handles[0])
+        for win in self.driver.window_handles:
+            if win != old_window:
+                self.driver.switch_to.window(win)
+        time.sleep(1)
+        print("self.driver.current_url 2=", self.driver.current_url)
+
+
+        self.driver.switch_to.frame("mainIframeView")
+
+        #升级按钮
+        key = "//a[@id='VersionUpgradeButton']"
+        if self.IsElementExist(key):
+            item = self.driver.find_element(By.XPATH,key ) 
+            item.click() 
+            time.sleep(2)
+        
+        self.UpdateApk(isHD)
+        
+        time.sleep(1)
+
         # 不申请
         item = self.driver.find_element(By.XPATH, "//span[@id='VerInfoNotApplyButton']")
         item.click()
@@ -342,21 +719,8 @@ class AppStoreHuawei(AppStoreBase):
         item = self.driver.find_element(By.XPATH, "//a[@id='AppSubmitConfirmButtonOk']")
         item.click()
         time.sleep(3)
-
-
-    def SearchApp(self, ishd):
-        name = self.GetAppName(isHD, source.LANGUAGE_CN)
-        item = self.driver.find_element(
-            By.XPATH, "//input[@ng-model='Model.product.query.appName']")
-        item.send_keys(name)
-        time.sleep(1)
-  
-        # search
-        self.driver.find_element_by_id('search_medium_id').click()
-        time.sleep(2)
-  
-
-    def UpdateApp(self, isHD):
+        
+    def UpdateAppOld(self, isHD):
         webcmd = WebDriverCmd(self.driver)
         # 打开新标签
         # self.driver.find_element_by_xpath('//body').send_keys(Keys.CONTROL,"t")
@@ -368,10 +732,39 @@ class AppStoreHuawei(AppStoreBase):
         # https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/myApp/101054959 
         url = "https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/myApp/"+appid
         self.driver.get(url) 
-        time.sleep(3)
-        item = self.driver.find_element(By.XPATH, "//span[@class='green-circle']")
+        time.sleep(1)
+                # 等待网页加载成功
+        key = "//iframe[@id='mainIframeView']"
+        while True: 
+            time.sleep(1)
+            print("web is loading...")
+            if self.IsElementExist(key)==True:
+                print("web loading finish")
+                break
+
+        self.driver.switch_to.frame("mainIframeView")
+        time.sleep(1)
+ 
+        old_window = self.driver.current_window_handle
+
+        key = "//span[@class='green-circle']"
+        if self.IsElementExist(key)==False:
+            # 第一次上传apk
+            self.PreSubmitApp(isHD) 
+            return
+
+        item = self.driver.find_element(By.XPATH, key)
         item.click()
         time.sleep(5)
+ 
+        # 跳转到新的页面
+        print("self.driver.current_url=", self.driver.current_url)
+        # self.driver.switch_to.window(self.driver.window_handles[0])
+        for win in self.driver.window_handles:
+            if win != old_window:
+                self.driver.switch_to.window(win)
+        time.sleep(1)
+        print("self.driver.current_url 2=", self.driver.current_url)
 
 
         self.driver.switch_to.frame("mainIframeView")
@@ -379,10 +772,7 @@ class AppStoreHuawei(AppStoreBase):
         item = self.driver.find_element(By.XPATH, "//a[@id='VersionUpgradeButton']")
         # item = self.driver.find_element(By.XPATH, "//a[@class='btn btn-primary button-normal ml-2 ng-binding ng-scope']")
         
-        item.click()
-        time.sleep(3)
-
-        self.driver.switch_to.frame("mainIframeView")
+        item.click() 
         time.sleep(1)
         # 软件包管理
         # item = self.driver.find_element(By.XPATH, "//a[@id='VerInfoDownloadLink']")
@@ -567,9 +957,9 @@ if __name__ == "__main__":
     argv1 = sys.argv[2]
     # ad.osApp = sys.argv[3]
     if argv1 == "createapp":
-        # ad.CreateApp(False)
+        ad.CreateApp(isHD)
         time.sleep(3)
-        ad.CreateApp(True)
+        # ad.CreateApp(True)
  
     if argv1 == "update":
         if isHD:

@@ -331,6 +331,19 @@ def GetOutPutIconPathWin32(rootdir,channel,isHd):
         
     return dirapk
 
+def GetOutPutCopyRightPathWin32(rootdir,isHd):
+    gameType = getGameType()
+    gameName = getGameName() 
+    # GetProjectOutPut
+    dirapk = rootdir+"\\"+gameType+"\\"+gameName  
+    if isHd:
+        dirapk+="\\copyrighthd" 
+    else:
+        dirapk+="\\copyright"
+        
+    return dirapk
+    
+
 def GetOutPutScreenshotPathWin32(rootdir,channel,isHd):
     gameType = getGameType()
     gameName = getGameName() 
