@@ -485,7 +485,8 @@ class AppStoreHuawei(AppStoreBase):
         # key = "//a[@class='agc-button-primary agc-button-normal version-info-rate ml-0 ng-binding' and contains(text(),'分级')]"
         key = "//a[contains(text(),'分级')]"
         webcmd.AddCmd(CmdType.CLICK, key)
-        webcmd.Run(True)       
+        webcmd.Run(True)     
+        time.sleep(3)  
 
         # 分级勾选
         key = "//div[@class='rate-dialog-content']"
@@ -559,20 +560,24 @@ class AppStoreHuawei(AppStoreBase):
         self.driver.execute_script(js_top)
         time.sleep(2)
 
-        # self.driver.switch_to.frame("mainIframeView")
-        time.sleep(1)
+        
+        # key = "//iframe[@id='mainIframeView']"
+        # if self.IsElementExist(key)==True:
+        #     self.driver.switch_to.frame("mainIframeView")
+        # time.sleep(1)
 
 
         # 软件包管理 
         # time.sleep(1)
-        info = CmdInfo()
-        info.type = CmdType.CLICK_SCRIPT
-        info.cmd = "//a[@id='VerInfoDownloadLink']"
-        info.value = ""
-        info.delay = 1
-        info.isWaiting = True
-        item = webcmd.AddCmdInfo(info)
+        # info = CmdInfo()
+        # info.type = CmdType.CLICK_SCRIPT
+        # info.cmd = "//a[@id='VerInfoDownloadLink']"
+        # info.value = ""
+        # info.delay = 1
+        # info.isWaiting = True
+        # item = webcmd.AddCmdInfo(info)
         # self.SetItemVisible(item)
+        webcmd.AddCmd(CmdType.CLICK_Action,"//a[@id='VerInfoDownloadLink']")
         webcmd.Run(True)
          
         webcmd.AddCmd(CmdType.CLICK_SCRIPT,"//a[@id='ManageAppUploadPackageButton']")
@@ -640,6 +645,9 @@ class AppStoreHuawei(AppStoreBase):
         time.sleep(3)
 
     def UpdateApp(self, isHD):
+        # self.UpdateAppOld(isHD)
+        # return
+
         webcmd = WebDriverCmd(self.driver)
         # 打开新标签
         # self.driver.find_element_by_xpath('//body').send_keys(Keys.CONTROL,"t")
@@ -693,6 +701,7 @@ class AppStoreHuawei(AppStoreBase):
 
         self.driver.switch_to.frame("mainIframeView")
 
+        old_window = self.driver.current_window_handle
         #升级按钮
         key = "//a[@id='VersionUpgradeButton']"
         if self.IsElementExist(key):
@@ -700,6 +709,19 @@ class AppStoreHuawei(AppStoreBase):
             item.click() 
             time.sleep(2)
         
+         
+        # 跳转到新的页面
+        print("self.driver.current_url=", self.driver.current_url)
+        # self.driver.switch_to.window(self.driver.window_handles[0])
+        for win in self.driver.window_handles:
+            if win != old_window:
+                self.driver.switch_to.window(win)
+        time.sleep(1)
+        print("self.driver.current_url 2=", self.driver.current_url)
+
+        self.driver.switch_to.frame("mainIframeView")
+        time.sleep(3)
+
         self.UpdateApk(isHD)
         
         time.sleep(1)
@@ -743,15 +765,15 @@ class AppStoreHuawei(AppStoreBase):
                 break
 
         self.driver.switch_to.frame("mainIframeView")
-        time.sleep(1)
+        time.sleep(3)
  
         old_window = self.driver.current_window_handle
 
         key = "//span[@class='green-circle']"
-        if self.IsElementExist(key)==False:
-            # 第一次上传apk
-            self.PreSubmitApp(isHD) 
-            return
+        # if self.IsElementExist(key)==False:
+        #     # 第一次上传apk
+        #     self.PreSubmitApp(isHD) 
+        #     return
 
         item = self.driver.find_element(By.XPATH, key)
         item.click()
@@ -767,13 +789,19 @@ class AppStoreHuawei(AppStoreBase):
         print("self.driver.current_url 2=", self.driver.current_url)
 
 
+        
         self.driver.switch_to.frame("mainIframeView")
+        time.sleep(1)
 
         item = self.driver.find_element(By.XPATH, "//a[@id='VersionUpgradeButton']")
         # item = self.driver.find_element(By.XPATH, "//a[@class='btn btn-primary button-normal ml-2 ng-binding ng-scope']")
-        
         item.click() 
+        time.sleep(3)
+    
+
+        self.driver.switch_to.frame("mainIframeView")
         time.sleep(1)
+
         # 软件包管理
         # item = self.driver.find_element(By.XPATH, "//a[@id='VerInfoDownloadLink']")
         # #  Message: element click intercepted

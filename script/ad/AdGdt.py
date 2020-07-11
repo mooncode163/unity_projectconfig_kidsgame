@@ -67,7 +67,7 @@ class AdGdt():
         self.urlold = self.driver.current_url
         print("Login urlold=", self.urlold)
         self.LoginQQ(user, password)
-
+        self.SaveCookie()
         # 等待登录成功
         while True:
             time.sleep(1)
@@ -135,6 +135,12 @@ class AdGdt():
         self.driver.get("https://adnet.qq.com/medium/add")
         time.sleep(1)
 
+        appChannel = source.TAPTAP
+        appid = AppInfo.GetAppId(isHD, source.TAPTAP)
+        if appid=="0":
+            appid = AppInfo.GetAppId(isHD, source.HUAWEI)
+            appChannel = source.HUAWEI
+
         # Android平台
         item = self.driver.find_element(
             By.XPATH, "//button[@data-id='mediumTypeSelector']")
@@ -165,8 +171,16 @@ class AdGdt():
         list = ul_list[1].find_elements(
             By.XPATH, "//a[@role='option']")
         
+        idx = 0
+        if appChannel == source.TAPTAP:
+            idx = 9
+        else:
+                # huawei
+            idx = 7
+
+
         if self.osApp == source.ANDROID:
-            list[7].click()
+            list[idx].click()
 
         if self.osApp == source.IOS:
             list[0].click()
@@ -200,10 +214,12 @@ class AdGdt():
         
         url = ""
         if self.osApp == source.ANDROID:
-            appid = AppInfo.GetAppId(isHD, source.HUAWEI)
-            # url = "http://appstore.huawei.com/C"+appid
-            # https://appgallery1.huawei.com/#/app/C100358289
-            url = "https://appgallery1.huawei.com/#/app/C"+appid
+            if appChannel == source.TAPTAP:
+                url = "https://www.taptap.com/app/"+appid
+            else:
+                # url = "http://appstore.huawei.com/C"+appid
+                # https://appgallery1.huawei.com/#/app/C100358289
+                url = "https://appgallery1.huawei.com/#/app/C"+appid               
 
         if self.osApp == source.IOS:
             appid = AppInfo.GetAppId(isHD, source.APPSTORE)
@@ -247,10 +263,26 @@ class AdGdt():
 
         return name
  
+  #获取cookies保存到文件
+    def SaveCookie(self):
+        cookies=self.driver.get_cookies()
+        json_cookies=json.dumps(cookies)
+        with open('e:/cookies/cookies_gdt.json','w') as f:
+            f.write(json_cookies)
+    #读取文件中的cookie
+    def AddCookie(self):
+        self.driver.delete_all_cookies()
+        dict_cookies={}
+        with open('e:/cookies/cookies_gdt.json','r',encoding='utf-8') as f:
+            list_cookies=json.loads(f.read())
+            for i in list_cookies:
+                self.driver.add_cookie(i)
+
+
     def SearchApp(self, ishd):
         name = self.GetAppName(ishd)
         self.driver.get("https://adnet.qq.com/medium/list")
-        time.sleep(2)
+        time.sleep(3)
         item = self.driver.find_element(
             By.XPATH, "//input[@class='form-control']")
         time.sleep(1)
@@ -372,7 +404,7 @@ class AdGdt():
         time.sleep(1)
         webcmd = WebDriverCmd(self.driver)
 
-        # time.sleep(5)
+        time.sleep(3)
 
         # div class="card-inner"
         # list = self.driver.find_elements(
@@ -423,7 +455,7 @@ class AdGdt():
         self.driver.get(self.urlCreatePlaceId)
         time.sleep(1)
 
-        # time.sleep(5)
+        time.sleep(3)
 
         # div class="card-inner"
         key = "//div[@class='card-inner']"
@@ -471,7 +503,7 @@ class AdGdt():
         self.driver.get(self.urlCreatePlaceId)
         time.sleep(1)
 
-        # time.sleep(5)
+        time.sleep(3)
 
         # div class="card-inner" 
         key = "//div[@class='card-inner']"

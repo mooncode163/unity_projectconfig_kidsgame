@@ -53,8 +53,11 @@ class AppStoreTaptap(AppStoreBase):
         #
         print(url)
         self.driver.get(url)
-        time.sleep(1)
-
+        # self.AddCookie()
+        # time.sleep(1)
+        # self.AddCookie()
+        # self.driver.get(url)
+        # return
         if login == True:
             # <div class="icon-font ic_qq"></div>
             # 跳转qq登录
@@ -66,7 +69,9 @@ class AppStoreTaptap(AppStoreBase):
     def Login(self, user, password):
         self.urlold = self.driver.current_url
         print("Login urlold=", self.urlold)
+        self.AddCookie()
         self.LoginQQ(user, password)
+        self.SaveCookie()
 
         # 等待登录成功
         while True:
@@ -587,7 +592,7 @@ if __name__ == "__main__":
     argv1 = sys.argv[2]
     # ad.osApp = sys.argv[3]
     if argv1 == "createapp":
-        ad.CreateApp(False)
+        ad.CreateApp(isHD)
         time.sleep(3)
         # ad.CreateApp(True)
 

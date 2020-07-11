@@ -1,36 +1,70 @@
 {
-    "APP_NAME_CN_ANDROID": "宝宝认动物颜色HD",
-    "APP_NAME_EN_ANDROID": "Baby Animal Color HD",
-    "APP_NAME_CN_IOS": "宝宝认动物颜色HD",
-    "APP_NAME_EN_IOS": "Baby Animal Color HD",
-    "PACKAGE_ANDROID": "com.moonma.animalcolor.pad",
-    "PACKAGE_IOS": "com.moonma.animalcolor.pad",
-    "APPVERSION_ANDROID": "1.1.0",
-    "APPVERSION_CODE_ANDROID": "110",
-    "APPVERSION_IOS": "1.1.0",
+    "appid": {
+        "appstore": "1448126285",
+        "huawei": "100542231",
+        "taptap": "0",
+        "xiaomi": "0"
+    },
+    "appname": {
+        "android": {
+            "cn": "宝宝认动物颜色HD",
+            "en": "Baby Animal Color HD"
+        },
+        "ios": {
+            "cn": "宝宝认动物颜色HD",
+            "en": "Baby Animal Color HD"
+        }
+    },
+    "apppackage": {
+        "android": {
+            "default": "com.moonma.animalcolor.pad"
+        },
+        "ios": {
+            "default": "com.moonma.animalcolor.pad"
+        }
+    },
+    "appstore": {
+        "aso": {
+            "cn": "拼多多机器人梦工厂碰碰狐宝宝美食街点点多纳多多宝宝巴士瓦贝儿歌悟空识字学数学未来骑士团宝贝英语说趣味食物火车总动员开心蔬菜童话故事小邮局恐龙农场宝宝认家庭成员马儿的神奇大冒险好爸爸学习机课堂学习拖拖乐",
+            "en": "COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber"
+        },
+        "aso_xiaomi": {
+            "cn": "拼多多机器人梦工厂碰碰狐宝宝美食街点点多纳多多宝宝巴士瓦贝儿歌悟空识字学数学未来骑士团宝贝英语说趣味食物火车总动员开心蔬菜童话故事小邮局恐龙农场宝宝认家庭成员马儿的神奇大冒险好爸爸学习机课堂学习拖拖乐",
+            "en": "COOKING MAMA Let's Cook Kids Shave Salon Spa Doodle Zedd the Zombie Shapes Toddler QuizUp Clawber"
+        },
+        "promotion": {
+            "cn": "认动物学颜色宝宝快乐学习成长",
+            "en": "Recognition of animal and color,baby happy learning and growth"
+        },
+        "subtitle": {
+            "cn": "学会各种动物颜色",
+            "en": "Learn animals and colors"
+        },
+        "title": {
+            "cn": "宝宝认动物颜色HD-快乐学习成长",
+            "en": "Baby Animal Color HD"
+        },
+        "version_update": {
+            "cn": "修复内购失败的问题",
+            "en": "Fix a Bug"
+        }
+    },
+    "appversion": {
+        "android": {
+            "code": "111",
+            "value": "1.1.1"
+        },
+        "ios": {
+            "code": "111",
+            "value": "1.1.1"
+        }
+    },
+    "email": "chyfemail163@163.com",
     "need_upload_screenshot": false,
-    "APPSTORE_VERSION_UPDATE": {
-        "cn": "修复内购失败的问题",
-        "en": "Fix a Bug"
-    },
-    "APPSTORE_TITLE": {
-        "cn": "宝宝认动物颜色HD-快乐学习成长",
-        "en": "Baby Animal Color HD"
-    },
-    "APPSTORE_SUBTITLE": {
-        "cn": "学会各种动物颜色",
-        "en": "Learn animals and colors"
-    },
-    "APPSTORE_PROMOTION": {
-        "cn": "认动物学颜色宝宝快乐学习成长",
-        "en": "Recognition of animal and color,baby happy learning and growth"
-    },
-    "APPSTORE_KEYWORD": {
-        "cn": "拼多多机器人梦工厂碰碰狐宝宝美食街点点多纳多多宝宝巴士瓦贝儿歌悟空识字学数学未来骑士团宝贝英语说趣味食物火车总动员开心蔬菜童话故事小邮局恐龙农场宝宝认家庭成员马儿的神奇大冒险好爸爸学习机课堂学习拖拖乐",
-        "en": "COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber"
-    },
-    "software_url": "http://www.mooncore.cn",
-    "privacy_url": "http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
-    "support_url": "http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html",
-    "sku_app": "animalcolor.pad"
+    "privacy_url": "https://6c69-lianlianle-shkb3-1259451541.tcb.qcloud.la/PrivacyPolicy.txt",
+    "privacy_url2": "https://6d6f-moonma-dbb297-1258816908.tcb.qcloud.la/Moonma/privacyPolicy_kidsgame.txt",
+    "privacy_url3": " http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
+    "sku_app": "animalcolor.pad",
+    "software_url": " http://www.mooncore.cn",
+    "support_url": " http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html"
 }
