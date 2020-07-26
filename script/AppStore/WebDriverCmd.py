@@ -12,6 +12,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
 from selenium import webdriver 
 from selenium.webdriver import ActionChains 
+import pyperclip
 
 class CmdType(object): 
     CLICK = "click"
@@ -99,6 +100,12 @@ class WebDriverCmd():
     def Clear(self):
         self.listCmd.clear()
 
+    # 让元素在可见范围 可以点击操作
+    def SetItemVisible(self,item,delay=1):
+        ActionChains(self.driver).move_to_element(item).perform()
+        time.sleep(delay)
+
+
     def IsElementExist(self,element):
         flag=True
         browser=self.driver
@@ -109,6 +116,60 @@ class WebDriverCmd():
         except:
             flag=False
             return flag
+
+    def IsElementChildExist(self,parent,key):
+        flag=True 
+        try:
+            # browser.find_element_by_css_selector(element)
+            parent.find_element(By.XPATH, key)
+            return flag 
+        except:
+            flag=False
+            return flag
+
+    def Find(self,key,isWait=False):
+        item = None
+        if isWait:
+            if self.IsElementExist(key):
+                item = self.driver.find_element(By.XPATH, key)
+            else:
+                # waiting
+                while True:
+                    time.sleep(1) 
+                    print("waiting key=", key)
+                    if self.IsElementExist(key): 
+                        item = self.driver.find_element(By.XPATH, key)
+                        break
+
+        else: 
+            item = self.driver.find_element(By.XPATH, key)  
+        
+        return item
+
+    def FindChild(self,item,key):
+        return item.find_element(By.XPATH, key)
+
+    def FindList(self,key,isWait=False):
+        item = None
+        if isWait:
+            if self.IsElementExist(key):
+                item = self.driver.find_elements(By.XPATH, key)
+            else:
+                # waiting
+                while True:
+                    time.sleep(1) 
+                    print("waiting key=", key)
+                    if self.IsElementExist(key): 
+                        item = self.driver.find_elements(By.XPATH, key)
+                        break
+
+        else: 
+            item = self.driver.find_elements(By.XPATH, key)  
+        
+        return item
+
+    def FindListChild(self,item,key):
+        return item.find_elements(By.XPATH, key)
 
 # 组合查找 https://blog.csdn.net/qq_32189701/article/details/100176577
 # find_element_by_xpath("//input[@class=‘s_ipt’ and @name=‘wd’]")

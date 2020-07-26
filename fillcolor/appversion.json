@@ -1,0 +1,50 @@
+{
+    "fruit": {
+        "update_note": {
+            "cn": "修复闪退",
+            "en": "Fix a Bug"
+        },
+        "version": {
+            "android": "1.0.0"
+        },
+        "version_hd": {
+            "android": "1.0.0"
+        }
+    },
+    "plant": {
+        "update_note": {
+            "cn": "修复闪退",
+            "en": "Fix a Bug"
+        },
+        "version": {
+            "android": "1.0.0"
+        },
+        "version_hd": {
+            "android": "1.0.0"
+        }
+    },
+    "vehicle": {
+        "update_note": {
+            "cn": "修复闪退",
+            "en": "Fix a Bug"
+        },
+        "version": {
+            "android": "1.1.9"
+        },
+        "version_hd": {
+            "android": "1.0.9"
+        }
+    },
+    "zonghe": {
+        "update_note": {
+            "cn": "修复闪退",
+            "en": "Fix a Bug"
+        },
+        "version": {
+            "android": "1.1.7"
+        },
+        "version_hd": {
+            "android": "1.0.7"
+        }
+    }
+}

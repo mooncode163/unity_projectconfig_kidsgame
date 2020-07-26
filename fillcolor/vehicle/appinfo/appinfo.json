@@ -1,0 +1,70 @@
+{
+    "appid": {
+        "appstore": "1396355209",
+        "huawei": "101597893",
+        "taptap": "0",
+        "xiaomi": "0"
+    },
+    "appname": {
+        "android": {
+            "cn": "儿童交通填色绘画",
+            "en": "Kids Vehicle Color"
+        },
+        "ios": {
+            "cn": "儿童交通填色绘画",
+            "en": "Kids Vehicle Color"
+        }
+    },
+    "apppackage": {
+        "android": {
+            "default": "com.moonma.fillcolorvehicle"
+        },
+        "ios": {
+            "default": "com.moonma.fillcolorvehicle"
+        }
+    },
+    "appstore": {
+        "aso": {
+            "cn": "宝宝爱画画,小画板涂鸦,奇妙,儿童绘画,艺术,记忆力游戏,认水果,填色,巴士儿歌视频,幼儿园,妙屋,简笔画大全,学,上厕所,集中注意力100,交通工具,游乐园,脑力训练,软件,米,教程,一画吧,概念",
+            "en": "画面,画家,添,汉子,笔画,顺序,画图,板,高,智商,奇,喵,动画,表情,涂色,认识,动物,教学,家,智力,开发,巨头,孩子,几何,笔顺,查询,大师,英文,动画片,播放器,学画,漫画,调色,盘"
+        },
+        "aso_xiaomi": {
+            "cn": "宝宝爱画画 小画板涂鸦 奇妙 儿童绘画 艺术 记忆力游戏 认水果 填色 巴士儿歌视频 幼儿园 妙屋 简笔画大全 学 上厕所 集中注意力100 交通工具 游乐园 脑力训练 软件 米 教程 一画吧 概念",
+            "en": "画面 画家 添 汉子 笔画 顺序 画图 板 高 智商 奇 喵 动画 表情 涂色 认识 动物 教学 家 智力 开发 巨头 孩子 几何 笔顺 查询 大师 英文 动画片 播放器 学画 漫画 调色 盘"
+        },
+        "promotion": {
+            "cn": "通过绘画培养孩子的创造力和想象力",
+            "en": "Nurture children's creativity and imagination through painting"
+        },
+        "subtitle": {
+            "cn": "交通工具着色书",
+            "en": "Vehicle Coloring Book"
+        },
+        "title": {
+            "cn": "儿童交通填色绘画-涂鸦着色书",
+            "en": "Kids Vehicle Color"
+        },
+        "version_update": {
+            "cn": "修复闪退",
+            "en": "Fix a Bug"
+        }
+    },
+    "appversion": {
+        "android": {
+            "code": "119",
+            "value": "1.1.9"
+        },
+        "ios": {
+            "code": "119",
+            "value": "1.1.9"
+        }
+    },
+    "email": "chyfemail163@163.com",
+    "need_upload_screenshot": false,
+    "privacy_url": "https://6c69-lianlianle-shkb3-1259451541.tcb.qcloud.la/PrivacyPolicy.txt",
+    "privacy_url2": "https://6d6f-moonma-dbb297-1258816908.tcb.qcloud.la/Moonma/privacyPolicy_kidsgame.txt",
+    "privacy_url3": " http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
+    "sku_app": "fillcolorvehicle",
+    "software_url": " http://www.mooncore.cn",
+    "support_url": " http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html"
+}

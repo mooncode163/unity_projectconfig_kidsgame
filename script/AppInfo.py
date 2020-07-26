@@ -14,10 +14,10 @@ import json
 
 o_path = os.getcwd()  # 返回当前工作目录
 sys.path.append(o_path)  # 添加自己指定的搜索路径
-from common import common
-from common import config
-from common import source
-from common import adconfig  
+from Common import common
+from Common import config
+from Common import source
+from Common import adconfig  
 
 from xml.dom.minidom import parse
 
@@ -457,13 +457,38 @@ def GetAppName(os,isHd,lan):
     # loadJson
     data = loadJson(isHd)  
     name = data["appname"][os][lan]
-    return name     
+    return name 
+
+def GetAppPackage(os,isHd): 
+    # loadJson
+    data = loadJson(isHd)   
+    name = data["apppackage"][os]["default"]
+    return name 
 
 def GetAppPrivacyUrl(isHd): 
     # loadJson
     data = loadJson(isHd)  
     name = data["privacy_url"]
-    return name       
+    return name   
+
+
+def GetAppUrl(os,isHd,channel): 
+    # loadJson
+    appid = self.GetAppId(isHD, channel)
+    url = ""
+    if os == source.ANDROID:
+        if channel == source.TAPTAP:
+            url = "https://www.taptap.com/app/"+appid
+        else: 
+            url = "https://appgallery1.huawei.com/#/app/C"+appid               
+
+    if os == source.IOS:
+        appid = self.GetAppId(isHD, source.APPSTORE)
+        url = "https://apps.apple.com/cn/app/id"+appid
+
+    return url   
+
+             
         
 def GetAppId(isHd,channel): 
     # loadJson

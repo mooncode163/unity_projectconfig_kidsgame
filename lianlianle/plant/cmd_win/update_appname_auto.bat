@@ -4,7 +4,7 @@
 
 cd ../../../script
 
-python appname.py %~dp0 true 
+python AppInfo.py %~dp0 true 
 
 @Pause
 

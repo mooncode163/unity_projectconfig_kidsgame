@@ -1,0 +1,70 @@
+{
+    "appid": {
+        "appstore": "1227564873",
+        "huawei": "100361111",
+        "taptap": "0",
+        "xiaomi": "0"
+    },
+    "appname": {
+        "android": {
+            "cn": "宝宝动物贴纸HD",
+            "en": "Baby Animal Sticker HD"
+        },
+        "ios": {
+            "cn": "宝宝动物贴纸HD",
+            "en": "Baby Animal Sticker HD"
+        }
+    },
+    "apppackage": {
+        "android": {
+            "default": "com.moonma.animalsticker.pad"
+        },
+        "ios": {
+            "default": "com.moonma.animalsticker.pad"
+        }
+    },
+    "appstore": {
+        "aso": {
+            "cn": "岁宝宝贴纸,学数字,儿童识字游戏,看图学英语,动物园,魔力小孩英语点读,认图形,少儿故事贴,爱学习,hooked,on,phonics,kids,动物,爸爸去哪儿2,写汉字,幼儿数学六壬,巴士大全免费",
+            "en": "3岁宝宝拼图,儿童游戏免费学英语,识图,爱,贴纸动物园,早教认知,海绵,幼儿学拼音,神奇校车,动物乐园,海棉,巧虎益智,词汇abc英语,颜色形状和,6,直映认字软件,做汉堡,酷跑,喜羊羊与,写汉字"
+        },
+        "aso_xiaomi": {
+            "cn": "岁宝宝贴纸 学数字 儿童识字游戏 看图学英语 动物园 魔力小孩英语点读 认图形 少儿故事贴 爱学习 hooked on phonics kids 动物 爸爸去哪儿2 写汉字 幼儿数学六壬 巴士大全免费",
+            "en": "3岁宝宝拼图 儿童游戏免费学英语 识图 爱 贴纸动物园 早教认知 海绵 幼儿学拼音 神奇校车 动物乐园 海棉 巧虎益智 词汇abc英语 颜色形状和 6 直映认字软件 做汉堡 酷跑 喜羊羊与 写汉字"
+        },
+        "promotion": {
+            "cn": "宝宝早教认知学习的好帮手",
+            "en": "A good helper for baby's early teaching and cognitive learning"
+        },
+        "subtitle": {
+            "cn": "贴纸动物园",
+            "en": "Sticker Zoo"
+        },
+        "title": {
+            "cn": "宝宝动物贴纸HD",
+            "en": "Baby Sticker Animal HD"
+        },
+        "version_update": {
+            "cn": "修复闪退",
+            "en": "Fix a Bug"
+        }
+    },
+    "appversion": {
+        "android": {
+            "code": "157",
+            "value": "1.5.7"
+        },
+        "ios": {
+            "code": "157",
+            "value": "1.5.7"
+        }
+    },
+    "email": "chyfemail163@163.com",
+    "need_upload_screenshot": true,
+    "privacy_url": "https://6c69-lianlianle-shkb3-1259451541.tcb.qcloud.la/PrivacyPolicy.txt",
+    "privacy_url2": "https://6d6f-moonma-dbb297-1258816908.tcb.qcloud.la/Moonma/privacyPolicy_kidsgame.txt",
+    "privacy_url3": " http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
+    "sku_app": "animalstickerpad",
+    "software_url": " http://www.mooncore.cn",
+    "support_url": " http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html"
+}

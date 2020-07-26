@@ -5,10 +5,10 @@ import sys
 
 o_path = os.getcwd()  # 返回当前工作目录
 sys.path.append(o_path)  # 添加自己指定的搜索路径
-from common import adconfig
-from common import source
-from common import config
-from common import common
+from Common import adconfig
+from Common import source
+from Common import config
+from Common import common
 import json
 
 from bs4 import BeautifulSoup

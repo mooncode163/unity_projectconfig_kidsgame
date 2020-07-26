@@ -1,42 +1,70 @@
 {
-    "APP_NAME_CN_ANDROID": "天天爱猜图",
-    "APP_NAME_EN_ANDROID": "Guess Image",
-    "APP_NAME_CN_IOS": "天天爱猜图",
-    "APP_NAME_EN_IOS": "Guess Image",
-    "PACKAGE_ANDROID": "com.moonma.guessimage",
-    "PACKAGE_IOS": "com.moonma.guessimage",
-    "APPVERSION_ANDROID": "1.0.4",
-    "APPVERSION_CODE_ANDROID": "104",
-    "APPVERSION_IOS": "1.0.4",
-    "need_upload_screenshot": false,
-    "APPSTORE_VERSION_UPDATE": {
-        "cn": "修复闪退",
-        "en": "Fix a Bug"
+    "appid": {
+        "appstore": "889019233",
+        "huawei": "101316421",
+        "taptap": "177883",
+        "xiaomi": "0"
     },
-    "APPSTORE_TITLE": {
-        "cn": "天天爱猜图-图片大全",
-        "en": "Guess Image"
+    "appname": {
+        "android": {
+            "cn": "天天爱猜图",
+            "en": "Guess Image"
+        },
+        "ios": {
+            "cn": "天天爱猜图",
+            "en": "Guess Image"
+        }
     },
-    "APPSTORE_SUBTITLE": {
-        "cn": "天天爱猜图",
-        "en": "Guess Image"
+    "apppackage": {
+        "android": {
+            "default": "com.moonma.guessimage"
+        },
+        "ios": {
+            "default": "com.moonma.guessimage"
+        }
     },
-    "APPSTORE_PROMOTION": {
-        "cn": "猜图考验知识",
-        "en": "Guessing pictures tests knowledge"
+    "appstore": {
+        "aso": {
+            "cn": "天天猜歇后语,蔡如后,雨后行菜,甜甜菜,爱猜图,猜题王,天天聚会,小孩,乐看动画,奇艺动画,猜图,沙滩乐多纳学英语儿歌多多迷宫小镇汉字王国小牙医美食节熊猫博士小镇画彩蛋悟空识字恐龙救援车马儿的神奇大冒险小企鹅乐园魔力",
+            "en": "COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber"
+        },
+        "aso_xiaomi": {
+            "cn": "天天猜歇后语 蔡如后 雨后行菜 甜甜菜 爱猜图 猜题王 天天聚会 小孩 乐看动画 奇艺动画 猜图 沙滩乐多纳学英语儿歌多多迷宫小镇汉字王国小牙医美食节熊猫博士小镇画彩蛋悟空识字恐龙救援车马儿的神奇大冒险小企鹅乐园魔力",
+            "en": "COOKING MAMA Let's Cook Kids Shave Salon Spa Doodle Zedd the Zombie Shapes Toddler QuizUp Clawber"
+        },
+        "promotion": {
+            "cn": "猜图考验知识",
+            "en": "Guessing pictures tests knowledge"
+        },
+        "subtitle": {
+            "cn": "天天爱猜图",
+            "en": "Guess Image"
+        },
+        "title": {
+            "cn": "天天爱猜图-图片大全",
+            "en": "Guess Image"
+        },
+        "version_update": {
+            "cn": "修复闪退",
+            "en": "Fix a Bug"
+        }
     },
-    "APPSTORE_KEYWORD": {
-        "cn": "天天猜歇后语,蔡如后,雨后行菜,甜甜菜,爱猜图,猜题王,天天聚会,小孩,乐看动画,奇艺动画,猜图,沙滩乐多纳学英语儿歌多多迷宫小镇汉字王国小牙医美食节熊猫博士小镇画彩蛋悟空识字恐龙救援车马儿的神奇大冒险小企鹅乐园魔力",
-        "en": "COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber"
-    },
-    "XIAOMI_KEYWORD": {
-        "cn": "天天猜歇后语 蔡如后 雨后行菜 甜甜菜 爱猜图 猜题王 天天聚会 小孩 乐看动画 奇艺动画 猜图 沙滩乐多纳学英语儿歌多多迷宫小镇汉字王国小牙医美食节熊猫博士小镇画彩蛋悟空识字恐龙救援车马儿的神奇大冒险小企鹅乐园魔力",
-        "en": "COOKING MAMA Let's Cook Kids Shave Salon Spa Doodle Zedd the Zombie Shapes Toddler QuizUp Clawber"
+    "appversion": {
+        "android": {
+            "code": "104",
+            "value": "1.0.4"
+        },
+        "ios": {
+            "code": "104",
+            "value": "1.0.4"
+        }
     },
     "email": "chyfemail163@163.com",
-    "software_url": "http://www.mooncore.cn",
-    "privacy_url": "http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
-    "support_url": "http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html",
-    "privacy_url_gp": "http://blog.sina.com.cn/s/blog_1736372fb0102xmbz.html",
-    "sku_app": "guessimage"
+    "need_upload_screenshot": false,
+    "privacy_url": "https://6c69-lianlianle-shkb3-1259451541.tcb.qcloud.la/PrivacyPolicy.txt",
+    "privacy_url2": "https://6d6f-moonma-dbb297-1258816908.tcb.qcloud.la/Moonma/privacyPolicy_kidsgame.txt",
+    "privacy_url3": " http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
+    "sku_app": "guessimage",
+    "software_url": " http://www.mooncore.cn",
+    "support_url": " http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html"
 }

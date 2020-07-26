@@ -1,0 +1,70 @@
+{
+    "appid": {
+        "appstore": "1295012046",
+        "huawei": "100407565",
+        "taptap": "0",
+        "xiaomi": "0"
+    },
+    "appname": {
+        "android": {
+            "cn": "宝宝猜猜乐HD",
+            "en": "BabyGuessHD"
+        },
+        "ios": {
+            "cn": "宝宝猜猜乐HD",
+            "en": "BabyGuessHD"
+        }
+    },
+    "apppackage": {
+        "android": {
+            "default": "com.moonma.caicaile.pad"
+        },
+        "ios": {
+            "default": "com.moonma.caicaile.pad"
+        }
+    },
+    "appstore": {
+        "aso": {
+            "cn": "阳阳爱写字魔力小孩过年宝宝学写字中华恐龙园汉字与书法海绵宝宝做汉堡朵拉历险记学做饭宝宝爱洗澡三字经读写版宝宝书孕育跟我学写汉字蓝猫学拼音小嘀削削serato自由诵读经典儿歌巴巴熊巴巴宝贝熊孩子钢笔书法",
+            "en": "COOKING,MAMA,Let's Cook,Kids Shave,Salon,Spa,Doodle,Zedd,the Zombie,Shapes,Toddler,QuizUp,Clawber"
+        },
+        "aso_xiaomi": {
+            "cn": "阳阳爱写字魔力小孩过年宝宝学写字中华恐龙园汉字与书法海绵宝宝做汉堡朵拉历险记学做饭宝宝爱洗澡三字经读写版宝宝书孕育跟我学写汉字蓝猫学拼音小嘀削削serato自由诵读经典儿歌巴巴熊巴巴宝贝熊孩子钢笔书法",
+            "en": "COOKING MAMA Let's Cook Kids Shave Salon Spa Doodle Zedd the Zombie Shapes Toddler QuizUp Clawber"
+        },
+        "promotion": {
+            "cn": "看图猜字学习事物认识汉字",
+            "en": "Seeing pictures, guessing words, learning things and words"
+        },
+        "subtitle": {
+            "cn": "早教学习游戏",
+            "en": "Early learning game"
+        },
+        "title": {
+            "cn": "宝宝猜猜乐HD",
+            "en": "Baby Guess HD"
+        },
+        "version_update": {
+            "cn": "修复闪退",
+            "en": "Fix a Bug"
+        }
+    },
+    "appversion": {
+        "android": {
+            "code": "109",
+            "value": "1.0.9"
+        },
+        "ios": {
+            "code": "109",
+            "value": "1.0.9"
+        }
+    },
+    "email": "chyfemail163@163.com",
+    "need_upload_screenshot": false,
+    "privacy_url": "https://6c69-lianlianle-shkb3-1259451541.tcb.qcloud.la/PrivacyPolicy.txt",
+    "privacy_url2": "https://6d6f-moonma-dbb297-1258816908.tcb.qcloud.la/Moonma/privacyPolicy_kidsgame.txt",
+    "privacy_url3": " http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
+    "sku_app": "sku_caicaile_pad",
+    "software_url": " http://www.mooncore.cn",
+    "support_url": " http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html"
+}

@@ -16,8 +16,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
 from selenium import webdriver
-from common import source
-from common import common
+from Common import source
+from Common import common
 from AppStoreBase import AppStoreBase
 
 # 要想调用键盘按键操作需要引入keys包
@@ -161,7 +161,7 @@ class AppStoreApple(AppStoreBase):
         if self.osApp == source.IOS:
             appid = AppInfo.GetAppId(isHD, source.APPSTORE)
             # https://itunes.apple.com/cn/app/id1303020002
-            url = "https://itunes.apple.com/cn/app/id"+appid
+            url = "https://apps.apple.com/cn/app/id"+appid
         
         item.send_keys(url)
 
@@ -233,9 +233,8 @@ class AppStoreApple(AppStoreBase):
         # 手动点击上传
         
         # time.sleep(10)
-
-        rootdir = "F:\\sourcecode\\unity\\product\\kidsgame\\ProjectOutPut"
-        apk = common.GetOutPutApkPathWin32(rootdir,source.TAPTAP,isHD)
+ 
+        apk = common.GetOutPutApkPathWin32(self.GetRootDirProjectOutPut(),source.TAPTAP,isHD)
         # F:\\sourcecode\\unity\\product\\kidsgame\\ProjectOutPut\\xiehanzi\\hanziyuan\\screenshot\\shu\\cn\\480p\\1.jpg
         self.OpenFileBrowser(apk,True)
 

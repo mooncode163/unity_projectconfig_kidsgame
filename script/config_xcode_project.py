@@ -9,13 +9,13 @@ import time,  datetime
 
 o_path = os.getcwd()  # 返回当前工作目录
 sys.path.append(o_path)  # 添加自己指定的搜索路径 
-# from common import source 
-# from common import common
+# from Common import source 
+# from Common import common
 #include common.py
 # sys.path.append('./common')
-from common import common
-from common import source
-from common import adconfig
+from Common import common
+from Common import source
+from Common import adconfig
 import AppInfo
 import config_adsdk_android
 

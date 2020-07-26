@@ -3,10 +3,12 @@
 import zipfile
 import shutil
 import os
+import sys
 import os.path
 import time,  datetime 
-import common
-
+o_path = os.getcwd()  # 返回当前工作目录
+sys.path.append(o_path)  # 添加自己指定的搜索路径  
+from Common import common
 def zipDir(dir_path,file_zip):   
 
     zipf = zipfile.ZipFile(file_zip, "w",zipfile.ZIP_DEFLATED)

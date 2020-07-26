@@ -17,8 +17,8 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver import ActionChains
 from selenium import webdriver
-from common import source
-from common import common
+from Common import source
+from Common import common
 # 要想调用键盘按键操作需要引入keys包
 
 # 导入chrome选项
@@ -36,14 +36,25 @@ class AppStoreBase():
     osApp: None
     urlold:None
     urlnew:None
-    rootDirProjectOutPut="F:\\sourcecode\\unity\\product\\kidsgame\\ProjectOutPut"
+    # rootDirProjectOutPut="F:\\sourcecode\\unity\\product\\kidsgame\\ProjectOutPut"
 
     def SetCmdPath(self, str):
         dir = common.getLastDirofDir(str)
         dir = common.getLastDirofDir(dir)
         dir = common.getLastDirofDir(dir)
         self.dirRoot = dir
-        print("dir = ", dir)
+        print("dirRoot = ", dir)
+
+    def GetRootDirProjectOutPut(self):
+        # project = common.GetProjectName()
+        # dir = "F:\\sourcecode\\unity\\product\\"+project+"\\ProjectOutPut" 
+        dir = common.getLastDirofDir(self.dirRoot)
+        dir = common.getLastDirofDir(dir)
+        dir = common.getLastDirofDir(dir)
+        dir = dir+"\\ProjectOutPut" 
+        print("GetRootDirProjectOutPut = ", dir)
+        return dir
+
 
     def GoHome(self):
         # 加载百度页面

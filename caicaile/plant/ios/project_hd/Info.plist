@@ -2,16 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 	<dict>
+		<key>CFBundleAllowMixedLocalizations</key>
+		<true/>
+		<key>CADisableMinimumFrameDuration</key>
+		<false />
 		<key>CFBundleDevelopmentRegion</key>
 		<string>en</string>
 		<key>CFBundleDisplayName</key>
-		<string>宝宝水果猜猜乐HD</string>
+		<string>_APP_NAME_</string>
 		<key>CFBundleIconName</key>
 		<string>AppIcon</string>
 		<key>CFBundleExecutable</key>
 		<string>${EXECUTABLE_NAME}</string>
 		<key>CFBundleIdentifier</key>
-		<string>com.moonma.caicailefruit.pad</string>
+		<string>_APP_PACKAGE_</string>
 		<key>CFBundleInfoDictionaryVersion</key>
 		<string>6.0</string>
 		<key>CFBundleName</key>
@@ -19,9 +23,9 @@
 		<key>CFBundlePackageType</key>
 		<string>APPL</string>
 		<key>CFBundleShortVersionString</key>
-		<string>1.0.2</string>
+		<string>_APP_VERSION_</string>
 		<key>CFBundleVersion</key>
-		<string>1.0.2</string>
+		<string>_APP_VERSION_</string>
 		<key>LSRequiresIPhoneOS</key>
 		<true/>
 		<key>NSAppTransportSecurity</key>
@@ -29,10 +33,14 @@
 			<key>NSAllowsArbitraryLoads</key>
 			<true/>
 		</dict>
-		<key>UIApplicationExitsOnSuspend</key>
-		<false/>
+		<key>UILaunchStoryboardName~ipad</key>
+		<string>LaunchScreen-iPad</string>
+		<key>UILaunchStoryboardName~iphone</key>
+		<string>LaunchScreen-iPhone</string>
+		<key>UILaunchStoryboardName~ipod</key>
+		<string>LaunchScreen-iPhone</string>
 		<key>UIPrerenderedIcon</key>
-		<true/>
+		<false/>
 		<key>UIRequiredDeviceCapabilities</key>
 		<array>
 			<string>armv7</string>
@@ -54,8 +62,6 @@
 		<string>8354358b-5e99-4247-a6d2-2a01565010cb</string>
 		<key>UnityCrashSubmissionURL</key>
 		<string>https://a:b@perf-events.cloud.unity3d.com/symbolicate</string>
-		<key>Unity_LoadingActivityIndicatorStyle</key>
-		<integer>-1</integer>
 		<key>NSLocationWhenInUseUsageDescription</key>
 		<string>在使用期间访问位置</string>
 		<!-- 相册 -->
@@ -64,6 +70,8 @@
 		<!-- 相机 -->
 		<key>NSCameraUsageDescription</key>
 		<string>App需要您的同意,才能访问相机</string>
+		<key>Unity_LoadingActivityIndicatorStyle</key>
+		<integer>-1</integer>
 		<key>LSApplicationQueriesSchemes</key>
 		<array>
 			<string>linkedin</string>
@@ -172,7 +180,7 @@
 				<string></string>
 				<key>CFBundleURLSchemes</key>
 				<array>
-					<string>wb0</string>
+					<string>WEIBO_APPID</string>
 				</array>
 			</dict>
 			<dict>
@@ -182,7 +190,7 @@
 				<string>weixin</string>
 				<key>CFBundleURLSchemes</key>
 				<array>
-					<string>wx0</string>
+					<string>WEIXIN_APPID</string>
 				</array>
 			</dict>
 			<dict>
@@ -190,7 +198,7 @@
 				<string>Editor</string>
 				<key>CFBundleURLSchemes</key>
 				<array>
-					<string>tencent0</string>
+					<string>QQ_APPID1</string>
 				</array>
 			</dict>
 			<dict>
@@ -218,7 +226,7 @@
 				<string>Editor</string>
 				<key>CFBundleURLSchemes</key>
 				<array>
-					<string>QQ00000000</string>
+					<string>QQ_APPID0</string>
 				</array>
 			</dict>
 			<dict>
@@ -310,5 +318,7 @@
 				</array>
 			</dict>
 		</array>
+		<key>GADApplicationIdentifier</key>
+		<string>_APP_ID_ADMOB_</string>
 	</dict>
 </plist>

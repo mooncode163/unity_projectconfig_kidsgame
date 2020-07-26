@@ -8,8 +8,8 @@ sys.path.append(o_path)  # 添加自己指定的搜索路径
 from WebDriverCmd import CmdType
 from WebDriverCmd import WebDriverCmd 
 from AppStoreBase import AppStoreBase
-from common import common
-from common import source
+from Common import common
+from Common import source
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
@@ -128,7 +128,7 @@ class AppStoreTaptap(AppStoreBase):
         # self.driver.execute_script("arguments[0].click();", item)
         time.sleep(2)
 
-        icon = common.GetOutPutIconPathWin32( self.rootDirProjectOutPut, source.TAPTAP, isHD)+"\\icon_android_512.png"
+        icon = common.GetOutPutIconPathWin32( self.GetRootDirProjectOutPut(), source.TAPTAP, isHD)+"\\icon_android_512.png"
         print(icon)
             # webcmd.Run(True)
         self.OpenFileBrowser(icon, True)
@@ -189,7 +189,7 @@ class AppStoreTaptap(AppStoreBase):
         item = webcmd.AddCmd2(CmdType.CLICK_Action, key)
         self.SetItemVisible(item)
         webcmd.Run(True)
-        pic = common.GetOutPutAdPathWin32(self.rootDirProjectOutPut, source.TAPTAP, isHD) + "\\"+applan+"\\"+"ad_home_1024x500.png"
+        pic = common.GetOutPutAdPathWin32(self.GetRootDirProjectOutPut(), source.TAPTAP, isHD) + "\\"+applan+"\\"+"ad_home_1024x500.png"
         print(pic)
         self.OpenFileBrowser(pic, True)
         time.sleep(3)
@@ -272,7 +272,7 @@ class AppStoreTaptap(AppStoreBase):
             time.sleep(1)
             # webcmd.AddCmd(CmdType.CLICK, "//li[@class='add-screenshot-li]", "", 1)
             webcmd.Run(True)
-            pic = common.GetOutPutScreenshotPathWin32(self.rootDirProjectOutPut, source.TAPTAP, isHD) + "\\"+applan+"\\1080p\\"+str(i+1)+".jpg"
+            pic = common.GetOutPutScreenshotPathWin32(self.GetRootDirProjectOutPut(), source.TAPTAP, isHD) + "\\"+applan+"\\1080p\\"+str(i+1)+".jpg"
             flag = os.path.exists(pic)
             if flag:
                 print(pic)
@@ -382,7 +382,7 @@ class AppStoreTaptap(AppStoreBase):
         webcmd.AddCmd( CmdType.CLICK, "//input[@type='radio' and @name='flag_android' and @value='4']", "", 1) 
         webcmd.Run(True)
 
-        self.SubmitApp(False)
+        self.SubmitApp(True)
 
     def GoToAPPPage(self, isHD):
         appid = AppInfo.GetAppId(isHD, source.TAPTAP)
@@ -409,7 +409,7 @@ class AppStoreTaptap(AppStoreBase):
         print("urlold=", self.urlold)
         # 手动点击上传
  
-        apk = common.GetOutPutApkPathWin32(self.rootDirProjectOutPut, source.TAPTAP, isHD)
+        apk = common.GetOutPutApkPathWin32(self.GetRootDirProjectOutPut(), source.TAPTAP, isHD)
         # F:\\sourcecode\\unity\\product\\kidsgame\\ProjectOutPut\\xiehanzi\\hanziyuan\\screenshot\\shu\\cn\\480p\\1.jpg
         self.OpenFileBrowser(apk, True)
         time.sleep(1)

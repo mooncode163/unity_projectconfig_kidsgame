@@ -13,7 +13,7 @@ import common
  
 def copy_plugins():
     dirname = "Plugins"
-    dir1 = common.GetRootDir()+"/"+dirname
+    dir1 = common.GetDirProductCommon()+"/"+dirname
     dir2 = common.GetRootUnityAssets()+"/"+dirname
     flag = os.path.exists(dir2)
     if not flag:

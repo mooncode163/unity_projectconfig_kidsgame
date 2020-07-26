@@ -1,0 +1,70 @@
+{
+    "appid": {
+        "appstore": "1374067084",
+        "huawei": "100351971",
+        "taptap": "0",
+        "xiaomi": "0"
+    },
+    "appname": {
+        "android": {
+            "cn": "宝宝涂色世界HD",
+            "en": "Baby Coloring World HD"
+        },
+        "ios": {
+            "cn": "宝宝涂色世界HD",
+            "en": "Baby Coloring World HD"
+        }
+    },
+    "apppackage": {
+        "android": {
+            "default": "com.moonma.paintzonghe.pad"
+        },
+        "ios": {
+            "default": "com.moonma.paintzonghe.pad"
+        }
+    },
+    "appstore": {
+        "aso": {
+            "cn": "爱宝宝涂色游戏,儿童涂鸦,炫彩霓虹,本,图色,涂颜色,世界,v2智能,免费,书,家长版,花园,添,画画,秀秀美,宝,恶魔,画板,王国,毁,丑,玫瑰,花园,战争,惠,花,沙,盒,汇,绘,织,图",
+            "en": "宇宙世界2岁宝宝画画免费,蜡笔小新星幼儿英语,未来教育等考,变形金刚侠,故事飞船,木偶游戏2-3,机器恐龙机器人梦工厂,新世界,儿童涂色书,小新打印,拼图,填色,逃脱,合成器,涂鸦,外星人,魔力小孩"
+        },
+        "aso_xiaomi": {
+            "cn": "爱宝宝涂色游戏 儿童涂鸦 炫彩霓虹 本 图色 涂颜色 世界 v2智能 免费 书 家长版 花园 添 画画 秀秀美 宝 恶魔 画板 王国 毁 丑 玫瑰 花园 战争 惠 花 沙 盒 汇 绘 织 图",
+            "en": "宇宙世界2岁宝宝画画免费 蜡笔小新星幼儿英语 未来教育等考 变形金刚侠 故事飞船 木偶游戏2-3 机器恐龙机器人梦工厂 新世界 儿童涂色书 小新打印 拼图 填色 逃脱 合成器 涂鸦 外星人 魔力小孩"
+        },
+        "promotion": {
+            "cn": "欢迎孩子们来美妙绝伦的涂色世界 ",
+            "en": "Welcome to the wonderful world of children painting"
+        },
+        "subtitle": {
+            "cn": "美好的涂色世界",
+            "en": "Beautiful color world"
+        },
+        "title": {
+            "cn": "宝宝涂色世界HD-绘画启蒙之涂鸦天地",
+            "en": "Baby Coloring Word HD"
+        },
+        "version_update": {
+            "cn": "修复闪退",
+            "en": "Fix a Bug"
+        }
+    },
+    "appversion": {
+        "android": {
+            "code": "122",
+            "value": "1.2.2"
+        },
+        "ios": {
+            "code": "122",
+            "value": "1.2.2"
+        }
+    },
+    "email": "chyfemail163@163.com",
+    "need_upload_screenshot": false,
+    "privacy_url": "https://6c69-lianlianle-shkb3-1259451541.tcb.qcloud.la/PrivacyPolicy.txt",
+    "privacy_url2": "https://6d6f-moonma-dbb297-1258816908.tcb.qcloud.la/Moonma/privacyPolicy_kidsgame.txt",
+    "privacy_url3": " http://www.mooncore.cn/index/privacyPolicy_kidsgame.shtml",
+    "sku_app": "paintzonghe.pad",
+    "software_url": " http://www.mooncore.cn",
+    "support_url": " http://blog.sina.com.cn/s/blog_1736372fb0102xb49.html"
+}

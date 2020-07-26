@@ -18,10 +18,10 @@ import apk_build
 
 o_path = os.getcwd()  # 返回当前工作目录
 sys.path.append(o_path)  # 添加自己指定的搜索路径
-from common import common
-from common import config
-from common import source
-from common import adconfig  
+from Common import common
+from Common import config
+from Common import source
+from Common import adconfig  
 
 
 # 主函数的实现

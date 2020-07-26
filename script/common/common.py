@@ -236,17 +236,34 @@ def get_MD5_checksum_file(filename):
     return md5obj.hexdigest()
 
 def GetProjectName(): 
-    # /Users/moon/sourcecode/unity/product_unity/minigame/ProjectConfig/script
+    #  F:\sourcecode\unity\product\kidsgame 
     path = cur_file_dir()
-    path = getLastDirofDir(path)
-    path = getLastDirofDir(path)
-    name = getDirNameofPath(path)
+    # print("GetProjectName path=",path)
+    key = "\\product\\"
+    idx = path.find(key)+len(key) 
+    name = path[idx:]
+    # print("GetProjectName name=",name)
+    idx = name.find("\\")
+    name = name[0:idx]
+    # path = getLastDirofDir(path)
+    # path = getLastDirofDir(path)
+    # name = getDirNameofPath(path)
     # print("GetProjectName,name = "+name)
+    
+    print("GetProjectName name=",name)
     return name
 
 def GetRootDir():
-    #Users/moon/sourcecode/unity/product_unity/kidsgame
+    #Users/moon/sourcecode/unity/product/kidsgame
     return "../../"
+
+def GetDirProduct(): 
+    #Users/moon/sourcecode/unity/product
+    dir = GetRootDir()+"../"
+    return dir
+
+def GetDirProductCommon():  
+    return GetDirProduct()+"/Common"
 
 def GetResourceDataRoot(): 
     return GetRootDir()+"/ResourceData"
