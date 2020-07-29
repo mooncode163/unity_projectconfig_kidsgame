@@ -22,6 +22,9 @@ from AppStore.WebDriverCmd import CmdType
 from AppStore.WebDriverCmd import WebDriverCmd 
 from AppStore.WebDriverCmd import CmdInfo 
 
+import keyboard #Using module keyboard
+
+from AdBase import AdBase
 
 # 要想调用键盘按键操作需要引入keys包
 
@@ -33,7 +36,7 @@ from AppStore.WebDriverCmd import CmdInfo
 # sys.path.append('../common')
 
 
-class AdGdt():
+class AdGdt(AdBase):
     driver: None
     dirRoot: None
     urlCreatePlaceId: None
@@ -437,19 +440,64 @@ class AdGdt():
         time.sleep(1)
         list[1].send_keys("b")
 
-        # upload image
-        item = self.driver.find_element(
-            By.XPATH, "//button[@id='spaui-uploader_2-empty']")
-        item.click()
-        time.sleep(1)
-        self.OpenFileBrowser()
-        time.sleep(1)
+        # upload image 
+        # key = "//button[@id='spaui-uploader_2-empty']"
+        # webcmd.AddCmdList(CmdType.CLICK_Action, key)
+        # webcmd.Run(True) 
+        # time.sleep(2)
+        # self.OpenFileBrowser()
+        # time.sleep(2)
+        self.UploadImage(True)
+
+        
+        # <div class="text title">请上传广告位展示截图</div>
+
 
         # finish
-        item = self.driver.find_element(
-            By.XPATH, "//button[@class='union-complete-btn spaui-button spaui-button-primary spaui-component']")
-        item.click()
-        time.sleep(1)
+        self.OnClickFinish()
+
+    
+    def OnClickFinish(self):
+        webcmd = WebDriverCmd(self.driver)
+        keyFinish = "//button[@class='union-complete-btn spaui-button spaui-button-primary spaui-component']"
+        webcmd.AddCmd(CmdType.CLICK_Action, keyFinish)
+        webcmd.Run(True) 
+
+        key = "//div[@class='text title' and text()='请上传广告位展示截图']"
+        if webcmd.IsElementExist(key):
+            # 确定
+            key = "//button[@class=' t']"
+            webcmd.AddCmd(CmdType.CLICK_Action, key)
+            webcmd.Run(True) 
+
+            # 重新上传
+            time.sleep(1)
+            print("请上传广告位展示截图")
+            self.UploadImage(False)
+            webcmd.AddCmd(CmdType.CLICK_Action, keyFinish)
+            webcmd.Run(True)
+
+
+    def UploadImage(self, isAuto):
+        print('UploadImage isAuto',isAuto)
+        webcmd = WebDriverCmd(self.driver)
+        if isAuto==True:
+            key = "//button[@id='spaui-uploader_2-empty']"
+            webcmd.AddCmd(CmdType.CLICK_Action, key)
+            webcmd.Run(True) 
+            time.sleep(1)
+            self.OpenFileBrowser()
+            time.sleep(3)
+        else:
+            key_press = 'q'
+            while True:#making a loop
+                time.sleep(1)
+                print('waiting for key press = ',key_press)
+                # try:  
+                if keyboard.is_pressed(key_press):
+                    print('You Pressed A Key!')
+                    break
+             
 
     def CreateAdInsert(self, isHD):
         webcmd = WebDriverCmd(self.driver)
@@ -486,18 +534,22 @@ class AdGdt():
         list[1].send_keys("i")
 
         # upload image
-        item = self.driver.find_element(
-            By.XPATH, "//button[@id='spaui-uploader_2-empty']")
-        item.click()
-        time.sleep(1)
-        self.OpenFileBrowser()
-        time.sleep(1)
+        # item = self.driver.find_element(
+        #     By.XPATH, "//button[@id='spaui-uploader_2-empty']")
+        # item.click()
+        # time.sleep(1)
+        # self.OpenFileBrowser()
+        # time.sleep(1)
+        self.UploadImage(True)
 
         # finish
-        item = self.driver.find_element(
-            By.XPATH, "//button[@class='union-complete-btn spaui-button spaui-button-primary spaui-component']")
-        item.click()
-        time.sleep(1)
+        # item = self.driver.find_element(
+        #     By.XPATH, "//button[@class='union-complete-btn spaui-button spaui-button-primary spaui-component']")
+        # item.click()
+        # time.sleep(1)
+        # finish
+        self.OnClickFinish()
+
 
     def CreateAdVideo(self, isHD):
         webcmd = WebDriverCmd(self.driver)
@@ -521,19 +573,21 @@ class AdGdt():
         list[1].send_keys("v")
 
         # upload image
-        item = self.driver.find_element(
-            By.XPATH, "//button[@id='spaui-uploader_2-empty']")
-        item.click()
-        time.sleep(1)
-        self.OpenFileBrowser()
-        time.sleep(1)
+        # item = self.driver.find_element(
+        #     By.XPATH, "//button[@id='spaui-uploader_2-empty']")
+        # item.click()
+        # time.sleep(1)
+        # self.OpenFileBrowser()
+        # time.sleep(1)
+        self.UploadImage(True)
 
         # finish
-        item = self.driver.find_element(
-            By.XPATH, "//button[@class='union-complete-btn spaui-button spaui-button-primary spaui-component']")
-        item.click()
-        time.sleep(1)
-
+        # item = self.driver.find_element(
+        #     By.XPATH, "//button[@class='union-complete-btn spaui-button spaui-button-primary spaui-component']")
+        # item.click()
+        # time.sleep(1)
+        # finish
+        self.OnClickFinish()
 
 # 主函数的实现
 if __name__ == "__main__":

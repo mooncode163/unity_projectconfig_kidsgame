@@ -34,7 +34,10 @@ class ProjectManager():
         for name in listname:
             src = common.GetDirProductCommon()+"/ProjectConfig/"+name
             dst = common.GetProjectConfig()+"/"+name
-            FileUtil.CopyDir(src,dst)
+            isremove = True
+            if name=="script":
+                isremove = False
+            FileUtil.CopyDir(src,dst,isremove)
  
 
     def SaveProjectConfig(self): 

@@ -20,8 +20,7 @@ from Common import source
 from Common import adconfig  
 
 from xml.dom.minidom import parse
-
-import AppVersionHuawei 
+from AppVersionHuawei import mainAppVersionHuawei
 from AppInfoOld import AppInfoOld
 from AppInfoNew import AppInfoNew
 
@@ -474,7 +473,7 @@ def GetAppPrivacyUrl(isHd):
 
 def GetAppUrl(os,isHd,channel): 
     # loadJson
-    appid = self.GetAppId(isHD, channel)
+    appid = GetAppId(isHd, channel)
     url = ""
     if os == source.ANDROID:
         if channel == source.TAPTAP:
@@ -483,7 +482,7 @@ def GetAppUrl(os,isHd,channel):
             url = "https://appgallery1.huawei.com/#/app/C"+appid               
 
     if os == source.IOS:
-        appid = self.GetAppId(isHD, source.APPSTORE)
+        appid = GetAppId(isHd, source.APPSTORE)
         url = "https://apps.apple.com/cn/app/id"+appid
 
     return url   
@@ -677,7 +676,7 @@ def updateName(isHd,isAuto):
             key = "_VERSION_HD_ANDROID_"
 
                  
-        version_web = AppVersionHuawei.ParseVersion(appid_huawei)
+        version_web = mainAppVersionHuawei.ParseVersion(appid_huawei)
         strfile = strfile.replace(key,version_web) 
         common.saveString2File(strfile,dst)
 

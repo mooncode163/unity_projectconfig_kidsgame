@@ -575,6 +575,7 @@ class AppStoreHuawei(AppStoreBase):
                       "//div[@id='uploaderSelectContainer']")
         webcmd.Run(True)
 
+        time.sleep(2)
         apk = common.GetOutPutApkPathWin32(
             self.GetRootDirProjectOutPut(), source.HUAWEI, isHD)
         print(apk)
@@ -625,7 +626,7 @@ class AppStoreHuawei(AppStoreBase):
     def UpdateApp(self, isHD):
         # self.UpdateAppOld(isHD)
         # return
-
+        old_window = self.driver.current_window_handle
         webcmd = WebDriverCmd(self.driver)
         # 打开新标签
         # self.driver.find_element_by_xpath('//body').send_keys(Keys.CONTROL,"t")
@@ -646,22 +647,29 @@ class AppStoreHuawei(AppStoreBase):
             if self.IsElementExist(key) == True:
                 print("web loading finish")
                 break
+ 
 
         self.driver.switch_to.frame("mainIframeView")
-        time.sleep(2)
+        time.sleep(3)
 
-        old_window = self.driver.current_window_handle
+        
 
-        key = "//span[@class='green-circle']"
+        key = "//span[@class='green-circle']" 
 
         # red-circle
         if self.IsElementExist(key) == False:
             # 待修改
             key = "//span[@class='red-circle']"
-            if self.IsElementExist(key) == False:
+            if self.IsElementExist(key) == False: 
+                key = "//span[@class='yellow-circle']"
                 # 第一次上传apk
-                self.PreSubmitApp(isHD)
-                return
+                # self.PreSubmitApp(isHD)
+                # return
+        if self.IsElementExist(key) == False:
+            print("key fail key=",key)
+            print("self.driver.current_url fail=", self.driver.current_url)
+            # print(self.driver.page_source) 
+            common.saveString2File(self.driver.page_source,"1.html")
 
         item = self.driver.find_element(By.XPATH, key)
         item.click()
@@ -728,148 +736,7 @@ class AppStoreHuawei(AppStoreBase):
             By.XPATH, "//a[@id='AppSubmitConfirmButtonOk']")
         item.click()
         time.sleep(3)
-
-    def UpdateAppOld(self, isHD):
-        webcmd = WebDriverCmd(self.driver)
-        # 打开新标签
-        # self.driver.find_element_by_xpath('//body').send_keys(Keys.CONTROL,"t")
-        # js = "window.open('')"
-        # self.driver.execute_script(js)
-        # time.sleep(2)
-
-        appid = AppInfo.GetAppId(isHD, source.HUAWEI)
-        # https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/myApp/101054959
-        url = "https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/myApp/"+appid
-        self.driver.get(url)
-        time.sleep(1)
-        # 等待网页加载成功
-        key = "//iframe[@id='mainIframeView']"
-        while True:
-            time.sleep(1)
-            print("web is loading...")
-            if self.IsElementExist(key) == True:
-                print("web loading finish")
-                break
-
-        self.driver.switch_to.frame("mainIframeView")
-        time.sleep(3)
-
-        old_window = self.driver.current_window_handle
-
-        key = "//span[@class='green-circle']"
-        # if self.IsElementExist(key)==False:
-        #     # 第一次上传apk
-        #     self.PreSubmitApp(isHD)
-        #     return
-
-        item = self.driver.find_element(By.XPATH, key)
-        item.click()
-        time.sleep(5)
-
-        # 跳转到新的页面
-        print("self.driver.current_url=", self.driver.current_url)
-        # self.driver.switch_to.window(self.driver.window_handles[0])
-        for win in self.driver.window_handles:
-            if win != old_window:
-                self.driver.switch_to.window(win)
-        time.sleep(1)
-        print("self.driver.current_url 2=", self.driver.current_url)
-
-        self.driver.switch_to.frame("mainIframeView")
-        time.sleep(1)
-
-        item = self.driver.find_element(
-            By.XPATH, "//a[@id='VersionUpgradeButton']")
-        # item = self.driver.find_element(By.XPATH, "//a[@class='btn btn-primary button-normal ml-2 ng-binding ng-scope']")
-        item.click()
-        time.sleep(3)
-
-        self.driver.switch_to.frame("mainIframeView")
-        time.sleep(1)
-
-        # 软件包管理
-        # item = self.driver.find_element(By.XPATH, "//a[@id='VerInfoDownloadLink']")
-        # #  Message: element click intercepted
-        # self.driver.execute_script("arguments[0].click();", item)
-        # # item.click()
-        # time.sleep(1)
-        info = CmdInfo()
-        info.type = CmdType.CLICK
-        info.cmd = "//a[@id='VerInfoDownloadLink']"
-        info.value = ""
-        info.delay = 1
-        info.isWaiting = True
-        webcmd.AddCmdInfo(info)
-        webcmd.Run(True)
-
-        item = self.driver.find_element(
-            By.XPATH, "//a[@id='ManageAppUploadPackageButton']")
-        item.click()
-        time.sleep(1)
-
-        # self.driver.switch_to.frame("mainIframeView")
-        # item = self.driver.find_element(By.XPATH, "//input[@type='file']")
-        # item = self.driver.find_element(By.XPATH, "//div[@class='uploader-pick']")
-        item = self.driver.find_element(
-            By.XPATH, "//div[@id='uploaderSelectContainer']")
-        item.click()
-        time.sleep(2)
-        #  Message: element click intercepted
-        # self.driver.execute_script("arguments[0].click();", item)
-        # time.sleep(10)
-
-        apk = common.GetOutPutApkPathWin32(
-            self.GetRootDirProjectOutPut(), source.HUAWEI, isHD)
-        print(apk)
-        # F:\\sourcecode\\unity\\product\\kidsgame\\ProjectOutPut\\xiehanzi\\hanziyuan\\screenshot\\shu\\cn\\480p\\1.jpg
-        self.OpenFileBrowser(apk, True)
-
-        time.sleep(1)
-
-        # <div class="uploader-progress-bar" ng-style="{width: uploadProgress}"></div>
-
-        # # <div class="progress"><div class="progress-bar" style="width: 82%;" aria-valuenow="82"></div></div>
-        isUploading = False
-        while True:
-            time.sleep(1)
-            key = "//div[@class='uploader-progress-bar']"
-            if self.IsElementExist(key):
-                item = self.driver.find_element(By.XPATH, key)
-                if item is not None:
-                    style = item.get_attribute('style')
-                    isUploading = True
-                    print(style)
-                    # if style.find("100") >=0:
-                    #     time.sleep(1)
-                    #     print("upload apk finish")
-                    #     break
-            else:
-                if isUploading == True:
-                    isUploading = False
-                    time.sleep(1)
-                    print("upload apk finish")
-                    break
-
-        time.sleep(1)
-
-        # 不申请
-        item = self.driver.find_element(
-            By.XPATH, "//span[@id='VerInfoNotApplyButton']")
-        item.click()
-        time.sleep(1)
-
-        # 提交审核
-        item = self.driver.find_element(
-            By.XPATH, "//a[@id='VerInfoSubmitButton']")
-        item.click()
-        time.sleep(3)
-
-        # 确定
-        item = self.driver.find_element(
-            By.XPATH, "//a[@id='AppSubmitConfirmButtonOk']")
-        item.click()
-        time.sleep(3)
-
+ 
     def SearchApp(self, ishd):
         name = self.GetAppName(isHD, source.LANGUAGE_CN)
         self.driver.get("https://adnet.qq.com/medium/list")

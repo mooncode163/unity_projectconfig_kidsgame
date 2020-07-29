@@ -22,9 +22,10 @@ from xml.dom.minidom import parse
 class FileUtil():  
    
     @staticmethod   
-    def CopyDir(src,dst): 
+    def CopyDir(src,dst,isRemove=True): 
         flag = os.path.exists(dst)
         if flag:
-            shutil.rmtree(dst)
+            if isRemove:
+                shutil.rmtree(dst)
         shutil.copytree(src,dst)
   

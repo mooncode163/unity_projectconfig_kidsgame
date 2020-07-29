@@ -242,6 +242,35 @@ class WebDriverCmd():
         if isClear:
             self.Clear()
 
+
+    def DoCmd(self,item,type):
+        if type == CmdType.CLICK:
+            item.click()
+        if type == CmdType.CLICK_SCRIPT:
+            # 有些item.click() 会报InvalidArgumentException: Message: invalid argument
+            self.driver.execute_script("arguments[0].click();", item) 
+            
+        if type == CmdType.CLICK_Action:
+            # 有些item.click() 无响应 用这个鼠标模拟点击 
+            action= ActionChains(self.driver)
+            action.click(item).perform()
+
+        if type == CmdType.INPUT:
+            item.clear()
+            item.send_keys(info.value)
+            # item.clear()
+            # item.send_keys(info.value)
+            # item.text = info.value
+
+        if type == CmdType.INPUT_CLEAR:
+            item.clear()
+
+        if type == CmdType.ENTER:
+            item.send_keys(Keys.ENTER)
+        if type == CmdType.CTR_V:
+            item.send_keys(Keys.CONTROL,"v")
+                
+    
   
 
  

@@ -51,12 +51,12 @@
     },
     "appversion": {
         "android": {
-            "code": "116",
-            "value": "1.1.6"
+            "code": "120",
+            "value": "1.2.0"
         },
         "ios": {
-            "code": "116",
-            "value": "1.1.6"
+            "code": "120",
+            "value": "1.2.0"
         }
     },
     "email": "chyfemail163@163.com",

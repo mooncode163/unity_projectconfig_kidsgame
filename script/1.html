@@ -1,155 +1,1224 @@
-<html lang="zh-cn"><head>
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
-	<!-- @fragment_top Start-->
-<meta charset="UTF-8">
-<meta http-equiv="content-type" content="text/html; charset=utf-8">
-<title>QQ帐号安全登录</title>
-<meta name="keywords" content="QQ互联、QQ登录、安全登录、网站接入、腾讯开放平台">
-<meta name="description" content="接入QQ互联，可实现与腾讯各项服务的无缝连接，安全帐号登录体系，用户动态同步腾讯各社交平台，调用腾讯公司各业务服务。">
-<meta name="copyright" content="Tencent">
-<meta name="author" content="rtx://tencent/sng/yuanyan">
-<link rel="Shortcut Icon" href="https://login.imgcache.qq.com/qzone/openapi/favicon.ico?t=20130219" type="image/x-icon">
-<link rel="icon" href="https://login.imgcache.qq.com/qzone/openapi/favicon.ico?t=20130219" type="image/x-icon">
-<link href="https://login.imgcache.qq.com/open/connect/widget/pc/login/qlogin_v2.min.css?max_age=2592000&amp;v=20140818" rel="stylesheet">
-<script type="text/javascript">
-    window.__start = +new Date();
-    
-    var _speedTiming = [+new Date];
-    (function error(monitorId){
-        window.onerror = function(errorMsg, url, lineNumber) {
-          var img = document.createElement('img');
-          var url = 'https://graph.qq.com/oauth2.0/report?';
-          var data = {
-            attr_id: 2775276,
-            uls: 'Script Error: ' + errorMsg + ', line:' + lineNumber + ', url:' + location.href + ' referer:' + document.referrer,
-            content_type: 0,
-            client_id: Q.getParameter('client_id')
-          }
-          for(var key in data){
-            if(url[url.length - 1] != '?')
-              url += '&';
-            url += key + '=' + encodeURIComponent(data[key]);
-          }
-          img.src = url;
-        };
-    })(302299);
-</script>
-<!-- @fragment_top End -->
+<html lang="zh-CN"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <title>联运中心</title>
+    <link rel="SHORTCUT ICON" href="../../../../../assets/images/huawei_16.png?_=5406d06">
+    <link rel="stylesheet" href="../../../../vendors/ucd/resources/default/css/base.min.css?_=c699f86">
+    <link rel="stylesheet" href="../../../../../assets/css/vendorcustom/ucd.custom.min.css?_=036eff9">
+    <link rel="stylesheet" href="../../../../../assets/css/vendorcustom/bootstrap.custom.min.css?_=5762e24">
+    <link rel="stylesheet" href="../../../../../assets/css/vendorcustom/ngdialog.custom.min.css?_=893a764">
+    <link rel="stylesheet" href="../../../../../assets/css/vendorcustom/ngform-validate.custom.min.css?_=4436730">
+    <link rel="stylesheet" href="../../../../../assets/css/mysettings/mysettings.min.css?_=bf80e09">
+    <link rel="stylesheet" href="../../../../../assets/css/service/service.css?_=fa39184">
+    <link rel="stylesheet" href="../../../../vendors/3rdlib/uiSelect/select.min.css?_=1e08117">
+    <link rel="stylesheet" href="../../../../../assets/css/vendorcustom/uiselect.custum.css?_=82d4ee3">
+    <link rel="stylesheet" href="../../../../vendors/3rdlib/ngDialog/ngDialog.min.css?_=c5fa3e8">
+    <link rel="stylesheet" href="../../../../vendors/3rdlib/ngDialog/ngDialog-theme-default.min.css?_=769c8c9">
+    <link rel="stylesheet" href="../../../../../assets/css/common.css?_=a9aa435">
+    <link rel="stylesheet" href="../../../../components/toast/toast.css?_=3975fc8">
+    <link rel="stylesheet" href="../../../../../assets/css/secret/secret.css?_=6497f45">
+    <link rel="stylesheet" href="../../../../vendors/3rdlib/uploader/uploader.css?_=702d846">
+    <link rel="stylesheet" href="../../../../views/distribute/basic/appinfo/assets/css/appInfo.css?_=3c60108">
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-PDCVWTL"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="https://developer.huawei.com/consumer/cn/service/josp/agc/hianalytics.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="general/directives/myservices/appMultiMedia/appMultiMedia.directives" src="/consumer/cn/service/josp/agc/app/general/directives/myservices/appMultiMedia/appMultiMedia.directives.js?_=20200720151630"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="general/directives/myservices/appMultiMedia/appDetailScreenShots.directives" src="/consumer/cn/service/josp/agc/app/general/directives/myservices/appMultiMedia/appDetailScreenShots.directives.js?_=20200720151630"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="general/directives/myservices/appMultiMedia/dialog.product.video.intro.ctrl" src="/consumer/cn/service/josp/agc/app/general/directives/myservices/appMultiMedia/dialog.product.video.intro.ctrl.js?_=20200720151630"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="general/directives/myservices/appMultiMedia/dialog.product.video.rcmd.ctrl" src="/consumer/cn/service/josp/agc/app/general/directives/myservices/appMultiMedia/dialog.product.video.rcmd.ctrl.js?_=20200720151630"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="services/appmng/get-app-parameter.service" src="/consumer/cn/service/josp/agc/app/services/appmng/get-app-parameter.service.js?_=20200720151630"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="services/appmng/get-app-secret.service" src="/consumer/cn/service/josp/agc/app/services/appmng/get-app-secret.service.js?_=20200720151630"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="services/appmng/myservice-app-detail.service" src="/consumer/cn/service/josp/agc/app/services/appmng/myservice-app-detail.service.js?_=20200720151630"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="views/distribute/basic/appinfo/controllers/app.detailaggr.ctrl" src="/consumer/cn/service/josp/agc/app/views/distribute/basic/appinfo/controllers/app.detailaggr.ctrl.js?_=20200720151630"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="views/distribute/basic/appinfo/controllers/app.detail.watch.ctrl" src="/consumer/cn/service/josp/agc/app/views/distribute/basic/appinfo/controllers/app.detail.watch.ctrl.js?_=20200720151630"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="views/distribute/basic/appinfo/controllers/app.detail.sport.watch.ctrl" src="/consumer/cn/service/josp/agc/app/views/distribute/basic/appinfo/controllers/app.detail.sport.watch.ctrl.js?_=20200720151630"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="views/distribute/basic/appinfo/controllers/app.detail.tv.ctrl" src="/consumer/cn/service/josp/agc/app/views/distribute/basic/appinfo/controllers/app.detail.tv.ctrl.js?_=20200720151630"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="views/distribute/basic/appinfo/controllers/app.detail.headunit.ctrl" src="/consumer/cn/service/josp/agc/app/views/distribute/basic/appinfo/controllers/app.detail.headunit.ctrl.js?_=20200720151630"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="views/distribute/basic/appinfo/controllers/app.detail.cloud.pc.ctrl" src="/consumer/cn/service/josp/agc/app/views/distribute/basic/appinfo/controllers/app.detail.cloud.pc.ctrl.js?_=20200720151630"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="views/distribute/basic/appinfo/controllers/common/app.detail.common.util" src="/consumer/cn/service/josp/agc/app/views/distribute/basic/appinfo/controllers/common/app.detail.common.util.js?_=20200720151630"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="views/distribute/basic/appinfo/controllers/app.detail.distribute.ctrl" src="/consumer/cn/service/josp/agc/app/views/distribute/basic/appinfo/controllers/app.detail.distribute.ctrl.js?_=20200720151630"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="services/appmng/productService" src="/consumer/cn/service/josp/agc/app/services/appmng/productService.js?_=20200720151630"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="views/distribute/basic/appinfo/controllers/dialog.product.detail.manager.language.ctrl" src="/consumer/cn/service/josp/agc/app/views/distribute/basic/appinfo/controllers/dialog.product.detail.manager.language.ctrl.js?_=20200720151630"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="views/distribute/basic/appinfo/controllers/dialog.multiple.choice.language.ctrl" src="/consumer/cn/service/josp/agc/app/views/distribute/basic/appinfo/controllers/dialog.multiple.choice.language.ctrl.js?_=20200720151630"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="views/distribute/basic/appinfo/controllers/dialog.languages.manage.ctrl" src="/consumer/cn/service/josp/agc/app/views/distribute/basic/appinfo/controllers/dialog.languages.manage.ctrl.js?_=20200720151630"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="AgcToast" src="/consumer/cn/service/josp/agc/app/components/toast/AgcToast.js?_=20200720151630"></script></head>
+<body ng-controller="BaseCtrl" class="ng-scope"><noscript><iframe height="0" width="0" src="https://www.googletagmanager.com/ns.html?id=GTM-PDCVWTL" style="display: none; visibility: hidden;"></iframe></noscript>
 
-</head>
-<body>
-<!-- @header Start-->
-<div class="lay_top">
-    <div class="lay_top_inner" style="width: 688px;">
-        <h1 class="logo text_hide">QQ登录</h1>
-        <div class="lat_top_other">
-            <a href="http://connect.qq.com" target="_blank" title="什么是QQ登录"><i class="icon_help_white"></i>QQ登录</a>
-            <span class="line">|</span>
-            <a href="http://connect.qq.com/toc/auth_manager?from=auth" id="auth_manager_link" target="_blank" title="登录授权管理">授权管理</a>
-            <span class="line">|</span>
-            <a href="http://connect.qq.com/manage" target="_blank" title="申请接入">申请接入</a>
+<main class="fluid-box">
+    <!-- uiView: --><section class="fluid-column ng-scope" id="mainView" ui-view=""><div ng-form="myForm" class="appinfo-navigation-padding-left ng-pristine ng-valid ng-scope ng-valid-maxlength" id="testst">
+    <div class="offset1"></div>
+    <div class="top-bar-fixcontent appinfo-navigation-padding-left">
+        <!-- ngInclude: buttonAreaUrl --><div ng-include="buttonAreaUrl" onload="initBtnArea()" class="ng-scope"><div class="top-bar card-style ng-scope">
+    <div class="top-bar-left">
+        <div class="title-big top-title-big ng-binding">应用信息</div>
+        <div class="text-explain--normal">
+            <span id="AppInfoAppPageHelpTxt" class="ng-binding">此信息用于这个应用在应用市场客户端部分展示，任何更改将在提交版本信息后生效</span>
+        </div>
+    </div>
+    <div class="top-bar-btnarea">
+                <span ng-show="prodType == '8' &amp;&amp; vrsdkDownload != ''" style="margin-right:20px;" class="ng-hide"><a id="AppInfoVRDownloadLink" class="blue-link ng-binding" href="https://developer.huawei.com/consumer/cn/devservice/doc/30304" target="_blank">VR SDK下载</a></span>
+        <!-- ngIf: display_lang == 'cn' --><span ng-if="display_lang == 'cn'" class="ng-scope">
+                    <a id="AppInfoSaveButtonCn" data-dismiss="dialog" class="appinfo-save-button agc-button-primary agc-button-normal agc-button-disabled" ng-class="{'agc-button-disabled' : !modFlag}" ng-mousedown="save()">保存</a>
+                </span><!-- end ngIf: display_lang == 'cn' -->
+        <!-- ngIf: display_lang == 'en' -->
+        <!-- ngIf: display_lang == 'ru' -->
+    </div>
+</div>
+
+<!-- 错误提示区-->
+<div class="abroad-card float-height language-box fix-cancel ng-scope" id="agcMsg">
+
+</div>
+<!-- 保存成功提示区-->
+<div class="abroad-card float-height language-box appinfo-save-sucess-info-title fix-cancel ng-scope" id="saveSucessMsg" ng-show="saveSucessFlag &amp;&amp; !(serviceType == 'appointment' || serviceType == 'alpha' || serviceType == 'firstPublish') &amp;&amp; !editDisabledFlag">
+    <div class="agc-toast agc-toast-info appinfo-save-sucess-info-content">
+        <div class="agc-toast-icon">
+            <div class="agc-toast-img"></div>
+        </div>
+        <div class="agc-toast-msg">
+                <span class="agc-toast-ctn ng-binding" id="AppInfoSaveSucessmsg">当前信息已修改，需要提交版本信息并审核通过才可以生效。&nbsp;<a class="blue-link ng-binding" click-prevent="submitVersion(srvSerialNo)" preventid="7127230">提交版本</a></span>
         </div>
     </div>
 </div>
-<!-- @header End -->
-
-<div id="combine_page" style="width: 688px;">
-  <div class="page_login combine_page_children float_left border_right">
-    <div class="lay_login_form">
-      
-      <iframe frameborder="0" width="370" height="322" id="ptlogin_iframe" name="ptlogin_iframe" src="https://xui.ptlogin2.qq.com/cgi-bin/xlogin?appid=716027609&amp;daid=383&amp;style=33&amp;login_text=%E6%8E%88%E6%9D%83%E5%B9%B6%E7%99%BB%E5%BD%95&amp;hide_title_bar=1&amp;hide_border=1&amp;target=self&amp;s_url=https%3A%2F%2Fgraph.qq.com%2Foauth2.0%2Flogin_jump&amp;pt_3rd_aid=101477621&amp;pt_feedback_link=https%3A%2F%2Fsupport.qq.com%2Fproducts%2F77942%3FcustomInfo%3D.appid101477621"></iframe>
-      
-    </div>
-  </div>
-  <div class="page_accredit combine_page_children float_left">
-    <div class="lay_main" id="lay_main">
-      <div class="lay_accredit_con">
-        <p class="cnt_wording"></p>
-        <p class="app_site_wording"><a class="accredit_site" id="accredit_site_link" href="https://sso.e.qq.com" target="_blank">腾讯广告</a>将获得以下权限：</p>
-        <div class="accredit_info" id="accredit_info">
-          <ul class="accredit_info_op">
-            <li class="select_all_li">
-              <input type="checkbox" id="select_all" class="checkbox oauth_checkbox_all" hidefocus="true" checked="checked">
-              <label class="oauth_item_title" for="select_all">全选</label>
-            </li>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            <li>
-              <input name="api_choose" hidefocus="true" type="checkbox" class="checkbox oauth_checkbox" id="item_80901010" value="80901010" title="默认授权 不可更改" checked="" disabled="">
-              <label for="item_80901010" class="oauth_item_title">获得您的昵称、头像、性别</label>
-            </li>
-            
-          </ul>
+<div class="abroad-card float-height language-box appinfo-save-sucess-info-title fix-cancel ng-scope ng-hide" id="saveSucessMsg1" ng-show="(saveSucessMsg &amp;&amp; saveSucessMsg != '') &amp;&amp; (serviceType == 'appointment' || serviceType == 'alpha' || serviceType == 'firstPublish')">
+    <div class="agc-toast agc-toast-info appinfo-save-sucess-info-content">
+        <div class="agc-toast-icon">
+            <div class="agc-toast-img"></div>
         </div>
-        <div class="oauth_tips_div">
-          <p class="oauth_tips">授权后表明你已同意 <a href="http://connect.qq.com/agreement_chs" target="_blank">QQ登录服务协议</a></p>
+        <div class="agc-toast-msg">
+            <span class="agc-toast-ctn ng-binding" id="AppInfoSaveSucessmsg1"></span>
+        </div>
+    </div>
+</div>
+<!--不可编辑状态提示区   如果包含99999 下架处理中' '62' : '待上架', '-999' : '正在审核','-995' : '正在审核', 则不允许编辑-->
+<!-- ngIf: editDisabledFlag && (versionList[0].serviceState == '-999' || versionList[0].serviceState == '-995' || versionList[0].serviceState == '99999')  -->
+<!-- ngIf: editDisabledFlag &&(versionList[0].serviceState =='101') -->
+
+</div>
+    </div>
+    <div class="abroad-card  float-height language-box top-height"></div>
+
+    <div class="card-style">
+        <!-- 顶部信息-->
+        <!-- ngInclude: headerUrl --><div ng-include="headerUrl" class="ng-scope"><!-- 顶部信息-->
+<div class="card-contant appinfo-detail-header ng-scope">
+    <div class="form-item appinfo-top-info-paddingtop mt-0">
+        <div class="form">
+            <div class="form-label-box">
+                <div class="form-label ng-binding" id="AppInfoCreateTimeTxt">创建时间：
+                </div>
+            </div>
+            <div class="form-control">
+                <div class="wid-middle inline-block form-words ellipsis">
+                    <span id="AppInfoCreateTimeContent" class="ng-binding">2020-06-13 16:43:04</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--云PC应用 不展示包名 -->
+    <!-- ngIf: prodType != '30' --><div class="form-item appinfo-top-info-paddingtop ng-scope" ng-if="prodType != '30'">
+        <div class="form">
+            <div class="form-label-box">
+                <div class="form-label ng-binding" id="AppInfoPackageNameTxt ">包名：
+                </div>
+            </div>
+            <div class="form-control">
+                <div class="wid-middle inline-block form-words ellipsis">
+                    <span id="AppInfoPackageNameInputBox" class="ng-binding">com.moonma.stickerplant</span>
+                </div>
+            </div>
+        </div>
+    </div><!-- end ngIf: prodType != '30' -->
+    <div class="form-item appinfo-top-info-paddingtop">
+        <div class="form">
+            <div class="form-label-box">
+                <div class="form-label ng-binding" id="AppInfoPackageTypeTxt">软件包类型：
+                </div>
+            </div>
+            <div class="form-control">
+                <div class="wid-middle inline-block form-words ellipsis">
+                    <span id="AppInfoPackageTypeContent" class="ng-binding">APK</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ngIf: !isMultiDeviceType --><div class="form-item appinfo-top-info-paddingtop ng-scope" ng-if="!isMultiDeviceType">
+        <div class="form">
+            <div class="form-label-box">
+                <div class="form-label ng-binding" id="AppInfoProductTypeTxt" ng-class="{'appinfo-product-typetxt-ru':display_lang == 'ru'}">支持设备：
+                </div>
+            </div>
+            <div class="form-control">
+                <div class="wid-middle inline-block form-words ellipsis">
+                    <span id="AppInfoProductTypeContent" class="ng-binding">手机</span>
+                </div>
+            </div>
+        </div>
+    </div><!-- end ngIf: !isMultiDeviceType -->
+    <div class="form-item appinfo-top-info-paddingtop">
+        <div class="form">
+            <div class="form-label-box">
+                <div class="form-label ng-binding" id="AppInfoAppIdTxt">APP ID：
+                </div>
+            </div>
+            <div class="form-control">
+                <div class="wid-middle inline-block form-words ellipsis">
+                    <span id="AppInfoAppIdContent" class="ng-binding">100404525</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-item appinfo-top-info-paddingtop">
+        <div class="form">
+            <div class="form-label-box">
+                <div class="form-label ng-binding" id="AppInfoSecretKeyTxt">SecretKey：
+                </div>
+            </div>
+            <div class="form-control">
+                <div class="sign inline-block form-words ellipsis secretKey-width">
+                    <span id="AppInfoSecretKeyContent" class="ng-binding">f81cca4ff0d5aebd9f9b4932c6fe08b8</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+        <!--适配设备 手机RPK APK-->
+        <div ng-show="gAppInfo.prodType == '1' || gAppInfo.prodType == '19'" class="">
+            <!-- ngInclude: appAdapterUrl --><div ng-include="appAdapterUrl" class="ng-scope"><div class="card-contant appdetail-area-line ng-scope">
+    <p class="title-big-40 ng-binding" id="AppInfoAdapterDeviceTxt" ng-show="deviceType == '4' || isMultiDeviceType">
+        兼容设备
+    </p>
+    <p class="title-big-40 ng-binding ng-hide" id="AppInfoWatchAdapterDeviceTxt" ng-show="deviceType == '8' &amp;&amp; !isMultiDeviceType">
+        适配设备
+    </p>
+
+    <!--手机-->
+    <div class="form-item form-checkbox-item" ng-show="deviceType == '4' &amp;&amp; !isMultiDeviceType">
+        <div class="form">
+            <div class="form-label-box">				
+                <div class="form-label ng-binding">
+                <span class="warn" ng-hide="isNoApkMultiUrlsUser &amp;&amp; gAppInfo.prodType == 1">*</span>兼容设备：
+                </div>
+            </div>
+            <!-- ngIf: !editDisabledFlag --><div class="form-control appinfo-checkbox-text-padding ng-scope" ng-if="!editDisabledFlag">
+                <!-- ngRepeat: adapt in gAppInfo.appAdapters --><label class="checkbox ng-scope" ng-repeat="adapt in gAppInfo.appAdapters" id="appAdaptersTxtSkip" ng-click="adaptEquip(adapt)">
+                                <span class="ucd-check ucd-check-checkbox ucd-checked" ng-class="{'4':'ucd-checked ucd-disabled',true:'ucd-checked',false:'','checked_disabled':'ucd-checked ucd-disabled','ucd-disabled':'ucd-disabled'}[showAdaptClass(adapt)]">
+                                    <p ng-model="adapt.flag" class="ucd-check-input ng-pristine ng-untouched ng-valid ng-not-empty" type="checkbox" id="AppInfoCheckBox1_0"></p>
+                                    <span class="ucd-check-mark"></span>
+                                </span>
+                    <span id="AppInfoCheckBoxText1_0" class="text ng-binding">手机</span>
+                    <i class="icon icon-tip-small icon-position ng-isolate-scope ng-hide" data-toggle="popover" data-classnames="text-center" content="tabletTips" ng-show="adapt.key == '5'"></i>
+                    <i class="icon icon-tip-small icon-position ng-isolate-scope ng-hide" data-toggle="popover" data-classnames="text-center" content="watchTips" ng-show="adapt.key == '7'"></i>
+                </label><!-- end ngRepeat: adapt in gAppInfo.appAdapters --><label class="checkbox ng-scope" ng-repeat="adapt in gAppInfo.appAdapters" id="appAdaptersTxtSkip" ng-click="adaptEquip(adapt)">
+                                <span class="ucd-check ucd-check-checkbox ucd-checked" ng-class="{'4':'ucd-checked ucd-disabled',true:'ucd-checked',false:'','checked_disabled':'ucd-checked ucd-disabled','ucd-disabled':'ucd-disabled'}[showAdaptClass(adapt)]">
+                                    <p ng-model="adapt.flag" class="ucd-check-input ng-pristine ng-untouched ng-valid ng-not-empty" type="checkbox" id="AppInfoCheckBox1_1"></p>
+                                    <span class="ucd-check-mark"></span>
+                                </span>
+                    <span id="AppInfoCheckBoxText1_1" class="text ng-binding">平板</span>
+                    <i class="icon icon-tip-small icon-position ng-isolate-scope" data-toggle="popover" data-classnames="text-center" content="tabletTips" ng-show="adapt.key == '5'"></i>
+                    <i class="icon icon-tip-small icon-position ng-isolate-scope ng-hide" data-toggle="popover" data-classnames="text-center" content="watchTips" ng-show="adapt.key == '7'"></i>
+                </label><!-- end ngRepeat: adapt in gAppInfo.appAdapters --><label class="checkbox ng-scope" ng-repeat="adapt in gAppInfo.appAdapters" id="appAdaptersTxtSkip" ng-click="adaptEquip(adapt)">
+                                <span class="ucd-check ucd-check-checkbox" ng-class="{'4':'ucd-checked ucd-disabled',true:'ucd-checked',false:'','checked_disabled':'ucd-checked ucd-disabled','ucd-disabled':'ucd-disabled'}[showAdaptClass(adapt)]">
+                                    <p ng-model="adapt.flag" class="ucd-check-input ng-pristine ng-untouched ng-valid ng-not-empty" type="checkbox" id="AppInfoCheckBox1_2"></p>
+                                    <span class="ucd-check-mark"></span>
+                                </span>
+                    <span id="AppInfoCheckBoxText1_2" class="text ng-binding">华为手表</span>
+                    <i class="icon icon-tip-small icon-position ng-isolate-scope ng-hide" data-toggle="popover" data-classnames="text-center" content="tabletTips" ng-show="adapt.key == '5'"></i>
+                    <i class="icon icon-tip-small icon-position ng-isolate-scope" data-toggle="popover" data-classnames="text-center" content="watchTips" ng-show="adapt.key == '7'"></i>
+                </label><!-- end ngRepeat: adapt in gAppInfo.appAdapters -->
+                <!-- ngIf: !checkAdapter() && afterSave -->
+            </div><!-- end ngIf: !editDisabledFlag -->
+            <!-- ngIf: editDisabledFlag -->
+        </div>
+    </div>
+    <!--大屏设备-->
+    <div ng-show="deviceType == '8' &amp;&amp; !isMultiDeviceType" class="ng-hide">
+        <div class="form-item form-checkbox-item">
+            <div class="form">
+                <div class="form-label-box">
+                    <div class="form-label ng-binding"><span class="warn">*</span>兼容设备：</div>
+                </div>
+                <div class="form-control appinfo-checkbox-text-padding">
+                    <!-- ngRepeat: adapt in gAppInfo.appAdapters --><label class="checkbox ng-scope" ng-repeat="adapt in gAppInfo.appAdapters" ng-click="!editDisabledFlag ? adapt.flag = !adapt.flag :''">
+                    <!-- ngIf: !editDisabledFlag --><span class="ucd-check ucd-check-checkbox ng-scope ucd-checked" ng-class="{true:'ucd-checked',false:''}[adapt.flag]" ng-if="!editDisabledFlag">
+                        <p ng-model="adapt.flag" class="ucd-check-input ng-pristine ng-untouched ng-valid ng-not-empty" type="checkbox"></p>
+                        <span class="ucd-check-mark"></span>
+                    </span><!-- end ngIf: !editDisabledFlag -->
+                    <!-- ngIf: editDisabledFlag -->
+                        <span id="AppInfoCheckTvBoxText1_0" class="text ng-binding">手机</span>
+                    </label><!-- end ngRepeat: adapt in gAppInfo.appAdapters --><label class="checkbox ng-scope" ng-repeat="adapt in gAppInfo.appAdapters" ng-click="!editDisabledFlag ? adapt.flag = !adapt.flag :''">
+                    <!-- ngIf: !editDisabledFlag --><span class="ucd-check ucd-check-checkbox ng-scope ucd-checked" ng-class="{true:'ucd-checked',false:''}[adapt.flag]" ng-if="!editDisabledFlag">
+                        <p ng-model="adapt.flag" class="ucd-check-input ng-pristine ng-untouched ng-valid ng-not-empty" type="checkbox"></p>
+                        <span class="ucd-check-mark"></span>
+                    </span><!-- end ngIf: !editDisabledFlag -->
+                    <!-- ngIf: editDisabledFlag -->
+                        <span id="AppInfoCheckTvBoxText1_1" class="text ng-binding">平板</span>
+                    </label><!-- end ngRepeat: adapt in gAppInfo.appAdapters --><label class="checkbox ng-scope" ng-repeat="adapt in gAppInfo.appAdapters" ng-click="!editDisabledFlag ? adapt.flag = !adapt.flag :''">
+                    <!-- ngIf: !editDisabledFlag --><span class="ucd-check ucd-check-checkbox ng-scope" ng-class="{true:'ucd-checked',false:''}[adapt.flag]" ng-if="!editDisabledFlag">
+                        <p ng-model="adapt.flag" class="ucd-check-input ng-pristine ng-untouched ng-valid ng-not-empty" type="checkbox"></p>
+                        <span class="ucd-check-mark"></span>
+                    </span><!-- end ngIf: !editDisabledFlag -->
+                    <!-- ngIf: editDisabledFlag -->
+                        <span id="AppInfoCheckTvBoxText1_2" class="text ng-binding">华为手表</span>
+                    </label><!-- end ngRepeat: adapt in gAppInfo.appAdapters -->
+                    <!-- ngIf: !checkAdapter() && afterSave -->
+                </div>
+            </div>
+        </div>
+        <div class="form-item form-checkbox-item">
+            <div class="form">
+                <div class="form-label-box" id="TvRemoteControlCheckBoxLabel">
+                    <div class="form-label ng-binding"><span class="warn">*</span>支持操作设备：</div>
+                </div>
+                <div class="form-control appinfo-checkbox-text-padding">
+                    <!-- ngRepeat: tvRemote in gAppInfo.tvRemoteControl -->
+                    <!-- ngIf: !checkTVRemoteC() && afterSave -->
+                </div>
+            </div>
+        </div>
+    </div>
+    	<!-- 手表 -->
+    <div ng-show="deviceType == '7' &amp;&amp; !isMultiDeviceType" class="ng-hide">
+        <div class="form-item form-checkbox-item">
+            <div class="form">
+                <div class="form-label-box">
+                    <div class="form-label ng-binding"><span class="warn">*</span>兼容设备：</div>
+                </div>
+                <div class="form-control appinfo-checkbox-text-padding">
+                    <!-- ngRepeat: adapt in gAppInfo.appAdapters --><label class="checkbox ng-scope" ng-repeat="adapt in gAppInfo.appAdapters" ng-click="!editDisabledFlag ? adapt.flag = !adapt.flag :''">
+                    <!-- ngIf: !editDisabledFlag --><span class="ucd-check ucd-check-checkbox ng-scope ucd-checked" ng-class="{true:'ucd-checked',false:''}[adapt.flag]" ng-if="!editDisabledFlag">
+                        <p ng-model="adapt.flag" class="ucd-check-input ng-pristine ng-untouched ng-valid ng-not-empty" type="checkbox"></p>
+                        <span class="ucd-check-mark"></span>
+                    </span><!-- end ngIf: !editDisabledFlag -->
+                    <!-- ngIf: editDisabledFlag -->
+                        <span id="AppInfoCheckTvBoxText1_0" class="text ng-binding">手机</span>
+                    </label><!-- end ngRepeat: adapt in gAppInfo.appAdapters --><label class="checkbox ng-scope" ng-repeat="adapt in gAppInfo.appAdapters" ng-click="!editDisabledFlag ? adapt.flag = !adapt.flag :''">
+                    <!-- ngIf: !editDisabledFlag --><span class="ucd-check ucd-check-checkbox ng-scope ucd-checked" ng-class="{true:'ucd-checked',false:''}[adapt.flag]" ng-if="!editDisabledFlag">
+                        <p ng-model="adapt.flag" class="ucd-check-input ng-pristine ng-untouched ng-valid ng-not-empty" type="checkbox"></p>
+                        <span class="ucd-check-mark"></span>
+                    </span><!-- end ngIf: !editDisabledFlag -->
+                    <!-- ngIf: editDisabledFlag -->
+                        <span id="AppInfoCheckTvBoxText1_1" class="text ng-binding">平板</span>
+                    </label><!-- end ngRepeat: adapt in gAppInfo.appAdapters --><label class="checkbox ng-scope" ng-repeat="adapt in gAppInfo.appAdapters" ng-click="!editDisabledFlag ? adapt.flag = !adapt.flag :''">
+                    <!-- ngIf: !editDisabledFlag --><span class="ucd-check ucd-check-checkbox ng-scope" ng-class="{true:'ucd-checked',false:''}[adapt.flag]" ng-if="!editDisabledFlag">
+                        <p ng-model="adapt.flag" class="ucd-check-input ng-pristine ng-untouched ng-valid ng-not-empty" type="checkbox"></p>
+                        <span class="ucd-check-mark"></span>
+                    </span><!-- end ngIf: !editDisabledFlag -->
+                    <!-- ngIf: editDisabledFlag -->
+                        <span id="AppInfoCheckTvBoxText1_2" class="text ng-binding">华为手表</span>
+                    </label><!-- end ngRepeat: adapt in gAppInfo.appAdapters -->
+                    <!-- ngIf: !checkAdapter() && afterSave -->
+                </div>
+            </div>
         </div>
       </div>
+
+    <div ng-show="isMultiDeviceType" style="margin-right: 260px;" class="ng-hide">
+        <div class="form-item">
+            <div class="form">
+                <div class="form-label-box">
+                    <div class="form-label ng-binding"><span class="warn">*</span>兼容设备：</div>
+                </div>
+                <div class="form-control">
+                    <table class="agc-table" id="multiDeviceTable">
+                        <colgroup>
+                            <col width="20%">
+                            <col width="30%">
+                            <col width="30%">
+                            <col width="20%">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th class="ng-binding">设备类型</th>
+                            <th class="ng-binding">可兼容设备</th>
+                            <th class="ng-binding">可支持操作设备</th>
+                            <th class="ng-binding">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <!-- ngRepeat: item in multiDeviceTypeConstant track by $index -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
     </div>
-  </div>
+</div></div>
+        </div>
+        <div class="appdetail-area-line">
+             <!-- 手机 VR 路由器 -->
+             <div class="title-big-40">
+                <div id="AppInfoLocalInfoTxt1" class="ng-binding">可本地化基础信息</div>
+                <div id="AppInfoLocalInfoPromptTxt1" class="appinfo-sub-title text-gray text-small ng-binding">
+                1.如果您没有为各语言版本添加本地化图片文件，则系统将使用默认语言版本的图片文件。2.输入的文字会以文本方式展示，不支持html标签。3.正确填写应用多语言信息，有助于增加应用在应用市场曝光。  
+                </div>               
+            </div>
+
+            <!-- ngInclude: selectLanguageUrl --><div ng-include="selectLanguageUrl" class="ng-scope"><div class="form-item form-language-item ng-scope" float-with-scroller="" name="language-box">
+    <div class="form">
+        <div class="form-label-box">
+
+            <div class="form-label">
+                <span class="warn">*</span><span id="AppInfoLanguage" class="ng-binding">语言：</span>
+            </div>
+            
+        </div>
+        <div class="form-control">
+            <div class="inline-block v-middle">
+                <div class="ucd-droplist width-mid">
+                    <div class="ui-select-container ui-select-bootstrap dropdown ng-not-empty ng-valid" ng-class="{'select-disabled': editDisabledFlag, open: $select.open}" ng-model="gAppInfoTemp.langNameSelected" ng-disabled="editDisabledFlag" ng-change="changeLanguage()" search-enabled="true"><div class="ui-select-match ng-scope" ng-hide="$select.open &amp;&amp; $select.searchEnabled" ng-disabled="$select.disabled" ng-class="{'btn-default-focus':$select.focus}" placeholder="请选择语言"><span tabindex="-1" class="btn btn-default form-control ui-select-toggle" aria-label="Select box activate" ng-disabled="$select.disabled" ng-click="$select.activate()" style="outline: 0;"><span ng-show="$select.isEmpty()" class="ui-select-placeholder text-muted ng-binding ng-hide">请选择语言</span> <span ng-hide="$select.isEmpty()" class="ui-select-match-text pull-left" ng-class="{'ui-select-allow-clear': $select.allowClear &amp;&amp; !$select.isEmpty()}" ng-transclude="">
+                            美式英语-默认
+                        </span> <i class="caret pull-right" ng-click="$select.toggle($event)"></i> <a ng-show="$select.allowClear &amp;&amp; !$select.isEmpty() &amp;&amp; ($select.disabled !== true)" aria-label="Select box clear" style="margin-right: 10px" ng-click="$select.clear($event)" class="btn btn-xs btn-link pull-right ng-hide"><i class="glyphicon glyphicon-remove" aria-hidden="true"></i></a></span></div><span ng-show="$select.open &amp;&amp; $select.refreshing &amp;&amp; $select.spinnerEnabled" class="ui-select-refreshing glyphicon glyphicon-refresh ui-select-spin ng-hide"></span> <input type="search" autocomplete="off" tabindex="-1" aria-expanded="true" aria-label="Select box" aria-owns="ui-select-choices-3" class="form-control ui-select-search ng-pristine ng-untouched ng-valid ng-empty ng-hide" ng-class="{ 'ui-select-search-hidden' : !$select.searchEnabled }" placeholder="请选择语言" ng-model="$select.search" ng-show="$select.open"><ul class="ui-select-choices ui-select-choices-content ui-select-dropdown dropdown-menu ng-scope ng-hide" ng-show="$select.open &amp;&amp; $select.items.length > 0" repeat="language in (gAppInfo.languages | filter: $select.search) track by language.languageName"><li class="ui-select-choices-group" id="ui-select-choices-3"><div class="divider ng-hide" ng-show="$select.isGrouped &amp;&amp; $index > 0"></div><div ng-show="$select.isGrouped" class="ui-select-choices-group-label dropdown-header ng-binding ng-hide" ng-bind="$group.name"></div><!-- ngRepeat: language in $select.items track by language.languageName --><!-- ngIf: $select.open --><!-- end ngRepeat: language in $select.items track by language.languageName --><!-- ngIf: $select.open --><!-- end ngRepeat: language in $select.items track by language.languageName --><!-- ngIf: $select.open --><!-- end ngRepeat: language in $select.items track by language.languageName --></li></ul><div class="ui-select-no-choice"></div><ui-select-single></ui-select-single><input ng-disabled="$select.disabled" class="ui-select-focusser ui-select-offscreen ng-scope" type="text" id="focusser-3" aria-label="Select box focus" aria-haspopup="true" role="button"></div>
+                </div>
+            </div>
+            <a id="AppInfoManageLanguageButton" class="btn btn-small ml-1 ng-binding" ng-show="languageInfoList.length > 1" style="margin-left: 16px !important;" ng-click="manageLanguage()" ng-class="{'button-text-disabled' : editDisabledFlag}">管理语言列表</a>
+            <!-- ngIf: gAppInfo.languages.length>1 --><a id="AppInfoChangeDefaultLanguageButton" class="btn btn-small ml-1 btn-margin-small ng-binding ng-scope" ng-click="changeDefaultLanguage()" ng-class="{'button-text-disabled' : editDisabledFlag}" ng-if="gAppInfo.languages.length>1">更改默认语言</a><!-- end ngIf: gAppInfo.languages.length>1 -->
+            <div class="text-box ng-binding" id="AppInfoLanguageName">美式英语-默认
+            </div>
+            <div class="text-box">
+                <!-- ngIf: tempAlllang>0 && gAppInfo.languages.length>1 -->
+            </div>
+        </div>
+    </div>
+</div></div>
+            <!-- ngRepeat: language in gAppInfo.languages --><!-- ngIf: language.language ==  gAppInfoTemp.langNameSelected.language --><div ng-repeat="language in gAppInfo.languages" ng-if="language.language ==  gAppInfoTemp.langNameSelected.language" class="ng-scope">
+                <!--应用名称-->
+                <div class="form-item mt-2">
+                    <div class="form">
+                        <div class="form-label-box">
+                            <div class="form-label">
+                            	<span class="warn">*</span><span id="AppInfoAppNameTxt" class="ng-binding">应用名称：</span>
+                            </div>
+                        </div>
+                        <div class="form-control">
+                            <div class="width-mid inputContainer" ng-class="{'div-error':(language.appName.length<1 || checkSpecialChar(language.appName) || duplicatedName[language.language]),'div-disabled':editDisabledFlag}">
+                                <!-- ngIf: language.language == 'ar' || language.language == 'he_IL' || language.language == 'fa' || language.language == 'ur'|| language.language == 'ug_CN' -->
+                                 <!-- ngIf: !(language.language == 'ar' || language.language == 'he_IL' || language.language == 'fa' || language.language == 'ur'|| language.language == 'ug_CN') --><input class="input wid-100 ng-pristine ng-untouched ng-valid ng-scope ng-not-empty ng-valid-maxlength" ng-if="!(language.language == 'ar' || language.language == 'he_IL' || language.language == 'fa' || language.language == 'ur'|| language.language == 'ug_CN')" id="AppInfoAppNameInputBox" ng-blur="checkDuplicateAppName(language)" ng-disabled="editDisabledFlag" maxlength="64" placeholder="应用名称应为1-64字符" ng-class="{'input-error':language.appName.length<1 || checkSpecialChar(language.appName) || duplicatedName[language.language]}" ng-model="language.appName"><!-- end ngIf: !(language.language == 'ar' || language.language == 'he_IL' || language.language == 'fa' || language.language == 'ur'|| language.language == 'ug_CN') -->
+                                <span class="input-tips ng-binding">18/64</span>
+                            </div>
+                            <div class="appName-tip">
+                                <i class="icon icon-tip-small icon-position ng-isolate-scope" data-toggle="popover" data-classnames="text-center" content="appNameTips"></i>
+                            </div>
+                            <div class="text-box ng-binding">美式英语-默认</div>
+                            <!-- ngIf: (language.appName.length<1 || checkSpecialChar(language.appName)) -->
+                            <!-- ngIf: duplicatedName[language.language] -->
+                        </div>
+                    </div>
+                </div>
+                <!--应用介绍-->
+                <div class="form-item">
+                    <div class="form">
+                        <div class="form-label-box">
+
+                            <div class="form-label"><span class="warn" ng-hide="isNoApkMultiUrlsUser &amp;&amp; prodType == 1">*</span><span id="AppInfoAppIntroduceTxt" class="ng-binding">应用介绍：</span>
+                            </div>
+
+                        </div>
+                        <div class="form-control">
+                            <div class="textarea-Container width-mid" ng-class="{'div-error':((language.appDesc.length<1 ||checkSpecialChar(language.appDesc)) &amp;&amp; (afterSave || myForm.appDesc.$dirty))}">
+                                <!-- ngIf: language.language == 'ar' || language.language == 'he_IL' || language.language == 'fa' || language.language == 'ur'|| language.language == 'ug_CN' -->
+                                <!-- ngIf: !(language.language == 'ar' || language.language == 'he_IL' || language.language == 'fa' || language.language == 'ur'|| language.language == 'ug_CN') --><textarea class="textarea wid-100 full-width txt-area ng-pristine ng-untouched ng-valid ng-scope ng-not-empty ng-valid-maxlength" ng-disabled="editDisabledFlag" id="AppInfoAppIntroduceInputBox" ng-if="!(language.language == 'ar' || language.language == 'he_IL' || language.language == 'fa' || language.language == 'ur'|| language.language == 'ug_CN')" ng-class="{'textarea-error':((language.appDesc.length<1 ||checkSpecialChar(language.appDesc)) &amp;&amp; (afterSave || myForm.appDesc.$dirty))}" maxlength="8000" ng-focus="isInAppDescInput=true" ng-blur="isInAppDescInput=false;checkMultiLanguage(language.appDesc, language.language, 'AppDesc')" name="appDesc" ng-attr-placeholder="{{appDescPlaceholder}}" ng-model="language.appDesc" placeholder="应用介绍字数应限制为8000字以内">                                </textarea><!-- end ngIf: !(language.language == 'ar' || language.language == 'he_IL' || language.language == 'fa' || language.language == 'ur'|| language.language == 'ug_CN') -->
+                                <div class="text-box single txtarea-tips">
+                                    <p class="float-right ng-binding">
+                                        1534/8000</p>
+                                </div>
+                            </div>
+                            <div class="text-box width-500">
+                                <span class="language-text-hint-left ng-binding">美式英语-默认</span>
+                                <!-- ngIf: isShowTipAppDesc && isNeedCheck == 1 && language.language == gAppInfo.defaultLangSimple && MLSupportLanguages.indexOf(language.language.slice(0, 2)) != -1 -->
+                            </div>
+                            <div class="text-box ng-hide" ng-show="((language.appDesc.length<1 ||checkSpecialChar(language.appDesc)) &amp;&amp; (afterSave || myForm.appDesc.$dirty))">
+                                <i class="icon icon-error-tip v-middle"></i>
+                                <!-- ngIf: language.appDesc.length<1 && !checkSpecialChar(language.appDesc) -->
+                                <!-- ngIf: checkSpecialChar(language.appDesc) -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--一句话简介-->
+                <div class="form-item">
+                    <div class="form">
+                        <div class="form-label-box">
+                            <div class="form-label">
+                            	<span class="warn" ng-show="((!isNoApkMultiUrlsUser&amp;&amp; prodType == 1) || prodType != 1) &amp;&amp; !(serviceType == 'appointment' || serviceType == 'alpha' || serviceType == 'firstPublish')">*</span><span id="AppInfoAppBriefTxt" class="ng-binding">应用一句话简介（小编推荐）：</span>
+                            </div>
+                        </div>
+                        <!--预约首发内测 不做校验-->
+                        <div class="form-control">
+                            <div class="inputContainer width-mid" ng-class="{'div-error':(!(serviceType == 'appointment' || serviceType == 'alpha' || serviceType == 'firstPublish') &amp;&amp; ((language.briefInfo.length<=0 &amp;&amp; (myForm.briefInfo.$dirty || afterSave)) || language.briefInfo.length>80 || checkSpecialChar(language.briefInfo))) ,'div-disabled':editDisabledFlag}">
+                                <!-- ngIf: language.language == 'ar' || language.language == 'he_IL' || language.language == 'fa' || language.language == 'ur'|| language.language == 'ug_CN' -->
+                                <!-- ngIf: !(language.language == 'ar' || language.language == 'he_IL' || language.language == 'fa' || language.language == 'ur'|| language.language == 'ug_CN') --><input class="input wid-100 ng-pristine ng-untouched ng-valid ng-scope ng-not-empty ng-valid-maxlength" id="AppInfoAppBriefInputBox" name="briefInfo" ng-if="!(language.language == 'ar' || language.language == 'he_IL' || language.language == 'fa' || language.language == 'ur'|| language.language == 'ug_CN')" ng-disabled="editDisabledFlag" ng-class="{'input-error':(!(serviceType == 'appointment' || serviceType == 'alpha' || serviceType == 'firstPublish') &amp;&amp; ((language.briefInfo.length<=0 &amp;&amp; (myForm.briefInfo.$dirty || afterSave)) || language.briefInfo.length>80 || checkSpecialChar(language.briefInfo)))}" ng-focus="isInBriefInfoInput=true" ng-blur="isInBriefInfoInput=false;checkMultiLanguage(language.briefInfo, language.language, 'BriefInfo')" placeholder="应用一句话简介应限制为80字以内" type="text" maxlength="80" ng-model="language.briefInfo"><!-- end ngIf: !(language.language == 'ar' || language.language == 'he_IL' || language.language == 'fa' || language.language == 'ur'|| language.language == 'ug_CN') -->
+                                <span class="input-tips ng-binding">57/80</span>
+                            </div>
+                            <div class="text-box width-500">
+                                <span class="language-text-hint-left ng-binding">美式英语-默认</span>
+                                <!-- ngIf: isShowTipBriefInfo && isNeedCheck == 1 && language.language == gAppInfo.defaultLangSimple && MLSupportLanguages.indexOf(language.language.slice(0, 2)) != -1 -->
+                            </div>
+                            <!-- ngIf: !(serviceType == 'appointment' || serviceType == 'alpha' || serviceType == 'firstPublish') && (((language.briefInfo.length<=0 || language.briefInfo.length>80)  && (myForm.briefInfo.$dirty || afterSave))||(language.briefInfo.length>80 && isInBriefInfoInput) || checkSpecialChar(language.briefInfo)) -->
+                        </div>
+                    </div>
+                </div>
+                <!-- 快应用没有 新版本特性-->
+                <div class="form-item" ng-hide="prodType == 19">
+                    <div class="form">
+                        <div class="form-label-box">
+                            <div class="form-label ng-binding" id="AppInfoNewFeaturesTxt">新版本特性：
+                            </div>
+                        </div>
+                        <div class="form-control">
+                            <div class="textarea-Container width-mid" ng-class="{'div-error':checkSpecialChar(language.newFeatures)}">
+                                <!-- ngIf: language.language == 'ar' || language.language == 'he_IL' || language.language == 'fa' || language.language == 'ur'|| language.language == 'ug_CN' -->
+                            	<!-- ngIf: !(language.language == 'ar' || language.language == 'he_IL' || language.language == 'fa' || language.language == 'ur'|| language.language == 'ug_CN') --><textarea class="textarea wid-100 full-width txt-area ng-pristine ng-untouched ng-valid ng-scope ng-empty ng-valid-maxlength" maxlength="500" ng-disabled="editDisabledFlag" ng-if="!(language.language == 'ar' || language.language == 'he_IL' || language.language == 'fa' || language.language == 'ur'|| language.language == 'ug_CN')" id="AppInfoNewFeaturesInputBox" ng-class="{'textarea-error':checkSpecialChar(language.newFeatures)}" ng-focus="isInNewFeaturesInput=true" ng-blur="isInNewFeaturesInput=false;checkMultiLanguage(language.newFeatures, language.language, 'NewFeatures')" ng-attr-placeholder="{{newfeaturesPlaceholder}}" ng-model="language.newFeatures" placeholder="新版本特性，500字以内。新版本特性在华为应用市场客户端更新页中展示，认真填写可增加更新转化率。">                            </textarea><!-- end ngIf: !(language.language == 'ar' || language.language == 'he_IL' || language.language == 'fa' || language.language == 'ur'|| language.language == 'ug_CN') -->
+                                <div class="text-box single">
+                                    <p class="float-right txtarea-tips ng-binding">
+                                        0/500</p>
+                                </div>
+                            </div>
+                            <div class="text-box width-500">
+                                <span class="language-text-hint-left ng-binding">美式英语-默认</span>
+                                <!-- ngIf: isShowTipNewFeatures && isNeedCheck == 1 && language.language == gAppInfo.defaultLangSimple && MLSupportLanguages.indexOf(language.language.slice(0, 2)) != -1 -->
+                            </div>
+                            <!-- ngIf: checkSpecialChar(language.newFeatures) -->
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ngIf: isMultiDeviceType -->
+
+                <!-- 应用图片-->
+                <!-- ngIf: !isMultiDeviceType --><div class="form-item ng-scope" ng-if="!isMultiDeviceType">
+                    <div class="form">
+                        <div class="form-label-box">
+                            <!-- 10.0.0附加语言的必填项和默认语言一致，基于901加上介绍截图和介绍视频的必填标记-->
+                            <!-- ng-show="gAppInfo.defaultLangSimple ==language.language" -->
+                            <div class="form-label">
+                            	<span class="warn required" ng-show="((!isNoApkMultiUrlsUser&amp;&amp; prodType == 1) || prodType != 1) &amp;&amp; !(serviceType == 'alpha' || serviceType == 'firstPublish')">*</span><span id="AppInfoAppIconTxt" class="ng-binding">应用图标：</span>
+                            </div>
+                        </div>
+                        <div class="form-control">
+                            <div class="upload-box upload-box-appicon inline-block v-bottom" ng-class="{'upload-box-error':(!((!!language.appIcon &amp;&amp; language.appIcon !='') || defaultAppIconFull) &amp;&amp; afterSave)  &amp;&amp; !(serviceType == 'alpha' || serviceType == 'firstPublish')}">
+                                <i class="icon "></i>
+                                <img ng-src="https://appfile1.hicloud.com/FileServer/getFile/app/023/361/275/0000000000023361275.20180916150317.71624489482398079849328537495452:20300725185452:2500:F8AF74AAC5870F0206F9FCF9756532136D59AAEB9C50230622378F2BC2AC7A05.png" accept="image/png,image/PNG" class="uploadfile ng-scope after-upload" id="AppInfoAppIconAddButton" ng-disabled="editDisabledFlag" ng-class="{'after-upload':language.deviceMaterials[0].appIcon&amp;&amp;language.deviceMaterials[0].appIcon !=''}" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,2097152,'image/png,image/PNG','.png,.PNG',language.deviceMaterials[0],'appIcon')" src="https://appfile1.hicloud.com/FileServer/getFile/app/023/361/275/0000000000023361275.20180916150317.71624489482398079849328537495452:20300725185452:2500:F8AF74AAC5870F0206F9FCF9756532136D59AAEB9C50230622378F2BC2AC7A05.png">
+                                <!-- ngIf: !!language.deviceMaterials[0].appIcon && !editDisabledFlag --><a class="icon icon-upload-xx ng-scope" ng-click="delimg(language.deviceMaterials[0],'appIcon')" ng-if="!!language.deviceMaterials[0].appIcon &amp;&amp; !editDisabledFlag"></a><!-- end ngIf: !!language.deviceMaterials[0].appIcon && !editDisabledFlag -->
+                            </div>
+                            <div class="inline-block v-bottom ml-2">
+                                <p class="text-gray ng-binding">示例：</p>
+                                <img class="upload-size-level1 block" src="/consumer/cn/service/josp/agc/app/views/distribute/basic/appinfo/assets/img/demophonenew.png">
+                            </div>
+                            <div class="text-box ng-binding">美式英语-默认</div>
+                            <!-- ngIf: glSwitch == '0' --><div ng-if="glSwitch == '0'" class="ng-scope">
+                                <!--快应用以外-->
+                                <div ng-show="prodType != '19'">
+                                    <!-- ngIf: !((!((!!language.deviceMaterials[0].appIcon && language.deviceMaterials[0].appIcon !='') || defaultAppIconFull) && afterSave)  && !(serviceType == 'alpha' || serviceType == 'firstPublish')) --><div class="text-box ng-binding ng-scope" id="AppInfoAppIconPromptTxt" ng-if="!((!((!!language.deviceMaterials[0].appIcon &amp;&amp; language.deviceMaterials[0].appIcon !='') || defaultAppIconFull) &amp;&amp; afterSave)  &amp;&amp; !(serviceType == 'alpha' || serviceType == 'firstPublish'))">
+                                        需上传完整正方形图标，尺寸：216*216px，图片格式：PNG。
+                                    </div><!-- end ngIf: !((!((!!language.deviceMaterials[0].appIcon && language.deviceMaterials[0].appIcon !='') || defaultAppIconFull) && afterSave)  && !(serviceType == 'alpha' || serviceType == 'firstPublish')) -->
+                                    <!-- ngIf: (!((!!language.deviceMaterials[0].appIcon && language.deviceMaterials[0].appIcon !='') || defaultAppIconFull) && afterSave)  && !(serviceType == 'alpha' || serviceType == 'firstPublish') -->
+                                </div>
+                                <!--快应用-->
+                                <div ng-show="prodType == '19'" class="ng-hide">
+                                    <div id="AppInfoAppIconPromptFreeInstallTxt" class="text-box ng-binding" ng-show="!((!(!!language.deviceMaterials[0].appIcon &amp;&amp; language.deviceMaterials[0].appIcon !='') &amp;&amp; afterSave) &amp;&amp; !(serviceType == 'alpha' || serviceType == 'firstPublish'))">
+                                        需上传完整正方形图标，尺寸：216*216px，图片格式：PNG。
+                                    </div>
+                                    <!--首发内测不做校验-->
+                                    <div class="text-box ng-hide" ng-show="(!(!!language.deviceMaterials[0].appIcon &amp;&amp; language.deviceMaterials[0].appIcon !='') &amp;&amp; afterSave) &amp;&amp; !(serviceType == 'alpha' || serviceType == 'firstPublish')">
+                                        <i class="icon icon-error-tip v-middle"></i>
+                                        <span class="text-danger v-middle ng-binding" id="AppInfoAppIconPromptFreeInstallErrorTxt">需上传完整正方形图标，尺寸：216*216px，图片格式：PNG。</span>
+                                    </div>
+                                </div>
+                            </div><!-- end ngIf: glSwitch == '0' -->
+                            <!-- ngIf: glSwitch == '1' -->
+                        </div>
+                    </div>
+                </div><!-- end ngIf: !isMultiDeviceType -->
+
+                <!-- 应用截图和视频区域 -->
+                <!-- ngIf: !isMultiDeviceType --><div class="form-item ng-scope ng-isolate-scope" prod-type="gAppInfo.prodType" default-language-temp="defaultLanguageTemp" id="multiMedia" g-app-info="gAppInfo" is-no-apk-multi-urls-user="isNoApkMultiUrlsUser" gl-switch="glSwitch" language="language" device-material-index="0" app-info-to-string="appInfoToString" disabled="disabled" after-save="afterSave" service-type="serviceType" func="changeShowType(fileType, showType)" show-tab="tabType" intro-state="introState" rcmd-state="rcmdState" ng-if="!isMultiDeviceType">
+    <div class="form">
+        <div ng-class="{'form-label-box': language.deviceMaterials.length == 1 || language.deviceMaterials.length == 0 || gAppInfo.isMaterialTestPage}" class="form-label-box">
+            <div ng-class="{'text-right':gAppInfo.isMaterialTestPage, 'form-label': language.deviceMaterials.length == 1 || language.deviceMaterials.length == 0 || gAppInfo.isMaterialTestPage}" class="ng-binding form-label">
+                <span class="required-icon" ng-show="!matestPreview &amp;&amp; ((!isNoApkMultiUrlsUser&amp;&amp; prodType == 1) || prodType != 1) &amp;&amp; (!(serviceType == 'alpha' || serviceType == 'firstPublish'))">*</span>应用截图和视频：
+            </div>
+        </div>
+        <div ng-class="{'form-control': language.deviceMaterials.length == 1 || language.deviceMaterials.length == 0}" class="form-control">
+            <div class="long-content-tip ng-binding" ng-show="!gAppInfo.isMaterialTestPage">
+                您可以在这里上传应用介绍截图和视频，以及推荐视频。介绍截图是必填素材，其他素材可选填，如果您提交了其他素材可能会让该应用在华为应用市场客户端有更好的展示效果
+            </div>
+            <!--车机应用-->
+            <div class="text-box long-content-tip mt-1 ng-binding ng-hide" ng-show="(prodType == 27 || prodType == 28)">
+                图片要求内容清晰、主题明确，尽量不另添加文字，适当减少对比度，保证图片纯净、柔和、色调统一，避免过多的颜色和视觉干扰。不使用纯黑或纯白的背景颜色。
+            </div>
+            <div class="text-box ng-binding" ng-show="!gAppInfo.isMaterialTestPage">美式英语-默认</div>
+            <div ng-class="{'mt-2': (!gAppInfo.isMaterialTestPage || (prodType == 27 || prodType == 28))}" class="mt-2">
+                <ul class="tab medium">
+
+                    <li class="agc-tab-item active" ng-class="{active:tabType.type == 'appscreenshots'}" ng-show="!gAppInfo.showVariantInfos || gAppInfo.showVariantInfos.join(',').indexOf('4')>=0" id="AppscreenshotsTab" ng-click="changeTabType('appscreenshots')">
+                        <span class="text ng-binding active" ng-class="{active:tabType.type == 'appscreenshots'}">
+                            <span style="color: red;" ng-show="!matestPreview &amp;&amp;(!gAppInfo.isMaterialTestPage) &amp;&amp; ((!isNoApkMultiUrlsUser &amp;&amp; prodType == 1)|| prodType != 1) &amp;&amp;(!(serviceType == 'alpha' || serviceType == 'firstPublish'))">* </span>应用介绍截图</span>
+                    </li>
+                    <!-- ngIf: showUploadVideoOverseas && (prodType==1 || (prodType==4 || prodType==8 || prodType==30)) --><li class="agc-tab-item agc-tab-item-noLimitWidth ng-scope" ng-if="showUploadVideoOverseas &amp;&amp; (prodType==1 || (prodType==4 || prodType==8 || prodType==30))" ng-show="!gAppInfo.showVariantInfos || gAppInfo.showVariantInfos.join(',').indexOf('5')>=0" id="AppvedioTab" ng-class="{active:tabType.type == 'appvedio'}" ng-click="changeTabType('appvedio')">
+                        <span class="text ng-binding" ng-class="{active:tabType.type == 'appvedio'}">应用介绍视频</span>
+                    </li><!-- end ngIf: showUploadVideoOverseas && (prodType==1 || (prodType==4 || prodType==8 || prodType==30)) -->
+
+                    <!-- ngIf: deviceMaterialIndex > 0 && deviceMaterial.deviceType == "8" -->
+                    <!-- ngIf: showUploadVideoOverseas &&(prodType==1 || (prodType==4 || prodType==8 || prodType==30)) --><li class="agc-tab-item agc-tab-item-noLimitWidth ng-scope" ng-if="showUploadVideoOverseas &amp;&amp;(prodType==1 || (prodType==4 || prodType==8 || prodType==30))" ng-show="!gAppInfo.showVariantInfos || gAppInfo.showVariantInfos.join(',').indexOf('6')>=0" id="RecommendedvedioTab" ng-class="{active:tabType.type == 'recommendedvedio'}" ng-click="changeTabType('recommendedvedio')">
+                        <span class="text ng-binding" ng-class="{active:tabType.type == 'recommendedvedio'}">推荐视频</span>
+                    </li><!-- end ngIf: showUploadVideoOverseas &&(prodType==1 || (prodType==4 || prodType==8 || prodType==30)) -->
+                    <!-- ngIf: prodType==8 -->
+                </ul>
+                <!--应用介绍视频【云应用 30】-->
+                <!-- ngIf: prodType==1 || (prodType==4 || prodType==8) || prodType == 30 --><div ng-if="prodType==1 || (prodType==4 || prodType==8) || prodType == 30" ng-show="tabType.type == 'appvedio'" class="ng-scope ng-hide">
+                    <div class="mt-1">
+                        <div class="form">
+                            <label class="radio" ng-click="isIeExplore ? setVideoShowType(deviceMaterial,1) : ''">
+		                    <span class="ucd-check ucd-check-radio ucd-checked" ng-class="{0:'',1:'ucd-checked'}[deviceMaterial.videoShowType]" data-disabled="none">
+		                    	<input name="type1" data-role="checkbox" id="LandscapevedioRadio" class="ucd-check-input" type="radio" ng-click="!isIeExplore ? setVideoShowType(deviceMaterial,1) : ''" ng-disabled="disabledFlag=='disabled'">
+		                        <span class="ucd-check-mark"></span>
+		                    </span><span class="text ng-binding">横向视频</span>
+                            </label>
+                            <!--云应用30不展示竖向-->
+                            <label class="radio" ng-click="isIeExplore ? setVideoShowType(deviceMaterial,0) : ''" ng-show="prodType != 30">
+              			 <span class="ucd-check ucd-check-radio" ng-class="{0:'ucd-checked',1:''}[deviceMaterial.videoShowType]" data-disabled="none">
+               			 <input name="type1" id="PortraitvedioRadio" data-role="checkbox" class="ucd-check-input" type="radio" ng-click="!isIeExplore ? setVideoShowType(deviceMaterial,0) : ''" ng-disabled="disabledFlag=='disabled'">
+                         <span class="ucd-check-mark"></span>
+                         </span>
+                                <span class="text ng-binding">竖向视频</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div ng-show="deviceMaterial.videoShowType ==1">
+                        <div class="form-item">
+                            <div class="form">
+                                <div class="upload-wrap">
+                                    <div class="upload-box agc-upload-size-leveltype1" ng-show=" !deviceMaterial.introVedios[0].vedioUrl" ng-class="{'upload-box-error':!checkIntroVedios(deviceMaterial) &amp;&amp; afterSave &amp;&amp; gAppInfo.isMaterialTestPage &amp;&amp; disabledFlag!='disabled'}">
+                                        <i class="icon icon-add"></i>
+                                        <img id="img-poster1" name="v-video1" accept="video/quicktime,video/mp4,video/mov,video/MOV,video/MP4" ng-class="{'uploadfile':true,'img-hidden':!!deviceMaterial.introVedios[0].frameUrl}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadIntroVideo($files,524288000,'video/quicktime,video/mp4','.mov,.MOV,.mp4,.MP4',deviceMaterial,0)" class="ng-scope uploadfile">
+                                    </div>
+                                    <div class="upload-box agc-upload-size-leveltype1 ng-hide" ng-show="!introState[0].posterNotExist &amp;&amp; deviceMaterial.introVedios[0].vedioUrl &amp;&amp; !deviceMaterial.introVedios[0].frameUrl&amp;&amp;(!isIeExplore ||  (deviceMaterial.introVedios[0].vedioUrl &amp;&amp; deviceMaterial.introVedios[0].vedioUrl.indexOf('.mov') == -1))" ng-class="{'upload-box-error':taskInfo &amp;&amp; taskInfo.introVedios[0]  &amp;&amp; taskInfo.introVedios[0].vedioUrl &amp;&amp; taskInfo.introVedios[0].vedioUrl.detectionResult &amp;&amp; taskSecurityResult &amp;&amp; taskSecurityResult.indexOf(taskInfo.introVedios[0].vedioUrl.detectionResult) > -1}">
+                                        <div style="position: absolute;top: 50%;left: 35%;margin-left: -20px;margin-top: -20px;font-size: 20px;text-align: center;" class="ng-binding">
+                                            视频加载中
+                                        </div>
+                                    </div>
+                                    <div ng-show="(!!introState[0].posterNotExist || (deviceMaterial.introVedios[0].vedioUrl &amp;&amp; deviceMaterial.introVedios[0].frameUrl))&amp;&amp;(!isIeExplore ||  (deviceMaterial.introVedios[0].vedioUrl &amp;&amp; deviceMaterial.introVedios[0].vedioUrl.indexOf('.mov') == -1))" style="width:284px;height: 160px" class="upload-box ng-hide" ng-class="{'upload-box-error':taskInfo &amp;&amp; taskInfo.introVedios[0]  &amp;&amp; taskInfo.introVedios[0].vedioUrl &amp;&amp; taskInfo.introVedios[0].vedioUrl.detectionResult &amp;&amp; taskSecurityResult &amp;&amp; taskSecurityResult.indexOf(taskInfo.introVedios[0].vedioUrl.detectionResult) > -1}">
+                                        <video ng-show="!isIeExplore || (deviceMaterial.introVedios[0].vedioUrl &amp;&amp; deviceMaterial.introVedios[0].vedioUrl.indexOf('.mov') == -1)" id="video0" class="uploadfile ng-scope" style="width:100%;height:100%;opacity: inherit;cursor: inherit;object-fit: cover" controls="controls" crossorigin="Anonymous" ng-poster="deviceMaterial.introVedios[0].frameUrl" accept="video/quicktime,video/mp4,video/mov,video/MOV,video/MP4" controlslist="nodownload" load-video="0" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadIntroVideo($files,524288000,'video/quicktime,video/mp4','.mov,.MOV,.mp4,.MP4',deviceMaterial,0)"></video>
+                                        <!-- ngIf: deviceMaterial.introVedios[0].vedioUrl&& disabledFlag!='disabled' -->
+                                    </div>
+                                    <!-- ngIf: isIeExplore && deviceMaterial.introVedios[0].vedioUrl && deviceMaterial.introVedios[0].vedioUrl.indexOf('.mov') >-1 -->
+                                    <div id="videoTips0" style="display: none;" class="ng-binding">
+                                        该视频编码格式不支持，无法播放
+                                    </div>
+                                    <!-- ngIf: !!introState[0].posterNotExist && !(deviceMaterial.introVedios[0].vedioUrl && deviceMaterial.introVedios[0].frameUrl) -->
+                                    <div class="text-center ng-hide" ng-show="deviceMaterial.introVedios[0].vedioUrl&amp;&amp; disabledFlag!='disabled'">
+                                        <a ng-click="setPosterFrames($event,0,deviceMaterial)" class="template-btn blue-link ml-1 inline-block ng-binding">设置海报帧</a>
+                                        <i class="icon icon-tip-small icon-position ng-isolate-scope" data-toggle="popover" data-classnames="text-center" content="posterTips"></i>
+                                    </div>
+                                </div>
+                                <div class="upload-wrap">
+                                    <div class="upload-box agc-upload-size-leveltype1" ng-show="!deviceMaterial.introVedios[1].vedioUrl" ng-class="{'upload-box-error':!checkIntroVedios(deviceMaterial) &amp;&amp; afterSave &amp;&amp; gAppInfo.isMaterialTestPage &amp;&amp; disabledFlag!='disabled'}">
+                                        <i class="icon icon-add"></i>
+                                        <img id="img-poster2-0-0" name="img-poster2" accept="video/quicktime,video/mp4,video/mov,video/MOV,video/MP4" ng-class="{'uploadfile':true,'img-hidden':!!deviceMaterial.introVedios[1].frameUrl}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadIntroVideo($files,524288000,'video/quicktime,video/mp4','.mov,.MOV,.mp4,.MP4',deviceMaterial,1)" class="ng-scope uploadfile">
+                                    </div>
+                                    <div class="upload-box agc-upload-size-leveltype1 ng-hide" ng-show="!introState[1].posterNotExist &amp;&amp; deviceMaterial.introVedios[1].vedioUrl &amp;&amp; !deviceMaterial.introVedios[1].frameUrl&amp;&amp;(!isIeExplore ||  (deviceMaterial.introVedios[1].vedioUrl &amp;&amp; deviceMaterial.introVedios[1].vedioUrl.indexOf('.mov') == -1))" ng-class="{'upload-box-error':taskInfo &amp;&amp; taskInfo.introVedios[1]  &amp;&amp; taskInfo.introVedios[1].vedioUrl &amp;&amp; taskInfo.introVedios[1].vedioUrl.detectionResult &amp;&amp; taskSecurityResult &amp;&amp; taskSecurityResult.indexOf(taskInfo.introVedios[1].vedioUrl.detectionResult) > -1}">
+                                        <div style="position: absolute;top: 50%;left: 35%;margin-left: -20px;margin-top: -20px;font-size: 20px;text-align: center;" class="ng-binding">
+                                            视频加载中
+                                        </div>
+                                    </div>
+                                    <div ng-show="(!!introState[1].posterNotExist || (deviceMaterial.introVedios[1].vedioUrl &amp;&amp; deviceMaterial.introVedios[1].frameUrl))&amp;&amp;(!isIeExplore ||  (deviceMaterial.introVedios[1].vedioUrl &amp;&amp; deviceMaterial.introVedios[1].vedioUrl.indexOf('.mov') == -1))" style="width:284px;height: 160px" class="upload-box ng-hide" ng-class="{'upload-box-error':taskInfo &amp;&amp; taskInfo.introVedios[1]  &amp;&amp; taskInfo.introVedios[1].vedioUrl &amp;&amp; taskInfo.introVedios[1].vedioUrl.detectionResult &amp;&amp; taskSecurityResult &amp;&amp; taskSecurityResult.indexOf(taskInfo.introVedios[1].vedioUrl.detectionResult) > -1}">
+                                        <video ng-show="!isIeExplore ||  (deviceMaterial.introVedios[1].vedioUrl &amp;&amp; deviceMaterial.introVedios[1].vedioUrl.indexOf('.mov') == -1)" id="video1" class="uploadfile ng-scope" controls="controls" crossorigin="Anonymous" style="width:100%;height:100%;opacity: inherit;cursor: inherit;object-fit: cover" ng-poster="deviceMaterial.introVedios[1].frameUrl" accept="video/quicktime,video/mp4,video/mov,video/MOV,video/MP4" controlslist="nodownload" load-video="1" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadIntroVideo($files,524288000,'video/quicktime,video/mp4','.mov,.MOV,.mp4,.MP4',deviceMaterial,1)"></video>
+                                        <!-- ngIf: deviceMaterial.introVedios[1].vedioUrl&& disabledFlag!='disabled' -->
+                                    </div>
+                                    <!-- ngIf: isIeExplore && deviceMaterial.introVedios[1].vedioUrl && deviceMaterial.introVedios[1].vedioUrl.indexOf('.mov') >-1 -->
+                                    <div id="videoTips1" style="display: none;" class="ng-binding">
+                                        该视频编码格式不支持，无法播放
+                                    </div>
+                                    <!-- ngIf: !!introState[1].posterNotExist && !(deviceMaterial.introVedios[1].vedioUrl && deviceMaterial.introVedios[1].frameUrl) -->
+                                    <div class="text-center ng-hide" ng-show="deviceMaterial.introVedios[1].vedioUrl&amp;&amp; disabledFlag!='disabled'">
+                                        <a ng-click="setPosterFrames($event,1,deviceMaterial)" class="template-btn blue-link ml-1 inline-block ng-binding">设置海报帧</a>
+                                        <i class="icon icon-tip-small icon-position ng-isolate-scope" data-toggle="popover" data-classnames="text-center" content="posterTips"></i>
+                                    </div>
+                                </div>
+                                <div class="upload-wrap">
+                                    <!-- ngIf: !deviceMaterial.introVedios[2].vedioUrl --><div class="upload-box agc-upload-size-leveltype1 ng-scope" ng-if="!deviceMaterial.introVedios[2].vedioUrl" ng-class="{'upload-box-error':!checkIntroVedios(deviceMaterial) &amp;&amp;  afterSave &amp;&amp; gAppInfo.isMaterialTestPage &amp;&amp; disabledFlag!='disabled'}">
+                                        <i class="icon icon-add"></i>
+                                        <img id="img-poster3" name="img-poster3" accept="video/quicktime,video/mp4,video/mov,video/MOV,video/MP4" ng-class="{'uploadfile':true,'img-hidden':!!Model.addParam.activity.poster3}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadIntroVideo($files,524288000,'video/quicktime,video/mp4','.mov,.MOV,.mp4,.MP4',deviceMaterial,2)" class="ng-scope uploadfile">
+                                    </div><!-- end ngIf: !deviceMaterial.introVedios[2].vedioUrl -->
+                                    <div class="upload-box agc-upload-size-leveltype1 ng-hide" ng-show="!introState[2].posterNotExist &amp;&amp; deviceMaterial.introVedios[2].vedioUrl &amp;&amp; !deviceMaterial.introVedios[2].frameUrl&amp;&amp;(!isIeExplore ||  (deviceMaterial.introVedios[2].vedioUrl &amp;&amp; deviceMaterial.introVedios[2].vedioUrl.indexOf('.mov') == -1))" ng-class="{'upload-box-error':taskInfo &amp;&amp; taskInfo.introVedios[2]  &amp;&amp; taskInfo.introVedios[2].vedioUrl &amp;&amp; taskInfo.introVedios[2].vedioUrl.detectionResult &amp;&amp; taskSecurityResult &amp;&amp; taskSecurityResult.indexOf(taskInfo.introVedios[2].vedioUrl.detectionResult) > -1}">
+                                        <div style="position: absolute;top: 50%;left: 35%;margin-left: -20px;margin-top: -20px;font-size: 20px;text-align: center;" class="ng-binding">
+                                            视频加载中
+                                        </div>
+                                    </div>
+                                    <div ng-show="(!!introState[2].posterNotExist || (deviceMaterial.introVedios[2].vedioUrl &amp;&amp; deviceMaterial.introVedios[2].frameUrl))&amp;&amp;(!isIeExplore ||  (deviceMaterial.introVedios[2].vedioUrl &amp;&amp; deviceMaterial.introVedios[2].vedioUrl.indexOf('.mov') == -1))" style="width:284px;height: 160px" class="upload-box ng-hide" ng-class="{'upload-box-error':taskInfo &amp;&amp; taskInfo.introVedios[2]  &amp;&amp; taskInfo.introVedios[2].vedioUrl &amp;&amp; taskInfo.introVedios[2].vedioUrl.detectionResult &amp;&amp; taskSecurityResult &amp;&amp; taskSecurityResult.indexOf(taskInfo.introVedios[2].vedioUrl.detectionResult) > -1}">
+                                        <video ng-show="!isIeExplore ||  (deviceMaterial.introVedios[2].vedioUrl &amp;&amp; deviceMaterial.introVedios[2].vedioUrl.indexOf('.mov') == -1)" id="video2" class="uploadfile ng-scope" controls="controls" crossorigin="Anonymous" style="width:100%;height:100%;opacity: inherit;cursor: inherit;object-fit: cover" ng-poster="deviceMaterial.introVedios[2].frameUrl" accept="video/quicktime,video/mp4,video/mov,video/MOV,video/MP4" controlslist="nodownload" load-video="2" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadIntroVideo($files,524288000,'video/quicktime,video/mp4','.mov,.MOV,.mp4,.MP4',deviceMaterial,2)"></video>
+                                        <!-- ngIf: deviceMaterial.introVedios[2].vedioUrl&& disabledFlag!='disabled' -->
+                                    </div>
+                                    <!-- ngIf: isIeExplore && deviceMaterial.introVedios[2].vedioUrl && deviceMaterial.introVedios[2].vedioUrl.indexOf('.mov') >-1 -->
+                                    <div id="videoTips2" style="display: none;" class="ng-binding">
+                                        该视频编码格式不支持，无法播放
+                                    </div>
+                                    <!-- ngIf: !!introState[2].posterNotExist && !(deviceMaterial.introVedios[2].vedioUrl && deviceMaterial.introVedios[2].frameUrl) -->
+                                    <div class="text-center ng-hide" ng-show="deviceMaterial.introVedios[2].vedioUrl&amp;&amp; disabledFlag!='disabled'">
+                                        <a ng-click="setPosterFrames($event,2,deviceMaterial)" class="template-btn blue-link ml-1 inline-block ng-binding">设置海报帧</a>
+                                        <i class="icon icon-tip-small icon-position ng-isolate-scope" data-toggle="popover" data-classnames="text-center" content="posterTips"></i>
+                                    </div>
+                                </div>
+                                <div class="text-box ng-scope upload-hint">
+                                    <span class="ng-binding">请上传横向的介绍视频，建议分辨率为1280*720，宽高比为16:9，支持MOV、MP4格式，大小要求500M以内，视频长度15秒-2分钟</span>
+                                </div>
+                                <!-- ngIf: !checkIntroVedios(deviceMaterial) &&  afterSave && gAppInfo.isMaterialTestPage && disabledFlag!='disabled' -->
+                                <!--视频安工检测信息-->
+                                <!-- ngRepeat: introVedio in taskInfo.introVedios -->
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-show="deviceMaterial.videoShowType ==0" class="ng-hide">
+                        <div class="form-item">
+                            <div class="form">
+                                <div class="upload-wrap agc-upload-wrap-vertical">
+                                    <div ng-show="!deviceMaterial.introVedios[3].vedioUrl" ng-class="{'upload-box-error':!checkIntroVedios(deviceMaterial) &amp;&amp;  afterSave &amp;&amp; gAppInfo.isMaterialTestPage &amp;&amp; disabledFlag!='disabled' }" class="upload-box agc-upload-size-leveltype0 mt-1">
+                                        <i class="icon icon-add"></i>
+                                        <img id="img-poster1-0" name="img-poster1" accept="video/quicktime,video/mp4,video/mov,video/MOV,video/MP4" ng-class="{'uploadfile':true,'img-hidden':!!deviceMaterial.introVedios[3].frameUrl}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadIntroVideo($files,524288000,'video/quicktime,video/mp4','.mov,.MOV,.mp4,.MP4',deviceMaterial,3)" class="ng-scope uploadfile">
+                                    </div>
+                                    <div class="upload-box agc-upload-size-leveltype0 mt-1 ng-hide" ng-show="!introState[3].posterNotExist &amp;&amp; deviceMaterial.introVedios[3].vedioUrl &amp;&amp; !deviceMaterial.introVedios[3].frameUrl&amp;&amp;(!isIeExplore ||  (deviceMaterial.introVedios[3].vedioUrl &amp;&amp; deviceMaterial.introVedios[3].vedioUrl.indexOf('.mov') == -1))" ng-class="{'upload-box-error':taskInfo &amp;&amp; taskInfo.introVedios[3]  &amp;&amp; taskInfo.introVedios[3].vedioUrl &amp;&amp; taskInfo.introVedios[3].vedioUrl.detectionResult &amp;&amp; taskSecurityResult &amp;&amp; taskSecurityResult.indexOf(taskInfo.introVedios[3].vedioUrl.detectionResult) > -1}">
+                                        <div style="position: absolute;top: 50%;left: 35%;margin-left: -20px;margin-top: -20px;font-size: 14px;text-align: center;" class="ng-binding">
+                                            视频加载中
+                                        </div>
+                                    </div>
+                                    <div ng-show="(!!introState[3].posterNotExist || (deviceMaterial.introVedios[3].vedioUrl &amp;&amp; deviceMaterial.introVedios[3].frameUrl))&amp;&amp;(!isIeExplore ||  (deviceMaterial.introVedios[3].vedioUrl &amp;&amp; deviceMaterial.introVedios[3].vedioUrl.indexOf('.mov') == -1))" style="width:160px;height: 284px" class="upload-box mt-1 ng-hide" ng-class="{'upload-box-error':taskInfo &amp;&amp; taskInfo.introVedios[3]  &amp;&amp; taskInfo.introVedios[3].vedioUrl &amp;&amp; taskInfo.introVedios[3].vedioUrl.detectionResult &amp;&amp; taskSecurityResult &amp;&amp; taskSecurityResult.indexOf(taskInfo.introVedios[3].vedioUrl.detectionResult) > -1}">
+                                        <video ng-show="!isIeExplore ||  (deviceMaterial.introVedios[3].vedioUrl &amp;&amp; deviceMaterial.introVedios[3].vedioUrl.indexOf('.mov') == -1)" id="video3" class="uploadfile ng-scope" controls="controls" crossorigin="Anonymous" ng-src="" style="width:100%;height:100%;opacity: inherit;cursor: inherit;object-fit: cover" ng-poster="deviceMaterial.introVedios[3].frameUrl" accept="video/quicktime,video/mp4,video/mov,video/MOV,video/MP4" controlslist="nodownload" load-video="3" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadIntroVideo($files,524288000,'video/quicktime,video/mp4','.mov,.MOV,.mp4,.MP4',deviceMaterial,3)"></video>
+
+                                        <!-- ngIf: deviceMaterial.introVedios[3].vedioUrl&& disabledFlag!='disabled' -->
+                                    </div>
+                                    <!-- ngIf: isIeExplore && deviceMaterial.introVedios[3].vedioUrl && deviceMaterial.introVedios[3].vedioUrl.indexOf('.mov') >-1 -->
+                                    <div id="videoTips3" style="display: none;" class="ng-binding">
+                                        该视频编码格式不支持，无法播放
+                                    </div>
+                                    <!-- ngIf: !!introState[3].posterNotExist && !(deviceMaterial.introVedios[3].vedioUrl && deviceMaterial.introVedios[3].frameUrl) -->
+                                    <div class="text-center ng-hide" style="width: 160px;" ng-show="deviceMaterial.introVedios[3].vedioUrl&amp;&amp; disabledFlag!='disabled'">
+                                        <a ng-click="setPosterFrames($event,3,deviceMaterial)" class="text-center template-btn blue-link ml-1 inline-block ng-binding">设置海报帧</a>
+                                        <i class="icon icon-tip-small icon-position ng-isolate-scope" data-toggle="popover" data-classnames="text-center" content="posterTips"></i>
+                                    </div>
+                                </div>
+                                <div class="upload-wrap agc-upload-wrap-vertical">
+                                    <!-- ngIf: !deviceMaterial.introVedios[4].vedioUrl --><div class="upload-box agc-upload-size-leveltype0 mt-1 ng-scope" ng-class="{'upload-box-error':!checkIntroVedios(deviceMaterial) &amp;&amp;  afterSave &amp;&amp; gAppInfo.isMaterialTestPage &amp;&amp; disabledFlag!='disabled'}" ng-if="!deviceMaterial.introVedios[4].vedioUrl">
+                                        <i class="icon icon-add"></i>
+                                        <img id="img-poster2-0" name="img-poster2" accept="video/quicktime,video/mp4,video/mov,video/MOV,video/MP4" ng-class="{'uploadfile':true,'img-hidden':!!deviceMaterial.introVedios[4].frameUrl}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadIntroVideo($files,524288000,'video/quicktime,video/mp4','.mov,.MOV,.mp4,.MP4',deviceMaterial,4)" class="ng-scope uploadfile">
+                                    </div><!-- end ngIf: !deviceMaterial.introVedios[4].vedioUrl -->
+                                    <div class="upload-box agc-upload-size-leveltype0 mt-1 ng-hide" ng-show="!introState[4].posterNotExist &amp;&amp; deviceMaterial.introVedios[4].vedioUrl &amp;&amp; !deviceMaterial.introVedios[4].frameUrl &amp;&amp;(!isIeExplore ||  (deviceMaterial.introVedios[4].vedioUrl &amp;&amp; deviceMaterial.introVedios[4].vedioUrl.indexOf('.mov') == -1))" ng-class="{'upload-box-error':taskInfo &amp;&amp; taskInfo.introVedios[4]  &amp;&amp; taskInfo.introVedios[4].vedioUrl &amp;&amp; taskInfo.introVedios[4].vedioUrl.detectionResult &amp;&amp; taskSecurityResult &amp;&amp; taskSecurityResult.indexOf(taskInfo.introVedios[4].vedioUrl.detectionResult) > -1}">
+                                        <div style="position: absolute;top: 50%;left: 35%;margin-left: -20px;margin-top: -20px;font-size: 14px;text-align: center;" class="ng-binding">
+                                            视频加载中
+                                        </div>
+                                    </div>
+                                    <div ng-show="(!!introState[4].posterNotExist || (deviceMaterial.introVedios[4].vedioUrl &amp;&amp; deviceMaterial.introVedios[4].frameUrl))&amp;&amp;(!isIeExplore ||  (deviceMaterial.introVedios[4].vedioUrl &amp;&amp; deviceMaterial.introVedios[4].vedioUrl.indexOf('.mov') == -1))" style="width:160px;height: 284px" class="upload-box mt-1 ng-hide" ng-class="{'upload-box-error':taskInfo &amp;&amp; taskInfo.introVedios[4]  &amp;&amp; taskInfo.introVedios[4].vedioUrl &amp;&amp; taskInfo.introVedios[4].vedioUrl.detectionResult &amp;&amp; taskSecurityResult &amp;&amp; taskSecurityResult.indexOf(taskInfo.introVedios[4].vedioUrl.detectionResult) > -1}">
+                                        <video ng-show="!isIeExplore ||  (deviceMaterial.introVedios[4].vedioUrl &amp;&amp; deviceMaterial.introVedios[4].vedioUrl.indexOf('.mov') == -1)" id="video4" class="uploadfile ng-scope" controls="controls" crossorigin="Anonymous" ng-src="" style="width:100%;height:100%;opacity: inherit;cursor: inherit;object-fit: cover" ng-poster="deviceMaterial.introVedios[4].frameUrl" accept="video/quicktime,video/mp4,video/mov,video/MOV,video/MP4" controlslist="nodownload" load-video="4" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadIntroVideo($files,524288000,'video/quicktime,video/mp4','.mov,.MOV,.mp4,.MP4',deviceMaterial,4)"></video>
+                                        <!-- ngIf: deviceMaterial.introVedios[4].vedioUrl&& disabledFlag!='disabled' -->
+                                    </div>
+                                    <!-- ngIf: isIeExplore && deviceMaterial.introVedios[4].vedioUrl && deviceMaterial.introVedios[4].vedioUrl.indexOf('.mov') >-1 -->
+                                    <div id="videoTips4" style="display: none;" class="ng-binding">
+                                        该视频编码格式不支持，无法播放
+                                    </div>
+                                    <!-- ngIf: !!introState[4].posterNotExist && !(deviceMaterial.introVedios[4].vedioUrl && deviceMaterial.introVedios[4].frameUrl) -->
+                                    <div class="text-center ng-hide" style="width: 160px;" ng-show="deviceMaterial.introVedios[4].vedioUrl&amp;&amp; disabledFlag!='disabled'">
+                                        <a ng-click="setPosterFrames($event,4,deviceMaterial)" class="text-center template-btn blue-link ml-1 inline-block ng-binding">设置海报帧</a>
+                                        <i class="icon icon-tip-small icon-position ng-isolate-scope" data-toggle="popover" data-classnames="text-center" content="posterTips"></i>
+                                    </div>
+                                </div>
+                                <div class="upload-wrap agc-upload-wrap-vertical">
+                                    <!-- ngIf:  !deviceMaterial.introVedios[5].vedioUrl --><div class="upload-box agc-upload-size-leveltype0 mt-1 ng-scope" ng-class="{'upload-box-error':!checkIntroVedios(deviceMaterial) &amp;&amp;  afterSave &amp;&amp; gAppInfo.isMaterialTestPage &amp;&amp; disabledFlag!='disabled'}" ng-if=" !deviceMaterial.introVedios[5].vedioUrl">
+                                        <i class="icon icon-add"></i>
+                                        <img id="img-poster3-0" name="img-poster3" accept="video/quicktime,video/mp4,video/mov,video/MOV,video/MP4" ng-class="{'uploadfile':true,'img-hidden':!!Model.addParam.activity.poster3}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadIntroVideo($files,524288000,'video/quicktime,video/mp4','.mov,.MOV,.mp4,.MP4',deviceMaterial,5)" class="ng-scope uploadfile">
+                                    </div><!-- end ngIf:  !deviceMaterial.introVedios[5].vedioUrl -->
+                                    <div class="upload-box agc-upload-size-leveltype0 mt-1 ng-hide" ng-show="!introState[5].posterNotExist &amp;&amp; deviceMaterial.introVedios[5].vedioUrl &amp;&amp; !deviceMaterial.introVedios[5].frameUrl &amp;&amp;(!isIeExplore ||  (deviceMaterial.introVedios[5].vedioUrl &amp;&amp; deviceMaterial.introVedios[5].vedioUrl.indexOf('.mov') == -1))" ng-class="{'upload-box-error':taskInfo &amp;&amp; taskInfo.introVedios[5]  &amp;&amp; taskInfo.introVedios[5].vedioUrl &amp;&amp; taskInfo.introVedios[5].vedioUrl.detectionResult &amp;&amp; taskSecurityResult &amp;&amp; taskSecurityResult.indexOf(taskInfo.introVedios[5].vedioUrl.detectionResult) > -1}">
+                                        <div style="position: absolute;top: 50%;left: 35%;margin-left: -20px;margin-top: -20px;font-size: 14px;text-align: center;" class="ng-binding">
+                                            视频加载中
+                                        </div>
+                                    </div>
+                                    <div ng-show="(!!introState[5].posterNotExist || (deviceMaterial.introVedios[5].vedioUrl &amp;&amp; deviceMaterial.introVedios[5].frameUrl))&amp;&amp;(!isIeExplore ||  (deviceMaterial.introVedios[5].vedioUrl &amp;&amp; deviceMaterial.introVedios[5].vedioUrl.indexOf('.mov') == -1))" style="width:160px;height: 284px" class="upload-box mt-1 ng-hide" ng-class="{'upload-box-error':taskInfo &amp;&amp; taskInfo.introVedios[5]  &amp;&amp; taskInfo.introVedios[5].vedioUrl &amp;&amp; taskInfo.introVedios[5].vedioUrl.detectionResult &amp;&amp; taskSecurityResult &amp;&amp; taskSecurityResult.indexOf(taskInfo.introVedios[5].vedioUrl.detectionResult) > -1}">
+                                        <video ng-show="!isIeExplore ||  (deviceMaterial.introVedios[5].vedioUrl &amp;&amp; deviceMaterial.introVedios[5].vedioUrl.indexOf('.mov') == -1)" id="video5" class="uploadfile ng-scope" controls="controls" crossorigin="Anonymous" ng-src="" style="width:100%;height:100%;opacity: inherit;cursor: inherit;object-fit: cover" ng-poster="deviceMaterial.introVedios[5].frameUrl" accept="video/quicktime,video/mp4,video/mov,video/MOV,video/MP4" controlslist="nodownload" load-video="5" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadIntroVideo($files,524288000,'video/quicktime,video/mp4','.mov,.MOV,.mp4,.MP4',deviceMaterial,5)"></video>
+                                        <!-- ngIf: deviceMaterial.introVedios[5].vedioUrl&& disabledFlag!='disabled' -->
+                                    </div>
+                                    <!-- ngIf: isIeExplore && deviceMaterial.introVedios[5].vedioUrl && deviceMaterial.introVedios[5].vedioUrl.indexOf('.mov') >-1 -->
+                                    <div id="videoTips5" style="display: none;" class="ng-binding">
+                                        该视频编码格式不支持，无法播放
+                                    </div>
+                                    <!-- ngIf: !!introState[5].posterNotExist && !(deviceMaterial.introVedios[5].vedioUrl && deviceMaterial.introVedios[5].frameUrl) -->
+                                    <div class="text-center ng-hide" style="width: 160px;" ng-show="deviceMaterial.introVedios[5].vedioUrl&amp;&amp; disabledFlag!='disabled'">
+                                        <a ng-click="setPosterFrames($event,5,deviceMaterial)" class="text-center template-btn blue-link ml-1 inline-block ng-binding">设置海报帧</a>
+                                        <i class="icon icon-tip-small icon-position ng-isolate-scope" data-toggle="popover" data-classnames="text-center" content="posterTips"></i>
+                                    </div>
+                                </div>
+                                <div class="text-box ng-scope upload-hint">
+                                    <span class="ng-binding">请上传竖向的介绍视频，建议分辨率为720*1280，宽高比为9:16，支持MOV、MP4格式，大小要求500M以内，视频长度15秒-2分钟</span>
+                                </div>
+                                <!-- ngIf: !checkIntroVedios(deviceMaterial) &&  afterSave && gAppInfo.isMaterialTestPage && disabledFlag!='disabled' -->
+                                <!--视频安工检测信息-->
+                                <!-- ngRepeat: introVedio in taskInfo.introVedios -->
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end ngIf: prodType==1 || (prodType==4 || prodType==8) || prodType == 30 -->
+
+                <!--应用介绍截图 智慧屏-->
+                <div ng-show="tabType.type == 'appscreenshots' &amp;&amp; (prodType==2 || prodType==23) &amp;&amp; glSwitch == 0" class="ng-hide">
+                    <div class="form">
+                        <div class="form-control">
+                            <div>
+                                <div class="upload-list mt-2" style="width: 80%;">
+                                    <div class="upload-box agc-upload-size-leveltype1" ng-class="{'upload-box-error':(!((screenShotsLength(deviceMaterial.screenShots,deviceMaterial)>=5) ||(screenShotsLength(deviceMaterial.screenShots,deviceMaterial) ==0 &amp;&amp; defaultScreenShotsFull) ) &amp;&amp; afterSave) &amp;&amp; !deviceMaterial.screenShots[0] || (taskInfo &amp;&amp; taskInfo.screenShots[0] &amp;&amp; taskInfo.screenShots[0].detectionResult &amp;&amp;  taskSecurityResult &amp;&amp; taskSecurityResult.indexOf(taskInfo.screenShots[0].detectionResult) > -1)}">
+                                        <i class="icon icon-add" id="AppInfoScreenShotsAddButton1"></i>
+                                        <img id="AppInfoScreenShotsButton1" accept="image/jpeg,image/png,image/PNG" class="uploadfile ng-scope" ng-class="{'after-upload':deviceMaterial.screenShots[0]&amp;&amp;deviceMaterial.screenShots[0] !=''}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,2097152,'image/jpeg,image/png,image/PNG','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'tvScreenShots',0)" ng-src="">
+                                        <!-- ngIf: deviceMaterial.screenShots[0]&&deviceMaterial.screenShots[0] !=''&& disabledFlag!='disabled' -->
+                                    </div>
+                                    <div class="upload-box agc-upload-size-leveltype1" ng-class="{'upload-box-error':(!((screenShotsLength(deviceMaterial.screenShots,deviceMaterial)>=5) ||(screenShotsLength(deviceMaterial.screenShots,deviceMaterial) ==0 &amp;&amp; defaultScreenShotsFull) ) &amp;&amp; afterSave) &amp;&amp; !deviceMaterial.screenShots[1] || (taskInfo &amp;&amp; taskInfo.screenShots[1] &amp;&amp; taskInfo.screenShots[1].detectionResult &amp;&amp; taskSecurityResult &amp;&amp; taskSecurityResult.indexOf(taskInfo.screenShots[1].detectionResult) > -1)}">
+                                        <i class="icon icon-add" id="AppInfoScreenShotsAddButton2"></i>
+                                        <img id="AppInfoScreenShotsButton2" accept="image/jpeg,image/png,image/PNG" class="uploadfile ng-scope" ng-class="{'after-upload':deviceMaterial.screenShots[1]&amp;&amp;deviceMaterial.screenShots[1] !=''}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,2097152,'image/jpeg,image/png,image/PNG','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'tvScreenShots',1)" ng-src="">
+                                        <!-- ngIf: deviceMaterial.screenShots[1]&&deviceMaterial.screenShots[1] !=''&& disabledFlag!='disabled' -->
+                                    </div>
+                                    <div class="upload-box agc-upload-size-leveltype1" ng-class="{'upload-box-error':(!((screenShotsLength(deviceMaterial.screenShots,deviceMaterial)>=5) ||(screenShotsLength(deviceMaterial.screenShots,deviceMaterial) ==0 &amp;&amp; defaultScreenShotsFull) ) &amp;&amp; afterSave) &amp;&amp; !deviceMaterial.screenShots[2] || (taskInfo &amp;&amp; taskInfo.screenShots[2] &amp;&amp; taskInfo.screenShots[2].detectionResult &amp;&amp; taskSecurityResult &amp;&amp; taskSecurityResult.indexOf(taskInfo.screenShots[2].detectionResult) > -1)}">
+                                        <i class="icon icon-add" id="AppInfoScreenShotsAddButton3"></i>
+                                        <img id="AppInfoScreenShotsButton3" accept="image/jpeg,image/png,image/PNG" class="uploadfile ng-scope" ng-class="{'after-upload':deviceMaterial.screenShots[2]&amp;&amp;deviceMaterial.screenShots[2] !=''}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,2097152,'image/jpeg,image/png,image/PNG','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'tvScreenShots',2)" ng-src="">
+                                        <!-- ngIf: deviceMaterial.screenShots[2]&&deviceMaterial.screenShots[2] !=''&& disabledFlag!='disabled' -->
+                                    </div>
+                                    <div class="upload-box agc-upload-size-leveltype1" ng-class="{'upload-box-error':(!((screenShotsLength(deviceMaterial.screenShots,deviceMaterial)>=5) ||(screenShotsLength(deviceMaterial.screenShots,deviceMaterial) ==0 &amp;&amp; defaultScreenShotsFull) ) &amp;&amp; afterSave) &amp;&amp; !deviceMaterial.screenShots[3] || (taskInfo &amp;&amp; taskInfo.screenShots[3] &amp;&amp; taskInfo.screenShots[3].detectionResult &amp;&amp; taskSecurityResult &amp;&amp; taskSecurityResult.indexOf(taskInfo.screenShots[3].detectionResult) > -1)}">
+                                        <i class="icon icon-add" id="AppInfoScreenShotsAddButton4"></i>
+                                        <img id="AppInfoScreenShotsButton4" accept="image/jpeg,image/png,image/PNG" class="uploadfile ng-scope" ng-class="{'after-upload':deviceMaterial.screenShots[3]&amp;&amp;deviceMaterial.screenShots[3] !=''}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,2097152,'image/jpeg,image/png,image/PNG','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'tvScreenShots',3)" ng-src="">
+                                        <!-- ngIf: deviceMaterial.screenShots[3]&&deviceMaterial.screenShots[3] !=''&& disabledFlag!='disabled' -->
+                                    </div>
+                                    <div class="upload-box agc-upload-size-leveltype1" ng-class="{'upload-box-error':(!((screenShotsLength(deviceMaterial.screenShots,deviceMaterial)>=5) ||(screenShotsLength(deviceMaterial.screenShots,deviceMaterial) ==0 &amp;&amp; defaultScreenShotsFull) ) &amp;&amp; afterSave) &amp;&amp; !deviceMaterial.screenShots[4] || (taskInfo &amp;&amp; taskInfo.screenShots[4] &amp;&amp; taskInfo.screenShots[4].detectionResult &amp;&amp; taskSecurityResult &amp;&amp; taskSecurityResult.indexOf(taskInfo.screenShots[4].detectionResult) > -1)}">
+                                        <i class="icon icon-add" id="AppInfoScreenShotsAddButton5"></i>
+                                        <img id="AppInfoScreenShotsButton5" accept="image/jpeg,image/png,image/PNG" class="uploadfile ng-scope" ng-class="{'after-upload':deviceMaterial.screenShots[4]&amp;&amp;deviceMaterial.screenShots[4] !=''}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,2097152,'image/jpeg,image/png,image/PNG','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'tvScreenShots',4)" ng-src="">
+                                        <!-- ngIf: deviceMaterial.screenShots[4]&&deviceMaterial.screenShots[4] !=''&& disabledFlag!='disabled' -->
+                                    </div>
+                                    <div class="upload-box agc-upload-size-leveltype1" ng-class="{'upload-box-error':(!((screenShotsLength(deviceMaterial.screenShots,deviceMaterial)>=5) ||(screenShotsLength(deviceMaterial.screenShots,deviceMaterial) ==0 &amp;&amp; defaultScreenShotsFull) ) &amp;&amp; afterSave) &amp;&amp; !deviceMaterial.screenShots[5] || (taskInfo &amp;&amp; taskInfo.screenShots[5] &amp;&amp; taskInfo.screenShots[5].detectionResult &amp;&amp; taskSecurityResult &amp;&amp; taskSecurityResult.indexOf(taskInfo.screenShots[5].detectionResult) > -1)}">
+                                        <i class="icon " id="AppInfoScreenShotsAddButton6"></i>
+                                        <img id="AppInfoScreenShotsButton6" accept="image/jpeg,image/png,image/PNG" class="uploadfile ng-scope after-upload" ng-class="{'after-upload':deviceMaterial.screenShots[5]&amp;&amp;deviceMaterial.screenShots[5] !=''}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,2097152,'image/jpeg,image/png,image/PNG','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'tvScreenShots',5)" ng-src="https://appfile1.hicloud.com/FileServer/getFile/appAttach/023/361/275/0000000000023361275.20200613164540.30413723163238644483208936489962:20300725185452:2500:4DC92BF75FE324DD0FFEE7989D59906CD6D8BBDDD50823B20EEA02169C368053.jpg" src="https://appfile1.hicloud.com/FileServer/getFile/appAttach/023/361/275/0000000000023361275.20200613164540.30413723163238644483208936489962:20300725185452:2500:4DC92BF75FE324DD0FFEE7989D59906CD6D8BBDDD50823B20EEA02169C368053.jpg">
+                                        <!-- ngIf: deviceMaterial.screenShots[5]&&deviceMaterial.screenShots[5] !=''&& disabledFlag!='disabled' --><a class="icon icon-upload-xx ng-scope" id="AppInfoScreenShotsDelButton6" ng-click="delimg(deviceMaterial.screenShots,5)" ng-if="deviceMaterial.screenShots[5]&amp;&amp;deviceMaterial.screenShots[5] !=''&amp;&amp; disabledFlag!='disabled'"></a><!-- end ngIf: deviceMaterial.screenShots[5]&&deviceMaterial.screenShots[5] !=''&& disabledFlag!='disabled' -->
+                                    </div>
+                                    <div class="upload-box agc-upload-size-leveltype1" ng-class="{'upload-box-error':(!((screenShotsLength(deviceMaterial.screenShots,deviceMaterial)>=5) ||(screenShotsLength(deviceMaterial.screenShots,deviceMaterial) ==0 &amp;&amp; defaultScreenShotsFull) ) &amp;&amp; afterSave) &amp;&amp; !deviceMaterial.screenShots[6] || (taskInfo &amp;&amp; taskInfo.screenShots[6] &amp;&amp; taskInfo.screenShots[6].detectionResult &amp;&amp; taskSecurityResult &amp;&amp; taskSecurityResult.indexOf(taskInfo.screenShots[6].detectionResult) > -1)}">
+                                        <i class="icon " id="AppInfoScreenShotsAddButton7"></i>
+                                        <img id="AppInfoScreenShotsButton7" accept="image/jpeg,image/png,image/PNG" class="uploadfile ng-scope after-upload" ng-class="{'after-upload':deviceMaterial.screenShots[6]&amp;&amp;deviceMaterial.screenShots[6] !=''}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,2097152,'image/jpeg,image/png,image/PNG','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'tvScreenShots',6)" ng-src="https://appfile1.hicloud.com/FileServer/getFile/appAttach/023/361/275/0000000000023361275.20200613164543.74862338955529131170792821790631:20300725185452:2500:2665DE308A58FB07E6DDF1E03CDFCD06080DAC49F0D8D25592B332F79AEC5A2F.jpg" src="https://appfile1.hicloud.com/FileServer/getFile/appAttach/023/361/275/0000000000023361275.20200613164543.74862338955529131170792821790631:20300725185452:2500:2665DE308A58FB07E6DDF1E03CDFCD06080DAC49F0D8D25592B332F79AEC5A2F.jpg">
+                                        <!-- ngIf: deviceMaterial.screenShots[6]&&deviceMaterial.screenShots[6] !=''&& disabledFlag!='disabled' --><a class="icon icon-upload-xx ng-scope" id="AppInfoScreenShotsDelButton7" ng-click="delimg(deviceMaterial.screenShots,6)" ng-if="deviceMaterial.screenShots[6]&amp;&amp;deviceMaterial.screenShots[6] !=''&amp;&amp; disabledFlag!='disabled'"></a><!-- end ngIf: deviceMaterial.screenShots[6]&&deviceMaterial.screenShots[6] !=''&& disabledFlag!='disabled' -->
+                                    </div>
+                                    <div class="upload-box agc-upload-size-leveltype1" ng-class="{'upload-box-error':(!((screenShotsLength(deviceMaterial.screenShots,deviceMaterial)>=5) ||(screenShotsLength(deviceMaterial.screenShots,deviceMaterial) ==0 &amp;&amp; defaultScreenShotsFull) ) &amp;&amp; afterSave) &amp;&amp; !deviceMaterial.screenShots[7] || (taskInfo &amp;&amp; taskInfo.screenShots[7] &amp;&amp; taskInfo.screenShots[7].detectionResult &amp;&amp; taskSecurityResult &amp;&amp; taskSecurityResult.indexOf(taskInfo.screenShots[7].detectionResult) > -1)}">
+                                        <i class="icon " id="AppInfoScreenShotsAddButton8"></i>
+                                        <img id="AppInfoScreenShotsButton8" accept="image/jpeg,image/png,image/PNG" class="uploadfile ng-scope after-upload" ng-class="{'after-upload':deviceMaterial.screenShots[7]&amp;&amp;deviceMaterial.screenShots[7] !=''}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,2097152,'image/jpeg,image/png,image/PNG','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'tvScreenShots',7)" ng-src="https://appfile1.hicloud.com/FileServer/getFile/appAttach/023/361/275/0000000000023361275.20200613164546.11469808220635842814262262378776:20300725185452:2500:44F783D52E15CC99A1B6DBFF312380C023F918FFD1724FE6333817D42FF6BBFC.jpg" src="https://appfile1.hicloud.com/FileServer/getFile/appAttach/023/361/275/0000000000023361275.20200613164546.11469808220635842814262262378776:20300725185452:2500:44F783D52E15CC99A1B6DBFF312380C023F918FFD1724FE6333817D42FF6BBFC.jpg">
+                                        <!-- ngIf: deviceMaterial.screenShots[7]&&deviceMaterial.screenShots[7] !=''&& disabledFlag!='disabled' --><a class="icon icon-upload-xx ng-scope" id="AppInfoScreenShotsDelButton8" ng-click="delimg(deviceMaterial.screenShots,7)" ng-if="deviceMaterial.screenShots[7]&amp;&amp;deviceMaterial.screenShots[7] !=''&amp;&amp; disabledFlag!='disabled'"></a><!-- end ngIf: deviceMaterial.screenShots[7]&&deviceMaterial.screenShots[7] !=''&& disabledFlag!='disabled' -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <!-- ngIf: ((screenShotsLength(deviceMaterial.screenShots,deviceMaterial)>=5 || !afterSave ||(screenShotsLength(deviceMaterial.screenShots,deviceMaterial) ==0 &&defaultScreenShotsFull))) --><div class="text-box long-content-tip ng-binding ng-scope" id="AppInfoScreenShotsMsg" ng-if="((screenShotsLength(deviceMaterial.screenShots,deviceMaterial)>=5 || !afterSave ||(screenShotsLength(deviceMaterial.screenShots,deviceMaterial) ==0 &amp;&amp;defaultScreenShotsFull)))">
+                                    <span ng-show="gAppInfo.defaultLangSimple ==language.language || gAppInfo.isMaterialTestPage" class="ng-binding">最少5张，</span>大小：2M以内， 1920*1080或1280*720。格式：jpg、jpeg、png；
+                                </div><!-- end ngIf: ((screenShotsLength(deviceMaterial.screenShots,deviceMaterial)>=5 || !afterSave ||(screenShotsLength(deviceMaterial.screenShots,deviceMaterial) ==0 &&defaultScreenShotsFull))) -->
+                                <!-- ngIf: (!((screenShotsLength(deviceMaterial.screenShots,deviceMaterial)>=5) ||(screenShotsLength(deviceMaterial.screenShots,deviceMaterial) ==0 && defaultScreenShotsFull) ) && afterSave) -->
+                                <!--截图安工检测信息-->
+                                <!-- ngRepeat: screenShot in taskInfo.screenShots -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--应用介绍截图 智慧屏  googlePlay兼容-->
+                <!-- ngIf: tabType.type == 'appscreenshots' && (prodType==2 || prodType==23) && glSwitch == 1 -->
+                <!--应用介绍截图 手表  googlePlay兼容-->
+                <!-- ngIf: tabType.type == 'appscreenshots' && prodType==9 && glSwitch == 1 -->
+                <!--应用介绍截图 非智慧屏-->
+                <div ng-show="(tabType.type == 'appscreenshots' &amp;&amp; prodType!=2 &amp;&amp; prodType!=23) &amp;&amp; glSwitch != 1">
+                    <div class="mt-1">
+                        <div class="form" ng-show="prodType!=9 &amp;&amp; prodType != '30'">
+                            <label class="radio" ng-click="isIeExplore ? setShowType(deviceMaterial,1) : ''">
+		                    <span class="ucd-check ucd-check-radio" ng-class="{0:'',1:'ucd-checked'}[deviceMaterial.showType]" data-disabled="none">
+		                    	<input name="type1" data-role="checkbox" id="LandscapeimageRadio" class="ucd-check-input" type="radio" ng-click="!isIeExplore ? setShowType(deviceMaterial,1) : ''" ng-disabled="disabledFlag=='disabled'">
+		                        <span class="ucd-check-mark"></span>
+		                    </span><span class="text ng-binding">横向截图</span>
+                            </label>
+                            <label class="radio" ng-click="isIeExplore ? setShowType(deviceMaterial,0) :''">
+                                <span class="ucd-check ucd-check-radio ucd-checked" ng-class="{0:'ucd-checked',1:''}[deviceMaterial.showType]" data-disabled="none" ng-show="prodType != '30'">
+               			 <input name="type1" id="PortraitimageRadio" data-role="checkbox" class="ucd-check-input" type="radio" ng-click="!isIeExplore ? setShowType(deviceMaterial,0) :''" ng-disabled="disabledFlag=='disabled'">
+                         <span class="ucd-check-mark"></span>
+                         </span>
+                                <span class="text ng-binding">竖向截图</span>
+                            </label>
+                        </div>
+                        <!--云应用不展示竖向截图-->
+                        <div class="form ng-hide" ng-show="prodType=='30'">
+                            <label class="radio" ng-click="isIeExplore ? setShowType(deviceMaterial,1) : ''">
+		                    <span class="ucd-check ucd-check-radio" ng-class="{0:'',1:'ucd-checked'}[deviceMaterial.showType]" data-disabled="none">
+		                    	<input name="type1" data-role="checkbox" id="CloudLandscapeimageRadio" class="ucd-check-input" type="radio" ng-click="!isIeExplore ? setShowType(deviceMaterial,1) : ''" ng-disabled="disabledFlag=='disabled'">
+		                        <span class="ucd-check-mark"></span>
+		                    </span><span class="text ng-binding">横向截图</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form">
+                        <!-- 非手表应用-->
+                        <div class="form-control" ng-show="prodType!=9">
+                            <!-- ngIf: deviceMaterial.showType ==1 -->
+                            <!-- ngIf: deviceMaterial.showType ==0 --><div ng-if="deviceMaterial.showType ==0" class="ng-scope">
+                                <div class="upload-list mt-2">
+                                    <div class="upload-box agc-upload-size-leveltype0" ng-class="{'upload-box-error':checkPicUrl(deviceMaterial) &amp;&amp; !deviceMaterial.screenShots[5] || (taskInfo &amp;&amp; taskInfo.screenShots[5] &amp;&amp; taskInfo.screenShots[5].detectionResult &amp;&amp; taskSecurityResult &amp;&amp; taskSecurityResult.indexOf(taskInfo.screenShots[5].detectionResult) > -1)}">
+                                        <i class="icon " id="AppIntroScreenshotAddButton6"></i>
+                                        <img ng-src="https://appfile1.hicloud.com/FileServer/getFile/appAttach/023/361/275/0000000000023361275.20200613164540.30413723163238644483208936489962:20300725185452:2500:4DC92BF75FE324DD0FFEE7989D59906CD6D8BBDDD50823B20EEA02169C368053.jpg" id="AppIntroScreenshot6" accept="image/jpeg,image/png,image/PNG" class="uploadfile ng-scope after-upload" ng-class="{'after-upload':deviceMaterial.screenShots[5]&amp;&amp;deviceMaterial.screenShots[5] !=''}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,2097152,'image/jpeg,image/png,image/PNG','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'screenShots',5)" src="https://appfile1.hicloud.com/FileServer/getFile/appAttach/023/361/275/0000000000023361275.20200613164540.30413723163238644483208936489962:20300725185452:2500:4DC92BF75FE324DD0FFEE7989D59906CD6D8BBDDD50823B20EEA02169C368053.jpg">
+                                        <!-- ngIf: deviceMaterial.screenShots[5]&&deviceMaterial.screenShots[5] !=''&& disabledFlag!='disabled' --><a class="icon icon-upload-xx ng-scope" ng-click="delimg(deviceMaterial.screenShots,5)" id="AppIntroScreenshotDelButton6" ng-if="deviceMaterial.screenShots[5]&amp;&amp;deviceMaterial.screenShots[5] !=''&amp;&amp; disabledFlag!='disabled'"></a><!-- end ngIf: deviceMaterial.screenShots[5]&&deviceMaterial.screenShots[5] !=''&& disabledFlag!='disabled' -->
+                                    </div>
+                                    <div class="upload-box agc-upload-size-leveltype0" ng-class="{'upload-box-error':checkPicUrl(deviceMaterial) &amp;&amp; !deviceMaterial.screenShots[6] || (taskInfo &amp;&amp; taskInfo.screenShots[6] &amp;&amp; taskInfo.screenShots[6].detectionResult &amp;&amp; taskSecurityResult &amp;&amp; taskSecurityResult.indexOf(taskInfo.screenShots[6].detectionResult) > -1)}">
+                                        <i class="icon " id="AppIntroScreenshotAddButton7"></i>
+                                        <img ng-src="https://appfile1.hicloud.com/FileServer/getFile/appAttach/023/361/275/0000000000023361275.20200613164543.74862338955529131170792821790631:20300725185452:2500:2665DE308A58FB07E6DDF1E03CDFCD06080DAC49F0D8D25592B332F79AEC5A2F.jpg" id="AppIntroScreenshot7" accept="image/jpeg,image/png,image/PNG" class="uploadfile ng-scope after-upload" ng-class="{'after-upload':deviceMaterial.screenShots[6]&amp;&amp;deviceMaterial.screenShots[6] !=''}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,2097152,'image/jpeg,image/png,image/PNG','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'screenShots',6)" src="https://appfile1.hicloud.com/FileServer/getFile/appAttach/023/361/275/0000000000023361275.20200613164543.74862338955529131170792821790631:20300725185452:2500:2665DE308A58FB07E6DDF1E03CDFCD06080DAC49F0D8D25592B332F79AEC5A2F.jpg">
+                                        <!-- ngIf: deviceMaterial.screenShots[6]&&deviceMaterial.screenShots[6] !=''&& disabledFlag!='disabled' --><a class="icon icon-upload-xx ng-scope" ng-click="delimg(deviceMaterial.screenShots,6)" id="AppIntroScreenshotDelButton7" ng-if="deviceMaterial.screenShots[6]&amp;&amp;deviceMaterial.screenShots[6] !=''&amp;&amp; disabledFlag!='disabled'"></a><!-- end ngIf: deviceMaterial.screenShots[6]&&deviceMaterial.screenShots[6] !=''&& disabledFlag!='disabled' -->
+                                    </div>
+                                    <div class="upload-box agc-upload-size-leveltype0" ng-class="{'upload-box-error':checkPicUrl(deviceMaterial) &amp;&amp; !deviceMaterial.screenShots[7] || (taskInfo &amp;&amp; taskInfo.screenShots[7] &amp;&amp; taskInfo.screenShots[7].detectionResult &amp;&amp; taskSecurityResult &amp;&amp; taskSecurityResult.indexOf(taskInfo.screenShots[7].detectionResult) > -1)}">
+                                        <i class="icon " id="AppIntroScreenshotAddButton8"></i>
+                                        <img ng-src="https://appfile1.hicloud.com/FileServer/getFile/appAttach/023/361/275/0000000000023361275.20200613164546.11469808220635842814262262378776:20300725185452:2500:44F783D52E15CC99A1B6DBFF312380C023F918FFD1724FE6333817D42FF6BBFC.jpg" id="AppIntroScreenshot8" accept="image/jpeg,image/png,image/PNG" class="uploadfile ng-scope after-upload" ng-class="{'after-upload':deviceMaterial.screenShots[7]&amp;&amp;deviceMaterial.screenShots[7] !=''}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,2097152,'image/jpeg,image/png,image/PNG','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'screenShots',7)" src="https://appfile1.hicloud.com/FileServer/getFile/appAttach/023/361/275/0000000000023361275.20200613164546.11469808220635842814262262378776:20300725185452:2500:44F783D52E15CC99A1B6DBFF312380C023F918FFD1724FE6333817D42FF6BBFC.jpg">
+                                        <!-- ngIf: deviceMaterial.screenShots[7]&&deviceMaterial.screenShots[7] !=''&& disabledFlag!='disabled' --><a class="icon icon-upload-xx ng-scope" ng-click="delimg(deviceMaterial.screenShots,7)" id="AppIntroScreenshotDelButton8" ng-if="deviceMaterial.screenShots[7]&amp;&amp;deviceMaterial.screenShots[7] !=''&amp;&amp; disabledFlag!='disabled'"></a><!-- end ngIf: deviceMaterial.screenShots[7]&&deviceMaterial.screenShots[7] !=''&& disabledFlag!='disabled' -->
+                                    </div>
+                                    <div class="upload-box agc-upload-size-leveltype0" ng-class="{'upload-box-error':checkPicUrl(deviceMaterial) &amp;&amp; !deviceMaterial.screenShots[8] || (taskInfo &amp;&amp; taskInfo.screenShots[8] &amp;&amp; taskInfo.screenShots[8].detectionResult &amp;&amp; taskSecurityResult &amp;&amp; taskSecurityResult.indexOf(taskInfo.screenShots[8].detectionResult) > -1)}">
+                                        <i class="icon " id="AppIntroScreenshotAddButton9"></i>
+                                        <img ng-src="https://appfile1.hicloud.com/FileServer/getFile/appAttach/023/361/275/0000000000023361275.20200613164549.86657051700656562938119631823951:20300725185452:2500:78A2A1FC952E14EE5629D0ECEE2FBF11248F45CBFE7F731158D8B8DAEA898084.jpg" id="AppIntroScreenshot9" accept="image/jpeg,image/png,image/PNG" class="uploadfile ng-scope after-upload" ng-class="{'after-upload':deviceMaterial.screenShots[8]&amp;&amp;deviceMaterial.screenShots[8] !=''}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,2097152,'image/jpeg,image/png,image/PNG','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'screenShots',8)" src="https://appfile1.hicloud.com/FileServer/getFile/appAttach/023/361/275/0000000000023361275.20200613164549.86657051700656562938119631823951:20300725185452:2500:78A2A1FC952E14EE5629D0ECEE2FBF11248F45CBFE7F731158D8B8DAEA898084.jpg">
+                                        <!-- ngIf: deviceMaterial.screenShots[8]&&deviceMaterial.screenShots[8] !=''&& disabledFlag!='disabled' --><a class="icon icon-upload-xx ng-scope" ng-click="delimg(deviceMaterial.screenShots,8)" id="AppIntroScreenshotDelButton9" ng-if="deviceMaterial.screenShots[8]&amp;&amp;deviceMaterial.screenShots[8] !=''&amp;&amp; disabledFlag!='disabled'"></a><!-- end ngIf: deviceMaterial.screenShots[8]&&deviceMaterial.screenShots[8] !=''&& disabledFlag!='disabled' -->
+                                    </div>
+                                    <div class="upload-box agc-upload-size-leveltype0" ng-class="{'upload-box-error':checkPicUrl(deviceMaterial) &amp;&amp; !deviceMaterial.screenShots[9] || (taskInfo &amp;&amp; taskInfo.screenShots[9] &amp;&amp; taskInfo.screenShots[9].detectionResult &amp;&amp; taskSecurityResult &amp;&amp; taskSecurityResult.indexOf(taskInfo.screenShots[9].detectionResult) > -1)}">
+                                        <i class="icon " id="AppIntroScreenshotAddButton10"></i>
+                                        <img ng-src="https://appfile1.hicloud.com/FileServer/getFile/appAttach/023/361/275/0000000000023361275.20200613164552.50746141603311697567213711389193:20300725185452:2500:B5DE04039090A1C3B590BEB7440B54E14FAC98E1AF7EA38547F7F09B0BCB3442.jpg" id="AppIntroScreenshot10" accept="image/jpeg,image/png,image/PNG" class="uploadfile ng-scope after-upload" ng-class="{'after-upload':deviceMaterial.screenShots[9]&amp;&amp;deviceMaterial.screenShots[9] !=''}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,2097152,'image/jpeg,image/png,image/PNG','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'screenShots',9)" src="https://appfile1.hicloud.com/FileServer/getFile/appAttach/023/361/275/0000000000023361275.20200613164552.50746141603311697567213711389193:20300725185452:2500:B5DE04039090A1C3B590BEB7440B54E14FAC98E1AF7EA38547F7F09B0BCB3442.jpg">
+                                        <!-- ngIf: deviceMaterial.screenShots[9]&&deviceMaterial.screenShots[9] !=''&& disabledFlag!='disabled' --><a class="icon icon-upload-xx ng-scope" ng-click="delimg(deviceMaterial.screenShots,9)" id="AppIntroScreenshotDelButton10" ng-if="deviceMaterial.screenShots[9]&amp;&amp;deviceMaterial.screenShots[9] !=''&amp;&amp; disabledFlag!='disabled'"></a><!-- end ngIf: deviceMaterial.screenShots[9]&&deviceMaterial.screenShots[9] !=''&& disabledFlag!='disabled' -->
+                                    </div>
+                                </div>
+                            </div><!-- end ngIf: deviceMaterial.showType ==0 -->
+                            <!--车机应用-->
+                            <!-- ngIf: prodType == 27 || prodType == 28 -->
+                            <!-- ngIf: prodType!=8 && prodType != 27 && prodType != 28 --><div ng-if="prodType!=8 &amp;&amp; prodType != 27 &amp;&amp; prodType != 28" class="ng-scope">
+                                <!-- ngIf: deviceMaterial.showType ==0&&((screenShotsLength(deviceMaterial.screenShots,deviceMaterial)>=3 || !afterSave ||(screenShotsLength(deviceMaterial.screenShots,deviceMaterial) ==0 &&defaultScreenShotsFull)) || (serviceType == 'alpha' || serviceType == 'firstPublish'))  --><div class="text-box ng-binding ng-scope" id="AppIntroScreenshotMsg1" ng-if="deviceMaterial.showType ==0&amp;&amp;((screenShotsLength(deviceMaterial.screenShots,deviceMaterial)>=3 || !afterSave ||(screenShotsLength(deviceMaterial.screenShots,deviceMaterial) ==0 &amp;&amp;defaultScreenShotsFull)) || (serviceType == 'alpha' || serviceType == 'firstPublish')) ">
+                                    <span class="ng-binding">请上传最少3张截图，</span>支持JPG、JPEG或PNG格式，建议分辨率：450*800（宽高比为9:16），单张图片最大为2MB。
+                                </div><!-- end ngIf: deviceMaterial.showType ==0&&((screenShotsLength(deviceMaterial.screenShots,deviceMaterial)>=3 || !afterSave ||(screenShotsLength(deviceMaterial.screenShots,deviceMaterial) ==0 &&defaultScreenShotsFull)) || (serviceType == 'alpha' || serviceType == 'firstPublish'))  -->
+                                <!-- ngIf: deviceMaterial.showType ==1&&((screenShotsLength(deviceMaterial.screenShots,deviceMaterial)>=3 || !afterSave ||(screenShotsLength(deviceMaterial.screenShots,deviceMaterial) ==0 &&defaultScreenShotsFull)) || (serviceType == 'alpha' || serviceType == 'firstPublish'))  -->
+                                <!-- ngIf: (!((screenShotsLength(deviceMaterial.screenShots,deviceMaterial)>=3) ||(screenShotsLength(deviceMaterial.screenShots,deviceMaterial) ==0 && defaultScreenShotsFull) ) && afterSave) && !(serviceType == 'alpha' || serviceType == 'firstPublish') -->
+                            </div><!-- end ngIf: prodType!=8 && prodType != 27 && prodType != 28 -->
+                            <!-- ngIf: prodType==8 -->
+                            <!--截图安工检测信息-->
+                            <!-- ngRepeat: screenShot in taskInfo.screenShots -->
+                        </div>
+                        <!-- 手表应用-->
+                        <div class="form-control ng-hide" ng-show="prodType==9">
+                            <div>
+                                <div class="upload-list mt-2">
+                                    <div class="upload-box upload-size-leveltype2" ng-class="{'upload-box-error':(!((screenShotsLength(deviceMaterial.screenShots,deviceMaterial)>=3) ||(screenShotsLength(deviceMaterial.screenShots,deviceMaterial) ==0 &amp;&amp; defaultScreenShotsFull) ) &amp;&amp; afterSave) &amp;&amp; (!deviceMaterial.screenShots[0] || deviceMaterial.screenShots[0] == '')}">
+                                        <i class="icon icon-add" id="AppInfoScreenShotsWatchAddButton1"></i>
+                                        <img id="AppInfoScreenShotsWatchButton1" accept="image/jpeg,image/png,image/PNG" class="uploadfile ng-scope" ng-disabled="disabledFlag=='disabled'" ng-class="{'after-upload':deviceMaterial.screenShots[0]&amp;&amp;deviceMaterial.screenShots[0] !=''}" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,512000,'image/jpeg,image/png','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'screenShots', 0)" ng-src="">
+                                        <!-- ngIf: deviceMaterial.screenShots[0]&&deviceMaterial.screenShots[0] !='' && disabledFlag!='disabled' -->
+                                    </div>
+                                    <div class="upload-box upload-size-leveltype2" ng-class="{'upload-box-error':(!((screenShotsLength(deviceMaterial.screenShots,deviceMaterial)>=3) ||(screenShotsLength(deviceMaterial.screenShots,deviceMaterial) ==0 &amp;&amp; defaultScreenShotsFull) ) &amp;&amp; afterSave) &amp;&amp; (!deviceMaterial.screenShots[1] || deviceMaterial.screenShots[1] == '')}">
+                                        <i class="icon icon-add" id="AppInfoScreenShotsWatchAddButton2"></i>
+                                        <img accept="image/jpeg,image/png,image/PNG" id="AppInfoScreenShotsWatchButton2" class="uploadfile ng-scope" ng-disabled="disabledFlag=='disabled'" ng-class="{'after-upload':deviceMaterial.screenShots[1]&amp;&amp;deviceMaterial.screenShots[1] !=''}" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,512000,'image/jpeg,image/png','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'screenShots', 1)" ng-src="">
+                                        <!-- ngIf: deviceMaterial.screenShots[1]&&deviceMaterial.screenShots[1] !='' && disabledFlag!='disabled' -->
+                                    </div>
+                                    <div class="upload-box upload-size-leveltype2" ng-class="{'upload-box-error':(!((screenShotsLength(deviceMaterial.screenShots,deviceMaterial)>=3) ||(screenShotsLength(deviceMaterial.screenShots,deviceMaterial) ==0 &amp;&amp; defaultScreenShotsFull) ) &amp;&amp; afterSave) &amp;&amp; (!deviceMaterial.screenShots[2] || deviceMaterial.screenShots[2] == '')}">
+                                        <i class="icon icon-add" id="AppInfoScreenShotsWatchAddButton3"></i>
+                                        <img id="AppInfoScreenShotsWatchButton3" accept="image/jpeg,image/png,image/PNG" class="uploadfile ng-scope" ng-disabled="disabledFlag=='disabled'" ng-class="{'after-upload':deviceMaterial.screenShots[2]&amp;&amp;deviceMaterial.screenShots[2] !=''}" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,512000,'image/jpeg,image/png','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'screenShots', 2)" ng-src="">
+                                        <!-- ngIf: deviceMaterial.screenShots[2]&&deviceMaterial.screenShots[2] !='' && disabledFlag!='disabled' -->
+                                    </div>
+                                    <div class="upload-box upload-size-leveltype2" ng-class="{'upload-box-error':(!((screenShotsLength(deviceMaterial.screenShots,deviceMaterial)>=3) ||(screenShotsLength(deviceMaterial.screenShots,deviceMaterial) ==0 &amp;&amp; defaultScreenShotsFull) ) &amp;&amp; afterSave) &amp;&amp; (!deviceMaterial.screenShots[3] || deviceMaterial.screenShots[3] == '')}">
+                                        <i class="icon icon-add" id="AppInfoScreenShotsWatchAddButton4"></i>
+                                        <img id="AppInfoScreenShotsWatchButton4" accept="image/jpeg,image/png,image/PNG" class="uploadfile ng-scope" ng-disabled="disabledFlag=='disabled'" ng-class="{'after-upload':deviceMaterial.screenShots[3]&amp;&amp;deviceMaterial.screenShots[3] !=''}" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,512000,'image/jpeg,image/png','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'screenShots', 3)" ng-src="">
+                                        <!-- ngIf: deviceMaterial.screenShots[3]&&deviceMaterial.screenShots[3] !='' && disabledFlag!='disabled' -->
+                                    </div>
+                                    <div class="upload-box upload-size-leveltype2" ng-class="{'upload-box-error':(!((screenShotsLength(deviceMaterial.screenShots,deviceMaterial)>=3) ||(screenShotsLength(deviceMaterial.screenShots,deviceMaterial) ==0 &amp;&amp; defaultScreenShotsFull) ) &amp;&amp; afterSave) &amp;&amp; (!deviceMaterial.screenShots[4] || deviceMaterial.screenShots[4] == '')}">
+                                        <i class="icon icon-add" id="AppInfoScreenShotsWatchAddButton5"></i>
+                                        <img id="AppInfoScreenShotsWatchButton5" accept="image/jpeg,image/png,image/PNG" class="uploadfile ng-scope" ng-disabled="disabledFlag=='disabled'" ng-class="{'after-upload':deviceMaterial.screenShots[4]&amp;&amp;deviceMaterial.screenShots[4] !=''}" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,512000,'image/jpeg,image/png','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'screenShots', 4)" ng-src="">
+                                        <!-- ngIf: deviceMaterial.screenShots[4]&&deviceMaterial.screenShots[4] !='' && disabledFlag!='disabled' -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ngIf: (screenShotsLength(deviceMaterial.screenShots,deviceMaterial)>=3 || !afterSave ||(screenShotsLength(deviceMaterial.screenShots,deviceMaterial) ==0 &&defaultScreenShotsFull))  --><div class="text-box width-mid ng-binding ng-scope" id="AppInfoScreenShotsWatchMsg" ng-if="(screenShotsLength(deviceMaterial.screenShots,deviceMaterial)>=3 || !afterSave ||(screenShotsLength(deviceMaterial.screenShots,deviceMaterial) ==0 &amp;&amp;defaultScreenShotsFull)) ">
+                                <span ng-show="gAppInfo.defaultLangSimple ==language.language || gAppInfo.isMaterialTestPage" class="ng-binding">最少3张，最多5张，</span>大小：500KB以内，180*240。格式：jpg、jpeg、png；
+                            </div><!-- end ngIf: (screenShotsLength(deviceMaterial.screenShots,deviceMaterial)>=3 || !afterSave ||(screenShotsLength(deviceMaterial.screenShots,deviceMaterial) ==0 &&defaultScreenShotsFull))  -->
+                            <!-- ngIf: !((screenShotsLength(deviceMaterial.screenShots,deviceMaterial)>=3) ||(screenShotsLength(deviceMaterial.screenShots,deviceMaterial) ==0 && defaultScreenShotsFull) ) && afterSave -->
+                            <!-- ngRepeat: screenShot in taskInfo.screenShots -->
+                        </div>
+                    </div>
+                </div>
+
+                <!--应用介绍截图 手机 路由器 googlePlay兼容-->
+                <!-- ngIf: (tabType.type == 'appscreenshots' && prodType!=2 &&  prodType!= 9 && prodType!=23) && glSwitch == 1 -->
+
+                <!--推荐图片-->
+                <div ng-show="tabType.type == 'recommendedimages'" class="ng-hide">
+                    <!--车机推荐图片-->
+                    <!-- ngIf: prodType==27 || prodType==28 -->
+                    <!--智慧屏推荐图片-->
+                    <!-- ngIf: prodType==2 || prodType==23 -->
+                </div>
+
+                <!--推荐视频-->
+                <!-- ngIf: prodType==1 || (prodType==4 || prodType==8 || prodType==30) --><div ng-if="prodType==1 || (prodType==4 || prodType==8 || prodType==30)" ng-show="tabType.type == 'recommendedvedio'" class="ng-scope ng-hide">
+                    <div class="form-control">
+                        <div class="upload-wrap">
+                            <div class="upload-box agc-upload-size-leveltype1 mt-2" ng-show="!deviceMaterial.rcmdVedios[0].vedioUrl" ng-class="{'upload-box-error':!deviceMaterial.rcmdVedios[0].vedioUrl &amp;&amp; afterSave &amp;&amp; gAppInfo.isMaterialTestPage &amp;&amp; disabledFlag!='disabled'}">
+                                <i class="icon icon-add"></i>
+                                <img id="img-poster2" name="img-poster2" accept="video/quicktime,video/mp4,video/mov,video/MOV,video/MP4" crossorigin="Anonymous" ng-class="{'uploadfile':true,'img-hidden':!!deviceMaterial.rcmdVedios[0].frameUrl}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadVideo($files,524288000,'video/quicktime,video/mp4','.mov,.MOV,.mp4,.MP4',deviceMaterial)" class="ng-scope uploadfile">
+                            </div>
+                            <div class="upload-box agc-upload-size-leveltype1 mt-2 ng-hide" ng-show="!rcmdState.posterNotExist &amp;&amp; deviceMaterial.rcmdVedios[0].vedioUrl &amp;&amp; !deviceMaterial.rcmdVedios[0].frameUrl &amp;&amp; (!isIeExplore ||  (deviceMaterial.rcmdVedios[0].vedioUrl &amp;&amp; deviceMaterial.rcmdVedios[0].vedioUrl.indexOf('.mov') == -1))" ng-class="{'upload-box-error':taskInfo &amp;&amp; taskInfo.rcmdVedios[0] &amp;&amp; taskInfo.rcmdVedios[0].vedioUrl.detectionResult &amp;&amp; taskSecurityResult &amp;&amp; taskSecurityResult.indexOf(taskInfo.rcmdVedios[0].vedioUrl.detectionResult) > -1}">
+                                <div style="position: absolute;top: 50%;left: 35%;margin-left: -20px;margin-top: -20px;font-size: 20px;text-align: center;" class="ng-binding">
+                                    视频加载中
+                                </div>
+                            </div>
+                            <div ng-show="(!!rcmdState.posterNotExist || (deviceMaterial.rcmdVedios[0].vedioUrl &amp;&amp; deviceMaterial.rcmdVedios[0].frameUrl))&amp;&amp; (!isIeExplore ||  (deviceMaterial.rcmdVedios[0].vedioUrl &amp;&amp; deviceMaterial.rcmdVedios[0].vedioUrl.indexOf('.mov') == -1))" style="width:284px;height: 160px" class="upload-box mt-2 ng-hide" ng-class="{'upload-box-error':taskInfo &amp;&amp; taskInfo.rcmdVedios[0] &amp;&amp; taskInfo.rcmdVedios[0].vedioUrl.detectionResult &amp;&amp; taskSecurityResult &amp;&amp; taskSecurityResult.indexOf(taskInfo.rcmdVedios[0].vedioUrl.detectionResult) > -1}">
+                                <video ng-show="!isIeExplore ||  (deviceMaterial.rcmdVedios[0].vedioUrl &amp;&amp; deviceMaterial.rcmdVedios[0].vedioUrl.indexOf('.mov') == -1)" id="rcmdVedio" class="uploadfile ng-scope" controls="controls" crossorigin="Anonymous" style="width:100%;height:100%;opacity: inherit;cursor: inherit;object-fit: cover" ng-poster="deviceMaterial.rcmdVedios[0].frameUrl" accept="video/quicktime,video/mp4,video/mov,video/MOV,video/MP4" controlslist="nodownload" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadVideo($files,524288000,'video/quicktime,video/mp4','.mov,.MOV,.mp4,.MP4',deviceMaterial)"></video>
+                                <!-- ngIf: deviceMaterial.rcmdVedios[0].vedioUrl&& disabledFlag!='disabled' -->
+                            </div>
+                            <!-- ngIf: isIeExplore && deviceMaterial.rcmdVedios[0].vedioUrl && deviceMaterial.rcmdVedios[0].vedioUrl.indexOf('.mov') >-1 -->
+                            <!-- ngIf: !!rcmdState.posterNotExist && !(deviceMaterial.rcmdVedios[0].vedioUrl && deviceMaterial.rcmdVedios[0].frameUrl) -->
+                            <div class="text-center ng-hide" ng-show="deviceMaterial.rcmdVedios[0].vedioUrl&amp;&amp; disabledFlag!='disabled'">
+                                <a ng-click="setRcmdPosterFrames($event,deviceMaterial)" class="template-btn blue-link ml-1 inline-block ng-binding">设置海报帧</a>
+                                <i class="icon icon-tip-small icon-position ng-isolate-scope" data-toggle="popover" data-classnames="text-center" content="posterTips"></i>
+                            </div>
+                        </div>
+
+                        <div class="text-box">
+                            <span class="ng-binding">应用推荐视频，建议分辨率为1600*1200或1200*900，宽高比为4:3，支持MOV、MP4格式，文件大小要求500M以内，视频长度15秒-2分钟</span>
+                        </div>
+                        <!-- ngIf: !deviceMaterial.rcmdVedios[0].vedioUrl && afterSave && gAppInfo.isMaterialTestPage && disabledFlag!='disabled' -->
+                        <!--推荐视频安工检测信息-->
+                        <!-- ngRepeat: rcmdVedio in taskInfo.rcmdVedios -->
+                    </div>
+                </div><!-- end ngIf: prodType==1 || (prodType==4 || prodType==8 || prodType==30) -->
+
+                <!--VR应用图片-->
+                <!-- ngIf: prodType==8 -->
+            </div>
+        </div>
+    </div>
+</div><!-- end ngIf: !isMultiDeviceType -->
+            </div><!-- end ngIf: language.language ==  gAppInfoTemp.langNameSelected.language --><!-- end ngRepeat: language in gAppInfo.languages --><!-- ngIf: language.language ==  gAppInfoTemp.langNameSelected.language --><!-- end ngRepeat: language in gAppInfo.languages --><!-- ngIf: language.language ==  gAppInfoTemp.langNameSelected.language --><!-- end ngRepeat: language in gAppInfo.languages -->
+            <div id="AppInfoLocalInfoPromptTxtSkip"></div>
+        </div>
+        <!--</div>-->
+        <!--<div class="card-style mb-2">-->
+        <!--应用分类-->
+        <div class="abroad-card wid appdetail-area-line">
+            <div class="">
+                <p class="title-big-40 ng-binding" id="AppInfoLocalInfoPromptTxt2">
+                    应用分类
+                </p>
+                <div class="form-item form-first-item">
+                    <div class="form">
+                        <div class="form-label-box">
+                            <div class="form-label"><span class="warn">*</span><span id="AppInfoAppSortTxt" class="ng-binding">应用分类：</span>
+                            </div>
+                        </div>
+
+                        <div class="form-control">
+                            <!-- 中文 -->
+                            <div class="input-group" ng-class="{'app-detail-catetory' : websitLang != 'cn'}">
+                                <div class="item">
+                                    <div class="ucd-droplist">
+                                        <div class="select-disabled ui-select-container ui-select-bootstrap dropdown ng-valid ng-not-empty" ng-class="{open: $select.open}" ng-model="parentTypeselected" ng-disabled="true" search-enabled="parentTypeMap.length > 25" disabled="disabled"><div class="ui-select-match ng-scope" ng-hide="$select.open &amp;&amp; $select.searchEnabled" ng-disabled="$select.disabled" ng-class="{'btn-default-focus':$select.focus}" id="AppInfoPrimarySort1" disabled="disabled"><span tabindex="-1" class="btn btn-default form-control ui-select-toggle" aria-label="Select box activate" ng-disabled="$select.disabled" ng-click="$select.activate()" style="outline: 0;" disabled="disabled"><span ng-show="$select.isEmpty()" class="ui-select-placeholder text-muted ng-binding ng-hide"></span> <span ng-hide="$select.isEmpty()" class="ui-select-match-text pull-left" ng-class="{'ui-select-allow-clear': $select.allowClear &amp;&amp; !$select.isEmpty()}" ng-transclude="">应用
+                                            </span> <i class="caret pull-right" ng-click="$select.toggle($event)"></i> <a ng-show="$select.allowClear &amp;&amp; !$select.isEmpty() &amp;&amp; ($select.disabled !== true)" aria-label="Select box clear" style="margin-right: 10px" ng-click="$select.clear($event)" class="btn btn-xs btn-link pull-right ng-hide"><i class="glyphicon glyphicon-remove" aria-hidden="true"></i></a></span></div><span ng-show="$select.open &amp;&amp; $select.refreshing &amp;&amp; $select.spinnerEnabled" class="ui-select-refreshing glyphicon glyphicon-refresh ui-select-spin ng-hide"></span> <input type="search" autocomplete="off" tabindex="-1" aria-expanded="true" aria-label="Select box" aria-owns="ui-select-choices-0" class="form-control ui-select-search ng-pristine ng-untouched ng-valid ng-empty ng-hide ui-select-search-hidden" ng-class="{ 'ui-select-search-hidden' : !$select.searchEnabled }" placeholder="" ng-model="$select.search" ng-show="$select.open"><ul class="ui-select-choices ui-select-choices-content ui-select-dropdown dropdown-menu ng-scope ng-hide" ng-show="$select.open &amp;&amp; $select.items.length > 0" id="AppInfoPrimarySortCombo" repeat="select in (parentTypeMap | filter: $select.search) track by select.key"><li class="ui-select-choices-group" id="ui-select-choices-0"><div class="divider ng-hide" ng-show="$select.isGrouped &amp;&amp; $index > 0"></div><div ng-show="$select.isGrouped" class="ui-select-choices-group-label dropdown-header ng-binding ng-hide" ng-bind="$group.name"></div><!-- ngRepeat: select in $select.items track by select.key --><!-- ngIf: $select.open --><!-- end ngRepeat: select in $select.items track by select.key --><!-- ngIf: $select.open --><!-- end ngRepeat: select in $select.items track by select.key --></li></ul><div class="ui-select-no-choice"></div><ui-select-single></ui-select-single><input ng-disabled="$select.disabled" class="ui-select-focusser ui-select-offscreen ng-scope" type="text" id="focusser-0" aria-label="Select box focus" aria-haspopup="true" role="button" disabled="disabled"></div>
+                                    </div>
+                                </div>
+                                <div class="item appinfo-app-appcategory">
+                                    <div class="ucd-droplist">
+                                        <div class="ui-select-container ui-select-bootstrap dropdown ng-not-empty ng-valid" ng-class="{'select-disabled': editDisabledFlag, open: $select.open}" ng-model="Model.childDescTemp" ng-disabled="gAppInfo.lockFlag==1 || editDisabledFlag" search-enabled="true"><div class="ui-select-match ng-scope" ng-hide="$select.open &amp;&amp; $select.searchEnabled" ng-disabled="$select.disabled" ng-class="{'btn-default-focus':$select.focus}" id="AppInfoSecondarySort1"><span tabindex="-1" class="btn btn-default form-control ui-select-toggle" aria-label="Select box activate" ng-disabled="$select.disabled" ng-click="$select.activate()" style="outline: 0;"><span ng-show="$select.isEmpty()" class="ui-select-placeholder text-muted ng-binding ng-hide"></span> <span ng-hide="$select.isEmpty()" class="ui-select-match-text pull-left" ng-class="{'ui-select-allow-clear': $select.allowClear &amp;&amp; !$select.isEmpty()}" ng-transclude="">儿童
+                                            </span> <i class="caret pull-right" ng-click="$select.toggle($event)"></i> <a ng-show="$select.allowClear &amp;&amp; !$select.isEmpty() &amp;&amp; ($select.disabled !== true)" aria-label="Select box clear" style="margin-right: 10px" ng-click="$select.clear($event)" class="btn btn-xs btn-link pull-right ng-hide"><i class="glyphicon glyphicon-remove" aria-hidden="true"></i></a></span></div><span ng-show="$select.open &amp;&amp; $select.refreshing &amp;&amp; $select.spinnerEnabled" class="ui-select-refreshing glyphicon glyphicon-refresh ui-select-spin ng-hide"></span> <input type="search" autocomplete="off" tabindex="-1" aria-expanded="true" aria-label="Select box" aria-owns="ui-select-choices-1" class="form-control ui-select-search ng-pristine ng-untouched ng-valid ng-empty ng-hide" ng-class="{ 'ui-select-search-hidden' : !$select.searchEnabled }" placeholder="" ng-model="$select.search" ng-show="$select.open"><ul class="ui-select-choices ui-select-choices-content ui-select-dropdown dropdown-menu ng-scope ng-hide" ng-show="$select.open &amp;&amp; $select.items.length > 0" id="AppInfoSecondarySortCombo" ng-click="choosedChild($select.selected)" repeat="childDesc in (Model.childType | filter: $select.search) track by $index"><li class="ui-select-choices-group" id="ui-select-choices-1"><div class="divider ng-hide" ng-show="$select.isGrouped &amp;&amp; $index > 0"></div><div ng-show="$select.isGrouped" class="ui-select-choices-group-label dropdown-header ng-binding ng-hide" ng-bind="$group.name"></div><!-- ngRepeat: childDesc in $select.items track by $index --><!-- ngIf: $select.open --><!-- end ngRepeat: childDesc in $select.items track by $index --><!-- ngIf: $select.open --><!-- end ngRepeat: childDesc in $select.items track by $index --><!-- ngIf: $select.open --><!-- end ngRepeat: childDesc in $select.items track by $index --><!-- ngIf: $select.open --><!-- end ngRepeat: childDesc in $select.items track by $index --><!-- ngIf: $select.open --><!-- end ngRepeat: childDesc in $select.items track by $index --><!-- ngIf: $select.open --><!-- end ngRepeat: childDesc in $select.items track by $index --><!-- ngIf: $select.open --><!-- end ngRepeat: childDesc in $select.items track by $index --><!-- ngIf: $select.open --><!-- end ngRepeat: childDesc in $select.items track by $index --><!-- ngIf: $select.open --><!-- end ngRepeat: childDesc in $select.items track by $index --><!-- ngIf: $select.open --><!-- end ngRepeat: childDesc in $select.items track by $index --><!-- ngIf: $select.open --><!-- end ngRepeat: childDesc in $select.items track by $index --><!-- ngIf: $select.open --><!-- end ngRepeat: childDesc in $select.items track by $index --><!-- ngIf: $select.open --><!-- end ngRepeat: childDesc in $select.items track by $index --><!-- ngIf: $select.open --><!-- end ngRepeat: childDesc in $select.items track by $index --><!-- ngIf: $select.open --><!-- end ngRepeat: childDesc in $select.items track by $index --><!-- ngIf: $select.open --><!-- end ngRepeat: childDesc in $select.items track by $index --><!-- ngIf: $select.open --><!-- end ngRepeat: childDesc in $select.items track by $index --></li></ul><div class="ui-select-no-choice"></div><ui-select-single></ui-select-single><input ng-disabled="$select.disabled" class="ui-select-focusser ui-select-offscreen ng-scope" type="text" id="focusser-1" aria-label="Select box focus" aria-haspopup="true" role="button"></div>
+                                    </div>
+                                </div>
+                                <div class="item mr-0 appinfo-app-appcategory">
+                                    <div class="ucd-droplist">
+                                        <div class="ui-select-container ui-select-bootstrap dropdown ng-not-empty ng-valid" ng-class="{'select-disabled': editDisabledFlag, open: $select.open}" ng-model="Model.grandChildDescTemp" ng-disabled="gAppInfo.lockFlag==1  || editDisabledFlag" search-enabled="true"><div class="ui-select-match ng-scope" ng-hide="$select.open &amp;&amp; $select.searchEnabled" ng-disabled="$select.disabled" ng-class="{'btn-default-focus':$select.focus}" id="AppInfoThreeLevelSort1"><span tabindex="-1" class="btn btn-default form-control ui-select-toggle" aria-label="Select box activate" ng-disabled="$select.disabled" ng-click="$select.activate()" style="outline: 0;"><span ng-show="$select.isEmpty()" class="ui-select-placeholder text-muted ng-binding ng-hide"></span> <span ng-hide="$select.isEmpty()" class="ui-select-match-text pull-left" ng-class="{'ui-select-allow-clear': $select.allowClear &amp;&amp; !$select.isEmpty()}" ng-transclude="">儿童教育
+                                            </span> <i class="caret pull-right" ng-click="$select.toggle($event)"></i> <a ng-show="$select.allowClear &amp;&amp; !$select.isEmpty() &amp;&amp; ($select.disabled !== true)" aria-label="Select box clear" style="margin-right: 10px" ng-click="$select.clear($event)" class="btn btn-xs btn-link pull-right ng-hide"><i class="glyphicon glyphicon-remove" aria-hidden="true"></i></a></span></div><span ng-show="$select.open &amp;&amp; $select.refreshing &amp;&amp; $select.spinnerEnabled" class="ui-select-refreshing glyphicon glyphicon-refresh ui-select-spin ng-hide"></span> <input type="search" autocomplete="off" tabindex="-1" aria-expanded="true" aria-label="Select box" aria-owns="ui-select-choices-2" class="form-control ui-select-search ng-pristine ng-untouched ng-valid ng-empty ng-hide" ng-class="{ 'ui-select-search-hidden' : !$select.searchEnabled }" placeholder="" ng-model="$select.search" ng-show="$select.open"><ul class="ui-select-choices ui-select-choices-content ui-select-dropdown dropdown-menu ng-scope ng-hide" ng-show="$select.open &amp;&amp; $select.items.length > 0" id="AppInfoThreeLevelSortCombo" ng-click="choosedGrandChild($select.selected)" repeat="grandChild in (Model.grandChildType | filter: $select.search) track by $index"><li class="ui-select-choices-group" id="ui-select-choices-2"><div class="divider ng-hide" ng-show="$select.isGrouped &amp;&amp; $index > 0"></div><div ng-show="$select.isGrouped" class="ui-select-choices-group-label dropdown-header ng-binding ng-hide" ng-bind="$group.name"></div><!-- ngRepeat: grandChild in $select.items track by $index --><!-- ngIf: $select.open --><!-- end ngRepeat: grandChild in $select.items track by $index --><!-- ngIf: $select.open --><!-- end ngRepeat: grandChild in $select.items track by $index --><!-- ngIf: $select.open --><!-- end ngRepeat: grandChild in $select.items track by $index --></li></ul><div class="ui-select-no-choice"></div><ui-select-single></ui-select-single><input ng-disabled="$select.disabled" class="ui-select-focusser ui-select-offscreen ng-scope" type="text" id="focusser-2" aria-label="Select box focus" aria-haspopup="true" role="button"></div>
+                                    </div>
+                                </div>
+                                <i class="icon icon-tip-small icon-position ng-isolate-scope" data-toggle="popover" data-classnames="text-center" content="appTypeDescribe" ng-show="websitLang == 'cn'"></i>
+                            </div>
+                            <!-- 允许编辑-->
+                            <!-- ngIf: gAppInfo.parentTypeId == 2 && !editDisabledFlag -->
+                            <!-- 不允许编辑-->
+                            <!-- ngIf: gAppInfo.parentTypeId == 2 && editDisabledFlag -->
+                            <!-- ngIf: (Model.childDescTemp.ID =='-1' || Model.grandChildDescTemp.name == grandChildDescTempInfo) && (afterSave || noApkAfterSave|| isGrandChildDescTemp) -->
+                            <div class="text-box long-content-tip">
+                                <!-- ngIf: gAppInfo.parentTypeId != 2 && gAppInfo.appNetType == 1 --><span ng-if="gAppInfo.parentTypeId != 2 &amp;&amp; gAppInfo.appNetType == 1" class="ng-binding ng-scope">只能选择一个应用子分类，否则无法提交。该应用上架时的分类由华为应用市场确定，可能与现在提交的分类不同。如需调整，请联系客服。</span><!-- end ngIf: gAppInfo.parentTypeId != 2 && gAppInfo.appNetType == 1 -->
+                                <!-- ngIf: gAppInfo.parentTypeId == 2 && gAppInfo.appNetType == 1 -->
+                                <!-- ngIf: gAppInfo.appNetType == 2 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--开发者服务信息-->
+        <div class="abroad-card wid appdetail-area-line">
+            <div ng-class="{'appinfo-detail-header':!isHeaderApp}" class="appinfo-detail-header">
+                <div class="title-big-40">
+                    <div id="AppInfoDeverloperInfoTxt1" class="ng-binding">开发者服务信息</div>
+                    <div class="text-gray text-small appinfo-sub-title ng-binding" id="AppInfoDeverloperInfoPromptTxt">您的开发者服务信息会向您应用发布区域的用户公开，其中您的客服邮箱可能会共享给第三方评级机构，目的均是用于接收用户反馈和意见等。</div>
+                </div>
+                <div class="form-item form-first-item">
+                    <div class="form">
+                        <div class="form-label-box">
+                            <div class="form-label">
+                                <span id="AppInfoProviderNameTxt" class="ng-binding">
+                                    供应商名称：
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-control">
+                            <div class="wid-middle inline-block form-words ellipsis">
+                                <span id="AppInfoProviderNameInputBox" class="ng-binding">陈远芳</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-item">
+                    <div class="form">
+                        <div class="form-label-box">
+                            <div class="form-label">
+                                <span id="AppInfoProviderNameEnTxt" class="ng-binding">
+                                    供应商名称（英文）：
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-control">
+                            <div class="wid-middle inline-block form-words ellipsis">
+                                <span id="AppInfoProviderNameEnInputBox" class="ng-binding">陈远芳</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-item">
+                    <div class="form">
+                        <div class="form-label-box">
+                            <div class="form-label">
+                            	<!-- ngIf: ((!isNoApkMultiUrlsUser&& prodType == 1) || prodType != 1) && isHeaderApp --><span id="AppInfoDeverloperNameTxt" class="ng-binding">开发者名称：</span>
+                            </div>
+                        </div>
+                        <!-- ngIf: !isHeaderApp --><div class="form-control ng-scope" ng-if="!isHeaderApp">
+                            <div class="wid-middle inline-block form-words ellipsis">
+                                <span id="AppInfoDeverloperNameInputBox" class="ng-binding">陈远芳</span>
+                            </div>
+                        </div><!-- end ngIf: !isHeaderApp -->
+                        <!-- ngIf: isHeaderApp -->
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="form">
+                        <div class="form-label-box">
+                            <div class="form-label">
+                            	<!-- ngIf: ((!isNoApkMultiUrlsUser&& prodType == 1) || prodType != 1) && isHeaderApp --><span id="AppInfoDeverloperEnglishNameTxt" class="ng-binding">开发者名称（英文）：</span>
+                            </div>
+                        </div>
+                        <!-- ngIf: !isHeaderApp --><div class="form-control ng-scope" ng-if="!isHeaderApp">
+                            <div class="wid-middle inline-block form-words ellipsis">
+                                <span id="AppInfoDeverloperEnglishNameInputBox" class="ng-binding">陈远芳</span>
+                            </div>
+                        </div><!-- end ngIf: !isHeaderApp -->
+                        <!-- ngIf: isHeaderApp -->
+                    </div>
+                </div>
+                <!-- ngIf: !(websitLang != 'cn' && userType == '1') --><div class="form-item appinfo-deveploper-info-paddingtop ng-scope" ng-if="!(websitLang != 'cn' &amp;&amp; userType == '1')">
+                    <div class="form">
+                        <div class="form-label-box">
+                            <div class="form-label ng-binding" id="AppInfoDeveloperAddressTxt">开发者地址：
+                            </div>
+                        </div>
+                        <div class="form-control">
+                            <div class="width-mid">
+                                <input class="input wid-100 single ng-pristine ng-untouched ng-valid ng-empty ng-valid-maxlength" maxlength="255" ng-disabled="editDisabledFlag" id="AppInfoDeveloperAddressInputBox" placeholder="请输入开发者地址" ng-model="gAppInfo.address" ng-focus="isInAddressInput=true" ng-blur="isInAddressInput=false" ng-class="{'input-error':checkSpecialChar(gAppInfo.address)}" type="text">
+                                <!-- ngIf: checkSpecialChar(gAppInfo.address) -->
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end ngIf: !(websitLang != 'cn' && userType == '1') -->
+                <!--首发内测预约非必填-->
+                <!-- ngIf: !(websitLang != 'cn' && userType == '1') --><div class="form-item appinfo-deveploper-info-paddingtop ng-scope" ng-if="!(websitLang != 'cn' &amp;&amp; userType == '1')">
+                    <div class="form">
+                        <div class="form-label-box">
+
+                            <div class="form-label" style="white-space:normal;">
+                                <span id="AppInfoCustomerEmailTxt" class="ng-binding">
+                                    客服邮箱：
+                                </span>
+                            </div>
+                        </div>
+                        <!-- ngIf: websitLang == 'cn' --><div class="form-control ng-scope" style="vertical-align: middle;" ng-if="websitLang == 'cn'">
+                            <div class="width-mid">
+                                <input class="input wid-100 single ng-pristine ng-untouched ng-valid ng-valid-maxlength ng-not-empty" ng-disabled="editDisabledFlag" id="AppInfoCustomerEmailInputBox" placeholder="请输入客服邮箱" maxlength="128" name="email" ng-class="{'input-error':(emailCheck(gAppInfo.email) &amp;&amp; (afterSave || myForm.email.$dirty)) &amp;&amp; !(serviceType == 'appointment' || serviceType == 'alpha' || serviceType == 'firstPublish')}" ng-focus="isInEmailInput=true" ng-blur="isInEmailInput=false" ng-model="gAppInfo.email" type="text">
+                                <div class="text-box ng-hide" ng-show="(emailIsOK &amp;&amp; (afterSave || myForm.email.$dirty)) &amp;&amp; !(serviceType == 'appointment' || serviceType == 'alpha' || serviceType == 'firstPublish')">
+                                    <i class="icon icon-error-tip v-middle"></i>
+                                    <span class="text-danger v-middle ng-binding" id="AppInfoCustomerEmailInputBoxError">请输入正确的客服邮箱</span>
+                                </div>
+                            </div>
+                        </div><!-- end ngIf: websitLang == 'cn' -->
+                        <!-- ngIf: websitLang != 'cn' -->
+                    </div>
+                </div><!-- end ngIf: !(websitLang != 'cn' && userType == '1') -->
+                <!-- ngIf: !(websitLang != 'cn' && userType == '1') --><div class="form-item appinfo-deveploper-info-paddingtop ng-scope" ng-if="!(websitLang != 'cn' &amp;&amp; userType == '1')">
+                    <div class="form">
+                        <div class="form-label-box">
+                            <div class="form-label ng-binding" id="AppInfoCustomerPhoneTxt">客服电话：
+                            </div>
+                        </div>
+                        <div class="form-control">
+                            <div class="width-mid">
+                                <input class="input wid-100 single ng-pristine ng-untouched ng-valid ng-empty ng-valid-maxlength" id="AppInfoCustomerPhoneInputBox" ng-disabled="editDisabledFlag" placeholder="请输入客服电话" maxlength="64" name="phoneNum" ng-class="{'input-error':phoneCheck(gAppInfo.phoneNum) &amp;&amp; (afterSave || myForm.phoneNum.$dirty) }" ng-focus="isInPhoneInput=true" ng-blur="isInPhoneInput=false" ng-model="gAppInfo.phoneNum" type="text">
+                                <div class="text-box ng-hide" ng-show="phoneIsOK &amp;&amp; (afterSave || myForm.phoneNum.$dirty)">
+                                    <i class="icon icon-error-tip v-middle"></i>
+                                    <span class="text-danger v-middle ng-binding" id="AppInfoCustomerPhoneInputBoxError">请输入正确的客服电话</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end ngIf: !(websitLang != 'cn' && userType == '1') -->
+                <!-- ngIf: !(websitLang != 'cn' && userType == '1') && blockWebsite --><div class="form-item appinfo-deveploper-info-paddingtop ng-scope" ng-if="!(websitLang != 'cn' &amp;&amp; userType == '1') &amp;&amp; blockWebsite">
+                    <div class="form">
+                        <div class="form-label-box">
+                            <div class="form-label ng-binding" id="AppInfoOfficialWebsiteTxt">官网：
+                            </div>
+                        </div>
+                        <div class="form-control">
+                            <div class="width-mid">
+                                <input class="input wid-100 single ng-pristine ng-untouched ng-valid ng-empty ng-valid-maxlength" maxlength="255" name="website" ng-disabled="editDisabledFlag" id="AppInfoOfficialWebsiteInputBox" ng-class="{'input-error': webSiteCheck(gAppInfo.website) }" ng-focus="isInWebsiteInput=true" ng-blur="isInWebsiteInput=false" placeholder="请输入URL，以http://或者https://开头" ng-model="gAppInfo.website" type="text">
+                                <!-- ngIf: webSiteCheck(gAppInfo.website) -->
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end ngIf: !(websitLang != 'cn' && userType == '1') && blockWebsite -->
+            </div>
+        </div>
+        <!--额外信息-->
+        <!-- ngInclude: extraInfoUrl --><div ng-include="extraInfoUrl" class="ng-scope"><!--额外信息-->
+<!-- ngIf: delServiceFlag && (Model.permissions['distribute.appprod.delete'] || !Model.permissionsFlag) -->
+<!-- ngIf: !delServiceFlag && isTeamLeader && (prodType == 1 || prodType == 9  || prodType == 19 || prodType == 27 || prodType == 28 || prodType == 2|| prodType == 23) --><div class="abroad-card card-footer float-height ng-scope" float-with-scroller="" name="card-footer" ng-if="!delServiceFlag &amp;&amp; isTeamLeader &amp;&amp; (prodType == 1 || prodType == 9  || prodType == 19 || prodType == 27 || prodType == 28 || prodType == 2|| prodType == 23)">
+    <div class="appdetail-area-line">
+        <div class="form-item mt-0">
+            <div class="form">
+                <div class="title-big-40 ng-binding" id="AppInfoDeverloperInfoTxt21">
+                    额外功能
+                </div>
+                <div class="form-control product-form">
+                    <a class="button-text button-text-danger ng-binding" id="AppInfoTransferApp1" ng-href="https://developer.huawei.com/consumer/cn/support/feedback/ticketlist/#/add/2" target="_blank" href="https://developer.huawei.com/consumer/cn/support/feedback/ticketlist/#/add/2">应用转移</a>
+                    <!-- ngIf: isTeamLeader && prodType == 1 && websitLang == 'cn' --><a ng-if="isTeamLeader &amp;&amp; prodType == 1 &amp;&amp; websitLang == 'cn'" class="button-text button-text-danger btn-margin-middle ng-binding ng-scope" id="AppInfoUninstallConf" ng-click="uninstallConfigRecommend(gAppInfo)">卸载时推荐快应用</a><!-- end ngIf: isTeamLeader && prodType == 1 && websitLang == 'cn' -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- end ngIf: !delServiceFlag && isTeamLeader && (prodType == 1 || prodType == 9  || prodType == 19 || prodType == 27 || prodType == 28 || prodType == 2|| prodType == 23) --></div>
+    </div>
 </div>
-
-<script>
-    _speedTiming.push(+new Date);
-    var Q = {};
-    Q.authsCount = 1;
-    Q.isNeedLogin = false;
-    Q.crtDomain = 'https://sso.e.qq.com';
-    Q.agree = function(){
-        window.isAgreed = true;
-    };
-    Q.logout = function(){
-        window.isLogouted = true;
-    };
-    
-    Q.isNeedLogin = true;
-    Q.getParameter = function getParameter(name) {
-        var r = new RegExp("(\\?|#|&)" + name + "=([^&#]*)(&|#|$)"), m = location.href.match(r);
-        return decodeURIComponent(!m ? "" : m[2]);
-    };
-    Q.ptlogin2 = function(){
-        var s_url = 'https://graph.qq.com/oauth2.0/login_jump';
-        s_url = 'https://xui.ptlogin2.qq.com/cgi-bin/xlogin?appid=716027609&daid=383&style=33&login_text=%E6%8E%88%E6%9D%83%E5%B9%B6%E7%99%BB%E5%BD%95&hide_title_bar=1&hide_border=1&target=self&s_url=' + encodeURIComponent(s_url);
-
-        var clientId = Q.getParameter('client_id') || '';
-        clientId && (s_url += ("&pt_3rd_aid="+encodeURIComponent(clientId)));
-
-        var dmHost = ((Q.crtDomain || Q.getParameter('redirect_uri') || '').match(/http:\/\/([^/]*)\/?/i) || [])[1] || '';
-        var feed_back_link = 'https://support.qq.com/products/77942?customInfo='+encodeURIComponent(dmHost) + '.appid' + clientId;
-        s_url += ('&pt_feedback_link=' + encodeURIComponent(feed_back_link));
-        document.getElementById('ptlogin_iframe').src = s_url;
-    };
-    Q.ptlogin2();
-    
-    
-    function ptlogin2_onResize(w, h) {
-    	var f = document.getElementById('ptlogin_iframe');
-    	f.width = w;
-    	f.height = h;
+<div style="display: none" data-back="true" data-count="2" class="ng-scope"></div>
+<script class="ng-scope">
+function lostfocus(){
+    if(document.getElementsByTagName('input')){
+        var a = document.getElementsByTagName('input')
+        for(var i=0;i<a.length;i++){
+            a[i].blur()
+        }
     }
-    if (!window.JSON) {
-    	document.write('<script type="text/javascript" src="https://login.imgcache.qq.com/open/operate/mlib/widget/json-for-ie.js"><\/script>');
+    if(document.getElementsByTagName('textarea')){
+        var b = document.getElementsByTagName('textarea')
+        for(var j=0;j<b.length;j++){
+            b[j].blur()
+        }
     }
-</script>
+}
+window.onscroll = function(){
+    var otop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop
+    lostfocus()
+}
+</script></section>
+</main>
 
-<!--@fragment_bottom Start-->
-<script src="https://login.imgcache.qq.com/c/=/open/connect/widget/pc/login/pt_adapt.js,qlogin_v2.js?v=20181229" charset="UTF-8"></script>
-<script>
-    document.write('<script src="https://tajs.qq.com/stats?sId=52725868" charset="UTF-8"><\/script>');
-</script><script src="https://tajs.qq.com/stats?sId=52725868" charset="UTF-8"></script>
-<!--@fragment_bottom End -->
+<script type="text/javascript" src="../../../../vendors/3rdlib/jquery.min.js?_=220afd7"></script>
+<script type="text/javascript" src="../../../../vendors/ucd/js/ucd.min.js?_=59edd14"></script>
+<script type="text/javascript" src="../../../../vendors/3rdlib/require.js?_=f0cc8bb"></script>
+<script type="text/javascript" src="../../../../services/ha/HiAnalyticsJSSDK.js?_=7686cd4"></script>
+<script type="text/javascript" src="../../../../common/config/sysUrlCfg.js?_=4b536ef"></script>
+<script type="text/javascript" src="../../../../common/config/sysParamCfg.js?_=667ae26"></script>
+<script type="text/javascript" src="../../../../build/common.min.js?_=4c66389"></script>
+<script type="text/javascript" src="../../../../requireConfig.js?_=7ae847a"></script>
+<script type="text/javascript" src="../../../../general/i18n/common/language.min.js?_=38a5d18"></script>
+<script type="text/javascript" src="../../../../general/i18n/appinfo/language.min.js?_=3f15f5d"></script>
+<script type="text/javascript" src="appinfoloader.js?_=445c19d"></script>
+<script type="text/javascript" src="../../../../services/common/NspClient.js?_=9ae81e9"></script>
+<script type="text/javascript" src="../../../../common/utils/ie-utils.js?_=c5b9fc4"></script>
+<script type="text/javascript" src="../../../../common/utils/edge-blur.js?_=3d6e8e7"></script>
 
 
-
-
-</body></html>
+<label tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px;">upload<input type="file" ng-src="{{language.deviceMaterials[0].appIcon}}" accept="image/png,image/PNG" id="ngf-AppInfoAppIconAddButton" ng-disabled="editDisabledFlag" ng-class="{'after-upload':language.deviceMaterials[0].appIcon&amp;&amp;language.deviceMaterials[0].appIcon !=''}" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,2097152,'image/png,image/PNG','.png,.PNG',language.deviceMaterials[0],'appIcon')"></label><label tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px;">upload<input type="file" ng-src="{{deviceMaterial.screenShots[0]}}" id="ngf-AppInfoScreenShotsButton1" accept="image/jpeg,image/png,image/PNG" ng-class="{'after-upload':deviceMaterial.screenShots[0]&amp;&amp;deviceMaterial.screenShots[0] !=''}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,2097152,'image/jpeg,image/png,image/PNG','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'tvScreenShots',0)"></label><label tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px;">upload<input type="file" ng-src="{{deviceMaterial.screenShots[1]}}" id="ngf-AppInfoScreenShotsButton2" accept="image/jpeg,image/png,image/PNG" ng-class="{'after-upload':deviceMaterial.screenShots[1]&amp;&amp;deviceMaterial.screenShots[1] !=''}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,2097152,'image/jpeg,image/png,image/PNG','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'tvScreenShots',1)"></label><label tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px;">upload<input type="file" ng-src="{{deviceMaterial.screenShots[2]}}" id="ngf-AppInfoScreenShotsButton3" accept="image/jpeg,image/png,image/PNG" ng-class="{'after-upload':deviceMaterial.screenShots[2]&amp;&amp;deviceMaterial.screenShots[2] !=''}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,2097152,'image/jpeg,image/png,image/PNG','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'tvScreenShots',2)"></label><label tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px;">upload<input type="file" ng-src="{{deviceMaterial.screenShots[3]}}" id="ngf-AppInfoScreenShotsButton4" accept="image/jpeg,image/png,image/PNG" ng-class="{'after-upload':deviceMaterial.screenShots[3]&amp;&amp;deviceMaterial.screenShots[3] !=''}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,2097152,'image/jpeg,image/png,image/PNG','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'tvScreenShots',3)"></label><label tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px;">upload<input type="file" ng-src="{{deviceMaterial.screenShots[4]}}" id="ngf-AppInfoScreenShotsButton5" accept="image/jpeg,image/png,image/PNG" ng-class="{'after-upload':deviceMaterial.screenShots[4]&amp;&amp;deviceMaterial.screenShots[4] !=''}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,2097152,'image/jpeg,image/png,image/PNG','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'tvScreenShots',4)"></label><label tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px;">upload<input type="file" ng-src="{{deviceMaterial.screenShots[5]}}" id="ngf-AppInfoScreenShotsButton6" accept="image/jpeg,image/png,image/PNG" ng-class="{'after-upload':deviceMaterial.screenShots[5]&amp;&amp;deviceMaterial.screenShots[5] !=''}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,2097152,'image/jpeg,image/png,image/PNG','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'tvScreenShots',5)"></label><label tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px;">upload<input type="file" ng-src="{{deviceMaterial.screenShots[6]}}" id="ngf-AppInfoScreenShotsButton7" accept="image/jpeg,image/png,image/PNG" ng-class="{'after-upload':deviceMaterial.screenShots[6]&amp;&amp;deviceMaterial.screenShots[6] !=''}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,2097152,'image/jpeg,image/png,image/PNG','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'tvScreenShots',6)"></label><label tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px;">upload<input type="file" ng-src="{{deviceMaterial.screenShots[7]}}" id="ngf-AppInfoScreenShotsButton8" accept="image/jpeg,image/png,image/PNG" ng-class="{'after-upload':deviceMaterial.screenShots[7]&amp;&amp;deviceMaterial.screenShots[7] !=''}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,2097152,'image/jpeg,image/png,image/PNG','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'tvScreenShots',7)"></label><label tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px;">upload<input type="file" ng-src="{{deviceMaterial.screenShots[0]}}" id="ngf-AppInfoScreenShotsWatchButton1" accept="image/jpeg,image/png,image/PNG" ng-disabled="disabledFlag=='disabled'" ng-class="{'after-upload':deviceMaterial.screenShots[0]&amp;&amp;deviceMaterial.screenShots[0] !=''}" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,512000,'image/jpeg,image/png','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'screenShots', 0)"></label><label tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px;">upload<input type="file" ng-src="{{deviceMaterial.screenShots[1]}}" accept="image/jpeg,image/png,image/PNG" id="ngf-AppInfoScreenShotsWatchButton2" ng-disabled="disabledFlag=='disabled'" ng-class="{'after-upload':deviceMaterial.screenShots[1]&amp;&amp;deviceMaterial.screenShots[1] !=''}" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,512000,'image/jpeg,image/png','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'screenShots', 1)"></label><label tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px;">upload<input type="file" ng-src="{{deviceMaterial.screenShots[2]}}" id="ngf-AppInfoScreenShotsWatchButton3" accept="image/jpeg,image/png,image/PNG" ng-disabled="disabledFlag=='disabled'" ng-class="{'after-upload':deviceMaterial.screenShots[2]&amp;&amp;deviceMaterial.screenShots[2] !=''}" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,512000,'image/jpeg,image/png','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'screenShots', 2)"></label><label tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px;">upload<input type="file" ng-src="{{deviceMaterial.screenShots[3]}}" id="ngf-AppInfoScreenShotsWatchButton4" accept="image/jpeg,image/png,image/PNG" ng-disabled="disabledFlag=='disabled'" ng-class="{'after-upload':deviceMaterial.screenShots[3]&amp;&amp;deviceMaterial.screenShots[3] !=''}" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,512000,'image/jpeg,image/png','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'screenShots', 3)"></label><label tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px;">upload<input type="file" ng-src="{{deviceMaterial.screenShots[4]}}" id="ngf-AppInfoScreenShotsWatchButton5" accept="image/jpeg,image/png,image/PNG" ng-disabled="disabledFlag=='disabled'" ng-class="{'after-upload':deviceMaterial.screenShots[4]&amp;&amp;deviceMaterial.screenShots[4] !=''}" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,512000,'image/jpeg,image/png','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'screenShots', 4)"></label><label tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px;">upload<input type="file" id="ngf-img-poster1" name="v-video1" accept="video/quicktime,video/mp4,video/mov,video/MOV,video/MP4" ng-class="{'uploadfile':true,'img-hidden':!!deviceMaterial.introVedios[0].frameUrl}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadIntroVideo($files,524288000,'video/quicktime,video/mp4','.mov,.MOV,.mp4,.MP4',deviceMaterial,0)"></label><label tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px;">upload<input type="file" ng-show="!isIeExplore || (deviceMaterial.introVedios[0].vedioUrl &amp;&amp; deviceMaterial.introVedios[0].vedioUrl.indexOf('.mov') == -1)" id="ngf-video0" controls="controls" crossorigin="Anonymous" ng-src="{{deviceMaterial.introVedios[0].vedioUrl}}" ng-poster="deviceMaterial.introVedios[0].frameUrl" accept="video/quicktime,video/mp4,video/mov,video/MOV,video/MP4" controlslist="nodownload" load-video="0" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadIntroVideo($files,524288000,'video/quicktime,video/mp4','.mov,.MOV,.mp4,.MP4',deviceMaterial,0)"></label><label tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px;">upload<input type="file" id="ngf-img-poster2-0-0" name="img-poster2" accept="video/quicktime,video/mp4,video/mov,video/MOV,video/MP4" ng-class="{'uploadfile':true,'img-hidden':!!deviceMaterial.introVedios[1].frameUrl}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadIntroVideo($files,524288000,'video/quicktime,video/mp4','.mov,.MOV,.mp4,.MP4',deviceMaterial,1)"></label><label tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px;">upload<input type="file" ng-show="!isIeExplore ||  (deviceMaterial.introVedios[1].vedioUrl &amp;&amp; deviceMaterial.introVedios[1].vedioUrl.indexOf('.mov') == -1)" id="ngf-video1" controls="controls" crossorigin="Anonymous" ng-src="{{deviceMaterial.introVedios[1].vedioUrl}}" ng-poster="deviceMaterial.introVedios[1].frameUrl" accept="video/quicktime,video/mp4,video/mov,video/MOV,video/MP4" controlslist="nodownload" load-video="1" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadIntroVideo($files,524288000,'video/quicktime,video/mp4','.mov,.MOV,.mp4,.MP4',deviceMaterial,1)"></label><label tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px;">upload<input type="file" ng-show="!isIeExplore ||  (deviceMaterial.introVedios[2].vedioUrl &amp;&amp; deviceMaterial.introVedios[2].vedioUrl.indexOf('.mov') == -1)" id="ngf-video2" controls="controls" crossorigin="Anonymous" ng-src="{{deviceMaterial.introVedios[2].vedioUrl}}" ng-poster="deviceMaterial.introVedios[2].frameUrl" accept="video/quicktime,video/mp4,video/mov,video/MOV,video/MP4" controlslist="nodownload" load-video="2" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadIntroVideo($files,524288000,'video/quicktime,video/mp4','.mov,.MOV,.mp4,.MP4',deviceMaterial,2)"></label><label tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px;">upload<input type="file" id="ngf-img-poster1-0" name="img-poster1" accept="video/quicktime,video/mp4,video/mov,video/MOV,video/MP4" ng-class="{'uploadfile':true,'img-hidden':!!deviceMaterial.introVedios[3].frameUrl}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadIntroVideo($files,524288000,'video/quicktime,video/mp4','.mov,.MOV,.mp4,.MP4',deviceMaterial,3)"></label><label tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px;">upload<input type="file" ng-show="!isIeExplore ||  (deviceMaterial.introVedios[3].vedioUrl &amp;&amp; deviceMaterial.introVedios[3].vedioUrl.indexOf('.mov') == -1)" id="ngf-video3" controls="controls" crossorigin="Anonymous" ng-src="{{deviceMaterial.introVedios[3].vedioUrl}}" ng-poster="deviceMaterial.introVedios[3].frameUrl" accept="video/quicktime,video/mp4,video/mov,video/MOV,video/MP4" controlslist="nodownload" load-video="3" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadIntroVideo($files,524288000,'video/quicktime,video/mp4','.mov,.MOV,.mp4,.MP4',deviceMaterial,3)"></label><label tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px;">upload<input type="file" ng-show="!isIeExplore ||  (deviceMaterial.introVedios[4].vedioUrl &amp;&amp; deviceMaterial.introVedios[4].vedioUrl.indexOf('.mov') == -1)" id="ngf-video4" controls="controls" crossorigin="Anonymous" ng-src="{{deviceMaterial.introVedios[4].vedioUrl}}" ng-poster="deviceMaterial.introVedios[4].frameUrl" accept="video/quicktime,video/mp4,video/mov,video/MOV,video/MP4" controlslist="nodownload" load-video="4" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadIntroVideo($files,524288000,'video/quicktime,video/mp4','.mov,.MOV,.mp4,.MP4',deviceMaterial,4)"></label><label tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px;">upload<input type="file" ng-show="!isIeExplore ||  (deviceMaterial.introVedios[5].vedioUrl &amp;&amp; deviceMaterial.introVedios[5].vedioUrl.indexOf('.mov') == -1)" id="ngf-video5" controls="controls" crossorigin="Anonymous" ng-src="{{deviceMaterial.introVedios[5].vedioUrl}}" ng-poster="deviceMaterial.introVedios[5].frameUrl" accept="video/quicktime,video/mp4,video/mov,video/MOV,video/MP4" controlslist="nodownload" load-video="5" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadIntroVideo($files,524288000,'video/quicktime,video/mp4','.mov,.MOV,.mp4,.MP4',deviceMaterial,5)"></label><label tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px;">upload<input type="file" ng-src="{{deviceMaterial.screenShots[5]}}" id="ngf-AppIntroScreenshot6" accept="image/jpeg,image/png,image/PNG" ng-class="{'after-upload':deviceMaterial.screenShots[5]&amp;&amp;deviceMaterial.screenShots[5] !=''}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,2097152,'image/jpeg,image/png,image/PNG','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'screenShots',5)"></label><label tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px;">upload<input type="file" ng-src="{{deviceMaterial.screenShots[6]}}" id="ngf-AppIntroScreenshot7" accept="image/jpeg,image/png,image/PNG" ng-class="{'after-upload':deviceMaterial.screenShots[6]&amp;&amp;deviceMaterial.screenShots[6] !=''}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,2097152,'image/jpeg,image/png,image/PNG','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'screenShots',6)"></label><label tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px;">upload<input type="file" ng-src="{{deviceMaterial.screenShots[7]}}" id="ngf-AppIntroScreenshot8" accept="image/jpeg,image/png,image/PNG" ng-class="{'after-upload':deviceMaterial.screenShots[7]&amp;&amp;deviceMaterial.screenShots[7] !=''}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,2097152,'image/jpeg,image/png,image/PNG','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'screenShots',7)"></label><label tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px;">upload<input type="file" ng-src="{{deviceMaterial.screenShots[8]}}" id="ngf-AppIntroScreenshot9" accept="image/jpeg,image/png,image/PNG" ng-class="{'after-upload':deviceMaterial.screenShots[8]&amp;&amp;deviceMaterial.screenShots[8] !=''}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,2097152,'image/jpeg,image/png,image/PNG','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'screenShots',8)"></label><label tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px;">upload<input type="file" ng-src="{{deviceMaterial.screenShots[9]}}" id="ngf-AppIntroScreenshot10" accept="image/jpeg,image/png,image/PNG" ng-class="{'after-upload':deviceMaterial.screenShots[9]&amp;&amp;deviceMaterial.screenShots[9] !=''}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadImg($files,2097152,'image/jpeg,image/png,image/PNG','.jpg,.JPG,.jpeg,.JPEG,.png,.PNG',deviceMaterial.screenShots,'screenShots',9)"></label><label tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px;">upload<input type="file" id="ngf-img-poster2" name="img-poster2" accept="video/quicktime,video/mp4,video/mov,video/MOV,video/MP4" crossorigin="Anonymous" ng-class="{'uploadfile':true,'img-hidden':!!deviceMaterial.rcmdVedios[0].frameUrl}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadVideo($files,524288000,'video/quicktime,video/mp4','.mov,.MOV,.mp4,.MP4',deviceMaterial)"></label><label tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px;">upload<input type="file" ng-show="!isIeExplore ||  (deviceMaterial.rcmdVedios[0].vedioUrl &amp;&amp; deviceMaterial.rcmdVedios[0].vedioUrl.indexOf('.mov') == -1)" id="ngf-rcmdVedio" controls="controls" crossorigin="Anonymous" ng-src="{{deviceMaterial.rcmdVedios[0].vedioUrl}}" ng-poster="deviceMaterial.rcmdVedios[0].frameUrl" accept="video/quicktime,video/mp4,video/mov,video/MOV,video/MP4" controlslist="nodownload" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadVideo($files,524288000,'video/quicktime,video/mp4','.mov,.MOV,.mp4,.MP4',deviceMaterial)"></label><label tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px;">upload<input type="file" id="ngf-img-poster3" name="img-poster3" accept="video/quicktime,video/mp4,video/mov,video/MOV,video/MP4" ng-class="{'uploadfile':true,'img-hidden':!!Model.addParam.activity.poster3}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadIntroVideo($files,524288000,'video/quicktime,video/mp4','.mov,.MOV,.mp4,.MP4',deviceMaterial,2)"></label><label tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px;">upload<input type="file" id="ngf-img-poster2-0" name="img-poster2" accept="video/quicktime,video/mp4,video/mov,video/MOV,video/MP4" ng-class="{'uploadfile':true,'img-hidden':!!deviceMaterial.introVedios[4].frameUrl}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadIntroVideo($files,524288000,'video/quicktime,video/mp4','.mov,.MOV,.mp4,.MP4',deviceMaterial,4)"></label><label tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; width: 0px; height: 0px; border: none; margin: 0px; padding: 0px;">upload<input type="file" id="ngf-img-poster3-0" name="img-poster3" accept="video/quicktime,video/mp4,video/mov,video/MOV,video/MP4" ng-class="{'uploadfile':true,'img-hidden':!!Model.addParam.activity.poster3}" ng-disabled="disabledFlag=='disabled'" ngf-drop="true" ngf-select="true" ngf-change="uploadIntroVideo($files,524288000,'video/quicktime,video/mp4','.mov,.MOV,.mp4,.MP4',deviceMaterial,5)"></label></body></html>

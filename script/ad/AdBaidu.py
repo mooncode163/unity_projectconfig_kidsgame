@@ -17,11 +17,13 @@ import json
 o_path = os.getcwd()  # 返回当前工作目录
 sys.path.append(o_path)  # 添加自己指定的搜索路径
 
-
+import pyperclip
 from AppStore.WebDriverCmd import CmdType
 from AppStore.WebDriverCmd import WebDriverCmd 
 from AppStore.WebDriverCmd import CmdInfo 
- 
+from AppVersionHuawei import mainAppVersionHuawei
+
+from AdBase import AdBase
 
 # 要想调用键盘按键操作需要引入keys包
 
@@ -33,7 +35,7 @@ from AppStore.WebDriverCmd import CmdInfo
 # sys.path.append('../common')
 
 
-class AdGdt():
+class AdBaidu(AdBase):
     driver: None
     dirRoot: None
     urlCreatePlaceId: None
@@ -54,7 +56,9 @@ class AdGdt():
 
     def GoHome(self):
         # 加载百度页面 
-        self.driver.get("https://union.baidu.com/")
+        # self.driver.get("https://union.baidu.com/")
+        self.driver.get("https://union.baidu.com/bqt#/")
+        
         time.sleep(2)
 
 
@@ -72,6 +76,12 @@ class AdGdt():
 
         webcmd.AddCmd(CmdType.INPUT,"//input[@id='uc-common-account']",user)
         webcmd.AddCmd(CmdType.INPUT,"//input[@id='ucsl-password-edit']",password)
+
+        # 登录
+        # <div class="login-action">
+        # webcmd.AddCmd(CmdType.CLICK_Action,"//input[@id='submit-formt']")
+        # webcmd.AddCmd(CmdType.CLICK_Action,"//div[@class='login-action']")
+
         webcmd.Run(True) 
 
         # self.LoginQQ(user, password)
@@ -117,6 +127,47 @@ class AdGdt():
         webcmd.AddCmd2(CmdType.CLICK, key)
         webcmd.AddCmd2(CmdType.CTR_V, key) 
         webcmd.Run(True)
+
+
+
+    def DeleteAllDownloadApk(self,sourceDir):
+        for file in os.listdir(sourceDir):
+            sourceFile = os.path.join(sourceDir,  file)
+                #cover the files
+            if os.path.isfile(sourceFile):
+                # print sourceFile
+                # 分割文件名与后缀
+                temp_list = os.path.splitext(file)
+                # name without extension
+                src_apk_name = temp_list[0]
+                # 后缀名，包含.   例如: ".apk "
+                ext = temp_list[1]
+                apk_ext='.apk';
+                if apk_ext==ext:
+                    print(sourceFile)
+                    os.remove(sourceFile)
+
+    def GetDownloadApk(self,sourceDir):
+        for file in os.listdir(sourceDir):
+            sourceFile = os.path.join(sourceDir,  file)
+                #cover the files
+            if os.path.isfile(sourceFile):
+                # print sourceFile
+                # 分割文件名与后缀
+                temp_list = os.path.splitext(file)
+                # name without extension
+                src_apk_name = temp_list[0]
+                # 后缀名，包含.   例如: ".apk "
+                ext = temp_list[1]
+                apk_ext='.apk';
+                if apk_ext==ext:
+                    print(sourceFile)
+                    return sourceFile
+
+        return ""
+            
+                    
+ 
 
 # 3452644866 qq31415926
     def CreateApp(self, isHD):
@@ -171,9 +222,7 @@ class AdGdt():
             webcmd.Run(True)
 
         
-        key = "//input[@type='text' and @name='appUrl']"
-        title = AppInfo.GetAppUrl(self.osApp,isHD,appChannel)
-        self.SetText(key,title)
+
 
         key = "//input[@type='text' and @name='packageName']"
         title = AppInfo.GetAppPackage(self.osApp,isHD)
@@ -190,41 +239,76 @@ class AdGdt():
             webcmd.AddCmd(CmdType.CLICK, key)
             webcmd.Run(True) 
 
+        key = "//input[@type='text' and @name='appUrl']"
+        # http(s)://appdl-drcn.dbankcdn.com/xxx或者http(s)://appdlc-drcn.hispace.hicloud.com/xxx
+        # http://appdlc-drcn.hispace.hicloud.com/dl/appdl/application/apk/7c/7c1e552794ec43d488e9149e6c4644a7/com.ss.android.ugc.aweme.lite.2007201350.apk
+        apk_url = mainAppVersionHuawei.GetApkUrl(AppInfo.GetAppId(isHD, source.HUAWEI)) 
+        self.SetText(key,apk_url)
 
+        old_window = self.driver.current_window_handle
         # 下一步
         # <button ui="primary" type="submit" class="veui-button">下一步</button>
         key = "//button[@ui='primary' and @type='submit']"
         webcmd.AddCmd(CmdType.CLICK, key)
         webcmd.Run(True)
 
+                # 跳转到新的页面
+        print("self.driver.current_url=", self.driver.current_url)
+        # self.driver.switch_to.window(self.driver.window_handles[0])
+        for win in self.driver.window_handles:
+            if win != old_window:
+                self.driver.switch_to.window(win)
+        time.sleep(2)
+        print("self.driver.current_url 2=", self.driver.current_url)
 
-# 下载空包 E:\Users\moon\Downloads\mssp-verify-b8920a35.apk
-        key = "//button[@class='veui-button bottom20')]"
-        webcmd.AddCmd(CmdType.CLICK, key)
-        webcmd.Run(True)
 
-        apk_unsign = "~/sourcecode/mssp_baidu/empty.apk"
-        apk_sign = "~/sourcecode/mssp_baidu/signed.apk"
-        # sign apk:
-        # jarsigner -verbose -keystore ~/sourcecode/mssp_baidu/moonma.jks -signedjar ~/sourcecode/mssp_baidu/signed.apk ~/sourcecode/mssp_baidu/empty.apk moonma -storepass qianlizhiwai
-        cmd = "jarsigner -verbose -keystore ~/sourcecode/mssp_baidu/moonma.jks -signedjar "+apk_sign+" "+apk_unsign+" moonma -storepass qianlizhiwai"
-        print(cmd)
-        os.system(cmd)
-        # sign end
 
-# 上传签名包
-        key = "//input[@id='veui-uploader-input474')]"
-        webcmd.AddCmd(CmdType.CLICK, key)
-        webcmd.Run(True)
+        if self.osApp== source.ANDROID:
 
-         
-        self.OpenFileBrowser(apk_sign, True)
-        time.sleep(3)
+            # E:\Users\moon\Downloads
+            downloadDir = "C:\\Users\\moon\\Downloads"
+            self.DeleteAllDownloadApk(downloadDir)
 
+            # 下载空包 E:\Users\moon\Downloads\mssp-verify-b8920a35.apk
+            key = "//button[@class='veui-button bottom20']"
+            webcmd.AddCmd(CmdType.CLICK, key)
+            webcmd.Run(True)
+
+            time.sleep(3)
+            apk_unsign = self.GetDownloadApk(downloadDir) 
+            apk_sign = "F:\\sourcecode\\mssp_baidu\\signed.apk"
+            jks = "F:\\sourcecode\\unity\\product\\kidsgame\\ProjectConfig\\Ad\\moonma.jks"
+            # sign apk:
+            # jarsigner -verbose -keystore ~/sourcecode/mssp_baidu/moonma.jks -signedjar ~/sourcecode/mssp_baidu/signed.apk ~/sourcecode/mssp_baidu/empty.apk moonma -storepass qianlizhiwai
+            cmd = "jarsigner -verbose -keystore "+jks+" -signedjar "+apk_sign+" "+apk_unsign+" moonma -storepass qianlizhiwai"
+            print(cmd)
+            os.system(cmd)
+            time.sleep(1)
+
+            # sign end
+
+            # 滚动到浏览器顶部
+            js_top = "var q=document.documentElement.scrollTop=0"
+            # 滚动到浏览器底部
+            js_bottom = "var q=document.documentElement.scrollTop=document.documentElement.scrollHeight"
+            self.driver.execute_script(js_bottom)
+            time.sleep(2)
+
+            # 上传签名包
+            # key = "//input[@accept='.apk' and @name='file']"
+            key = "//label[@class='veui-button veui-uploader-input-label']"
+            item = webcmd.AddCmd(CmdType.CLICK_Action, key)
+            # webcmd.SetItemVisible(item)
+            webcmd.Run(True)
+
+            self.OpenFileBrowser(apk_sign) 
+
+        if self.osApp== source.IOS:
+            time.sleep(3)
 
         # 完成
         key = "//button[@ui='primary' and @type='submit']"
-        webcmd.AddCmd(CmdType.CLICK, key)
+        webcmd.AddCmd(CmdType.CLICK_Action, key)
         webcmd.Run(True)
         
          
@@ -354,7 +438,7 @@ class AdGdt():
         time.sleep(1)
         self.GetAdInfo(isHD)
 
-    def OpenFileBrowser(self):
+    def OpenFileBrowser(self,filepath):
         # win32gui
         dialog = win32gui.FindWindow('#32770', u'打开')  # 对话框
         ComboBoxEx32 = win32gui.FindWindowEx(dialog, 0, 'ComboBoxEx32', None)
@@ -363,7 +447,7 @@ class AdGdt():
         Edit = win32gui.FindWindowEx(ComboBox, 0, 'Edit', None)
         button = win32gui.FindWindowEx(dialog, 0, 'Button', None)  # 确定按钮Button
         win32gui.SendMessage(Edit, win32con.WM_SETTEXT, None,
-                             "F:\\sourcecode\\unity\\product\\kidsgame\\ProjectOutPut\\xiehanzi\\xiehanzi\\screenshot\\shu\\cn\\480p\\1.jpg")
+                             filepath)
         # win32gui.SendMessage(Edit,win32con.WM_SETTEXT,None,'F:\sourcecode\unity\product\kidsgame\ProjectOutPut\xiehanzi\hanziyuan\screenshot\shu\cn\480p\1.jpg')  # 往输入框输入绝对地址
         win32gui.SendMessage(dialog, win32con.WM_COMMAND, 1, button)  # 按button
 
@@ -523,13 +607,8 @@ if __name__ == "__main__":
     dir = common.getLastDirofDir(cmdPath)
     # dir = common.getLastDirofDir(dir)
     common.SetCmdPath(dir)
-    print(cmdPath)
-    package = AppInfo.GetPackage(source.ANDROID, False)
-    print(package)
-    package = AppInfo.GetAppId(False, source.HUAWEI)
-    print(package)
-
-    ad = AdGdt()
+    print(cmdPath) 
+    ad = AdBaidu()
     ad.SetCmdPath(cmdPath)
     ad.Init()
     ad.GoHome()
@@ -540,7 +619,7 @@ if __name__ == "__main__":
     if argv1 == "createapp":
         ad.CreateApp(False)
         time.sleep(3)
-        ad.CreateApp(True)
+        # ad.CreateApp(True)
 
     if argv1 == "createplaceid":
         ad.CreatePlaceId(False)

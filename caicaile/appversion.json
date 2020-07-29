@@ -5,10 +5,10 @@
             "en": "Fix a Bug"
         },
         "version": {
-            "android": "1.0.1"
+            "android": "1.0.4"
         },
         "version_hd": {
-            "android": "1.0.1"
+            "android": "1.0.4"
         }
     },
     "Idiom": {
@@ -33,6 +33,18 @@
         },
         "version_hd": {
             "android": "1.0.4"
+        }
+    },
+    "Xiehouyu": {
+        "update_note": {
+            "cn": "修复闪退",
+            "en": "Fix a Bug"
+        },
+        "version": {
+            "android": "1.0.5"
+        },
+        "version_hd": {
+            "android": "1.0.5"
         }
     },
     "animal": {
